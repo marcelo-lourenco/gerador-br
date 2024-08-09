@@ -1,0 +1,21 @@
+{
+  "name": "gdf-br",
+  "version": "1.0.1",
+  "description": "Gerador de Dados Fictícios - Brasil",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node --test test"
+  },
+  "keywords": [],
+  "author": "Marcelo Lourenço <qabi.dev@gmail.com>",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "eslint": "^9.8.0",
+    "globals": "^15.9.0"
+  }
+}
