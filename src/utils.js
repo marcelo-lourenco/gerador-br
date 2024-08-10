@@ -64,12 +64,12 @@ export const nomeDoMeio = getRandom(db.nomesDoMeio);
 export const sobrenome = getRandom(db.sobrenomes);
 
 /**
- * Um apelido (nickname) aleatório.
+ * Um apelido aleatório.
  * @type {string}
  * @example
- * console.log(nickname); // Pode exibir qualquer apelido, como "Ace", "Alpha", etc.
+ * console.log(apelido()); // Pode exibir qualquer apelido, como "Ace", "Alpha", etc.
  */
-export const nickname = getRandom(db.nicknames);
+export const apelidoRand = getRandom(db.nicknames);
 
 /**
  * Um provedor de email aleatório.
@@ -133,4 +133,4 @@ export const tipoSanguineo = getRandom(db.tiposSanguineo);
  * @example
  * console.log(categoriaCnh); // Pode exibir qualquer categoria de CNH, como "A", "B", "C", etc.
  */
-export const categoriaCnh = getRandom(db.categoriasCnh);
+export const categoriaCnhRand = getRandom(db.categoriasCnh);
