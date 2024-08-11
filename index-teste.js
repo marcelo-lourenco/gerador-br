@@ -39,8 +39,8 @@ console.log(gerar.email(nomeMasculinoCompleto));
 console.log(gerar.email(nomeFemininoCompleto));
 
 // Gerar CNH aleatória
-console.log(gerar.cnh);                         // Gera um número de CNH aleatório
-console.log(gerar.cnhCategoria);                // Gera uma categoria de CNH aleatória
+console.log(gerar.cnh);
+console.log(gerar.cnhCategoria);
 
 // Gerar CNPJ com opção para máscara:
 console.log(gerar.cnpj());                        // Gera CNPJ sem máscara
@@ -68,6 +68,9 @@ console.log(gerar.tituloEleitor())                // Gerar Título de Eleitor se
 console.log(gerar.tituloEleitor(true))            // Gerar Título de Eleitor com máscara e de estado aleatório
 console.log(gerar.tituloEleitor(true,'SE'))       // Gerar Título de Eleitor sem máscara e de estado informado
 console.log(gerar.tituloEleitor(false,'PR'))      // Gerar Título de Eleitor com máscara e de estado informado
+
+// Gerar Passaporte aleatórip
+console.log(gerar.passaporte);
 
 // Gerar cor de pele aleatória
 console.log(gerar.corPele);

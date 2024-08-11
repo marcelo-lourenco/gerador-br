@@ -5,6 +5,7 @@ import { cpf } from "./src/generators/cpf.js"
 import { rg } from "./src/generators/rg.js"
 import { pis } from "./src/generators/pis.js"
 import { cns } from "./src/generators/cartao-nacional-saude.js"
+import { passaporte } from "./src/generators/passaporte.js"
 import { tituloEleitor } from "./src/generators/titulo-eleitor.js"
 import { dataNascimento } from "./src/generators/data-nascimento.js"
 import { email } from "./src/generators/email.js"
@@ -159,6 +160,16 @@ gerar.tituloEleitor = tituloEleitor;
 
 
 /**
+ * Gera um número de Passoporte aleatório.
+ *
+ * @returns {string} O número de Passaporte gerado.
+ * @example
+ * // Passaporte gerado
+ * console.log(gerar.passaporte); // "AB1234567"
+ */
+gerar.passaporte = passaporte;
+
+/**
  * Gera um endereço aleatório com CEP mascarado.
  * @type {Object}
  * @property {string} cep - Retorna o CEP.
@@ -275,6 +286,7 @@ export default {
   pis,
   cns,
   tituloEleitor,
+  passaporte,
   endereco,
   enderecoFnc,
   email
