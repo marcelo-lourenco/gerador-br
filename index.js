@@ -3,6 +3,7 @@ import { cnh } from "./src/generators/cnh.js"
 import { cnpj } from "./src/generators/cnpj.js"
 import { cpf } from "./src/generators/cpf.js"
 import { rg } from "./src/generators/rg.js"
+import { pis } from "./src/generators/pis.js"
 import { tituloEleitor } from "./src/generators/titulo-eleitor.js"
 import { dataNascimento } from "./src/generators/data-nascimento.js"
 import { email } from "./src/generators/email.js"
@@ -99,12 +100,26 @@ gerar.cpf = cpf;
  * @returns {string} O RG gerado.
  * @example
  * // RG com máscara
- * console.log(rg(true)); // "12.345.678-9"
+ * console.log(gerar.rg(true)); // "12.345.678-9"
  *
  * // RG sem máscara
- * console.log(rg(false)); // "123456789"
+ * console.log(gerar.rg(false)); // "123456789"
  */
 gerar.rg = rg;
+
+
+/**
+ * Gera um número de PIS aleatório.
+ * @param {boolean} [mask=false] - Se `true`, o PIS será retornado com a máscara de formatação (xxx.xxxxx.xx.x). Se `false`, o PIS será retornado apenas com os dígitos.
+ * @returns {string} O número de PIS gerado.
+ * @example
+ * // PIS sem máscara
+ * console.log(pis()); // "12345678912"
+ *
+ * // PIS com máscara
+ * console.log(pis(true)); // "123.45678.91.2"
+ */
+gerar.pis = pis;
 
 
 /**
@@ -243,6 +258,7 @@ export default {
   cnpj,
   cpf,
   rg,
+  pis,
   tituloEleitor,
   endereco,
   enderecoFnc,
