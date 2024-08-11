@@ -4,6 +4,7 @@ import { cnpj } from "./src/generators/cnpj.js"
 import { cpf } from "./src/generators/cpf.js"
 import { rg } from "./src/generators/rg.js"
 import { pis } from "./src/generators/pis.js"
+import { cns } from "./src/generators/cartao-nacional-saude.js"
 import { tituloEleitor } from "./src/generators/titulo-eleitor.js"
 import { dataNascimento } from "./src/generators/data-nascimento.js"
 import { email } from "./src/generators/email.js"
@@ -107,6 +108,19 @@ gerar.cpf = cpf;
  */
 gerar.rg = rg;
 
+
+/**
+ * Gera um número de Cartão Nacional de Saúde (CNS) aleatório. Com máscara ou sem máscara
+ * @param {boolean} [mask=false] - Se `true`, o CNS será retornado com a máscara de formatação (XXX XXXX XXXX XXXX). Se `false`, o CNS será retornado apenas com os dígitos.
+ * @returns {string} O número de CNS gerado.
+ * @example
+ * // CNS sem máscara
+ * console.log(gerar.cns()); // "123456789012345"
+ *
+ * // CNS com máscara
+ * console.log(gerar.cns(true)); // "123 4567 8901 2345"
+ */
+gerar.cns = cns;
 
 /**
  * Gera um número de PIS aleatório.
@@ -259,6 +273,7 @@ export default {
   cpf,
   rg,
   pis,
+  cns,
   tituloEleitor,
   endereco,
   enderecoFnc,

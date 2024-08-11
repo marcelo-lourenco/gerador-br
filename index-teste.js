@@ -56,6 +56,10 @@ console.log(gerar.cpf(false, "DF"));              // Gera CPF sem máscara e do 
 console.log(gerar.rg());                          // Gera RG sem máscara
 console.log(gerar.rg(true));                      // Gera RG com máscara
 
+// Gerar CNS com opção para máscara:
+console.log(gerar.cns());                          // Gera CNS sem máscara
+console.log(gerar.cns(true));                      // Gera CNS com máscara
+
 // Gerar PIS com opção para máscara:
 console.log(gerar.pis());                          // Gera PIS sem máscara
 console.log(gerar.pis(true));                      // Gera PIS com máscara
