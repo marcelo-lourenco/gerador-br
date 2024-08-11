@@ -27,12 +27,12 @@ const getRandom = arr => arr[Math.floor(Math.random() * arr.length)];
  * //   localidade: "São Paulo",
  * //   estado: "SP"
  * // }
- * 
+ *
  * @example
  * const endereco = address(true, "RJ");
  * console.log(endereco.cep);
  * // 21362-100
- * 
+ *
  * @example
  * console.log(endereco.logradouro);
  * // Travessa da Prata do Sossego
@@ -75,5 +75,3 @@ export const enderecoFnc = function (mask = false, state) {
  * // }
  */
 export const endereco = enderecoFnc(false, stateRand);
-
-

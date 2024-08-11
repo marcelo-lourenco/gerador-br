@@ -1,9 +1,7 @@
 import {describe,test} from 'node:test';
-// Import assert from 'node:assert'
 import { strictEqual } from 'node:assert';
 
-// Este teste garante valida funcionalidade Gerar CPF  
-
+// Este teste garante validar funcionalidade Gerar CPF
 
 import { cpf } from '../src/generators/cpf.js';
 

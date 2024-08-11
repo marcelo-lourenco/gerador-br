@@ -45,10 +45,10 @@ function mod(dividend, divider) {
  * @example
  * // CPF com máscara de formatação
  * console.log(cpf(true, "SP")); // "123.456.789-09"
- * 
+ *
  * // CPF sem máscara de formatação
  * console.log(cpf(false, "RJ")); // "12345678909"
- * 
+ *
  * // CPF com estado aleatório
  * console.log(cpf(true)); // "987.654.321-00"
  */

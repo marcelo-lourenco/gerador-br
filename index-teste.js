@@ -1,13 +1,35 @@
 import gerar from './index.js';
 
+// Gerar nome masculino
+console.log(gerar.nomeMasculino);
+
+// Gerar nome feminino
+console.log(gerar.nomeFeminino);
+
+// Gerar nome do meio
+console.log(gerar.nomeDoMeio);
+
+// Gerar sobrenome
+console.log(gerar.sobrenome);
+
+// Gerar nome masculino completo
+console.log(gerar.nomeMasculinoCompleto);
+
+// Gerar nome feminino completo
+console.log(gerar.nomeFemininoCompleto);
+
+// Gerar nome completo do pai
+console.log(gerar.nomePai);
+
+// Gerar nome completo da mãe
+console.log(gerar.nomeMae);
+
 // Gerar apelido aleatório
-console.log(gerar.apelido());                      // Gera um objeto com todos os campos do endereço
+console.log(gerar.apelido);
 
 // Gerar CNH aleatória
-console.log(gerar.cnh());                         // Gera um número de CNH aleatório
-console.log(gerar.cnhCategoria());                // Gera uma categoria de CNH aleatória
-
-
+console.log(gerar.cnh);                         // Gera um número de CNH aleatório
+console.log(gerar.cnhCategoria);                // Gera uma categoria de CNH aleatória
 
 // Gerar CNPJ com opção para máscara:
 console.log(gerar.cnpj());                        // Gera CNPJ sem máscara
@@ -18,6 +40,16 @@ console.log(gerar.cpf());                         // Gera cpf sem mascara e de e
 console.log(gerar.cpf(true));                     // Gera CPF com máscara e de estado aleatório
 console.log(gerar.cpf(true, "RS"));               // Gera CPF com máscara e do estado informado
 console.log(gerar.cpf(false, "DF"));              // Gera CPF sem máscara e do estado informado
+
+// Gerar RG com opção para máscara:
+console.log(gerar.rg());                          // Gera RG sem máscara
+console.log(gerar.rg(true));                      // Gera RG com máscara
+
+// Gerar cor de pele aleatória
+console.log(gerar.corPele);
+
+// Gerar tipo sanguíneo aleatório
+console.log(gerar.tipoSanguineo);
 
 // Gerar endereço de estado aleatório:
 console.log(gerar.endereco);                      // Gera um objeto com todos os campos do endereço
@@ -30,6 +62,3 @@ console.log(gerar.enderecoFnc(true));             // Gera um objeto com todos os
 console.log(gerar.enderecoFnc(false));            // Gera um objeto com todos os campos do endereço, o CEP sem máscara e de estado aleatório
 console.log(gerar.enderecoFnc(true, "RJ"));       // Gera um objeto com todos os campos do endereço, o CEP com máscara e do estado informado
 console.log(gerar.enderecoFnc(false, "SP"));      // Gera um objeto com todos os campos do endereço, o CEP sem máscara e do estado informado
-
-// Gerar RG aleatório
-console.log(gerar.rg());                          // Gera um número de RG aleatório

@@ -1,23 +1,53 @@
 
-import { apelido } from "./src/generators/apelido.js"
+import * as utils from './src/utils.js';
 import { cnh } from "./src/generators/cnh.js"
-import { cnhCategoria } from "./src/generators/cnh-categoria.js"
 import { cnpj } from "./src/generators/cnpj.js"
 import { cpf } from "./src/generators/cpf.js"
-import { endereco, enderecoFnc } from "./src/generators/endereco.js"
 import { rg } from "./src/generators/rg.js"
+import { endereco, enderecoFnc } from "./src/generators/endereco.js"
+
+export const nomeMasculino = utils.nomeMasculinoRand,
+  nomeFeminino = utils.nomeFemininoRand,
+  nomeDoMeio = utils.nomeDoMeioRand,
+  sobrenome = utils.sobrenomeRand,
+  nomeMasculinoCompleto = `${nomeMasculino} ${nomeDoMeio} ${sobrenome}`,
+  nomeFemininoCompleto = `${nomeFeminino} ${nomeDoMeio} ${sobrenome}`,
+  nomePai = `${utils.nomePaiRand} ${nomeDoMeio} ${sobrenome}`,
+  nomeMae = `${utils.nomeMaeRand} ${nomeDoMeio} ${sobrenome}`,
+  apelido = utils.apelidoRand,
+  corPele = utils.corPeleRand,
+  tipoSanguineo = utils.tipoSanguineoRand,
+  orientacaoSexual = utils.orientacaoSexualRand,
+  identidadeGenero = utils.identidadeGeneroRand,
+  identidadePorOrientacao = utils.identidadePorOrientacaoRand,
+  provedorEmail = utils.provedorEmailRand,
+  cnhCategoria = utils.categoriaCnhRand;
 
 
-const gerar = {};
+
+const gerar = {
+  nomeMasculino,
+  nomeFeminino,
+  nomeDoMeio,
+  sobrenome,
+  nomeMasculinoCompleto,
+  nomeFemininoCompleto,
+  nomePai,
+  nomeMae,
+  apelido,
+  corPele,
+  tipoSanguineo,
+  orientacaoSexual,
+  identidadeGenero,
+  identidadePorOrientacao,
+  provedorEmail,
+  cnh,
+  cnhCategoria
+};
+
+console.log(gerar);
 
 
-/**
- * Gera um apelido aleatório.
- * @returns {string} O apelido gerado.
- * @example
- * console.log(apelido()); // "Ace", "Alpha", etc.
- */
-gerar.apelido = apelido;
 
 
 /**
@@ -26,18 +56,10 @@ gerar.apelido = apelido;
  * @returns {string} O número de CNH gerado.
  * @example
  * // CNH gerado
- * console.log(gerar.cnh()); // "123456789012"
+ * console.log(gerar.cnh); // "123456789012"
  */
 gerar.cnh = cnh;
 
-
-/**
- * Gera uma categoria de CNH aleatória.
- * @returns {string} A categoria de CNH.
- * @example
- * console.log(cnhCategoria()); // "ACC", "A", "B", "C", "D", "E","AB", "AC", "AD" ou "AE"
- */
-gerar.cnhCategoria = cnhCategoria;
 
 
 /**
@@ -156,4 +178,28 @@ gerar.enderecoFnc = enderecoFnc;
 gerar.rg = rg;
 
 
-export default gerar;
+export default {
+  gerar,
+  nomeMasculino,
+  nomeFeminino,
+  nomeDoMeio,
+  sobrenome,
+  nomeMasculinoCompleto,
+  nomeFemininoCompleto,
+  nomePai,
+  nomeMae,
+  apelido,
+  corPele,
+  tipoSanguineo,
+  orientacaoSexual,
+  identidadeGenero,
+  identidadePorOrientacao,
+  provedorEmail,
+  cnh,
+  cnhCategoria,
+  cnpj,
+  cpf,
+  rg,
+  endereco,
+  enderecoFnc,
+};
