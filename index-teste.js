@@ -89,3 +89,11 @@ console.log(gerar.enderecoFnc(true));             // Gera um objeto com todos os
 console.log(gerar.enderecoFnc(false));            // Gera um objeto com todos os campos do endereço, o CEP sem máscara e de estado aleatório
 console.log(gerar.enderecoFnc(true, "RJ"));       // Gera um objeto com todos os campos do endereço, o CEP com máscara e do estado informado
 console.log(gerar.enderecoFnc(false, "SP"));      // Gera um objeto com todos os campos do endereço, o CEP sem máscara e do estado informado
+
+// Gerar Placa Antiga:
+console.log(gerar.placaAntiga(true));              // Placa no formato antigo com máscara "ABC-1234"
+console.log(gerar.placaAntiga(false));             // Placa no formato antigo sem máscara "ABC1234"
+
+// Gerar Placa Mercosul:
+console.log(gerar.placaMercosul(true));            // Placa no formato Mercosul sem máscara "ABC1D23"
+console.log(gerar.placaMercosul(false));           // Placa no formato Mercosul com máscara "ABC-1D23"

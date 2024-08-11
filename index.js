@@ -10,6 +10,7 @@ import { tituloEleitor } from "./src/generators/titulo-eleitor.js"
 import { dataNascimento } from "./src/generators/data-nascimento.js"
 import { email } from "./src/generators/email.js"
 import { endereco, enderecoFnc } from "./src/generators/endereco.js"
+import { placaAntiga, placaMercosul } from "./src/generators/placa.js"
 
 const nomeMasculino = utils.nomeMasculinoRand,
   nomeFeminino = utils.nomeFemininoRand,
@@ -259,6 +260,35 @@ gerar.enderecoFnc = enderecoFnc;
 gerar.email = email;
 
 
+/**
+ * Gera uma placa de veículo aleatória no formato antigo (3 letras, 4 números).
+ *
+ * @param {boolean} [mask=false] - Se `true`, a placa será retornada com a máscara de formatação (XXX-9999). Se `false`, a placa será retornada apenas com os dígitos e letras.
+ * @returns {string} A placa de veículo gerada.
+ * @example
+ * // Placa com máscara
+ * console.log(gerar.placaAntiga(true)); // "ABC-1234"
+ *
+ * // Placa sem máscara
+ * console.log(gerar.placaAntiga(false)); // "ABC1234"
+ */
+gerar.placaAntiga = placaAntiga;
+
+
+/**
+ * Gera uma placa de veículo aleatória no formato Mercosul (3 letras, 1 número, 1 letra, 2 números).
+ *
+ * @param {boolean} [mask=false] - Se `true`, a placa será retornada com a máscara de formatação (XXX-9X99). Se `false`, a placa será retornada apenas com os dígitos e letras.
+ * @returns {string} A placa de veículo gerada.
+ * @example
+ * // Placa com máscara
+ * console.log(gerar.placaMercosul(true)); // "ABC-1D23"
+ *
+ * // Placa sem máscara
+ * console.log(gerar.placaMercosul(false)); // "ABC1D23"
+ */
+gerar.placaMercosul = placaMercosul;
+
 
 export default {
   gerar,
@@ -289,6 +319,8 @@ export default {
   passaporte,
   endereco,
   enderecoFnc,
-  email
+  email,
+  placaAntiga,
+  placaMercosul
 };
 
