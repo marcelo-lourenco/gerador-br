@@ -1,9 +1,9 @@
-
 import * as utils from './src/utils.js';
 import { cnh } from "./src/generators/cnh.js"
 import { cnpj } from "./src/generators/cnpj.js"
 import { cpf } from "./src/generators/cpf.js"
 import { rg } from "./src/generators/rg.js"
+import { tituloEleitor } from "./src/generators/titulo-eleitor.js"
 import { dataNascimento } from "./src/generators/data-nascimento.js"
 import { email } from "./src/generators/email.js"
 import { endereco, enderecoFnc } from "./src/generators/endereco.js"
@@ -26,7 +26,7 @@ const nomeMasculino = utils.nomeMasculinoRand,
   cnhCategoria = utils.categoriaCnhRand;
 
 
-  
+
 const gerar = {
   nomeMasculino,
   nomeFeminino,
@@ -81,7 +81,7 @@ gerar.cnpj = cnpj;
  * @param {string} [state] - A sigla do estado para determinar a origem do CPF. Se não fornecido, será escolhido um estado aleatório.
  * @returns {string} O CPF gerado.
  * @example
- * // CPF com máscara e do estado imformado
+ * // CPF com máscara e do estado informado
  * console.log(cpf(true, "PR")); // "123.456.789-09"
  *
  * // CPF sem máscara de formatação
@@ -91,6 +91,42 @@ gerar.cnpj = cnpj;
  * console.log(cpf(true)); // "987.654.321-00"
  */
 gerar.cpf = cpf;
+
+
+/**
+ * Gera um número de RG aleatório.
+ * @param {boolean} mask - Se `true`, o RG será retornado com a máscara de formatação (xx.xxx.xxx-x). Se `false`, o RG será retornado apenas com os dígitos.
+ * @returns {string} O RG gerado.
+ * @example
+ * // RG com máscara
+ * console.log(rg(true)); // "12.345.678-9"
+ *
+ * // RG sem máscara
+ * console.log(rg(false)); // "123456789"
+ */
+gerar.rg = rg;
+
+
+/**
+ * Gera um Título de Eleitor aleatório.
+ * @param {boolean} mask - Se `true`, o Título de Eleitor será retornado com a máscara de formatação (xxxx xxxx xxxx xxxx). Se `false`, será retornado apenas com os dígitos.
+ * @param {string} [state] - A sigla do estado para determinar a origem do Título de Eleitor. Se não fornecido, será escolhido um estado aleatório.
+ * @returns {string} O Título de Eleitor gerado.
+ * @example
+ *
+ * // Título de Eleitor sem máscara e do estado aleatório
+ * console.log(gerar.tituloEleitor()); // "123456789012"
+ *
+ * // Título de Eleitor com máscara e do estado aleatório
+ * console.log(gerar.tituloEleitor(true)); // "1234 5678 9012"
+ *
+  * // Título de Eleitor sem máscara e do estado informado
+ * console.log(gerar.tituloEleitor(false, 'ES')); // "123456789012"
+ *
+ * // Título de Eleitor com máscara e do estado informado
+ * console.log(gerar.tituloEleitor(true, 'PE')); // "1234 5678 9012"
+ */
+gerar.tituloEleitor = tituloEleitor;
 
 
 /**
@@ -164,19 +200,6 @@ gerar.enderecoFnc = enderecoFnc;
 
 
 /**
- * Gera um número de RG aleatório.
- * @param {boolean} mask - Se `true`, o RG será retornado com a máscara de formatação (xx.xxx.xxx-x). Se `false`, o RG será retornado apenas com os dígitos.
- * @returns {string} O RG gerado.
- * @example
- * // RG com máscara
- * console.log(rg(true)); // "12.345.678-9"
- *
- * // RG sem máscara
- * console.log(rg(false)); // "123456789"
- */
-gerar.rg = rg;
-
-/**
  * Gera um endereço de e-mail aleatório.
  *
  * O endereço de e-mail gerado pode ser baseado em um nome completo fornecido ou em um apelido aleatório.
@@ -194,7 +217,6 @@ gerar.rg = rg;
  * console.log(gerar.email(gerar.nomeFemininoCompleto)); // Pode retornar algo como "ana.borges@hotmail.com"
  */
 gerar.email = email;
-
 
 
 
@@ -221,6 +243,7 @@ export default {
   cnpj,
   cpf,
   rg,
+  tituloEleitor,
   endereco,
   enderecoFnc,
   email

@@ -56,6 +56,11 @@ console.log(gerar.cpf(false, "DF"));              // Gera CPF sem máscara e do 
 console.log(gerar.rg());                          // Gera RG sem máscara
 console.log(gerar.rg(true));                      // Gera RG com máscara
 
+console.log(gerar.tituloEleitor())                // Gerar Título de Eleitor sem máscara e de estado aleatório
+console.log(gerar.tituloEleitor(true))            // Gerar Título de Eleitor com máscara e de estado aleatório
+console.log(gerar.tituloEleitor(true,'SE'))       // Gerar Título de Eleitor sem máscara e de estado informado
+console.log(gerar.tituloEleitor(false,'PR'))      // Gerar Título de Eleitor com máscara e de estado informado
+
 // Gerar cor de pele aleatória
 console.log(gerar.corPele);
 
