@@ -5,9 +5,10 @@ import { cnpj } from "./src/generators/cnpj.js"
 import { cpf } from "./src/generators/cpf.js"
 import { rg } from "./src/generators/rg.js"
 import { dataNascimento } from "./src/generators/data-nascimento.js"
+import { email } from "./src/generators/email.js"
 import { endereco, enderecoFnc } from "./src/generators/endereco.js"
 
-export const nomeMasculino = utils.nomeMasculinoRand,
+const nomeMasculino = utils.nomeMasculinoRand,
   nomeFeminino = utils.nomeFemininoRand,
   nomeDoMeio = utils.nomeDoMeioRand,
   sobrenome = utils.sobrenomeRand,
@@ -25,7 +26,7 @@ export const nomeMasculino = utils.nomeMasculinoRand,
   cnhCategoria = utils.categoriaCnhRand;
 
 
-
+  
 const gerar = {
   nomeMasculino,
   nomeFeminino,
@@ -46,10 +47,6 @@ const gerar = {
   cnh,
   cnhCategoria
 };
-
-console.log(gerar);
-
-
 
 
 /**
@@ -179,6 +176,27 @@ gerar.enderecoFnc = enderecoFnc;
  */
 gerar.rg = rg;
 
+/**
+ * Gera um endereço de e-mail aleatório.
+ *
+ * O endereço de e-mail gerado pode ser baseado em um nome completo fornecido ou em um apelido aleatório.
+ *
+ * @param {string} [fullName] - O nome completo a ser usado para gerar o endereço de e-mail. Se não fornecido, um apelido aleatório será usado.
+ * @returns {string} O endereço de e-mail gerado.
+ * @example
+ * // Gera um endereço de e-mail com base em um apelido aleatório
+ * console.log(gerar.email()); // Pode retornar algo como "alpha@gmail.com"
+ *
+ * // Gera um endereço de e-mail com base no nome fornecido "Marcelo Lourenço"
+ * console.log(gerar.email("José Maria")); // Pode retornar algo como "jose.maria@ig.com"
+ *
+ * // Gera um endereço de e-mail com base no nome aleatório
+ * console.log(gerar.email(gerar.nomeFemininoCompleto)); // Pode retornar algo como "ana.borges@hotmail.com"
+ */
+gerar.email = email;
+
+
+
 
 export default {
   gerar,
@@ -205,4 +223,6 @@ export default {
   rg,
   endereco,
   enderecoFnc,
+  email
 };
+

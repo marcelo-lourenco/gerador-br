@@ -1,7 +1,7 @@
 import { describe, test } from 'node:test';
 import { strictEqual,ok } from 'node:assert';
 import * as utils from '../src/utils.js';
-import db from '../lib/db-general.js';
+import * as db from '../lib/db-general.js';
 
 
 describe('Utils', () => {

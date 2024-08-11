@@ -14,9 +14,12 @@ console.log(gerar.sobrenome);
 
 // Gerar nome masculino completo
 console.log(gerar.nomeMasculinoCompleto);
+const nomeMasculinoCompleto = gerar.nomeMasculinoCompleto;
 
 // Gerar nome feminino completo
 console.log(gerar.nomeFemininoCompleto);
+const nomeFemininoCompleto = gerar.nomeFemininoCompleto;
+
 
 // Gerar nome completo do pai
 console.log(gerar.nomePai);
@@ -29,6 +32,11 @@ console.log(gerar.apelido);
 
 // Gerar data de nascimento aleatória
 console.log(gerar.dataNascimento);
+
+// Gerar email aleatório
+console.log(gerar.email());
+console.log(gerar.email(nomeMasculinoCompleto));
+console.log(gerar.email(nomeFemininoCompleto));
 
 // Gerar CNH aleatória
 console.log(gerar.cnh);                         // Gera um número de CNH aleatório
