@@ -27,6 +27,9 @@ console.log(gerar.nomeMae);
 // Gerar apelido aleatório
 console.log(gerar.apelido);
 
+// Gerar data de nascimento aleatória
+console.log(gerar.dataNascimento);
+
 // Gerar CNH aleatória
 console.log(gerar.cnh);                         // Gera um número de CNH aleatório
 console.log(gerar.cnhCategoria);                // Gera uma categoria de CNH aleatória

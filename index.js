@@ -4,6 +4,7 @@ import { cnh } from "./src/generators/cnh.js"
 import { cnpj } from "./src/generators/cnpj.js"
 import { cpf } from "./src/generators/cpf.js"
 import { rg } from "./src/generators/rg.js"
+import { dataNascimento } from "./src/generators/data-nascimento.js"
 import { endereco, enderecoFnc } from "./src/generators/endereco.js"
 
 export const nomeMasculino = utils.nomeMasculinoRand,
@@ -35,6 +36,7 @@ const gerar = {
   nomePai,
   nomeMae,
   apelido,
+  dataNascimento,
   corPele,
   tipoSanguineo,
   orientacaoSexual,
@@ -189,6 +191,7 @@ export default {
   nomePai,
   nomeMae,
   apelido,
+  dataNascimento,
   corPele,
   tipoSanguineo,
   orientacaoSexual,
