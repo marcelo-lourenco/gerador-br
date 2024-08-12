@@ -3,20 +3,31 @@
   "version": "1.0.0",
   "description": "Gerador de Dados Fictícios - Brasil",
   "main": "index.js",
+  "module": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "author": "Marcelo Lourenço <qabi.dev@gmail.com>",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "node --test test"
   },
-  "author": "Marcelo Lourenço <qabi.dev@gmail.com>",
-  "license": "MIT",
-  "type": "module",
   "devDependencies": {
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2"
   },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcelo-lourenco/gerador-br.git"
+  },
+  "bugs": "https://github.com/marcelo-lourenco/gerador-br/issues",
+  "homepage": "https://github.com/marcelo-lourenco/gerador-br",
   "keywords": [
     "gerador",
     "dados",
