@@ -100,4 +100,4 @@ console.log(gerar.placaMercosul(true));           // Placa no formato Mercosul s
 console.log(gerar.placaMercosul(false));          // Placa no formato Mercosul com máscara "ABC-1D23"
 
 // Gerar RENAVAM
-console.log(gerar.renavan);
+console.log(gerar.renavam);

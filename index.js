@@ -11,7 +11,7 @@ import { dataNascimento } from "./src/generators/data-nascimento.js"
 import { email } from "./src/generators/email.js"
 import { endereco, enderecoFnc } from "./src/generators/endereco.js"
 import { placaAntiga, placaMercosul } from "./src/generators/placa.js"
-import { renavan } from './src/generators/renavam.js';
+import { renavam } from './src/generators/renavam.js';
 
 const nomeMasculino = utils.nomeMasculinoRand,
   nomeFeminino = utils.nomeFemininoRand,
@@ -296,7 +296,7 @@ gerar.placaMercosul = placaMercosul;
  * @returns {string} O número de RENAVAM gerado.
  * @example
  * // RENAVAM gerado
- * console.log(gerar.renavan); // "12345678901"
+ * console.log(gerar.renavam); // "12345678901"
  */
 
 
@@ -332,6 +332,6 @@ export default {
   email,
   placaAntiga,
   placaMercosul,
-  renavan
+  renavam
 };
 
