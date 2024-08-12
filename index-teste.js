@@ -97,3 +97,6 @@ console.log(gerar.placaAntiga(false));             // Placa no formato antigo se
 // Gerar Placa Mercosul:
 console.log(gerar.placaMercosul(true));            // Placa no formato Mercosul sem máscara "ABC1D23"
 console.log(gerar.placaMercosul(false));           // Placa no formato Mercosul com máscara "ABC-1D23"
+
+// Gerar RENAVAM:
+console.log(gerar.renavan);
