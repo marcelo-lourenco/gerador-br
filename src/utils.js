@@ -170,3 +170,5 @@ export const tipoSanguineoRand = getRandom(tiposSanguineo);
  * console.log(categoriaCnhRand); // Pode exibir qualquer categoria de CNH, como "A", "B", "C", etc.
  */
 export const categoriaCnhRand = getRandom(categoriasCnh);
+
+

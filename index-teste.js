@@ -43,13 +43,25 @@ console.log(gerar.apelido());
 console.log(gerar.dataNascimento());
 
 // Gerar e-mail aleatório
-console.log(gerar.email());                       // Gerar e-mail com nickname aleatório
+console.log(gerar.email());                       // Gera e-mail com nickname aleatório
 
 const nomeMasculinoCompleto =gerar.nome.masculinoCompleto();
-console.log(gerar.email(nomeMasculinoCompleto));  // Gerar e-mail com nome masculino
+console.log(gerar.email(nomeMasculinoCompleto));  // Gera e-mail com nome masculino
 
 const nomeFemininoCompleto = gerar.nome.femininoCompleto();
-console.log(gerar.email(nomeFemininoCompleto));   // gerar e-mail co nome feminino
+console.log(gerar.email(nomeFemininoCompleto));   // Gera e-mail co nome feminino
+
+// Gerar DDD aleatório
+console.log(gerar.ddd());                         // Gera DDD aleatório
+console.log(gerar.ddd("PA"))                      // Gera DDD aleatório do estado informado
+
+// Gerar código de operdora
+console.log(gerar.codigoOperadora("Claro"));      // Gera um código da Claro (968, 973, 974, 975, 976, 991, 992, 993 ou 994)
+console.log(gerar.codigoOperadora("Oi"));         // Gera um código da Oi (984, 985, 986, 987, 988 ou 989)
+console.log(gerar.codigoOperadora("Tim"));        // Gera um código da Tim (969, 979, 980, 981, 982 ou 983)
+console.log(gerar.codigoOperadora("Vivo"));       // Gera um código da Vivo (967, 971, 972, 995, 996, 997, 998 ou 999)
+console.log(gerar.codigoOperadora());             // Gera um código de uma operadora aleatória
+console.log(gerar.codigoOperadora("blablabla"));  // Gera um código de uma operadora aleatória
 
 // Gerar CNH aleatória
 console.log(gerar.cnh());
@@ -78,10 +90,10 @@ console.log(gerar.pis());                         // Gera PIS sem máscara
 console.log(gerar.pis(true));                     // Gera PIS com máscara
 
 // Gerar Título de Eleitor com opção para máscara:
-console.log(gerar.tituloEleitor());               // Gerar Título de Eleitor sem máscara e de estado aleatório
-console.log(gerar.tituloEleitor(true));           // Gerar Título de Eleitor com máscara e de estado aleatório
-console.log(gerar.tituloEleitor(true,'SE'));      // Gerar Título de Eleitor sem máscara e de estado informado
-console.log(gerar.tituloEleitor(false,'PR'));     // Gerar Título de Eleitor com máscara e de estado informado
+console.log(gerar.tituloEleitor());               // Gera Título de Eleitor sem máscara e de estado aleatório
+console.log(gerar.tituloEleitor(true));           // Gera Título de Eleitor com máscara e de estado aleatório
+console.log(gerar.tituloEleitor(true,'SE'));      // Gera Título de Eleitor sem máscara e de estado informado
+console.log(gerar.tituloEleitor(false,'PR'));     // Gera Título de Eleitor com máscara e de estado informado
 
 // Gerar Passaporte aleatórip
 console.log(gerar.passaporte());
@@ -105,12 +117,12 @@ console.log(gerar.enderecoFnc(true, "RJ"));       // Gera um objeto com todos os
 console.log(gerar.enderecoFnc(false, "SP"));      // Gera um objeto com todos os campos do endereço, o CEP sem máscara e do estado informado
 
 // Gerar Placa Antiga
-console.log(gerar.placaAntiga(true));             // Placa no formato antigo com máscara "ABC-1234"
-console.log(gerar.placaAntiga(false));            // Placa no formato antigo sem máscara "ABC1234"
+console.log(gerar.placaAntiga(true));             // Gera placa no formato antigo com máscara "ABC-1234"
+console.log(gerar.placaAntiga(false));            // Gera placa no formato antigo sem máscara "ABC1234"
 
 // Gerar Placa Mercosul
-console.log(gerar.placaMercosul(true));           // Placa no formato Mercosul sem máscara "ABC1D23"
-console.log(gerar.placaMercosul(false));          // Placa no formato Mercosul com máscara "ABC-1D23"
+console.log(gerar.placaMercosul(true));           // Gera placa no formato Mercosul sem máscara "ABC1D23"
+console.log(gerar.placaMercosul(false));          // Gera placa no formato Mercosul com máscara "ABC-1D23"
 
 // Gerar RENAVAM
 console.log(gerar.renavam());

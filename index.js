@@ -13,6 +13,10 @@ import { email } from "./src/generators/email.js"
 import { endereco, enderecoFnc } from "./src/generators/endereco.js"
 import { placaAntiga, placaMercosul } from "./src/generators/placa.js"
 import { renavam } from './src/generators/renavam.js';
+import { ddd } from './src/generators/ddd.js';
+import { codigoOperadora } from './src/generators/operadora.js';
+
+
 
 
 function apelido() {
@@ -316,6 +320,47 @@ gerar.enderecoFnc = enderecoFnc;
  */
 gerar.email = email;
 
+/**
+ * Gera um DDD aleatório para um estado brasileiro.
+ *
+ * @param {string} state - A sigla do estado (por exemplo, "SP", "RJ").
+ * @returns {number} O DDD aleatório para o estado fornecido.
+ * @example
+ * // DDD aleatório para São Paulo (SP)
+ * console.log(gerar.ddd("SP")); // Pode retornar 11, 12, 13, 14, 15, 16, 17, 18 ou 19
+ *
+ * // DDD aleatório para Rio de Janeiro (RJ)
+ * console.log(gerar.ddd("RJ")); // Pode retornar 21, 22 ou 24
+ */
+gerar.ddd = ddd;
+
+/**
+* Gera um código de operadora de celular aleatório.
+* ATENÇAO: DEVIDO A PORTABILIDADE, OS CÓDIGOS DE CELULARES REAIS PODEM NÃO PERTENCER MAIS A OPERADORA DE ORIGEM
+* A função pode gerar um código de operadora aleatório ou um código específico de uma operadora fornecida.
+*
+* @param {string} [name] - O nome da operadora (por exemplo, "Claro", "Oi", "Tim", "Vivo"). Se não fornecido, um código de operadora aleatório será gerado.
+* @returns {number} O código de operadora gerado.
+* @example
+* // Gera um código de operadora aleatório
+* console.log(gerar.codigoOperadora()); // Pode retornar 968, 973, 984, 969, 967, etc.
+*
+* // Gera um código da Claro
+* console.log(gerar.codigoOperadora("Claro")); // Pode retornar 968, 973, 974, 975, 976, 991, 992, 993 ou 994
+*
+* // Gera um código da Oi
+* console.log(gerar.codigoOperadora("Oi")); // Pode retornar 984, 985, 986, 987, 988 ou 989
+*
+* // Gera um código da Tim
+* console.log(gerar.codigoOperadora("Tim")); // Pode retornar 969, 979, 980, 981, 982 ou 983
+*
+* // Gera um código da Vivo
+* console.log(gerar.codigoOperadora("Vivo")); // Pode retornar 967, 971, 972, 995, 996, 997, 998 ou 999
+*
+* // Gera um código de operadora aleatória (mesmo se o nome da operadora não for válido)
+* console.log(gerar.codigoOperadora("blablabla")); // Pode retornar 968, 973, 984, 969, 967, etc.
+*/
+gerar.codigoOperadora = codigoOperadora;
 
 /**
  * Gera uma placa de veículo aleatória no formato antigo (3 letras, 4 números).
@@ -379,6 +424,8 @@ export default {
   endereco,
   enderecoFnc,
   email,
+  ddd,
+  codigoOperadora,
   placaAntiga,
   placaMercosul,
   renavam
