@@ -5,39 +5,26 @@ const getRandom = arr => arr[Math.floor(Math.random() * arr.length)];
 
 /**
  * Gera um endereço aleatório.
- * @param {boolean} [mask=false] - Indica se o CEP deve ser mascarado.
- * @param {string} state - A sigla do estado para filtrar os endereços.
- * @returns {Object} Um objeto contendo os detalhes do endereço.
- * @returns {string} return.cep - O CEP do endereço.
- * @returns {string} return.logradouro - O logradouro do endereço.
- * @returns {number} return.numero - O número aleatório do endereço.
- * @returns {string} return.complemento - O complemento do endereço.
- * @returns {string} return.bairro - O bairro do endereço.
- * @returns {string} return.localidade - A localidade do endereço.
- * @returns {string} return.estado - A sigla do estado do endereço.
- * @example
- * const endereco = address(true, "SP");
- * console.log(endereco);
- * // {
- * //   cep: "12345-678",
- * //   logradouro: "Rua Exemplo",
- * //   numero: 123,
- * //   complemento: "Apto 101",
- * //   bairro: "Centro",
- * //   localidade: "São Paulo",
- * //   estado: "SP"
- * // }
  *
- * @example
- * const endereco = address(true, "RJ");
- * console.log(endereco.cep);
- * // 21362-100
+ * O endereço gerado pode ser formatado com máscara (xxxxx-xxx) ou apenas com os dígitos.
  *
+ * @param {boolean} [mask=false] - Se `true`, o CEP será retornado com a máscara de formatação (xxxxx-xxx). Se `false`, o CEP será retornado apenas com os dígitos.
+ * @param {string} [state] - A sigla do estado para filtrar os CEPs. Se não fornecido, um CEP de qualquer estado será gerado.
+ * @returns {object} O endereço gerado.
  * @example
- * console.log(endereco.logradouro);
- * // Travessa da Prata do Sossego
+ * // Endereço sem máscara
+ * console.log(endereco()); // { cep: '12345678', logradouro: 'Rua dos Pinheiros', numero: 123, complemento: 'Apto 101', bairro: 'Jardim Paulista', localidade: 'São Paulo', estado: 'SP' }
+ *
+ * // Endereço com máscara
+ * console.log(endereco(true)); // { cep: '12345-678', logradouro: 'Rua dos Pinheiros', numero: 123, complemento: 'Apto 101', bairro: 'Jardim Paulista', localidade: 'São Paulo', estado: 'SP' }
+ *
+ * // Endereço de São Paulo (SP) sem máscara
+ * console.log(endereco(false, "SP")); // { cep: '01001000', logradouro: 'Rua da Consolação', numero: 123, complemento: 'Apto 101', bairro: 'Consolação', localidade: 'São Paulo', estado: 'SP' }
+ *
+ * // Endereço de São Paulo (SP) com máscara
+ * console.log(endereco(true, "SP")); // { cep: '01001-000', logradouro: 'Rua da Consolação', numero: 123, complemento: 'Apto 101', bairro: 'Consolação', localidade: 'São Paulo', estado: 'SP' }
  */
-export const enderecoFnc = function (mask = false, state) {
+export function endereco(mask = false, state) {
   const uf = state ? state : stateRand;
   const fullAddress = uf ? dbCep.filter(enderecos => enderecos.uf === uf) : dbCep;
   const sortAddress = getRandom(fullAddress);
@@ -51,27 +38,3 @@ export const enderecoFnc = function (mask = false, state) {
   address.estado = sortAddress.uf;
   return address;
 }
-
-/**
- * Um endereço aleatório gerado com CEP mascarado e filtrado pelo estado de São Paulo (SP).
- * @type {Object}
- * @property {string} cep - Retorna o CEP.
- * @property {string} logradouro -Retorna o logradouro.
- * @property {number} numero - Retorna o número aleatório.
- * @property {string} complemento - Retorna o complemento (caso exista).
- * @property {string} bairro - Retorna o bairro.
- * @property {string} localidade - Retorna o localidade (cidade/municipio/distrito/zona/região administrativa).
- * @property {string} estado - A sigla do estado.
- * @example
- * console.log(endereco);
- * // {
- * //   cep: "12345-678",
- * //   logradouro: "Rua Exemplo",
- * //   numero: 123,
- * //   complemento: "Apto 101",
- * //   bairro: "Centro",
- * //   localidade: "São Paulo",
- * //   estado: "SP"
- * // }
- */
-export const endereco = enderecoFnc(false, stateRand);

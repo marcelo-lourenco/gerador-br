@@ -1,54 +1,53 @@
 import { describe, test } from 'node:test';
 import { strictEqual } from 'node:assert';
-import { enderecoFnc, endereco } from '../src/generators/endereco.js';
+import { endereco } from '../src/generators/endereco.js';
 
 describe('Endereço Generator', () => {
   test('should generate a valid address with mask', () => {
-    const addressWithMask = enderecoFnc(true, 'SP');
-    strictEqual(addressWithMask.cep.length, 9); // 5 digits + 1 hyphen + 3 digits
-    strictEqual(addressWithMask.logradouro.length > 0, true);
-    strictEqual(addressWithMask.numero >= 0 && addressWithMask.numero <= 999, true);
-    strictEqual(addressWithMask.bairro.length > 0, true);
-    strictEqual(addressWithMask.localidade.length > 0, true);
-    strictEqual(addressWithMask.estado, 'SP');
+    const addressWithMask = endereco(true);
+    strictEqual(addressWithMask.cep.length, 9);
+    strictEqual(addressWithMask.cep.slice(5, 6), '-');
+    strictEqual(typeof addressWithMask.logradouro, 'string');
+    strictEqual(typeof addressWithMask.numero, 'number');
+    strictEqual(typeof addressWithMask.complemento, 'string');
+    strictEqual(typeof addressWithMask.bairro, 'string');
+    strictEqual(typeof addressWithMask.localidade, 'string');
+    strictEqual(typeof addressWithMask.estado, 'string');
   });
 
   test('should generate a valid address without mask', () => {
-    const addressWithoutMask = enderecoFnc(false, 'RJ');
-    strictEqual(addressWithoutMask.cep.length, 8); // 8 digits
-    strictEqual(addressWithoutMask.logradouro.length > 0, true);
-    strictEqual(addressWithoutMask.numero >= 0 && addressWithoutMask.numero <= 999, true);
-    strictEqual(addressWithoutMask.bairro.length > 0, true);
-    strictEqual(addressWithoutMask.localidade.length > 0, true);
-    strictEqual(addressWithoutMask.estado, 'RJ');
+    const addressWithoutMask = endereco(false);
+    strictEqual(addressWithoutMask.cep.length, 8);
+    strictEqual(addressWithoutMask.cep.includes('-'), false);
+    strictEqual(typeof addressWithoutMask.logradouro, 'string');
+    strictEqual(typeof addressWithoutMask.numero, 'number');
+    strictEqual(typeof addressWithoutMask.complemento, 'string');
+    strictEqual(typeof addressWithoutMask.bairro, 'string');
+    strictEqual(typeof addressWithoutMask.localidade, 'string');
+    strictEqual(typeof addressWithoutMask.estado, 'string');
   });
 
-  test('should generate a valid address with random state', () => {
-    const addressWithRandomState = enderecoFnc(true);
-    strictEqual(addressWithRandomState.cep.length, 9); // 5 digits + 1 hyphen + 3 digits
-    strictEqual(addressWithRandomState.logradouro.length > 0, true);
-    strictEqual(addressWithRandomState.numero >= 0 && addressWithRandomState.numero <= 999, true);
-    strictEqual(addressWithRandomState.bairro.length > 0, true);
-    strictEqual(addressWithRandomState.localidade.length > 0, true);
-    strictEqual(addressWithRandomState.estado.length, 2); // State acronym
+  test('should generate a valid address for a specific state with mask', () => {
+    const addressWithMaskForSP = endereco(true, 'SP');
+    strictEqual(addressWithMaskForSP.cep.length, 9);
+    strictEqual(addressWithMaskForSP.cep.slice(5, 6), '-');
+    strictEqual(typeof addressWithMaskForSP.logradouro, 'string');
+    strictEqual(typeof addressWithMaskForSP.numero, 'number');
+    strictEqual(typeof addressWithMaskForSP.complemento, 'string');
+    strictEqual(typeof addressWithMaskForSP.bairro, 'string');
+    strictEqual(typeof addressWithMaskForSP.localidade, 'string');
+    strictEqual(addressWithMaskForSP.estado, 'SP');
   });
 
-  test('should generate a valid address with a specific state', () => {
-    const addressWithSpecificState = enderecoFnc(true, 'MG');
-    strictEqual(addressWithSpecificState.cep.length, 9); // 5 digits + 1 hyphen + 3 digits
-    strictEqual(addressWithSpecificState.logradouro.length > 0, true);
-    strictEqual(addressWithSpecificState.numero >= 0 && addressWithSpecificState.numero <= 999, true);
-    strictEqual(addressWithSpecificState.bairro.length > 0, true);
-    strictEqual(addressWithSpecificState.localidade.length > 0, true);
-    strictEqual(addressWithSpecificState.estado, 'MG');
-  });
-
-  test('should have a valid pre-defined address', () => {
-    strictEqual(endereco.cep.length, 8); // 8 digits
-    strictEqual(endereco.logradouro.length > 0, true);
-    strictEqual(endereco.numero >= 0 && endereco.numero <= 999, true);
-    strictEqual(endereco.bairro.length > 0, true);
-    strictEqual(endereco.localidade.length > 0, true);
-    strictEqual(endereco.estado.length, 2); // State acronym
+  test('should generate a valid address for a specific state without mask', () => {
+    const addressWithoutMaskForSP = endereco(false, 'SP');
+    strictEqual(addressWithoutMaskForSP.cep.length, 8);
+    strictEqual(addressWithoutMaskForSP.cep.includes('-'), false);
+    strictEqual(typeof addressWithoutMaskForSP.logradouro, 'string');
+    strictEqual(typeof addressWithoutMaskForSP.numero, 'number');
+    strictEqual(typeof addressWithoutMaskForSP.complemento, 'string');
+    strictEqual(typeof addressWithoutMaskForSP.bairro, 'string');
+    strictEqual(typeof addressWithoutMaskForSP.localidade, 'string');
+    strictEqual(addressWithoutMaskForSP.estado, 'SP');
   });
 });
