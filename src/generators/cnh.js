@@ -38,12 +38,10 @@ function calcDV(cnhNum) {
  * @returns {string} O número de CNH gerado.
  * @example
  * // CNH gerado
- * console.log(cnh); // "123456789012"
+ * console.log(cnh()); // "123456789012"
  */
-function cnhFn() {
+export function cnh() {
   const cnhNum = String(Math.floor(Math.random() * 900000000) + 100000000);
   const cnhDv = calcDV(cnhNum);
   return `${cnhNum}${cnhDv}`;
 }
-
-export const cnh = cnhFn();

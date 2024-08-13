@@ -44,6 +44,14 @@ export const mask = false;
 export const stateRand = getRandom(siglasEstados);
 
 /**
+ * Um nome aleatório.
+ * @type {string}
+ * @example
+ * console.log(nomeAleatorio); // Pode exibir qualquer nome masculino ou feminino.
+ */
+export const nomeAleatorioRand =  getRandom([...nomesFemininos, ...nomesMasculinos]);
+
+/**
  * Um nome masculino aleatório.
  * @type {string}
  * @example

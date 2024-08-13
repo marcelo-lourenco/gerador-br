@@ -1,4 +1,5 @@
 import * as utils from './src/utils.js';
+import { nome } from "./src/generators/nome.js"
 import { cnh } from "./src/generators/cnh.js"
 import { cnpj } from "./src/generators/cnpj.js"
 import { cpf } from "./src/generators/cpf.js"
@@ -13,54 +14,98 @@ import { endereco, enderecoFnc } from "./src/generators/endereco.js"
 import { placaAntiga, placaMercosul } from "./src/generators/placa.js"
 import { renavam } from './src/generators/renavam.js';
 
-const nomeMasculino = utils.nomeMasculinoRand,
-  nomeFeminino = utils.nomeFemininoRand,
-  nomeDoMeio = utils.nomeDoMeioRand,
-  sobrenome = utils.sobrenomeRand,
-  nomeMasculinoCompleto = `${nomeMasculino} ${nomeDoMeio} ${sobrenome}`,
-  nomeFemininoCompleto = `${nomeFeminino} ${nomeDoMeio} ${sobrenome}`,
-  nomePai = `${utils.nomePaiRand} ${nomeDoMeio} ${sobrenome}`,
-  nomeMae = `${utils.nomeMaeRand} ${nomeDoMeio} ${sobrenome}`,
-  apelido = utils.apelidoRand,
-  corPele = utils.corPeleRand,
-  tipoSanguineo = utils.tipoSanguineoRand,
-  orientacaoSexual = utils.orientacaoSexualRand,
-  identidadeGenero = utils.identidadeGeneroRand,
-  identidadePorOrientacao = utils.identidadePorOrientacaoRand,
-  provedorEmail = utils.provedorEmailRand,
-  cnhCategoria = utils.categoriaCnhRand;
+
+function apelido() {
+  return utils.apelidoRand
+}
+
+function corPele() {
+  return utils.corPeleRand
+}
+function tipoSanguineo() {
+  return utils.tipoSanguineoRand
+}
+function orientacaoSexual() {
+  return utils.orientacaoSexualRand
+}
+function identidadeGenero() {
+  return utils.identidadeGeneroRand
+}
+function identidadePorOrientacao() {
+  return utils.identidadePorOrientacaoRand
+}
+function provedorEmail() {
+  return utils.provedorEmailRand
+}
+function cnhCategoria() {
+  return utils.categoriaCnhRand
+}
 
 
 
 const gerar = {
-  nomeMasculino,
-  nomeFeminino,
-  nomeDoMeio,
-  sobrenome,
-  nomeMasculinoCompleto,
-  nomeFemininoCompleto,
-  nomePai,
-  nomeMae,
-  apelido,
-  dataNascimento,
-  corPele,
-  tipoSanguineo,
-  orientacaoSexual,
-  identidadeGenero,
-  identidadePorOrientacao,
-  provedorEmail,
-  cnh,
-  cnhCategoria
+  apelido: apelido(),
+  corPele: corPele(),
+  tipoSanguineo: tipoSanguineo(),
+  orientacaoSexual: orientacaoSexual(),
+  identidadeGenero: identidadeGenero(),
+  identidadePorOrientacao: identidadePorOrientacao(),
+  provedorEmail: provedorEmail(),
+  cnhCategoria: cnhCategoria(),
 };
+
+/**
+ * Gera nomes aleatórios.
+ *
+ * Este objeto fornece métodos para gerar nomes masculinos, femininos, completos, de mães e pais,
+ * nomes do meio e sobrenomes.
+ *
+ * @example
+ * // Gerar um nome aleatório
+ * console.log(gerar.nome.aleatorio()); // Ex: "João", "Maria"
+ *
+ * // Gerar um nome aleatório completo
+ * console.log(gerar.nome.aleatorio()); // Ex: "João Santos da Silva", "Maria Santos da Silva"
+ *
+ * // Gerar um nome masculino aleatório
+ * console.log(gerar.nome.masculino()); // Ex: "João"
+ *
+ * // Gerar um nome masculino completo aleatório
+ * console.log(gerar.nome.masculinoCompleto()); // Ex: "João Sousa da Silva"
+ *
+ * // Gerar um nome feminino aleatório
+ * console.log(gerar.nome.feminino()); // Ex: "Maria"
+ *
+ * // Gerar um nome feminino completo aleatório
+ * console.log(gerar.nome.femininoCompleto()); // Ex: "Maria Sousa da Silva"
+ *
+ * // Gerar o nome da mãe aleatório
+ * console.log(gerar.nome.mae()); // Ex: "Ana"
+ *
+ * // Gerar o nome completo da mãe aleatório
+ * console.log(gerar.nome.maeCompleto()); // Ex: "Ana Sousa da Silva"
+ *
+ * // Gerar o nome do pai aleatório
+ * console.log(gerar.nome.pai()); // Ex: "José"
+ *
+ * // Gerar o nome completo do pai aleatório
+ * console.log(gerar.nome.paiCompleto()); // Ex: "José Sousa da Silva"
+ *
+ * // Gerar um nome do meio aleatório
+ * console.log(gerar.nome.doMeio()); // Ex: "Sousa"
+ *
+ * // Gerar um sobrenome aleatório
+ * console.log(gerar.nome.sobrenome()); // Ex: "da Silva"
+ */
+gerar.nome = nome;
 
 
 /**
  * Gera um número de CNH aleatório.
- *
  * @returns {string} O número de CNH gerado.
  * @example
  * // CNH gerado
- * console.log(gerar.cnh); // "123456789012"
+ * console.log(gerar.cnh()); // "123456789012"
  */
 gerar.cnh = cnh;
 
@@ -145,7 +190,6 @@ gerar.pis = pis;
  * @param {string} [state] - A sigla do estado para determinar a origem do Título de Eleitor. Se não fornecido, será escolhido um estado aleatório.
  * @returns {string} O Título de Eleitor gerado.
  * @example
- *
  * // Título de Eleitor sem máscara e do estado aleatório
  * console.log(gerar.tituloEleitor()); // "123456789012"
  *
@@ -167,9 +211,21 @@ gerar.tituloEleitor = tituloEleitor;
  * @returns {string} O número de Passaporte gerado.
  * @example
  * // Passaporte gerado
- * console.log(gerar.passaporte); // "AB1234567"
+ * console.log(gerar.passaporte()); // "AB1234567"
  */
 gerar.passaporte = passaporte;
+
+
+/**
+ * Gera uma data de nascimento aleatória.
+ * A data de nascimento gerada será entre 18 e 80 anos atrás da data atual.
+ * @returns {string} A data de nascimento gerada no formato DD/MM/AAAA.
+ * @example
+ * // Data de nascimento gerada
+ * console.log(gerar.dataNascimento()); // "20/03/1980"
+ */
+gerar.dataNascimento = dataNascimento;
+
 
 /**
  * Gera um endereço aleatório com CEP mascarado.
@@ -302,14 +358,7 @@ gerar.placaMercosul = placaMercosul;
 
 export default {
   gerar,
-  nomeMasculino,
-  nomeFeminino,
-  nomeDoMeio,
-  sobrenome,
-  nomeMasculinoCompleto,
-  nomeFemininoCompleto,
-  nomePai,
-  nomeMae,
+  nome,
   apelido,
   dataNascimento,
   corPele,
