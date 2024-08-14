@@ -268,4 +268,4 @@ Muito útil para prencher automaticamente os campos de formulários em os testes
 
 ---
 
-[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file) • [Segurança](https://github.com/marcelo-lourenco/gerador-br?tab=security-ov-file) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/changelog.md)
+[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br?tab=security-ov-file#readme) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CHANGELOG.md)

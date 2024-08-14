@@ -45,5 +45,3 @@ export function cns(mask) {
     return mask ? cnsGen : cnsGen.replace(/\D/g, '');
   }
 }
-
-console.log(cns(true))

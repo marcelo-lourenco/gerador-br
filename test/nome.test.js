@@ -2,8 +2,6 @@ import { describe, test } from 'node:test';
 import { strictEqual } from 'node:assert';
 import { nome } from '../src/generators/nome.js';
 
-console.log(nome.aleatorio());
-
 describe('Nome Generator', () => {
   test('should generate a random name', () => {
     const name = nome.aleatorio();

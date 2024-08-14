@@ -42,4 +42,4 @@ Líderes da comunidade que não seguem ou aplicam o Código de Conduta de boa f�
 
 ## Atribuição
 
-Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contributor-covenant.org), versão 2.1, disponível em [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html]().
+Este Código de Conduta é adaptado do [Contributor Covenant](https://www.contributor-covenant.org), versão 2.1, disponível em [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html](https://www.contributor-covenant.org/version/2/1/code_of_conduct.html).

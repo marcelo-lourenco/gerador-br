@@ -26,8 +26,6 @@ describe('RG Generator', () => {
     const sum = rgNumber.split('').reduce((acc, digit, index) => acc + digit * (index + 2), 0);
     let expectedCheckDigit = 11 - (sum % 11);
 
-
-
     if (expectedCheckDigit === 11) {
       console.log("expectedCheckDigit11",expectedCheckDigit);
       expectedCheckDigit = 0; // Handle case where expectedCheckDigit is 11
