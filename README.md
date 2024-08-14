@@ -2,7 +2,7 @@
 
 Gere dados fictício, mas válidos, para testes e desenvolvimento.
 
-Ideal para testes automatizados com **Mocha**, **Chai**, **Jest**,  **jasmine**, **Sinon**, **Supertest**, **Nock**, **Cypress**, **Puppeteer**, **Enzyme** e **Node.js Test Runner**
+Ideal para testes automatizados com **Mocha**, **Chai**, **Jest**,  **Jasmine**, **Sinon**, **Supertest**, **Nock**, **Cypress**, **Puppeteer**, **Enzyme** e **Node.js Test Runner**
 
 O pacote fornece uma coleção de funções para gerar dados brasilerios aleatórios, como:
 
@@ -263,5 +263,9 @@ console.log(gerar.renavam());
 
 ## Extenção Chrome - Gerador de Dados Fictícios
 
-Todos esses funções foram utilizadas na extenção [Gerador de Dados Ficticios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam).
+Todas essas funções foram utilizadas na extenção [Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam).
 Muito útil para prencher automaticamente os campos de formulários em os testes manuais.
+
+---
+
+[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file) • [Segurança](https://github.com/marcelo-lourenco/gerador-br?tab=security-ov-file) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/changelog.md)

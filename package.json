@@ -1,7 +1,7 @@
 {
   "name": "gerador-br",
-  "version": "1.0.0",
-  "description": "Gerador de Dados Fictícios - Brasil",
+  "version": "1.0.1",
+  "description": " Gerador de Dados Fictícios - Brasil",
   "main": "index.js",
   "module": "index.js",
   "type": "module",
