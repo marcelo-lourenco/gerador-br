@@ -105,6 +105,33 @@ console.log(gerar.tituloEleitor(false,'PR'));
 console.log(gerar.passaporte());
 
 
+/* ******************** CARTÃO DE CRÉDITO *************** */
+
+// Gera objeto cartaoCredito com as propriedades:
+//   numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
+console.log(gerar.cartaoCredito());
+
+// Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
+const cc = gerar.cartaoCredito();
+console.log(cc.numero);
+console.log(cc.bandeira);
+console.log(cc.cvv);
+console.log(cc.dataExpiracao);
+console.log(cc.nomeTitular);
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+console.log(gerar.cartaoCredito(true, "João Santos da Silva"));
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+console.log(gerar.cartaoCredito(false, "Maria Aparecida Reis"));
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular gerado (abreviado)
+console.log(gerar.cartaoCredito(true, gerar.nome.femininoCompleto()));
+
+
 /* ******************** NOME **************************** */
 // Gera um nome aleatório (apenas o primeiro nome - feminino ou masculino)
 console.log(gerar.nome.aleatorio());
@@ -268,4 +295,4 @@ Muito útil para prencher automaticamente os campos de formulários em os testes
 
 ---
 
-[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/changelog.md)
+[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/changelog.md) • [Forum](https://github.com/marcelo-lourenco/gerador-br/discussions) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/changelog.md)

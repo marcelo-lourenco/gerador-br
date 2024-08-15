@@ -55,8 +55,35 @@ console.log(gerar.tituloEleitor(true,'SE'));
 // Gera Título de Eleitor com máscara e de estado informado
 console.log(gerar.tituloEleitor(false,'PR'));
 
-// Gerar Passaporte aleatório
+// Gera Passaporte aleatório
 console.log(gerar.passaporte());
+
+
+/* ******************** CARTÃO DE CREDITO *************** */
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
+console.log(gerar.cartaoCredito());
+
+// Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
+const cc = gerar.cartaoCredito();
+console.log(cc.numero);
+console.log(cc.bandeira);
+console.log(cc.cvv);
+console.log(cc.dataExpiracao);
+console.log(cc.nomeTitular);
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+console.log(gerar.cartaoCredito(true, "João Santos da Silva"));
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+console.log(gerar.cartaoCredito(false, "Maria Aparecida Reis"));
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular gerado (abreviado)
+console.log(gerar.cartaoCredito(true, gerar.nome.femininoCompleto()));
 
 
 /* ******************** NOME **************************** */
@@ -110,7 +137,7 @@ console.log(gerar.dataNascimento());
 console.log(gerar.email());
 
 // Gera e-mail com nome masculino
-const nomeMasculinoCompleto =gerar.nome.masculinoCompleto();
+const nomeMasculinoCompleto = gerar.nome.masculinoCompleto();
 console.log(gerar.email(nomeMasculinoCompleto));
 
 // Gera e-mail com nome feminino

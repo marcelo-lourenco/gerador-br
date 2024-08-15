@@ -6,6 +6,10 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ## 1.0.2 (2024-XX-XX)
 
+### Adiciona Funcionalidades
+
+* Gerador de Cartão de Crédito
+
 ### Adiciona Arquivos
 
 * CHANGELOG.md

@@ -1,5 +1,6 @@
 import * as utils from './src/utils.js';
 import { nome } from "./src/generators/nome.js"
+import { cartaoCredito } from './src/generators/cartao-credito.js';
 import { cnh } from "./src/generators/cnh.js"
 import { cnpj } from "./src/generators/cnpj.js"
 import { cpf } from "./src/generators/cpf.js"
@@ -103,6 +104,50 @@ const gerar = {
  * console.log(gerar.nome.sobrenome()); // Ex: "da Silva"
  */
 gerar.nome = nome;
+
+/**
+ * Gera Cartão de Crédito aleatório.
+ * Este objeto fornece métodos para gerar número de Cartão de Crédito, Bandeira, CVV, Data De Expiração e Nome do Titular.
+ * @param {boolean} [mask=false] - Se `true`, o número do cartão será retornado com a máscara de formatação (xxxx xxxx xxxx xxxx). Se `false`, o número do cartão será retornado apenas com os dígitos.
+ * @param {string} - Nome completo do titula
+ * @returns {object} Um objeto contendo o número do cartão, a bandeira, o CVV e a data de expiração e o nome do titular
+ *
+ * @example
+ * // Gera objeto cartaoCredito com as propriedades: numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
+ * console.log(gerar.cartaoCredito());
+ * // =>
+ *    {
+ *      numero: '6547178146357745',
+ *      bandeira: 'mastercard',
+ *      cvv: '532',
+ *      dataExpiracao: '12/07/2028',
+ *      nomeTitular: 'BRENDA B LIMA'
+ *    }
+ *
+ * // Gera objeto cartaoCredito com as propriedades: numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+ * console.log(gerar.cartaoCredito(true, "João Santos da Silva"));
+ * // =>
+ *    {
+ *      numero: '5534 5523 6833 6867',
+ *      bandeira: 'visa',
+ *      cvv: '866',
+ *      dataExpiracao: '25/07/2033',
+ *      nomeTitular: 'JOÃO S SILVA'
+ *    }
+ *
+ * // Gera objeto cartaoCredito com as propriedades: numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+ * console.log(gerar.cartaoCredito(false, "Maria Aparecida Reis"));
+ * // =>
+ *    {
+ *      numero: '5534552368336867',
+ *      bandeira: 'visa',
+ *      cvv: '866',
+ *      dataExpiracao: '25/07/2033',
+ *      nomeTitular: 'MARIA A REIS'
+ *    }
+ *
+ */
+gerar.cartaoCredito = cartaoCredito();
 
 
 /**
@@ -382,6 +427,7 @@ gerar.placaMercosul = placaMercosul;
 export default {
   gerar,
   nome,
+  cartaoCredito,
   apelido,
   dataNascimento,
   corPele,
