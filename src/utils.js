@@ -13,7 +13,7 @@ import {
   corPele,
   tiposSanguineo,
   categoriasCnh,
-} from '../lib/db-general.js';
+} from '../data/db-general.js';
 
 
 /**

@@ -1,4 +1,4 @@
-import dbCep from '../../lib/db-ceps.js';
+import dbCep from '../../data/db-ceps.js';
 import { stateRand } from '../utils.js';
 
 const getRandom = arr => arr[Math.floor(Math.random() * arr.length)];

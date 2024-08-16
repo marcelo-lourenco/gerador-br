@@ -18,7 +18,7 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 ## Instalação
 
 ```bash
-npm install gerador-br
+npm install --save-dev gerador-br
 ```
 
 ## Uso
