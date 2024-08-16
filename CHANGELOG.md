@@ -4,11 +4,13 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
-## 1.0.2 (2024-XX-XX)
+## 1.0.2 (2024-08-15)
 
 ### Adiciona Funcionalidades
 
 * Gerador de Cartão de Crédito
+* Gerador de Celular
+* Gerador de Telefone
 
 ### Adiciona Arquivos
 
@@ -49,7 +51,7 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 * Gerador de Gênero
 * Gerador de Endereço
 * Gerador de E-mail
-* Gerador de data de Nascimento
+* Gerador de Data de Nascimento
 * Gerador de RENAVAM
 * Gerador de Placa veicular
 

@@ -1,19 +1,19 @@
 # Gerador de Dados Fictícios - Brasil
 
-Gere dados fictício, mas válidos, para testes e desenvolvimento.
+Gere dados fictícios, mas válidos, para testes e desenvolvimento.
 
 Ideal para testes automatizados com **Mocha**, **Chai**, **Jest**,  **Jasmine**, **Sinon**, **Supertest**, **Nock**, **Cypress**, **Puppeteer**, **Enzyme** e **Node.js Test Runner**
 
-O pacote fornece uma coleção de funções para gerar dados brasilerios aleatórios, como:
+O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* **Gerador de Documento**: CPF, RG, CNH, Título de Eleitor, PIS, CNS, Passaporte,
+* **Gerador de Documento**: CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
 * **Gerador de Pessoa**: Nome, Nickname, Data de Nascimento, Cor, Orientação Sexual, Identidade de Gênero e Tipo Sanguíneo;
 * **Gerador de Empresa**: CNPJ, Inscrição Estadual;
-* **Gerador de Endereço**: Cep, Logradouro, Número, Bairro, Localidade e Estado;
-* **Gerador de Contato**: E-mail, DDD, Celular e Telefone;
+* **Gerador de Endereço**: CEO, Logradouro, Número, Bairro, Localidade e Estado;
+* **Gerador de Contato**: E-mail, DDD, Operadora,Celular e Telefone;
 * **Gerador de Conta Bancária**: Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
 * **Gerador de Cartão de Crédito**: Número, Bandeira, CVV e Validade;
-* **Gerador de Veículo**: Placa Antiga, Placa Mercosul e Renavam;
+* **Gerador de Veículo**: Placa Antiga, Placa Mercosul e RENAVAM;
 
 ## Instalação
 
@@ -59,7 +59,7 @@ console.log(gerar.cnpj());
 // Gera CNPJ com máscara
 console.log(gerar.cnpj(true));
 
-// Gera CPF sem mascara e de estado aleatório
+// Gera CPF sem máscara e de estado aleatório
 console.log(gerar.cpf());
 
 // Gera CPF com máscara e de estado aleatório
@@ -77,10 +77,10 @@ console.log(gerar.rg());
 // Gera RG com máscara
 console.log(gerar.rg(true));
 
-// Gera CNS (Cartão Cacional Saúde) sem máscara
+// Gera CNS (Cartão Nacional Saúde) sem máscara
 console.log(gerar.cns());
 
-// Gera CNS (Cartão Cacional Saúde) com máscara
+// Gera CNS (Cartão Nacional Saúde) com máscara
 console.log(gerar.cns(true));
 
 // Gera PIS sem máscara
@@ -101,7 +101,7 @@ console.log(gerar.tituloEleitor(true,'SE'));
 // Gera Título de Eleitor com máscara e de estado informado
 console.log(gerar.tituloEleitor(false,'PR'));
 
-// Gerar Passaporte aleatório
+// Gera Passaporte aleatório
 console.log(gerar.passaporte());
 
 
@@ -136,7 +136,7 @@ console.log(gerar.cartaoCredito(true, gerar.nome.femininoCompleto()));
 // Gera um nome aleatório (apenas o primeiro nome - feminino ou masculino)
 console.log(gerar.nome.aleatorio());
 
-// Gera um nome aleatório completo (feminino ou marculino)
+// Gera um nome aleatório completo (feminino ou masculino)
 console.log(gerar.nome.aleatorioCompleto());
 
 // Gera um nome masculino aleatório
@@ -199,7 +199,7 @@ console.log(gerar.ddd());
 console.log(gerar.ddd("PA"));
 
 
-/* ******************** CÓDIGO DE OPERDORA ************** */
+/* ******************** CÓDIGO DE OPERADORA ************** */
 // ATENÇAO: Devido a portabilidade, celulares reais podem não pertencer mais a operadora de origem
 
 // Gera um código da Claro (968, 973, 974, 975, 976, 991, 992, 993 ou 994)
@@ -221,8 +221,42 @@ console.log(gerar.codigoOperadora());
 console.log(gerar.codigoOperadora("blablabla"));
 
 
+/* ******************** CELULAR ************************* */
+// Gera celular sem máscara, de estado aleatório e operadora aleatória
+console.log(gerar.celular()); // "11999999999"
+
+// Gera celular com máscara, de estado aleatório e operadora aleatória
+console.log(gerar.celular(true)); // "(11) 99999-9999"
+
+// Gera celular sem máscara, do estado informado e operadora aleatória
+console.log(gerar.celular(false, "SC")); // "48999999999"
+
+// Gera celular com máscara, do estado informado e operadora aleatória
+console.log(gerar.celular(true, "ES")); // "(27) 99999-9999"
+
+// Gera celular sem máscara, do estado aleatório e operadora informada
+console.log(gerar.celular(false, "", "Claro")); // "85991999999"
+
+// Gera celular com máscara, do estado informado e operadora aleatória
+console.log(gerar.celular(true, "MS", "Vivo")); // "(67) 99799-9999"
+
+
+/* ******************** CELULAR ************************* */
+// Gera telefone sem máscara, de estado aleatório
+console.log(gerar.telefone()); // "1199999999"
+
+// Gera telefone com máscara, de estado aleatório
+console.log(gerar.telefone(true)); // "(11) 9999-9999"
+
+// Gera telefone sem máscara, do estado informado
+console.log(gerar.telefone(false, "SC")); // "4899999999"
+
+// Gera telefone com máscara, do estado informado
+console.log(gerar.telefone(true, "ES")); // "(27) 9999-9999"
+
+
 /* ******************** SOBRE A PESSOA ****************** */
-// Gerar cor de pele aleatória
+// Gera cor de pele aleatória
 console.log(gerar.corPele());
 
 // Gera tipo sanguíneo aleatório
@@ -284,15 +318,15 @@ console.log(gerar.placaMercosul(true));
 // Gera placa no formato Mercosul com máscara "ABC-1D23"
 console.log(gerar.placaMercosul(false));
 
-// Gerar RENAVAM
+// Gera RENAVAM
 console.log(gerar.renavam());
 ```
 
-## Extenção Chrome - Gerador de Dados Fictícios
+## Extensão Chrome - Gerador de Dados Fictícios
 
-Todas essas funções foram utilizadas na extenção [Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam).
-Muito útil para prencher automaticamente os campos de formulários em os testes manuais.
+Todas essas funções foram utilizadas na [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam).
+Muito útil para preencher automaticamente os campos de formulários em testes manuais.
 
 ---
 
-[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/changelog.md) • [Forum](https://github.com/marcelo-lourenco/gerador-br/discussions) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/changelog.md)
+[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CODE_OF_CONDUCT.md) • [Fórum](https://github.com/marcelo-lourenco/gerador-br/discussions)

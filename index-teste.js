@@ -13,7 +13,7 @@ console.log(gerar.cnpj());
 // Gera CNPJ com máscara
 console.log(gerar.cnpj(true));
 
-// Gera CPF sem mascara e de estado aleatório
+// Gera CPF sem máscara e de estado aleatório
 console.log(gerar.cpf());
 
 // Gera CPF com máscara e de estado aleatório
@@ -31,10 +31,10 @@ console.log(gerar.rg());
 // Gera RG com máscara
 console.log(gerar.rg(true));
 
-// Gera CNS (Cartão Cacional Saúde) sem máscara
+// Gera CNS (Cartão Nacional Saúde) sem máscara
 console.log(gerar.cns());
 
-// Gera CNS (Cartão Cacional Saúde) com máscara
+// Gera CNS (Cartão Nacional Saúde) com máscara
 console.log(gerar.cns(true));
 
 // Gera PIS sem máscara
@@ -59,10 +59,10 @@ console.log(gerar.tituloEleitor(false,'PR'));
 console.log(gerar.passaporte());
 
 
-/* ******************** CARTÃO DE CREDITO *************** */
+/* ******************** CARTÃO DE CRÉDITO *************** */
 
 // Gera objeto cartaoCredito com as propriedades:
-// numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
+//   numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
 console.log(gerar.cartaoCredito());
 
 // Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
@@ -90,7 +90,7 @@ console.log(gerar.cartaoCredito(true, gerar.nome.femininoCompleto()));
 // Gera um nome aleatório (apenas o primeiro nome - feminino ou masculino)
 console.log(gerar.nome.aleatorio());
 
-// Gera um nome aleatório completo (feminino ou marculino)
+// Gera um nome aleatório completo (feminino ou masculino)
 console.log(gerar.nome.aleatorioCompleto());
 
 // Gera um nome masculino aleatório
@@ -152,7 +152,8 @@ console.log(gerar.ddd());
 // Gera DDD aleatório do estado informado
 console.log(gerar.ddd("PA"));
 
-/* ******************** CÓDIGO DE OPERDORA ************** */
+
+/* ******************** CÓDIGO DE OPERADORA ************** */
 // ATENÇAO: Devido a portabilidade, celulares reais podem não pertencer mais a operadora de origem
 
 // Gera um código da Claro (968, 973, 974, 975, 976, 991, 992, 993 ou 994)
@@ -174,8 +175,42 @@ console.log(gerar.codigoOperadora());
 console.log(gerar.codigoOperadora("blablabla"));
 
 
+/* ******************** CELULAR ************************* */
+// Gera celular sem máscara, de estado aleatório e operadora aleatória
+console.log(gerar.celular()); // "11999999999"
+
+// Gera celular com máscara, de estado aleatório e operadora aleatória
+console.log(gerar.celular(true)); // "(11) 99999-9999"
+
+// Gera celular sem máscara, do estado informado e operadora aleatória
+console.log(gerar.celular(false, "SC")); // "48999999999"
+
+// Gera celular com máscara, do estado informado e operadora aleatória
+console.log(gerar.celular(true, "ES")); // "(27) 99999-9999"
+
+// Gera celular sem máscara, do estado aleatório e operadora informada
+console.log(gerar.celular(false, "", "Claro")); // "85991999999"
+
+// Gera celular com máscara, do estado informado e operadora aleatória
+console.log(gerar.celular(true, "MS", "Vivo")); // "(67) 99799-9999"
+
+
+/* ******************** CELULAR ************************* */
+// Gera telefone sem máscara, de estado aleatório
+console.log(gerar.telefone()); // "1199999999"
+
+// Gera telefone com máscara, de estado aleatório
+console.log(gerar.telefone(true)); // "(11) 9999-9999"
+
+// Gera telefone sem máscara, do estado informado
+console.log(gerar.telefone(false, "SC")); // "4899999999"
+
+// Gera telefone com máscara, do estado informado
+console.log(gerar.telefone(true, "ES")); // "(27) 9999-9999"
+
+
 /* ******************** SOBRE A PESSOA ****************** */
-// Gerar cor de pele aleatória
+// Gera cor de pele aleatória
 console.log(gerar.corPele());
 
 // Gera tipo sanguíneo aleatório
@@ -194,7 +229,6 @@ console.log(gerar.cep(false, "SP")); // "01001000"
 
 // Gera CEP com máscara de estado informado
 console.log(gerar.cep(true, "SP")); // "01001-000"
-
 
 
 /* ******************** ENDEREÇO ************************ */
@@ -219,9 +253,9 @@ const enderecoGerado = gerar.endereco();
 console.log(enderecoGerado.cep);
 console.log(enderecoGerado.logradouro);
 console.log(enderecoGerado.numero);
-console.log(enderecoGerado.complemento); // caso exista
+console.log(enderecoGerado.complemento);// caso exista
 console.log(enderecoGerado.bairro);
-console.log(enderecoGerado.localidade); //cidade, município, distrito, povoado e etc
+console.log(enderecoGerado.localidade);
 console.log(enderecoGerado.estado);
 
 
@@ -238,5 +272,5 @@ console.log(gerar.placaMercosul(true));
 // Gera placa no formato Mercosul com máscara "ABC-1D23"
 console.log(gerar.placaMercosul(false));
 
-// Gerar RENAVAM
+// Gera RENAVAM
 console.log(gerar.renavam());

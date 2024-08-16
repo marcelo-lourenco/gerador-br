@@ -11,6 +11,8 @@ import { passaporte } from "./src/generators/passaporte.js"
 import { tituloEleitor } from "./src/generators/titulo-eleitor.js"
 import { dataNascimento } from "./src/generators/data-nascimento.js"
 import { email } from "./src/generators/email.js"
+import { celular } from "./src/generators/celular.js"
+import { telefone } from "./src/generators/telefone.js"
 import { cep } from "./src/generators/cep.js"
 import { endereco } from "./src/generators/endereco.js"
 import { placaAntiga, placaMercosul } from "./src/generators/placa.js"
@@ -343,6 +345,62 @@ gerar.endereco = endereco;
  */
 gerar.email = email;
 
+
+/**
+ * Gera um número de celular aleatório.
+ *
+ * O número de celular gerado pode ser formatado com máscara ( (DDD) 9XXXX-XXXX ) ou apenas com os dígitos.
+ *
+ * @param {boolean} [mask=false] - Se `true`, o celular será retornado com a máscara de formatação ( (DDD) 9XXXX-XXXX ). Se `false`, o celular será retornado apenas com os dígitos.
+ * @param {string} [state] - A sigla do estado para filtrar os DDDs. Se não fornecido, um DDD de qualquer estado será gerado.
+ * @param {string} [operator] - O nome da operadora (por exemplo, "Claro", "Oi", "Tim", "Vivo"). Se não fornecido, uma operadora aleatória será gerada.
+ * @returns {string} O número de celular gerado.
+ * @example
+ * // Gera celular sem máscara, de estado aleatório e operadora aleatória
+ * console.log(gerar.celular()); // "11999999999"
+ *
+ * // Gera celular com máscara, de estado aleatório e operadora aleatória
+ * console.log(gerar.celular(true)); // "(11) 99999-9999"
+ *
+ * // Gera celular sem máscara, do estado informado e operadora aleatória
+ * console.log(gerar.celular(false, "SC")); // "48999999999"
+ *
+ * // Gera celular com máscara, do estado informado e operadora aleatória
+ * console.log(gerar.celular(true, "ES")); // "(27) 99999-9999"
+ *
+ * // Gera celular sem máscara, do estado aleatório e operadora informada
+ * console.log(gerar.celular(false, "", "Claro")); // "85991999999"
+ *
+ * // Gera celular com máscara, do estado informado e operadora aleatória
+ * console.log(gerar.celular(true, "MS", "Vivo")); // "(67) 99799-9999"
+ */
+gerar.celular = celular;
+
+
+/**
+ * Gera um número de telefone aleatório.
+ *
+ * O número de telefone gerado pode ser formatado com máscara - (XX) XXXX-XXXX - ou apenas com os dígitos.
+ *
+ * @param {boolean} [mask=false] - Se `true`, o telefone será retornado com a máscara - (XX) XXXX-XXXX. Se `false`, o telefone será retornado apenas com os dígitos.
+ * @param {string} [state] - A sigla do estado para filtrar os DDDs. Se não fornecido, um DDD de qualquer estado será gerado.
+ * @returns {string} O número de telefone gerado.
+ * @example
+ * // Gera telefone sem máscara, de estado aleatório
+ * console.log(gerar.telefone()); // "1199999999"
+ *
+ * // Gera telefone com máscara, de estado aleatório
+ * console.log(gerar.telefone(true)); // "(11) 9999-9999"
+ *
+ * // Gera telefone sem máscara, do estado informado
+ * console.log(gerar.telefone(false, "SC")); // "4899999999"
+ *
+ * // Gera telefone com máscara, do estado informado
+ * console.log(gerar.telefone(true, "ES")); // "(27) 9999-9999"
+ */
+gerar.telefone = telefone;
+
+
 /**
  * Gera um DDD aleatório para um estado brasileiro.
  *
@@ -448,6 +506,8 @@ export default {
   cep,
   endereco,
   email,
+  celular,
+  telefone,
   ddd,
   codigoOperadora,
   placaAntiga,
