@@ -132,6 +132,48 @@ console.log(gerar.cartaoCredito(false, "Maria Aparecida Reis"));
 console.log(gerar.cartaoCredito(true, gerar.nome.femininoCompleto()));
 
 
+/* ******************** CONTA BANCÁRIA ****************** */
+// Gera uma conta bancária aleatória de um banco aleatório
+console.log(gerar.contaBancaria());
+
+// Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
+const cb = gerar.contaBancaria();
+console.log(cb.codigoBanco);
+console.log(cb.nomeBanco);
+console.log(cb.agencia);
+console.log(cb.agenciaDv);
+console.log(cb.conta);
+console.log(cb.contaDv);
+
+// Gera uma conta bancária aleatória do Banco do Brasil
+console.log(gerar.contaBancaria('1'));
+console.log(gerar.contaBancaria('Banco do Brasil'));
+
+// Gera uma conta bancária aleatória do Bradesco
+console.log(gerar.contaBancaria("237"));
+console.log(gerar.contaBancaria('Bradesco'));
+
+// Gera uma conta bancária aleatória da Caixa
+console.log(gerar.contaBancaria('104'));
+console.log(gerar.contaBancaria('Caixa'));
+
+// Gera uma conta bancária aleatória do Citibank
+console.log(gerar.contaBancaria('745'));
+console.log(gerar.contaBancaria('Citibank'));
+
+// Gera uma conta bancária aleatória do HSBC
+console.log(gerar.contaBancaria('296'));
+console.log(gerar.contaBancaria('HSBC'));
+
+// Gera uma conta bancária aleatória do Itaú
+console.log(gerar.contaBancaria('341'));
+console.log(gerar.contaBancaria('Itaú'));
+
+// Gera uma conta bancária aleatória do Santander
+console.log(gerar.contaBancaria('33'));
+console.log(gerar.contaBancaria('Santander'));
+
+
 /* ******************** NOME **************************** */
 // Gera um nome aleatório (apenas o primeiro nome - feminino ou masculino)
 console.log(gerar.nome.aleatorio());

@@ -1,6 +1,7 @@
 import * as utils from './src/utils.js';
 import { nome } from "./src/generators/nome.js"
 import { cartaoCredito } from './src/generators/cartao-credito.js';
+import { contaBancaria } from './src/generators/conta-bancaria.js';
 import { cnh } from "./src/generators/cnh.js"
 import { cnpj } from "./src/generators/cnpj.js"
 import { cpf } from "./src/generators/cpf.js"
@@ -19,8 +20,6 @@ import { placaAntiga, placaMercosul } from "./src/generators/placa.js"
 import { renavam } from './src/generators/renavam.js';
 import { ddd } from './src/generators/ddd.js';
 import { codigoOperadora } from './src/generators/operadora.js';
-
-
 
 
 function apelido() {
@@ -150,6 +149,125 @@ gerar.nome = nome;
  *
  */
 gerar.cartaoCredito = cartaoCredito();
+
+/**
+ * Gera uma conta bancária aleatória.
+/**
+ * Gera uma conta bancária aleatória.
+ *
+ * Este objeto fornece métodos para gerar contas bancárias de diferentes bancos,
+ * incluindo Banco do Brasil, Bradesco, Caixa, Citibank, HSBC, Itaú e Santander.
+ *
+ * @param {string} [bank='Indiferente'] - O nome do banco para gerar a conta.
+ * Se não fornecido, um banco aleatório será escolhido.
+ * @returns {object} Um objeto contendo o código do banco, o nome do banco,
+ * a agência, o dígito verificador da agência, a conta, o dígito verificador da conta.
+ *
+ * @example
+ * // Gera uma conta bancária aleatória do Banco do Brasil
+ * console.log(gerar.contaBancaria('1'));
+ * console.log(gerar.contaBancaria('Banco do Brasil'));
+ * // =>
+ *    {
+ *      codigoBanco: 1,
+ *      nomeBanco: 'Banco do Brasil',
+ *      agencia: '1234-5',
+ *      agenciaDv: '5',
+ *      conta: '12345678-9',
+ *      contaDv: '9'
+ *    }
+ *
+ * // Gera uma conta bancária aleatória do Bradesco
+ * console.log(gerar.contaBancaria('237'));
+ * console.log(gerar.contaBancaria('Bradesco'));
+ * // =>
+ *    {
+ *      codigoBanco: 237,
+ *      nomeBanco: 'Bradesco',
+ *      agencia: '1234-P',
+ *      agenciaDv: 'P',
+ *      conta: '123456-0',
+ *      contaDv: '0'
+ *    }
+ *
+ * // Gera uma conta bancária aleatória da Caixa
+ * console.log(gerar.contaBancaria('104'));
+ * console.log(gerar.contaBancaria('Caixa'));
+ * // =>
+ *    {
+ *      codigoBanco: 104,
+ *      nomeBanco: 'Caixa',
+ *      agencia: '1234',
+ *      agenciaDv: '',
+ *      conta: '1234567890-0',
+ *      contaDv: '0'
+ *    }
+ *
+ * // Gera uma conta bancária aleatória do Citibank
+ * console.log(gerar.contaBancaria('745'));
+ * console.log(gerar.contaBancaria('Citibank'));
+ * // =>
+ *    {
+ *      codigoBanco: 745,
+ *      nomeBanco: 'Citibank',
+ *      agencia: '1234',
+ *      agenciaDv: '',
+ *      conta: '1234567-0',
+ *      contaDv: '0'
+ *    }
+ *
+ * // Gera uma conta bancária aleatória do HSBC
+ * console.log(gerar.contaBancaria('296'));
+ * console.log(gerar.contaBancaria('HSBC'));
+ * // =>
+ *    {
+ *      codigoBanco: 296,
+ *      nomeBanco: 'HSBC',
+ *      agencia: '1234',
+ *      agenciaDv: '',
+ *      conta: '123456-0',
+ *      contaDv: '0'
+ *    }
+ *
+ * // Gera uma conta bancária aleatória do Itaú
+ * console.log(gerar.contaBancaria('341'));
+ * console.log(gerar.contaBancaria('Itaú'));
+ * // =>
+ *    {
+ *      codigoBanco: 341,
+ *      nomeBanco: 'Itaú',
+ *      agencia: '1234',
+ *      agenciaDv: '',
+ *      conta: '123456789-0',
+ *      contaDv: '0'
+ *    }
+ *
+ * // Gera uma conta bancária aleatória do Santander
+ * console.log(gerar.contaBancaria('33'));
+ * console.log(gerar.contaBancaria('Santander'));
+ * // =>
+ *    {
+ *      codigoBanco: 33,
+ *      nomeBanco: 'Santander',
+ *      agencia: '1234',
+ *      agenciaDv: '',
+ *      conta: '12345678-0',
+ *      contaDv: '0'
+ *    }
+ *
+ * // Gera uma conta bancária aleatória de um banco aleatório
+ * console.log(gerar.contaBancaria());
+ * // =>
+ *    {
+ *      codigoBanco: 1,
+ *      nomeBanco: 'Banco do Brasil',
+ *      agencia: '1234-5',
+ *      agenciaDv: '5',
+ *      conta: '12345678-9',
+ *      contaDv: '9'
+ *    }
+ */
+gerar.contaBancaria = contaBancaria();
 
 
 /**
@@ -486,6 +604,7 @@ export default {
   gerar,
   nome,
   cartaoCredito,
+  contaBancaria,
   apelido,
   dataNascimento,
   corPele,
