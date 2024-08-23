@@ -4,10 +4,11 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
-## 1.0.3 (2024-XX-XX)
+## 1.0.3 (2024-08-22)
 
 ### Adiciona Funcionalidades
 
+* Gerador de Banco
 * Gerador de Conta Bancária
 
 ---

@@ -105,8 +105,25 @@ console.log(gerar.tituloEleitor(false,'PR'));
 console.log(gerar.passaporte());
 
 
-/* ******************** CARTÃO DE CRÉDITO *************** */
+/* ******************** BANCOS ************************** */
+// Gera dados de um banco aleatório
+console.log(gerar.banco());
 
+// Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
+const bnc = gerar.banco();
+console.log(bnc.codigoBanco);
+console.log(bnc.nomeBanco);
+console.log(bnc.razaoSocial);
+console.log(bnc.ispb);
+
+// Gera dados do banco informado
+console.log(gerar.banco(237));
+
+// Retorna uma lista de códigos de bancos
+console.log(gerar.listaCodigosBancos());
+
+
+/* ******************** CARTÃO DE CRÉDITO *************** */
 // Gera objeto cartaoCredito com as propriedades:
 //   numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
 console.log(gerar.cartaoCredito());

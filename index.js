@@ -1,5 +1,6 @@
 import * as utils from './src/utils.js';
 import { nome } from "./src/generators/nome.js"
+import { banco, listaCodigosBancos } from './src/generators/banco.js'
 import { cartaoCredito } from './src/generators/cartao-credito.js';
 import { contaBancaria } from './src/generators/conta-bancaria.js';
 import { cnh } from "./src/generators/cnh.js"
@@ -105,6 +106,48 @@ const gerar = {
  * console.log(gerar.nome.sobrenome()); // Ex: "da Silva"
  */
 gerar.nome = nome;
+
+
+/**
+ * Gera dados de um banco aleatório.
+ *
+ * @param {number} [code] - O código do banco. Se não for informado, um banco aleatório será gerado.
+ * @returns {object} Um objeto contendo os dados do banco.
+ * @example
+ * // Gera dados de um banco aleatório
+ * console.log(banco());
+ * // =>
+ * {
+ *   codigoBanco: 341,
+ *   nomeBanco: 'Itaú Unibanco S.A.',
+ *   razaoSocial: 'Banco Itaú Unibanco - 341',
+ *   ispb: '03415961'
+ * }
+ *
+ * // Gera dados do banco informado
+ * console.log(banco(237));
+ * // =>
+ * {
+ *   codigoBanco: 237,
+ *   nomeBanco: 'BANCO BRADESCO S.A.',
+ *   razaoSocial: 'BANCO BRADESCO S.A.',
+ *   ispb: '60746948'
+ * }
+ */
+gerar.banco = banco();
+
+
+/**
+ * Retorna uma lista de códigos de bancos.
+ *
+ * @returns {array} Uma lista de códigos de bancos.
+ * @example
+ * // Retorna uma lista de códigos de bancos
+ * console.log(listaCodigosBancos());
+ * // => [ 1, 237, 104, 745, 296, 341, 33, ...]
+ */
+gerar.listaCodigosBancos = listaCodigosBancos();
+
 
 /**
  * Gera Cartão de Crédito aleatório.
@@ -603,6 +646,8 @@ gerar.placaMercosul = placaMercosul;
 export default {
   gerar,
   nome,
+  banco,
+  listaCodigosBancos,
   cartaoCredito,
   contaBancaria,
   apelido,
