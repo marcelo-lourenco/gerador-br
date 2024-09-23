@@ -1,7 +1,14 @@
+const cryptoRandomInt = function (min, max) {
+  const array = new Uint32Array(1);
+  crypto.getRandomValues(array);
+  const random = array[0] / (0xFFFFFFFF + 1);
+  return Math.floor(random * (max - min)) + min;
+};
+
 const genAgencyAccount = function (numberOfDigits = 4) {
   let account = [];
   for (let i = 0; i < numberOfDigits; i++) {
-    account.push(Math.floor(Math.random() * 10));
+    account.push(cryptoRandomInt(0, 10));
   }
   return account;
 };
@@ -20,11 +27,11 @@ const formatter = function (list, type, digit = '') {
     formatted += list[i];
   }
   if (type.toUpperCase() === 'AG') {
-    return `${formatted}${digit ? '-' + digit : '0'}`; //AG
+    return `${formatted}${digit ? '-' + digit : '0'}`; // AG
   } else if (type.toUpperCase() === 'CC') {
-    return `${formatted}${digit ? '-' + digit : '0'}`; //CC
+    return `${formatted}${digit ? '-' + digit : '0'}`; // CC
   } else {
-    return [`${formatted.slice(0, 4)}`, `${formatted.slice(4)}-${digit}`]; //AG CC
+    return [`${formatted.slice(0, 4)}`, `${formatted.slice(4)}-${digit}`]; // AG CC
   }
 };
 
@@ -51,9 +58,9 @@ const bankAccount = {
       bankName,
       agency: agencyFormatted,
       account: accountFormatted,
-    }
-
+    };
   },
+
   generateBradesco: function () {
     let bankCode = 237;
     let bankName = 'Bradesco';
@@ -76,8 +83,9 @@ const bankAccount = {
       bankName,
       agency: agencyFormatted,
       account: accountFormatted,
-    }
+    };
   },
+
   generateCaixa: function () {
     let bankCode = 104;
     let bankName = 'Caixa';
@@ -89,7 +97,7 @@ const bankAccount = {
       if (i < 4) {
         account.unshift(agency[i]);
       } else {
-        account.push(Math.floor(Math.random() * 10));
+        account.push(cryptoRandomInt(0, 10));
       }
     }
 
@@ -112,11 +120,10 @@ const bankAccount = {
       bankName,
       agency: accountFormatted[0],
       account: accountFormatted[1],
-    }
-
+    };
   },
-  generateCitibank: function () {
 
+  generateCitibank: function () {
     let bankCode = 745;
     let bankName = 'Citibank';
     let agency = genAgencyAccount();
@@ -134,8 +141,9 @@ const bankAccount = {
       bankName,
       agency: agencyFormatted,
       account: accountFormatted,
-    }
+    };
   },
+
   generateHsbc: function () {
     let bankCode = 296;
     let bankName = 'HSBC';
@@ -161,8 +169,9 @@ const bankAccount = {
       bankName,
       agency: accountFormatted[0],
       account: accountFormatted[1],
-    }
+    };
   },
+
   generateItau: function () {
     let bankCode = 341;
     let bankName = 'Itaú';
@@ -191,8 +200,9 @@ const bankAccount = {
       bankName,
       agency: accountFormatted[0],
       account: accountFormatted[1],
-    }
+    };
   },
+
   generateSantander: function () {
     let bankCode = 33;
     let bankName = 'Santander';
@@ -218,26 +228,27 @@ const bankAccount = {
       bankName,
       agency: accountFormatted[0],
       account: accountFormatted[1],
-    }
+    };
   },
+
   generateSortBank: function (bank = 'Indiferente') {
     const normalizeBankName = (name) => {
-        return name
-            .toLowerCase()            // Converte para letras minúsculas
-            .normalize("NFD")          // Separa os caracteres especiais das letras
-            .replace(/[\u0300-\u036f]/g, '') // Remove caracteres especiais
-            .replace(/[^a-z0-9]/g, ''); // Remove caracteres não alfanuméricos
+      return name
+      .toLowerCase()            // Converte para letras minúsculas
+      .normalize("NFD")          // Separa os caracteres especiais das letras
+      .replace(/[\u0300-\u036f]/g, '') // Remove caracteres especiais
+      .replace(/[^a-z0-9]/g, ''); // Remove caracteres não alfanuméricos
     };
 
     let bancos = {
-        '1|bancodobrasil': bankAccount.generateBancoDoBrazil(),
-        '237|bradesco': bankAccount.generateBradesco(),
-        '104|caixa': bankAccount.generateCaixa(),
-        '745|citibank': bankAccount.generateCitibank(),
-        '296|hsbc': bankAccount.generateHsbc(),
-        '341|itau': bankAccount.generateItau(),
-        '33|santander': bankAccount.generateSantander(),
-        'indiferente': ''
+      '1|bancodobrasil': bankAccount.generateBancoDoBrazil(),
+      '237|bradesco': bankAccount.generateBradesco(),
+      '104|caixa': bankAccount.generateCaixa(),
+      '745|citibank': bankAccount.generateCitibank(),
+      '296|hsbc': bankAccount.generateHsbc(),
+      '341|itau': bankAccount.generateItau(),
+      '33|santander': bankAccount.generateSantander(),
+      'indiferente': ''
     };
 
     let selectedBank;
@@ -251,14 +262,10 @@ const bankAccount = {
     }
 
     return bancos[selectedBank];
-}
+  },
+};
 
 
-}
-
-
-/**
- * Gera uma conta bancária aleatória.
 /**
  * Gera uma conta bancária aleatória.
  *
