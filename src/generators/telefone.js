@@ -23,10 +23,24 @@ import { ddd } from './ddd.js'
  * console.log(telefone(true, "ES")); // "(27) 9999-9999"
  */
 export function telefone(mask, state) {
-  let n = () => Math.round(Math.random() * 9);
+  // Função para gerar um número aleatório seguro entre 0 e 9
+  const randDigit = () => {
+    const randomArray = new Uint8Array(1);
+    crypto.getRandomValues(randomArray);
+    return randomArray[0] % 10;
+  };
+
+  // Função para gerar um número seguro entre min e max (inclusive)
+  const randRange = (min, max) => {
+    const randomArray = new Uint8Array(1);
+    crypto.getRandomValues(randomArray);
+    return min + (randomArray[0] % (max - min + 1));
+  };
+
   let sortDdd = state ? ddd(state) : ddd(stateRand);
-  let n1 = Math.floor(Math.random() * (3 - 2 + 1)) + 2;
-  let n2 = n(), n3 = n(), n4 = n(), n5 = n(), n6 = n(), n7 = n(), n8 = n();
+  let n1 = randRange(2, 3);
+  let n2 = randDigit(), n3 = randDigit(), n4 = randDigit(), n5 = randDigit(), n6 = randDigit(), n7 = randDigit(), n8 = randDigit();
+
   let telephoneGen = `(${sortDdd}) ${n1}${n2}${n3}${n4}-${n5}${n6}${n7}${n8}`;
 
   return mask ? telephoneGen : telephoneGen.replace(/\D/g, '');
