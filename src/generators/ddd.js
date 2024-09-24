@@ -41,7 +41,16 @@ export function ddd(state) {
     "SE": [79],
     "SP": [11, 12, 13, 14, 15, 16, 17, 18, 19],
     "TO": [63]
-  }
+  };
+
   const dddState = ddds[state ? state : stateRand];
-  return dddState[Math.floor(Math.random() * dddState.length)];
+
+  // Função para obter um índice aleatório seguro
+  const secureRandomIndex = (max) => {
+    const randomArray = new Uint8Array(1);
+    crypto.getRandomValues(randomArray);
+    return randomArray[0] % max;
+  };
+
+  return dddState[secureRandomIndex(dddState.length)];
 }
