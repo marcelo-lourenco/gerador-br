@@ -1,8 +1,6 @@
 # Gerador de Dados Fictícios - Brasil
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br?ref=badge_shield)
 
-
-[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-downloads-url] [![MIT License][license-image]][license-url] [![CodeQL][git-codeql-image]][git-codeql-url] [![Node.js CI][git-nodejs-image]][git-nodejs-url]
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-downloads-url] [![MIT License][license-image]][license-url] [![CodeQL][git-codeql-image]][git-codeql-url] [![Node.js CI][git-nodejs-image]][git-nodejs-url] [![codecov][codecov-image]][codecov-url] [![FOSSA Status][fossa-image]][fossa-url]
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
@@ -18,6 +16,12 @@
 
 [git-nodejs-image]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/nodejs.yml/badge.svg
 [git-nodejs-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/nodejs.yml
+
+[codecov-image]: https://codecov.io/github/marcelo-lourenco/gerador-br/graph/badge.svg?token=JVAF4NO9IZ
+[codecov-url]: https://codecov.io/github/marcelo-lourenco/gerador-br
+
+[fossa-image]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield
+[fossa-url]: https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br?ref=badge_shield
 
 Gere dados fictícios, mas válidos, para testes e desenvolvimento.
 
@@ -429,6 +433,6 @@ Muito útil para preencher automaticamente os campos de formulários em testes m
 
 [Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CODE_OF_CONDUCT.md) • [Fórum](https://github.com/marcelo-lourenco/gerador-br/discussions)
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br?ref=badge_large)
