@@ -333,3 +333,23 @@ console.log(gerar.placaMercosul(false));
 
 // Gera RENAVAM
 console.log(gerar.renavam());
+
+
+/* ******************** TEXTO *************************** */
+// Gera uma palavra aleatória
+console.log(gerar.palavra());
+
+// Gera uma sentença com quantidade de palavras aleatórias
+console.log(gerar.sentenca());
+
+// Gera uma sentença com quantidade de palavras definida
+console.log(gerar.sentenca(10));
+
+// Gera um parágrafo com quantidade de palavras aleatórias
+console.log(gerar.paragrafo());
+
+// Gera um parágrafo com quantidade de sentença informada, cada uma com quantidade de palavras aleatórias
+console.log(gerar.paragrafo(5));
+
+// Gera um parágrafo com quantidade de sentenças e de palavras informadas.
+console.log(gerar.paragrafo(3,8));

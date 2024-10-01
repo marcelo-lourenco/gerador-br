@@ -14,11 +14,13 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 * **Gerador de Conta Bancária**: Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
 * **Gerador de Cartão de Crédito**: Número, Bandeira, CVV e Validade;
 * **Gerador de Veículo**: Placa Antiga, Placa Mercosul e RENAVAM;
+* **Gerador de Texto (Lorem Ipsum)**: palavras, sentenças e parágrafos;
+
 
 ## Instalação
 
 ```bash
-npm install --save-dev gerador-br
+npm install gerador-br
 ```
 
 ## Uso
@@ -31,10 +33,10 @@ Importe apenas a(s) função(ões) que desejar
 import { nome, cpf, cnpj, placaMercosul } from 'gerador-br';
 
 console.log(nome.femininoCompleto());   // Ex: "Maria"
-console.log(cpf());                     // Gera CPF sem máscara e do estado informado
-console.log(cpf(false, "PE"));          // Gera CPF com máscara e do estado informado
+console.log(cpf());                     // Gera CPF sem máscara e do estado aleatório
+console.log(cpf(false, "PE"));          // Gera CPF sem máscara e do estado informado
 console.log(cnpj(true));                // Gera CNPJ com máscara
-console.log(placaMercosul(true));       // Gera placa no formato Mercosul sem máscara "ABC1D23"
+console.log(placaMercosul(true));       // Gera placa no formato Mercosul com máscara "ABC-1D23"
 ```
 
 ### *Default import*
@@ -379,6 +381,25 @@ console.log(gerar.placaMercosul(false));
 
 // Gera RENAVAM
 console.log(gerar.renavam());
+
+/* ******************** TEXTO *************************** */
+// Gera uma palavra aleatória
+console.log(gerar.palavra());
+
+// Gera uma sentença com quantidade de palavras aleatórias
+console.log(gerar.sentenca());
+
+// Gera uma sentença com quantidade de palavras definida
+console.log(gerar.sentenca(10));
+
+// Gera um parágrafo com quantidade de palavras aleatórias
+console.log(gerar.paragrafo());
+
+// Gera um parágrafo com quantidade de sentença informada, cada uma com quantidade de palavras aleatórias
+console.log(gerar.paragrafo(5));
+
+// Gera um parágrafo com quantidade de sentenças e de palavras informadas.
+console.log(gerar.paragrafo(3,8));
 ```
 
 ## Extensão Chrome - Gerador de Dados Fictícios

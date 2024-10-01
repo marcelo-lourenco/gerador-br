@@ -21,6 +21,7 @@ import { placaAntiga, placaMercosul } from "./src/generators/placa.js"
 import { renavam } from './src/generators/renavam.js';
 import { ddd } from './src/generators/ddd.js';
 import { codigoOperadora } from './src/generators/operadora.js';
+import { palavra, sentenca, paragrafo } from './src/generators/texto.js';
 
 
 function apelido() {
@@ -641,7 +642,58 @@ gerar.placaMercosul = placaMercosul;
  * // RENAVAM gerado
  * console.log(gerar.renavam); // "12345678901"
  */
+gerar.renavam = renavam;
 
+/**
+ * Gera uma palavra aleatória.
+ *
+ * @returns {string} Uma palavra aleatória.
+ * @example
+ * // Gera uma palavra aleatória
+ * console.log(palavra()); // Ex: "Lorem", "ipsum", "dolor", "sit", "amet"
+ */
+gerar.palavra = palavra;
+
+/**
+ * Gera uma sentença aleatória.
+ *
+ * @param {number} [qttWords] - Quantidade de palavras na sentença. Se não for informado, será um número aleatório entre 10 e 20.
+ * @returns {string} Uma sentença aleatória.
+ * @example
+ * // Gera uma sentença com quantidade de palavras aleatórias
+ * console.log(sentenca()); // Ex: "Ea placeat, labore quidem, harum expedita fuga."
+ *
+ * // Gera uma sentença com a quantidade de palavras informada.
+ * console.log(sentenca(10)); // Ex: "Dolorem sit modi deleniti nemo sint laborum vitae repellendus ipsa."
+ */
+gerar.sentenca = sentenca;
+
+/**
+ * Gera um parágrafo aleatório.
+ *
+ * @param {number} [qttParagraph=1] - Quantidade de parágrafos.
+ * @param {number} [qttWords] - Quantidade de palavras por sentença. Se não for informado, será um número aleatório entre 10 e 20.
+ * @returns {string} Um parágrafo aleatório.
+ * @example
+ * // Gera um parágrafo com quantidade de palavras aleatórias
+ * console.log(paragrafo());
+ * // Ex: "Recusandae. facilis consequuntur quae fuga. debitis quaerat architecto do placeat."
+ *
+ * // Gera um parágrafo com quantidade de sentença informada, cada uma com quantidade de palavras aleatórias
+ * console.log(paragrafo(3));
+ * // Ex:
+ * "Lorem ipsum dolor sit amet.
+ * Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ * Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+ *
+ * // Gera um parágrafo com quantidade de sentenças e de palavras informadas.
+ * console.log(paragrafo(3, 8));
+ * // Ex:
+ * "Labore ipsa, eius dolore corporis ipsam doloremque nobis.
+ * Enim facilis fuga. voluptatem debitis veniam, hic atque.
+ * Voluptates fugiat nesciunt, numquam reprehenderit, quae commodo minus."
+ */
+gerar.paragrafo = paragrafo;
 
 export default {
   gerar,
@@ -676,6 +728,8 @@ export default {
   codigoOperadora,
   placaAntiga,
   placaMercosul,
-  renavam
+  renavam,
+  palavra,
+  sentenca,
+  paragrafo
 };
-

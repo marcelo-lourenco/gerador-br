@@ -4,6 +4,14 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.0.4 (2024-09-30)
+
+### Adiciona Funcionalidades
+
+* Gerador de Texto
+
+---
+
 ## 1.0.3 (2024-08-22)
 
 ### Adiciona Funcionalidades
@@ -29,8 +37,6 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
----
-
 ## 1.0.1 (2024-08-13)
 
 ### Adiciona Funcionalidades
@@ -38,8 +44,6 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 * Gerador de DDD
 * Gerador de Operadoras
 * Gerador de CEP
-
----
 
 ---
 
