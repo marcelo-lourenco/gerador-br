@@ -1,0 +1,38 @@
+name: Codecov Coverage Report
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests with coverage
+      run: npm test -- --coverage
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: ./coverage/*.json  # Ou qualquer caminho que contenha o relatório de cobertura
+        flags: unittests  # Flag opcional para diferenciar tipos de testes
+        name: codecov-coverage
+        fail_ci_if_error: true
+        verbose: true
