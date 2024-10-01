@@ -34,7 +34,7 @@ export const banco = function bank(code) {
   if (code) {
     bankRand = banks.find(bank => bank.code === parseInt(code, 10));
     if (!bankRand) {
-      console.log("Banco não encontrado")
+      // console.log("Banco não encontrado")
       bankRand = getRandom(banks);
     }
   } else {
@@ -61,9 +61,3 @@ export const banco = function bank(code) {
 export const listaCodigosBancos = function ()  {
   return banks.map(bank => bank.code);
 }
-
-
-console.log(banco());
-console.log(banco('237'));
-console.log(banco(104));
-console.log(listaCodigosBancos());

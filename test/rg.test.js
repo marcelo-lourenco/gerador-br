@@ -27,10 +27,10 @@ describe('RG Generator', () => {
     let expectedCheckDigit = 11 - (sum % 11);
 
     if (expectedCheckDigit === 11) {
-      console.log("expectedCheckDigit11",expectedCheckDigit);
+      // console.log("expectedCheckDigit11",expectedCheckDigit);
       expectedCheckDigit = 0; // Handle case where expectedCheckDigit is 11
     } else if (expectedCheckDigit === 10) {
-      console.log("expectedCheckDigit10",expectedCheckDigit);
+      // console.log("expectedCheckDigit10",expectedCheckDigit);
       expectedCheckDigit = 'X'; // Handle case where expectedCheckDigit is 10
     }
 

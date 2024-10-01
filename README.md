@@ -1,5 +1,22 @@
 # Gerador de Dados Fictícios - Brasil
 
+[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-downloads-url] [![MIT License][license-image]][license-url] [![CodeQL][git-codeql-image]][git-codeql-url] [![Node.js CI][git-nodejs-image]][git-nodejs-url]
+
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-url]: LICENSE
+
+[npm-version-image]: https://img.shields.io/npm/v/gerador-br
+[npm-url]: https://npmjs.org/package/gerador-br
+
+[npm-downloads-image]: https://img.shields.io/npm/dm/gerador-br.svg
+[npm-downloads-url]: https://npmcharts.com/compare/gerador-br?minimal=true
+
+[git-codeql-image]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg
+[git-codeql-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql
+
+[git-nodejs-image]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/nodejs.yml/badge.svg
+[git-nodejs-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/nodejs.yml
+
 Gere dados fictícios, mas válidos, para testes e desenvolvimento.
 
 Ideal para testes automatizados com **Mocha**, **Chai**, **Jest**,  **Jasmine**, **Sinon**, **Supertest**, **Nock**, **Cypress**, **Puppeteer**, **Enzyme** e **Node.js Test Runner**
@@ -15,7 +32,6 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 * **Gerador de Cartão de Crédito**: Número, Bandeira, CVV e Validade;
 * **Gerador de Veículo**: Placa Antiga, Placa Mercosul e RENAVAM;
 * **Gerador de Texto (Lorem Ipsum)**: palavras, sentenças e parágrafos;
-
 
 ## Instalação
 

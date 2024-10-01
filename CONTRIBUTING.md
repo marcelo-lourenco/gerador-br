@@ -1,7 +1,7 @@
-## Contribuindo
+# Contribuindo
 
 Primeiramente, obrigado por reservar um tempo para contribuir!
-Contribuições são o que torna a comunidade de código aberto um lugar tão incrível para aprender, inspirar e criar. 
+Contribuições são o que torna a comunidade de código aberto um lugar tão incrível para aprender, inspirar e criar.
 Quaisquer contribuições que você fizer beneficiarão a todos os outros e serão **muito apreciadas**.
 
 Tente criar relatórios de bugs que sejam:

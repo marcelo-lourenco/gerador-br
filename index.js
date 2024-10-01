@@ -71,40 +71,40 @@ const gerar = {
  *
  * @example
  * // Gerar um nome aleatório
- * console.log(gerar.nome.aleatorio()); // Ex: "João", "Maria"
+ * console.log(gerar.nome.aleatorio()); // Exemplo: "João", "Maria"
  *
  * // Gerar um nome aleatório completo
- * console.log(gerar.nome.aleatorio()); // Ex: "João Santos da Silva", "Maria Santos da Silva"
+ * console.log(gerar.nome.aleatorio()); // Exemplo: "João Santos da Silva", "Maria Santos da Silva"
  *
  * // Gerar um nome masculino aleatório
- * console.log(gerar.nome.masculino()); // Ex: "João"
+ * console.log(gerar.nome.masculino()); // Exemplo: "João"
  *
  * // Gerar um nome masculino completo aleatório
- * console.log(gerar.nome.masculinoCompleto()); // Ex: "João Sousa da Silva"
+ * console.log(gerar.nome.masculinoCompleto()); // Exemplo: "João Sousa da Silva"
  *
  * // Gerar um nome feminino aleatório
- * console.log(gerar.nome.feminino()); // Ex: "Maria"
+ * console.log(gerar.nome.feminino()); // Exemplo: "Maria"
  *
  * // Gerar um nome feminino completo aleatório
- * console.log(gerar.nome.femininoCompleto()); // Ex: "Maria Sousa da Silva"
+ * console.log(gerar.nome.femininoCompleto()); // Exemplo: "Maria Sousa da Silva"
  *
  * // Gerar o nome da mãe aleatório
- * console.log(gerar.nome.mae()); // Ex: "Ana"
+ * console.log(gerar.nome.mae()); // Exemplo: "Ana"
  *
  * // Gerar o nome completo da mãe aleatório
- * console.log(gerar.nome.maeCompleto()); // Ex: "Ana Sousa da Silva"
+ * console.log(gerar.nome.maeCompleto()); // Exemplo: "Ana Sousa da Silva"
  *
  * // Gerar o nome do pai aleatório
- * console.log(gerar.nome.pai()); // Ex: "José"
+ * console.log(gerar.nome.pai()); // Exemplo: "José"
  *
  * // Gerar o nome completo do pai aleatório
- * console.log(gerar.nome.paiCompleto()); // Ex: "José Sousa da Silva"
+ * console.log(gerar.nome.paiCompleto()); // Exemplo: "José Sousa da Silva"
  *
  * // Gerar um nome do meio aleatório
- * console.log(gerar.nome.doMeio()); // Ex: "Sousa"
+ * console.log(gerar.nome.doMeio()); // Exemplo: "Sousa"
  *
  * // Gerar um sobrenome aleatório
- * console.log(gerar.nome.sobrenome()); // Ex: "da Silva"
+ * console.log(gerar.nome.sobrenome()); // Exemplo: "da Silva"
  */
 gerar.nome = nome;
 
@@ -650,7 +650,7 @@ gerar.renavam = renavam;
  * @returns {string} Uma palavra aleatória.
  * @example
  * // Gera uma palavra aleatória
- * console.log(palavra()); // Ex: "Lorem", "ipsum", "dolor", "sit", "amet"
+ * console.log(palavra()); // Exemplo: "Lorem", "ipsum", "dolor", "sit", "amet"
  */
 gerar.palavra = palavra;
 
@@ -661,10 +661,10 @@ gerar.palavra = palavra;
  * @returns {string} Uma sentença aleatória.
  * @example
  * // Gera uma sentença com quantidade de palavras aleatórias
- * console.log(sentenca()); // Ex: "Ea placeat, labore quidem, harum expedita fuga."
+ * console.log(sentenca()); // Exemplo: "Ea placeat, labore quidem, harum expedita fuga."
  *
  * // Gera uma sentença com a quantidade de palavras informada.
- * console.log(sentenca(10)); // Ex: "Dolorem sit modi deleniti nemo sint laborum vitae repellendus ipsa."
+ * console.log(sentenca(10)); // Exemplo: "Dolorem sit modi deleniti nemo sint laborum vitae repellendus ipsa."
  */
 gerar.sentenca = sentenca;
 
@@ -677,18 +677,18 @@ gerar.sentenca = sentenca;
  * @example
  * // Gera um parágrafo com quantidade de palavras aleatórias
  * console.log(paragrafo());
- * // Ex: "Recusandae. facilis consequuntur quae fuga. debitis quaerat architecto do placeat."
+ * // Exemplo: "Recusandae. facilis consequuntur quae fuga. debitis quaerat architecto do placeat."
  *
  * // Gera um parágrafo com quantidade de sentença informada, cada uma com quantidade de palavras aleatórias
  * console.log(paragrafo(3));
- * // Ex:
+ * // Exemplo:
  * "Lorem ipsum dolor sit amet.
  * Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
  * Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
  *
  * // Gera um parágrafo com quantidade de sentenças e de palavras informadas.
  * console.log(paragrafo(3, 8));
- * // Ex:
+ * // Exemplo:
  * "Labore ipsa, eius dolore corporis ipsam doloremque nobis.
  * Enim facilis fuga. voluptatem debitis veniam, hic atque.
  * Voluptates fugiat nesciunt, numquam reprehenderit, quae commodo minus."

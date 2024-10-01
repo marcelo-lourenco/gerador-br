@@ -28,10 +28,10 @@ function obterGenero(input) {
 
 
 // Exemplos de uso:
-console.log(obterGenero('m'));         // "m, Masculino"
-console.log(obterGenero('f'));         // "f, Feminino"
-console.log(obterGenero('i'));         // "i, Intersexo"
-console.log(obterGenero('masculino')); // "m, Masculino"
-console.log(obterGenero('feminino'));  // "f, Feminino"
-console.log(obterGenero('intersexo'));  // "f, Feminino"
-console.log(obterGenero());            // "m, Masculino" ou "f, Feminino" (aleatório se nenhum input fornecido)
+// console.log(obterGenero('m'));         // "m, Masculino"
+// console.log(obterGenero('f'));         // "f, Feminino"
+// console.log(obterGenero('i'));         // "i, Intersexo"
+// console.log(obterGenero('masculino')); // "m, Masculino"
+// console.log(obterGenero('feminino'));  // "f, Feminino"
+// console.log(obterGenero('intersexo'));  // "f, Feminino"
+// console.log(obterGenero());            // "m, Masculino" ou "f, Feminino" (aleatório se nenhum input fornecido)
