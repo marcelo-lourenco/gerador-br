@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import gerar from './index.js';
 
 /* ******************** DOCUMENTOS ********************** */
@@ -19,11 +20,11 @@ console.log(gerar.cpf());
 // Gera CPF com máscara e de estado aleatório
 console.log(gerar.cpf(true));
 
- // Gera CPF com máscara e do estado informado
-console.log(gerar.cpf(true, "RS"));
+// Gera CPF com máscara e do estado informado
+console.log(gerar.cpf(true, 'RS'));
 
 // Gera CPF sem máscara e do estado informado
-console.log(gerar.cpf(false, "MG"));
+console.log(gerar.cpf(false, 'MG'));
 
 // Gera RG sem máscara
 console.log(gerar.rg());
@@ -50,14 +51,13 @@ console.log(gerar.tituloEleitor());
 console.log(gerar.tituloEleitor(true));
 
 // Gera Título de Eleitor sem máscara e de estado informado
-console.log(gerar.tituloEleitor(true,'SE'));
+console.log(gerar.tituloEleitor(true, 'SE'));
 
 // Gera Título de Eleitor com máscara e de estado informado
-console.log(gerar.tituloEleitor(false,'PR'));
+console.log(gerar.tituloEleitor(false, 'PR'));
 
 // Gera Passaporte aleatório
 console.log(gerar.passaporte());
-
 
 /* ******************** BANCOS ************************** */
 // Gera dados de um banco aleatório
@@ -76,7 +76,6 @@ console.log(gerar.banco(237));
 // Retorna uma lista de códigos de bancos
 console.log(gerar.listaCodigosBancos());
 
-
 /* ******************** CARTÃO DE CRÉDITO *************** */
 // Gera objeto cartaoCredito com as propriedades:
 //   numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
@@ -92,16 +91,15 @@ console.log(cc.nomeTitular);
 
 // Gera objeto cartaoCredito com as propriedades:
 // numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
-console.log(gerar.cartaoCredito(true, "João Santos da Silva"));
+console.log(gerar.cartaoCredito(true, 'João Santos da Silva'));
 
 // Gera objeto cartaoCredito com as propriedades:
 // numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
-console.log(gerar.cartaoCredito(false, "Maria Aparecida Reis"));
+console.log(gerar.cartaoCredito(false, 'Maria Aparecida Reis'));
 
 // Gera objeto cartaoCredito com as propriedades:
 // numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular gerado (abreviado)
 console.log(gerar.cartaoCredito(true, gerar.nome.femininoCompleto()));
-
 
 /* ******************** CONTA BANCÁRIA ****************** */
 // Gera uma conta bancária aleatória de um banco aleatório
@@ -121,7 +119,7 @@ console.log(gerar.contaBancaria('1'));
 console.log(gerar.contaBancaria('Banco do Brasil'));
 
 // Gera uma conta bancária aleatória do Bradesco
-console.log(gerar.contaBancaria("237"));
+console.log(gerar.contaBancaria('237'));
 console.log(gerar.contaBancaria('Bradesco'));
 
 // Gera uma conta bancária aleatória da Caixa
@@ -143,7 +141,6 @@ console.log(gerar.contaBancaria('Itaú'));
 // Gera uma conta bancária aleatória do Santander
 console.log(gerar.contaBancaria('33'));
 console.log(gerar.contaBancaria('Santander'));
-
 
 /* ******************** NOME **************************** */
 // Gera um nome aleatório (apenas o primeiro nome - feminino ou masculino)
@@ -185,11 +182,9 @@ console.log(gerar.nome.sobrenome());
 // Gera apelido aleatório
 console.log(gerar.apelido());
 
-
 /* ******************** DATAS *************************** */
 // Gera data de nascimento aleatória
 console.log(gerar.dataNascimento());
-
 
 /* ******************** E-MAIL ************************** */
 // Gera e-mail com nickname aleatório
@@ -203,36 +198,33 @@ console.log(gerar.email(nomeMasculinoCompleto));
 const nomeFemininoCompleto = gerar.nome.femininoCompleto();
 console.log(gerar.email(nomeFemininoCompleto));
 
-
 /* ******************** DDD ***************************** */
- // Gera DDD aleatório
+// Gera DDD aleatório
 console.log(gerar.ddd());
 
 // Gera DDD aleatório do estado informado
-console.log(gerar.ddd("PA"));
-
+console.log(gerar.ddd('PA'));
 
 /* ******************** CÓDIGO DE OPERADORA ************** */
 // ATENÇAO: Devido a portabilidade, celulares reais podem não pertencer mais a operadora de origem
 
 // Gera um código da Claro (968, 973, 974, 975, 976, 991, 992, 993 ou 994)
-console.log(gerar.codigoOperadora("Claro"));
+console.log(gerar.codigoOperadora('Claro'));
 
 // Gera um código da Oi (984, 985, 986, 987, 988 ou 989)
-console.log(gerar.codigoOperadora("Oi"));
+console.log(gerar.codigoOperadora('Oi'));
 
 // Gera um código da Tim (969, 979, 980, 981, 982 ou 983)
-console.log(gerar.codigoOperadora("Tim"));
+console.log(gerar.codigoOperadora('Tim'));
 
 // Gera um código da Vivo (967, 971, 972, 995, 996, 997, 998 ou 999)
-console.log(gerar.codigoOperadora("Vivo"));
+console.log(gerar.codigoOperadora('Vivo'));
 
 // Gera um código de uma operadora aleatória
 console.log(gerar.codigoOperadora());
 
 // Gera um código de uma operadora aleatória
-console.log(gerar.codigoOperadora("blablabla"));
-
+console.log(gerar.codigoOperadora('blablabla'));
 
 /* ******************** CELULAR ************************* */
 // Gera celular sem máscara, de estado aleatório e operadora aleatória
@@ -242,17 +234,16 @@ console.log(gerar.celular()); // "11999999999"
 console.log(gerar.celular(true)); // "(11) 99999-9999"
 
 // Gera celular sem máscara, do estado informado e operadora aleatória
-console.log(gerar.celular(false, "SC")); // "48999999999"
+console.log(gerar.celular(false, 'SC')); // "48999999999"
 
 // Gera celular com máscara, do estado informado e operadora aleatória
-console.log(gerar.celular(true, "ES")); // "(27) 99999-9999"
+console.log(gerar.celular(true, 'ES')); // "(27) 99999-9999"
 
 // Gera celular sem máscara, do estado aleatório e operadora informada
-console.log(gerar.celular(false, "", "Claro")); // "85991999999"
+console.log(gerar.celular(false, '', 'Claro')); // "85991999999"
 
 // Gera celular com máscara, do estado informado e operadora aleatória
-console.log(gerar.celular(true, "MS", "Vivo")); // "(67) 99799-9999"
-
+console.log(gerar.celular(true, 'MS', 'Vivo')); // "(67) 99799-9999"
 
 /* ******************** CELULAR ************************* */
 // Gera telefone sem máscara, de estado aleatório
@@ -262,11 +253,10 @@ console.log(gerar.telefone()); // "1199999999"
 console.log(gerar.telefone(true)); // "(11) 9999-9999"
 
 // Gera telefone sem máscara, do estado informado
-console.log(gerar.telefone(false, "SC")); // "4899999999"
+console.log(gerar.telefone(false, 'SC')); // "4899999999"
 
 // Gera telefone com máscara, do estado informado
-console.log(gerar.telefone(true, "ES")); // "(27) 9999-9999"
-
+console.log(gerar.telefone(true, 'ES')); // "(27) 9999-9999"
 
 /* ******************** SOBRE A PESSOA ****************** */
 // Gera cor de pele aleatória
@@ -274,7 +264,6 @@ console.log(gerar.corPele());
 
 // Gera tipo sanguíneo aleatório
 console.log(gerar.tipoSanguineo());
-
 
 /* ******************** CEP *************************** */
 // Gera CEP sem máscara de estado aleatório
@@ -284,11 +273,10 @@ console.log(gerar.cep()); // "12345678"
 console.log(gerar.cep(true)); // "12345-678"
 
 // Gera CEP sem máscara de estado informado
-console.log(gerar.cep(false, "SP")); // "01001000"
+console.log(gerar.cep(false, 'SP')); // "01001000"
 
 // Gera CEP com máscara de estado informado
-console.log(gerar.cep(true, "SP")); // "01001-000"
-
+console.log(gerar.cep(true, 'SP')); // "01001-000"
 
 /* ******************** ENDEREÇO ************************ */
 // Gera um objeto com todos os campos do endereço e de estado aleatório
@@ -301,11 +289,10 @@ console.log(gerar.endereco(true));
 console.log(gerar.endereco(false));
 
 // Gera um objeto com todos os campos do endereço, o CEP com máscara e do estado informado
-console.log(gerar.endereco(true, "RJ"));
+console.log(gerar.endereco(true, 'RJ'));
 
 // Gera um objeto com todos os campos do endereço, o CEP sem máscara e do estado informado
-console.log(gerar.endereco(false, "SP"));
-
+console.log(gerar.endereco(false, 'SP'));
 
 // Opcionalmente, gere um endereço e utilize apenas a propriedade desejada
 const enderecoGerado = gerar.endereco();
@@ -316,7 +303,6 @@ console.log(enderecoGerado.complemento);// caso exista
 console.log(enderecoGerado.bairro);
 console.log(enderecoGerado.localidade);
 console.log(enderecoGerado.estado);
-
 
 /* ******************** VEÍCULO ************************* */
 // Gera placa no formato antigo com máscara "ABC-1234"
@@ -333,7 +319,6 @@ console.log(gerar.placaMercosul(false));
 
 // Gera RENAVAM
 console.log(gerar.renavam());
-
 
 /* ******************** TEXTO *************************** */
 // Gera uma palavra aleatória
@@ -352,4 +337,4 @@ console.log(gerar.paragrafo());
 console.log(gerar.paragrafo(5));
 
 // Gera um parágrafo com quantidade de sentenças e de palavras informadas.
-console.log(gerar.paragrafo(3,8));
+console.log(gerar.paragrafo(3, 8));

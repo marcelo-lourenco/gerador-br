@@ -1,27 +1,31 @@
 # Gerador de Dados Fictícios - Brasil
 
-[![NPM version][npm-version-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-downloads-url] [![MIT License][license-image]][license-url] [![CodeQL][git-codeql-image]][git-codeql-url] [![Node.js CI][git-nodejs-image]][git-nodejs-url] [![codecov][codecov-image]][codecov-url] [![FOSSA Status][fossa-image]][fossa-url]
+[![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-downloads-url] [![MIT License][license-img]][license-url] [![CodeQL][git-codeql-img]][git-codeql-url] [![Node.js CI][git-nodejs-img]][git-nodejs-url] [![ESLint][git-eslint-img]][git-eslint-url] [![codecov][codecov-img]][codecov-url] [![FOSSA Licence][fossa-license-img]][fossa-url] [![FOSSA Security][fossa-security-img]][fossa-url]
 
-[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 
-[npm-version-image]: https://img.shields.io/npm/v/gerador-br
+[npm-version-img]: https://img.shields.io/npm/v/gerador-br
 [npm-url]: https://npmjs.org/package/gerador-br
 
-[npm-downloads-image]: https://img.shields.io/npm/dm/gerador-br.svg
+[npm-downloads-img]: https://img.shields.io/npm/dm/gerador-br.svg
 [npm-downloads-url]: https://npmcharts.com/compare/gerador-br?minimal=true
 
-[git-codeql-image]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg
+[git-codeql-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg
 [git-codeql-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql
 
-[git-nodejs-image]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/nodejs.yml/badge.svg
+[git-nodejs-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/nodejs.yml/badge.svg
 [git-nodejs-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/nodejs.yml
 
-[codecov-image]: https://codecov.io/github/marcelo-lourenco/gerador-br/graph/badge.svg?token=JVAF4NO9IZ
+[git-eslint-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg
+[git-eslint-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml
+
+[codecov-img]: https://codecov.io/github/marcelo-lourenco/gerador-br/graph/badge.svg?token=JVAF4NO9IZ
 [codecov-url]: https://codecov.io/github/marcelo-lourenco/gerador-br
 
-[fossa-image]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield
-[fossa-url]: https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br?ref=badge_shield
+[fossa-license-img]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license
+[fossa-security-img]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security
+[fossa-url]: https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br
 
 Gere dados fictícios, mas válidos, para testes e desenvolvimento.
 
@@ -37,7 +41,7 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 * **Gerador de Conta Bancária**: Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
 * **Gerador de Cartão de Crédito**: Número, Bandeira, CVV e Validade;
 * **Gerador de Veículo**: Placa Antiga, Placa Mercosul e RENAVAM;
-* **Gerador de Texto (Lorem Ipsum)**: palavras, sentenças e parágrafos;
+* **Gerador de Texto (Lorem Ipsum)**: Palavras, Sentenças e Parágrafos;
 
 ## Instalação
 
@@ -56,7 +60,7 @@ import { nome, cpf, cnpj, placaMercosul } from 'gerador-br';
 
 console.log(nome.femininoCompleto());   // Ex: "Maria"
 console.log(cpf());                     // Gera CPF sem máscara e do estado aleatório
-console.log(cpf(false, "PE"));          // Gera CPF sem máscara e do estado informado
+console.log(cpf(false, "PE"));          // Gera CPF sem máscara e do estado info
 console.log(cnpj(true));                // Gera CNPJ com máscara
 console.log(placaMercosul(true));       // Gera placa no formato Mercosul com máscara "ABC-1D23"
 ```

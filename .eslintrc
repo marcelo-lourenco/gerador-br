@@ -4,6 +4,9 @@
     "import/extensions": [
       "error",
       "ignorePackages"
-    ]
+    ],
+    "import/prefer-default-export": "off",
+    "max-len": "off",
+    "prefer-const": "off"
   }
 }

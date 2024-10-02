@@ -1,5 +1,5 @@
-import { stateRand } from "../utils.js";
-import { ddd } from './ddd.js'
+import { stateRand } from '../utils.js';
+import { ddd } from './ddd.js';
 
 /**
  * Gera um número de telefone aleatório.
@@ -39,7 +39,13 @@ export function telefone(mask, state) {
 
   let sortDdd = state ? ddd(state) : ddd(stateRand);
   let n1 = randRange(2, 3);
-  let n2 = randDigit(), n3 = randDigit(), n4 = randDigit(), n5 = randDigit(), n6 = randDigit(), n7 = randDigit(), n8 = randDigit();
+  let n2 = randDigit();
+  let n3 = randDigit();
+  let n4 = randDigit();
+  let n5 = randDigit();
+  let n6 = randDigit();
+  let n7 = randDigit();
+  let n8 = randDigit();
 
   let telephoneGen = `(${sortDdd}) ${n1}${n2}${n3}${n4}-${n5}${n6}${n7}${n8}`;
 

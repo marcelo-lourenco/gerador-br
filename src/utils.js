@@ -15,7 +15,6 @@ import {
   categoriasCnh,
 } from '../data/db-general.js';
 
-
 /**
  * Retorna um elemento aleatório de um array.
  * @param {Array} arr - O array do qual deve ser extraído um elemento aleatório.
@@ -39,7 +38,7 @@ export const mask = false;
  * Uma sigla de estado aleatória.
  * @type {string}
  * @example
- * console.log(stateRand); // Pode exibir qualquer sigla de estado, como "SP", "RJ", etc.
+ * console.log(stateRand); // Retorna qualquer sigla de estado, como "SP", "RJ", etc.
  */
 export const stateRand = getRandom(siglasEstados);
 
@@ -47,15 +46,15 @@ export const stateRand = getRandom(siglasEstados);
  * Um nome aleatório.
  * @type {string}
  * @example
- * console.log(nomeAleatorio); // Pode exibir qualquer nome masculino ou feminino.
+ * console.log(nomeAleatorio); // Retorna qualquer nome masculino ou feminino.
  */
-export const nomeAleatorioRand =  getRandom([...nomesFemininos, ...nomesMasculinos]);
+export const nomeAleatorioRand = getRandom([...nomesFemininos, ...nomesMasculinos]);
 
 /**
  * Um nome masculino aleatório.
  * @type {string}
  * @example
- * console.log(nomeMasculinoRand); // Pode exibir qualquer nome masculino, como "Abel", "Abner", etc.
+ * console.log(nomeMasculinoRand); // Retorna qualquer nome masculino, como "Abel", "Abner", etc.
  */
 export const nomeMasculinoRand = getRandom(nomesMasculinos);
 
@@ -63,7 +62,7 @@ export const nomeMasculinoRand = getRandom(nomesMasculinos);
  * Um nome feminino aleatório.
  * @type {string}
  * @example
- * console.log(nomeFemininoRand); // Pode exibir qualquer nome feminino, como "Aaliyah", "Adelaide", etc.
+ * console.log(nomeFemininoRand); // Retorna qualquer nome feminino, como "Ana", "Maria", etc.
  */
 export const nomeFemininoRand = getRandom(nomesFemininos);
 
@@ -71,7 +70,7 @@ export const nomeFemininoRand = getRandom(nomesFemininos);
  * Um nome do meio aleatório.
  * @type {string}
  * @example
- * console.log(nomeDoMeioRand); // Pode exibir qualquer nome do meio, como "Alencar", "Almeida", etc.
+ * console.log(nomeDoMeioRand); // Retorna qualquer nome do meio, como "Alencar", "Almeida", etc.
  */
 export const nomeDoMeioRand = getRandom(nomesDoMeio);
 
@@ -79,7 +78,7 @@ export const nomeDoMeioRand = getRandom(nomesDoMeio);
  * Um sobrenome aleatório.
  * @type {string}
  * @example
- * console.log(sobrenomeRand); // Pode exibir qualquer sobrenome, como "Alves", "Amorim", etc.
+ * console.log(sobrenomeRand); // Retorna qualquer sobrenome, como "Alves", "Amorim", etc.
  */
 export const sobrenomeRand = getRandom(sobrenomes);
 
@@ -87,7 +86,7 @@ export const sobrenomeRand = getRandom(sobrenomes);
  * Um nome do pai aleatório.
  * @type {string}
  * @example
- * console.log(nomePaiRand); // Pode exibir qualquer nome masculino, como "Abel", "Abner", etc.
+ * console.log(nomePaiRand); // Retorna qualquer nome masculino, como "Abel", "Abner", etc.
  */
 export const nomePaiRand = getRandom(nomesMasculinos);
 
@@ -95,7 +94,7 @@ export const nomePaiRand = getRandom(nomesMasculinos);
  * Um nome da mãe aleatório.
  * @type {string}
  * @example
- * console.log(nomeMaeRand); // Pode exibir qualquer nome feminino, como "Aaliyah", "Adelaide", etc.
+ * console.log(nomeMaeRand); // Retorna qualquer nome feminino, como "Aaliyah", "Adelaide", etc.
  */
 export const nomeMaeRand = getRandom(nomesFemininos);
 
@@ -103,7 +102,7 @@ export const nomeMaeRand = getRandom(nomesFemininos);
  * Um apelido aleatório.
  * @type {string}
  * @example
- * console.log(apelidoRand); // Pode exibir qualquer apelido, como "Ace", "Alpha", etc.
+ * console.log(apelidoRand); // Retorna qualquer apelido, como "Ace", "Alpha", etc.
  */
 export const apelidoRand = getRandom(nicknames);
 
@@ -111,7 +110,8 @@ export const apelidoRand = getRandom(nicknames);
  * Um provedor de email aleatório.
  * @type {string}
  * @example
- * console.log(provedorEmailRand); // Pode exibir qualquer provedor de email, como "@gmail.com", "@yahoo.com", etc.
+ * console.log(provedorEmailRand); // Retorna qualquer provedor de email, como:
+ * "@gmail.com", "@yahoo.com", etc.
  */
 export const provedorEmailRand = getRandom(provedoresEmail);
 
@@ -119,7 +119,7 @@ export const provedorEmailRand = getRandom(provedoresEmail);
  * Uma palavra aleatória.
  * @type {string}
  * @example
- * console.log(palavraRand); // Pode exibir qualquer palavra, como "lorem", "ipsum", etc.
+ * console.log(palavraRand); // Retorna qualquer palavra, como "lorem", "ipsum", etc.
  */
 export const palavraRand = getRandom(palavras);
 
@@ -127,7 +127,8 @@ export const palavraRand = getRandom(palavras);
  * Uma orientação sexual aleatória.
  * @type {string}
  * @example
- * console.log(orientacaoSexualRand); // Pode exibir qualquer orientação sexual, como "Heterossexual", "Homossexual", etc.
+ * console.log(orientacaoSexualRand); // Retorna qualquer orientação sexual, como:
+ * "Heterossexual", "Homossexual", etc.
  */
 export const orientacaoSexualRand = getRandom(orientacaoSexual);
 
@@ -135,7 +136,8 @@ export const orientacaoSexualRand = getRandom(orientacaoSexual);
  * Uma identidade de gênero aleatória.
  * @type {string}
  * @example
- * console.log(identidadeGeneroRand); // Pode exibir qualquer identidade de gênero, como "Cisgênero", "Transgênero", etc.
+ * console.log(identidadeGeneroRand); // Retorna qualquer identidade de gênero, como:
+ * "Cisgênero", "Transgênero", etc.
  */
 export const identidadeGeneroRand = getRandom(identidesGenero);
 
@@ -143,7 +145,8 @@ export const identidadeGeneroRand = getRandom(identidesGenero);
  * Identidade de gênero associada à orientação sexual selecionada.
  * @type {string[]}
  * @example
- * console.log(identidadePorOrientacaoRand); // Pode exibir uma lista de identidades de gênero como ["Cisgênero", "Transgênero"].
+ * console.log(identidadePorOrientacaoRand); // Retorna uma lista de identidades de gênero como:
+ * ["Cisgênero", "Transgênero"].
  */
 export const identidadePorOrientacaoRand = identidadesPorOrientacao[orientacaoSexualRand];
 
@@ -151,7 +154,7 @@ export const identidadePorOrientacaoRand = identidadesPorOrientacao[orientacaoSe
  * Uma raça ou cor aleatória.
  * @type {string}
  * @example
- * console.log(corPeleRand); // Pode exibir qualquer raça ou cor, como "Branca", "Preta", etc.
+ * console.log(corPeleRand); // Retorna qualquer raça ou cor, como "Branca", "Preta", etc.
  */
 export const corPeleRand = getRandom(corPele);
 
@@ -159,7 +162,7 @@ export const corPeleRand = getRandom(corPele);
  * Um tipo sanguíneo aleatório.
  * @type {string}
  * @example
- * console.log(tipoSanguineoRand); // Pode exibir qualquer tipo sanguíneo, como "A+", "O-", etc.
+ * console.log(tipoSanguineoRand); // Retorna qualquer tipo sanguíneo, como "A+", "O-", etc.
  */
 export const tipoSanguineoRand = getRandom(tiposSanguineo);
 
@@ -167,8 +170,6 @@ export const tipoSanguineoRand = getRandom(tiposSanguineo);
  * Uma categoria de CNH aleatória.
  * @type {string}
  * @example
- * console.log(categoriaCnhRand); // Pode exibir qualquer categoria de CNH, como "A", "B", "C", etc.
+ * console.log(categoriaCnhRand); // Retorna qualquer categoria de CNH, como "A", "B", "C", etc.
  */
 export const categoriaCnhRand = getRandom(categoriasCnh);
-
-

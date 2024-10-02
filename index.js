@@ -1,56 +1,53 @@
 import * as utils from './src/utils.js';
-import { nome } from "./src/generators/nome.js"
-import { banco, listaCodigosBancos } from './src/generators/banco.js'
+import { nome } from './src/generators/nome.js';
+import { banco, listaCodigosBancos } from './src/generators/banco.js';
 import { cartaoCredito } from './src/generators/cartao-credito.js';
 import { contaBancaria } from './src/generators/conta-bancaria.js';
-import { cnh } from "./src/generators/cnh.js"
-import { cnpj } from "./src/generators/cnpj.js"
-import { cpf } from "./src/generators/cpf.js"
-import { rg } from "./src/generators/rg.js"
-import { pis } from "./src/generators/pis.js"
-import { cns } from "./src/generators/cartao-nacional-saude.js"
-import { passaporte } from "./src/generators/passaporte.js"
-import { tituloEleitor } from "./src/generators/titulo-eleitor.js"
-import { dataNascimento } from "./src/generators/data-nascimento.js"
-import { email } from "./src/generators/email.js"
-import { celular } from "./src/generators/celular.js"
-import { telefone } from "./src/generators/telefone.js"
-import { cep } from "./src/generators/cep.js"
-import { endereco } from "./src/generators/endereco.js"
-import { placaAntiga, placaMercosul } from "./src/generators/placa.js"
+import { cnh } from './src/generators/cnh.js';
+import { cnpj } from './src/generators/cnpj.js';
+import { cpf } from './src/generators/cpf.js';
+import { rg } from './src/generators/rg.js';
+import { pis } from './src/generators/pis.js';
+import { cns } from './src/generators/cartao-nacional-saude.js';
+import { passaporte } from './src/generators/passaporte.js';
+import { tituloEleitor } from './src/generators/titulo-eleitor.js';
+import { dataNascimento } from './src/generators/data-nascimento.js';
+import { email } from './src/generators/email.js';
+import { celular } from './src/generators/celular.js';
+import { telefone } from './src/generators/telefone.js';
+import { cep } from './src/generators/cep.js';
+import { endereco } from './src/generators/endereco.js';
+import { placaAntiga, placaMercosul } from './src/generators/placa.js';
 import { renavam } from './src/generators/renavam.js';
 import { ddd } from './src/generators/ddd.js';
 import { codigoOperadora } from './src/generators/operadora.js';
 import { palavra, sentenca, paragrafo } from './src/generators/texto.js';
 
-
 function apelido() {
-  return utils.apelidoRand
+  return utils.apelidoRand;
 }
 
 function corPele() {
-  return utils.corPeleRand
+  return utils.corPeleRand;
 }
 function tipoSanguineo() {
-  return utils.tipoSanguineoRand
+  return utils.tipoSanguineoRand;
 }
 function orientacaoSexual() {
-  return utils.orientacaoSexualRand
+  return utils.orientacaoSexualRand;
 }
 function identidadeGenero() {
-  return utils.identidadeGeneroRand
+  return utils.identidadeGeneroRand;
 }
 function identidadePorOrientacao() {
-  return utils.identidadePorOrientacaoRand
+  return utils.identidadePorOrientacaoRand;
 }
 function provedorEmail() {
-  return utils.provedorEmailRand
+  return utils.provedorEmailRand;
 }
 function cnhCategoria() {
-  return utils.categoriaCnhRand
+  return utils.categoriaCnhRand;
 }
-
-
 
 const gerar = {
   apelido: apelido(),
@@ -108,7 +105,6 @@ const gerar = {
  */
 gerar.nome = nome;
 
-
 /**
  * Gera dados de um banco aleatório.
  *
@@ -137,7 +133,6 @@ gerar.nome = nome;
  */
 gerar.banco = banco();
 
-
 /**
  * Retorna uma lista de códigos de bancos.
  *
@@ -148,7 +143,6 @@ gerar.banco = banco();
  * // => [ 1, 237, 104, 745, 296, 341, 33, ...]
  */
 gerar.listaCodigosBancos = listaCodigosBancos();
-
 
 /**
  * Gera Cartão de Crédito aleatório.
@@ -313,7 +307,6 @@ gerar.cartaoCredito = cartaoCredito();
  */
 gerar.contaBancaria = contaBancaria();
 
-
 /**
  * Gera um número de CNH aleatório.
  * @returns {string} O número de CNH gerado.
@@ -322,8 +315,6 @@ gerar.contaBancaria = contaBancaria();
  * console.log(gerar.cnh()); // "123456789012"
  */
 gerar.cnh = cnh;
-
-
 
 /**
  * Gera um número de CNPJ aleatório.
@@ -337,7 +328,6 @@ gerar.cnh = cnh;
  * console.log(cnpj(false)); // "12345678000100"
  */
 gerar.cnpj = cnpj;
-
 
 /**
  * Gera um número de CPF aleatório.
@@ -356,7 +346,6 @@ gerar.cnpj = cnpj;
  */
 gerar.cpf = cpf;
 
-
 /**
  * Gera um número de RG aleatório.
  * @param {boolean} mask - Se `true`, o RG será retornado com a máscara de formatação (xx.xxx.xxx-x). Se `false`, o RG será retornado apenas com os dígitos.
@@ -369,7 +358,6 @@ gerar.cpf = cpf;
  * console.log(gerar.rg(false)); // "123456789"
  */
 gerar.rg = rg;
-
 
 /**
  * Gera um número de Cartão Nacional de Saúde (CNS) aleatório. Com máscara ou sem máscara
@@ -397,7 +385,6 @@ gerar.cns = cns;
  */
 gerar.pis = pis;
 
-
 /**
  * Gera um Título de Eleitor aleatório.
  * @param {boolean} mask - Se `true`, o Título de Eleitor será retornado com a máscara de formatação (xxxx xxxx xxxx xxxx). Se `false`, será retornado apenas com os dígitos.
@@ -418,7 +405,6 @@ gerar.pis = pis;
  */
 gerar.tituloEleitor = tituloEleitor;
 
-
 /**
  * Gera um número de Passoporte aleatório.
  *
@@ -428,7 +414,6 @@ gerar.tituloEleitor = tituloEleitor;
  * console.log(gerar.passaporte()); // "AB1234567"
  */
 gerar.passaporte = passaporte;
-
 
 /**
  * Gera uma data de nascimento aleatória.
@@ -463,7 +448,6 @@ gerar.dataNascimento = dataNascimento;
  */
 gerar.cep = cep;
 
-
 /**
  * Gera um endereço aleatório.
  *
@@ -487,7 +471,6 @@ gerar.cep = cep;
  */
 gerar.endereco = endereco;
 
-
 /**
  * Gera um endereço de e-mail aleatório.
  *
@@ -506,7 +489,6 @@ gerar.endereco = endereco;
  * console.log(gerar.email(gerar.nomeFemininoCompleto)); // Pode retornar algo como "ana.borges@hotmail.com"
  */
 gerar.email = email;
-
 
 /**
  * Gera um número de celular aleatório.
@@ -538,7 +520,6 @@ gerar.email = email;
  */
 gerar.celular = celular;
 
-
 /**
  * Gera um número de telefone aleatório.
  *
@@ -561,7 +542,6 @@ gerar.celular = celular;
  * console.log(gerar.telefone(true, "ES")); // "(27) 9999-9999"
  */
 gerar.telefone = telefone;
-
 
 /**
  * Gera um DDD aleatório para um estado brasileiro.
@@ -618,7 +598,6 @@ gerar.codigoOperadora = codigoOperadora;
  * console.log(gerar.placaAntiga(false)); // "ABC1234"
  */
 gerar.placaAntiga = placaAntiga;
-
 
 /**
  * Gera uma placa de veículo aleatória no formato Mercosul (3 letras, 1 número, 1 letra, 2 números).
@@ -731,5 +710,5 @@ export default {
   renavam,
   palavra,
   sentenca,
-  paragrafo
+  paragrafo,
 };

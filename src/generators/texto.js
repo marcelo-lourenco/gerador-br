@@ -22,14 +22,15 @@ export function palavra() {
  * console.log(sentenca()); // Ex: "Ea placeat, labore quidem, harum expedita fuga."
  *
  * // Gera uma sentença aleatória com a quantidade de palavras informada.
- * console.log(sentenca(10)); // Ex: "Dolorem sit modi deleniti nemo sint laborum vitae repellendus ipsa."
+ * console.log(sentenca(10));
+ * // Ex: "Dolorem sit modi deleniti nemo sint laborum vitae repellendus ipsa."
  */
 export function sentenca(qttWords) {
-  const numberOfWords = qttWords ?? Math.floor(Math.random() * 10) + 10;
+  const numberOfWords = qttWords || Math.floor(Math.random() * 10) + 10;
   let sentence = Array.from({ length: numberOfWords }, () => palavra()).join(' ');
   sentence = `${sentence.charAt(0).toUpperCase() + sentence.slice(1)}.`;
 
-  return `${sentence.replace(/,\.|\.\.|\!\.|\?\./g, '.').trim()}`;
+  return `${sentence.replace(/,\.|\.\.|!\.|\?\./g, '.').trim()}`;
 }
 
 /**
@@ -43,7 +44,7 @@ export function sentenca(qttWords) {
  * console.log(paragrafo());
  * // Ex: "Recusandae. facilis consequuntur quae fuga. debitis quaerat architecto do placeat."
  *
- * // Gera um parágrafo aleatório a quantidade de sentença informada, cada uma com quantidade de palavras aleatórias
+ * // Gera um parágrafo com a quantidade de sentença informada, cada uma com quantidade de palavras aleatórias
  * console.log(paragrafo(3));
  * // Ex:
  * "Lorem ipsum dolor sit amet.
@@ -59,7 +60,7 @@ export function sentenca(qttWords) {
  */
 export function paragrafo(qttParagraph = 1, qttWords) {
   return Array.from({ length: qttParagraph }, () => sentenca(qttWords))
-    .map(sentence => sentence.charAt(0).toUpperCase() + sentence.slice(1))
+    .map((sentence) => sentence.charAt(0).toUpperCase() + sentence.slice(1))
     .join('\n')
     .trim();
 }

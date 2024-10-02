@@ -1,11 +1,12 @@
-import { nome } from './nome.js'
+import { nome } from './nome.js';
+
 const creditCard = {
-  generate: function (mask, fullTitularName) {
+  generate(mask, fullTitularName) {
     const arr = this.banner().number;
-    const brand = this.banner().brandName
+    const brand = this.banner().brandName;
     const length = 16 - arr.length;
-    for (var i = 1; i < length; i++) {
-      arr.push(Math.round(Math.random() * 9))
+    for (let i = 1; i < length; i++) {
+      arr.push(Math.round(Math.random() * 9));
     }
 
     let sum = 0;
@@ -14,7 +15,7 @@ const creditCard = {
     arr.forEach((value, i) => {
       ninesOut = Number(value) * (aux ? 2 : 1); // false = 1 vs true = 2
       ninesOut = ninesOut > 9 ? ninesOut - 9 : ninesOut;
-      sum = sum + ninesOut;
+      sum += ninesOut;
       aux = !aux;
       ninesOut = 0;
     });
@@ -24,54 +25,53 @@ const creditCard = {
       digit = 0;
     }
 
-    const numberCard = mask ? arr.join("").replace(/(.{4})/g, "$1 ") + digit : arr.join("") + digit;
+    const numberCard = mask ? arr.join('').replace(/(.{4})/g, '$1 ') + digit : arr.join('') + digit;
 
     const creditCardData = {
-      "numero": numberCard,
-      "bandeira": brand,
-      "cvv": this.cvv(),
-      "dataExpiracao": this.expirationDate(),
-      "nomeTitular": this.titularName(fullTitularName)
-    }
+      numero: numberCard,
+      bandeira: brand,
+      cvv: this.cvv(),
+      dataExpiracao: this.expirationDate(),
+      nomeTitular: this.titularName(fullTitularName),
+    };
 
     return creditCardData;
   },
-  banner: function () {
-    let brandCodes = {
-      "discover": [6011, 622, 65],
-      "elo": [636368, 438935, 504175, 451416],
-      "jcb": [35],
-      "mastercard": [51, 52, 53, 54, 55],
-      "visa": [4]
+  banner() {
+    const brandCodes = {
+      discover: [6011, 622, 65],
+      elo: [636368, 438935, 504175, 451416],
+      jcb: [35],
+      mastercard: [51, 52, 53, 54, 55],
+      visa: [4],
     };
 
     const arrNumber = [];
-    for (let brand in brandCodes) {
-      brandCodes[brand].forEach(value => arrNumber.push({ number: value, brand: brand }));
+    for (const brand in brandCodes) {
+      brandCodes[brand].forEach((value) => arrNumber.push({ number: value, brand }));
     }
 
-    let selectedEntry = arrNumber[Math.floor(Math.random() * arrNumber.length)];
-    let number = selectedEntry.number.toString().split("").map(Number);
-    let brandName = selectedEntry.brand;
+    const selectedEntry = arrNumber[Math.floor(Math.random() * arrNumber.length)];
+    const number = selectedEntry.number.toString().split('').map(Number);
+    const brandName = selectedEntry.brand;
 
     return { number, brandName };
   },
-  cvv: function () {
-    let random = Math.floor(Math.random() * 999) + 1;
-    let cvv = "00" + random.toString();
+  cvv() {
+    const random = Math.floor(Math.random() * 999) + 1;
+    const cvv = `00${random.toString()}`;
     return cvv.substr(cvv.length - 3);
   },
-  expirationDate: function () {
+  expirationDate() {
     const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
     const getRandomMonth = () => getRandomInt(1, 12);
     const getRandomDay = (month) => {
       if ([1, 3, 5, 7, 8, 10, 12].includes(month)) {
         return getRandomInt(1, 31);
-      } else if ([4, 6, 9, 11].includes(month)) {
+      } if ([4, 6, 9, 11].includes(month)) {
         return getRandomInt(1, 30);
-      } else {
-        return getRandomInt(1, 28);
       }
+      return getRandomInt(1, 28);
     };
 
     const month = String(getRandomMonth()).padStart(2, '0');
@@ -80,20 +80,19 @@ const creditCard = {
 
     return `${day}/${month}/${year}`;
   },
-  titularName: function (fullTitularName) {
-    const name = fullTitularName ? fullTitularName : nome.aleatorioCompleto();
+  titularName(fullTitularName) {
+    const name = fullTitularName || nome.aleatorioCompleto();
     const names = name.split(' ');
-    const nameTitular = `${names[0]} ${names[1].charAt(0)} ${names.slice(-1)[0]}`
+    const nameTitular = `${names[0]} ${names[1].charAt(0)} ${names.slice(-1)[0]}`;
     return nameTitular.toUpperCase();
-  }
+  },
 };
-
 
 /**
  * Gera Cartão de Crédito aleatório.
  * Este objeto fornece métodos para gerar número de Cartão de Crédito, Bandeira, CVV, Data De Expiração e Nome do Titular.
  * @param {boolean} [mask=false] - Se `true`, o número do cartão será retornado com a máscara de formatação (xxxx xxxx xxxx xxxx). Se `false`, o número do cartão será retornado apenas com os dígitos.
- * @param {string} - Nome completo do titula
+ * @param {string} - Nome completo do titular
  * @returns {object} Um objeto contendo o número do cartão, a bandeira, o CVV e a data de expiração e o nome do titular
  *
  * @example
@@ -139,6 +138,6 @@ const creditCard = {
  *    }
  *
  */
-export const cartaoCredito = function cc(mask,fullTitularName){
-  return creditCard.generate(mask,fullTitularName)
-}
+export const cartaoCredito = function cc(mask, fullTitularName) {
+  return creditCard.generate(mask, fullTitularName);
+};

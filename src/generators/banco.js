@@ -1,7 +1,6 @@
-import banks from '../../data/db-bancos.js'
+import banks from '../../data/db-bancos.js';
 
 const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
 
 /**
  * Gera dados de um banco aleatório.
@@ -30,9 +29,9 @@ const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
  * }
  */
 export const banco = function bank(code) {
-  let bankRand = ""
+  let bankRand = '';
   if (code) {
-    bankRand = banks.find(bank => bank.code === parseInt(code, 10));
+    bankRand = banks.find((bnk) => bnk.code === parseInt(code, 10));
     if (!bankRand) {
       // console.log("Banco não encontrado")
       bankRand = getRandom(banks);
@@ -44,10 +43,9 @@ export const banco = function bank(code) {
     codigoBanco: bankRand.code,
     nomeBanco: bankRand.name,
     razaoSocial: bankRand.fullName,
-    ispb: bankRand.ispb
+    ispb: bankRand.ispb,
   };
-}
-
+};
 
 /**
  * Retorna uma lista de códigos de bancos.
@@ -58,6 +56,6 @@ export const banco = function bank(code) {
  * console.log(listaCodigosBancos());
  * // => [ 1, 237, 104, 745, 296, 341, 33, ...]
  */
-export const listaCodigosBancos = function ()  {
-  return banks.map(bank => bank.code);
-}
+export const listaCodigosBancos = function () {
+  return banks.map((bank) => bank.code);
+};
