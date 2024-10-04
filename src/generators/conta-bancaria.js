@@ -1,8 +1,7 @@
+import crypto from 'crypto';
+
 const cryptoRandomInt = function (min, max) {
-  const array = new Uint32Array(1);
-  crypto.getRandomValues(array);
-  const random = array[0] / (0xFFFFFFFF + 1);
-  return Math.floor(random * (max - min)) + min;
+  return crypto.randomInt(min, max);
 };
 
 const genAgencyAccount = function (numberOfDigits = 4) {
