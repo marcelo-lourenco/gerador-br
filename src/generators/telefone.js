@@ -1,3 +1,5 @@
+import crypto from 'crypto';
+
 import { stateRand } from '../utils.js';
 import { ddd } from './ddd.js';
 
@@ -6,7 +8,7 @@ import { ddd } from './ddd.js';
  *
  * O número de telefone gerado pode ser formatado com máscara - (XX) XXXX-XXXX - ou apenas com os dígitos.
  *
- * @param {boolean} [mask=false] - Se `true`, o telefone será retornado com a máscara - (XX) XXXX-XXXX. Se `false`, o telefone será retornado apenas com os dígitos.
+ * @param {boolean} [mask=false] - Se true, o telefone será retornado com a máscara - (XX) XXXX-XXXX. Se false, o telefone será retornado apenas com os dígitos.
  * @param {string} [state] - A sigla do estado para filtrar os DDDs. Se não fornecido, um DDD de qualquer estado será gerado.
  * @returns {string} O número de telefone gerado.
  * @example
@@ -24,18 +26,10 @@ import { ddd } from './ddd.js';
  */
 export function telefone(mask, state) {
   // Função para gerar um número aleatório seguro entre 0 e 9
-  const randDigit = () => {
-    const randomArray = new Uint8Array(1);
-    crypto.getRandomValues(randomArray);
-    return randomArray[0] % 10;
-  };
+  const randDigit = () => crypto.randomInt(0, 9);
 
   // Função para gerar um número seguro entre min e max (inclusive)
-  const randRange = (min, max) => {
-    const randomArray = new Uint8Array(1);
-    crypto.getRandomValues(randomArray);
-    return min + (randomArray[0] % (max - min + 1));
-  };
+  const randRange = (min, max) => crypto.randomInt(min, max);
 
   let sortDdd = state ? ddd(state) : ddd(stateRand);
   let n1 = randRange(2, 3);
