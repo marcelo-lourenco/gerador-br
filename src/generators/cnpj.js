@@ -1,4 +1,3 @@
-
 /**
  * Calcula o dígito verificador (DV) para um número de CNPJ.
  *
@@ -6,8 +5,8 @@
  * @returns {number} O dígito verificador calculado.
  */
 function calcDV(dv) {
-  dv = 11 - (dv % 11);
-  return (dv >= 10) ? 0 : dv;
+  const dvGen = 11 - (dv % 11);
+  return (dvGen >= 10) ? 0 : dvGen;
 }
 
 /**
@@ -24,8 +23,18 @@ function calcDV(dv) {
  */
 export function cnpj(mask) {
   let n = () => Math.round(Math.random() * 9);
-  let n1 = n(), n2 = n(), n3 = n(), n4 = n(), n5 = n(), n6 = n(), n7 = n(), n8 = n();
-  let n9 = 0, n10 = 0, n11 = 0, n12 = 1;
+  let n1 = n();
+  let n2 = n();
+  let n3 = n();
+  let n4 = n();
+  let n5 = n();
+  let n6 = n();
+  let n7 = n();
+  let n8 = n();
+  let n9 = 0;
+  let n10 = 0;
+  let n11 = 0;
+  let n12 = 1;
 
   let dv1 = n12 * 2 + n11 * 3 + n10 * 4 + n9 * 5 + n8 * 6 + n7 * 7 + n6 * 8 + n5 * 9 + n4 * 2 + n3 * 3 + n2 * 4 + n1 * 5;
   dv1 = calcDV(dv1);

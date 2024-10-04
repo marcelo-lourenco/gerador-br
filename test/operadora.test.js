@@ -11,7 +11,7 @@ describe('Operadora Generator', () => {
 
   test('should generate a valid operator code for a given operator name', () => {
     const operators = ['Claro', 'Oi', 'Tim', 'Vivo'];
-    operators.forEach(operator => {
+    operators.forEach((operator) => {
       const code = codigoOperadora(operator);
       strictEqual(typeof code, 'number');
       strictEqual(code > 0, true);

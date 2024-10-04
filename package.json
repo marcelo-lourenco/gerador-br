@@ -12,10 +12,11 @@
   },
   "scripts": {
     "lint": "eslint . -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif",
-    "test": "node --test test"
+    "test": "node --test --experimental-test-coverage test"
   },
   "devDependencies": {
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
+    "coveralls": "^3.1.1",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2"

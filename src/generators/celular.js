@@ -1,6 +1,6 @@
-import { stateRand } from "../utils.js";
-import { ddd } from './ddd.js'
-import { codigoOperadora } from './operadora.js'
+import { stateRand } from '../utils.js';
+import { ddd } from './ddd.js';
+import { codigoOperadora } from './operadora.js';
 
 /**
  * Gera um número de celular aleatório.
@@ -34,7 +34,8 @@ export function celular(mask, state, operator) {
   let n = () => Math.round(Math.random() * 9);
   let sortDdd = state ? ddd(state) : ddd(stateRand);
   let sortOperator = codigoOperadora(operator); // Claro, Oi, Tim, Vivo
-  const n3 = n(), n4 = n(), n5 = n(), n6 = n(), n7 = n(), n8 = n();
+  const n3 = n(); const n4 = n(); const n5 = n(); const n6 = n(); const n7 = n(); const
+    n8 = n();
 
   let cellphoneGen = `(${sortDdd}) ${sortOperator}${n3}${n4}-${n5}${n6}${n7}${n8}`;
 

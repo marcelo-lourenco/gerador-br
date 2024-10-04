@@ -1,8 +1,8 @@
-function obterGenero(input) {
+export function obterGenero(input) {
   const generos = {
-      m: "Masculino",
-      f: "Feminino",
-      i: "Intersexo"
+    m: 'Masculino',
+    f: 'Feminino',
+    i: 'Intersexo',
   };
 
   // Normaliza o input para comparação
@@ -10,13 +10,13 @@ function obterGenero(input) {
 
   // Verifica se o input é uma sigla válida
   if (inputNormalizado && generos[inputNormalizado]) {
-      return `{sigla: ${inputNormalizado}, descricao: ${generos[inputNormalizado]}}`;
+    return `{sigla: ${inputNormalizado}, descricao: ${generos[inputNormalizado]}}`;
   }
 
   // Verifica se o input é uma descrição válida
-  const sigla = Object.keys(generos).find(sigla => generos[sigla].toLowerCase() === inputNormalizado);
+  const sigla = Object.keys(generos).find((sg) => generos[sg].toLowerCase() === inputNormalizado);
   if (sigla) {
-      return `{sigla: ${sigla}, descricao: ${generos[sigla]}}`;
+    return `{sigla: ${sigla}, descricao: ${generos[sigla]}}`;
   }
 
   // Se não receber uma sigla ou descrição válida, retorna aleatoriamente "m, Masculino" ou "f, Feminino"
@@ -24,8 +24,6 @@ function obterGenero(input) {
   const siglaAleatoria = siglas[Math.floor(Math.random() * siglas.length)];
   return `{sigla: ${siglaAleatoria}, descricao: ${generos[siglaAleatoria]}}`;
 }
-
-
 
 // Exemplos de uso:
 // console.log(obterGenero('m'));         // "m, Masculino"

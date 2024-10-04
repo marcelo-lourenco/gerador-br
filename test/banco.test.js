@@ -8,20 +8,20 @@ const expectedBanks = {
     codigoBanco: 1,
     razaoSocial: 'BANCO DO BRASIL S.A.',
     nomeBanco: 'BANCO DO BRASIL S.A.',
-    ispb: '00000000'
+    ispb: '00000000',
   },
   77: {
     codigoBanco: 77,
     razaoSocial: 'BANCO INTER S.A.',
     nomeBanco: 'BANCO INTER',
-    ispb: '00416968'
+    ispb: '00416968',
   },
   422: {
     codigoBanco: 422,
     nomeBanco: 'BANCO SAFRA S.A.',
     razaoSocial: 'BANCO SAFRA S.A.',
-    ispb: '58160789'
-  }
+    ispb: '58160789',
+  },
 };
 
 describe('banco', () => {

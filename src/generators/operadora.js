@@ -1,4 +1,3 @@
-
 function getRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
@@ -31,10 +30,10 @@ function getRandom(arr) {
 */
 export function codigoOperadora(name) {
   const operators = {
-    "Claro": [968, 973, 974, 975, 976, 991, 992, 993, 994],
-    "Oi": [984, 985, 986, 987, 988, 989],
-    "Tim": [969, 979, 980, 981, 982, 983],
-    "Vivo": [967, 971, 972, 995, 996, 997, 998, 999]
+    Claro: [968, 973, 974, 975, 976, 991, 992, 993, 994],
+    Oi: [984, 985, 986, 987, 988, 989],
+    Tim: [969, 979, 980, 981, 982, 983],
+    Vivo: [967, 971, 972, 995, 996, 997, 998, 999],
   };
 
   const names = Object.keys(operators);

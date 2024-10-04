@@ -11,38 +11,35 @@
  * console.log(cns(true)); // "123 4567 8901 2345"
  */
 export function cns(mask) {
-  let cns = 0;
+  let cnsGen = 0;
 
-  while (cns.length !== 15) {
-    let n1 = Math.floor((Math.random() * 3) + 1);
-    n1 = (n1 === 3) ? Math.floor((Math.random() * 3) + 7) : n1;
-    const n2 = (`00000${Math.floor(Math.random() * 99999 + 1)}`).slice(-5);
-    const n3 = (`00000${Math.floor(Math.random() * 99999 + 1)}`).slice(-5);
-    cns = n1 + n2 + n3;
+  let n1 = Math.floor((Math.random() * 3) + 1);
+  n1 = (n1 === 3) ? Math.floor((Math.random() * 3) + 7) : n1;
+  const n2 = (`00000${Math.floor(Math.random() * 99999 + 1)}`).slice(-5);
+  const n3 = (`00000${Math.floor(Math.random() * 99999 + 1)}`).slice(-5);
+  cnsGen = n1 + n2 + n3;
 
-    let sum = 0;
-    for (let i = 0; i < cns.length; i++) {
-      sum += Number(cns.charAt(i)) * (15 - i);
-    }
-
-    let mod = sum % 11;
-    let dv = 11 - mod;
-    dv = (dv === 11) ? 0 : dv;
-
-    if (dv === 10) {
-      let sum = 2;
-      for (let i = 0; i < cns.length; i++) {
-        sum += Number(cns.charAt(i)) * (15 - i);
-      }
-      mod = sum % 11;
-      dv = 11 - mod;
-      cns += `001${String(dv)}`;
-    } else {
-      cns += `000${String(dv)}`;
-    }
-
-    const cnsGen = `${cns.substr(0, 3)} ${cns.substr(3, 4)} ${cns.substr(7, 4)} ${cns.substr(11, 4)}`;
-
-    return mask ? cnsGen : cnsGen.replace(/\D/g, '');
+  let sum = 0;
+  for (let i = 0; i < cnsGen.length; i++) {
+    sum += Number(cnsGen.charAt(i)) * (15 - i);
   }
+
+  let mod = sum % 11;
+  let dv = 11 - mod;
+  dv = (dv === 11) ? 0 : dv;
+
+  if (dv === 10) {
+    sum = 2;
+    for (let i = 0; i < cnsGen.length; i++) {
+      sum += Number(cnsGen.charAt(i)) * (15 - i);
+    }
+    mod = sum % 11;
+    dv = 11 - mod;
+    cnsGen += `001${String(dv)}`;
+  } else {
+    cnsGen += `000${String(dv)}`;
+  }
+
+  const formattedCnsGen = `${cnsGen.substr(0, 3)} ${cnsGen.substr(3, 4)} ${cnsGen.substr(7, 4)} ${cnsGen.substr(11, 4)}`;
+  return mask ? formattedCnsGen : cnsGen.replace(/\D/g, '');
 }

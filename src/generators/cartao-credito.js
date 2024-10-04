@@ -12,7 +12,7 @@ const creditCard = {
     let sum = 0;
     let aux = true;
     let ninesOut = 0;
-    arr.forEach((value, i) => {
+    arr.forEach((value) => {
       ninesOut = Number(value) * (aux ? 2 : 1); // false = 1 vs true = 2
       ninesOut = ninesOut > 9 ? ninesOut - 9 : ninesOut;
       sum += ninesOut;
@@ -21,7 +21,7 @@ const creditCard = {
     });
 
     let digit = 10 - (sum % 10);
-    if (digit == 10) {
+    if (digit === 10) {
       digit = 0;
     }
 
@@ -90,13 +90,15 @@ const creditCard = {
 
 /**
  * Gera Cartão de Crédito aleatório.
- * Este objeto fornece métodos para gerar número de Cartão de Crédito, Bandeira, CVV, Data De Expiração e Nome do Titular.
- * @param {boolean} [mask=false] - Se `true`, o número do cartão será retornado com a máscara de formatação (xxxx xxxx xxxx xxxx). Se `false`, o número do cartão será retornado apenas com os dígitos.
+ * Fornece métodos para gerar número de Cartão de Crédito, Bandeira, CVV, Data De Expiração e Nome do Titular.
+ * @param {boolean} [mask=false] - Se `true`, o número do cartão será retornado com a máscara de formatação (xxxx xxxx xxxx xxxx).
+ * Se `false`, o número do cartão será retornado apenas com os dígitos.
  * @param {string} - Nome completo do titular
- * @returns {object} Um objeto contendo o número do cartão, a bandeira, o CVV e a data de expiração e o nome do titular
+ * @returns {object} Um objeto contendo número do cartão, bandeira, CVV,  data de expiração e nome do titular
  *
  * @example
- * // Gera objeto cartaoCredito com as propriedades: numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
+ * // Gera objeto cartaoCredito com as propriedades:
+ * // numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
  * console.log(cartaoCredito());
  * // =>
  *    {
@@ -115,7 +117,8 @@ const creditCard = {
  * console.log(cc.dataExpiracao);
  * console.log(cc.nomeTitular);
  *
- * // Gera objeto cartaoCredito com as propriedades: numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+ * // Gera objeto cartaoCredito com as propriedades:
+ * // numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
  * console.log(cartaoCredito(true, "João Santos da Silva"));
  * // =>
  *    {
@@ -126,7 +129,8 @@ const creditCard = {
  *      nomeTitular: 'JOÃO S SILVA'
  *    }
  *
- * // Gera objeto cartaoCredito com as propriedades: numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+ * // Gera objeto cartaoCredito com as propriedades:
+ * // numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
  * console.log(cartaoCredito(false, "Maria Aparecida Reis"));
  * // =>
  *    {

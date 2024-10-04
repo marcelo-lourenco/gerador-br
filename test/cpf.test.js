@@ -1,4 +1,4 @@
-import {describe,test} from 'node:test';
+import { describe, test } from 'node:test';
 import { strictEqual } from 'node:assert';
 
 // Este teste garante validar funcionalidade Gerar CPF

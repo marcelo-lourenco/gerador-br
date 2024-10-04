@@ -27,16 +27,16 @@ const formatter = function (list, type, digit = '') {
     formatted += list[i];
   }
   if (type.toUpperCase() === 'AG') {
-    return `${formatted}${digit ? '-' + digit : '0'}`; // AG
+    return `${formatted}${digit ? `-${digit}` : '0'}`; // AG
   } else if (type.toUpperCase() === 'CC') {
-    return `${formatted}${digit ? '-' + digit : '0'}`; // CC
+    return `${formatted}${digit ? `-${digit}` : '0'}`; // CC
   } else {
     return [`${formatted.slice(0, 4)}`, `${formatted.slice(4)}-${digit}`]; // AG CC
   }
 };
 
 const bankAccount = {
-  generateBancoDoBrazil: function () {
+  generateBancoDoBrazil() {
     let bankCode = 1;
     let bankName = 'Banco do Brasil';
     let agency = genAgencyAccount();
@@ -61,7 +61,7 @@ const bankAccount = {
     };
   },
 
-  generateBradesco: function () {
+  generateBradesco() {
     let bankCode = 237;
     let bankName = 'Bradesco';
     let agency = genAgencyAccount();
@@ -70,10 +70,10 @@ const bankAccount = {
     let sumAgencyDV = genMultiplier(agency);
     let sumAccountDV = genMultiplier(account);
 
-    let agencyDV = Math.abs(sumAgencyDV % 11 - 11);
+    let agencyDV = Math.abs((sumAgencyDV % 11) - 11);
     agencyDV = agencyDV === 10 || agencyDV === 11 ? (agencyDV === 10 ? 'P' : 0) : agencyDV;
 
-    let accountDV = Math.abs(sumAccountDV % 11 - 11);
+    let accountDV = Math.abs((sumAccountDV % 11) - 11);
     accountDV = accountDV === 10 || accountDV === 11 ? (accountDV === 10 ? 'P' : 0) : accountDV;
 
     let agencyFormatted = formatter(agency, 'AG', agencyDV);
@@ -86,7 +86,7 @@ const bankAccount = {
     };
   },
 
-  generateCaixa: function () {
+  generateCaixa() {
     let bankCode = 104;
     let bankName = 'Caixa';
 
@@ -110,7 +110,7 @@ const bankAccount = {
       }
     }
 
-    let accountDV = Math.abs(Math.floor((sumAccountDV * 10 / 11)) * 11 - (sumAccountDV * 10));
+    let accountDV = Math.abs(Math.floor(((sumAccountDV * 10) / 11)) * 11 - (sumAccountDV * 10));
     accountDV = accountDV === 10 ? 0 : accountDV;
 
     let accountFormatted = formatter(account, 'ALL', accountDV);
@@ -123,7 +123,7 @@ const bankAccount = {
     };
   },
 
-  generateCitibank: function () {
+  generateCitibank() {
     let bankCode = 745;
     let bankName = 'Citibank';
     let agency = genAgencyAccount();
@@ -144,7 +144,7 @@ const bankAccount = {
     };
   },
 
-  generateHsbc: function () {
+  generateHsbc() {
     let bankCode = 296;
     let bankName = 'HSBC';
     let agency = genAgencyAccount();
@@ -172,7 +172,7 @@ const bankAccount = {
     };
   },
 
-  generateItau: function () {
+  generateItau() {
     let bankCode = 341;
     let bankName = 'Itaú';
     let account = genAgencyAccount(9);
@@ -203,7 +203,7 @@ const bankAccount = {
     };
   },
 
-  generateSantander: function () {
+  generateSantander() {
     let bankCode = 33;
     let bankName = 'Santander';
     let multipliers = [9, 7, 3, 1, 9, 7, 1, 3, 1, 9, 7, 3];
@@ -219,7 +219,7 @@ const bankAccount = {
       sumDV += (multipliers[i] * account[i]) % 10;
     }
 
-    let accountDV = Math.abs(sumDV % 10 - 10);
+    let accountDV = Math.abs((sumDV % 10) - 10);
     accountDV = sumDV % 10 === 0 ? 0 : accountDV;
 
     let accountFormatted = formatter(account, 'ALL', accountDV);
@@ -231,14 +231,12 @@ const bankAccount = {
     };
   },
 
-  generateSortBank: function (bank = 'Indiferente') {
-    const normalizeBankName = (name) => {
-      return name
-      .toLowerCase()            // Converte para letras minúsculas
-      .normalize("NFD")          // Separa os caracteres especiais das letras
+  generateSortBank(bank = 'Indiferente') {
+    const normalizeBankName = (name) => name
+      .toLowerCase() // Converte para letras minúsculas
+      .normalize('NFD') // Separa os caracteres especiais das letras
       .replace(/[\u0300-\u036f]/g, '') // Remove caracteres especiais
       .replace(/[^a-z0-9]/g, ''); // Remove caracteres não alfanuméricos
-    };
 
     let bancos = {
       '1|bancodobrasil': bankAccount.generateBancoDoBrazil(),
@@ -248,23 +246,22 @@ const bankAccount = {
       '296|hsbc': bankAccount.generateHsbc(),
       '341|itau': bankAccount.generateItau(),
       '33|santander': bankAccount.generateSantander(),
-      'indiferente': ''
+      indiferente: '',
     };
 
     let selectedBank;
 
     if (bank === 'Indiferente') {
-        let bancosKeys = Object.keys(bancos).filter(b => b !== 'indiferente');
-        selectedBank = bancosKeys[Math.floor(Math.random() * bancosKeys.length)];
+      let bancosKeys = Object.keys(bancos).filter((b) => b !== 'indiferente');
+      selectedBank = bancosKeys[Math.floor(Math.random() * bancosKeys.length)];
     } else {
-        const normalizedBank = normalizeBankName(bank);
-        selectedBank = Object.keys(bancos).find(key => key.includes(normalizedBank));
+      const normalizedBank = normalizeBankName(bank);
+      selectedBank = Object.keys(bancos).find((key) => key.includes(normalizedBank));
     }
 
     return bancos[selectedBank];
   },
 };
-
 
 /**
  * Gera uma conta bancária aleatória.
@@ -382,8 +379,7 @@ const bankAccount = {
  *    }
  */
 export const contaBancaria = function cb(bank) {
-
-  const ba = bankAccount.generateSortBank(bank)
+  const ba = bankAccount.generateSortBank(bank);
   const [age, ageDv] = ba.agency.split('-');
   const [acc, accDv] = ba.account.split('-');
 
@@ -391,9 +387,8 @@ export const contaBancaria = function cb(bank) {
     codigoBanco: ba.bankCode,
     nomeBanco: ba.bankName,
     agencia: age,
-    agenciaDv: ageDv ? ageDv : '',
+    agenciaDv: ageDv || '',
     conta: acc,
-    contaDv: accDv ? accDv : ''
+    contaDv: accDv || '',
   };
-
-}
+};

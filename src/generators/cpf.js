@@ -10,19 +10,19 @@ import { stateRand } from '../utils.js';
  */
 function numStates(state) {
   const stateGroups = {
-    0: ["RS"],
-    1: ["DF", "GO", "MT", "MS", "TO"],
-    2: ["AC", "AP", "AM", "PA", "RO", "RR"],
-    3: ["CE", "MA", "PI"],
-    4: ["AL", "PB", "PE", "RN"],
-    5: ["BA", "SE"],
-    6: ["MG"],
-    7: ["ES", "RJ"],
-    8: ["SP"],
-    9: ["PR", "SC"]
+    0: ['RS'],
+    1: ['DF', 'GO', 'MT', 'MS', 'TO'],
+    2: ['AC', 'AP', 'AM', 'PA', 'RO', 'RR'],
+    3: ['CE', 'MA', 'PI'],
+    4: ['AL', 'PB', 'PE', 'RN'],
+    5: ['BA', 'SE'],
+    6: ['MG'],
+    7: ['ES', 'RJ'],
+    8: ['SP'],
+    9: ['PR', 'SC'],
   };
 
-  return Object.keys(stateGroups).find(key => stateGroups[key].includes(state)) || null;
+  return Object.keys(stateGroups).find((key) => stateGroups[key].includes(state)) || null;
 }
 
 /**
@@ -54,7 +54,8 @@ function mod(dividend, divider) {
  */
 export function cpf(mask, state) {
   let n = () => Math.round(Math.random() * 9);
-  const n1 = n(), n2 = n(), n3 = n(), n4 = n(), n5 = n(), n6 = n(), n7 = n(), n8 = n(), n9 = numStates(state ? state : stateRand);
+  const n1 = n(); const n2 = n(); const n3 = n(); const n4 = n(); const n5 = n(); const n6 = n(); const n7 = n(); const n8 = n(); const
+    n9 = numStates(state || stateRand);
 
   let d1 = n9 * 2 + n8 * 3 + n7 * 4 + n6 * 5 + n5 * 6 + n4 * 7 + n3 * 8 + n2 * 9 + n1 * 10;
   d1 = 11 - (mod(d1, 11));

@@ -21,7 +21,8 @@ describe('Email Generator', () => {
     strictEqual(parts[0].length > 0, true);
     strictEqual(parts[1].length > 0, true);
     strictEqual(`@${parts[1]}`, provedorEmailRand);
-    strictEqual(parts[0], fullName.toLowerCase().replace(/ /g, '.').split('.').slice(0, 2).join('.'));
+    strictEqual(parts[0], fullName.toLowerCase().replace(/ /g, '.').split('.').slice(0, 2)
+      .join('.'));
   });
 
   test('should generate a valid email address with a nickname', () => {

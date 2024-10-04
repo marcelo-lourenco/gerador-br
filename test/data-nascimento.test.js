@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { describe, test } from 'node:test';
 import { strictEqual } from 'node:assert';
 import { dataNascimento } from '../src/generators/data-nascimento.js';
@@ -18,7 +19,7 @@ describe('Data Nascimento Generator', () => {
 
   test('should generate a date between 18 and 80 years ago', () => {
     const now = new Date();
-    const ageInYears = now.getFullYear() - getYearFromDate(dataNascimento());;
+    const ageInYears = now.getFullYear() - getYearFromDate(dataNascimento());
     strictEqual(ageInYears >= 18 && ageInYears <= 80, true);
   });
 });

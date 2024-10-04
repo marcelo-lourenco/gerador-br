@@ -1,7 +1,7 @@
 import dbCep from '../../data/db-ceps.js';
 import { stateRand } from '../utils.js';
 
-const getRandom = arr => arr[Math.floor(Math.random() * arr.length)];
+const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 /**
  * Gera um endereço aleatório.
@@ -25,8 +25,8 @@ const getRandom = arr => arr[Math.floor(Math.random() * arr.length)];
  * console.log(endereco(true, "SP")); // { cep: '01001-000', logradouro: 'Rua da Consolação', numero: 123, complemento: 'Apto 101', bairro: 'Consolação', localidade: 'São Paulo', estado: 'SP' }
  */
 export function endereco(mask = false, state) {
-  const uf = state ? state : stateRand;
-  const fullAddress = uf ? dbCep.filter(enderecos => enderecos.uf === uf) : dbCep;
+  const uf = state || stateRand;
+  const fullAddress = uf ? dbCep.filter((enderecos) => enderecos.uf === uf) : dbCep;
   const sortAddress = getRandom(fullAddress);
   const address = {};
   address.cep = mask ? sortAddress.cep : sortAddress.cep.replace(/\D/g, '');

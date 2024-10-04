@@ -1,7 +1,6 @@
 import { describe, test } from 'node:test';
 import { strictEqual } from 'node:assert';
 import { tituloEleitor } from '../src/generators/titulo-eleitor.js';
-//import { stateRand } from '../src/utils.js';
 
 describe('Título de Eleitor Generator', () => {
   test('should generate a valid title of voter without mask and with random state', () => {

@@ -16,14 +16,14 @@ describe('telefone', () => {
   });
 
   test('Generates a phone number for a specific state without mask', () => {
-    const state = "PB";
+    const state = 'PB';
     const result = telefone(false, state);
     strictEqual(result.startsWith('83'), true); // Check if DDD corresponds to "SC"
     strictEqual(result.length, 10);
   });
 
   test('Generates a phone number for a specific state with mask', () => {
-    const state = "RN";
+    const state = 'RN';
     const result = telefone(true, state);
     strictEqual(result.startsWith('(84)'), true); // Check if DDD corresponds to "ES"
     strictEqual(result.length, 14);

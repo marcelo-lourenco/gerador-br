@@ -1,4 +1,6 @@
-import { nomeAleatorioRand, nomeMasculinoRand, nomeFemininoRand, nomeDoMeioRand, sobrenomeRand, nomeMaeRand, nomePaiRand, } from '../utils.js';
+import {
+  nomeAleatorioRand, nomeMasculinoRand, nomeFemininoRand, nomeDoMeioRand, sobrenomeRand, nomeMaeRand, nomePaiRand,
+} from '../utils.js';
 
 /**
  * Gera nomes aleatórios.
@@ -49,71 +51,71 @@ export const nome = {
   * Gera um nome aleatório.
   * @returns {string} Um nome aleatório.
   */
-  aleatorio: function () { return nomeAleatorioRand },
+  aleatorio() { return nomeAleatorioRand; },
 
   /**
   * Gera um nome aleatório completo.
   * @returns {string} Um nome aleatório completo.
   */
-  aleatorioCompleto: function () { return `${nomeAleatorioRand} ${nomeDoMeioRand} ${sobrenomeRand}` },
+  aleatorioCompleto() { return `${nomeAleatorioRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
 
   /**
    * Gera um nome masculino aleatório.
    * @returns {string} Um nome masculino aleatório.
    */
-  masculino: function () { return nomeMasculinoRand },
+  masculino() { return nomeMasculinoRand; },
 
   /**
    * Gera um nome masculino completo aleatório.
    * @returns {string} Um nome masculino completo aleatório.
    */
-  masculinoCompleto: function () { return `${nomeMasculinoRand} ${nomeDoMeioRand} ${sobrenomeRand}` },
+  masculinoCompleto() { return `${nomeMasculinoRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
 
   /**
    * Gera um nome feminino aleatório.
    * @returns {string} Um nome feminino aleatório.
    */
-  feminino: function () { return nomeFemininoRand },
+  feminino() { return nomeFemininoRand; },
 
   /**
    * Gera um nome feminino completo aleatório.
    * @returns {string} Um nome feminino completo aleatório.
    */
-  femininoCompleto: function () { return `${nomeFemininoRand} ${nomeDoMeioRand} ${sobrenomeRand}` },
+  femininoCompleto() { return `${nomeFemininoRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
 
   /**
    * Gera o nome da mãe aleatório.
    * @returns {string} O nome da mãe aleatório.
    */
-  mae: function () { return `${nomeMaeRand}` },
+  mae() { return `${nomeMaeRand}`; },
 
   /**
    * Gera o nome completo da mãe aleatório.
    * @returns {string} O nome completo da mãe aleatório.
    */
-  maeCompleto: function () { return `${nomeMaeRand} ${nomeDoMeioRand} ${sobrenomeRand}` },
+  maeCompleto() { return `${nomeMaeRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
 
   /**
    * Gera o nome do pai aleatório.
    * @returns {string} O nome do pai aleatório.
    */
-  pai: function () { return `${nomePaiRand}` },
+  pai() { return `${nomePaiRand}`; },
 
   /**
    * Gera o nome completo do pai aleatório.
    * @returns {string} O nome completo do pai aleatório.
    */
-  paiCompleto: function () { return `${nomePaiRand} ${nomeDoMeioRand} ${sobrenomeRand}` },
+  paiCompleto() { return `${nomePaiRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
 
   /**
    * Gera um nome do meio aleatório.
    * @returns {string} Um nome do meio aleatório.
    */
-  doMeio: function () { return nomeDoMeioRand },
+  doMeio() { return nomeDoMeioRand; },
 
   /**
    * Gera um sobrenome aleatório.
    * @returns {string} Um sobrenome aleatório.
    */
-  sobrenome: function () { return sobrenomeRand },
-}
+  sobrenome() { return sobrenomeRand; },
+};

@@ -1,9 +1,8 @@
 import { describe, test } from 'node:test';
-import { strictEqual, match } from 'node:assert';
+import { strictEqual } from 'node:assert';
 import { palavra, sentenca, paragrafo } from '../src/generators/texto.js';
 
 describe('Tests for text generation functions', () => {
-
   test('Should return a random word from the word list', () => {
     const result = palavra();
     strictEqual(typeof result, 'string');
@@ -43,10 +42,9 @@ describe('Tests for text generation functions', () => {
     const result = paragrafo(sentenceCount, wordCount);
     const sentences = result.split('\n');
     strictEqual(sentences.length, sentenceCount, `Paragraph contains ${sentences.length} sentences`);
-    sentences.forEach(sentence => {
+    sentences.forEach((sentence) => {
       const generatedWordCount = sentence.split(' ').length;
       strictEqual(generatedWordCount, wordCount, `Sentence contains ${generatedWordCount} words`);
     });
   });
-
 });

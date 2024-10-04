@@ -1,6 +1,6 @@
-import {apelidoRand,provedorEmailRand,} from '../utils.js';
+import { apelidoRand, provedorEmailRand } from '../utils.js';
 
-let mail = "";
+let mail = '';
 
 /**
  * Gera um endereço de e-mail aleatório.
@@ -21,11 +21,11 @@ let mail = "";
  */
 export function email(fullName) {
   if (fullName) {
-    let removeSpecialCharacter = fullName.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    let removeSpecialCharacter = fullName.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     let partsName = removeSpecialCharacter.match(/\w+/g);
-    mail = partsName.slice(0, 2).join(' ').toLowerCase().replace(/ /g, ".");
+    mail = partsName.slice(0, 2).join(' ').toLowerCase().replace(/ /g, '.');
   } else {
     mail = apelidoRand.toLowerCase();
   }
   return `${mail}${provedorEmailRand}`;
-};
+}

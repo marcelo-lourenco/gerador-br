@@ -6,7 +6,17 @@
       "ignorePackages"
     ],
     "import/prefer-default-export": "off",
-    "max-len": "off",
-    "prefer-const": "off"
+    "max-len":  "off",
+    "prefer-const": "off",
+    "no-restricted-syntax":"off",
+    "guard-for-in":"off",
+    "default-param-last": "off",
+    "func-names": ["error", "as-needed"],
+    "no-plusplus":"off",
+    "no-else-return":"off",
+    "no-nested-ternary":"off"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
   }
 }
