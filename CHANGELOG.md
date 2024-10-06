@@ -4,6 +4,14 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.0.5 (2024-10-06)
+
+### Adiciona Funcionalidades
+
+* Gerador de Inscrição Estadual
+
+---
+
 ## 1.0.4 (2024-09-30)
 
 ### Adiciona Funcionalidades
