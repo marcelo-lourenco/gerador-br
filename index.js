@@ -22,6 +22,7 @@ import { renavam } from './src/generators/renavam.js';
 import { ddd } from './src/generators/ddd.js';
 import { codigoOperadora } from './src/generators/operadora.js';
 import { palavra, sentenca, paragrafo } from './src/generators/texto.js';
+import { inscricaoEstadual } from './src/generators/inscricao-estadual.js';
 
 function apelido() {
   return utils.apelidoRand;
@@ -674,6 +675,43 @@ gerar.sentenca = sentenca;
  */
 gerar.paragrafo = paragrafo;
 
+/**
+ * Gera Inscrição Estadual aleatório e do estado informado.
+ *
+ * @param {string} state A sigla do estado para o qual gerar a inscrição estadual (por exemplo, 'SP', 'RJ', 'MG').
+ * @returns {string|null} O número de inscrição estadual gerado ou null se o estado não for encontrado.
+ * @example
+ * console.log('Sem informar o estado', gerar.inscricaoEstadual());
+ * console.log('AC', gerar.inscricaoEstadual('AC')); // AC 01.335116638
+ * console.log('AL', gerar.inscricaoEstadual('AL')); // AL 477703437
+ * console.log('AP', gerar.inscricaoEstadual('AP')); // AP 03.42773842
+ * console.log('AM', gerar.inscricaoEstadual('AM')); // AM 1107521283
+ * console.log('BA', gerar.inscricaoEstadual('BA')); // BA 16408652-16
+ * console.log('CE', gerar.inscricaoEstadual('CE')); // CE 6624523654
+ * console.log('DF', gerar.inscricaoEstadual('DF')); // DF 0724.4814180
+ * console.log('ES', gerar.inscricaoEstadual('ES')); // ES 754167445
+ * console.log('GO', gerar.inscricaoEstadual('GO')); // GO 670680320
+ * console.log('MA', gerar.inscricaoEstadual('MA')); // MA 122542860
+ * console.log('MT', gerar.inscricaoEstadual('MT')); // MT 44183991682
+ * console.log('MS', gerar.inscricaoEstadual('MS')); // MS 284825620
+ * console.log('MG', gerar.inscricaoEstadual('MG')); // MG 1772090571220
+ * console.log('PA', gerar.inscricaoEstadual('PA')); // PA 157594408
+ * console.log('PB', gerar.inscricaoEstadual('PB')); // PB 899410081
+ * console.log('PR', gerar.inscricaoEstadual('PR')); // PR 79686556-52
+ * console.log('PE', gerar.inscricaoEstadual('PE')); // PE 341771429
+ * console.log('PI', gerar.inscricaoEstadual('PI')); // PI 758080174
+ * console.log('RJ', gerar.inscricaoEstadual('RJ')); // RJ 41038311.44
+ * console.log('RN', gerar.inscricaoEstadual('RN')); // RN 49799347-3
+ * console.log('RS', gerar.inscricaoEstadual('RS')); // RS 506246789
+ * console.log('RO', gerar.inscricaoEstadual('RO')); // RO 51694723-0
+ * console.log('RR', gerar.inscricaoEstadual('RR')); // RR 24022984
+ * console.log('SC', gerar.inscricaoEstadual('SC')); // SC 037515098
+ * console.log('SP', gerar.inscricaoEstadual('SP')); // SP 4081896624448
+ * console.log('SE', gerar.inscricaoEstadual('SE')); // SE 555790451
+ * console.log('TO', gerar.inscricaoEstadual('TO')); // TO 55582433-0
+ */
+gerar.inscricaoEstadual = inscricaoEstadual;
+
 export default {
   gerar,
   nome,
@@ -711,4 +749,5 @@ export default {
   palavra,
   sentenca,
   paragrafo,
+  inscricaoEstadual,
 };

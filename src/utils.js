@@ -1,3 +1,5 @@
+import crypto from 'crypto';
+
 import {
   siglasEstados,
   nomesMasculinos,
@@ -20,8 +22,10 @@ import {
  * @param {Array} arr - O array do qual deve ser extraído um elemento aleatório.
  * @returns {*} Um elemento aleatório do array.
  */
-export const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
+export const getRandom = (arr) => {
+  const index = crypto.randomInt(0, arr.length); // Gera um índice seguro no intervalo do array
+  return arr[index];
+};
 /**
  * Indica se o dado deve ser mascarado.
  * @type {boolean}

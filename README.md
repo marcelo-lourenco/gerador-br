@@ -132,6 +132,13 @@ console.log(gerar.tituloEleitor(false,'PR'));
 // Gera Passaporte aleatório
 console.log(gerar.passaporte());
 
+// Gera Inscrição Estadual aleatório e do estado informado.
+console.log('Sem informar o estado', gerar.inscricaoEstadual());
+console.log('AC', gerar.inscricaoEstadual('AC')); // AC 01.335116638
+console.log('AP', gerar.inscricaoEstadual('AP')); // AP 03.42773842
+console.log('BA', gerar.inscricaoEstadual('BA')); // BA 16408652-16
+console.log('DF', gerar.inscricaoEstadual('DF')); // DF 0724.4814180
+console.log('RJ', gerar.inscricaoEstadual('RJ')); // RJ 41038311.44
 
 /* ******************** BANCOS ************************** */
 // Gera dados de um banco aleatório

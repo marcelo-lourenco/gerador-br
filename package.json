@@ -11,7 +11,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "lint": "eslint . -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif",
+    "lint": "eslint . --config .eslintrc -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif",
     "test": "node --test --experimental-test-coverage test"
   },
   "devDependencies": {
