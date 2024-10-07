@@ -1,6 +1,8 @@
 # Gerador de Dados Fictícios - Brasil
 
-[![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-downloads-url] [![MIT License][license-img]][license-url] [![CodeQL][git-codeql-img]][git-codeql-url] [![Node.js CI][git-nodejs-img]][git-nodejs-url] [![ESLint][git-eslint-img]][git-eslint-url] [![codecov][codecov-img]][codecov-url] [![FOSSA Licence][fossa-license-img]][fossa-url] [![FOSSA Security][fossa-security-img]][fossa-url]
+[![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-downloads-url] [![MIT License][license-img]][license-url]
+[![CodeQL][git-codeql-img]][git-codeql-url] [![CI Test][git-citest-img]][git-citest-url] [![ESLint][git-eslint-img]][git-eslint-url]
+[![codecov][codecov-img]][codecov-url] [![FOSSA Licence][fossa-license-img]][fossa-url] [![FOSSA Security][fossa-security-img]][fossa-url]
 
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
@@ -14,8 +16,8 @@
 [git-codeql-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg
 [git-codeql-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql
 
-[git-nodejs-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/nodejs.yml/badge.svg
-[git-nodejs-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/nodejs.yml
+[git-citest-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml/badge.svg
+[git-citest-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml
 
 [git-eslint-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg
 [git-eslint-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml
