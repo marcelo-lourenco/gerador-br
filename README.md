@@ -35,7 +35,7 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 
 * **Gerador de Documento**: CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
 * **Gerador de Pessoa**: Nome, Nickname, Data de Nascimento, Cor, Orientação Sexual, Identidade de Gênero e Tipo Sanguíneo;
-* **Gerador de Empresa**: CNPJ, Inscrição Estadual;
+* **Gerador de Empresa**: CNPJ e Inscrição Estadual;
 * **Gerador de Endereço**: CEP, Logradouro, Número, Bairro, Localidade e Estado;
 * **Gerador de Contato**: E-mail, DDD, Operadora, Celular e Telefone;
 * **Gerador de Conta Bancária**: Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;

@@ -1,11 +1,11 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# ESLint is a tool for identifying and reporting on patterns
-# found in ECMAScript/JavaScript code.
-# More details at https://github.com/eslint/eslint
-# and https://eslint.org
+# Este fluxo de trabalho usa ações que não são certificadas pelo GitHub.
+# Elas são fornecidas por terceiros e são regidas por
+# termos de serviço, política de privacidade e suporte
+# separados.
+# ESLint é uma ferramenta para identificar e relatar padrões
+# encontrados em código ECMAScript/JavaScript.
+# Mais detalhes em https://github.com/eslint/eslint
+# e https://eslint.org
 
 name: ESLint
 
@@ -13,7 +13,6 @@ on:
   push:
     branches: [ "master" ]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [ "master" ]
   schedule:
     - cron: '22 14 * * 2'
@@ -32,8 +31,10 @@ jobs:
 
       - name: Install ESLint
         run: |
-          npm install eslint@8.10.0
-          npm install @microsoft/eslint-formatter-sarif@3.1.0
+          npm install eslint
+          npm install @microsoft/eslint-formatter-sarif
+          npm install eslint-plugin-import
+          npm install globals
 
       - name: Run ESLint
         env:
@@ -41,6 +42,7 @@ jobs:
         run: |
           npx eslint . \
           --ext .js,.jsx,.ts,.tsx \
+          --config eslint.config.js \
           --format @microsoft/eslint-formatter-sarif \
           --output-file eslint-results.sarif
         continue-on-error: true

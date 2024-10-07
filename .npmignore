@@ -5,7 +5,6 @@
 .eslintrc
 .gitignore
 .npmignore
-*.lock
 package.lock.json
 eslint-results.sarif
 lib/
