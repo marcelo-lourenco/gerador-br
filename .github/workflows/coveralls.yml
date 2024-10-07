@@ -2,11 +2,9 @@ name: Coveralls
 
 on:
   push:
-    branches:
-      - master
+    branches: [ "master" ]
   pull_request:
-    branches:
-      - master
+    branches: [ "master" ]
 
 jobs:
   test:
@@ -17,13 +15,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: |
-          npm install
-
-      - name: Run tests and collect coverage
-        run: |
-          npm run --test --experimental-test-coverage test
+      - run: npm ci
+      - run: npm run coverage
 
       - name: Upload coverage to Coveralls
         uses: coverallsapp/github-action@v2

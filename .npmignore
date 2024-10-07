@@ -2,10 +2,11 @@
 .github
 .vscode
 .editorconfig
-.eslintrc
 .gitignore
 .npmignore
+eslint.config.js
 package.lock.json
 eslint-results.sarif
+coverage
 lib/
 post/
