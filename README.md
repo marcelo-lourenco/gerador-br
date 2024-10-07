@@ -2,7 +2,7 @@
 
 [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-downloads-url] [![MIT License][license-img]][license-url]
 [![CodeQL][git-codeql-img]][git-codeql-url] [![CI Test][git-citest-img]][git-citest-url] [![ESLint][git-eslint-img]][git-eslint-url]
-[![codecov][codecov-img]][codecov-url] [![FOSSA Licence][fossa-license-img]][fossa-url] [![FOSSA Security][fossa-security-img]][fossa-url]
+[![Coverage][coverage-img]][coverage-url] [![FOSSA Licence][fossa-license-img]][fossa-url] [![FOSSA Security][fossa-security-img]][fossa-url]
 
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
@@ -22,8 +22,8 @@
 [git-eslint-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg
 [git-eslint-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml
 
-[codecov-img]: https://codecov.io/github/marcelo-lourenco/gerador-br/graph/badge.svg?token=JVAF4NO9IZ
-[codecov-url]: https://codecov.io/github/marcelo-lourenco/gerador-br
+[coverage-img]: https://coveralls.io/repos/github/marcelo-lourenco/gerador-br/badge.svg
+[coverage-url]: https://coveralls.io/github/marcelo-lourenco/gerador-br
 
 [fossa-license-img]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license
 [fossa-security-img]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security
