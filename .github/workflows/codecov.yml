@@ -2,33 +2,30 @@ name: Coverage
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "master" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "master" ]
 
 jobs:
-  test:
+  build:
+
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [20.x]
-
+        
     steps:
-    - name: Check out the repository
-      uses: actions/checkout@v3
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-
-    - name: Install dependencies
-      run: npm install
+        cache: 'npm'
 
     - name: Run tests with coverage
-      run: npm test --coverage
+      run: node --test --experimental-test-coverage test
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
