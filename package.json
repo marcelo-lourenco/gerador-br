@@ -29,12 +29,10 @@
   "bugs": "https://github.com/marcelo-lourenco/gerador-br/issues",
   "homepage": "https://github.com/marcelo-lourenco/gerador-br#readme",
   "keywords": [
-
     "gerador",
     "dados",
     "faker",
     "faker-br",
-
     "cpf",
     "cnpj",
     "inscrição estadual",
@@ -81,6 +79,6 @@
     "mock",
     "test",
     "testes",
-    "automation",
+    "automation"
   ]
 }
