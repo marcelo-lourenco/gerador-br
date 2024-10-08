@@ -32,11 +32,19 @@ console.log(gerar.rg());
 // Gera RG com máscara
 console.log(gerar.rg(true));
 
-// Gera CNS (Cartão Nacional Saúde) sem máscara
+// Gera CNS (Cartão Nacional Saúde) sem máscara e tipo aleatório
 console.log(gerar.cns());
 
-// Gera CNS (Cartão Nacional Saúde) com máscara
+// Gera CNS (Cartão Nacional Saúde) sem máscara e do tipo informado
+console.log(gerar.cns(false, 'beneficiario'));
+console.log(gerar.cns(false, 'profissional'));
+
+// Gera CNS (Cartão Nacional Saúde) com máscara e tipo aleatório
 console.log(gerar.cns(true));
+
+// Gera CNS (Cartão Nacional Saúde) com máscara e do tipo informado
+console.log(gerar.cns(true, 'beneficiario'));
+console.log(gerar.cns(true, 'profissional'));
 
 // Gera PIS sem máscara
 console.log(gerar.pis());

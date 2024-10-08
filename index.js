@@ -361,15 +361,24 @@ gerar.cpf = cpf;
 gerar.rg = rg;
 
 /**
- * Gera um número de Cartão Nacional de Saúde (CNS) aleatório. Com máscara ou sem máscara
- * @param {boolean} [mask=false] - Se `true`, o CNS será retornado com a máscara de formatação (XXX XXXX XXXX XXXX). Se `false`, o CNS será retornado apenas com os dígitos.
+ * Gera um número de Cartão Nacional de Saúde (CNS) aleatório.
+ * @param {boolean} mask - Se `true`, retorna o CNS com máscara (XXX XXXX XXXX XXXX).
+ * @param {string} type - O tipo de CNS a ser gerado ('beneficiario' para beneficiários do SUS, 'profissional' para profissionais de saúde).
  * @returns {string} O número de CNS gerado.
  * @example
- * // CNS sem máscara
- * console.log(gerar.cns()); // "123456789012345"
+ * // CNS sem máscara e tipo aleatório
+ * console.log(gerar.cns());
  *
- * // CNS com máscara
- * console.log(gerar.cns(true)); // "123 4567 8901 2345"
+ * // CNS sem máscara e do tipo informado
+ * console.log(gerar.cns(false, 'beneficiario'));
+ * console.log(gerar.cns(false, 'profissional'));
+ *
+ * // CNS com máscara e tipo aleatório
+ * console.log(gerar.cns(true));
+ *
+ * // CNS com máscara e do tipo informado
+ * console.log(gerar.cns(true, 'beneficiario'));
+ * console.log(gerar.cns(true, 'profissional'));
  */
 gerar.cns = cns;
 

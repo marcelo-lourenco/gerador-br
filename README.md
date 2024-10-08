@@ -1,8 +1,6 @@
 # Gerador de Dados Fictícios - Brasil
 
-[![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-downloads-url] [![MIT License][license-img]][license-url]
-[![CodeQL][git-codeql-img]][git-codeql-url] [![CI Test][git-citest-img]][git-citest-url] [![ESLint][git-eslint-img]][git-eslint-url]
-[![Coverage][coverage-img]][coverage-url] [![FOSSA Licence][fossa-license-img]][fossa-url] [![FOSSA Security][fossa-security-img]][fossa-url]
+[![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-downloads-url] [![MIT License][license-img]][license-url] [![CodeQL][git-codeql-img]][git-codeql-url] [![CI Test][git-citest-img]][git-citest-url] [![ESLint][git-eslint-img]][git-eslint-url] [![Coverage][coverage-img]][coverage-url] [![FOSSA Licence][fossa-license-img]][fossa-url] [![FOSSA Security][fossa-security-img]][fossa-url]
 
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
@@ -107,11 +105,19 @@ console.log(gerar.rg());
 // Gera RG com máscara
 console.log(gerar.rg(true));
 
-// Gera CNS (Cartão Nacional Saúde) sem máscara
+// Gera CNS (Cartão Nacional Saúde) sem máscara e tipo aleatório
 console.log(gerar.cns());
 
-// Gera CNS (Cartão Nacional Saúde) com máscara
+// Gera CNS (Cartão Nacional Saúde) sem máscara e do tipo informado
+console.log(gerar.cns(false, 'beneficiario'));
+console.log(gerar.cns(false, 'profissional'));
+
+// Gera CNS (Cartão Nacional Saúde) com máscara e tipo aleatório
 console.log(gerar.cns(true));
+
+// Gera CNS (Cartão Nacional Saúde) com máscara e do tipo informado
+console.log(gerar.cns(true, 'beneficiario'));
+console.log(gerar.cns(true, 'profissional'));
 
 // Gera PIS sem máscara
 console.log(gerar.pis());
@@ -229,7 +235,7 @@ console.log(gerar.contaBancaria('Santander'));
 
 
 /* ******************** NOME **************************** */
-// Gera um nome aleatório (apenas o primeiro nome - feminino ou masculino)
+// Gera um nome aleatório (feminino ou masculino)
 console.log(gerar.nome.aleatorio());
 
 // Gera um nome aleatório completo (feminino ou masculino)
@@ -444,7 +450,7 @@ Muito útil para preencher automaticamente os campos de formulários em testes m
 
 ---
 
-[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CODE_OF_CONDUCT.md) • [Fórum](https://github.com/marcelo-lourenco/gerador-br/discussions)
+[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CHANGELOG.md) • [Fórum](https://github.com/marcelo-lourenco/gerador-br/discussions)
 
 ## License
 

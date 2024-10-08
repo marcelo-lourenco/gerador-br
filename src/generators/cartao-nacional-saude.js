@@ -1,24 +1,44 @@
 /**
- * Gera um número de Cartão Nacional de Saúde (CNS) aleatório. Com máscara ou sem máscara
- * @param {boolean} [mask=false] - Se `true`, o CNS será retornado com a máscara de formatação (XXX XXXX XXXX XXXX).
- * Se `false`, o CNS será retornado apenas com os dígitos.
+ * Gera um número de Cartão Nacional de Saúde (CNS) aleatório.
+ * @param {boolean} mask - Se `true`, retorna o CNS com máscara (XXX XXXX XXXX XXXX).
+ * @param {string} type - O tipo de CNS a ser gerado ('beneficiario' para beneficiários do SUS, 'profissional' para profissionais de saúde).
  * @returns {string} O número de CNS gerado.
  * @example
- * // CNS sem máscara
- * console.log(cns()); // "123456789012345"
+ * // CNS sem máscara e tipo aleatório
+ * console.log(cns());
  *
- * // CNS com máscara
- * console.log(cns(true)); // "123 4567 8901 2345"
+ * // CNS sem máscara e do tipo informado
+ * console.log(cns(false, 'beneficiario'));
+ * console.log(cns(false, 'profissional'));
+ *
+ * // CNS com máscara e tipo aleatório
+ * console.log(cns(true));
+ *
+ * // CNS com máscara e do tipo informado
+ * console.log(cns(true, 'beneficiario'));
+ * console.log(cns(true, 'profissional'));
  */
-export function cns(mask) {
-  let cnsGen = 0;
+export function cns(mask, type) {
+  let firstDigit;
 
-  let n1 = Math.floor((Math.random() * 3) + 1);
-  n1 = (n1 === 3) ? Math.floor((Math.random() * 3) + 7) : n1;
-  const n2 = (`00000${Math.floor(Math.random() * 99999 + 1)}`).slice(-5);
-  const n3 = (`00000${Math.floor(Math.random() * 99999 + 1)}`).slice(-5);
-  cnsGen = n1 + n2 + n3;
+  // Define o primeiro dígito com base no tipo
+  if (type === 'beneficiario') {
+    firstDigit = Math.floor(Math.random() * 2) + 1; // 1 ou 2
+  } else if (type === 'profissional') {
+    firstDigit = Math.floor(Math.random() * 3) + 7; // 7, 8 ou 9
+  } else {
+    const availableDigits = [1, 2, 7, 8, 9];
+    firstDigit = availableDigits[Math.floor(Math.random() * availableDigits.length)];
+  }
 
+  // Gera os próximos 11 dígitos
+  const n2 = String(Math.floor(Math.random() * 100000)).padStart(5, '0'); // 5 dígitos
+  const n3 = String(Math.floor(Math.random() * 100000)).padStart(5, '0'); // 5 dígitos
+
+  // Constrói a base do CNS
+  let cnsGen = `${firstDigit}${n2}${n3}`; // Base: 1 dígito inicial + 10 dígitos
+
+  // Cálculo do dígito verificador
   let sum = 0;
   for (let i = 0; i < cnsGen.length; i++) {
     sum += Number(cnsGen.charAt(i)) * (15 - i);
@@ -26,7 +46,6 @@ export function cns(mask) {
 
   let mod = sum % 11;
   let dv = 11 - mod;
-  dv = (dv === 11) ? 0 : dv;
 
   if (dv === 10) {
     sum = 2;
@@ -35,11 +54,17 @@ export function cns(mask) {
     }
     mod = sum % 11;
     dv = 11 - mod;
-    cnsGen += `001${String(dv)}`;
+    cnsGen += `001${dv}`; // Adiciona "001" se dv = 10
+  } else if (dv === 11) {
+    dv = 0;
+    cnsGen += `000${dv}`;
   } else {
-    cnsGen += `000${String(dv)}`;
+    cnsGen += `000${dv}`; // Adiciona dv normal
   }
 
-  const formattedCnsGen = `${cnsGen.substr(0, 3)} ${cnsGen.substr(3, 4)} ${cnsGen.substr(7, 4)} ${cnsGen.substr(11, 4)}`;
-  return mask ? formattedCnsGen : cnsGen.replace(/\D/g, '');
+  if (mask) {
+    return `${cnsGen.substr(0, 3)} ${cnsGen.substr(3, 4)} ${cnsGen.substr(7, 4)} ${cnsGen.substr(11, 4)}`;
+  }
+
+  return cnsGen; // Retorna CNS sem máscara
 }
