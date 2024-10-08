@@ -9,11 +9,51 @@
           "informationUri": "https://eslint.org",
           "rules": [
             {
+              "id": "func-names",
+              "helpUri": "https://eslint.org/docs/latest/rules/func-names",
+              "properties": {},
+              "shortDescription": {
+                "text": "Require or disallow named `function` expressions"
+              }
+            },
+            {
+              "id": "no-redeclare",
+              "helpUri": "https://eslint.org/docs/latest/rules/no-redeclare",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow variable redeclaration"
+              }
+            },
+            {
+              "id": "no-prototype-builtins",
+              "helpUri": "https://eslint.org/docs/latest/rules/no-prototype-builtins",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow calling some `Object.prototype` methods directly on objects"
+              }
+            },
+            {
+              "id": "no-useless-escape",
+              "helpUri": "https://eslint.org/docs/latest/rules/no-useless-escape",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow unnecessary escape characters"
+              }
+            },
+            {
               "id": "no-unused-vars",
               "helpUri": "https://eslint.org/docs/latest/rules/no-unused-vars",
               "properties": {},
               "shortDescription": {
                 "text": "Disallow unused variables"
+              }
+            },
+            {
+              "id": "no-undef",
+              "helpUri": "https://eslint.org/docs/latest/rules/no-undef",
+              "properties": {},
+              "shortDescription": {
+                "text": "Disallow the use of undeclared variables unless mentioned in `/*global */` comments"
               }
             }
           ],
@@ -21,6 +61,21 @@
         }
       },
       "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/block-navigation.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/sorter.js"
+          }
+        },
         {
           "location": {
             "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/data/db-bancos.js"
@@ -331,6 +386,4776 @@
         {
           "level": "error",
           "message": {
+            "text": "Unexpected unnamed function."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 41,
+                  "endLine": 2,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected unnamed function."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 3805,
+                  "endLine": 2,
+                  "endColumn": 3813
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ar' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 3893,
+                  "endLine": 2,
+                  "endColumn": 3895
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ar' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4061,
+                  "endLine": 2,
+                  "endColumn": 4063
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'at' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4089,
+                  "endLine": 2,
+                  "endColumn": 4091
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ak' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4604,
+                  "endLine": 2,
+                  "endColumn": 4606
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ak' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4665,
+                  "endLine": 2,
+                  "endColumn": 4667
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'am' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4670,
+                  "endLine": 2,
+                  "endColumn": 4672
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ag' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4691,
+                  "endLine": 2,
+                  "endColumn": 4693
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'af' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4789,
+                  "endLine": 2,
+                  "endColumn": 4791
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ak' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4854,
+                  "endLine": 2,
+                  "endColumn": 4856
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'am' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4859,
+                  "endLine": 2,
+                  "endColumn": 4861
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ak' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4949,
+                  "endLine": 2,
+                  "endColumn": 4951
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ag' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 4970,
+                  "endLine": 2,
+                  "endColumn": 4972
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected unnamed function."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 5089,
+                  "endLine": 2,
+                  "endColumn": 5097
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'V' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 5216,
+                  "endLine": 2,
+                  "endColumn": 5217
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'U' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 5220,
+                  "endLine": 2,
+                  "endColumn": 5221
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ae' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 5244,
+                  "endLine": 2,
+                  "endColumn": 5246
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected unnamed function."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 6420,
+                  "endLine": 2,
+                  "endColumn": 6428
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 6621,
+                  "endLine": 2,
+                  "endColumn": 6635
+                }
+              }
+            }
+          ],
+          "ruleId": "no-prototype-builtins",
+          "ruleIndex": 2,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7590,
+                  "endLine": 2,
+                  "endColumn": 7591
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7592,
+                  "endLine": 2,
+                  "endColumn": 7593
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7594,
+                  "endLine": 2,
+                  "endColumn": 7595
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7601,
+                  "endLine": 2,
+                  "endColumn": 7602
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7616,
+                  "endLine": 2,
+                  "endColumn": 7617
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7628,
+                  "endLine": 2,
+                  "endColumn": 7629
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7637,
+                  "endLine": 2,
+                  "endColumn": 7638
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7639,
+                  "endLine": 2,
+                  "endColumn": 7640
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7641,
+                  "endLine": 2,
+                  "endColumn": 7642
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7647,
+                  "endLine": 2,
+                  "endColumn": 7648
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7649,
+                  "endLine": 2,
+                  "endColumn": 7650
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7651,
+                  "endLine": 2,
+                  "endColumn": 7652
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7658,
+                  "endLine": 2,
+                  "endColumn": 7659
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7673,
+                  "endLine": 2,
+                  "endColumn": 7674
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7685,
+                  "endLine": 2,
+                  "endColumn": 7686
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7694,
+                  "endLine": 2,
+                  "endColumn": 7695
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7696,
+                  "endLine": 2,
+                  "endColumn": 7697
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7698,
+                  "endLine": 2,
+                  "endColumn": 7699
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7704,
+                  "endLine": 2,
+                  "endColumn": 7705
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7713,
+                  "endLine": 2,
+                  "endColumn": 7714
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7730,
+                  "endLine": 2,
+                  "endColumn": 7731
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7736,
+                  "endLine": 2,
+                  "endColumn": 7737
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7745,
+                  "endLine": 2,
+                  "endColumn": 7746
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7762,
+                  "endLine": 2,
+                  "endColumn": 7763
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7826,
+                  "endLine": 2,
+                  "endColumn": 7827
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7835,
+                  "endLine": 2,
+                  "endColumn": 7836
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7852,
+                  "endLine": 2,
+                  "endColumn": 7853
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7858,
+                  "endLine": 2,
+                  "endColumn": 7859
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7867,
+                  "endLine": 2,
+                  "endColumn": 7868
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7884,
+                  "endLine": 2,
+                  "endColumn": 7885
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\`."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7890,
+                  "endLine": 2,
+                  "endColumn": 7891
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\`."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7899,
+                  "endLine": 2,
+                  "endColumn": 7900
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\`."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7916,
+                  "endLine": 2,
+                  "endColumn": 7917
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7958,
+                  "endLine": 2,
+                  "endColumn": 7959
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7967,
+                  "endLine": 2,
+                  "endColumn": 7968
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7983,
+                  "endLine": 2,
+                  "endColumn": 7984
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7989,
+                  "endLine": 2,
+                  "endColumn": 7990
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 7998,
+                  "endLine": 2,
+                  "endColumn": 7999
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 8014,
+                  "endLine": 2,
+                  "endColumn": 8015
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 8071,
+                  "endLine": 2,
+                  "endColumn": 8072
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 8078,
+                  "endLine": 2,
+                  "endColumn": 8079
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 8082,
+                  "endLine": 2,
+                  "endColumn": 8083
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 8084,
+                  "endLine": 2,
+                  "endColumn": 8085
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 8091,
+                  "endLine": 2,
+                  "endColumn": 8092
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\.."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 9231,
+                  "endLine": 2,
+                  "endColumn": 9232
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 9235,
+                  "endLine": 2,
+                  "endColumn": 9236
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 9237,
+                  "endLine": 2,
+                  "endColumn": 9238
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\`."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 9239,
+                  "endLine": 2,
+                  "endColumn": 9240
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\/."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 9241,
+                  "endLine": 2,
+                  "endColumn": 9242
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\#."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 9243,
+                  "endLine": 2,
+                  "endColumn": 9244
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'Y' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 10812,
+                  "endLine": 2,
+                  "endColumn": 10813
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ae' is assigned a value but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 11414,
+                  "endLine": 2,
+                  "endColumn": 11416
+                }
+              }
+            }
+          ],
+          "ruleId": "no-unused-vars",
+          "ruleIndex": 4,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'af' is assigned a value but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 11438,
+                  "endLine": 2,
+                  "endColumn": 11440
+                }
+              }
+            }
+          ],
+          "ruleId": "no-unused-vars",
+          "ruleIndex": 4,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ag' is assigned a value but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 11471,
+                  "endLine": 2,
+                  "endColumn": 11473
+                }
+              }
+            }
+          ],
+          "ruleId": "no-unused-vars",
+          "ruleIndex": 4,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'W' is already defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 11501,
+                  "endLine": 2,
+                  "endColumn": 11502
+                }
+              }
+            }
+          ],
+          "ruleId": "no-redeclare",
+          "ruleIndex": 1,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 11964,
+                  "endLine": 2,
+                  "endColumn": 11978
+                }
+              }
+            }
+          ],
+          "ruleId": "no-prototype-builtins",
+          "ruleIndex": 2,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Do not access Object.prototype method 'hasOwnProperty' from target object."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12097,
+                  "endLine": 2,
+                  "endColumn": 12111
+                }
+              }
+            }
+          ],
+          "ruleId": "no-prototype-builtins",
+          "ruleIndex": 2,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\!."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12253,
+                  "endLine": 2,
+                  "endColumn": 12254
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\-."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12269,
+                  "endLine": 2,
+                  "endColumn": 12270
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12685,
+                  "endLine": 2,
+                  "endColumn": 12686
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12689,
+                  "endLine": 2,
+                  "endColumn": 12690
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12693,
+                  "endLine": 2,
+                  "endColumn": 12694
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12697,
+                  "endLine": 2,
+                  "endColumn": 12698
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12701,
+                  "endLine": 2,
+                  "endColumn": 12702
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12705,
+                  "endLine": 2,
+                  "endColumn": 12706
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12835,
+                  "endLine": 2,
+                  "endColumn": 12836
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12837,
+                  "endLine": 2,
+                  "endColumn": 12838
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12849,
+                  "endLine": 2,
+                  "endColumn": 12850
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12851,
+                  "endLine": 2,
+                  "endColumn": 12852
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\/."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12855,
+                  "endLine": 2,
+                  "endColumn": 12856
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\/."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12881,
+                  "endLine": 2,
+                  "endColumn": 12882
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12913,
+                  "endLine": 2,
+                  "endColumn": 12914
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12918,
+                  "endLine": 2,
+                  "endColumn": 12919
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12923,
+                  "endLine": 2,
+                  "endColumn": 12924
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12954,
+                  "endLine": 2,
+                  "endColumn": 12955
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12959,
+                  "endLine": 2,
+                  "endColumn": 12960
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12964,
+                  "endLine": 2,
+                  "endColumn": 12965
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 12998,
+                  "endLine": 2,
+                  "endColumn": 12999
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 13000,
+                  "endLine": 2,
+                  "endColumn": 13001
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 13038,
+                  "endLine": 2,
+                  "endColumn": 13039
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 13043,
+                  "endLine": 2,
+                  "endColumn": 13044
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 13048,
+                  "endLine": 2,
+                  "endColumn": 13049
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 13080,
+                  "endLine": 2,
+                  "endColumn": 13081
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 13085,
+                  "endLine": 2,
+                  "endColumn": 13086
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 13090,
+                  "endLine": 2,
+                  "endColumn": 13091
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 13125,
+                  "endLine": 2,
+                  "endColumn": 13126
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 13127,
+                  "endLine": 2,
+                  "endColumn": 13128
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'ae' is assigned a value but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 14757,
+                  "endLine": 2,
+                  "endColumn": 14759
+                }
+              }
+            }
+          ],
+          "ruleId": "no-unused-vars",
+          "ruleIndex": 4,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 15786,
+                  "endLine": 2,
+                  "endColumn": 15788
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 15809,
+                  "endLine": 2,
+                  "endColumn": 15811
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 15835,
+                  "endLine": 2,
+                  "endColumn": 15837
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 15875,
+                  "endLine": 2,
+                  "endColumn": 15877
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\!."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 15892,
+                  "endLine": 2,
+                  "endColumn": 15893
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\-."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 15908,
+                  "endLine": 2,
+                  "endColumn": 15909
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 15918,
+                  "endLine": 2,
+                  "endColumn": 15920
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16362,
+                  "endLine": 2,
+                  "endColumn": 16364
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16410,
+                  "endLine": 2,
+                  "endColumn": 16412
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16453,
+                  "endLine": 2,
+                  "endColumn": 16455
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16498,
+                  "endLine": 2,
+                  "endColumn": 16500
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16551,
+                  "endLine": 2,
+                  "endColumn": 16553
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16574,
+                  "endLine": 2,
+                  "endColumn": 16576
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16597,
+                  "endLine": 2,
+                  "endColumn": 16599
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16646,
+                  "endLine": 2,
+                  "endColumn": 16648
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16661,
+                  "endLine": 2,
+                  "endColumn": 16662
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16676,
+                  "endLine": 2,
+                  "endColumn": 16677
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16708,
+                  "endLine": 2,
+                  "endColumn": 16709
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16719,
+                  "endLine": 2,
+                  "endColumn": 16721
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16734,
+                  "endLine": 2,
+                  "endColumn": 16735
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16749,
+                  "endLine": 2,
+                  "endColumn": 16750
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16781,
+                  "endLine": 2,
+                  "endColumn": 16782
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16817,
+                  "endLine": 2,
+                  "endColumn": 16818
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16819,
+                  "endLine": 2,
+                  "endColumn": 16820
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16821,
+                  "endLine": 2,
+                  "endColumn": 16822
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16833,
+                  "endLine": 2,
+                  "endColumn": 16835
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\!."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16860,
+                  "endLine": 2,
+                  "endColumn": 16861
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\-."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 16991,
+                  "endLine": 2,
+                  "endColumn": 16992
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17026,
+                  "endLine": 2,
+                  "endColumn": 17028
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\/."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17059,
+                  "endLine": 2,
+                  "endColumn": 17060
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17079,
+                  "endLine": 2,
+                  "endColumn": 17081
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17111,
+                  "endLine": 2,
+                  "endColumn": 17113
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17161,
+                  "endLine": 2,
+                  "endColumn": 17163
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17203,
+                  "endLine": 2,
+                  "endColumn": 17205
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\-."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17256,
+                  "endLine": 2,
+                  "endColumn": 17257
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17285,
+                  "endLine": 2,
+                  "endColumn": 17287
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17311,
+                  "endLine": 2,
+                  "endColumn": 17312
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17313,
+                  "endLine": 2,
+                  "endColumn": 17314
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17331,
+                  "endLine": 2,
+                  "endColumn": 17333
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17354,
+                  "endLine": 2,
+                  "endColumn": 17356
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17380,
+                  "endLine": 2,
+                  "endColumn": 17382
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\-."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17435,
+                  "endLine": 2,
+                  "endColumn": 17436
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17477,
+                  "endLine": 2,
+                  "endColumn": 17479
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17500,
+                  "endLine": 2,
+                  "endColumn": 17502
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'PR' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17526,
+                  "endLine": 2,
+                  "endColumn": 17528
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17543,
+                  "endLine": 2,
+                  "endColumn": 17544
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\\"."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17545,
+                  "endLine": 2,
+                  "endColumn": 17546
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unnecessary escape character: \\'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/prettify.js",
+                  "index": 1
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 17547,
+                  "endLine": 2,
+                  "endColumn": 17548
+                }
+              }
+            }
+          ],
+          "ruleId": "no-useless-escape",
+          "ruleIndex": 3,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected unnamed function."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/sorter.js",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 19,
+                  "endLine": 2,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected unnamed function."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/sorter.js",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 24,
+                  "endLine": 157,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected unnamed function."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/coverage/lcov-report/sorter.js",
+                  "index": 2
+                },
+                "region": {
+                  "startLine": 184,
+                  "startColumn": 12,
+                  "endLine": 184,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0,
+          "suppressions": [
+            {
+              "kind": "inSource",
+              "justification": ""
+            }
+          ]
+        },
+        {
+          "level": "error",
+          "message": {
             "text": "'day' is assigned a value but never used."
           },
           "locations": [
@@ -338,7 +5163,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/data-nascimento.test.js",
-                  "index": 43
+                  "index": 46
                 },
                 "region": {
                   "startLine": 7,
@@ -350,7 +5175,7 @@
             }
           ],
           "ruleId": "no-unused-vars",
-          "ruleIndex": 0,
+          "ruleIndex": 4,
           "suppressions": [
             {
               "kind": "inSource",
@@ -368,7 +5193,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/data-nascimento.test.js",
-                  "index": 43
+                  "index": 46
                 },
                 "region": {
                   "startLine": 7,
@@ -380,7 +5205,7 @@
             }
           ],
           "ruleId": "no-unused-vars",
-          "ruleIndex": 0,
+          "ruleIndex": 4,
           "suppressions": [
             {
               "kind": "inSource",

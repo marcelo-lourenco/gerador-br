@@ -8,7 +8,7 @@
   "license": "MIT",
   "author": "Marcelo Lourenço <qabi.dev@gmail.com>",
   "scripts": {
-    "lint": "eslint . --config eslint.config.js -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif",
+    "lint": "eslint . -c eslint.config.js -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif",
     "test": "node --test test",
     "coverage":"npx c8 --reporter=lcov node --test"
   },
