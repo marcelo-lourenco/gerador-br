@@ -4,6 +4,15 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.0.6 (2024-10-09)
+
+### Adiciona Funcionalidades
+
+* Gerador de Escolaridade
+* Gerador de Profissão
+
+---
+
 ## 1.0.5 (2024-10-06)
 
 ### Adiciona Funcionalidades

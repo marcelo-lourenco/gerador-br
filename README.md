@@ -34,7 +34,7 @@ Ideal para testes automatizados com **Mocha**, **Chai**, **Jest**,  **Jasmine**,
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
 * **Gerador de Documento**: CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
-* **Gerador de Pessoa**: Nome, Nickname, Data de Nascimento, Cor, Orientação Sexual, Identidade de Gênero e Tipo Sanguíneo;
+* **Gerador de Pessoa**: Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
 * **Gerador de Empresa**: CNPJ e Inscrição Estadual;
 * **Gerador de Endereço**: CEP, Logradouro, Número, Bairro, Localidade e Estado;
 * **Gerador de Contato**: E-mail, DDD, Operadora, Celular e Telefone;
@@ -292,6 +292,13 @@ console.log(gerar.email(nomeMasculinoCompleto));
 const nomeFemininoCompleto = gerar.nome.femininoCompleto();
 console.log(gerar.email(nomeFemininoCompleto));
 
+/* ******************** ESCOLARIDADE ******************** */
+// Gera escolaridade
+console.log(gerar.escolaridade());
+
+/* ******************** PROFISSÃO *********************** */
+// Gera profissão
+console.log(gerar.profissao());
 
 /* ******************** DDD ***************************** */
  // Gera DDD aleatório

@@ -15,6 +15,8 @@ import {
   corPele,
   tiposSanguineo,
   categoriasCnh,
+  escolaridade,
+  profissao,
 } from '../data/db-general.js';
 
 /**
@@ -177,3 +179,19 @@ export const tipoSanguineoRand = getRandom(tiposSanguineo);
  * console.log(categoriaCnhRand); // Retorna qualquer categoria de CNH, como "A", "B", "C", etc.
  */
 export const categoriaCnhRand = getRandom(categoriasCnh);
+
+/**
+ * Uma profissão aleatória.
+ * @type {string}
+ * @example
+ * console.log(profissaoRand); // Retorna qualquer profissão, como "Engenheiro", "Médico", "Professor", etc.
+ */
+export const profissaoRand = getRandom(profissao);
+
+/**
+ * Uma escolaridade aleatória.
+ * @type {string}
+ * @example
+ * console.log(escolaridadeRand); // Retorna qualquer nível de escolaridade, como "Ensino Médio Completo", "Doutorado", "Pós-graduação", etc.
+ */
+export const escolaridadeRand = getRandom(escolaridade);

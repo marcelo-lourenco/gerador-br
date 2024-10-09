@@ -36,5 +36,16 @@ export const identidadesPorOrientacao = {
   Pansexual: ['Cisgênero', 'Transgênero', 'Não binário'],
 };
 export const corPele = ['Branca', 'Preta', 'Parda', 'Amarela', 'Outro'];
+
 export const tiposSanguineo = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'];
+
 export const categoriasCnh = ['ACC', 'A', 'B', 'C', 'D', 'E', 'AB', 'AC', 'AD', 'AE'];
+
+export const escolaridade = [
+  'Não Analfabetizado','Fundamental Incompleto','Fundamental Completo','Ensino Médio Incompleto','Ensino Médio Completo','Técnico Incompleto','Técnico Completo','Superior Incompleto','Superior Completo','Pós-graduação Lato Sensu (Especialização)','Pós-graduação Stricto Sensu (Mestrado)','Doutorado','Pós-doutorado',
+];
+
+export const profissao = [
+  'Açougueiro','Administrador','Advogado','Agente de Viagens','Agricultor','Alfaiate','Analista','Antropólogo','Arqueólogo','Arquiteto','Assistente Social','Astrônomo','Atendente','Auxiliar Administrativo','Auxiliar de Enfermagem','Bancário','Barbeiro','Barman','Bibliotecário','Biomédico','Biotecnólogo','Bombeiro','Cabeleireiro','Caminhoneiro','Cantor','Carpinteiro','Cenógrafo','Chef','Cientista de Dados','Cineasta','Comerciante','Contador','Corretor','Cozinheiro','Data Engineer','Decorador','Dentista','Designer','Desenvolvedor','Detetive','Diretor','Economista','Editor','Eletricista','Eletrônico','Empresário','Enfermeiro','Engenheiro','Estatístico','Esteticista','Farmacêutico','Figurinista','Fiscal','Fisioterapeuta','Fonoaudiólogo','Fotógrafo','Garçom','Geógrafo','Geólogo','Gerente','Guia de Turismo','Ilustrador','Interprete','Jardineiro','Joalheiro','Jornalista','Locutor','Maquiador','Marceneiro','Massoterapeuta','Médico','Motorista','Músico','Nutricionista','Odontólogo','Operador','Padeiro','Pedreiro','Pintor','Produtor Cultural','Professor','Psicólogo','Publicitário','Químico','Radialista','Recepcionista','Relações Públicas','Secretária','Sommelier','Sociólogo','Técnico','Terapeuta Ocupacional','Tradutor','Turismólogo','Urbanista','Vendedor','Veterinário','Web Designer','Youtuber','Zootecnista',
+];
+

@@ -49,6 +49,12 @@ function provedorEmail() {
 function cnhCategoria() {
   return utils.categoriaCnhRand;
 }
+function profissao() {
+  return utils.profissaoRand;
+}
+function escolaridade() {
+  return utils.escolaridadeRand;
+}
 
 const gerar = {
   apelido: apelido(),
@@ -59,6 +65,8 @@ const gerar = {
   identidadePorOrientacao: identidadePorOrientacao(),
   provedorEmail: provedorEmail(),
   cnhCategoria: cnhCategoria(),
+  profissao: profissao(),
+  escolaridade: escolaridade(),
 };
 
 /**
@@ -738,6 +746,8 @@ export default {
   provedorEmail,
   cnh,
   cnhCategoria,
+  profissao,
+  escolaridade,
   cnpj,
   cpf,
   rg,

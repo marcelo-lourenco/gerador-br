@@ -206,6 +206,14 @@ console.log(gerar.email(nomeMasculinoCompleto));
 const nomeFemininoCompleto = gerar.nome.femininoCompleto();
 console.log(gerar.email(nomeFemininoCompleto));
 
+/* ******************** ESCOLARIDADE ******************* */
+// Gera escolaridade aleatória
+console.log(gerar.escolaridade());
+
+/* ******************** PROFISSÃO ********************** */
+// Gera profissão aleatória
+console.log(gerar.profissao());
+
 /* ******************** DDD ***************************** */
 // Gera DDD aleatório
 console.log(gerar.ddd());

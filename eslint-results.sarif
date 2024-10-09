@@ -313,6 +313,11 @@
         },
         {
           "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/escolaridade.test.js"
+          }
+        },
+        {
+          "location": {
             "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/genero-identidade-orientacao.test.js"
           }
         },
@@ -349,6 +354,11 @@
         {
           "location": {
             "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/placa.test.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/profissao.test.js"
           }
         },
         {
