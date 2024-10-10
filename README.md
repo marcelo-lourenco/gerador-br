@@ -20,8 +20,8 @@
 [git-eslint-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg
 [git-eslint-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml
 
-[coverage-img]: https://coveralls.io/repos/github/marcelo-lourenco/gerador-br/badge.svg
-[coverage-url]: https://coveralls.io/github/marcelo-lourenco/gerador-br
+[coverage-img]: https://coveralls.io/repos/github/marcelo-lourenco/gerador-br/badge.svg?branch=master
+[coverage-url]: https://coveralls.io/github/marcelo-lourenco/gerador-br?branch=master
 
 [fossa-license-img]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license
 [fossa-security-img]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security
