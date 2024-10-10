@@ -66,12 +66,13 @@ const creditCard = {
     const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
     const getRandomMonth = () => getRandomInt(1, 12);
     const getRandomDay = (month) => {
-      if ([1, 3, 5, 7, 8, 10, 12].includes(month)) {
-        return getRandomInt(1, 31);
-      } if ([4, 6, 9, 11].includes(month)) {
-        return getRandomInt(1, 30);
+      let maxDay = 28;
+      if (['01', '03', '05', '07', '08', '10', '12'].includes(month)) {
+        maxDay = 31;
+      } else if (['04', '06', '09', '11'].includes(month)) {
+        maxDay = 30;
       }
-      return getRandomInt(1, 28);
+      return getRandomInt(1, maxDay);
     };
 
     const month = String(getRandomMonth()).padStart(2, '0');

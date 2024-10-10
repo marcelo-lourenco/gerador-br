@@ -49,10 +49,10 @@ function statesCode(state) {
  * @param {string} state - O código do estado.
  * @returns {number} O módulo do número.
  * @example
- * console.log(mod(10, "01")); // 0
- * console.log(mod(0, "02")); // 1
+ * console.log(calcMod(10, "01")); // 0
+ * console.log(calcMod(0, "02")); // 1
  */
-function mod(dv, state) {
+export function calcMod(dv, state) {
   let digito = dv;
   if (dv === 10) {
     digito = 0;
@@ -92,11 +92,11 @@ export function tituloEleitor(mask, state) {
   const [n9, n10] = stateCode.split('');
 
   let d1 = n.reduce((acc, digit, index) => acc + digit * (index + 2), 0) % 11;
-  d1 = mod(d1, stateCode);
+  d1 = calcMod(d1, stateCode);
 
   let d2 = [n9, n10, d1]
     .reduce((acc, digit, index) => acc + digit * (index === 2 ? 9 : index + 7), 0) % 11;
-  d2 = mod(d2, stateCode);
+  d2 = calcMod(d2, stateCode);
 
   const vt = [...n, n9, n10, d1, d2].join('');
   return mask ? `${vt.slice(0, 4)} ${vt.slice(4, 8)} ${vt.slice(8)}` : vt;

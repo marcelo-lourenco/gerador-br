@@ -26,7 +26,7 @@ const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
  */
 export function cep(mask = false, state) {
   const uf = state || stateRand;
-  const fullAddress = uf ? dbCep.filter((enderecos) => enderecos.uf === uf) : dbCep;
+  const fullAddress = dbCep.filter((enderecos) => enderecos.uf === uf);
   const sortAddress = getRandom(fullAddress);
   return mask ? sortAddress.cep : sortAddress.cep.replace(/\D/g, '');
 }

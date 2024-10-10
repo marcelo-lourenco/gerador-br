@@ -1,6 +1,6 @@
 import { describe, test } from 'node:test';
 import { strictEqual } from 'node:assert';
-import { cnpj } from '../src/generators/cnpj.js';
+import { cnpj, calcDV } from '../src/generators/cnpj.js';
 
 describe('CNPJ Generator', () => {
   test('should generate a valid CNPJ with mask', () => {
@@ -16,5 +16,13 @@ describe('CNPJ Generator', () => {
     const cnpjWithoutMask = cnpj(false);
     strictEqual(cnpjWithoutMask.length, 14); // 14 digits
     strictEqual(cnpjWithoutMask.match(/\d/g).length, 14); // 14 digits
+  });
+});
+
+describe('CNPJ DV Calculation', () => {
+  test('Validates DV calculation when mod is 10', () => {
+    const cnsBase = '1234520001';
+    const dv = calcDV(cnsBase);
+    strictEqual(dv, 0);
   });
 });

@@ -19,17 +19,16 @@ function calcDV(cnhNum) {
   }
 
   dv1 %= 11;
-  dv1 = dv1 > 9 ? 0 : dv1;
+  dv1 = adjustDV(dv1);
 
-  dv2 %= 11;
-
-  if (dv2 > 9) {
-    dv2 = dv2 - 2 < 0 ? dv2 + 9 : dv2 - 2;
-  }
-
-  dv2 = dv2 > 9 ? 0 : dv2;
+  dv2 = (dv2 % 11) > 9 ? (dv2 >= 2 ? dv2 - 2 : dv2 + 9) : dv2;
+  dv2 = adjustDV(dv2);
 
   return `${dv1}${dv2}`;
+}
+
+function adjustDV(dv) {
+  return dv > 9 ? 0 : dv;
 }
 
 /**
@@ -45,3 +44,4 @@ export function cnh() {
   const cnhDv = calcDV(cnhNum);
   return `${cnhNum}${cnhDv}`;
 }
+cnh()

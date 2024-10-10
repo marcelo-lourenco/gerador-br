@@ -1,6 +1,26 @@
 import { describe, test } from 'node:test';
 import { strictEqual, match } from 'node:assert';
-import { cns } from '../src/generators/cartao-nacional-saude.js';
+import { cns, calcDV } from '../src/generators/cartao-nacional-saude.js';
+
+describe('CNS DV Calculation', () => {
+  test('Validates DV calculation when mod is 10', () => {
+    const cnsBase = '123456789013';
+    const dv = calcDV(cnsBase);
+    strictEqual(dv.startsWith('001'), true);
+  });
+
+  test('Validates DV calculation when mod is 11', () => {
+    const cnsBase = '123456789010';
+    const dv = calcDV(cnsBase);
+    strictEqual(dv, '0000');
+  });
+
+  test('Validates DV calculation when mod is different from 10 and 11', () => {
+    const cnsBase = '123456789014';
+    const dv = calcDV(cnsBase);
+    strictEqual(dv.startsWith('000'), true);
+  });
+});
 
 describe('Brazilian National Health Card (CNS) Generator', () => {
 

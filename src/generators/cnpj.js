@@ -4,7 +4,7 @@
  * @param {number} dv - O valor a ser calculado.
  * @returns {number} O dígito verificador calculado.
  */
-function calcDV(dv) {
+export function calcDV(dv) {
   const dvGen = 11 - (dv % 11);
   return (dvGen >= 10) ? 0 : dvGen;
 }

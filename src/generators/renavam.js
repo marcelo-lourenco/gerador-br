@@ -1,4 +1,18 @@
 /**
+ * Calcula o módulo de verificação do RENAVAM.
+ *
+ * @param {number} renavamBase - A renavamBase ponderada dos dígitos do RENAVAM.
+ * @returns {number} O módulo de verificação do RENAVAM.
+ */
+export function calcMod(renavamBase) {
+  let mod = (renavamBase * 10) % 11;
+  if (mod === 10) {
+    mod = 0;
+  }
+  return mod;
+}
+
+/**
  * Gera um número de RENAVAM aleatório.
  *
  * @returns {string} O número de RENAVAM gerado.
@@ -18,9 +32,8 @@ export function renavam() {
   let n7 = n();
   let n8 = n();
   let n9 = n();
-  let mod = (((n() * 3) + (n() * 2) + (n() * 9) + (n() * 8) + (n4 * 7) + (n5 * 6) + (n6 * 5) + (n7 * 4) + (n8 * 3) + (n9 * 2)) * 10) % 11;
-  if (mod === 10) {
-    mod = 0;
-  }
-  return `${n0}${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${mod}`;
+  let renavamBase = (n() * 3) + (n() * 2) + (n() * 9) + (n() * 8) + (n4 * 7) + (n5 * 6) + (n6 * 5) + (n7 * 4) + (n8 * 3) + (n9 * 2);
+  let dv = calcMod(renavamBase);
+
+  return `${n0}${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}${dv}`;
 }

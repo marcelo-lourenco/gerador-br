@@ -1,6 +1,6 @@
 import { describe, test } from 'node:test';
 import { strictEqual, ok } from 'node:assert';
-import { rg } from '../src/generators/rg.js';
+import { rg, calcDV } from '../src/generators/rg.js';
 
 describe('RG Generator', () => {
   test('should generate a valid RG with mask', () => {
@@ -16,24 +16,13 @@ describe('RG Generator', () => {
     ok(rgWithoutMask.length <= 9, true); // 9 dig
     ok(rgWithoutMask.match(/\d/g).length <= 9, true); // 9 dig
   });
+});
+describe('RG DV Calculation', () => {
+  test('should return 0 for rgBase 100000000', () => {
+    strictEqual(calcDV(12345674), 0);
+  });
 
-  test.skip('should generate a valid RG with a valid check digit', () => {
-    const rgWithMask = rg(true);
-    const rgWithoutMask = rg(false);
-    const checkDigit = rgWithMask.slice(-2, -1);
-    const rgNumber = rgWithoutMask.slice(0, -1);
-
-    const sum = rgNumber.split('').reduce((acc, digit, index) => acc + digit * (index + 2), 0);
-    let expectedCheckDigit = 11 - (sum % 11);
-
-    if (expectedCheckDigit === 11) {
-      // console.log("expectedCheckDigit11",expectedCheckDigit);
-      expectedCheckDigit = 0; // Handle case where expectedCheckDigit is 11
-    } else if (expectedCheckDigit === 10) {
-      // console.log("expectedCheckDigit10",expectedCheckDigit);
-      expectedCheckDigit = 'X'; // Handle case where expectedCheckDigit is 10
-    }
-
-    strictEqual(checkDigit, expectedCheckDigit.toString()); // Compare with the adjusted expectedCheckDigit
+  test('should return X for rgBase 12345679', () => {
+    strictEqual(calcDV(12345675), 'X');
   });
 });

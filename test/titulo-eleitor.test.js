@@ -1,6 +1,6 @@
 import { describe, test } from 'node:test';
 import { strictEqual } from 'node:assert';
-import { tituloEleitor } from '../src/generators/titulo-eleitor.js';
+import { tituloEleitor, calcMod  } from '../src/generators/titulo-eleitor.js';
 
 describe('Título de Eleitor Generator', () => {
   test('should generate a valid title of voter without mask and with random state', () => {
@@ -27,5 +27,21 @@ describe('Título de Eleitor Generator', () => {
     strictEqual(tituloEleitorWithMask.length, 14); // 12 digits + 2 spaces
     strictEqual(tituloEleitorWithMask.match(/\d/g).length, 12); // 12 digits
     strictEqual(tituloEleitorWithMask.match(/ /g).length, 2); // 2 spaces
+  });
+});
+
+describe('Título de Eleitor CNS DV Calculation', () => {
+  test('should return 0 when dv is 10', () => {
+    strictEqual(calcMod(10, '01'), 0);
+  });
+
+  test('should return 1 when dv is 0 and state is 01 or 02', () => {
+    strictEqual(calcMod(0, '01'), 1);
+    strictEqual(calcMod(0, '02'), 1);
+  });
+
+  test('should return dv when dv is not 10 or 0 and state is not 01 or 02', () => {
+    strictEqual(calcMod(5, '03'), 5);
+    strictEqual(calcMod(9, '04'), 9);
   });
 });

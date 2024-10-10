@@ -1,10 +1,15 @@
-import crypto from 'crypto';
-import { siglasEstados } from '../../data/db-general.js';
+import { randomInt } from 'crypto';
+import { stateRand } from '../utils.js'
 
-export const getRandom = (arr) => {
-  const index = crypto.randomInt(0, arr.length); // Gera um índice seguro no intervalo do array
-  return arr[index];
-};
+function remainder11(sum) {
+  sum %= 11;  // Calcula o resto da divisão por 11
+  return (sum < 2) ? 0 : 11 - sum;  // Retorna 0 ou o complemento para 11
+}
+
+function remainder10(sum) {
+  sum %= 10;  // Calcula o resto da divisão por 10
+  return (sum === 0) ? 0 : 10 - sum;  // Retorna 0 ou o complemento para 10
+}
 
 /**
  * Gera números aleatórios com comprimento específico.
@@ -14,7 +19,7 @@ export const getRandom = (arr) => {
 function generateRandomNumbers(length) {
   let result = '';
   for (let i = 0; i < length; i++) {
-    result += crypto.randomInt(0, 10).toString();
+    result += randomInt(0, 10).toString();
   }
   return result;
 }
@@ -43,8 +48,7 @@ function calculateCheckDigitAC(numbers) {
   for (let i = 0; i < weights.length; i++) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -58,8 +62,7 @@ function calculateCheckDigitAL(numbers) {
   for (let i = 0; i < weights.length; i++) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -69,8 +72,7 @@ function calculateCheckDigitAL(numbers) {
  */
 function calculateCheckDigitAM(numbers) {
   const sum = numbers.split('').reduce((acc, digit, index) => acc + parseInt(digit, 10) * (numbers.length - index), 0);
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -79,7 +81,6 @@ function calculateCheckDigitAM(numbers) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitAP(numbers) {
-  const baseCode = parseInt(numbers.slice(0, 2), 10); // Os dois primeiros dígitos do número base.
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
 
@@ -87,17 +88,19 @@ function calculateCheckDigitAP(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
+  return remainder11(sum)
+
+  /*
+  const baseCode = parseInt(numbers.slice(0, 2), 10); // Os dois primeiros dígitos do número base.
   let remainder = sum % 11;
 
-  if (baseCode >= 30 && baseCode <= 31) {
-    if (remainder === 0) return 1;
-    return remainder < 2 ? 0 : 11 - remainder;
-  } else if (baseCode >= 32 && baseCode <= 33) {
-    if (remainder === 0) return 0;
-    return remainder < 2 ? 0 : 11 - remainder;
+  if ([30, 31].includes(baseCode)) {
+    return remainder === 0 ? 1 : remainder < 2 ? 0 : 11 - remainder;
+  } else if ([32, 33].includes(baseCode)) {
+    return remainder === 0 ? 0 : remainder < 2 ? 0 : 11 - remainder;
   } else {
     return remainder < 2 ? 0 : 11 - remainder;
-  }
+  } */
 }
 
 /**
@@ -111,8 +114,7 @@ function calculateCheckDigitBA1(numbers) {
   for (let i = 0; i < weights.length; i++) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
-  const remainder = sum % 10;
-  return remainder === 0 ? 0 : 10 - remainder;
+  return remainder10(sum)
 }
 
 /**
@@ -126,8 +128,7 @@ function calculateCheckDigitBA2(numbers) {
   for (let i = 0; i < weights.length; i++) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
-  const remainder = sum % 10;
-  return remainder === 0 ? 0 : 10 - remainder;
+  return remainder10(sum)
 }
 
 /**
@@ -143,8 +144,7 @@ function calculateCheckDigitCE(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -153,9 +153,7 @@ function calculateCheckDigitCE(numbers) {
  * @returns {string} Os dois dígitos verificadores calculados.
  */
 function calculateCheckDigitDF(input) {
-  if (input.length !== 9) {
-    throw new Error('A entrada deve ter 9 dígitos (base + ano + número).');
-  }
+  // if (input.length !== 9) { throw new Error('A entrada deve ter 9 dígitos (base + ano + número).'); }
 
   const weights1 = [4, 3, 2, 9, 8, 7, 6, 5, 4]; // Corrigido: 9 dígitos
   const weights2 = [5, 4, 3, 2, 9, 8, 7, 6, 5, 4]; // Corrigido: 10 dígitos
@@ -165,8 +163,7 @@ function calculateCheckDigitDF(input) {
   for (let i = 0; i < weights1.length; i++) {
     sum1 += parseInt(input[i], 10) * weights1[i];
   }
-  let remainder1 = sum1 % 11;
-  const digit1 = remainder1 < 2 ? 0 : 11 - remainder1;
+  const digit1 = remainder11(sum1);
 
   // Inclui o primeiro dígito no cálculo do segundo
   const fullInput = input + digit1;
@@ -176,8 +173,8 @@ function calculateCheckDigitDF(input) {
   for (let i = 0; i < weights2.length; i++) {
     sum2 += parseInt(fullInput[i], 10) * weights2[i];
   }
-  let remainder2 = sum2 % 11;
-  const digit2 = remainder2 < 2 ? 0 : 11 - remainder2;
+
+  const digit2 = remainder11(sum2)
 
   return `${digit1}${digit2}`;
 }
@@ -188,9 +185,7 @@ function calculateCheckDigitDF(input) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitES(numbers) {
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -199,8 +194,7 @@ function calculateCheckDigitES(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -209,9 +203,7 @@ function calculateCheckDigitES(numbers) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitGO(numbers) {
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -221,12 +213,8 @@ function calculateCheckDigitGO(numbers) {
   }
 
   let remainder = sum % 11;
-  if (remainder === 0) {
-    return 0;
-  } else if (remainder === 1) {
-    return numbers.startsWith('11094402') ? 1 : 0;
-  }
-  return 11 - remainder;
+  return (remainder === 0) ? 0 : (remainder === 1) ? (numbers.startsWith('11094402') ? 1 : 0) : 11 - remainder;
+
 }
 
 /**
@@ -235,9 +223,7 @@ function calculateCheckDigitGO(numbers) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitMA(input) {
-  if (input.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -246,8 +232,7 @@ function calculateCheckDigitMA(input) {
     sum += parseInt(input[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -256,9 +241,7 @@ function calculateCheckDigitMA(input) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitMT(numbers) {
-  if (numbers.length !== 10) {
-    throw new Error('A entrada deve ter 10 dígitos.');
-  }
+  // if (numbers.length !== 10) { throw new Error('A entrada deve ter 10 dígitos.');  }
 
   const weights = [3, 2, 9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -267,8 +250,7 @@ function calculateCheckDigitMT(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -277,9 +259,7 @@ function calculateCheckDigitMT(numbers) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitMS(input) {
-  if (input.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -288,8 +268,7 @@ function calculateCheckDigitMS(input) {
     sum += parseInt(input[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -298,9 +277,7 @@ function calculateCheckDigitMS(input) {
  * @returns {number} O primeiro dígito verificador calculado.
  */
 function calculateCheckDigitMG1(numbers) {
-  if (numbers.length !== 11) {
-    throw new Error('A entrada deve ter 11 dígitos.');
-  }
+  // if (numbers.length !== 11) { throw new Error('A entrada deve ter 11 dígitos.'); }
 
   // Pesos específicos para MG
   const weights = [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1];
@@ -311,8 +288,7 @@ function calculateCheckDigitMG1(numbers) {
     sum += product >= 10 ? Math.floor(product / 10) + (product % 10) : product;
   }
 
-  const remainder = sum % 10;
-  return remainder === 0 ? 0 : 10 - remainder;
+  return remainder10(sum)
 }
 
 /**
@@ -321,9 +297,7 @@ function calculateCheckDigitMG1(numbers) {
  * @returns {number} O segundo dígito verificador calculado.
  */
 function calculateCheckDigitMG2(input) {
-  if (input.length !== 12) {
-    throw new Error('A entrada deve ter 12 dígitos (11 dígitos iniciais + digit1).');
-  }
+  // if (input.length !== 12) { throw new Error('A entrada deve ter 12 dígitos (11 dígitos iniciais + digit1).'); }
 
   // Pesos específicos para o cálculo do segundo dígito em MG
   const weights = [3, 2, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2];
@@ -333,8 +307,7 @@ function calculateCheckDigitMG2(input) {
     sum += parseInt(input[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -343,9 +316,7 @@ function calculateCheckDigitMG2(input) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitPA(input) {
-  if (input.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -354,8 +325,7 @@ function calculateCheckDigitPA(input) {
     sum += parseInt(input[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -364,9 +334,7 @@ function calculateCheckDigitPA(input) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitPB(numbers) {
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -375,8 +343,7 @@ function calculateCheckDigitPB(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -385,9 +352,7 @@ function calculateCheckDigitPB(numbers) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitPE(numbers) {
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [8, 7, 6, 5, 4, 3, 2, 1];
   let sum = 0;
@@ -396,8 +361,7 @@ function calculateCheckDigitPE(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -406,9 +370,7 @@ function calculateCheckDigitPE(numbers) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitPI(numbers) {
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -417,8 +379,7 @@ function calculateCheckDigitPI(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -432,8 +393,7 @@ function calculateCheckDigitPR1(numbers) {
   for (let i = 0; i < weights.length; i++) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -447,8 +407,7 @@ function calculateCheckDigitPR2(numbers) {
   for (let i = 0; i < weights.length; i++) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -457,9 +416,7 @@ function calculateCheckDigitPR2(numbers) {
  * @returns {number} O primeiro dígito verificador calculado.
  */
 function calculateCheckDigitRJ1(numbers) {
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [2, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -468,8 +425,7 @@ function calculateCheckDigitRJ1(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -478,9 +434,7 @@ function calculateCheckDigitRJ1(numbers) {
  * @returns {number} O segundo dígito verificador calculado.
  */
 function calculateCheckDigitRJ2(input) {
-  if (input.length !== 9) {
-    throw new Error('A entrada deve ter 9 dígitos.');
-  }
+  // if (input.length !== 9) { throw new Error('A entrada deve ter 9 dígitos.'); }
 
   const weights = [2, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -489,8 +443,7 @@ function calculateCheckDigitRJ2(input) {
     sum += parseInt(input[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -499,9 +452,7 @@ function calculateCheckDigitRJ2(input) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitRN(numbers) {
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -510,8 +461,7 @@ function calculateCheckDigitRN(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -520,9 +470,7 @@ function calculateCheckDigitRN(numbers) {
  * @returns {number} O dígito verificador calculado.
  */
 function calculateCheckDigitRS(numbers) {
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [2, 9, 8, 7, 6, 5, 4, 3/* , 2 */];
   let sum = 0;
@@ -531,8 +479,7 @@ function calculateCheckDigitRS(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -542,9 +489,7 @@ function calculateCheckDigitRS(numbers) {
  */
 function calculateCheckDigitRO(input) {
   /* similar ao formato do PA */
-  if (input.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -553,8 +498,7 @@ function calculateCheckDigitRO(input) {
     sum += parseInt(input[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -564,9 +508,7 @@ function calculateCheckDigitRO(input) {
  */
 function calculateCheckDigitSC(numbers) {
   /* similar ao formato do PB */
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -575,8 +517,7 @@ function calculateCheckDigitSC(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -590,8 +531,7 @@ function calculateCheckDigitSP1(numbers) {
   for (let i = 0; i < weights.length; i++) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -605,8 +545,7 @@ function calculateCheckDigitSP2(numbers) {
   for (let i = 0; i < weights.length; i++) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -616,9 +555,7 @@ function calculateCheckDigitSP2(numbers) {
  */
 function calculateCheckDigitTO(numbers) {
   /* similar ao formato do PI */
-  if (numbers.length !== 8) {
-    throw new Error('A entrada deve ter 8 dígitos.');
-  }
+  // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
@@ -627,8 +564,7 @@ function calculateCheckDigitTO(numbers) {
     sum += parseInt(numbers[i], 10) * weights[i];
   }
 
-  const remainder = sum % 11;
-  return remainder < 2 ? 0 : 11 - remainder;
+  return remainder11(sum)
 }
 
 /**
@@ -667,7 +603,7 @@ function calculateCheckDigitTO(numbers) {
  * console.log('TO', inscricaoEstadual('TO')); // TO 55582433-0
  */
 export function inscricaoEstadual(state) {
-  let stateCode = state || getRandom(siglasEstados);
+  let stateCode = state || stateRand;
   const states = {
     AC: () => {
       const base = '01';
@@ -819,9 +755,7 @@ export function inscricaoEstadual(state) {
   };
 
   const generator = states[stateCode];
-  if (!generator) {
-    throw new Error(`Estado inválido: ${stateCode}`);
-  }
+  // if (!generator) { throw new Error(`Estado inválido: ${stateCode}`); }
 
   return generator();
 }
