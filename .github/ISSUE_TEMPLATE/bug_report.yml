@@ -1,0 +1,75 @@
+name: "\U0001F41E Relatório de bug"
+description: Reportar um problema
+labels: ['s: pending triage', 'c: bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reservar um tempo para preencher este relatório de bug!
+
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Pré-verificações
+      description: Antes de enviar o problema, certifique-se de fazer as seguintes opções:
+        - label: Estou disposto a fornecer um PR.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Descreva o bug
+      description: Uma descrição clara e concisa do que é o bug.
+      placeholder: Estou fazendo... O que espero é... O que realmente está acontecendo é...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Código de reprodução mínima
+      description: |
+        Uma URL para algum repositório git ou gist que reproduza esse problema. [O que é uma reprodução mínima?](https://jmcdo29.github.io/wtf-is-a-minimum-reproduction)
+      placeholder: 'https://github.com/..., or ``` code ```'
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Contexto Adicional
+      description: |
+        Mais alguma coisa relevante?
+        **Dica:** Você pode anexar imagens, gravações ou arquivos de log clicando nesta área para destacá-los e, em seguida, arrastando os arquivos para dentro.
+
+  - type: textarea
+    id: environment-info
+    attributes:
+      label: Informações de ambiente
+      description: Execute `npx envinfo --system --npmPackages 'gerador-br' --binaries --browsers`
+      render: shell
+      placeholder: |
+        System:
+          OS: _
+          CPU: _
+          Memory: _ / _
+          Container: Yes/No
+          Shell: _
+        Binaries:
+          Node: _ - /usr/bin/node
+          Yarn: _ - /usr/bin/yarn
+          npm: _ - /usr/bin/npm
+        npmPackages:
+         gerador-br: _ => _
+    validations:
+      required: true
+
+  - type: dropdown
+    id: package-manager
+    attributes:
+      label: Gerenciador de Pacotes Usado
+      description: Selecione o gerenciador de pacotes usado
+      options:
+        - npm
+        - yarn
+        - pnpm
+        - other
+    validations:
+      required: true
