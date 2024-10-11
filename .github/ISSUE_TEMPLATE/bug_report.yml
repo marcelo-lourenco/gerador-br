@@ -11,7 +11,8 @@ body:
     id: checkboxes
     attributes:
       label: Pré-verificações
-      description: Antes de enviar o problema, certifique-se de fazer as seguintes opções:
+      description: Antes de enviar o problema, certifique-se de fazer as seguintes 
+      options:
         - label: Estou disposto a fornecer um PR.
 
   - type: textarea
