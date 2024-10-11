@@ -10,6 +10,7 @@ body:
   - type: checkboxes
     id: checkboxes
     attributes:
+      label: Ccontribuir
       options:
         - label: Estou disposto a fornecer um PR.
 
