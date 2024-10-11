@@ -58,8 +58,6 @@ body:
           npm: _ - /usr/bin/npm
         npmPackages:
          gerador-br: _ => _
-    validations:
-      required: true
 
   - type: dropdown
     id: package-manager
