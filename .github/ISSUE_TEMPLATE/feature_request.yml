@@ -4,13 +4,16 @@ labels: ['s: pending triage', 'c: feature', 's: aguardando interesse do usuário
 body:
   - type: markdown
     attributes:
-      value: Obrigado por seu interesse no projeto e por dedicar tempo para preencher este relatório de feature!
+      value: |
+        Obrigado por reservar um tempo para preencher este relatório de feature!
+
   - type: checkboxes
     id: checkboxes
     attributes:
       label: Contribuir
       options:
         - label: Estou disposto a fornecer um PR.
+
   - type: textarea
     id: feature-description
     attributes:
