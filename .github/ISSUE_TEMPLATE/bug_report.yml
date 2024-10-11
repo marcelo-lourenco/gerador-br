@@ -1,4 +1,4 @@
-name: "\U0001F41E Relatório de bug"
+name: "\U0001F41E Relatório de Bug"
 description: Reportar um problema
 labels: ['s: pending triage', 'c: bug']
 body:
@@ -10,7 +10,7 @@ body:
   - type: checkboxes
     id: checkboxes
     attributes:
-      label: Ccontribuir
+      label: Contribuir
       options:
         - label: Estou disposto a fornecer um PR.
 
@@ -28,7 +28,7 @@ body:
     attributes:
       label: Código de reprodução mínima
       description: |
-        Uma URL para algum repositório git ou gist que reproduza esse problema. [O que é uma reprodução mínima?](https://jmcdo29.github.io/wtf-is-a-minimum-reproduction)
+        Uma URL para algum repositório git ou gist que reproduza esse problema. [O que é uma reprodução mínima?](https://marcelo-lourenco.github.io/reproducao-minima/)
       placeholder: 'https://github.com/..., or ``` code ```'
 
   - type: textarea
