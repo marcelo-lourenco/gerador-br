@@ -1,0 +1,37 @@
+name: "\U0001F680 Proposta de novo recurso"
+description: Proponha um novo recurso
+labels: ['s: pending triage', 'c: feature', 's: aguardando interesse do usuário']
+body:
+  - type: markdown
+    attributes:
+      value: Obrigado por seu interesse no projeto e por dedicar tempo para preencher este relatório de feature!
+ - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Contribuir
+      options:
+        - label: Estou disposto a fornecer um PR.
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Descrição clara e concisa do problema
+      description: 'Como desenvolvedor usando o gerador-br, eu quero [objetivo / desejo] para que [benefício].
+    validations:
+      required: true
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: Solução sugerida
+      description: 'No módulo [xy] poderíamos fornecer a seguinte implementação...'
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Alternativa
+      description: Descrição clara e concisa de quaisquer soluções ou recursos alternativos que você tenha considerado.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Contexto adicional
+      description: Qualquer outro contexto sobre a solicitação de recurso aqui.
