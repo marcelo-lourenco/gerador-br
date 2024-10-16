@@ -2,10 +2,10 @@
 
 [![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-downloads-url] [![MIT License][license-img]][license-url] [![CodeQL][git-codeql-img]][git-codeql-url] [![CI Test][git-citest-img]][git-citest-url] [![ESLint][git-eslint-img]][git-eslint-url] [![Coverage][coverage-img]][coverage-url] [![FOSSA Licence][fossa-license-img]][fossa-url] [![FOSSA Security][fossa-security-img]][fossa-url]
 
-[npm-version-img]: https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=cd0000
+[npm-version-img]: https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff
 [npm-url]: https://npmjs.org/package/gerador-br
 
-[npm-downloads-img]: https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=cd0000
+[npm-downloads-img]: https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff
 [npm-downloads-url]: https://npmcharts.com/compare/gerador-br?minimal=true
 
 [license-img]: https://img.shields.io/npm/l/gerador-br?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTMgNiAzIDFtMCAwLTMgOWE1IDUgMCAwIDAgNi4wMDEgME02IDdsMyA5TTYgN2w2LTJtNiAyIDMtMW0tMyAxLTMgOWE1IDUgMCAwIDAgNi4wMDEgME0xOCA3bDMgOW0tMy05LTYtMm0wLTJ2Mm0wIDE2VjVtMCAxNkg5bTMgMGgzIi8+PC9zdmc+
