@@ -1,35 +1,18 @@
 # Gerador de Dados Fictícios - Brasil
 
-[![NPM version][npm-version-img]][npm-url] [![NPM downloads][npm-downloads-img]][npm-downloads-url] [![MIT License][license-img]][license-url] [![CodeQL][git-codeql-img]][git-codeql-url] [![CI Test][git-citest-img]][git-citest-url] [![ESLint][git-eslint-img]][git-eslint-url] [![Coverage][coverage-img]][coverage-url] [![FOSSA Licence][fossa-license-img]][fossa-url] [![FOSSA Security][fossa-security-img]][fossa-url]
-
-[npm-version-img]: https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff
-[npm-url]: https://npmjs.org/package/gerador-br
-
-[npm-downloads-img]: https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff
-[npm-downloads-url]: https://npmcharts.com/compare/gerador-br?minimal=true
-
-[license-img]: https://img.shields.io/npm/l/gerador-br?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTMgNiAzIDFtMCAwLTMgOWE1IDUgMCAwIDAgNi4wMDEgME02IDdsMyA5TTYgN2w2LTJtNiAyIDMtMW0tMyAxLTMgOWE1IDUgMCAwIDAgNi4wMDEgME0xOCA3bDMgOW0tMy05LTYtMm0wLTJ2Mm0wIDE2VjVtMCAxNkg5bTMgMGgzIi8+PC9zdmc+
-[license-url]: LICENSE
-
-[git-codeql-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg
-[git-codeql-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql
-
-[git-citest-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml/badge.svg
-[git-citest-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml
-
-[git-eslint-img]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg
-[git-eslint-url]: https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml
-
-[coverage-img]: https://coveralls.io/repos/github/marcelo-lourenco/gerador-br/badge.svg?branch=master
-[coverage-url]: https://coveralls.io/github/marcelo-lourenco/gerador-br?branch=master
-
-[fossa-license-img]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license
-[fossa-security-img]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security
-[fossa-url]: https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br
+[![NPM version](https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff)](https://npmjs.org/package/gerador-br)
+[![NPM downloads](https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff)](https://npmcharts.com/compare/gerador-br?minimal=true)
+[![MIT License](https://img.shields.io/npm/l/gerador-br?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTMgNiAzIDFtMCAwLTMgOWE1IDUgMCAwIDAgNi4wMDEgME02IDdsMyA5TTYgN2w2LTJtNiAyIDMtMW0tMyAxLTMgOWE1IDUgMCAwIDAgNi4wMDEgME0xOCA3bDMgOW0tMy05LTYtMm0wLTJ2Mm0wIDE2VjVtMCAxNkg5bTMgMGgzIi8+PC9zdmc+)](LICENSE)
+[![CodeQL](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql)
+[![CI Test](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml)
+[![ESLint](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml)
+[![Coverage](https://img.shields.io/coveralls/github/marcelo-lourenco/gerador-br/master?logo=coveralls&logoColor=ffffff)](https://coveralls.io/github/marcelo-lourenco/gerador-br?branch=master)
+[![FOSSA Licence](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
+[![FOSSA Security](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
 
 Gere dados fictícios, mas válidos, para testes e desenvolvimento.
 
-Ideal para testes automatizados com **Mocha**, **Chai**, **Jest**,  **Jasmine**, **Sinon**, **Supertest**, **Nock**, **Cypress**, **Puppeteer**, **Enzyme** e **Node.js Test Runner**
+Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner**, **Jasmine**, **Mocha**, **Chai**, **Supertest**, **Sinon** e **Puppeteer**.
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
@@ -42,6 +25,21 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 * **Gerador de Cartão de Crédito**: Número, Bandeira, CVV e Validade;
 * **Gerador de Veículo**: Placa Antiga, Placa Mercosul e RENAVAM;
 * **Gerador de Texto (Lorem Ipsum)**: Palavras, Sentenças e Parágrafos;
+
+## Compatibilidade
+
+O pacote foi testado e é compatível com as versões mais recentes dos seguinte frameworks:
+
+[![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](#)
+[![Jest](https://img.shields.io/badge/Jest-%2315c213?logo=jest&logoColor=white)](#)
+[![Node.js Test Runner](https://img.shields.io/badge/Node.js%20Test%20Runner-%235FA04E?logo=nodedotjs&logoColor=white)](#)
+[![Jasmine](https://img.shields.io/badge/Jasmine-%238a4182?logo=jasmine&logoColor=white)](#)
+[![Mocha](https://img.shields.io/badge/Mocha-%238d6748?logo=mocha&logoColor=white)](#)
+[![Chai](https://img.shields.io/badge/Chai-%23a40802?logo=chai&logoColor=white)](#)
+[![Supertest](https://img.shields.io/badge/Supertest-%23F44336?logo=apachesuperset&logoColor=white)](#)
+[![Puppeteer](https://img.shields.io/badge/Puppeteer-%232e8555?logo=puppeteer&logoColor=white)](#)
+[![Sinon](https://img.shields.io/badge/Sinon-%234b352a?logo=sinon&logoColor=white)](#) 
+
 
 ## Instalação
 
