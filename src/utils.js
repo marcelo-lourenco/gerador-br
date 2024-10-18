@@ -17,7 +17,7 @@ import {
   categoriasCnh,
   escolaridade,
   profissao,
-} from '../data/db-general.js';
+} from './data/db-general.js';
 
 /**
  * Retorna um elemento aleatório de um array.

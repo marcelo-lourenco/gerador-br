@@ -1,4 +1,4 @@
-import banks from '../../data/db-bancos.js';
+import banks from '../data/db-bancos.js';
 
 const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
 

@@ -1,7 +1,7 @@
 import { describe, test } from 'node:test';
 import { strictEqual, ok } from 'node:assert';
 import * as utils from '../src/utils.js';
-import * as db from '../data/db-general.js';
+import * as db from '../src/data/db-general.js';
 
 describe('Utils', () => {
   describe('getRandom', () => {

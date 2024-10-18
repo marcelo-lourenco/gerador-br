@@ -1,28 +1,31 @@
 {
   "name": "gerador-br",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": " Gerador de Dados Fictícios - Brasil",
-  "main": "index.js",
-  "module": "index.js",
   "type": "module",
+  "main": "dist/cjs/index.cjs",
+  "module": "dist/mjs/index.mjs",
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "author": "Marcelo Lourenço <qabi.dev@gmail.com>",
   "scripts": {
+    "build": "rollup -c",
     "lint": "eslint . -c eslint.config.js -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif",
     "test": "node --test test",
-    "coverage":"npx c8 --reporter=lcov node --test"
+    "coverage": "npx c8 --reporter=lcov node --test"
   },
   "devDependencies": {
     "@eslint/js": "^9.12.0",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^15.3.0",
     "c8": "^10.1.2",
     "coveralls": "^3.1.1",
     "eslint-plugin-import": "^2.31.0",
-    "globals": "^15.10.0"
-  },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
+    "globals": "^15.10.0",
+    "rollup": "^4.24.0"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-import { palavras } from '../../data/db-general.js';
+import { palavras } from '../data/db-general.js';
 
 /**
  * Gera uma palavra aleatória.

@@ -5,8 +5,10 @@
 .gitignore
 .npmignore
 eslint.config.js
-package.lock.json
 eslint-results.sarif
-coverage
-lib/
-post/
+package.lock.json
+coverage/
+src/
+data/
+test/
+rollup.config.js

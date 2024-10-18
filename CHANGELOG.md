@@ -4,6 +4,16 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.1.0 (2024-10-18)
+
+### Adiciona Dependência
+
+* Adicionado Rollup como ferramenta de build para empacotamento do projeto.
+* Configurado Rollup para gerar builds nos formatos CommonJS e ESModule.
+* Melhorado o processo de build para melhor performance e compatibilidade com diferentes sistemas de módulos.
+
+---
+
 ## 1.0.6 (2024-10-09)
 
 ### Adiciona Funcionalidades

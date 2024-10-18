@@ -47,14 +47,28 @@ O pacote foi testado e é compatível com as versões mais recentes dos seguinte
 npm install gerador-br
 ```
 
-## Uso
+## Importação
 
-### *Named import*
+### *CommonsJS*
+```js
+const gerar = require('gerador-br');
+```
 
-Importe apenas a(s) função(ões) que desejar
+### *ES Module*
+```js
+import gerar from 'gerador-br';
+```
+
+## Utilização
+
+***Named import:*** Importe apenas a(s) função(ões) que desejar
 
 ```js
+// ES Module
 import { nome, cpf, cnpj, placaMercosul } from 'gerador-br';
+
+// CommonJS
+// const { nome, cpf, cnpj, placaMercosul } = require('gerador-br');
 
 console.log(nome.femininoCompleto());   // Ex: "Maria"
 console.log(cpf());                     // Gera CPF sem máscara e do estado aleatório
@@ -63,14 +77,18 @@ console.log(cnpj(true));                // Gera CNPJ com máscara
 console.log(placaMercosul(true));       // Gera placa no formato Mercosul com máscara "ABC-1D23"
 ```
 
-### *Default import*
-
-Importe todo o módulo `gerar` e depois use qualquer função que desejar
+***Default import:*** Importe todo o módulo **`gerar`** e depois use qualquer função que desejar
 
 > Observação: Todas as funções do modulo `gerar` podem ser importadas individualmente (como nos exemplos acima - *named import*)
 
 ```js
+// Para ES Module:
 import gerar from 'gerador-br';
+
+// Para CommonJS:
+// const gerar = require('gerador-br');
+
+// Exemplos:
 
 /* ******************** DOCUMENTOS ********************** */
 // Gera CNH aleatória
@@ -447,6 +465,10 @@ console.log(gerar.paragrafo(5));
 // Gera um parágrafo com quantidade de sentenças e de palavras informadas.
 console.log(gerar.paragrafo(3,8));
 ```
+
+## Contribuições
+
+Contribuições são bem-vindas! Faça um *fork* do repositório e sinta-se à vontade para enviar seus *pull requests*.
 
 ## Extensão Chrome - Gerador de Dados Fictícios
 
