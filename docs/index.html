@@ -34,7 +34,8 @@
       name: 'Gerador-BR',
       repo: 'marcelo-lourenco/gerador-br',
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md'
       },
       coverpage: true,
       autoHeader: true,
@@ -70,6 +71,10 @@
           '/': 'Copiado',
           '/en-us/': 'Copy'
         }
+      },
+      coverpage: {
+        '/': '_coverpage.md',
+        '/en-us/': '_coverpage.md'
       },
       plugins: [
         function (hook) {
