@@ -42,7 +42,7 @@ function generateCurrentYearTwoDigits() {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitAC(numbers) {
+function calcIeDVAC(numbers) {
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -56,7 +56,7 @@ function calculateCheckDigitAC(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitAL(numbers) {
+function calcIeDVAL(numbers) {
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -70,7 +70,7 @@ function calculateCheckDigitAL(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitAM(numbers) {
+function calcIeDVAM(numbers) {
   const sum = numbers.split('').reduce((acc, digit, index) => acc + parseInt(digit, 10) * (numbers.length - index), 0);
   return remainder11(sum)
 }
@@ -80,7 +80,7 @@ function calculateCheckDigitAM(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitAP(numbers) {
+function calcIeDVAP(numbers) {
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
 
@@ -108,7 +108,7 @@ function calculateCheckDigitAP(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem os dígitos verificadores.
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calculateCheckDigitBA1(numbers) {
+function calcIeDVBA1(numbers) {
   const weights = [7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -122,7 +122,7 @@ function calculateCheckDigitBA1(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o segundo dígito verificador.
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calculateCheckDigitBA2(numbers) {
+function calcIeDVBA2(numbers) {
   const weights = [8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -136,7 +136,7 @@ function calculateCheckDigitBA2(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitCE(numbers) {
+function calcIeDVCE(numbers) {
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
 
@@ -152,7 +152,7 @@ function calculateCheckDigitCE(numbers) {
  * @param {string} input - Sequência de 11 dígitos da inscrição estadual (base + ano + número) sem os dígitos verificadores.
  * @returns {string} Os dois dígitos verificadores calculados.
  */
-function calculateCheckDigitDF(input) {
+function calcIeDVDF(input) {
   // if (input.length !== 9) { throw new Error('A entrada deve ter 9 dígitos (base + ano + número).'); }
 
   const weights1 = [4, 3, 2, 9, 8, 7, 6, 5, 4]; // Corrigido: 9 dígitos
@@ -184,7 +184,7 @@ function calculateCheckDigitDF(input) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual (sem o dígito verificador).
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitES(numbers) {
+function calcIeDVES(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -202,7 +202,7 @@ function calculateCheckDigitES(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual (sem o dígito verificador).
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitGO(numbers) {
+function calcIeDVGO(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -222,7 +222,7 @@ function calculateCheckDigitGO(numbers) {
  * @param {string} input - Sequência de 8 dígitos (base + números) da inscrição estadual, sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitMA(input) {
+function calcIeDVMA(input) {
   // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -240,7 +240,7 @@ function calculateCheckDigitMA(input) {
  * @param {string} numbers - Sequência de 10 dígitos da inscrição estadual (sem o dígito verificador).
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitMT(numbers) {
+function calcIeDVMT(numbers) {
   // if (numbers.length !== 10) { throw new Error('A entrada deve ter 10 dígitos.');  }
 
   const weights = [3, 2, 9, 8, 7, 6, 5, 4, 3, 2];
@@ -258,7 +258,7 @@ function calculateCheckDigitMT(numbers) {
  * @param {string} input - Sequência de 8 dígitos (base + números) da inscrição estadual, sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitMS(input) {
+function calcIeDVMS(input) {
   // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -276,7 +276,7 @@ function calculateCheckDigitMS(input) {
  * @param {string} numbers - Sequência de 11 dígitos iniciais da inscrição estadual (sem os dígitos verificadores).
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calculateCheckDigitMG1(numbers) {
+function calcIeDVMG1(numbers) {
   // if (numbers.length !== 11) { throw new Error('A entrada deve ter 11 dígitos.'); }
 
   // Pesos específicos para MG
@@ -296,7 +296,7 @@ function calculateCheckDigitMG1(numbers) {
  * @param {string} input - Sequência de 12 dígitos (11 dígitos iniciais mais o primeiro dígito verificador).
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calculateCheckDigitMG2(input) {
+function calcIeDVMG2(input) {
   // if (input.length !== 12) { throw new Error('A entrada deve ter 12 dígitos (11 dígitos iniciais + digit1).'); }
 
   // Pesos específicos para o cálculo do segundo dígito em MG
@@ -315,7 +315,7 @@ function calculateCheckDigitMG2(input) {
  * @param {string} input - Sequência de 8 dígitos (base + numbers) da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitPA(input) {
+function calcIeDVPA(input) {
   // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -333,7 +333,7 @@ function calculateCheckDigitPA(input) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitPB(numbers) {
+function calcIeDVPB(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -351,7 +351,7 @@ function calculateCheckDigitPB(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitPE(numbers) {
+function calcIeDVPE(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [8, 7, 6, 5, 4, 3, 2, 1];
@@ -369,7 +369,7 @@ function calculateCheckDigitPE(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitPI(numbers) {
+function calcIeDVPI(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -387,7 +387,7 @@ function calculateCheckDigitPI(numbers) {
  * @param {string} numbers - Sequência de 10 dígitos da inscrição estadual (sem os dígitos verificadores).
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calculateCheckDigitPR1(numbers) {
+function calcIeDVPR1(numbers) {
   const weights = [5, 4, 3, 2, 7, 6, 5, 4/* , 3, 2 */];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -401,7 +401,7 @@ function calculateCheckDigitPR1(numbers) {
  * @param {string} numbers - Sequência de 11 dígitos da inscrição estadual (incluindo o primeiro dígito verificador).
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calculateCheckDigitPR2(numbers) {
+function calcIeDVPR2(numbers) {
   const weights = [6, 5, 4, 3, 2, 7, 6, 5, 4/* , 3, 2 */];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -415,7 +415,7 @@ function calculateCheckDigitPR2(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos.
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calculateCheckDigitRJ1(numbers) {
+function calcIeDVRJ1(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [2, 7, 6, 5, 4, 3, 2];
@@ -433,7 +433,7 @@ function calculateCheckDigitRJ1(numbers) {
  * @param {string} input - Sequência de 9 dígitos (8 dígitos + digit1).
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calculateCheckDigitRJ2(input) {
+function calcIeDVRJ2(input) {
   // if (input.length !== 9) { throw new Error('A entrada deve ter 9 dígitos.'); }
 
   const weights = [2, 7, 6, 5, 4, 3, 2];
@@ -451,7 +451,7 @@ function calculateCheckDigitRJ2(input) {
  * @param {string} numbers - Sequência de 8 dígitos.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitRN(numbers) {
+function calcIeDVRN(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -469,7 +469,7 @@ function calculateCheckDigitRN(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitRS(numbers) {
+function calcIeDVRS(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [2, 9, 8, 7, 6, 5, 4, 3/* , 2 */];
@@ -487,7 +487,7 @@ function calculateCheckDigitRS(numbers) {
  * @param {string} input - Sequência de 8 dígitos (base + números) da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitRO(input) {
+function calcIeDVRO(input) {
   /* similar ao formato do PA */
   // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
@@ -506,7 +506,7 @@ function calculateCheckDigitRO(input) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitSC(numbers) {
+function calcIeDVSC(numbers) {
   /* similar ao formato do PB */
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
@@ -525,7 +525,7 @@ function calculateCheckDigitSC(numbers) {
  * @param {string} numbers - Sequência de 11 dígitos da inscrição estadual (sem os dígitos verificadores).
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calculateCheckDigitSP1(numbers) {
+function calcIeDVSP1(numbers) {
   const weights = [1, 3, 4, 5, 6, 7, 8, 10];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -539,7 +539,7 @@ function calculateCheckDigitSP1(numbers) {
  * @param {string} numbers - Sequência de 12 dígitos da inscrição estadual (incluindo o primeiro dígito verificador).
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calculateCheckDigitSP2(numbers) {
+function calcIeDVSP2(numbers) {
   const weights = [3, 2, 10, 9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -553,7 +553,7 @@ function calculateCheckDigitSP2(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calculateCheckDigitTO(numbers) {
+function calcIeDVTO(numbers) {
   /* similar ao formato do PI */
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
@@ -608,123 +608,123 @@ export function inscricaoEstadual(state) {
     AC: () => {
       const base = '01';
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitAC(base + numbers);
+      const digit = calcIeDVAC(base + numbers);
       return `${base}.${numbers}${digit}`;
     },
     AL: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitAL(numbers);
+      const digit = calcIeDVAL(numbers);
       return `${numbers}${digit}`;
     },
     AP: () => {
       const base = '03';
       const numbers = generateRandomNumbers(7);
-      const digit = calculateCheckDigitAP(base + numbers);
+      const digit = calcIeDVAP(base + numbers);
       return `${base}.${numbers}${digit}`;
     },
     AM: () => {
       const numbers = generateRandomNumbers(9);
-      const digit = calculateCheckDigitAM(numbers);
+      const digit = calcIeDVAM(numbers);
       return `${numbers}${digit}`;
     },
     BA: () => {
       const base = new Date().getFullYear() > 2022 ? '1' : '0';
       const numbers = generateRandomNumbers(7);
-      const digit1 = calculateCheckDigitBA1(base + numbers);
-      const digit2 = calculateCheckDigitBA2(base + numbers + digit1);
+      const digit1 = calcIeDVBA1(base + numbers);
+      const digit2 = calcIeDVBA2(base + numbers + digit1);
       return `${base}${numbers}-${digit1}${digit2}`;
     },
     CE: () => {
       const numbers = generateRandomNumbers(9);
-      const digit = calculateCheckDigitCE(numbers);
+      const digit = calcIeDVCE(numbers);
       return `${numbers}${digit}`;
     },
     DF: () => {
       const base = '07';
       const year = generateCurrentYearTwoDigits();
       const numbers = generateRandomNumbers(5);
-      const digit = calculateCheckDigitDF(base + year + numbers);
+      const digit = calcIeDVDF(base + year + numbers);
       return `${base}${year}.${numbers}${digit}`;
     },
     ES: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitES(numbers);
+      const digit = calcIeDVES(numbers);
       return `${numbers}${digit}`;
     },
     GO: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitGO(numbers);
+      const digit = calcIeDVGO(numbers);
       return `${numbers}${digit}`;
     },
     MA: () => {
       const base = '12';
       const numbers = generateRandomNumbers(6);
-      const digit = calculateCheckDigitMA(base + numbers);
+      const digit = calcIeDVMA(base + numbers);
       return `${base}${numbers}${digit}`;
     },
     MT: () => {
       const numbers = generateRandomNumbers(10);
-      const digit = calculateCheckDigitMT(numbers);
+      const digit = calcIeDVMT(numbers);
       return `${numbers}${digit}`;
     },
     MS: () => {
       const base = '28';
       const numbers = generateRandomNumbers(6);
-      const digit = calculateCheckDigitMS(base + numbers);
+      const digit = calcIeDVMS(base + numbers);
       return `${base}${numbers}${digit}`;
     },
     MG: () => {
       const numbers = generateRandomNumbers(11);
-      const digit1 = calculateCheckDigitMG1(numbers);
-      const digit2 = calculateCheckDigitMG2(numbers + digit1);
+      const digit1 = calcIeDVMG1(numbers);
+      const digit2 = calcIeDVMG2(numbers + digit1);
       return `${numbers}${digit1}${digit2}`;
     },
     PA: () => {
       const base = '15';
       const numbers = generateRandomNumbers(6);
-      const digit = calculateCheckDigitPA(base + numbers);
+      const digit = calcIeDVPA(base + numbers);
       return `${base}${numbers}${digit}`;
     },
     PB: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitPB(numbers);
+      const digit = calcIeDVPB(numbers);
       return `${numbers}${digit}`;
     },
     PR: () => {
       const numbers = generateRandomNumbers(8);
-      const digit1 = calculateCheckDigitPR1(numbers);
-      const digit2 = calculateCheckDigitPR2(numbers + digit1);
+      const digit1 = calcIeDVPR1(numbers);
+      const digit2 = calcIeDVPR2(numbers + digit1);
       return `${numbers}-${digit1}${digit2}`;
     },
     PE: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitPE(numbers);
+      const digit = calcIeDVPE(numbers);
       return `${numbers}${digit}`;
     },
     PI: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitPI(numbers);
+      const digit = calcIeDVPI(numbers);
       return `${numbers}${digit}`;
     },
     RJ: () => {
       const numbers = generateRandomNumbers(8);
-      const digit1 = calculateCheckDigitRJ1(numbers);
-      const digit2 = calculateCheckDigitRJ2(numbers + digit1);
+      const digit1 = calcIeDVRJ1(numbers);
+      const digit2 = calcIeDVRJ2(numbers + digit1);
       return `${numbers}.${digit1}${digit2}`;
     },
     RN: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitRN(numbers);
+      const digit = calcIeDVRN(numbers);
       return `${numbers}-${digit}`;
     },
     RS: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitRS(numbers);
+      const digit = calcIeDVRS(numbers);
       return `${numbers}${digit}`;
     },
     RO: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitRO(numbers);
+      const digit = calcIeDVRO(numbers);
       return `${numbers}-${digit}`;
     },
     RR: () => {
@@ -734,13 +734,13 @@ export function inscricaoEstadual(state) {
     },
     SC: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitSC(numbers);
+      const digit = calcIeDVSC(numbers);
       return `${numbers}${digit}`;
     },
     SP: () => {
       const numbers = generateRandomNumbers(11);
-      const digit1 = calculateCheckDigitSP1(numbers);
-      const digit2 = calculateCheckDigitSP2(numbers + digit1);
+      const digit1 = calcIeDVSP1(numbers);
+      const digit2 = calcIeDVSP2(numbers + digit1);
       return `${numbers}${digit1}${digit2}`;
     },
     SE: () => {
@@ -749,7 +749,7 @@ export function inscricaoEstadual(state) {
     },
     TO: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calculateCheckDigitTO(numbers);
+      const digit = calcIeDVTO(numbers);
       return `${numbers}-${digit}`;
     },
   };

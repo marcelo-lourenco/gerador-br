@@ -10,5 +10,6 @@ package.lock.json
 coverage/
 src/
 data/
+docs/
 test/
 rollup.config.js

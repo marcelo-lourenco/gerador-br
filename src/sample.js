@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import {gerar} from './index.js';
+  import * as gerar from './index.js';
 
 /* ******************** DOCUMENTOS ********************** */
 // Gera CNH aleatória

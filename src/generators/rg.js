@@ -3,7 +3,7 @@
  * @param {number} rgBase - Os primeiros 8 dígitos do RG.
  * @returns {number|string} O dígito verificador.
  */
-export function calcDV(rgBase) {
+export function calcRgDV(rgBase) {
   let dv = 11 - (rgBase % 11);
   if (dv === 11) {
     dv = 0;
@@ -30,7 +30,7 @@ export function rg(mask) {
   let n2 = n(); let n3 = n(); let n4 = n(); let n5 = n(); let n6 = n(); let n7 = n(); let
     n8 = n();
   const rgBase = n1 * 2 + n2 * 3 + n3 * 4 + n4 * 5 + n5 * 6 + n6 * 7 + n7 * 8 + n8 * 9;
-  const dv = calcDV(rgBase)
+  const dv = calcRgDV(rgBase)
   let rgGen = `${n1}${n2}.${n3}${n4}${n5}.${n6}${n7}${n8}-${dv}`;
   return mask ? rgGen : rgGen.replace(/[^a-zA-Z0-9]/g, '');
 }
