@@ -16,15 +16,15 @@ Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* **Gerador de Documento**: CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
-* **Gerador de Pessoa**: Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
-* **Gerador de Empresa**: CNPJ e Inscrição Estadual;
-* **Gerador de Endereço**: CEP, Logradouro, Número, Bairro, Localidade e Estado;
-* **Gerador de Contato**: E-mail, DDD, Operadora, Celular e Telefone;
-* **Gerador de Conta Bancária**: Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
-* **Gerador de Cartão de Crédito**: Número, Bandeira, CVV e Validade;
-* **Gerador de Veículo**: Placa Antiga, Placa Mercosul e RENAVAM;
-* **Gerador de Texto (Lorem Ipsum)**: Palavras, Sentenças e Parágrafos;
+* [Gerador de Documento](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=documentos): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
+* [Gerador de Pessoa](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=pessoa): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
+* [Gerador de Empresa](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=cnpj): CNPJ e Inscrição Estadual;
+* [Gerador de Endereço](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=endereco): CEP, Logradouro, Número, Bairro, Localidade e Estado;
+* [Gerador de Contato](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=contato): E-mail, DDD, Operadora, Celular e Telefone;
+* [Gerador de Conta Bancária](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=bancos): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
+* [Gerador de Cartão de Crédito](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=cartaocredito): Número, Bandeira, CVV e Validade;
+* [Gerador de Veículo](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=ve%c3%8dculo): Placa Antiga, Placa Mercosul e RENAVAM;
+* [Gerador de Texto (Lorem Ipsum)](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=lorem-ipsum): Palavras, Sentenças e Parágrafos;
 
 ## Compatibilidade
 
@@ -40,7 +40,6 @@ O pacote foi testado e é compatível com as versões mais recentes dos seguinte
 [![Puppeteer](https://img.shields.io/badge/Puppeteer-%232e8555?logo=puppeteer&logoColor=white)](#)
 [![Sinon](https://img.shields.io/badge/Sinon-%234b352a?logo=sinon&logoColor=white)](#) 
 
-
 ## Instalação
 
 ```bash
@@ -49,46 +48,52 @@ npm install gerador-br
 
 ## Importação
 
-### *CommonsJS*
+***ES Module***
+
+```js
+import gerar from 'gerador-br';
+```
+
+***CommonsJS***
+
 ```js
 const gerar = require('gerador-br');
 ```
 
-### *ES Module*
-```js
-import gerar from 'gerador-br';
-```
-
 ## Utilização
 
-***Named import:*** Importe apenas a(s) função(ões) que desejar
+> Veja todos os exemplos na [documentação](https://marcelo-lourenco.github.io/gerador-br/#/geradores).
+
+**Importe apenas a(s) função(ões) que desejar:**
 
 ```js
-// ES Module
-import { nome, cpf, cnpj, placaMercosul } from 'gerador-br';
+import { nome, cpf, cnpj, placaMercosul } from 'gerador-br'; // ES Module
+// const { nome, cpf, cnpj, placaMercosul } = require('gerador-br'); // CommonJS
 
-// CommonJS
-// const { nome, cpf, cnpj, placaMercosul } = require('gerador-br');
-
-console.log(nome.femininoCompleto());   // Ex: "Maria"
-console.log(cpf());                     // Gera CPF sem máscara e do estado aleatório
-console.log(cpf(false, "PE"));          // Gera CPF sem máscara e do estado info
-console.log(cnpj(true));                // Gera CNPJ com máscara
-console.log(placaMercosul(true));       // Gera placa no formato Mercosul com máscara "ABC-1D23"
+console.log(nome.femininoCompleto());
+console.log(cpf());
+console.log(cnpj());
+console.log(placaMercosul());
 ```
 
-***Default import:*** Importe todo o módulo **`gerar`** e depois use qualquer função que desejar
-
-> Observação: Todas as funções do modulo `gerar` podem ser importadas individualmente (como nos exemplos acima - *named import*)
+**Ou, importe todo o módulo `gerar` e depois use qualquer função que desejar**:
 
 ```js
-// Para ES Module:
-import gerar from 'gerador-br';
+import gerar from 'gerador-br'; // ES Module:
+// const gerar = require('gerador-br'); // CommonJS:
 
-// Para CommonJS:
-// const gerar = require('gerador-br');
+console.log(gerar.nome.femininoCompleto());
+console.log(gerar.cpf());
+console.log(gerar.cnpj();
+console.log(gerar.contaBancaria());
+console.log(gerar.cartaoCredito());
+```
 
-// Exemplos:
+**Outros exemplos:**
+
+```js
+import gerar from 'gerador-br'; // ES Module:
+// const gerar = require('gerador-br'); // CommonJS:
 
 /* ******************** DOCUMENTOS ********************** */
 // Gera CNH aleatória
@@ -475,10 +480,10 @@ Contribuições são bem-vindas! Faça um *fork* do repositório e sinta-se à v
 Todas essas funções foram utilizadas na [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam).
 Muito útil para preencher automaticamente os campos de formulários em testes manuais.
 
----
-
-[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CHANGELOG.md) • [Fórum](https://github.com/marcelo-lourenco/gerador-br/discussions)
-
 ## License
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br?ref=badge_large)
+
+---
+
+[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CHANGELOG.md) • [Fórum](https://github.com/marcelo-lourenco/gerador-br/discussions)
