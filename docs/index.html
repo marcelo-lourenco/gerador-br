@@ -10,7 +10,6 @@
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css"> -->
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css"> -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <!--  <link rel="stylesheet" href="./static/vue.css"> -->
 
   <style>
     .sidebar .sidebar-nav {
@@ -33,11 +32,6 @@
     window.$docsify = {
       name: 'Gerador-BR',
       repo: 'marcelo-lourenco/gerador-br',
-     // alias: {
-     //   '/.*/_sidebar.md': '/_sidebar.md',
-     //   '/.*/_navbar.md': '/_navbar.md',
-     //   '/.*/_coverpage.md': '/_coverpage.md'
-     // },
       coverpage: true,
       autoHeader: true,
       loadSidebar: true,
@@ -45,42 +39,28 @@
       subMaxLevel: 3,
       auto2top: true,
       mergeNavbar: true,
-      // basePath: '/',
-      // nameLink: {
-      //   '/en-us/': '/#/en-us/',
-      //   '/': '/#/'
-      // },
       homepage: 'README.md',
       ext: '.md',
       themeColor: '#0d6efd',
       search: {
         placeholder: {
-          '/': 'Pesquisar',
-          '/en-us/': 'Search'
+          '/': 'Pesquisar'
         },
         noData: {
-          '/': 'Nenhum resultado',
-          '/en-us/': 'No Results'
+          '/': 'Nenhum resultado'
         }
       },
       copyCode: {
         buttonText: {
-          '/': 'Copiar',
-          '/en-us/': 'Click to Copy'
+          '/': 'Copiar'
         },
         errorText: {
-          '/': 'Erro',
-          '/en-us/': 'Error'
+          '/': 'Erro'
         },
         successText: {
-          '/': 'Copiado',
-          '/en-us/': 'Copy'
+          '/': 'Copiado'
         }
       },
-      // coverpage: {
-      //   '/': '_coverpage.md',
-      //   '/en-us/': '_coverpage.md'
-      // },
       plugins: [
         function (hook) {
           var footer = [
@@ -101,8 +81,6 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <!-- <script src="./static/docsify-copy-code.min.js"></script> -->
-  <!-- <script src="./static/search.min.js"></script> -->
 
 </body>
 
