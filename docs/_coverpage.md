@@ -1,6 +1,8 @@
-# Gerador-BR
+# Gerador-BR <small>1.1.0</small>
+![logo](_media/icon-128.svg)
 
-> Gerador de Dados Fictícios - Brasil
+> Gerador de Dados Fictícios - Brasil.
 
-[Começando](comecando.md)
+<!-- [NPM](https://www.npmjs.com/package/gerador-br) -->
 <!-- [GitHub](https://github.com/marcelo-lourenco/gerador-br) -->
+[Get Started](comecando.md)

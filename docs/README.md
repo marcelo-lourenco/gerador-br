@@ -1,4 +1,45 @@
-# COMEÇANDO
+# Gerador de Dados Fictícios - Brasil
+
+[![NPM version](https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff)](https://npmjs.org/package/gerador-br)
+[![NPM downloads](https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff)](https://npmcharts.com/compare/gerador-br?minimal=true)
+[![MIT License](https://img.shields.io/npm/l/gerador-br?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTMgNiAzIDFtMCAwLTMgOWE1IDUgMCAwIDAgNi4wMDEgME02IDdsMyA5TTYgN2w2LTJtNiAyIDMtMW0tMyAxLTMgOWE1IDUgMCAwIDAgNi4wMDEgME0xOCA3bDMgOW0tMy05LTYtMm0wLTJ2Mm0wIDE2VjVtMCAxNkg5bTMgMGgzIi8+PC9zdmc+)](LICENSE)
+[![CodeQL](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql)
+[![CI Test](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml)
+[![ESLint](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml)
+[![Coverage](https://img.shields.io/coveralls/github/marcelo-lourenco/gerador-br/master?logo=coveralls&logoColor=ffffff)](https://coveralls.io/github/marcelo-lourenco/gerador-br?branch=master)
+[![FOSSA Licence](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
+[![FOSSA Security](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
+
+Gere dados fictícios, mas válidos, para testes e desenvolvimento.
+
+Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner**, **Jasmine**, **Mocha**, **Chai**, **Supertest**, **Sinon** e **Puppeteer**.
+
+O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
+
+* **Gerador de Documento**: CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
+* **Gerador de Pessoa**: Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
+* **Gerador de Empresa**: CNPJ e Inscrição Estadual;
+* **Gerador de Endereço**: CEP, Logradouro, Número, Bairro, Localidade e Estado;
+* **Gerador de Contato**: E-mail, DDD, Operadora, Celular e Telefone;
+* **Gerador de Conta Bancária**: Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
+* **Gerador de Cartão de Crédito**: Número, Bandeira, CVV e Validade;
+* **Gerador de Veículo**: Placa Antiga, Placa Mercosul e RENAVAM;
+* **Gerador de Texto (Lorem Ipsum)**: Palavras, Sentenças e Parágrafos;
+
+## Compatibilidade
+
+O pacote foi testado e é compatível com as versões mais recentes dos seguinte frameworks:
+
+[![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](#)
+[![Jest](https://img.shields.io/badge/Jest-%2315c213?logo=jest&logoColor=white)](#)
+[![Node.js Test Runner](https://img.shields.io/badge/Node.js%20Test%20Runner-%235FA04E?logo=nodedotjs&logoColor=white)](#)
+[![Jasmine](https://img.shields.io/badge/Jasmine-%238a4182?logo=jasmine&logoColor=white)](#)
+[![Mocha](https://img.shields.io/badge/Mocha-%238d6748?logo=mocha&logoColor=white)](#)
+[![Chai](https://img.shields.io/badge/Chai-%23a40802?logo=chai&logoColor=white)](#)
+[![Supertest](https://img.shields.io/badge/Supertest-%23F44336?logo=apachesuperset&logoColor=white)](#)
+[![Puppeteer](https://img.shields.io/badge/Puppeteer-%232e8555?logo=puppeteer&logoColor=white)](#)
+[![Sinon](https://img.shields.io/badge/Sinon-%234b352a?logo=sinon&logoColor=white)](#) 
+
 
 ## Instalação
 
@@ -8,16 +49,14 @@ npm install gerador-br
 
 ## Importação
 
-***ES Module***
-
-```js
-import gerar from 'gerador-br';
-```
-
-***CommonsJS***
-
+### *CommonsJS*
 ```js
 const gerar = require('gerador-br');
+```
+
+### *ES Module*
+```js
+import gerar from 'gerador-br';
 ```
 
 ## Utilização
@@ -43,12 +82,13 @@ console.log(placaMercosul(true));       // Gera placa no formato Mercosul com m�
 > Observação: Todas as funções do modulo `gerar` podem ser importadas individualmente (como nos exemplos acima - *named import*)
 
 ```js
-// ES Module:
+// Para ES Module:
 import gerar from 'gerador-br';
 
-// CommonJS:
+// Para CommonJS:
 // const gerar = require('gerador-br');
 
+// Exemplos:
 
 /* ******************** DOCUMENTOS ********************** */
 // Gera CNH aleatória
@@ -123,7 +163,6 @@ console.log('AP', gerar.inscricaoEstadual('AP')); // AP 03.42773842
 console.log('BA', gerar.inscricaoEstadual('BA')); // BA 16408652-16
 console.log('DF', gerar.inscricaoEstadual('DF')); // DF 0724.4814180
 console.log('RJ', gerar.inscricaoEstadual('RJ')); // RJ 41038311.44
-
 
 /* ******************** BANCOS ************************** */
 // Gera dados de um banco aleatório
@@ -269,16 +308,13 @@ console.log(gerar.email(nomeMasculinoCompleto));
 const nomeFemininoCompleto = gerar.nome.femininoCompleto();
 console.log(gerar.email(nomeFemininoCompleto));
 
-
 /* ******************** ESCOLARIDADE ******************** */
 // Gera escolaridade
 console.log(gerar.escolaridade());
 
-
 /* ******************** PROFISSÃO *********************** */
 // Gera profissão
 console.log(gerar.profissao());
-
 
 /* ******************** DDD ***************************** */
  // Gera DDD aleatório
@@ -410,7 +446,6 @@ console.log(gerar.placaMercosul(false));
 // Gera RENAVAM
 console.log(gerar.renavam());
 
-
 /* ******************** TEXTO *************************** */
 // Gera uma palavra aleatória
 console.log(gerar.palavra());
@@ -433,17 +468,17 @@ console.log(gerar.paragrafo(3,8));
 
 ## Contribuições
 
-Contribuições são bem-vindas! Faça um *fork* do [repositório](https://github.com/marcelo-lourenco/gerador-br) e sinta-se à vontade para enviar seus *pull requests*.
+Contribuições são bem-vindas! Faça um *fork* do repositório e sinta-se à vontade para enviar seus *pull requests*.
 
-## Extensão Chrome
+## Extensão Chrome - Gerador de Dados Fictícios
 
 Todas essas funções foram utilizadas na [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam).
 Muito útil para preencher automaticamente os campos de formulários em testes manuais.
 
-## License
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br?ref=badge_large)
-
 ---
 
 [Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CHANGELOG.md) • [Fórum](https://github.com/marcelo-lourenco/gerador-br/discussions)
+
+## License
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br?ref=badge_large)

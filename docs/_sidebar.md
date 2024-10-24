@@ -1,2 +1,3 @@
-* [Começando](comecando.md)
+* [Home](/)
+* [Começando](comecando.md "Começando")
 * [Geradores](geradores.md)

@@ -588,9 +588,3 @@ paragrafo(5);
 // Gera um parágrafo com quantidade de sentenças e de palavras informadas.
 paragrafo(3,8);
 ```
-
----
-
-<footer style="text-align: center; font-size: smaller;">
-Template by: <a href="https://github.com/brazilian-utils/brazilian-utils">brazilian-utils</a>
-</footer>
