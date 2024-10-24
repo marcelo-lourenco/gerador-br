@@ -22,25 +22,36 @@ const gerar = require('gerador-br');
 
 ## Utilização
 
-***Named import:*** Importe apenas a(s) função(ões) que desejar
+> Veja todos os exemplos em [Geradores](geradores.md)
+
+**Importe apenas a(s) função(ões) que desejar:**
 
 ```js
 import { nome, cpf, cnpj, placaMercosul } from 'gerador-br'; // ES Module
 // const { nome, cpf, cnpj, placaMercosul } = require('gerador-br'); // CommonJS
 
-console.log(nome.femininoCompleto());   // Ex: "Maria"
-console.log(cpf());                     // Gera CPF sem máscara e do estado aleatório
-console.log(cpf(false, "PE"));          // Gera CPF sem máscara e do estado info
-console.log(cnpj(true));                // Gera CNPJ com máscara
-console.log(placaMercosul(true));       // Gera placa no formato Mercosul com máscara "ABC-1D23"
+console.log(nome.femininoCompleto());
+console.log(cpf());
+console.log(cnpj());
+console.log(placaMercosul());
 ```
 
-***Default import:*** Importe todo o módulo **`gerar`** e depois use qualquer função que desejar
-
-> Observação: Todas as funções do modulo `gerar` podem ser importadas individualmente (como nos exemplos acima - *named import*)
+**Ou, importe todo o módulo `gerar` e depois use qualquer função que desejar**:
 
 ```js
+import gerar from 'gerador-br'; // ES Module:
+// const gerar = require('gerador-br'); // CommonJS:
 
+console.log(gerar.nome.femininoCompleto());
+console.log(gerar.cpf());
+console.log(gerar.cnpj();
+console.log(gerar.contaBancaria());
+console.log(gerar.cartaoCredito());
+```
+
+> Em [Geradores](geradores.md) estão todos os exemplos listados abaixo.
+
+```js
 import gerar from 'gerador-br'; // ES Module:
 // const gerar = require('gerador-br'); // CommonJS:
 

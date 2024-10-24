@@ -18,15 +18,15 @@ Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* **Gerador de Documento**: CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
-* **Gerador de Pessoa**: Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
-* **Gerador de Empresa**: CNPJ e Inscrição Estadual;
-* **Gerador de Endereço**: CEP, Logradouro, Número, Bairro, Localidade e Estado;
-* **Gerador de Contato**: E-mail, DDD, Operadora, Celular e Telefone;
-* **Gerador de Conta Bancária**: Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
-* **Gerador de Cartão de Crédito**: Número, Bandeira, CVV e Validade;
-* **Gerador de Veículo**: Placa Antiga, Placa Mercosul e RENAVAM;
-* **Gerador de Texto (Lorem Ipsum)**: Palavras, Sentenças e Parágrafos;
+* [Gerador de Documento](geradores?id=documentos): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
+* [Gerador de Pessoa](geradores?id=pessoa): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
+* [Gerador de Empresa](geradores?id=cnpj): CNPJ e Inscrição Estadual;
+* [Gerador de Endereço](geradores?id=endereco): CEP, Logradouro, Número, Bairro, Localidade e Estado;
+* [Gerador de Contato](geradores?id=contato): E-mail, DDD, Operadora, Celular e Telefone;
+* [Gerador de Conta Bancária](geradores?id=bancos): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
+* [Gerador de Cartão de Crédito](geradores?id=cartaocredito): Número, Bandeira, CVV e Validade;
+* [Gerador de Veículo](geradores?id=ve%c3%8dculo): Placa Antiga, Placa Mercosul e RENAVAM;
+* [Gerador de Texto (Lorem Ipsum)](geradores?id=lorem-ipsum): Palavras, Sentenças e Parágrafos;
 
 ## Compatibilidade
 
