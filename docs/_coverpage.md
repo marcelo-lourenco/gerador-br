@@ -1,4 +1,5 @@
 # Gerador-BR <small>1.1.0</small>
+
 ![logo](_media/icon-128.svg)
 
 > Gerador de Dados Fictícios - Brasil.
