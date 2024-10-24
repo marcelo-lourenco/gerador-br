@@ -25,11 +25,8 @@ const gerar = require('gerador-br');
 ***Named import:*** Importe apenas a(s) função(ões) que desejar
 
 ```js
-// ES Module
-import { nome, cpf, cnpj, placaMercosul } from 'gerador-br';
-
-// CommonJS
-// const { nome, cpf, cnpj, placaMercosul } = require('gerador-br');
+import { nome, cpf, cnpj, placaMercosul } from 'gerador-br'; // ES Module
+// const { nome, cpf, cnpj, placaMercosul } = require('gerador-br'); // CommonJS
 
 console.log(nome.femininoCompleto());   // Ex: "Maria"
 console.log(cpf());                     // Gera CPF sem máscara e do estado aleatório
@@ -43,11 +40,9 @@ console.log(placaMercosul(true));       // Gera placa no formato Mercosul com m�
 > Observação: Todas as funções do modulo `gerar` podem ser importadas individualmente (como nos exemplos acima - *named import*)
 
 ```js
-// ES Module:
-import gerar from 'gerador-br';
 
-// CommonJS:
-// const gerar = require('gerador-br');
+import gerar from 'gerador-br'; // ES Module:
+// const gerar = require('gerador-br'); // CommonJS:
 
 
 /* ******************** DOCUMENTOS ********************** */
@@ -430,20 +425,3 @@ console.log(gerar.paragrafo(5));
 // Gera um parágrafo com quantidade de sentenças e de palavras informadas.
 console.log(gerar.paragrafo(3,8));
 ```
-
-## Contribuições
-
-Contribuições são bem-vindas! Faça um *fork* do [repositório](https://github.com/marcelo-lourenco/gerador-br) e sinta-se à vontade para enviar seus *pull requests*.
-
-## Extensão Chrome
-
-Todas essas funções foram utilizadas na [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam).
-Muito útil para preencher automaticamente os campos de formulários em testes manuais.
-
-## License
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br?ref=badge_large)
-
----
-
-[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CHANGELOG.md) • [Fórum](https://github.com/marcelo-lourenco/gerador-br/discussions)
