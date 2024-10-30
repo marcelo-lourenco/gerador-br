@@ -1,6 +1,6 @@
 import { describe, test } from 'node:test';
-import { strictEqual, ok } from 'node:assert';
-import { rg, calcRgDV } from '../src/generators/rg.js';
+import { ok, strictEqual } from 'node:assert';
+import { rg, rgDV } from '../src/generators/rg.js';
 
 describe('RG Generator', () => {
   test('should generate a valid RG with mask', () => {
@@ -19,10 +19,10 @@ describe('RG Generator', () => {
 });
 describe('RG DV Calculation', () => {
   test('should return 0 for rgBase 100000000', () => {
-    strictEqual(calcRgDV(12345674), 0);
+    strictEqual(rgDV(12345674), 0);
   });
 
   test('should return X for rgBase 12345679', () => {
-    strictEqual(calcRgDV(12345675), 'X');
+    strictEqual(rgDV(12345675), 'X');
   });
 });

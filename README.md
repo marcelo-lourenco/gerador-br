@@ -16,14 +16,14 @@ Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* [Gerador de Documento](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=documentos): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
-* [Gerador de Pessoa](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=pessoa): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
-* [Gerador de Empresa](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=cnpj): CNPJ e Inscrição Estadual;
-* [Gerador de Endereço](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=endereco): CEP, Logradouro, Número, Bairro, Localidade e Estado;
-* [Gerador de Contato](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=contato): E-mail, DDD, Operadora, Celular e Telefone;
+* [Gerador de Documento](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
+* [Gerador de Pessoa](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
+* [Gerador de Empresa](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=documentos-pj): CNPJ e Inscrição Estadual;
+* [Gerador de Endereço](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=cep): CEP, Logradouro, Número, Bairro, Localidade e Estado;
+* [Gerador de Contato](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=contatos): E-mail, DDD, Operadora, Celular e Telefone;
 * [Gerador de Conta Bancária](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=bancos): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
 * [Gerador de Cartão de Crédito](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=cartaocredito): Número, Bandeira, CVV e Validade;
-* [Gerador de Veículo](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=ve%c3%8dculo): Placa Antiga, Placa Mercosul e RENAVAM;
+* [Gerador de Veículo](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=ve%c3%8dculos): Placa Antiga, Placa Mercosul e RENAVAM;
 * [Gerador de Texto (Lorem Ipsum)](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=lorem-ipsum): Palavras, Sentenças e Parágrafos;
 
 ## Compatibilidade

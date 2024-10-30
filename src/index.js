@@ -1,33 +1,34 @@
 import * as utils from './utils.js';
-import { nome } from './generators/nome.js';
+
 import { banco, listaCodigosBancos } from './generators/banco.js';
+import { palavra, paragrafo, sentenca } from './generators/texto.js';
+import { placaAntiga, placaMercosul } from './generators/placa.js';
+
 import { cartaoCredito } from './generators/cartao-credito.js';
-import { contaBancaria } from './generators/conta-bancaria.js';
+import { celular } from './generators/celular.js';
+import { cep } from './generators/cep.js';
 import { cnh } from './generators/cnh.js';
 import { cnpj } from './generators/cnpj.js';
-import { cpf } from './generators/cpf.js';
-import { rg } from './generators/rg.js';
-import { pis } from './generators/pis.js';
 import { cns } from './generators/cartao-nacional-saude.js';
-import { passaporte } from './generators/passaporte.js';
-import { tituloEleitor } from './generators/titulo-eleitor.js';
-import { dataNascimento } from './generators/data-nascimento.js';
-import { email } from './generators/email.js';
-import { celular } from './generators/celular.js';
-import { telefone } from './generators/telefone.js';
-import { cep } from './generators/cep.js';
-import { endereco } from './generators/endereco.js';
-import { placaAntiga, placaMercosul } from './generators/placa.js';
-import { renavam } from './generators/renavam.js';
-import { ddd } from './generators/ddd.js';
 import { codigoOperadora } from './generators/operadora.js';
-import { palavra, sentenca, paragrafo } from './generators/texto.js';
+import { contaBancaria } from './generators/conta-bancaria.js';
+import { cpf } from './generators/cpf.js';
+import { dataNascimento } from './generators/data-nascimento.js';
+import { ddd } from './generators/ddd.js';
+import { email } from './generators/email.js';
+import { endereco } from './generators/endereco.js';
 import { inscricaoEstadual } from './generators/inscricao-estadual.js';
+import { nome } from './generators/nome.js';
+import { passaporte } from './generators/passaporte.js';
+import { pis } from './generators/pis.js';
+import { renavam } from './generators/renavam.js';
+import { rg } from './generators/rg.js';
+import { telefone } from './generators/telefone.js';
+import { tituloEleitor } from './generators/titulo-eleitor.js';
 
 function apelido() {
   return utils.apelidoRand;
 }
-
 function corPele() {
   return utils.corPeleRand;
 }
@@ -731,42 +732,42 @@ gerar.inscricaoEstadual = inscricaoEstadual;
 
 export {
   gerar,
-  nome,
-  banco,
-  listaCodigosBancos,
-  cartaoCredito,
-  contaBancaria,
   apelido,
-  dataNascimento,
-  corPele,
-  tipoSanguineo,
-  orientacaoSexual,
-  identidadeGenero,
-  identidadePorOrientacao,
-  provedorEmail,
+  banco,
+  cartaoCredito,
+  celular,
+  cep,
   cnh,
   cnhCategoria,
-  profissao,
-  escolaridade,
   cnpj,
-  cpf,
-  rg,
-  pis,
   cns,
-  tituloEleitor,
-  passaporte,
-  cep,
-  endereco,
-  email,
-  celular,
-  telefone,
-  ddd,
   codigoOperadora,
+  contaBancaria,
+  corPele,
+  cpf,
+  dataNascimento,
+  ddd,
+  email,
+  endereco,
+  escolaridade,
+  identidadeGenero,
+  identidadePorOrientacao,
+  inscricaoEstadual,
+  listaCodigosBancos,
+  nome,
+  orientacaoSexual,
+  palavra,
+  paragrafo,
+  passaporte,
+  pis,
   placaAntiga,
   placaMercosul,
+  profissao,
+  provedorEmail,
   renavam,
-  palavra,
+  rg,
   sentenca,
-  paragrafo,
-  inscricaoEstadual,
+  telefone,
+  tipoSanguineo,
+  tituloEleitor,
 };

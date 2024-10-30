@@ -1,5 +1,5 @@
-import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
 
 export default {
   input: 'src/index.js',  // Arquivo principal de entrada
@@ -18,7 +18,12 @@ export default {
       entryFileNames: '[name].mjs',
       preserveModules: true,
       preserveModulesRoot: 'src',
-    }
+    },
+    {
+      file: 'dist/cdn/gerador-br.min.js',
+      format: 'cjs',  // Gera CommonJS
+      exports: 'auto'
+    },
     /*
     {
       file: 'dist/index.cjs',

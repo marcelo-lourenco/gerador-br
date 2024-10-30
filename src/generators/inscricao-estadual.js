@@ -42,7 +42,7 @@ function generateCurrentYearTwoDigits() {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVAC(numbers) {
+function ieDVAC(numbers) {
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -56,7 +56,7 @@ function calcIeDVAC(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVAL(numbers) {
+function ieDVAL(numbers) {
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -70,7 +70,7 @@ function calcIeDVAL(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVAM(numbers) {
+function ieDVAM(numbers) {
   const sum = numbers.split('').reduce((acc, digit, index) => acc + parseInt(digit, 10) * (numbers.length - index), 0);
   return remainder11(sum)
 }
@@ -80,7 +80,7 @@ function calcIeDVAM(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVAP(numbers) {
+function ieDVAP(numbers) {
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
 
@@ -108,7 +108,7 @@ function calcIeDVAP(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem os dígitos verificadores.
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calcIeDVBA1(numbers) {
+function ieDVBA1(numbers) {
   const weights = [7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -122,7 +122,7 @@ function calcIeDVBA1(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o segundo dígito verificador.
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calcIeDVBA2(numbers) {
+function ieDVBA2(numbers) {
   const weights = [8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -136,7 +136,7 @@ function calcIeDVBA2(numbers) {
  * @param {string} numbers - A sequência de números da inscrição estadual sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVCE(numbers) {
+function ieDVCE(numbers) {
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
 
@@ -152,7 +152,7 @@ function calcIeDVCE(numbers) {
  * @param {string} input - Sequência de 11 dígitos da inscrição estadual (base + ano + número) sem os dígitos verificadores.
  * @returns {string} Os dois dígitos verificadores calculados.
  */
-function calcIeDVDF(input) {
+function ieDVDF(input) {
   // if (input.length !== 9) { throw new Error('A entrada deve ter 9 dígitos (base + ano + número).'); }
 
   const weights1 = [4, 3, 2, 9, 8, 7, 6, 5, 4]; // Corrigido: 9 dígitos
@@ -184,7 +184,7 @@ function calcIeDVDF(input) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual (sem o dígito verificador).
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVES(numbers) {
+function ieDVES(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -202,7 +202,7 @@ function calcIeDVES(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual (sem o dígito verificador).
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVGO(numbers) {
+function ieDVGO(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -222,7 +222,7 @@ function calcIeDVGO(numbers) {
  * @param {string} input - Sequência de 8 dígitos (base + números) da inscrição estadual, sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVMA(input) {
+function ieDVMA(input) {
   // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -240,7 +240,7 @@ function calcIeDVMA(input) {
  * @param {string} numbers - Sequência de 10 dígitos da inscrição estadual (sem o dígito verificador).
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVMT(numbers) {
+function ieDVMT(numbers) {
   // if (numbers.length !== 10) { throw new Error('A entrada deve ter 10 dígitos.');  }
 
   const weights = [3, 2, 9, 8, 7, 6, 5, 4, 3, 2];
@@ -258,7 +258,7 @@ function calcIeDVMT(numbers) {
  * @param {string} input - Sequência de 8 dígitos (base + números) da inscrição estadual, sem o dígito verificador.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVMS(input) {
+function ieDVMS(input) {
   // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -276,7 +276,7 @@ function calcIeDVMS(input) {
  * @param {string} numbers - Sequência de 11 dígitos iniciais da inscrição estadual (sem os dígitos verificadores).
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calcIeDVMG1(numbers) {
+function ieDVMG1(numbers) {
   // if (numbers.length !== 11) { throw new Error('A entrada deve ter 11 dígitos.'); }
 
   // Pesos específicos para MG
@@ -296,7 +296,7 @@ function calcIeDVMG1(numbers) {
  * @param {string} input - Sequência de 12 dígitos (11 dígitos iniciais mais o primeiro dígito verificador).
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calcIeDVMG2(input) {
+function ieDVMG2(input) {
   // if (input.length !== 12) { throw new Error('A entrada deve ter 12 dígitos (11 dígitos iniciais + digit1).'); }
 
   // Pesos específicos para o cálculo do segundo dígito em MG
@@ -315,7 +315,7 @@ function calcIeDVMG2(input) {
  * @param {string} input - Sequência de 8 dígitos (base + numbers) da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVPA(input) {
+function ieDVPA(input) {
   // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -333,7 +333,7 @@ function calcIeDVPA(input) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVPB(numbers) {
+function ieDVPB(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -351,7 +351,7 @@ function calcIeDVPB(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVPE(numbers) {
+function ieDVPE(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [8, 7, 6, 5, 4, 3, 2, 1];
@@ -369,7 +369,7 @@ function calcIeDVPE(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVPI(numbers) {
+function ieDVPI(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -387,7 +387,7 @@ function calcIeDVPI(numbers) {
  * @param {string} numbers - Sequência de 10 dígitos da inscrição estadual (sem os dígitos verificadores).
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calcIeDVPR1(numbers) {
+function ieDVPR1(numbers) {
   const weights = [5, 4, 3, 2, 7, 6, 5, 4/* , 3, 2 */];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -401,7 +401,7 @@ function calcIeDVPR1(numbers) {
  * @param {string} numbers - Sequência de 11 dígitos da inscrição estadual (incluindo o primeiro dígito verificador).
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calcIeDVPR2(numbers) {
+function ieDVPR2(numbers) {
   const weights = [6, 5, 4, 3, 2, 7, 6, 5, 4/* , 3, 2 */];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -415,7 +415,7 @@ function calcIeDVPR2(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos.
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calcIeDVRJ1(numbers) {
+function ieDVRJ1(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [2, 7, 6, 5, 4, 3, 2];
@@ -433,7 +433,7 @@ function calcIeDVRJ1(numbers) {
  * @param {string} input - Sequência de 9 dígitos (8 dígitos + digit1).
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calcIeDVRJ2(input) {
+function ieDVRJ2(input) {
   // if (input.length !== 9) { throw new Error('A entrada deve ter 9 dígitos.'); }
 
   const weights = [2, 7, 6, 5, 4, 3, 2];
@@ -451,7 +451,7 @@ function calcIeDVRJ2(input) {
  * @param {string} numbers - Sequência de 8 dígitos.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVRN(numbers) {
+function ieDVRN(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [9, 8, 7, 6, 5, 4, 3, 2];
@@ -469,7 +469,7 @@ function calcIeDVRN(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVRS(numbers) {
+function ieDVRS(numbers) {
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
   const weights = [2, 9, 8, 7, 6, 5, 4, 3/* , 2 */];
@@ -487,7 +487,7 @@ function calcIeDVRS(numbers) {
  * @param {string} input - Sequência de 8 dígitos (base + números) da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVRO(input) {
+function ieDVRO(input) {
   /* similar ao formato do PA */
   // if (input.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
@@ -506,7 +506,7 @@ function calcIeDVRO(input) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVSC(numbers) {
+function ieDVSC(numbers) {
   /* similar ao formato do PB */
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
@@ -525,7 +525,7 @@ function calcIeDVSC(numbers) {
  * @param {string} numbers - Sequência de 11 dígitos da inscrição estadual (sem os dígitos verificadores).
  * @returns {number} O primeiro dígito verificador calculado.
  */
-function calcIeDVSP1(numbers) {
+function ieDVSP1(numbers) {
   const weights = [1, 3, 4, 5, 6, 7, 8, 10];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -539,7 +539,7 @@ function calcIeDVSP1(numbers) {
  * @param {string} numbers - Sequência de 12 dígitos da inscrição estadual (incluindo o primeiro dígito verificador).
  * @returns {number} O segundo dígito verificador calculado.
  */
-function calcIeDVSP2(numbers) {
+function ieDVSP2(numbers) {
   const weights = [3, 2, 10, 9, 8, 7, 6, 5, 4, 3, 2];
   let sum = 0;
   for (let i = 0; i < weights.length; i++) {
@@ -553,7 +553,7 @@ function calcIeDVSP2(numbers) {
  * @param {string} numbers - Sequência de 8 dígitos da inscrição estadual.
  * @returns {number} O dígito verificador calculado.
  */
-function calcIeDVTO(numbers) {
+function ieDVTO(numbers) {
   /* similar ao formato do PI */
   // if (numbers.length !== 8) { throw new Error('A entrada deve ter 8 dígitos.'); }
 
@@ -608,123 +608,123 @@ export function inscricaoEstadual(state) {
     AC: () => {
       const base = '01';
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVAC(base + numbers);
+      const digit = ieDVAC(base + numbers);
       return `${base}.${numbers}${digit}`;
     },
     AL: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVAL(numbers);
+      const digit = ieDVAL(numbers);
       return `${numbers}${digit}`;
     },
     AP: () => {
       const base = '03';
       const numbers = generateRandomNumbers(7);
-      const digit = calcIeDVAP(base + numbers);
+      const digit = ieDVAP(base + numbers);
       return `${base}.${numbers}${digit}`;
     },
     AM: () => {
       const numbers = generateRandomNumbers(9);
-      const digit = calcIeDVAM(numbers);
+      const digit = ieDVAM(numbers);
       return `${numbers}${digit}`;
     },
     BA: () => {
       const base = new Date().getFullYear() > 2022 ? '1' : '0';
       const numbers = generateRandomNumbers(7);
-      const digit1 = calcIeDVBA1(base + numbers);
-      const digit2 = calcIeDVBA2(base + numbers + digit1);
+      const digit1 = ieDVBA1(base + numbers);
+      const digit2 = ieDVBA2(base + numbers + digit1);
       return `${base}${numbers}-${digit1}${digit2}`;
     },
     CE: () => {
       const numbers = generateRandomNumbers(9);
-      const digit = calcIeDVCE(numbers);
+      const digit = ieDVCE(numbers);
       return `${numbers}${digit}`;
     },
     DF: () => {
       const base = '07';
       const year = generateCurrentYearTwoDigits();
       const numbers = generateRandomNumbers(5);
-      const digit = calcIeDVDF(base + year + numbers);
+      const digit = ieDVDF(base + year + numbers);
       return `${base}${year}.${numbers}${digit}`;
     },
     ES: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVES(numbers);
+      const digit = ieDVES(numbers);
       return `${numbers}${digit}`;
     },
     GO: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVGO(numbers);
+      const digit = ieDVGO(numbers);
       return `${numbers}${digit}`;
     },
     MA: () => {
       const base = '12';
       const numbers = generateRandomNumbers(6);
-      const digit = calcIeDVMA(base + numbers);
+      const digit = ieDVMA(base + numbers);
       return `${base}${numbers}${digit}`;
     },
     MT: () => {
       const numbers = generateRandomNumbers(10);
-      const digit = calcIeDVMT(numbers);
+      const digit = ieDVMT(numbers);
       return `${numbers}${digit}`;
     },
     MS: () => {
       const base = '28';
       const numbers = generateRandomNumbers(6);
-      const digit = calcIeDVMS(base + numbers);
+      const digit = ieDVMS(base + numbers);
       return `${base}${numbers}${digit}`;
     },
     MG: () => {
       const numbers = generateRandomNumbers(11);
-      const digit1 = calcIeDVMG1(numbers);
-      const digit2 = calcIeDVMG2(numbers + digit1);
+      const digit1 = ieDVMG1(numbers);
+      const digit2 = ieDVMG2(numbers + digit1);
       return `${numbers}${digit1}${digit2}`;
     },
     PA: () => {
       const base = '15';
       const numbers = generateRandomNumbers(6);
-      const digit = calcIeDVPA(base + numbers);
+      const digit = ieDVPA(base + numbers);
       return `${base}${numbers}${digit}`;
     },
     PB: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVPB(numbers);
+      const digit = ieDVPB(numbers);
       return `${numbers}${digit}`;
     },
     PR: () => {
       const numbers = generateRandomNumbers(8);
-      const digit1 = calcIeDVPR1(numbers);
-      const digit2 = calcIeDVPR2(numbers + digit1);
+      const digit1 = ieDVPR1(numbers);
+      const digit2 = ieDVPR2(numbers + digit1);
       return `${numbers}-${digit1}${digit2}`;
     },
     PE: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVPE(numbers);
+      const digit = ieDVPE(numbers);
       return `${numbers}${digit}`;
     },
     PI: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVPI(numbers);
+      const digit = ieDVPI(numbers);
       return `${numbers}${digit}`;
     },
     RJ: () => {
       const numbers = generateRandomNumbers(8);
-      const digit1 = calcIeDVRJ1(numbers);
-      const digit2 = calcIeDVRJ2(numbers + digit1);
+      const digit1 = ieDVRJ1(numbers);
+      const digit2 = ieDVRJ2(numbers + digit1);
       return `${numbers}.${digit1}${digit2}`;
     },
     RN: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVRN(numbers);
+      const digit = ieDVRN(numbers);
       return `${numbers}-${digit}`;
     },
     RS: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVRS(numbers);
+      const digit = ieDVRS(numbers);
       return `${numbers}${digit}`;
     },
     RO: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVRO(numbers);
+      const digit = ieDVRO(numbers);
       return `${numbers}-${digit}`;
     },
     RR: () => {
@@ -734,13 +734,13 @@ export function inscricaoEstadual(state) {
     },
     SC: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVSC(numbers);
+      const digit = ieDVSC(numbers);
       return `${numbers}${digit}`;
     },
     SP: () => {
       const numbers = generateRandomNumbers(11);
-      const digit1 = calcIeDVSP1(numbers);
-      const digit2 = calcIeDVSP2(numbers + digit1);
+      const digit1 = ieDVSP1(numbers);
+      const digit2 = ieDVSP2(numbers + digit1);
       return `${numbers}${digit1}${digit2}`;
     },
     SE: () => {
@@ -749,7 +749,7 @@ export function inscricaoEstadual(state) {
     },
     TO: () => {
       const numbers = generateRandomNumbers(8);
-      const digit = calcIeDVTO(numbers);
+      const digit = ieDVTO(numbers);
       return `${numbers}-${digit}`;
     },
   };

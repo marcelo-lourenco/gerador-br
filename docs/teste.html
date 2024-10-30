@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Gerador de Dados Fictícios - Brasil.">
+  <!-- <script src="https://cdn.jsdelivr.net/gh/marcelo-lourenco/gerador-br/src/index.js"></script> -->
+  <script type='module' src="https://cdn.jsdelivr.net/npm/gerador-br@1.1.0/dist/cjs/index.cjs"></script>
+</head>
+
+<body>
+  <h1>Gerador de CPF</h1>
+  <button onclick="gerarCPF()">Gerar CPF</button>
+  <br><br>
+  <label for="cpfGerado">CPF Gerado:</label>
+  <input type="text" id="cpfGerado" readonly>
+
+  <script>
+    function gerarCPF() {
+      // Verifica se a função gerarCPF está disponível no gerador-br
+      if (typeof gerarCPF === 'function') {
+        const cpf = gerarCPF();
+        document.getElementById('cpfGerado').value = cpf;
+      } else {
+        console.error('Função gerarCPF não encontrada no módulo gerador-br.');
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,32 +1,6 @@
 # GERADORES
 
-## DOCUMENTOS
-
-### cnh
-
-```js
-import { cnh, cnhCategoria } from 'gerador-br'; // ES Module
-// const { cnh, cnhCategoria } = require('gerador-br'); // CommonJS
-
-// Gera CNH aleatória
-cnh();
-
-// Gera Categoria CNH
-cnhCategoria();
-```
-
-### cnpj
-
-```js
-import { cnpj } from 'gerador-br'; // ES Module
-// const { cnpj } = require('gerador-br'); // CommonJS
-
-// Gera CNPJ sem máscara
-cnpj();
-
-// Gera CNPJ com máscara
-cnpj(true);
-```
+## DOCUMENTOS PF
 
 ### cpf
 
@@ -45,6 +19,19 @@ cpf(true, "RS");
 
 // Gera CPF sem máscara e do estado informado
 cpf(false, "MG");
+```
+
+### cnh
+
+```js
+import { cnh, cnhCategoria } from 'gerador-br'; // ES Module
+// const { cnh, cnhCategoria } = require('gerador-br'); // CommonJS
+
+// Gera CNH aleatória
+cnh();
+
+// Gera Categoria CNH
+cnhCategoria();
 ```
 
 ### rg
@@ -121,6 +108,21 @@ import { passaporte } from 'gerador-br'; // ES Module
 
 // Gera Passaporte aleatório
 passaporte();
+```
+
+## DOCUMENTOS PJ
+
+### cnpj
+
+```js
+import { cnpj } from 'gerador-br'; // ES Module
+// const { cnpj } = require('gerador-br'); // CommonJS
+
+// Gera CNPJ sem máscara
+cnpj();
+
+// Gera CNPJ com máscara
+cnpj(true);
 ```
 
 ### inscricaoEstadual
@@ -248,7 +250,7 @@ contaBancaria('33');
 contaBancaria('Santander');
 ```
 
-## PESSOA
+## PESSOAS
 
 ### nome
 
@@ -291,24 +293,6 @@ nome.doMeio();
 
 // Gera um sobrenome aleatório
 nome.sobrenome();
-```
-
-### email
-
-```js
-import { email } from 'gerador-br'; // ES Module
-// const { email } = require('gerador-br'); // CommonJS
-
-// Gera e-mail com nickname aleatório
-email();
-
-// Gera e-mail com nome masculino
-const nomeMasculinoCompleto = nome.masculinoCompleto();
-email(nomeMasculinoCompleto);
-
-// Gera e-mail com nome feminino
-const nomeFemininoCompleto = nome.femininoCompleto();
-email(nomeFemininoCompleto);
 ```
 
 ### apelido
@@ -371,7 +355,55 @@ import { tipoSanguineo } from 'gerador-br'; // ES Module
 tipoSanguineo();
 ```
 
-## CONTATO
+<!-- TODO 
+## genero
+
+```js
+import { genero } from 'gerador-br'; // ES Module
+// const { genero } = require('gerador-br'); // CommonJS
+
+// Gera gênero aleatório
+genero();
+```
+
+## orientacaoSexual
+```js
+import { orientacaoSexual } from 'gerador-br'; // ES Module
+// const { orientacaoSexual } = require('gerador-br'); // CommonJS
+
+// Gera orientação sexual aleatória
+orientacaoSexual();
+```
+
+## identidadeGenero
+```js
+import { identidadeGenero } from 'gerador-br'; // ES Module
+// const { identidadeGenero } = require('gerador-br'); // CommonJS
+
+// Gera identidade de gênero aleatória
+identidadeGenero();
+```
+-->
+
+## CONTATOS
+
+### email
+
+```js
+import { email } from 'gerador-br'; // ES Module
+// const { email } = require('gerador-br'); // CommonJS
+
+// Gera e-mail com nickname aleatório
+email();
+
+// Gera e-mail com nome masculino
+const nomeMasculinoCompleto = nome.masculinoCompleto();
+email(nomeMasculinoCompleto);
+
+// Gera e-mail com nome feminino
+const nomeFemininoCompleto = nome.femininoCompleto();
+email(nomeFemininoCompleto);
+```
 
 ### ddd
 
@@ -510,7 +542,7 @@ console.log(end.localidade);
 console.log(end.estado);
 ```
 
-## VEÍCULO
+## VEÍCULOS
 
 ### placaAntiga
 

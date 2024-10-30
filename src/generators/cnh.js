@@ -4,7 +4,7 @@
  * @param {string} cnhNum - O número de CNH a ser calculado.
  * @returns {string} O dígito verificador calculado.
  */
-function calcCnhDV(cnhNum) {
+export function cnhDV(cnhNum) {
   let n1 = 9;
   let n2 = 1;
   let dv1 = 0;
@@ -41,6 +41,6 @@ function adjustDV(dv) {
  */
 export function cnh() {
   const cnhNum = String(Math.floor(Math.random() * 900000000) + 100000000);
-  const cnhDv = calcCnhDV(cnhNum);
+  const cnhDv = cnhDV(cnhNum);
   return `${cnhNum}${cnhDv}`;
 }

@@ -42,7 +42,27 @@ function adjustDV(dv) {
   return dv
 }
 
+/**
+ * Calcula o dígito verificador do CPF.
+ * @param {number[]} num - Os nove primeiros dígitos do CPF.
+ * @returns {number[]} Os dois dígitos verificadores.
+ * @example
+ * console.log(cpfDV(123456789)); // => 09
+ * console.log(cpfDV("123456789")); // => 09
+ */
+export function cpfDV(num) {
+  num = String(num);
+  num = num.padStart(9,'0').split('').map(Number)
+  let dv1 = num[8] * 2 + num[7] * 3 + num[6] * 4 + num[5] * 5 + num[4] * 6 + num[3] * 7 + num[2] * 8 + num[1] * 9 + num[0] * 10;
+  dv1 = 11 - (mod(dv1, 11));
+  dv1 = adjustDV(dv1);
 
+  let dv2 = dv1 * 2 + num[8] * 3 + num[7] * 4 + num[6] * 5 + num[5] * 6 + num[4] * 7 + num[3] * 8 + num[2] * 9 + num[1] * 10 + num[0] * 11;
+  dv2 = 11 - (mod(dv2, 11));
+  dv2 = adjustDV(dv2);
+
+  return `${dv1}${dv2}`;
+}
 
 /**
  * Gera um número de CPF aleatório.
@@ -64,14 +84,9 @@ export function cpf(mask, state) {
   const n1 = n(); const n2 = n(); const n3 = n(); const n4 = n(); const n5 = n(); const n6 = n(); const n7 = n(); const n8 = n(); const
     n9 = numStates(state || stateRand);
 
-  let d1 = n9 * 2 + n8 * 3 + n7 * 4 + n6 * 5 + n5 * 6 + n4 * 7 + n3 * 8 + n2 * 9 + n1 * 10;
-  d1 = 11 - (mod(d1, 11));
-  d1 = adjustDV(d1)
+  const num = `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}`; // Concatenando os números em uma string
+  const dv = cpfDV(num); // Transformando a string em um array de números
 
-  let d2 = d1 * 2 + n9 * 3 + n8 * 4 + n7 * 5 + n6 * 6 + n5 * 7 + n4 * 8 + n3 * 9 + n2 * 10 + n1 * 11;
-  d2 = 11 - (mod(d2, 11));
-  d2 = adjustDV(d2)
-
-  let cpfGen = `${n1}${n2}${n3}.${n4}${n5}${n6}.${n7}${n8}${n9}-${d1}${d2}`;
+  let cpfGen = `${n1}${n2}${n3}.${n4}${n5}${n6}.${n7}${n8}${n9}-${dv}`;
   return mask ? cpfGen : cpfGen.replace(/\D/g, '');
 }

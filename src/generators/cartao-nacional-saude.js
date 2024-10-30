@@ -3,7 +3,7 @@
  * @param {string} cnsBase - A base do CNS (sem o dígito verificador).
  * @returns {string} O dígito verificador do CNS.
  */
-export function calcCnsDV(cnsBase) {
+export function cnsDV(cnsBase) {
   let sum = 0;
   for (let i = 0; i < cnsBase.length; i++) {
     sum += Number(cnsBase.charAt(i)) * (15 - i);
@@ -66,7 +66,7 @@ export function cns(mask, type) {
   // Constrói a base do CNS
   let cnsGen = `${firstDigit}${n2}${n3}`; // Base: 1 dígito inicial + 10 dígitos
   // Cálculo do dígito verificador
-  cnsGen += calcCnsDV(cnsGen);
+  cnsGen += cnsDV(cnsGen);
 
   if (mask) {
     return `${cnsGen.substr(0, 3)} ${cnsGen.substr(3, 4)} ${cnsGen.substr(7, 4)} ${cnsGen.substr(11, 4)}`;
