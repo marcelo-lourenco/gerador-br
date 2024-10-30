@@ -1,7 +1,5 @@
-import crypto from 'crypto';
-
-import { stateRand } from '../utils.js';
 import { ddd } from './ddd.js';
+import { stateRand } from '../utils.js';
 
 /**
  * Gera um número de telefone aleatório.
@@ -25,11 +23,11 @@ import { ddd } from './ddd.js';
  * console.log(telefone(true, "ES")); // "(27) 9999-9999"
  */
 export function telefone(mask, state) {
-  // Função para gerar um número aleatório seguro entre 0 e 9
-  const randDigit = () => crypto.randomInt(0, 9);
+  // Função para gerar um dígito aleatório entre 0 e 9
+  const randDigit = () => Math.floor(Math.random() * 10);
 
-  // Função para gerar um número seguro entre min e max (inclusive)
-  const randRange = (min, max) => crypto.randomInt(min, max);
+  // Função para gerar um número aleatório entre min e max (inclusive)
+  const randRange = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
 
   let sortDdd = state ? ddd(state) : ddd(stateRand);
   let n1 = randRange(2, 3);

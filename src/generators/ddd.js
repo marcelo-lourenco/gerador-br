@@ -1,5 +1,3 @@
-import crypto from 'crypto';
-
 import { stateRand } from '../utils.js';
 
 /**
@@ -47,8 +45,8 @@ export function ddd(state) {
 
   const dddState = ddds[state || stateRand];
 
-  // Função para obter um índice aleatório seguro
-  const secureRandomIndex = (max) => crypto.randomInt(0, max);
+  // Função para obter um índice aleatório usando Math.random
+  const randomIndex = (max) => Math.floor(Math.random() * max);
 
-  return dddState[secureRandomIndex(dddState.length)];
+  return dddState[randomIndex(dddState.length)];
 }

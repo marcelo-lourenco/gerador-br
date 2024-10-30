@@ -1,23 +1,31 @@
-import crypto from 'crypto';
-
 import {
-  siglasEstados,
-  nomesMasculinos,
-  nomesFemininos,
-  nomesDoMeio,
-  sobrenomes,
-  nicknames,
-  provedoresEmail,
-  palavras,
-  orientacaoSexual,
-  identidesGenero,
-  identidadesPorOrientacao,
-  corPele,
-  tiposSanguineo,
   categoriasCnh,
+  corPele,
   escolaridade,
+  identidadesPorOrientacao,
+  identidesGenero,
+  nicknames,
+  nomesDoMeio,
+  nomesFemininos,
+  nomesMasculinos,
+  orientacaoSexual,
+  palavras,
   profissao,
+  provedoresEmail,
+  siglasEstados,
+  sobrenomes,
+  tiposSanguineo,
 } from './data/db-general.js';
+
+/**
+ * Retorna um número inteiro aleatório entre min (inclusive) e max (exclusivo).
+ * @param {number} min - O limite inferior (inclusivo).
+ * @param {number} max - O limite superior (exclusivo).
+ * @returns {number} Um número inteiro aleatório entre min e max.
+ */
+const randomInt = (min, max) => {
+  return Math.floor(Math.random() * (max - min)) + min;
+};
 
 /**
  * Retorna um elemento aleatório de um array.
@@ -25,9 +33,10 @@ import {
  * @returns {*} Um elemento aleatório do array.
  */
 export const getRandom = (arr) => {
-  const index = crypto.randomInt(0, arr.length); // Gera um índice seguro no intervalo do array
+  const index = randomInt(0, arr.length); // Gera um índice aleatório no intervalo do array
   return arr[index];
 };
+
 /**
  * Indica se o dado deve ser mascarado.
  * @type {boolean}

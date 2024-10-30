@@ -1,4 +1,3 @@
-import { randomInt } from 'crypto';
 import { stateRand } from '../utils.js'
 
 function remainder11(sum) {
@@ -19,7 +18,7 @@ function remainder10(sum) {
 function generateRandomNumbers(length) {
   let result = '';
   for (let i = 0; i < length; i++) {
-    result += randomInt(0, 10).toString();
+    result += Math.floor(Math.random() * 10).toString();
   }
   return result;
 }

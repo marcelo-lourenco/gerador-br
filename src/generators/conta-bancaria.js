@@ -1,13 +1,12 @@
-import crypto from 'crypto';
-
-const cryptoRandomInt = function (min, max) {
-  return crypto.randomInt(min, max);
+// Função para gerar inteiros aleatórios personalizados
+const randomInt = (min, max) => {
+  return Math.floor(Math.random() * (max - min) + min);
 };
 
 const genAgencyAccount = function (numberOfDigits = 4) {
   let account = [];
   for (let i = 0; i < numberOfDigits; i++) {
-    account.push(cryptoRandomInt(0, 10));
+    account.push(randomInt(0, 10));
   }
   return account;
 };
@@ -96,7 +95,7 @@ const bankAccount = {
       if (i < 4) {
         account.unshift(agency[i]);
       } else {
-        account.push(cryptoRandomInt(0, 10));
+        account.push(randomInt(0, 10));
       }
     }
 
