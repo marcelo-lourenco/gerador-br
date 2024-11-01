@@ -3,7 +3,7 @@ function copiarTexto() {
   campoTexto.select();
   document.execCommand('copy');
 
-  const mensagem = document.getElementById('mensagemCopiado');
+  const mensagem = document.getElementById('msgCopiado');
   mensagem.classList.add('mostrar');
   setTimeout(() => {
     mensagem.classList.remove('mostrar');
