@@ -48,11 +48,15 @@ Contribuições são bem-vindas!
 
 Faça um *fork* do [repositório](https://github.com/marcelo-lourenco/gerador-br) e sinta-se à vontade para enviar seus *pull requests*.
 
-## Extensão Chrome
+## Demo
+Extensão Chrome
 
-Todas essas funções foram utilizadas na [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam).
+
+[Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam). Todas essas funções foram utilizadas na 
 
 Muito útil para preencher automaticamente os campos de formulários em testes manuais.
+
+## [Gerador-BR](https://marcelo-lourenco.github.io/gerador-br/#/gerar/cpf) on-line
 
 ---
 

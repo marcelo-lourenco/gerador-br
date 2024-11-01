@@ -6,4 +6,6 @@
 
 <!-- [NPM](https://www.npmjs.com/package/gerador-br) -->
 <!-- [GitHub](https://github.com/marcelo-lourenco/gerador-br) -->
+[Home](./?id=gerador-de-dados-fictícios-brasi)
+[Gerador](gerar/cpf)
 [Get Started](inicio.md)

@@ -3,7 +3,7 @@
   * [Gerador de CPF](gerar/cpf.md "Gerador de CPF")
   * [Gerador de CNH](gerar/cnh.md "Gerador de CNH")
   * [Gerador de RG](gerar/rg.md "Gerador de RG")
-  * [Gerador de CNS](gerar/cns.md "Gerador de CNS")
+  * [Gerador de CNS](gerar/cns.md "Gerador de Cartão Nacional Saúde")
   * [Gerador de PIS](gerar/pis.md "Gerador de PIS")
   * [Gerador de Título de Eleitor](gerar/tituloEleitor.md "Gerador de Título de Eleitor")
   * [Gerador de Passaporte](gerar/passaporte.md "Gerador de Passaporte")
@@ -13,7 +13,7 @@
 * BANCOS
   * [Gerador de Banco](gerar/banco.md "Gerador de Banco")
   * [Gerador de Cartão de Crédito](gerar/cartaoCredito.md "Gerador de Cartão de Crédito")
-  * [Gerador de Conta Bancária](gerar/contaBancaria.md "Gerador de Conta Bancária")
+  <!-- * [Gerador de Conta Bancária](gerar/contaBancaria.md "Gerador de Conta Bancária") -->
 * CONTATOS
   * [Gerador de E-mail](gerar/email.md "Gerador de email")
   * [Gerador de CEP](gerar/cep.md "Gerador de CEP")

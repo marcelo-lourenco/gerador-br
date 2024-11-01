@@ -390,8 +390,8 @@ identidadeGenero();
 ### email
 
 ```js
-import { email } from 'gerador-br'; // ES Module
-// const { email } = require('gerador-br'); // CommonJS
+import { email, nome } from 'gerador-br'; // ES Module
+// const { email, nome } = require('gerador-br'); // CommonJS
 
 // Gera e-mail com nickname aleatório
 email();
@@ -563,10 +563,10 @@ placaAntiga(false);
 import { placaMercosul } from 'gerador-br'; // ES Module
 // const { placaMercosul } = require('gerador-br'); // CommonJS
 
-// Gera placa no formato Mercosul sem máscara "ABC1D23"
+// Gera placa no formato Mercosul com máscara "ABC-1D23"
 placaMercosul(true);
 
-// Gera placa no formato Mercosul com máscara "ABC-1D23"
+// Gera placa no formato Mercosul sem máscara "ABC1D23"
 placaMercosul(false);
 ```
 

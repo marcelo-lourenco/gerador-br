@@ -442,10 +442,10 @@ console.log(gerar.placaAntiga(true));
 // Gera placa no formato antigo sem máscara "ABC1234"
 console.log(gerar.placaAntiga(false));
 
-// Gera placa no formato Mercosul sem máscara "ABC1D23"
+// Gera placa no formato Mercosul com máscara "ABC-1D23"
 console.log(gerar.placaMercosul(true));
 
-// Gera placa no formato Mercosul com máscara "ABC-1D23"
+// Gera placa no formato Mercosul sem máscara "ABC1D23"
 console.log(gerar.placaMercosul(false));
 
 // Gera RENAVAM
