@@ -18,15 +18,15 @@ Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* [Gerador de Documento](geradores?id=documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
-* [Gerador de Pessoa](geradores?id=pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
-* [Gerador de Empresa](geradores?id=documentos-pj): CNPJ e Inscrição Estadual;
-* [Gerador de Endereço](geradores?id=cep): CEP, Logradouro, Número, Bairro, Localidade e Estado;
-* [Gerador de Contato](geradores?id=contatos): E-mail, DDD, Operadora, Celular e Telefone;
-* [Gerador de Conta Bancária](geradores?id=bancos): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
-* [Gerador de Cartão de Crédito](geradores?id=cartaocredito): Número, Bandeira, CVV e Validade;
-* [Gerador de Veículo](geradores?id=ve%c3%8dculos): Placa Antiga, Placa Mercosul e RENAVAM;
-* [Gerador de Texto (Lorem Ipsum)](geradores?id=lorem-ipsum): Palavras, Sentenças e Parágrafos;
+* [Gerador de Documento](guia-utilizacao?id=documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
+* [Gerador de Pessoa](guia-utilizacao?id=pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
+* [Gerador de Empresa](guia-utilizacao?id=documentos-pj): CNPJ e Inscrição Estadual;
+* [Gerador de Endereço](guia-utilizacao?id=cep): CEP, Logradouro, Número, Bairro, Localidade e Estado;
+* [Gerador de Contato](guia-utilizacao?id=contatos): E-mail, DDD, Operadora, Celular e Telefone;
+* [Gerador de Conta Bancária](guia-utilizacao?id=bancos): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
+* [Gerador de Cartão de Crédito](guia-utilizacao?id=cartaocredito): Número, Bandeira, CVV e Validade;
+* [Gerador de Veículo](guia-utilizacao?id=ve%c3%8dculos): Placa Antiga, Placa Mercosul e RENAVAM;
+* [Gerador de Texto (Lorem Ipsum)](guia-utilizacao?id=lorem-ipsum): Palavras, Sentenças e Parágrafos;
 
 ## Compatibilidade
 

@@ -29,8 +29,7 @@ export function sentenca(qttWords) {
   const numberOfWords = qttWords || Math.floor(Math.random() * 10) + 10;
   let sentence = Array.from({ length: numberOfWords }, () => palavra()).join(' ');
   sentence = `${sentence.charAt(0).toUpperCase() + sentence.slice(1)}.`;
-
-  return `${sentence.replace(/,\.|\.\.|!\.|\?\./g, '.').trim()}`;
+  return sentence;
 }
 
 /**

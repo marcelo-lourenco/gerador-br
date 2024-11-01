@@ -10,21 +10,21 @@
 [![FOSSA Licence](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
 [![FOSSA Security](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
 
-Gere dados fictícios, mas válidos, para testes e desenvolvimento.
+Gere dados fictícios/válidos, para testes e desenvolvimento de Software.
 
 Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner**, **Jasmine**, **Mocha**, **Chai**, **Supertest**, **Sinon** e **Puppeteer**.
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* [Gerador de Documento](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
-* [Gerador de Pessoa](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
-* [Gerador de Empresa](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=documentos-pj): CNPJ e Inscrição Estadual;
-* [Gerador de Endereço](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=cep): CEP, Logradouro, Número, Bairro, Localidade e Estado;
-* [Gerador de Contato](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=contatos): E-mail, DDD, Operadora, Celular e Telefone;
-* [Gerador de Conta Bancária](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=bancos): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
-* [Gerador de Cartão de Crédito](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=cartaocredito): Número, Bandeira, CVV e Validade;
-* [Gerador de Veículo](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=ve%c3%8dculos): Placa Antiga, Placa Mercosul e RENAVAM;
-* [Gerador de Texto (Lorem Ipsum)](https://marcelo-lourenco.github.io/gerador-br/#/geradores?id=lorem-ipsum): Palavras, Sentenças e Parágrafos;
+* [Gerador de Documento](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
+* [Gerador de Pessoa](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
+* [Gerador de Empresa](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=documentos-pj): CNPJ e Inscrição Estadual;
+* [Gerador de Endereço](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=cep): CEP, Logradouro, Número, Bairro, Localidade e Estado;
+* [Gerador de Contato](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=contatos): E-mail, DDD, Operadora, Celular e Telefone;
+* [Gerador de Conta Bancária](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=bancos): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
+* [Gerador de Cartão de Crédito](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=cartaocredito): Número, Bandeira, CVV e Validade;
+* [Gerador de Veículo](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=ve%c3%8dculos): Placa Antiga, Placa Mercosul e RENAVAM;
+* [Gerador de Texto (Lorem Ipsum)](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=lorem-ipsum): Palavras, Sentenças e Parágrafos;
 
 ## Compatibilidade
 
@@ -62,7 +62,7 @@ const gerar = require('gerador-br');
 
 ## Utilização
 
-> Veja todos os exemplos na [documentação](https://marcelo-lourenco.github.io/gerador-br/#/geradores).
+> Veja todos os exemplos na [documentação](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao).
 
 **Importe apenas a(s) função(ões) que desejar:**
 

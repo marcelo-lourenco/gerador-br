@@ -78,17 +78,442 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/data/db-bancos.js"
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-bancos.cjs"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/data/db-ceps.js"
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-bancos.js"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/data/db-general.js"
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-ceps.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-ceps.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/banco.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/banco.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cartao-credito.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cartao-credito.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cartao-nacional-saude.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cartao-nacional-saude.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/celular.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/celular.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cep.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cep.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cnh.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cnh.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cnpj.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cnpj.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/conta-bancaria.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/conta-bancaria.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cpf.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cpf.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/data-nascimento.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/data-nascimento.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/ddd.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/ddd.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/email.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/email.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/endereco.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/endereco.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/inscricao-estadual.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/inscricao-estadual.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/nome.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/nome.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/operadora.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/operadora.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/passaporte.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/passaporte.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/pis.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/pis.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/placa.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/placa.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/renavam.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/renavam.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/rg.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/rg.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/telefone.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/telefone.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/texto.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/texto.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/titulo-eleitor.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/titulo-eleitor.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.cjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/data/db-bancos.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/data/db-ceps.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/data/db-general.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/banco.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/cartao-credito.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/cartao-nacional-saude.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/celular.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/cep.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/cnh.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/cnpj.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/conta-bancaria.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/cpf.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/data-nascimento.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/ddd.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/email.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/endereco.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/inscricao-estadual.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/nome.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/operadora.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/passaporte.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/pis.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/placa.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/renavam.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/rg.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/telefone.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/texto.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/titulo-eleitor.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/index.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/utils.mjs"
           }
         },
         {
@@ -98,12 +523,22 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/index-teste.js"
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/rollup.config.js"
           }
         },
         {
           "location": {
-            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/index.js"
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/src/data/db-bancos.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/src/data/db-ceps.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/src/data/db-general.js"
           }
         },
         {
@@ -129,6 +564,11 @@
         {
           "location": {
             "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/src/generators/cep.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/src/generators/certidao.js"
           }
         },
         {
@@ -239,6 +679,16 @@
         {
           "location": {
             "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/src/generators/titulo-eleitor.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/src/index.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/src/sample.js"
           }
         },
         {
@@ -5166,6 +5616,4662 @@
         {
           "level": "error",
           "message": {
+            "text": "'module' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-bancos.js",
+                  "index": 4
+                },
+                "region": {
+                  "startLine": 2160,
+                  "startColumn": 1,
+                  "endLine": 2160,
+                  "endColumn": 7
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'module' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-ceps.js",
+                  "index": 6
+                },
+                "region": {
+                  "startLine": 4504,
+                  "startColumn": 1,
+                  "endLine": 4504,
+                  "endColumn": 7
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 1,
+                  "endLine": 54,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 1,
+                  "endLine": 55,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 1,
+                  "endLine": 56,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 1,
+                  "endLine": 57,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 1,
+                  "endLine": 58,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 1,
+                  "endLine": 59,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 1,
+                  "endLine": 60,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 1,
+                  "endLine": 61,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 1,
+                  "endLine": 62,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 1,
+                  "endLine": 63,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 1,
+                  "endLine": 64,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 1,
+                  "endLine": 65,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 1,
+                  "endLine": 66,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 1,
+                  "endLine": 67,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endLine": 68,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/data/db-general.js",
+                  "index": 8
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 1,
+                  "endLine": 69,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/banco.js",
+                  "index": 10
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 16,
+                  "endLine": 3,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/banco.js",
+                  "index": 10
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 1,
+                  "endLine": 65,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/banco.js",
+                  "index": 10
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 1,
+                  "endLine": 66,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cartao-credito.js",
+                  "index": 12
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 12,
+                  "endLine": 3,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cartao-credito.js",
+                  "index": 12
+                },
+                "region": {
+                  "startLine": 152,
+                  "startColumn": 1,
+                  "endLine": 152,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cartao-nacional-saude.js",
+                  "index": 14
+                },
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 1,
+                  "endLine": 80,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cartao-nacional-saude.js",
+                  "index": 14
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 1,
+                  "endLine": 81,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/celular.js",
+                  "index": 16
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 13,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/celular.js",
+                  "index": 16
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 11,
+                  "endLine": 4,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/celular.js",
+                  "index": 16
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 17,
+                  "endLine": 5,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/celular.js",
+                  "index": 16
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 1,
+                  "endLine": 47,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cep.js",
+                  "index": 18
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cep.js",
+                  "index": 18
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 13,
+                  "endLine": 4,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cep.js",
+                  "index": 18
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 1,
+                  "endLine": 36,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cnh.js",
+                  "index": 20
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 1,
+                  "endLine": 50,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cnh.js",
+                  "index": 20
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 1,
+                  "endLine": 51,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cnpj.js",
+                  "index": 22
+                },
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 1,
+                  "endLine": 52,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cnpj.js",
+                  "index": 22
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 53,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/conta-bancaria.js",
+                  "index": 24
+                },
+                "region": {
+                  "startLine": 396,
+                  "startColumn": 1,
+                  "endLine": 396,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cpf.js",
+                  "index": 26
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 13,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cpf.js",
+                  "index": 26
+                },
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 1,
+                  "endLine": 96,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cpf.js",
+                  "index": 26
+                },
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 1,
+                  "endLine": 97,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/data-nascimento.js",
+                  "index": 28
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 1,
+                  "endLine": 22,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/ddd.js",
+                  "index": 30
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 13,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/ddd.js",
+                  "index": 30
+                },
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 1,
+                  "endLine": 56,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/email.js",
+                  "index": 32
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 13,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/email.js",
+                  "index": 32
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "endLine": 35,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/endereco.js",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/endereco.js",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 13,
+                  "endLine": 4,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/endereco.js",
+                  "index": 34
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 1,
+                  "endLine": 44,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/inscricao-estadual.js",
+                  "index": 36
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 13,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/inscricao-estadual.js",
+                  "index": 36
+                },
+                "region": {
+                  "startLine": 764,
+                  "startColumn": 1,
+                  "endLine": 764,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/nome.js",
+                  "index": 38
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 13,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/nome.js",
+                  "index": 38
+                },
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 1,
+                  "endLine": 123,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/operadora.js",
+                  "index": 40
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 1,
+                  "endLine": 55,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/passaporte.js",
+                  "index": 42
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 1,
+                  "endLine": 20,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/pis.js",
+                  "index": 44
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/placa.js",
+                  "index": 46
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 1,
+                  "endLine": 40,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/placa.js",
+                  "index": 46
+                },
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 1,
+                  "endLine": 41,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/renavam.js",
+                  "index": 48
+                },
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 1,
+                  "endLine": 43,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/renavam.js",
+                  "index": 48
+                },
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 1,
+                  "endLine": 44,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/rg.js",
+                  "index": 50
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 1,
+                  "endLine": 40,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/rg.js",
+                  "index": 50
+                },
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 1,
+                  "endLine": 41,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/telefone.js",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 11,
+                  "endLine": 3,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/telefone.js",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 13,
+                  "endLine": 4,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/telefone.js",
+                  "index": 52
+                },
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1,
+                  "endLine": 49,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/texto.js",
+                  "index": 54
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 17,
+                  "endLine": 3,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/texto.js",
+                  "index": 54
+                },
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 1,
+                  "endLine": 70,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/texto.js",
+                  "index": 54
+                },
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 1,
+                  "endLine": 71,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/texto.js",
+                  "index": 54
+                },
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 1,
+                  "endLine": 72,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/titulo-eleitor.js",
+                  "index": 56
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 13,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/titulo-eleitor.js",
+                  "index": 56
+                },
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 1,
+                  "endLine": 107,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/titulo-eleitor.js",
+                  "index": 56
+                },
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 1,
+                  "endLine": 108,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 13,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 13,
+                  "endLine": 4,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 13,
+                  "endLine": 5,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 13,
+                  "endLine": 6,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 21,
+                  "endLine": 7,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 15,
+                  "endLine": 8,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 11,
+                  "endLine": 9,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 11,
+                  "endLine": 10,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 12,
+                  "endLine": 11,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 27,
+                  "endLine": 12,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 17,
+                  "endLine": 13,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 21,
+                  "endLine": 14,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 11,
+                  "endLine": 15,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 22,
+                  "endLine": 16,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 11,
+                  "endLine": 17,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 13,
+                  "endLine": 18,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 16,
+                  "endLine": 19,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 25,
+                  "endLine": 20,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 12,
+                  "endLine": 21,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 18,
+                  "endLine": 22,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 11,
+                  "endLine": 23,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 15,
+                  "endLine": 24,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 10,
+                  "endLine": 25,
+                  "endColumn": 17
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 16,
+                  "endLine": 26,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 21,
+                  "endLine": 27,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 733,
+                  "startColumn": 1,
+                  "endLine": 733,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 734,
+                  "startColumn": 1,
+                  "endLine": 734,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 735,
+                  "startColumn": 1,
+                  "endLine": 735,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 736,
+                  "startColumn": 1,
+                  "endLine": 736,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 737,
+                  "startColumn": 1,
+                  "endLine": 737,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 738,
+                  "startColumn": 1,
+                  "endLine": 738,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 739,
+                  "startColumn": 1,
+                  "endLine": 739,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 740,
+                  "startColumn": 1,
+                  "endLine": 740,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 741,
+                  "startColumn": 1,
+                  "endLine": 741,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 742,
+                  "startColumn": 1,
+                  "endLine": 742,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 743,
+                  "startColumn": 1,
+                  "endLine": 743,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 744,
+                  "startColumn": 1,
+                  "endLine": 744,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 745,
+                  "startColumn": 1,
+                  "endLine": 745,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 746,
+                  "startColumn": 1,
+                  "endLine": 746,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 747,
+                  "startColumn": 1,
+                  "endLine": 747,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 748,
+                  "startColumn": 1,
+                  "endLine": 748,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 749,
+                  "startColumn": 1,
+                  "endLine": 749,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 750,
+                  "startColumn": 1,
+                  "endLine": 750,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 751,
+                  "startColumn": 1,
+                  "endLine": 751,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 752,
+                  "startColumn": 1,
+                  "endLine": 752,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 753,
+                  "startColumn": 1,
+                  "endLine": 753,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 754,
+                  "startColumn": 1,
+                  "endLine": 754,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 755,
+                  "startColumn": 1,
+                  "endLine": 755,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 756,
+                  "startColumn": 1,
+                  "endLine": 756,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 757,
+                  "startColumn": 1,
+                  "endLine": 757,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 758,
+                  "startColumn": 1,
+                  "endLine": 758,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 759,
+                  "startColumn": 1,
+                  "endLine": 759,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 760,
+                  "startColumn": 1,
+                  "endLine": 760,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 761,
+                  "startColumn": 1,
+                  "endLine": 761,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 762,
+                  "startColumn": 1,
+                  "endLine": 762,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 763,
+                  "startColumn": 1,
+                  "endLine": 763,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 764,
+                  "startColumn": 1,
+                  "endLine": 764,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 765,
+                  "startColumn": 1,
+                  "endLine": 765,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 766,
+                  "startColumn": 1,
+                  "endLine": 766,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 767,
+                  "startColumn": 1,
+                  "endLine": 767,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 768,
+                  "startColumn": 1,
+                  "endLine": 768,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 769,
+                  "startColumn": 1,
+                  "endLine": 769,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 770,
+                  "startColumn": 1,
+                  "endLine": 770,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/index.js",
+                  "index": 58
+                },
+                "region": {
+                  "startLine": 771,
+                  "startColumn": 1,
+                  "endLine": 771,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'require' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 17,
+                  "endLine": 3,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 181,
+                  "startColumn": 1,
+                  "endLine": 181,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 182,
+                  "startColumn": 1,
+                  "endLine": 182,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 1,
+                  "endLine": 183,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 184,
+                  "startColumn": 1,
+                  "endLine": 184,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 1,
+                  "endLine": 185,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 186,
+                  "startColumn": 1,
+                  "endLine": 186,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 187,
+                  "startColumn": 1,
+                  "endLine": 187,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 1,
+                  "endLine": 188,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 189,
+                  "startColumn": 1,
+                  "endLine": 189,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 190,
+                  "startColumn": 1,
+                  "endLine": 190,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 191,
+                  "startColumn": 1,
+                  "endLine": 191,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 1,
+                  "endLine": 192,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 193,
+                  "startColumn": 1,
+                  "endLine": 193,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 194,
+                  "startColumn": 1,
+                  "endLine": 194,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 1,
+                  "endLine": 195,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 196,
+                  "startColumn": 1,
+                  "endLine": 196,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 1,
+                  "endLine": 197,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 198,
+                  "startColumn": 1,
+                  "endLine": 198,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/utils.js",
+                  "index": 60
+                },
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 1,
+                  "endLine": 199,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9965,
+                  "startColumn": 1,
+                  "endLine": 9965,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9966,
+                  "startColumn": 1,
+                  "endLine": 9966,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9967,
+                  "startColumn": 1,
+                  "endLine": 9967,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9968,
+                  "startColumn": 1,
+                  "endLine": 9968,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9969,
+                  "startColumn": 1,
+                  "endLine": 9969,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9970,
+                  "startColumn": 1,
+                  "endLine": 9970,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9971,
+                  "startColumn": 1,
+                  "endLine": 9971,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9972,
+                  "startColumn": 1,
+                  "endLine": 9972,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9973,
+                  "startColumn": 1,
+                  "endLine": 9973,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9974,
+                  "startColumn": 1,
+                  "endLine": 9974,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9975,
+                  "startColumn": 1,
+                  "endLine": 9975,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9976,
+                  "startColumn": 1,
+                  "endLine": 9976,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9977,
+                  "startColumn": 1,
+                  "endLine": 9977,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9978,
+                  "startColumn": 1,
+                  "endLine": 9978,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9979,
+                  "startColumn": 1,
+                  "endLine": 9979,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9980,
+                  "startColumn": 1,
+                  "endLine": 9980,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9981,
+                  "startColumn": 1,
+                  "endLine": 9981,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9982,
+                  "startColumn": 1,
+                  "endLine": 9982,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9983,
+                  "startColumn": 1,
+                  "endLine": 9983,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9984,
+                  "startColumn": 1,
+                  "endLine": 9984,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9985,
+                  "startColumn": 1,
+                  "endLine": 9985,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9986,
+                  "startColumn": 1,
+                  "endLine": 9986,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9987,
+                  "startColumn": 1,
+                  "endLine": 9987,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9988,
+                  "startColumn": 1,
+                  "endLine": 9988,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9989,
+                  "startColumn": 1,
+                  "endLine": 9989,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9990,
+                  "startColumn": 1,
+                  "endLine": 9990,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9991,
+                  "startColumn": 1,
+                  "endLine": 9991,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9992,
+                  "startColumn": 1,
+                  "endLine": 9992,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9993,
+                  "startColumn": 1,
+                  "endLine": 9993,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9994,
+                  "startColumn": 1,
+                  "endLine": 9994,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9995,
+                  "startColumn": 1,
+                  "endLine": 9995,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9996,
+                  "startColumn": 1,
+                  "endLine": 9996,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9997,
+                  "startColumn": 1,
+                  "endLine": 9997,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9998,
+                  "startColumn": 1,
+                  "endLine": 9998,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 9999,
+                  "startColumn": 1,
+                  "endLine": 9999,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 10000,
+                  "startColumn": 1,
+                  "endLine": 10000,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 10001,
+                  "startColumn": 1,
+                  "endLine": 10001,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 10002,
+                  "startColumn": 1,
+                  "endLine": 10002,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/js/gerador-br.min.js",
+                  "index": 61
+                },
+                "region": {
+                  "startLine": 10003,
+                  "startColumn": 1,
+                  "endLine": 10003,
+                  "endColumn": 8
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
             "text": "'day' is assigned a value but never used."
           },
           "locations": [
@@ -5173,7 +10279,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/data-nascimento.test.js",
-                  "index": 46
+                  "index": 136
                 },
                 "region": {
                   "startLine": 7,
@@ -5203,7 +10309,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/data-nascimento.test.js",
-                  "index": 46
+                  "index": 136
                 },
                 "region": {
                   "startLine": 7,

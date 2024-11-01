@@ -2,7 +2,7 @@
 
 ## Instalação
 
-```bash
+```shell
 npm install gerador-br
 ```
 
@@ -22,7 +22,7 @@ const gerar = require('gerador-br');
 
 ## Utilização
 
-> Veja todos os exemplos em [Geradores](geradores.md)
+> Veja todos os exemplos no [Guia de Utilização](guia-utilizacao.md)
 
 **Importe apenas a(s) função(ões) que desejar:**
 
@@ -49,7 +49,7 @@ console.log(gerar.contaBancaria());
 console.log(gerar.cartaoCredito());
 ```
 
-> Em [Geradores](geradores.md) estão todos os exemplos listados abaixo.
+> No [Guia de Utilização](guia-utilizacao.md) estão todos os exemplos listados abaixo.
 
 ```js
 import gerar from 'gerador-br'; // ES Module:

@@ -20,7 +20,7 @@ export default {
       preserveModulesRoot: 'src',
     },
     {
-      file: 'dist/cdn/gerador-br.min.js',
+      file: 'temp/gerador-br.min.js',
       format: 'cjs',  // Gera CommonJS
       exports: 'auto'
     },

@@ -3,27 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Gerador-BR</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Gerador de Dados Fictícios - Brasil.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/buble.css"> -->
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css"> -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="_css/style.css">
+  <script src="_js/gerador-br.min.js"></script>
+  <script src="_js/script.js"></script>
 
-  <style>
-    .sidebar .sidebar-nav {
-      line-height: 25px;
-    }
-
-    .app-sub-sidebar li:before {
-      content: "";
-    }
-
-    .sidebar li {
-      margin: 0px;
-    }
-  </style>
 </head>
 
 <body>
@@ -61,18 +49,31 @@
           '/': 'Copiado'
         }
       },
+      ga: 'UA-XXXXX-Y',
       plugins: [
-        function (hook) {
-          var footer = [
-            '<hr/>',
-            '<footer style="text-align: center; font-size: smaller;">',
-            '<span><a href="https://github.com/marcelo-lourenco/gerador-br">Gerador-BR</a> &copy; 2024.</span>',
-            '</footer>'
-          ].join('');
+        function pageFooter(hook, vm) {
+          var style = `<style>.markdown-section { text-align: center; }</style>`;
+          var npmInstall = `<aside class="aside-custom">
+              <h1>Disponível para Node.js</h1>
+              <p><strong>Pacote open-source para gerar dados brasileiros.</strong></p>
+              <pre v-pre="" data-lang="shell" class="pre-custom"><code class="lang-shell code"><span class="token function">npm</span> <span class="token function">install</span> gerador-br</code><button class="docsify-copy-code-button"><span class="label">Copiar</span><span class="error" aria-hidden="hidden">Erro</span><span class="success" aria-hidden="hidden">Copiado</span><span aria-live="polite"></span></button></pre>
+            </aside>`;
+
+          var footer = `
+            <hr/>
+            <footer style="text-align: center; font-size: smaller;">
+              <span><a href="https://github.com/marcelo-lourenco/gerador-br">Gerador-BR</a> &copy; 2024.</span>
+            </footer>
+          `;
 
           hook.afterEach(function (html) {
-            return html + footer
-          })
+            // Adiciona o trecho npmInstall apenas se a página estiver no diretório "gerar"
+            if (vm.route.path.startsWith('/gerar/')) {
+              return html + style + npmInstall + footer;
+            } else {
+              return html + footer;
+            }
+          });
         }
       ]
     }
@@ -81,6 +82,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
 
 </body>
 

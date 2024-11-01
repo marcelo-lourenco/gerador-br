@@ -11,7 +11,8 @@
   "license": "MIT",
   "author": "Marcelo Lourenço <qabi.dev@gmail.com>",
   "scripts": {
-    "build": "rollup -c",
+    "build": "npx rimraf dist && rollup -c",
+    "minify": "npm run build && terser temp/gerador-br.min.js -o docs/_js/gerador-br.min.js --compress --mangle && npx rimraf temp",
     "lint": "eslint . -c eslint.config.js -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif",
     "test": "node --test test",
     "coverage": "npx c8 --reporter=lcov node --test"

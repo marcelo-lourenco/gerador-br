@@ -1,11 +1,4 @@
-* [Home](./?id=gerador-de-dados-fictícios-brasi "Gerador-BR - Home")
-* [Início](inicio.md "Gerador-BR - Começar")
-* [Guia de Utilização](guia-utilizacao.md "Gerador-BR - Guia de Utilização")
-
----
-
-<h1>Geradores</h1>
-
+* [Home](../?id=gerador-de-dados-fictícios-brasil "Gerador-BR - Home")
 * DOCUMENTOS PF
   * [Gerador de CPF](gerar/cpf.md "Gerador de CPF")
   * [Gerador de CNH](gerar/cnh.md "Gerador de CNH")
@@ -30,5 +23,5 @@
   * [Gerador de Placa MERCOSUL](gerar/placaMercosul.md "Gerador de Placa MERCOSUL")
   * [Gerador de RENAVAM](gerar/renavam.md "Gerador de RENAVAM")
 * LOREM IPSUM
-  * [Gerador de Sentenca](gerar/sentenca.md "Gerador de Sentença")
-  * [Gerador de Parágrafos](gerar/paragrafo.md "Gerador de Parágrafo")
+  * [Gerador de Sentença](gerar/sentenca.md "Gerador de Sentença")
+  * [Gerador de Parágrafos](gerar/paragrafo.md "Gerador de Parágrafos")

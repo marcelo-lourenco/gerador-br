@@ -9,7 +9,7 @@ eslint-results.sarif
 package.lock.json
 coverage/
 src/
-data/
 docs/
 test/
+temp/
 rollup.config.js
