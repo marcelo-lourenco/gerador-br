@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="auto">
+
+<head>
+</head>
+
+<body class="bg-body-tertiary-5">
+  <div class="col-12 col-md-16 col-lg-6 mx-auto form-col">
+    <div id="msgCopiado" class="copiado">Copiado!</div>
+    <div class="row px-4 ">
+      <div class="col-sm m-2 p-3 bg-body">
+        <div class="form-group">
+          <input type="text" class="form-control floating-label-input mb-4" disabled id="fldCodigoBanco" name="fldCodigoBanco" placeholder="">
+          <label class="form-label floating-label" for="fldCodigoBanco">Código Banco</label>
+          <i class="icon icon-16 icon-copy icon-copy-position" onclick="copy('fldCodigoBanco')"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control floating-label-input mb-4" disabled id="fldNomeBanco" name="fldNomeBanco" placeholder="">
+          <label class="form-label floating-label" for="fldNomeBanco">Nome Banco</label>
+          <i class="icon icon-16 icon-copy icon-copy-position" onclick="copy('fldNomeBanco')"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control floating-label-input mb-4" disabled id="fldRazaoSocial" name="fldRazaoSocial" placeholder="">
+          <label class="form-label floating-label" for="fldRazaoSocial">Razão Social</label>
+          <i class="icon icon-16 icon-copy icon-copy-position" onclick="copy('fldRazaoSocial')"></i>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control floating-label-input mb-4" disabled id="fldISPB" name="fldISPB" placeholder="">
+          <label class="form-label floating-label" for="fldISPB">ISPB</label>
+          <i class="icon icon-16 icon-copy icon-copy-position" onclick="copy('fldISPB')"></i>
+        </div>
+        <button id="gerar" onclick="gerarBanco();">
+          Gerar Banco
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+

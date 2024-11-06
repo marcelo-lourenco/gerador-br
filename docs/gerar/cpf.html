@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="auto">
+
+<head>
+</head>
+
+<body class="bg-body-tertiary-5">
+  <div class="col-12 col-md-16 col-lg-6 mx-auto form-col">
+    <div id="msgCopiado" class="copiado">Copiado!</div>
+    <div class="row px-4 ">
+      <div class="col-sm m-2 p-3 bg-body">
+        <div class="form-group">
+          <input type="text" class="form-control floating-label-input mb-4" disabled id="fldCpf" name="fldCpf" placeholder="">
+          <label class="form-label floating-label" for="fldCpf">CPF</label>
+          <i class="icon icon-16 icon-copy icon-copy-position" onclick="copy('fldCpf')"></i>
+        </div>
+        <button onclick="document.getElementById('fldCpf').value = cpf(true);">
+          Gerar CPF
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
