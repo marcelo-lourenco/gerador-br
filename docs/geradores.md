@@ -1,10 +1,4 @@
-* [**HOME**](./ "Gerador-BR - Home")
-* [**INÍCIO**](inicio.md "Gerador-BR - Começar")
-* [**GUIA DE UTILIZAÇÃO**](guia-utilizacao.md "Gerador-BR - Guia de Utilização")
-
-<div style="background-color: #f0f0f0; padding: 5px">
-<h1>Geradores</h1>
-</div>
+# Geradores
 
 * **DOCUMENTOS PF**
   * [Gerador de CPF](gerar/cpf.html "Gerador de CPF")
@@ -30,5 +24,5 @@
   * [Gerador de Placa MERCOSUL](gerar/placaMercosul.html "Gerador de Placa MERCOSUL")
   * [Gerador de RENAVAM](gerar/renavam.html "Gerador de RENAVAM")
 * **LOREM IPSUM**
-  * [Gerador de Sentenca](gerar/sentenca.html "Gerador de Sentença")
-  * [Gerador de Parágrafos](gerar/paragrafo.html "Gerador de Parágrafo")
+  * [Gerador de Sentença](gerar/sentenca.html "Gerador de Sentença")
+  * [Gerador de Parágrafos](gerar/paragrafo.html "Gerador de Parágrafos")

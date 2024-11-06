@@ -1,4 +1,4 @@
-const inputFields = document.querySelectorAll('input');
+const inputFields = document.querySelectorAll('input', 'textarea');
 inputFields.forEach(inputField => {
   inputField.addEventListener('focus', function () {
     inputField.setAttribute('placeholder', ' ');
@@ -7,6 +7,11 @@ inputFields.forEach(inputField => {
     inputField.setAttribute('placeholder', '');
   });
 });
+
+function adjustTextareaHeight(textarea) {
+  textarea.style.height = 'auto'; // Reseta a altura para calcular corretamente
+  textarea.style.height = textarea.scrollHeight + 'px'; // Define a altura baseada no conteúdo
+}
 
 function copy(inputId, messageId = 'msgCopiado') {
   const inputField = document.getElementById(inputId);
@@ -32,6 +37,8 @@ copyButtons.forEach(button => {
     copy(button);
   });
 });
+
+
 
 
 function gerarEndereco() {
@@ -65,7 +72,7 @@ function gerarCartaoCredito() {
     'fldCcBandeira': cc.bandeira,
     'fldCcCvv': cc.cvv,
     'fldCcDataExpiracao':cc.dataExpiracao,
-    // FIXME está mantendo o menso nome
+    // FIXME está mantendo o mesmo nome
     'fldCcNomeTitular': cc.nomeTitular,
   };
 
@@ -104,7 +111,7 @@ function gerarBanco() {
   }
 }
 
-// FIXME está mantendo o menso nome
+// FIXME está mantendo o mesmo nome
 function gerarEmail() {
   const fields = {
     'fldEmail': email(nome.aleatorioCompleto()),

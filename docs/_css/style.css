@@ -52,18 +52,6 @@ button {
   padding: 20px 0 40px 0;
 }
 
-input-gerador {
-  width: 250px;
-  padding: 12px;
-  padding-right: 30px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 .copiado {
   position: absolute;
   top: -10px;
@@ -80,7 +68,6 @@ input-gerador {
 .mostrar {
   opacity: 1;
 }
-
 
 
 /* --------------------- */
@@ -107,6 +94,8 @@ input-gerador {
 }
 
 /* When the input is focused, move the placeholder */
+.floating-label-textarea:focus~.floating-label,
+.floating-label-textarea:not(:placeholder-shown)~.floating-label,
 .floating-label-input:focus~.floating-label,
 .floating-label-input:not(:placeholder-shown)~.floating-label {
   top: -10px;
@@ -118,9 +107,15 @@ input-gerador {
 }
 
 /* Ensure the input has some padding to accommodate the label */
+.floating-label-textarea,
 .floating-label-input {
   padding: 10px 30px 10px 15px;
   position: relative;
+}
+
+.floating-label-textarea{
+  resize: none; /* Impede o redimensionamento manual para que o ajuste seja automático */
+  overflow: hidden; /* Remove a barra de rolagem */
 }
 
 .form-group {

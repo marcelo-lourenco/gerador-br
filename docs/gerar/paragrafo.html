@@ -10,13 +10,12 @@
     <div class="row px-4 ">
       <div class="col-sm m-2 p-3 bg-body">
         <div class="form-group">
-          <!-- FIXME conveter textarea-->
-          <input type="text" class="form-control floating-label-input mb-4" disabled id="fldParagrafo" name="fldParagrafo" placeholder="">
-          <label class="form-label floating-label" for="fldParagrafo">Parágrafo</label>
+          <textarea  class="form-control floating-label-textarea mb-4" disabled id="fldParagrafo" name="fldParagrafo" placeholder=""></textarea>
+          <label class="form-label floating-label" for="fldParagrafo">Parágrafos</label>
           <i class="icon icon-16 icon-copy icon-copy-position" onclick="copy('fldParagrafo')"></i>
         </div>
-        <button onclick="document.getElementById('fldParagrafo').value = paragrafo(5,8);">
-          Gerar Parágrafo
+        <button onclick="document.getElementById('fldParagrafo').value = paragrafo(5,8); adjustTextareaHeight(fldParagrafo); ">
+          Gerar Parágrafos
         </button>
       </div>
     </div>

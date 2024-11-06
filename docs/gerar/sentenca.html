@@ -9,12 +9,11 @@
     <div class="row px-4 ">
       <div class="col-sm m-2 p-3 bg-body">
         <div class="form-group">
-          <!-- FIXME conveter textarea-->
-          <input type="text" class="form-control floating-label-input mb-4" disabled id="fldSentenca" name="fldSentenca" placeholder="">
+          <textarea  class="form-control floating-label-textarea mb-4" disabled id="fldSentenca" name="fldSentenca" placeholder=""></textarea>
           <label class="form-label floating-label" for="fldSentenca">Sentença</label>
           <i class="icon icon-16 icon-copy icon-copy-position" onclick="copy('fldSentenca')"></i>
         </div>
-        <button onclick="document.getElementById('fldSentenca').value = sentenca(10);">
+        <button onclick="document.getElementById('fldSentenca').value = sentenca(10); adjustTextareaHeight(fldSentenca); ">
           Gerar Sentença
         </button>
       </div>

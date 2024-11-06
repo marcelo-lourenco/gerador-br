@@ -475,10 +475,13 @@ console.log(gerar.paragrafo(3,8));
 
 Contribuições são bem-vindas! Faça um *fork* do repositório e sinta-se à vontade para enviar seus *pull requests*.
 
-## Extensão Chrome - Gerador de Dados Fictícios
+## Demo
 
-Todas essas funções foram utilizadas na [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam).
-Muito útil para preencher automaticamente os campos de formulários em testes manuais.
+**Essas funções foram utilizadas nas seguintes aplicações:**
+
+[Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam) - Muito útil para preencher automaticamente os campos de formulários em testes manuais.
+
+[Gerador-BR](https://marcelo-lourenco.github.io/gerador-br/#/gerar/cpf) - Gerador de dados on-line.
 
 ## License
 
