@@ -16,7 +16,6 @@
   * [Gerador de Conta Bancária](gerar/contaBancaria.html "Gerador de Conta Bancária")
   * [Gerador de Banco](gerar/banco.html "Gerador de Banco")
 * **CONTATOS**
-  * [Gerador de E-mail](gerar/email.html "Gerador de email")
   * [Gerador de CEP](gerar/cep.html "Gerador de CEP")
   * [Gerador de Endereço](gerar/endereco.html "Gerador de Endereço")
 * **VEÍCULOS**

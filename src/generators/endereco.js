@@ -1,8 +1,6 @@
 import dbCep from '../data/db-ceps.js';
 import { stateRand } from '../utils.js';
 
-const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
 /**
  * Gera um endereço aleatório.
  *
@@ -27,7 +25,7 @@ const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
 export function endereco(mask = false, state) {
   const uf = state || stateRand;
   const fullAddress = dbCep.filter((enderecos) => enderecos.uf === uf);
-  const sortAddress = getRandom(fullAddress);
+  const sortAddress = fullAddress[Math.floor(Math.random() * fullAddress.length)];
   const address = {};
   address.cep = mask ? sortAddress.cep : sortAddress.cep.replace(/\D/g, '');
   address.logradouro = sortAddress.logradouro;

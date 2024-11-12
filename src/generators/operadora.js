@@ -1,4 +1,4 @@
-function getRandom(arr) {
+function getRandomOperators(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
@@ -37,15 +37,15 @@ export function codigoOperadora(name) {
   };
 
   const names = Object.keys(operators);
-  const randCodes = operators[getRandom(names)];
+  const randCodes = operators[getRandomOperators(names)];
   if (name) {
     const codes = operators[name];
     if (codes) {
-      return getRandom(codes);
+      return getRandomOperators(codes);
     } else {
-      return getRandom(randCodes); // Operadora não encontrada
+      return getRandomOperators(randCodes); // Operadora não encontrada
     }
   } else {
-    return getRandom(randCodes);
+    return getRandomOperators(randCodes);
   }
 }

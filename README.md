@@ -1,4 +1,8 @@
-# Gerador de Dados Fictícios - Brasil
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+  <img src="/docs/_media/icon-48.svg" data-origin="_media/icon-48.svg" alt="logo">
+  <h1>gerador-br</h1>
+  <small>Gerador de Dados Fictícios - Brasil</small>
+</div>
 
 [![NPM version](https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff)](https://npmjs.org/package/gerador-br)
 [![NPM downloads](https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff)](https://npmcharts.com/compare/gerador-br?minimal=true)

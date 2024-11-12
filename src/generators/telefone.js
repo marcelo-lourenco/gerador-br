@@ -23,21 +23,20 @@ import { stateRand } from '../utils.js';
  * console.log(telefone(true, "ES")); // "(27) 9999-9999"
  */
 export function telefone(mask, state) {
-  // Função para gerar um dígito aleatório entre 0 e 9
-  const randDigit = () => Math.floor(Math.random() * 10);
+  const n = () => Math.floor(Math.random() * 10);
 
   // Função para gerar um número aleatório entre min e max (inclusive)
-  const randRange = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
+  const nRange = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
 
   let sortDdd = state ? ddd(state) : ddd(stateRand);
-  let n1 = randRange(2, 3);
-  let n2 = randDigit();
-  let n3 = randDigit();
-  let n4 = randDigit();
-  let n5 = randDigit();
-  let n6 = randDigit();
-  let n7 = randDigit();
-  let n8 = randDigit();
+  let n1 = nRange(2, 3);
+  let n2 = n();
+  let n3 = n();
+  let n4 = n();
+  let n5 = n();
+  let n6 = n();
+  let n7 = n();
+  let n8 = n();
 
   let telephoneGen = `(${sortDdd}) ${n1}${n2}${n3}${n4}-${n5}${n6}${n7}${n8}`;
 

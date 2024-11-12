@@ -45,8 +45,5 @@ export function ddd(state) {
 
   const dddState = ddds[state || stateRand];
 
-  // Função para obter um índice aleatório usando Math.random
-  const randomIndex = (max) => Math.floor(Math.random() * max);
-
-  return dddState[randomIndex(dddState.length)];
+  return dddState[Math.floor(Math.random() * dddState.length)];
 }

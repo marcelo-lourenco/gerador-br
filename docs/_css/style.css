@@ -46,12 +46,6 @@ button {
   margin-bottom: 0.7rem;
 }
 
-.input-container {
-  position: relative;
-  display: inline-block;
-  padding: 20px 0 40px 0;
-}
-
 .copiado {
   position: absolute;
   top: -10px;

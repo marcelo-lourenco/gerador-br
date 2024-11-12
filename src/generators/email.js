@@ -1,7 +1,5 @@
 import { apelidoRand, provedorEmailRand } from '../utils.js';
 
-let mail = '';
-
 /**
  * Gera um endereço de e-mail aleatório.
  *
@@ -20,6 +18,7 @@ let mail = '';
  * console.log(email(gerar.nomeFemininoCompleto)); // Pode retornar algo como "ana.borges@hotmail.com"
  */
 export function email(fullName) {
+  let mail = '';
   if (fullName) {
     let removeSpecialCharacter = fullName.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     let partsName = removeSpecialCharacter.match(/\w+/g);

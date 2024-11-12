@@ -112,13 +112,14 @@ export const nomePaiRand = getRandom(nomesMasculinos);
  * console.log(nomeMaeRand); // Retorna qualquer nome feminino, como "Aaliyah", "Adelaide", etc.
  */
 export const nomeMaeRand = getRandom(nomesFemininos);
-
+export const aleatorioCompleto = () => { return `${nomeAleatorioRand} ${nomeDoMeioRand} ${sobrenomeRand}`; };
 /**
  * Um apelido aleatório.
  * @type {string}
  * @example
  * console.log(apelidoRand); // Retorna qualquer apelido, como "Ace", "Alpha", etc.
  */
+
 export const apelidoRand = getRandom(nicknames);
 
 /**

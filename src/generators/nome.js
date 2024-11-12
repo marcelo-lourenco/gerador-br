@@ -1,5 +1,11 @@
 import {
-  nomeAleatorioRand, nomeMasculinoRand, nomeFemininoRand, nomeDoMeioRand, sobrenomeRand, nomeMaeRand, nomePaiRand,
+  nomeAleatorioRand,
+  nomeDoMeioRand,
+  nomeFemininoRand,
+  nomeMaeRand,
+  nomeMasculinoRand,
+  nomePaiRand,
+  sobrenomeRand,
 } from '../utils.js';
 
 /**

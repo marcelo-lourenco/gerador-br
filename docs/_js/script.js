@@ -38,9 +38,6 @@ copyButtons.forEach(button => {
   });
 });
 
-
-
-
 function gerarEndereco() {
   const siglasEstados = [
     'AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO',
@@ -104,17 +101,6 @@ function gerarBanco() {
     'fldNomeBanco': cb.nomeBanco,
     'fldRazaoSocial': cb.razaoSocial,
     'fldISPB': cb.ispb,
-  };
-
-  for (const [id, value] of Object.entries(fields)) {
-    document.getElementById(id).value = value;
-  }
-}
-
-// FIXME está mantendo o mesmo nome
-function gerarEmail() {
-  const fields = {
-    'fldEmail': email(nome.aleatorioCompleto()),
   };
 
   for (const [id, value] of Object.entries(fields)) {

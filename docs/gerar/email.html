@@ -4,7 +4,7 @@
 <head>
 </head>
 
-<body class="bg-body-tertiary-5">
+<body class="bg-body-tertiary-5" onload="document.getElementById('fldEmail').value = email(nome.aleatorioCompleto());">
   <div class="col-12 col-md-16 col-lg-6 mx-auto form-col">
     <div id="msgCopiado" class="copiado">Copiado!</div>
     <div class="row px-4 ">
@@ -14,7 +14,7 @@
           <label class="form-label floating-label" for="fldEmail">E-mail</label>
           <i class="icon icon-16 icon-copy icon-copy-position" onclick="copy('fldEmail')"></i>
         </div>
-        <button id="gerar" onclick="gerarEmail();">
+        <button id="gerar" onclick="document.getElementById('fldEmail').value = email(nome.aleatorioCompleto());">
           Gerar E-mail
         </button>
       </div>

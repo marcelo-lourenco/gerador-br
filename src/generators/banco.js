@@ -1,6 +1,6 @@
 import banks from '../data/db-bancos.js';
 
-const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
+const getRandomBank = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 /**
  * Gera dados de um banco aleatório.
@@ -34,10 +34,10 @@ export const banco = function bank(code) {
     bankRand = banks.find((bnk) => bnk.code === parseInt(code, 10));
     if (!bankRand) {
       // console.log("Banco não encontrado")
-      bankRand = getRandom(banks);
+      bankRand = getRandomBank(banks);
     }
   } else {
-    bankRand = getRandom(banks);
+    bankRand = getRandomBank(banks);
   }
   return {
     codigoBanco: bankRand.code,
