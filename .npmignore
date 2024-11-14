@@ -6,7 +6,6 @@
 .npmignore
 eslint.config.js
 eslint-results.sarif
-package.lock.json
 coverage/
 src/
 docs/

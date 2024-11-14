@@ -4,6 +4,14 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.1.1 (2024-11-13)
+
+### Adiciona Funcionalidades
+
+* Gerador de Certidão (Nascimento, Casamento e Óbito)
+
+---
+
 ## 1.1.0 (2024-10-18)
 
 ### Adiciona Dependência

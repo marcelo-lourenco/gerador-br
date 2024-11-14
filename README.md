@@ -20,7 +20,7 @@ Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* [Gerador de Documento](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
+* [Gerador de Documento](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte e Certidão (Nascimento, Casamento e Óbito)
 * [Gerador de Pessoa](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
 * [Gerador de Empresa](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=documentos-pj): CNPJ e Inscrição Estadual;
 * [Gerador de Endereço](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=cep): CEP, Logradouro, Número, Bairro, Localidade e Estado;
@@ -164,6 +164,29 @@ console.log(gerar.tituloEleitor(false,'PR'));
 
 // Gera Passaporte aleatório
 console.log(gerar.passaporte());
+
+// Gera uma Certidão (Nascimento, Casamento e Óbito)
+// Certidão aleatória
+console.log(gerar.certidao.aleatoria());       // com máscara
+console.log(gerar.certidao.aleatoria(false));  // sem máscara
+
+// Certidão de nascimento
+console.log(gerar.certidao.nascimento());      // com máscara
+console.log(gerar.certidao.nascimento(false)); // sem máscara
+
+// Certidão de casamento
+console.log(gerar.certidao.casamento());       // com máscara
+console.log(gerar.certidao.casamento(false));  // sem máscara
+
+// Certidão de óbito
+console.log(gerar.certidao.obito());           // com máscara
+console.log(gerar.certidao.obito(false));      // sem máscara
+
+// Objeto com os detalhes de Certidão
+console.log(gerar.certidao.aleatoriaObj());    // Objeto detalhado de certidão aleatória
+console.log(gerar.certidao.nascimentoObj());   // Objeto detalhado de certidão de nascimento
+console.log(gerar.certidao.casamentoObj());    // Objeto detalhado de certidão de casamento
+console.log(gerar.certidao.obitoObj());        // Objeto detalhado de certidão de óbito
 
 // Gera Inscrição Estadual aleatório e do estado informado.
 console.log('Sem informar o estado', gerar.inscricaoEstadual());

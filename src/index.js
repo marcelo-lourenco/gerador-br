@@ -7,6 +7,7 @@ import { placaAntiga, placaMercosul } from './generators/placa.js';
 import { cartaoCredito } from './generators/cartao-credito.js';
 import { celular } from './generators/celular.js';
 import { cep } from './generators/cep.js';
+import { certidao } from './generators/certidao.js'
 import { cnh } from './generators/cnh.js';
 import { cnpj } from './generators/cnpj.js';
 import { cns } from './generators/cartao-nacional-saude.js';
@@ -434,6 +435,11 @@ gerar.tituloEleitor = tituloEleitor;
  */
 gerar.passaporte = passaporte;
 
+
+gerar.certidao = certidao;
+
+
+
 /**
  * Gera uma data de nascimento aleatória.
  * A data de nascimento gerada será entre 18 e 80 anos atrás da data atual.
@@ -737,6 +743,7 @@ export {
   cartaoCredito,
   celular,
   cep,
+  certidao,
   cnh,
   cnhCategoria,
   cnpj,
