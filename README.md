@@ -1,8 +1,4 @@
-<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-  <img src="/docs/_media/icon-48.svg" data-origin="_media/icon-48.svg" alt="logo">
-  <h1>gerador-br</h1>
-  <small>Gerador de Dados Fictícios - Brasil</small>
-</div>
+# ![gerador-br](/docs/_media/icon-24.svg) gerador-br
 
 [![NPM version](https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff)](https://npmjs.org/package/gerador-br)
 [![NPM downloads](https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff)](https://npmcharts.com/compare/gerador-br?minimal=true)
@@ -13,6 +9,8 @@
 [![Coverage](https://img.shields.io/coveralls/github/marcelo-lourenco/gerador-br/master?logo=coveralls&logoColor=ffffff)](https://coveralls.io/github/marcelo-lourenco/gerador-br?branch=master)
 [![FOSSA Licence](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
 [![FOSSA Security](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
+
+**Gerador de Dados Fictícios - Brasil**
 
 Gere dados fictícios/válidos, para testes e desenvolvimento de Software.
 
@@ -29,20 +27,6 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 * [Gerador de Cartão de Crédito](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=cartaocredito): Número, Bandeira, CVV e Validade;
 * [Gerador de Veículo](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=ve%c3%8dculos): Placa Antiga, Placa Mercosul e RENAVAM;
 * [Gerador de Texto (Lorem Ipsum)](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao?id=lorem-ipsum): Palavras, Sentenças e Parágrafos;
-
-## Compatibilidade
-
-O pacote foi testado e é compatível com as versões mais recentes dos seguinte frameworks:
-
-[![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](#)
-[![Jest](https://img.shields.io/badge/Jest-%2315c213?logo=jest&logoColor=white)](#)
-[![Node.js Test Runner](https://img.shields.io/badge/Node.js%20Test%20Runner-%235FA04E?logo=nodedotjs&logoColor=white)](#)
-[![Jasmine](https://img.shields.io/badge/Jasmine-%238a4182?logo=jasmine&logoColor=white)](#)
-[![Mocha](https://img.shields.io/badge/Mocha-%238d6748?logo=mocha&logoColor=white)](#)
-[![Chai](https://img.shields.io/badge/Chai-%23a40802?logo=chai&logoColor=white)](#)
-[![Supertest](https://img.shields.io/badge/Supertest-%23F44336?logo=apachesuperset&logoColor=white)](#)
-[![Puppeteer](https://img.shields.io/badge/Puppeteer-%232e8555?logo=puppeteer&logoColor=white)](#)
-[![Sinon](https://img.shields.io/badge/Sinon-%234b352a?logo=sinon&logoColor=white)](#) 
 
 ## Instalação
 
@@ -498,9 +482,23 @@ console.log(gerar.paragrafo(5));
 console.log(gerar.paragrafo(3,8));
 ```
 
+## Compatibilidade
+
+O pacote foi testado e é compatível com as versões mais recentes dos seguinte frameworks:
+
+[![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](#)
+[![Jest](https://img.shields.io/badge/Jest-%2315c213?logo=jest&logoColor=white)](#)
+[![Node.js Test Runner](https://img.shields.io/badge/Node.js%20Test%20Runner-%235FA04E?logo=nodedotjs&logoColor=white)](#)
+[![Jasmine](https://img.shields.io/badge/Jasmine-%238a4182?logo=jasmine&logoColor=white)](#)
+[![Mocha](https://img.shields.io/badge/Mocha-%238d6748?logo=mocha&logoColor=white)](#)
+[![Chai](https://img.shields.io/badge/Chai-%23a40802?logo=chai&logoColor=white)](#)
+[![Supertest](https://img.shields.io/badge/Supertest-%23F44336?logo=apachesuperset&logoColor=white)](#)
+[![Puppeteer](https://img.shields.io/badge/Puppeteer-%232e8555?logo=puppeteer&logoColor=white)](#)
+[![Sinon](https://img.shields.io/badge/Sinon-%234b352a?logo=sinon&logoColor=white)](#) 
+
 ## Contribuições
 
-Contribuições são bem-vindas! Faça um *fork* do repositório e sinta-se à vontade para enviar seus *pull requests*.
+Contribuições são bem-vindas! Faça um *fork* do  [repositório](https://github.com/marcelo-lourenco/gerador-br) e sinta-se à vontade para enviar seus *pull requests*.
 
 ## Demo
 
@@ -508,7 +506,7 @@ Contribuições são bem-vindas! Faça um *fork* do repositório e sinta-se à v
 
 [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam) - Muito útil para preencher automaticamente os campos de formulários em testes manuais.
 
-[Gerador-BR](https://marcelo-lourenco.github.io/gerador-br/#/gerar/cpf) - Gerador de dados on-line.
+[Gerador-BR](https://marcelo-lourenco.github.io/gerador-br/#/geradores) - Gerador de dados on-line.
 
 ## License
 

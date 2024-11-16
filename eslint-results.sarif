@@ -118,6 +118,11 @@
         },
         {
           "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/certidao.cjs"
+          }
+        },
+        {
+          "location": {
             "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/cjs/generators/cnh.cjs"
           }
         },
@@ -259,6 +264,11 @@
         {
           "location": {
             "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/cep.mjs"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/dist/mjs/generators/certidao.mjs"
           }
         },
         {
@@ -579,6 +589,11 @@
         {
           "location": {
             "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/cep.test.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/certidao.test.js"
           }
         },
         {
@@ -5483,13 +5498,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189112,
+                  "startColumn": 190967,
                   "endLine": 1,
-                  "endColumn": 189119
+                  "endColumn": 190974
                 }
               }
             }
@@ -5507,13 +5522,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189136,
+                  "startColumn": 190991,
                   "endLine": 1,
-                  "endColumn": 189143
+                  "endColumn": 190998
                 }
               }
             }
@@ -5531,13 +5546,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189156,
+                  "startColumn": 191011,
                   "endLine": 1,
-                  "endColumn": 189163
+                  "endColumn": 191018
                 }
               }
             }
@@ -5555,13 +5570,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189192,
+                  "startColumn": 191047,
                   "endLine": 1,
-                  "endColumn": 189199
+                  "endColumn": 191054
                 }
               }
             }
@@ -5579,13 +5594,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189216,
+                  "startColumn": 191071,
                   "endLine": 1,
-                  "endColumn": 189223
+                  "endColumn": 191078
                 }
               }
             }
@@ -5603,13 +5618,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189232,
+                  "startColumn": 191087,
                   "endLine": 1,
-                  "endColumn": 189239
+                  "endColumn": 191094
                 }
               }
             }
@@ -5627,13 +5642,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189248,
+                  "startColumn": 191113,
                   "endLine": 1,
-                  "endColumn": 189255
+                  "endColumn": 191120
                 }
               }
             }
@@ -5651,13 +5666,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189282,
+                  "startColumn": 191129,
                   "endLine": 1,
-                  "endColumn": 189289
+                  "endColumn": 191136
                 }
               }
             }
@@ -5675,13 +5690,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189300,
+                  "startColumn": 191163,
                   "endLine": 1,
-                  "endColumn": 189307
+                  "endColumn": 191170
                 }
               }
             }
@@ -5699,13 +5714,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189316,
+                  "startColumn": 191181,
                   "endLine": 1,
-                  "endColumn": 189323
+                  "endColumn": 191188
                 }
               }
             }
@@ -5723,13 +5738,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189356,
+                  "startColumn": 191197,
                   "endLine": 1,
-                  "endColumn": 189363
+                  "endColumn": 191204
                 }
               }
             }
@@ -5747,13 +5762,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189392,
+                  "startColumn": 191237,
                   "endLine": 1,
-                  "endColumn": 189399
+                  "endColumn": 191244
                 }
               }
             }
@@ -5771,13 +5786,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189416,
+                  "startColumn": 191273,
                   "endLine": 1,
-                  "endColumn": 189423
+                  "endColumn": 191280
                 }
               }
             }
@@ -5795,13 +5810,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189432,
+                  "startColumn": 191297,
                   "endLine": 1,
-                  "endColumn": 189439
+                  "endColumn": 191304
                 }
               }
             }
@@ -5819,13 +5834,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189470,
+                  "startColumn": 191313,
                   "endLine": 1,
-                  "endColumn": 189477
+                  "endColumn": 191320
                 }
               }
             }
@@ -5843,13 +5858,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189486,
+                  "startColumn": 191351,
                   "endLine": 1,
-                  "endColumn": 189493
+                  "endColumn": 191358
                 }
               }
             }
@@ -5867,13 +5882,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189506,
+                  "startColumn": 191367,
                   "endLine": 1,
-                  "endColumn": 189513
+                  "endColumn": 191374
                 }
               }
             }
@@ -5891,13 +5906,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189532,
+                  "startColumn": 191387,
                   "endLine": 1,
-                  "endColumn": 189539
+                  "endColumn": 191394
                 }
               }
             }
@@ -5915,13 +5930,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189566,
+                  "startColumn": 191413,
                   "endLine": 1,
-                  "endColumn": 189573
+                  "endColumn": 191420
                 }
               }
             }
@@ -5939,13 +5954,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189586,
+                  "startColumn": 191447,
                   "endLine": 1,
-                  "endColumn": 189593
+                  "endColumn": 191454
                 }
               }
             }
@@ -5963,13 +5978,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189628,
+                  "startColumn": 191467,
                   "endLine": 1,
-                  "endColumn": 189635
+                  "endColumn": 191474
                 }
               }
             }
@@ -5987,13 +6002,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189684,
+                  "startColumn": 191509,
                   "endLine": 1,
-                  "endColumn": 189691
+                  "endColumn": 191516
                 }
               }
             }
@@ -6011,13 +6026,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189728,
+                  "startColumn": 191565,
                   "endLine": 1,
-                  "endColumn": 189735
+                  "endColumn": 191572
                 }
               }
             }
@@ -6035,13 +6050,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189774,
+                  "startColumn": 191609,
                   "endLine": 1,
-                  "endColumn": 189781
+                  "endColumn": 191616
                 }
               }
             }
@@ -6059,13 +6074,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189792,
+                  "startColumn": 191655,
                   "endLine": 1,
-                  "endColumn": 189799
+                  "endColumn": 191662
                 }
               }
             }
@@ -6083,13 +6098,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189834,
+                  "startColumn": 191673,
                   "endLine": 1,
-                  "endColumn": 189841
+                  "endColumn": 191680
                 }
               }
             }
@@ -6107,13 +6122,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189858,
+                  "startColumn": 191715,
                   "endLine": 1,
-                  "endColumn": 189865
+                  "endColumn": 191722
                 }
               }
             }
@@ -6131,13 +6146,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189886,
+                  "startColumn": 191739,
                   "endLine": 1,
-                  "endColumn": 189893
+                  "endColumn": 191746
                 }
               }
             }
@@ -6155,13 +6170,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189916,
+                  "startColumn": 191767,
                   "endLine": 1,
-                  "endColumn": 189923
+                  "endColumn": 191774
                 }
               }
             }
@@ -6179,13 +6194,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189932,
+                  "startColumn": 191797,
                   "endLine": 1,
-                  "endColumn": 189939
+                  "endColumn": 191804
                 }
               }
             }
@@ -6203,13 +6218,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 189964,
+                  "startColumn": 191813,
                   "endLine": 1,
-                  "endColumn": 189971
+                  "endColumn": 191820
                 }
               }
             }
@@ -6227,13 +6242,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 190000,
+                  "startColumn": 191845,
                   "endLine": 1,
-                  "endColumn": 190007
+                  "endColumn": 191852
                 }
               }
             }
@@ -6251,13 +6266,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 190028,
+                  "startColumn": 191881,
                   "endLine": 1,
-                  "endColumn": 190035
+                  "endColumn": 191888
                 }
               }
             }
@@ -6275,13 +6290,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 190064,
+                  "startColumn": 191909,
                   "endLine": 1,
-                  "endColumn": 190071
+                  "endColumn": 191916
                 }
               }
             }
@@ -6299,13 +6314,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 190088,
+                  "startColumn": 191945,
                   "endLine": 1,
-                  "endColumn": 190095
+                  "endColumn": 191952
                 }
               }
             }
@@ -6323,13 +6338,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 190102,
+                  "startColumn": 191969,
                   "endLine": 1,
-                  "endColumn": 190109
+                  "endColumn": 191976
                 }
               }
             }
@@ -6347,13 +6362,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 190128,
+                  "startColumn": 191983,
                   "endLine": 1,
-                  "endColumn": 190135
+                  "endColumn": 191990
                 }
               }
             }
@@ -6371,13 +6386,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 190154,
+                  "startColumn": 192009,
                   "endLine": 1,
-                  "endColumn": 190161
+                  "endColumn": 192016
                 }
               }
             }
@@ -6395,13 +6410,13 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
-                  "index": 61
+                  "index": 63
                 },
                 "region": {
                   "startLine": 1,
-                  "startColumn": 190190,
+                  "startColumn": 192035,
                   "endLine": 1,
-                  "endColumn": 190197
+                  "endColumn": 192042
                 }
               }
             }
@@ -6412,20 +6427,92 @@
         {
           "level": "error",
           "message": {
-            "text": "'copiarTexto' is defined but never used."
+            "text": "'exports' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/gerador-br.min.js",
+                  "index": 63
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 192071,
+                  "endLine": 1,
+                  "endColumn": 192078
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected unnamed function."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
-                  "index": 62
+                  "index": 64
                 },
                 "region": {
-                  "startLine": 1,
+                  "startLine": 3,
+                  "startColumn": 40,
+                  "endLine": 3,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "Unexpected unnamed function."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 39,
+                  "endLine": 6,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'adjustTextareaHeight' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 11,
                   "startColumn": 10,
-                  "endLine": 1,
-                  "endColumn": 21
+                  "endLine": 11,
+                  "endColumn": 30
                 }
               }
             }
@@ -6436,19 +6523,187 @@
         {
           "level": "error",
           "message": {
-            "text": "'toggleIcon' is defined but never used."
+            "text": "Unexpected unnamed function."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
-                  "index": 62
+                  "index": 64
                 },
                 "region": {
-                  "startLine": 12,
+                  "startLine": 36,
+                  "startColumn": 36,
+                  "endLine": 36,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "ruleId": "func-names",
+          "ruleIndex": 0
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'gerarEndereco' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 41,
                   "startColumn": 10,
-                  "endLine": 12,
+                  "endLine": 41,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "ruleId": "no-unused-vars",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'endereco' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 15,
+                  "endLine": 50,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'gerarCartaoCredito' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 10,
+                  "endLine": 65,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "ruleId": "no-unused-vars",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'cartaoCredito' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 14,
+                  "endLine": 66,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'gerarContaBancaria' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 10,
+                  "endLine": 81,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "ruleId": "no-unused-vars",
+          "ruleIndex": 4
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'contaBancaria' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 82,
+                  "startColumn": 14,
+                  "endLine": 82,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
+            "text": "'gerarBanco' is defined but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 10,
+                  "endLine": 97,
                   "endColumn": 20
                 }
               }
@@ -6460,6 +6715,30 @@
         {
           "level": "error",
           "message": {
+            "text": "'banco' is not defined."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/docs/_js/script.js",
+                  "index": 64
+                },
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 14,
+                  "endLine": 98,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "ruleId": "no-undef",
+          "ruleIndex": 5
+        },
+        {
+          "level": "error",
+          "message": {
             "text": "'day' is assigned a value but never used."
           },
           "locations": [
@@ -6467,7 +6746,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/data-nascimento.test.js",
-                  "index": 108
+                  "index": 111
                 },
                 "region": {
                   "startLine": 7,
@@ -6497,7 +6776,7 @@
               "physicalLocation": {
                 "artifactLocation": {
                   "uri": "file:///C:/Users/marcelo.silva/Documents/qa/MY/pkg-gerador-br/test/data-nascimento.test.js",
-                  "index": 108
+                  "index": 111
                 },
                 "region": {
                   "startLine": 7,

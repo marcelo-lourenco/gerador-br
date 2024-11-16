@@ -8,6 +8,7 @@
   * [Gerador de PIS](gerar/pis.html "Gerador de PIS")
   * [Gerador de Título de Eleitor](gerar/tituloEleitor.html "Gerador de Título de Eleitor")
   * [Gerador de Passaporte](gerar/passaporte.html "Gerador de Passaporte")
+  * [Gerador de Certidão](gerar/certidao.html "Gerador de Certidão")
 * **DOCUMENTOS PJ**
   * [Gerador de CNPJ](gerar/cnpj.html "Gerador de CNPJ")
   * [Gerador de Inscrição Estadual](gerar/inscricaoEstadual.html "Gerador de Inscrição Estadual")

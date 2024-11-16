@@ -110,6 +110,35 @@ import { passaporte } from 'gerador-br'; // ES Module
 passaporte();
 ```
 
+### certidao
+
+```js
+import { certidao } from 'gerador-br'; // ES Module
+// const { certidao } = require('gerador-br'); // CommonJS
+
+// Certidão aleatória
+certidao.aleatoria();        // com máscara
+certidao.aleatoria(false);   // sem máscara
+
+// Certidão de nascimento
+certidao.nascimento();       // com máscara
+certidao.nascimento(false);  // sem máscara
+
+// Certidão de casamento
+certidao.casamento();        // com máscara
+certidao.casamento(false);   // sem máscara
+
+// Certidão de óbito
+certidao.obito();            // com máscara
+certidao.obito(false);       // sem máscara
+
+// Objeto com os detalhes de Certidão
+certidao.aleatoriaObj();     // Objeto detalhado de certidão aleatória
+certidao.nascimentoObj();    // Objeto detalhado de certidão de nascimento
+certidao.casamentoObj();     // Objeto detalhado de certidão de casamento
+certidao.obitoObj();         // Objeto detalhado de certidão de óbito
+```
+
 ## DOCUMENTOS PJ
 
 ### cnpj
@@ -132,12 +161,12 @@ import { inscricaoEstadual } from 'gerador-br'; // ES Module
 // const { inscricaoEstadual } = require('gerador-br'); // CommonJS
 
 // Gera Inscrição Estadual aleatório e do estado informado.
-inscricaoEstadual(); // Sem informar o estado
-inscricaoEstadual('AC'); // AC 01.335116638
-inscricaoEstadual('AP'); // AP 03.42773842
-inscricaoEstadual('BA'); // BA 16408652-16
-inscricaoEstadual('DF'); // DF 0724.4814180
-inscricaoEstadual('RJ'); // RJ 41038311.44
+inscricaoEstadual();      // Sem informar o estado
+inscricaoEstadual('AC');  // AC 01.335116638
+inscricaoEstadual('AP');  // AP 03.42773842
+inscricaoEstadual('BA');  // BA 16408652-16
+inscricaoEstadual('DF');  // DF 0724.4814180
+inscricaoEstadual('RJ');  // RJ 41038311.44
 ```
 
 ## BANCOS
@@ -453,16 +482,16 @@ import { celular } from 'gerador-br'; // ES Module
 // const { celular } = require('gerador-br'); // CommonJS
 
 // Gera celular sem máscara, de estado aleatório e operadora aleatória
-celular(); // "11999999999"
+celular();                   // "11999999999"
 
 // Gera celular com máscara, de estado aleatório e operadora aleatória
-celular(true); // "(11) 99999-9999"
+celular(true);               // "(11) 99999-9999"
 
 // Gera celular sem máscara, do estado informado e operadora aleatória
-celular(false, "SC"); // "48999999999"
+celular(false, "SC");        // "48999999999"
 
 // Gera celular com máscara, do estado informado e operadora aleatória
-celular(true, "ES"); // "(27) 99999-9999"
+celular(true, "ES");         // "(27) 99999-9999"
 
 // Gera celular sem máscara, do estado aleatório e operadora informada
 celular(false, "", "Claro"); // "85991999999"
@@ -478,16 +507,16 @@ import { telefone } from 'gerador-br'; // ES Module
 // const { telefone } = require('gerador-br'); // CommonJS
 
 // Gera telefone sem máscara, de estado aleatório
-telefone(); // "1199999999"
+telefone();             // "1199999999"
 
 // Gera telefone com máscara, de estado aleatório
-telefone(true); // "(11) 9999-9999"
+telefone(true);         // "(11) 9999-9999"
 
 // Gera telefone sem máscara, do estado informado
-telefone(false, "SC"); // "4899999999"
+telefone(false, "SC");  // "4899999999"
 
 // Gera telefone com máscara, do estado informado
-telefone(true, "ES"); // "(27) 9999-9999"
+telefone(true, "ES");   // "(27) 9999-9999"
 
 ```
 
@@ -498,16 +527,16 @@ import { cep } from 'gerador-br'; // ES Module
 // const { cep } = require('gerador-br'); // CommonJS
 
 // Gera CEP sem máscara de estado aleatório
-cep(); // "12345678"
+cep();                  // "12345678"
 
 // Gera CEP com máscara de estado aleatório
-cep(true); // "12345-678"
+cep(true);              // "12345-678"
 
 // Gera CEP sem máscara de estado informado
-cep(false, "SP"); // "01001000"
+cep(false, "SP");       // "01001000"
 
 // Gera CEP com máscara de estado informado
-cep(true, "SP"); // "01001-000"
+cep(true, "SP");        // "01001-000"
 ```
 
 ### endereco
@@ -536,7 +565,7 @@ const end = endereco();
 console.log(end.cep);
 console.log(end.logradouro);
 console.log(end.numero);
-console.log(end.complemento);// caso exista
+console.log(end.complemento); // caso exista
 console.log(end.bairro);
 console.log(end.localidade);
 console.log(end.estado);
