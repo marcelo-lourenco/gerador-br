@@ -18,8 +18,8 @@ Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* [Gerador de Documento](guia-utilizacao?id=documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte,
-* [Gerador de Pessoa](guia-utilizacao?id=pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
+* [Gerador de Documento](guia-utilizacao?id=documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte e Certidão (Nascimento, Casamento e Óbito)
+* [Gerador de Pessoa](guia-utilizacao?id=pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade, Profissão e Certidão (Nascimento, Casamento e Óbito);
 * [Gerador de Empresa](guia-utilizacao?id=documentos-pj): CNPJ e Inscrição Estadual;
 * [Gerador de Endereço](guia-utilizacao?id=cep): CEP, Logradouro, Número, Bairro, Localidade e Estado;
 * [Gerador de Contato](guia-utilizacao?id=contatos): E-mail, DDD, Operadora, Celular e Telefone;
