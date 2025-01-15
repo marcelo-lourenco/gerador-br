@@ -18,6 +18,7 @@ export default [
       'no-plusplus': 'off',
       'no-else-return': 'off',
       'no-nested-ternary': 'off',
+      "security/detect-unsafe-random": "off",
     }
   },
   pluginJs.configs.recommended,

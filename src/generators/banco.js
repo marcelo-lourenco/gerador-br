@@ -33,7 +33,6 @@ export const banco = function bank(code) {
   if (code) {
     bankRand = banks.find((bnk) => bnk.code === parseInt(code, 10));
     if (!bankRand) {
-      // console.log("Banco não encontrado")
       bankRand = getRandomBank(banks);
     }
   } else {

@@ -1,3 +1,8 @@
+import { banco, cartaoCredito, contaBancaria, endereco } from './gerador-br.min.js';
+
+/* eslint-disable no-undef */
+/* eslint-disable func-names */
+/* eslint-disable no-unused-vars */
 const inputFields = document.querySelectorAll('input', 'textarea');
 inputFields.forEach(inputField => {
   inputField.addEventListener('focus', function () {

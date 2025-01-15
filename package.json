@@ -1,6 +1,6 @@
 {
   "name": "gerador-br",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": " Gerador de Dados Fictícios - Brasil",
   "type": "module",
   "main": "dist/cjs/index.cjs",
@@ -83,6 +83,7 @@
     "Supertest",
     "Nock",
     "Cypress",
+    "Playwright",
     "Puppeteer",
     "Enzyme",
     "Node.js Test Runner",

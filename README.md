@@ -14,7 +14,7 @@
 
 Gere dados fictícios/válidos, para testes e desenvolvimento de Software.
 
-Ideal para testes automatizados com **Cypress**, **Jest**, **Node.js Test Runner**, **Jasmine**, **Mocha**, **Chai**, **Supertest**, **Sinon** e **Puppeteer**.
+Ideal para testes automatizados com **Cypress**, **Playwright**, **Jest**, **Node.js Test Runner**, **Jasmine**, **Mocha**, **Chai**, **Supertest**, **Sinon** e **Puppeteer**.
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
@@ -490,6 +490,7 @@ O pacote foi testado e é compatível com as versões mais recentes dos seguinte
 [![Jest](https://img.shields.io/badge/Jest-%2315c213?logo=jest&logoColor=white)](#)
 [![Node.js Test Runner](https://img.shields.io/badge/Node.js%20Test%20Runner-%235FA04E?logo=nodedotjs&logoColor=white)](#)
 [![Jasmine](https://img.shields.io/badge/Jasmine-%238a4182?logo=jasmine&logoColor=white)](#)
+[![Playwright](https://img.shields.io/badge/Playwright-%232EAD33?logo=playwright&logoColor=white)](#)
 [![Mocha](https://img.shields.io/badge/Mocha-%238d6748?logo=mocha&logoColor=white)](#)
 [![Chai](https://img.shields.io/badge/Chai-%23a40802?logo=chai&logoColor=white)](#)
 [![Supertest](https://img.shields.io/badge/Supertest-%23F44336?logo=apachesuperset&logoColor=white)](#)

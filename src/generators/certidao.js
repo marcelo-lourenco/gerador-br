@@ -247,15 +247,3 @@ export const certidao = {
     return generateCertificate('obito', mask).detalhes;
   }
 };
-
-
-// Exemplo de chamadas:
-console.log(certidao.aleatoria());            // Certidão aleatória (número)
-console.log(certidao.nascimento());           // Certidão de nascimento (número)
-console.log(certidao.casamento());            // Certidão de casamento (número)
-console.log(certidao.obito());                // Certidão de óbito (número)
-
-console.log(certidao.aleatoriaObj());         // Objeto detalhado de certidão aleatória
-console.log(certidao.nascimentoObj());        // Objeto detalhado de certidão de nascimento
-console.log(certidao.casamentoObj());         // Objeto detalhado de certidão de casamento
-console.log(certidao.obitoObj());             // Objeto detalhado de certidão de óbito
