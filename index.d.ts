@@ -1,0 +1,48 @@
+declare module 'gerador-br' {
+  export function cpf(mask?: boolean, state?: string): string;
+  export function cnpj(mask?: boolean): string;
+  export function nome(): string;
+  export function endereco(mask?: boolean, state?: string): {
+    cep: string;
+    logradouro: string;
+    numero: number;
+    complemento: string;
+    bairro: string;
+    localidade: string;
+    estado: string;
+  };
+  export function inscricaoEstadual(estado: string): string;
+  export function rg(mask?: boolean): string;
+  export function cnh(mask?: boolean): string;
+  export function pis(mask?: boolean): string;
+  export function tituloEleitor(mask?: boolean): string;
+  export function certidaoNascimento(): string;
+  export function certidaoCasamento(): string;
+  export function certidaoObito(): string;
+  export function passaporte(): string;
+  export function cns(): string;
+  export function renavam(): string;
+  export function telefone(mask?: boolean): string;
+  export function celular(mask?: boolean): string;
+  export function email(): string;
+  export function dataNascimento(): string;
+  export function banco(): string;
+  export function contaBancaria(): string;
+  export function cartaoCredito(): string;
+  export function operadora(): string;
+  export function ddd(estado?: string): number;
+  export function palavra(): string;
+  export function paragrafo(): string;
+  export function sentenca(): string;
+  export function apelido(): string;
+  export function corPele(): string;
+  export function tipoSanguineo(): string;
+  export function orientacaoSexual(): string;
+  export function identidadeGenero(): string;
+  export function escolaridade(): string;
+  export function profissao(): string;
+  export function nacionalidade(): string;
+  export function estadoCivil(): string;
+  export function nomePai(): string;
+  export function nomeMae(): string;
+}

@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador-BR - Documentação</title>
+  <meta name="description" content="Documentação Pacote NPM Gerador-BR">
+  <meta name="keywords" content="nodejs, npm, npm gerador de dados, data generator, gerador de dados, dados fictícios, dados brasileiros, brasil">
+  <meta name="author" content="Marcelo Lourenço">
+
+  <!-- Open Graph (para redes sociais) -->
+  <meta property="og:title" content="Gerador-BR | Pacote NPM">
+  <meta property="og:description" content="Pacote NPM para gerar dados fictícios brasileiros para testes e desenvolvimento.">
+  <meta property="og:image" content="/assets/images/features/social-preview.png">
+  <meta property="og:url" content="https://marcelo-lourenco.github.io/gerador-br">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gerador-BR | Pacote NPM">
+  <meta name="twitter:description" content="Pacote NPM para gerar dados fictícios brasileiros para testes e desenvolvimento.">
+  <meta name="twitter:image" content="/assets/images/features/social-preview.png">
+  
+  <link rel="icon" type="image/svg" href="/assets/images/icons/favicon-24x24.svg" sizes="24x24"/>
+  <link rel="icon" type="image/svg" href="/assets/images/icons/favicon-48x48.svg" sizes="48x48"/>
+  <link rel="icon" type="image/svg" href="/assets/images/icons/favicon-128x128.svg" sizes="128x128"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/theme.css" id="theme-style">
+
+  <script src="/assets/fontawesome/js/all.min.js"></script>
+  <script src="/assets/plugins/iconify.min.js"></script>
+
+  
+  <link rel="stylesheet" href="/assets/plugins/simplelightbox/simple-lightbox.min.css">
+  <link rel="stylesheet" href="/assets/plugins/prism/prism.css"/>
+  <link rel="stylesheet" href="/assets/css/prism-light.css">
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Gerador-BR - Documentação",
+      "description": "Documentação Pacote NPM Gerador-BR",
+      "url": "https://marcelo-lourenco.github.io/gerador-br",
+      "author": {
+        "@type": "Person",
+        "name": "Marcelo Lourenço"
+      }
+    }
+
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Gerador-BR - Documentação"
+      "description": "Documentação Pacote NPM Gerador-BR",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Node.js",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "softwareHelp": {
+        "@type": "CreativeWork",
+        "url": "http://marcelo-lourenco.github.io/gerador-br/docs"
+      },
+      "codeRepository": "https://github.com/marcelo-lourenco/gerador-br",
+      "releaseNotes": "https://www.npmjs.com/package/gerador-br",
+      "keywords": "nodejs, npm, npm gerador de dados, data generator, gerador de dados, dados fictícios, dados brasileiros, brasil"
+    }
+  </script>
+  <script src="/assets/plugins/prism/prism.min.js" defer></script>
+  <script src="/assets/plugins/prism/prism-javascript.min.js" defer></script>
+  <script src="/assets/plugins/prism/prism-bash.min.js" defer></script>
+
+  
+
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-DDJE8YJ36B"></script>
+  <script src="/assets/js/gtag-config.js"></script>
+</head>
+    <body>
+        <header class="header fixed-top">
+  <div class="branding docs-branding">
+    <div class="container-fluid position-relative py-2">
+
+      <div class="docs-logo-wrapper">
+
+        
+        <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+          type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+
+        <div class="site-logo">
+          <a class="navbar-brand" href="/">
+            <img class="logo-icon me-2" src="/assets/images/icons/favicon-24x24.svg" width="24" height="24" alt="Logo Gerador-BR" title="Gerador-BR" aria-label="Logo Gerador-BR">
+            <span class="logo-text">
+              Gerador<span class="text-alt">-BR</span>
+            </span>
+          </a>
+        </div>
+
+      </div>
+      <!--//docs-logo-wrapper-->
+
+      <div class="docs-top-utilities d-flex justify-content-end align-items-center pe-3">
+
+        
+
+        <nav class="navbar navbar-expand">
+          <div class="collapse navbar-collapse ms-auto" id="navigation">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item me-lg-4">
+                <a class="nav-link" href="/documentacao" aria-label="Documentação">Documentação</a>
+              </li>
+              <li class="nav-item dropdown me-lg-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Geradores</a>
+                <ul class="dropdown-menu dropdown-menu-lg-end rounded shadow scrollable-menu docs-sidebar">
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-id-card"></i>
+                    </span>DOCUMENTOS PF
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-cpf" >Gerador de CPF</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-cnh">Gerador de CNH</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-rg">Gerador de RG</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-cartao-nacional-de-saude">Gerador de CNS</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-pis">Gerador de PIS</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-titulo-de-eleitor">Gerador de Título de Eleitor</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-passaporte">Gerador de Passaporte</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-certidao">Gerador de Certidão</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-building"></i>
+                    </span>DOCUMENTOS PJ
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-cnpj">Gerador de CNPJ</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-inscricao-estadual">Gerador de Inscrição Estadual</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-university"></i>
+                    </span>BANCOS
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-banco">Gerador de Banco</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-cartao-de-credito">Gerador de Cartão de Crédito</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-conta-bancaria">Gerador de Conta Bancária</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-phone"></i>
+                    </span>CONTATOS
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-cep">Gerador de CEP</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-endereco">Gerador de Endereço</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-car"></i>
+                    </span>VEÍCULOS
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-placa-antiga">Gerador de Placa Antiga</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-placa-mercosul">Gerador de Placa MERCOSUL</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-renavam">Gerador de RENAVAM</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-align-left"></i>
+                    </span>LOREM IPSUM
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-sentenca">Gerador de Sentença</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="/gerador-de-paragrafos">Gerador de Parágrafos</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item pt-3 pt-lg-0">
+                <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+                  <li class="list-inline-item">
+                    <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm">
+                      <i class="fa-brands fa-npm fa-fw"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener"
+                      aria-label="GitHub">
+                      <i class="fa-brands fa-github fa-fw"></i>
+                    </a>
+                  </li>
+                </ul>
+                <!--//social-list-->
+              </li>
+            </ul>
+            <!--//navbar-nav-->
+
+          </div>
+        </nav>
+
+      </div>
+      <!--//docs-top-utilities-->
+    </div>
+    <!--//container-->
+  </div>
+  <!--//branding-->
+</header>
+<!--//header-->
+        
+<div class="docs-wrapper">
+  <div id="docs-sidebar" class="docs-sidebar">
+    
+    <div class="top-search-box d-lg-none p-3">
+      <form class="search-form">
+        <input type="text" placeholder="Pesquisar..." name="search" class="form-control search-input">
+        <button type="submit" class="btn search-btn" value="Search" aria-label="Pesquisar">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <!--//top-search-box-->
+
+    <nav id="docs-nav" class="docs-nav navbar">
+      <ul class="section-items list-unstyled nav flex-column pb-3">
+        <li class="nav-item section-title">
+          <a class="nav-link scrollto" href="#comecando">
+            <span class="theme-icon-holder me-2">
+              <i class="fas fa-rocket"></i>
+            </span>COMEÇANDO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#instalacao">Instalação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#importacao">Importação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#utilizacao">Utilização</a>
+        </li>
+        <li class="nav-item section-title">
+          <a class="nav-link scrollto active" href="#documentos-pf">
+            <span class="theme-icon-holder me-2">
+              <i class="fas fa-id-card"></i>
+            </span>DOCUMENTOS PF</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#cpf">CPF</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#cnh">CNH</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#rg">RG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#cns">CNS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#pis">PIS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#tituloEleitor">Título de Eleitor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#passaporte">Passaporte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#certidao">Certidão</a>
+        </li>
+        <li class="nav-item section-title mt-3">
+          <a class="nav-link scrollto" href="#documentos-pj">
+            <span class="theme-icon-holder me-2">
+              <i class="fas fa-building"></i>
+            </span>DOCUMENTOS PJ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#cnpj">CNPJ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#inscricaoEstadual">Inscrição Estadual</a>
+        </li>
+        <li class="nav-item section-title mt-3">
+          <a class="nav-link scrollto" href="#bancos">
+            <span class="theme-icon-holder me-2">
+              <i class="fas fa-university"></i>
+            </span>BANCOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#banco">Banco</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#listaCodigosBancos">Lista de Códigos de Bancos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#cartaoCredito">Cartão de Crédito</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#contaBancaria">Conta Bancária</a>
+        </li>
+        <li class="nav-item section-title mt-3">
+          <a class="nav-link scrollto" href="#pessoas">
+            <span class="theme-icon-holder me-2">
+              <i class="fas fa-user"></i>
+            </span>PESSOAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#nome">Nome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#apelido">Apelido</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#dataNascimento">Data de Nascimento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#escolaridade">Escolaridade</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#profissao">Profissão</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#corPele">Cor da Pele</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#tipoSanguineo">Tipo Sanguíneo</a>
+        </li>
+        <li class="nav-item section-title mt-3">
+          <a class="nav-link scrollto" href="#contatos">
+            <span class="theme-icon-holder me-2">
+              <i class="fas fa-phone"></i>
+            </span>CONTATOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#email">Email</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#ddd">DDD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#codigoOperadora">Código da Operadora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#celular">Celular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#telefone">Telefone</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#cep">CEP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#endereco">Endereço</a>
+        </li>
+        <li class="nav-item section-title mt-3">
+          <a class="nav-link scrollto" href="#veiculos">
+            <span class="theme-icon-holder me-2">
+              <i class="fas fa-car"></i>
+            </span>VEÍCULOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#placaAntiga">Placa Antiga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#placaMercosul">Placa Mercosul</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#renavam">Renavam</a>
+        </li>
+        <li class="nav-item section-title mt-3">
+          <a class="nav-link scrollto" href="#lorem-ipsum">
+            <span class="theme-icon-holder me-2">
+              <i class="fas fa-align-left"></i>
+            </span>LOREM IPSUM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#palavra">Palavra</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#sentenca">Sentença</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#paragrafo">Parágrafo</a>
+        </li>
+      </ul>
+    </nav>
+    <!--//docs-nav-->
+
+  </div>
+  <!--//docs-sidebar-->
+
+  <div class="docs-content">
+    <div class="container">
+
+      <!-- COMEÇANDO -->
+      <article class="docs-article" id="comecando">
+
+        <header class="docs-header">
+          <h1 class="docs-heading">COMEÇANDO</h1>
+        </header>
+
+        <section class="docs-section" id="instalacao">
+          <h2 class="section-heading">Instalação</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-shell">
+npm install gerador-br
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="importacao">
+          <h2 class="section-heading">Importação</h2>
+          
+          <div class="docs-code-block">
+            <p><strong>ES Module:</strong></p>
+            <pre><code class="language-js">
+import gerar from 'gerador-br';
+            </code></pre>
+          </div>
+          
+          <div class="docs-code-block">
+            <p><strong>CommonJS:</strong></p>
+            <pre><code class="language-js">
+const gerar = require('gerador-br');
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="utilizacao">
+          <h2 class="section-heading">Utilização</h2>
+
+          <div class="docs-code-block">
+            <p><strong>Importe apenas a(s) função(ões) que desejar:</strong></p>
+            <pre><code class="language-js">
+      import { nome, cpf, cnpj, placaMercosul } from 'gerador-br'; // ES Module
+      // const { nome, cpf, cnpj, placaMercosul } = require('gerador-br'); // CommonJS
+
+      console.log(nome.femininoCompleto());
+      console.log(cpf());
+      console.log(cnpj());
+      console.log(placaMercosul());
+            </code></pre>
+          </div>
+          
+          <div class="docs-code-block">
+            <p><strong>Ou, importe todo o módulo <code>gerar</code> e depois use qualquer função que desejar:</strong></p>
+            <pre><code class="language-js">
+      import gerar from 'gerador-br'; // ES Module
+      // const gerar = require('gerador-br'); // CommonJS
+
+      console.log(gerar.nome.femininoCompleto());
+      console.log(gerar.cpf());
+      console.log(gerar.cnpj());
+      console.log(gerar.contaBancaria());
+      console.log(gerar.cartaoCredito());
+            </code></pre>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- DOCUMENTOS PF -->
+      <article class="docs-article" id="documentos-pf">
+
+        <header class="docs-header">
+          <h1 class="docs-heading">DOCUMENTOS PF</h1>
+          <section class="docs-intro">
+            <p>Exemplo de uso para geração de documentos de Pessoa Física.</p>
+          </section>
+        </header>
+
+        <section class="docs-section" id="cpf">
+          <h2 class="section-heading">CPF</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { cpf } from 'gerador-br'; // es module
+// const { cpf } = require('gerador-br'); // commonjs
+
+// gera cpf sem máscara e de estado aleatório
+cpf();
+
+// gera cpf com máscara e de estado aleatório
+cpf(true);
+
+// gera cpf com máscara e do estado informado
+cpf(true, "rs");
+
+// gera cpf sem máscara e do estado informado
+cpf(false, "mg");
+            </code></pre>
+          </div>
+          <!--//docs-code-block-->
+        </section>
+
+        <section class="docs-section" id="cnh">
+          <h2 class="section-heading">CNH</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { cnh, cnhCategoria } from 'gerador-br'; // ES Module
+// const { cnh, cnhCategoria } = require('gerador-br'); // CommonJS
+
+// Gera CNH aleatória
+cnh();
+
+// Gera Categoria CNH
+cnhCategoria();
+            </code></pre>
+          </div>
+          <!--//docs-code-block-->
+        </section>
+
+        <section class="docs-section" id="rg">
+          <h2 class="section-heading">RG</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { rg } from 'gerador-br'; // ES Module
+// const { rg } = require('gerador-br'); // CommonJS
+
+// Gera RG sem máscara
+rg();
+
+// Gera RG com máscara
+rg(true);
+            </code></pre>
+          </div>
+          <!--//docs-code-block-->
+        </section>
+
+        <section class="docs-section" id="cns">
+          <h2 class="section-heading">CNS</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { cns } from 'gerador-br'; // ES Module
+// const { cns } = require('gerador-br'); // CommonJS
+
+// Gera CNS (Cartão Nacional Saúde) sem máscara e tipo aleatório
+cns();
+
+// Gera CNS (Cartão Nacional Saúde) sem máscara e do tipo informado
+cns(false, 'beneficiario');
+cns(false, 'profissional');
+
+// Gera CNS (Cartão Nacional Saúde) com máscara e tipo aleatório
+cns(true);
+
+// Gera CNS (Cartão Nacional Saúde) com máscara e do tipo informado
+cns(true, 'beneficiario');
+cns(true, 'profissional');
+            </code></pre>
+          </div>
+          <!--//docs-code-block-->
+        </section>
+
+        <section class="docs-section" id="pis">
+          <h2 class="section-heading">PIS</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { pis } from 'gerador-br'; // ES Module
+// const { pis } = require('gerador-br'); // CommonJS
+
+// Gera PIS sem máscara
+pis();
+
+// Gera PIS com máscara
+pis(true);
+            </code></pre>
+          </div>
+          <!--//docs-code-block-->
+        </section>
+
+        <section class="docs-section" id="tituloEleitor">
+          <h2 class="section-heading">Título de Eleitor</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { tituloEleitor } from 'gerador-br'; // ES Module
+// const { tituloEleitor } = require('gerador-br'); // CommonJS
+
+// Gera Título de Eleitor sem máscara e de estado aleatório
+tituloEleitor();
+
+// Gera Título de Eleitor com máscara e de estado aleatório
+tituloEleitor(true);
+
+// Gera Título de Eleitor sem máscara e de estado informado
+tituloEleitor(true,'SE');
+
+// Gera Título de Eleitor com máscara e de estado informado
+tituloEleitor(false,'PR');
+            </code></pre>
+          </div>
+          <!--//docs-code-block-->
+        </section>
+
+        <section class="docs-section" id="passaporte">
+          <h2 class="section-heading">Passaporte</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { passaporte } from 'gerador-br'; // ES Module
+// const { passaporte } = require('gerador-br'); // CommonJS
+
+// Gera Passaporte aleatório
+passaporte();
+            </code></pre>
+          </div>
+          <!--//docs-code-block-->
+        </section>
+
+        <section class="docs-section" id="certidao">
+          <h2 class="section-heading">Certidão</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { certidao } from 'gerador-br'; // ES Module
+// const { certidao } = require('gerador-br'); // CommonJS
+
+// Certidão aleatória
+certidao.aleatoria();        // com máscara
+certidao.aleatoria(false);   // sem máscara
+
+// Certidão de nascimento
+certidao.nascimento();       // com máscara
+certidao.nascimento(false);  // sem máscara
+
+// Certidão de casamento
+certidao.casamento();        // com máscara
+certidao.casamento(false);   // sem máscara
+
+// Certidão de óbito
+certidao.obito();            // com máscara
+certidao.obito(false);       // sem máscara
+
+// Objeto com os detalhes de Certidão
+certidao.aleatoriaObj();     // Objeto detalhado de certidão aleatória
+certidao.nascimentoObj();    // Objeto detalhado de certidão de nascimento
+certidao.casamentoObj();     // Objeto detalhado de certidão de casamento
+certidao.obitoObj();         // Objeto detalhado de certidão de óbito
+            </code></pre>
+          </div>
+          <!--//docs-code-block-->
+        </section>
+      </article>
+
+      <!-- DOCUMENTOS PJ -->
+      <article class="docs-article" id="documentos-pj">
+
+        <header class="docs-header">
+          <h1 class="docs-heading">DOCUMENTOS PJ</h1>
+          <section class="docs-intro">
+            <p>Exemplo de uso para geração de documentos de Pessoa Jurídica.</p>
+          </section>
+        </header>
+
+        <section class="docs-section" id="cnpj">
+          <h2 class="section-heading">CNPJ</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { cnpj } from 'gerador-br'; // ES Module
+// const { cnpj } = require('gerador-br'); // CommonJS
+
+// Gera CNPJ sem máscara
+cnpj();
+
+// Gera CNPJ com máscara
+cnpj(true);
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="inscricaoEstadual">
+          <h2 class="section-heading">Inscrição Estadual</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { inscricaoEstadual } from 'gerador-br'; // ES Module
+// const { inscricaoEstadual } = require('gerador-br'); // CommonJS
+
+// Gera Inscrição Estadual aleatório e do estado informado.
+inscricaoEstadual();      // Sem informar o estado
+inscricaoEstadual('AC');  // AC 01.335116638
+inscricaoEstadual('AP');  // AP 03.42773842
+inscricaoEstadual('BA');  // BA 16408652-16
+inscricaoEstadual('DF');  // DF 0724.4814180
+inscricaoEstadual('RJ');  // RJ 41038311.44
+            </code></pre>
+          </div>
+        </section>
+      </article>
+
+      <!-- BANCOS -->
+      <article class="docs-article" id="bancos">
+
+        <header class="docs-header">
+          <h1 class="docs-heading">BANCOS</h1>
+          <section class="docs-intro">
+            <p>Exemplos de uso para geração de dados bancários.</p>
+          </section>
+        </header>
+
+        <section class="docs-section" id="banco">
+          <h2 class="section-heading">Banco</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { banco } from 'gerador-br'; // ES Module
+// const { banco } = require('gerador-br'); // CommonJS
+
+// Gera dados de um banco aleatório
+banco();
+
+// Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
+const bnc = banco();
+console.log(bnc.codigoBanco);
+console.log(bnc.nomeBanco);
+console.log(bnc.razaoSocial);
+console.log(bnc.ispb);
+
+// Gera dados do banco informado
+banco(237);
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="listaCodigosBancos">
+          <h2 class="section-heading">Lista de Códigos de Bancos</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { listaCodigosBancos } from 'gerador-br'; // ES Module
+// const { listaCodigosBancos } = require('gerador-br'); // CommonJS
+
+// Retorna uma lista de códigos de bancos
+listaCodigosBancos();
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="cartaoCredito">
+          <h2 class="section-heading">Cartão de Crédito</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { cartaoCredito } from 'gerador-br'; // ES Module
+// const { cartaoCredito } = require('gerador-br'); // CommonJS
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
+cartaoCredito();
+
+// Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
+const cc = cartaoCredito();
+console.log(cc.numero);
+console.log(cc.bandeira);
+console.log(cc.cvv);
+console.log(cc.dataExpiracao);
+console.log(cc.nomeTitular);
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+cartaoCredito(true, "João Santos da Silva");
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
+cartaoCredito(false, "Maria Aparecida Reis");
+
+// Gera objeto cartaoCredito com as propriedades:
+// numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular gerado (abreviado)
+cartaoCredito(true, nome.femininoCompleto());
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="contaBancaria">
+          <h2 class="section-heading">Conta Bancária</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { contaBancaria } from 'gerador-br'; // ES Module
+// const { contaBancaria } = require('gerador-br'); // CommonJS
+
+// Gera uma conta bancária aleatória de um banco aleatório
+contaBancaria();
+
+// Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
+const cb = contaBancaria();
+console.log(cb.codigoBanco);
+console.log(cb.nomeBanco);
+console.log(cb.agencia);
+console.log(cb.agenciaDv);
+console.log(cb.conta);
+console.log(cb.contaDv);
+
+// Gera uma conta bancária aleatória do Banco do Brasil
+contaBancaria('1');
+contaBancaria('Banco do Brasil');
+
+// Gera uma conta bancária aleatória do Bradesco
+contaBancaria("237");
+contaBancaria('Bradesco');
+
+// Gera uma conta bancária aleatória da Caixa
+contaBancaria('104');
+contaBancaria('Caixa');
+
+// Gera uma conta bancária aleatória do Citibank
+contaBancaria('745');
+contaBancaria('Citibank');
+
+// Gera uma conta bancária aleatória do HSBC
+contaBancaria('296');
+contaBancaria('HSBC');
+
+// Gera uma conta bancária aleatória do Itaú
+contaBancaria('341');
+contaBancaria('Itaú');
+
+// Gera uma conta bancária aleatória do Santander
+contaBancaria('33');
+contaBancaria('Santander');
+            </code></pre>
+          </div>
+        </section>
+      </article>
+
+      <!-- PESSOAS -->
+      <article class="docs-article" id="pessoas">
+
+        <header class="docs-header">
+          <h1 class="docs-heading">PESSOAS</h1>
+          <section class="docs-intro">
+            <p>Exemplo de uso para geração de dados pessoais.</p>
+          </section>
+        </header>
+
+        <section class="docs-section" id="nome">
+          <h2 class="section-heading">Nome</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { nome } from 'gerador-br'; // ES Module
+// const { nome } = require('gerador-br'); // CommonJS
+
+// Gera um nome aleatório (feminino ou masculino)
+nome.aleatorio();
+
+// Gera um nome aleatório completo (feminino ou masculino)
+nome.aleatorioCompleto();
+
+// Gera um nome masculino aleatório
+nome.masculino();
+
+// Gera um nome masculino completo aleatório
+nome.masculinoCompleto();
+
+// Gera um nome feminino aleatório
+nome.feminino();
+
+// Gera um nome feminino completo aleatório
+nome.femininoCompleto();
+
+// Gera o nome da mãe aleatório
+nome.mae();
+
+// Gera o nome completo da mãe aleatório
+nome.maeCompleto();
+
+// Gera o nome do pai aleatório
+nome.pai();
+
+// Gera o nome completo do pai aleatório
+nome.paiCompleto();
+
+// Gera um nome do meio aleatório
+nome.doMeio();
+
+// Gera um sobrenome aleatório
+nome.sobrenome();
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="apelido">
+          <h2 class="section-heading">Apelido</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { apelido } from 'gerador-br'; // ES Module
+// const { apelido } = require('gerador-br'); // CommonJS
+
+// Gera apelido aleatório
+apelido();
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="dataNascimento">
+          <h2 class="section-heading">Data de Nascimento</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { dataNascimento } from 'gerador-br'; // ES Module
+// const { dataNascimento } = require('gerador-br'); // CommonJS
+
+// Gera data de nascimento aleatória
+dataNascimento();
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="escolaridade">
+          <h2 class="section-heading">Escolaridade</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { escolaridade } from 'gerador-br'; // ES Module
+// const { escolaridade } = require('gerador-br'); // CommonJS
+
+// Gera escolaridade
+escolaridade();
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="profissao">
+          <h2 class="section-heading">Profissão</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { profissao } from 'gerador-br'; // ES Module
+// const { profissao } = require('gerador-br'); // CommonJS
+
+// Gera profissão
+profissao();
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="corPele">
+          <h2 class="section-heading">Cor da Pele</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { corPele } from 'gerador-br'; // ES Module
+// const { corPele } = require('gerador-br'); // CommonJS
+
+// Gera cor de pele aleatória
+corPele();
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="tipoSanguineo">
+          <h2 class="section-heading">Tipo Sanguíneo</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { tipoSanguineo } from 'gerador-br'; // ES Module
+// const { tipoSanguineo } = require('gerador-br'); // CommonJS
+
+// Gera tipo sanguíneo aleatório
+tipoSanguineo();
+            </code></pre>
+          </div>
+        </section>
+
+<!-- TODO 
+## genero
+
+```js
+import { genero } from 'gerador-br'; // ES Module
+// const { genero } = require('gerador-br'); // CommonJS
+
+// Gera gênero aleatório
+genero();
+```
+
+## orientacaoSexual
+```js
+import { orientacaoSexual } from 'gerador-br'; // ES Module
+// const { orientacaoSexual } = require('gerador-br'); // CommonJS
+
+// Gera orientação sexual aleatória
+orientacaoSexual();
+```
+
+## identidadeGenero
+```js
+import { identidadeGenero } from 'gerador-br'; // ES Module
+// const { identidadeGenero } = require('gerador-br'); // CommonJS
+
+// Gera identidade de gênero aleatória
+identidadeGenero();
+```
+-->
+      </article>
+
+      <!-- CONTATOS -->
+      <article class="docs-article" id="contatos">
+
+        <header class="docs-header">
+          <h1 class="docs-heading">CONTATOS</h1>
+          <section class="docs-intro">
+            <p>Exemplo de uso para geração de contato.</p>
+          </section>
+        </header>
+  
+        <section class="docs-section" id="email">
+          <h2 class="section-heading">Email</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { email, nome } from 'gerador-br'; // ES Module
+// const { email, nome } = require('gerador-br'); // CommonJS
+
+// Gera e-mail com nickname aleatório
+email();
+
+// Gera e-mail com nome masculino
+const nomeMasculinoCompleto = nome.masculinoCompleto();
+email(nomeMasculinoCompleto);
+
+// Gera e-mail com nome feminino
+const nomeFemininoCompleto = nome.femininoCompleto();
+email(nomeFemininoCompleto);
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="ddd">
+          <h2 class="section-heading">DDD</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { ddd } from 'gerador-br'; // ES Module
+// const { ddd } = require('gerador-br'); // CommonJS
+
+// Gera DDD aleatório
+ddd();
+
+// Gera DDD aleatório do estado informado
+ddd("PA");
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="codigoOperadora">
+          <h2 class="section-heading">Código da Operadora</h2>
+
+          <div class="callout-block callout-block-info">
+            <div class="content">
+              <h4 class="callout-title">
+                <span class="callout-icon-holder me-1">
+                  <i class="fas fa-info-circle"></i>
+                </span><!--//icon-holder-->
+                Nota:
+              </h4>
+              <p>Devido a portabilidade, celulares reais podem não pertencer mais a operadora de origem.</p>
+            </div><!--//content-->
+          </div>
+
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { codigoOperadora } from 'gerador-br'; // ES Module
+// const { codigoOperadora } = require('gerador-br'); // CommonJS
+
+// Gera um código da Claro (968, 973, 974, 975, 976, 991, 992, 993 ou 994)
+codigoOperadora("Claro");
+
+// Gera um código da Oi (984, 985, 986, 987, 988 ou 989)
+codigoOperadora("Oi");
+
+// Gera um código da Tim (969, 979, 980, 981, 982 ou 983)
+codigoOperadora("Tim");
+
+// Gera um código da Vivo (967, 971, 972, 995, 996, 997, 998 ou 999)
+codigoOperadora("Vivo");
+
+// Gera um código de uma operadora aleatória
+codigoOperadora();
+
+// Gera um código de uma operadora aleatória
+codigoOperadora("blablabla");
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="celular">
+          <h2 class="section-heading">Celular</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { celular } from 'gerador-br'; // ES Module
+// const { celular } = require('gerador-br'); // CommonJS
+
+// Gera celular sem máscara, de estado aleatório e operadora aleatória
+celular();                   // "11999999999"
+
+// Gera celular com máscara, de estado aleatório e operadora aleatória
+celular(true);               // "(11) 99999-9999"
+
+// Gera celular sem máscara, do estado informado e operadora aleatória
+celular(false, "SC");        // "48999999999"
+
+// Gera celular com máscara, do estado informado e operadora aleatória
+celular(true, "ES");         // "(27) 99999-9999"
+
+// Gera celular sem máscara, do estado aleatório e operadora informada
+celular(false, "", "Claro"); // "85991999999"
+
+// Gera celular com máscara, do estado informado e operadora aleatória
+celular(true, "MS", "Vivo"); // "(67) 99799-9999"
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="telefone">
+          <h2 class="section-heading">Telefone</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { telefone } from 'gerador-br'; // ES Module
+// const { telefone } = require('gerador-br'); // CommonJS
+
+// Gera telefone sem máscara, de estado aleatório
+telefone();             // "1199999999"
+
+// Gera telefone com máscara, de estado aleatório
+telefone(true);         // "(11) 9999-9999"
+
+// Gera telefone sem máscara, do estado informado
+telefone(false, "SC");  // "4899999999"
+
+// Gera telefone com máscara, do estado informado
+telefone(true, "ES");   // "(27) 9999-9999"
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="cep">
+          <h2 class="section-heading">CEP</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { cep } from 'gerador-br'; // ES Module
+// const { cep } = require('gerador-br'); // CommonJS
+
+// Gera CEP sem máscara de estado aleatório
+cep();                  // "12345678"
+
+// Gera CEP com máscara de estado aleatório
+cep(true);              // "12345-678"
+
+// Gera CEP sem máscara de estado informado
+cep(false, "SP");       // "01001000"
+
+// Gera CEP com máscara de estado informado
+cep(true, "SP");        // "01001-000"
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="endereco">
+          <h2 class="section-heading">Endereço</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { endereco } from 'gerador-br'; // ES Module
+// const { endereco } = require('gerador-br'); // CommonJS
+
+// Gera um objeto com todos os campos do endereço e de estado aleatório
+endereco();
+
+// Gera um objeto com todos os campos do endereço, o CEP com máscara e de estado aleatório
+endereco(true);
+
+// Gera um objeto com todos os campos do endereço, o CEP sem máscara e de estado aleatório
+endereco(false);
+
+// Gera um objeto com todos os campos do endereço, o CEP com máscara e do estado informado
+endereco(true, "RJ");
+
+// Gera um objeto com todos os campos do endereço, o CEP sem máscara e do estado informado
+endereco(false, "SP");
+
+// Opcionalmente, gere um endereço e utilize apenas a propriedade desejada
+const end = endereco();
+console.log(end.cep);
+console.log(end.logradouro);
+console.log(end.numero);
+console.log(end.complemento); // caso exista
+console.log(end.bairro);
+console.log(end.localidade);
+console.log(end.estado);
+            </code></pre>
+          </div>
+        </section>
+      </article>
+
+      <!-- VEÍCULOS -->
+      <article class="docs-article" id="veiculos">
+
+        <header class="docs-header">
+          <h1 class="docs-heading">VEÍCULOS</h1>
+          <section class="docs-intro">
+            <p>Exemplo de uso para geração de dados de veículos.</p>
+          </section>
+        </header>
+
+        <section class="docs-section" id="placaAntiga">
+          <h2 class="section-heading">Placa Antiga</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { placaAntiga } from 'gerador-br'; // ES Module
+// const { placaAntiga } = require('gerador-br'); // CommonJS
+
+// Gera placa no formato antigo com máscara "ABC-1234"
+placaAntiga(true);
+
+// Gera placa no formato antigo sem máscara "ABC1234"
+placaAntiga(false);
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="placaMercosul">
+          <h2 class="section-heading">Placa Mercosul</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { placaMercosul } from 'gerador-br'; // ES Module
+// const { placaMercosul } = require('gerador-br'); // CommonJS
+
+// Gera placa no formato Mercosul com máscara "ABC-1D23"
+placaMercosul(true);
+
+// Gera placa no formato Mercosul sem máscara "ABC1D23"
+placaMercosul(false);
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="renavam">
+          <h2 class="section-heading">RENAVAM</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { renavam } from 'gerador-br'; // ES Module
+// const { renavam } = require('gerador-br'); // CommonJS
+
+// Gera RENAVAM
+renavam();
+            </code></pre>
+          </div>
+        </section>
+      </article>
+
+      <!-- LOREM IPSUM -->
+      <article class="docs-article" id="lorem-ipsum">
+
+        <header class="docs-header">
+          <h1 class="docs-heading">LOREM IPSUM</h1>
+          <section class="docs-intro">
+            <p>Exemplo de uso para geração de textos genéricos.</p>
+          </section>
+        </header>
+
+        <section class="docs-section" id="palavra">
+          <h2 class="section-heading">Palavra</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { palavra } from 'gerador-br'; // ES Module
+// const { palavra } = require('gerador-br'); // CommonJS
+
+// Gera uma palavra aleatória
+palavra();
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="sentenca">
+          <h2 class="section-heading">Sentença</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { sentenca } from 'gerador-br'; // ES Module
+// const { sentenca } = require('gerador-br'); // CommonJS
+
+// Gera uma sentença com quantidade de palavras aleatórias
+sentenca();
+
+// Gera uma sentença com quantidade de palavras definida
+sentenca(10);
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="paragrafo">
+          <h2 class="section-heading">Parágrafo</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { paragrafo } from 'gerador-br'; // ES Module
+// const { paragrafo } = require('gerador-br'); // CommonJS
+
+// Gera um parágrafo com quantidade de palavras aleatórias
+paragrafo();
+
+// Gera um parágrafo com quantidade de sentença informada, cada uma com quantidade de palavras aleatórias
+paragrafo(5);
+
+// Gera um parágrafo com quantidade de sentenças e de palavras informadas.
+paragrafo(3,8);
+            </code></pre>
+          </div>
+        </section>
+      </article>
+
+      <footer class="footer">
+
+  <div class="footer-bottom text-center py-4">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-start">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <small class="copyright">© 2023 Gerador-BR</small>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-end">
+          <ul class="social-list list-unstyled pb-4 mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm">
+                <i class="fa-brands fa-npm fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener"
+                aria-label="GitHub">
+                <i class="fa-brands fa-github fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/marcelolourencodasilva/" target="_blank" rel="noopener"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--//container-->
+
+  </div>
+</footer>
+
+    </div>
+  </div>
+  <!--//docs-content-->
+        <!-- Javascript -->
+<script src="/assets/plugins/popper.min.js"></script>
+<script src="/assets/plugins/bootstrap/js/bootstrap.min.js" defer></script>
+
+<!-- Page Specific JS -->
+
+<script src="/assets/plugins/smoothscroll.min.js"></script>
+<script src="/assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+<script src="/assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+<script src="/assets/js/sidebar.js"></script>
+<script>
+  var exports = {};
+</script>
+<script src="/assets/js/gerador-br.min.js"></script>
+<script>
+  var exports = {};
+</script>
+<script src="/assets/js/generators.js"></script>
+
+    </body>
+</html>
