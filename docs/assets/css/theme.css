@@ -1108,3 +1108,30 @@ form-floating > .form-control:focus ~ label::after,
 }
 /********************* 404 *********************/
 
+
+/********************* Iconify *********************/
+/* requer iconify.min.js */
+.tech-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.tech-badge span:last-child {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+/********************* Iconify *********************/
