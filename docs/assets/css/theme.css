@@ -1091,7 +1091,7 @@ form-floating > .form-control:focus ~ label::after,
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: url('/assets/images/features/bg404.jpg') no-repeat;
+  background: url('../images/features/bg404.jpg') no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: cover;
