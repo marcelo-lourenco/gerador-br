@@ -25,7 +25,7 @@
     "coveralls": "^3.1.1",
     "eslint-plugin-import": "^2.31.0",
     "globals": "^15.14.0",
-    "rollup": "^4.34.2"
+    "rollup": "^4.37.0"
   },
   "repository": {
     "type": "git",
