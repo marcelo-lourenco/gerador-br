@@ -1,4 +1,4 @@
-name: Generate API sitemap
+name: Generate sitemap
 
 on:
   push:
@@ -22,7 +22,6 @@ jobs:
       uses: cicirello/generate-sitemap@v1
       with:
         base-url-path: https://marcelo-lourenco.github.io/gerador-br/
-        path-to-root: docs
         include-pdf: false
         sitemap-format: txt
 
