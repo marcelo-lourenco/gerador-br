@@ -1052,6 +1052,19 @@ form-floating > .form-control:focus ~ label::after,
   border-color: #5236CB;
 }
 
+/********************* voltar ao topo *********************/
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: none; /* Inicialmente oculto */
+}
+
+.back-to-top.show {
+  display: block; /* Mostra o botão quando necessário */
+}
+/********************* voltar ao topo *********************/
 
 
 /********************* 404 *********************/

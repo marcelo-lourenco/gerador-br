@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gerador-BR - Documentação</title>
   <meta name="description" content="Documentação Pacote NPM Gerador-BR">
@@ -13,25 +12,24 @@
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
   <!-- Open Graph (para redes sociais) -->
-  <meta property="og:title" content="Gerador-BR | Pacote NPM">
-  <meta property="og:description" content="Pacote NPM para gerar dados fictícios brasileiros para testes e desenvolvimento.">
+  <meta property="og:title" content="Gerador-BR - Documentação">
+  <meta property="og:description" content="Documentação Pacote NPM Gerador-BR">
   <meta property="og:image" content="../assets/images/features/social-preview.png">
   <meta property="og:url" content="https://marcelo-lourenco.github.io/gerador-br">
   <meta property="og:type" content="website">
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador-BR | Pacote NPM">
-  <meta name="twitter:description" content="Pacote NPM para gerar dados fictícios brasileiros para testes e desenvolvimento.">
+  <meta name="twitter:title" content="Gerador-BR - Documentação">
+  <meta name="twitter:description" content="Documentação Pacote NPM Gerador-BR">
   <meta name="twitter:image" content="../assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-24x24.svg" sizes="24x24">
   <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-48x48.svg" sizes="48x48">
   <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-128x128.svg" sizes="128x128">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="../assets/plugins/poppins/font-poppins.css">
   <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
-
   <link rel="stylesheet" href="../assets/css/theme.css" id="theme-style">
 
   <script src="../assets/fontawesome/js/all.min.js"></script>
@@ -53,7 +51,7 @@
       "description": "Documentação Pacote NPM Gerador-BR",
       "image": "https://marcelo-lourenco.github.io/gerador-br/assets/images/features/social-preview.png",
       "datePublished": "2024-06-01",
-      "dateModified": "2025-04-14",
+      "dateModified": "2025-04-22",
       "author": {
         "@type": "Person",
         "name": "Marcelo Lourenço",
@@ -78,10 +76,11 @@
       "keywords": "nodejs, npm, npm gerador de dados, data generator, gerador de dados, dados fictícios, dados brasileiros, brasil",
       "softwareHelp": {
         "@type": "CreativeWork",
-        "url": "http://marcelo-lourenco.github.io/gerador-br/docs"
+        "url": "http://marcelo-lourenco.github.io/gerador-br/documentacao/"
       }
     }
   </script>
+
   <script src="../assets/plugins/prism/prism.min.js" defer></script>
   <script src="../assets/plugins/prism/prism-javascript.min.js" defer></script>
   <script src="../assets/plugins/prism/prism-bash.min.js" defer></script>
@@ -259,7 +258,7 @@
   
 <div class="docs-wrapper">
   <div id="docs-sidebar" class="docs-sidebar">
-    
+
     <div class="top-search-box d-lg-none p-3">
       <form class="search-form">
         <input type="text" placeholder="Pesquisar..." name="search" class="form-control search-input">
@@ -448,6 +447,109 @@
           <h1 class="docs-heading">COMEÇANDO</h1>
         </header>
 
+        <section class="docs-section" id="badges">
+          <div class="badge-container text-center">
+
+            <a href="https://npmjs.org/package/gerador-br" target="_blank" rel="noopener noreferrer"><img
+                src="https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff" alt="NPM version" /></a>
+
+            <a href="https://npmcharts.com/compare/gerador-br?minimal=true" target="_blank"
+              rel="noopener noreferrer"><img
+                src="https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff" alt="NPM downloads" /></a>
+
+            <a href="https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file" target="_blank"
+              rel="noopener noreferrer"><img
+                src="https://img.shields.io/npm/l/gerador-br?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTMgNiAzIDFtMCAwLTMgOWE1IDUgMCAwIDAgNi4wMDEgME02IDdsMyA5TTYgN2w2LTJtNiAyIDMtMW0tMyAxLTMgOWE1IDUgMCAwIDAgNi4wMDEgME0xOCA3bDMgOW0tMy05LTYtMm0wLTJ2Mm0wIDE2VjVtMCAxNkg5bTMgMGgzIi8+PC9zdmc+"
+                alt="MIT License" /></a>
+
+            <a href="https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql"
+              target="_blank" rel="noopener noreferrer"><img
+                src="https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg"
+                alt="CodeQL" /></a>
+
+            <a href="https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml" target="_blank"
+              rel="noopener noreferrer"><img
+                src="https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml/badge.svg"
+                alt="CI Test" /></a>
+
+            <a href="https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml" target="_blank"
+              rel="noopener noreferrer"><img
+                src="https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg"
+                alt="ESLint" /></a>
+
+            <a href="https://coveralls.io/github/marcelo-lourenco/gerador-br?branch=master" target="_blank"
+              rel="noopener noreferrer"><img
+                src="https://img.shields.io/coveralls/github/marcelo-lourenco/gerador-br/master?logo=coveralls&logoColor=ffffff"
+                alt="Coverage" /></a>
+
+            <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br" target="_blank"
+              rel="noopener noreferrer"><img
+                src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license"
+                alt="FOSSA Licence" /></a>
+
+            <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br" target="_blank"
+              rel="noopener noreferrer"><img
+                src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security"
+                alt="FOSSA Security" /></a>
+
+          </div>
+        </section>
+
+        <section class="docs-section" id="sobre">
+          <h2 class="section-heading">Sobre o Gerador-BR</h2>
+          <p><strong>Gerador de Dados Fictícios - Brasil</strong></p>
+          <p>Gere dados fictícios/válidos, para testes e desenvolvimento de Software.</p>
+
+          <p>Ideal para testes automatizados com <strong>Cypress</strong>, <strong>Playwright</strong>,
+            <strong>Jest</strong>, <strong>Node.js Test Runner</strong>, <strong>Jasmine</strong>,
+            <strong>Mocha</strong>, <strong>Chai</strong>, <strong>Supertest</strong>, <strong>Sinon</strong> e
+            <strong>Puppeteer</strong>.
+          </p>
+
+          <p>O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:</p>
+
+          <ul>
+            <li>
+              <a href="#documentos-pf">Gerador de Documento</a>:
+              CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte e Certidão (Nascimento,
+              Casamento e Óbito)
+            </li>
+            <li>
+              <a href="#pessoas">Gerador de Pessoa</a>:
+              Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo,
+              Escolaridade e Profissão;
+            </li>
+            <li>
+              <a href="#documentos-pj">Gerador de Empresa</a>:
+              CNPJ e Inscrição Estadual;
+            </li>
+            <li>
+              <a href="#endereco">Gerador de Endereço</a>:
+              CEP, Logradouro, Número, Bairro, Localidade e Estado;
+            </li>
+            <li>
+              <a href="#contatos">Gerador de Contato</a>:
+              E-mail, DDD, Operadora, Celular e Telefone;
+            </li>
+            <li>
+              <a href="#contaBancaria">Gerador de Conta Bancária</a>:
+              Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
+            </li>
+            <li>
+              <a href="#cartaoCredito">Gerador de Cartão de Crédito</a>:
+              Número, Bandeira, CVV e Validade;
+            </li>
+            <li>
+              <a href="#veiculos">Gerador de Veículo</a>:
+              Placa Antiga, Placa Mercosul e RENAVAM;
+            </li>
+            <li>
+              <a href="#lorem-ipsum">Gerador de Texto (Lorem Ipsum)</a>:
+              Palavras, Sentenças e Parágrafos;
+            </li>
+          </ul>
+        </section>
+
         <section class="docs-section" id="instalacao">
           <h2 class="section-heading">Instalação</h2>
           <div class="docs-code-block">
@@ -459,14 +561,14 @@ npm install gerador-br
 
         <section class="docs-section" id="importacao">
           <h2 class="section-heading">Importação</h2>
-          
+
           <div class="docs-code-block">
             <p><strong>ES Module:</strong></p>
             <pre><code class="language-js">
 import gerar from 'gerador-br';
             </code></pre>
           </div>
-          
+
           <div class="docs-code-block">
             <p><strong>CommonJS:</strong></p>
             <pre><code class="language-js">
@@ -490,9 +592,10 @@ const gerar = require('gerador-br');
       console.log(placaMercosul());
             </code></pre>
           </div>
-          
+
           <div class="docs-code-block">
-            <p><strong>Ou, importe todo o módulo <code>gerar</code> e depois use qualquer função que desejar:</strong></p>
+            <p><strong>Ou, importe todo o módulo <code>gerar</code> e depois use qualquer função que desejar:</strong>
+            </p>
             <pre><code class="language-js">
       import gerar from 'gerador-br'; // ES Module
       // const gerar = require('gerador-br'); // CommonJS
@@ -998,7 +1101,7 @@ tipoSanguineo();
           </div>
         </section>
 
-<!-- TODO 
+        <!-- TODO 
 ## genero
 
 ```js
@@ -1038,7 +1141,7 @@ identidadeGenero();
             <p>Exemplo de uso para geração de contato.</p>
           </section>
         </header>
-  
+
         <section class="docs-section" id="email">
           <h2 class="section-heading">Email</h2>
           <div class="docs-code-block">
@@ -1384,6 +1487,13 @@ paragrafo(3,8);
     </div>
   </div>
   <!--//docs-content-->
+  
+  <div class="text-center my-4">
+    <a href="#comecando" class="btn btn-primary back-to-top" aria-label="Voltar ao topo da página">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
   <!-- Javascript -->
 <script src="../assets/plugins/popper.min.js"></script>
 <script src="../assets/plugins/bootstrap/js/bootstrap.min.js" defer></script>

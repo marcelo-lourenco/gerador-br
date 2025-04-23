@@ -1,4 +1,4 @@
-# ![gerador-br](/docs/_media/icon-24.svg) gerador-br
+# ![gerador-br](/docs/assets/images/icons/favicon-24x24.svg) gerador-br
 
 [![NPM version](https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff)](https://npmjs.org/package/gerador-br)
 [![NPM downloads](https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff)](https://npmcharts.com/compare/gerador-br?minimal=true)
