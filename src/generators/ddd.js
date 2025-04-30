@@ -4,7 +4,7 @@ import { stateRand } from '../utils.js';
  * Gera um DDD aleatório para um estado brasileiro.
  *
  * @param {string} state - A sigla do estado (por exemplo, "SP", "RJ").
- * @returns {number} O DDD aleatório para o estado fornecido.
+ * @returns {string} O DDD aleatório para o estado fornecido.
  * @example
  * // DDD aleatório para São Paulo (SP)
  * console.log(ddd("SP")); // Pode retornar 11, 12, 13, 14, 15, 16, 17, 18 ou 19
@@ -45,5 +45,5 @@ export function ddd(state) {
 
   const dddState = ddds[state || stateRand];
 
-  return dddState[Math.floor(Math.random() * dddState.length)];
+  return String(dddState[Math.floor(Math.random() * dddState.length)]);
 }

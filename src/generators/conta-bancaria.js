@@ -274,7 +274,7 @@ const bankAccount = {
  * console.log(contaBancaria('Banco do Brasil'));
  * // =>
  *    {
- *      codigoBanco: 1,
+ *      codigoBanco: '1',
  *      nomeBanco: 'Banco do Brasil',
  *      agencia: '1234-5',
  *      agenciaDv: '5',
@@ -287,7 +287,7 @@ const bankAccount = {
  * console.log(contaBancaria('Bradesco'));
  * // =>
  *    {
- *      codigoBanco: 237,
+ *      codigoBanco: '237',
  *      nomeBanco: 'Bradesco',
  *      agencia: '1234-P',
  *      agenciaDv: 'P',
@@ -300,7 +300,7 @@ const bankAccount = {
  * console.log(contaBancaria('Caixa'));
  * // =>
  *    {
- *      codigoBanco: 104,
+ *      codigoBanco: '104',
  *      nomeBanco: 'Caixa',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -313,7 +313,7 @@ const bankAccount = {
  * console.log(contaBancaria('Citibank'));
  * // =>
  *    {
- *      codigoBanco: 745,
+ *      codigoBanco: '745',
  *      nomeBanco: 'Citibank',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -326,7 +326,7 @@ const bankAccount = {
  * console.log(contaBancaria('HSBC'));
  * // =>
  *    {
- *      codigoBanco: 296,
+ *      codigoBanco: '296',
  *      nomeBanco: 'HSBC',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -339,7 +339,7 @@ const bankAccount = {
  * console.log(contaBancaria('Itaú'));
  * // =>
  *    {
- *      codigoBanco: 341,
+ *      codigoBanco: '341',
  *      nomeBanco: 'Itaú',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -352,7 +352,7 @@ const bankAccount = {
  * console.log(contaBancaria('Santander'));
  * // =>
  *    {
- *      codigoBanco: 33,
+ *      codigoBanco: '33',
  *      nomeBanco: 'Santander',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -364,7 +364,7 @@ const bankAccount = {
  * console.log(contaBancaria());
  * // =>
  *    {
- *      codigoBanco: 1,
+ *      codigoBanco: '1',
  *      nomeBanco: 'Banco do Brasil',
  *      agencia: '1234-5',
  *      agenciaDv: '5',
@@ -378,7 +378,7 @@ export const contaBancaria = function cb(bank) {
   const [acc, accDv] = ba.account.split('-');
 
   return {
-    codigoBanco: ba.bankCode,
+    codigoBanco: String(ba.bankCode),
     nomeBanco: ba.bankName,
     agencia: age,
     agenciaDv: ageDv || '',

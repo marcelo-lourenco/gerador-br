@@ -18,6 +18,7 @@ import { dataNascimento } from './generators/data-nascimento.js';
 import { ddd } from './generators/ddd.js';
 import { email } from './generators/email.js';
 import { endereco } from './generators/endereco.js';
+import { genero } from './generators/genero.js';
 import { inscricaoEstadual } from './generators/inscricao-estadual.js';
 import { nome } from './generators/nome.js';
 import { passaporte } from './generators/passaporte.js';
@@ -70,6 +71,27 @@ const gerar = {
   profissao: profissao(),
   escolaridade: escolaridade(),
 };
+
+
+/**
+ * gerar gênero aleatório
+ * @param {string} [input] - Sigla ou descrição do gênero. Pode ser:
+ *   - Siglas: 'm', 'f', 'i'
+ *   - Descrições: 'Masculino', 'Feminino', 'Intersexo'
+ *   - Se não for fornecido ou inválido, retorna aleatoriamente 'm, Masculino' ou 'f, Feminino'.
+ *
+ * @returns {string} - Um objeto no formato `{sigla: <sigla>, descricao: <descricao>}`.
+ *   - Exemplo: `{sigla: 'm', descricao: 'Masculino'}`
+ *
+ * @example
+ * genero('f'); // Retorna: "{sigla: 'f', descricao: 'Feminino'}"
+ * genero('m'); // Retorna: "{sigla: 'm', descricao: 'Masculino'}"
+ * genero('i'); // Retorna: "{sigla: 'i', descricao: 'Intersexo'}"
+ * genero('feminino'); // Retorna: "{sigla: 'f', descricao: 'Feminino'}"
+ * genero('masculino'); // Retorna: "{sigla: 'm', descricao: 'Masculino'}"
+ * genero(); // Retorna aleatoriamente: "{sigla: 'm', descricao: 'Masculino'}" ou "{sigla: 'f', descricao: 'Feminino'}"
+ * */
+gerar.genero = genero();
 
 /**
  * Gera nomes aleatórios.
@@ -126,7 +148,7 @@ gerar.nome = nome;
  * console.log(banco());
  * // =>
  * {
- *   codigoBanco: 341,
+ *   codigoBanco: '341',
  *   nomeBanco: 'Itaú Unibanco S.A.',
  *   razaoSocial: 'Banco Itaú Unibanco - 341',
  *   ispb: '03415961'
@@ -136,7 +158,7 @@ gerar.nome = nome;
  * console.log(banco(237));
  * // =>
  * {
- *   codigoBanco: 237,
+ *   codigoBanco: '237',
  *   nomeBanco: 'BANCO BRADESCO S.A.',
  *   razaoSocial: 'BANCO BRADESCO S.A.',
  *   ispb: '60746948'
@@ -218,7 +240,7 @@ gerar.cartaoCredito = cartaoCredito();
  * console.log(gerar.contaBancaria('Banco do Brasil'));
  * // =>
  *    {
- *      codigoBanco: 1,
+ *      codigoBanco: '1',
  *      nomeBanco: 'Banco do Brasil',
  *      agencia: '1234-5',
  *      agenciaDv: '5',
@@ -231,7 +253,7 @@ gerar.cartaoCredito = cartaoCredito();
  * console.log(gerar.contaBancaria('Bradesco'));
  * // =>
  *    {
- *      codigoBanco: 237,
+ *      codigoBanco: '237',
  *      nomeBanco: 'Bradesco',
  *      agencia: '1234-P',
  *      agenciaDv: 'P',
@@ -244,7 +266,7 @@ gerar.cartaoCredito = cartaoCredito();
  * console.log(gerar.contaBancaria('Caixa'));
  * // =>
  *    {
- *      codigoBanco: 104,
+ *      codigoBanco: '104',
  *      nomeBanco: 'Caixa',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -257,7 +279,7 @@ gerar.cartaoCredito = cartaoCredito();
  * console.log(gerar.contaBancaria('Citibank'));
  * // =>
  *    {
- *      codigoBanco: 745,
+ *      codigoBanco: '745',
  *      nomeBanco: 'Citibank',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -270,7 +292,7 @@ gerar.cartaoCredito = cartaoCredito();
  * console.log(gerar.contaBancaria('HSBC'));
  * // =>
  *    {
- *      codigoBanco: 296,
+ *      codigoBanco: '296',
  *      nomeBanco: 'HSBC',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -283,7 +305,7 @@ gerar.cartaoCredito = cartaoCredito();
  * console.log(gerar.contaBancaria('Itaú'));
  * // =>
  *    {
- *      codigoBanco: 341,
+ *      codigoBanco: '341',
  *      nomeBanco: 'Itaú',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -296,7 +318,7 @@ gerar.cartaoCredito = cartaoCredito();
  * console.log(gerar.contaBancaria('Santander'));
  * // =>
  *    {
- *      codigoBanco: 33,
+ *      codigoBanco: '33',
  *      nomeBanco: 'Santander',
  *      agencia: '1234',
  *      agenciaDv: '',
@@ -308,7 +330,7 @@ gerar.cartaoCredito = cartaoCredito();
  * console.log(gerar.contaBancaria());
  * // =>
  *    {
- *      codigoBanco: 1,
+ *      codigoBanco: '1',
  *      nomeBanco: 'Banco do Brasil',
  *      agencia: '1234-5',
  *      agenciaDv: '5',
@@ -435,10 +457,46 @@ gerar.tituloEleitor = tituloEleitor;
  */
 gerar.passaporte = passaporte;
 
-
+/**
+ * Gera números de certidões (nascimento, casamento, óbito) seguindo o padrão de Registro Civil Brasileiro.
+ *
+ * Este objeto fornece métodos para gerar números de certidões formatados ou não, além de objetos detalhados com informações como cartório, estado, ano de registro, tipo de livro, folha, termo, entre outros.
+ *
+ * @param {boolean} [mask=true] - Define se o número será formatado com máscara.
+ * @returns {string} Número da certidão aleatória, com ou sem máscara.
+ * @example
+ * console.log(certidao.aleatoria());         // "123456 12 2022 1001 1 12345 123 1234567"
+ * console.log(certidao.aleatoria(false));    // "12345612202210011123451231234567"
+ * console.log(certidao.nascimento());         // "123456 12 2022 1001 1 12345 123 1234567"
+ * console.log(certidao.nascimento(false));    // "12345612202210011123451231234567"
+ * console.log(certidao.casamento());         // "123456 12 2022 2001 1 12345 123 1234567"
+ * console.log(certidao.casamento(false));    // "12345612202220011123451231234567"
+ * console.log(certidao.obito());             // "123456 12 2022 3001 1 12345 123 1234567"
+ * console.log(certidao.obito(false));        // "12345612202230011123451231234567"
+ *
+ * // Gera um objeto detalhado de certidão aleatório
+ * console.log(certidao.aleatoriaObj());
+ * {
+ *   tipoCertidao: 'Nascimento',
+ *   cartorio: '123456',
+ *   estado: '12',
+ *   anoRegistro: '23',
+ *   tipoLivro: '1001',
+ *   tipoFolha: '1',
+ *   termo: '12345',
+ *   folha: '123',
+ *   livro: '1234567'
+ * }
+ *
+ * // Gera um objeto detalhado de certidão de nascimento 
+ * console.log(certidao.nascimentoObj());
+ * // { tipoCertidao: "Nascimento", cartorio: "123456", estado: "12", anoRegistro: "2022",  tipoLivro: '1001', ... }
+ *
+ * //Gera um objeto detalhado de uma certidão de casamento.
+ * console.log(certidao.casamentoObj());
+ * // { tipoCertidao: "Casamento", cartorio: "123456", estado: "12", anoRegistro: "2022", tipoLivro: '2001', ... }
+ */
 gerar.certidao = certidao;
-
-
 
 /**
  * Gera uma data de nascimento aleatória.
@@ -483,16 +541,16 @@ gerar.cep = cep;
  * @returns {object} O endereço gerado.
  * @example
  * // Endereço sem máscara
- * console.log(endereco()); // { cep: '12345678', logradouro: 'Rua dos Pinheiros', numero: 123, complemento: 'Apto 101', bairro: 'Jardim Paulista', localidade: 'São Paulo', estado: 'SP' }
+ * console.log(endereco()); // { cep: '12345678', logradouro: 'Rua dos Pinheiros', numero: '123', complemento: 'Apto 101', bairro: 'Jardim Paulista', localidade: 'São Paulo', estado: 'SP' }
  *
  * // Endereço com máscara
- * console.log(endereco(true)); // { cep: '12345-678', logradouro: 'Rua dos Pinheiros', numero: 123, complemento: 'Apto 101', bairro: 'Jardim Paulista', localidade: 'São Paulo', estado: 'SP' }
+ * console.log(endereco(true)); // { cep: '12345-678', logradouro: 'Rua dos Pinheiros', numero: '123', complemento: 'Apto 101', bairro: 'Jardim Paulista', localidade: 'São Paulo', estado: 'SP' }
  *
  * // Endereço de São Paulo (SP) sem máscara
- * console.log(endereco(false, "SP")); // { cep: '01001000', logradouro: 'Rua da Consolação', numero: 123, complemento: 'Apto 101', bairro: 'Consolação', localidade: 'São Paulo', estado: 'SP' }
+ * console.log(endereco(false, "SP")); // { cep: '01001000', logradouro: 'Rua da Consolação', numero: '123', complemento: 'Apto 101', bairro: 'Consolação', localidade: 'São Paulo', estado: 'SP' }
  *
  * // Endereço de São Paulo (SP) com máscara
- * console.log(endereco(true, "SP")); // { cep: '01001-000', logradouro: 'Rua da Consolação', numero: 123, complemento: 'Apto 101', bairro: 'Consolação', localidade: 'São Paulo', estado: 'SP' }
+ * console.log(endereco(true, "SP")); // { cep: '01001-000', logradouro: 'Rua da Consolação', numero: '123', complemento: 'Apto 101', bairro: 'Consolação', localidade: 'São Paulo', estado: 'SP' }
  */
 gerar.endereco = endereco;
 
@@ -757,6 +815,7 @@ export {
   email,
   endereco,
   escolaridade,
+  genero,
   identidadeGenero,
   identidadePorOrientacao,
   inscricaoEstadual,

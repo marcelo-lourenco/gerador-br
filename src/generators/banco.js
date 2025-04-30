@@ -12,7 +12,7 @@ const getRandomBank = (arr) => arr[Math.floor(Math.random() * arr.length)];
  * console.log(banco());
  * // =>
  * {
- *   codigoBanco: 341,
+ *   codigoBanco: '341',
  *   nomeBanco: 'Itaú Unibanco S.A.',
  *   razaoSocial: 'Banco Itaú Unibanco - 341',
  *   ispb: '03415961'
@@ -22,7 +22,7 @@ const getRandomBank = (arr) => arr[Math.floor(Math.random() * arr.length)];
  * console.log(banco(1));
  * // =>
  * {
- *   codigoBanco: 1,
+ *   codigoBanco: '1',
  *   nomeBanco: 'Banco do Brasil S.A.',
  *   razaoSocial: 'Banco do Brasil S.A. - 001',
  *   ispb: '00000000'
@@ -39,7 +39,7 @@ export const banco = function bank(code) {
     bankRand = getRandomBank(banks);
   }
   return {
-    codigoBanco: bankRand.code,
+    codigoBanco: String(bankRand.code),
     nomeBanco: bankRand.name,
     razaoSocial: bankRand.fullName,
     ispb: bankRand.ispb,
