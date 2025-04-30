@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador-BR | Formulário para Teste</title>
+  <meta name="description" content="Formulário para Testes com o pacote Gerador-BR">
+  <meta name="keywords" content="CPF,CNH,RG,CNS,PIS,Título de Eleitor,Passaporte,Certidão,CNPJ,Inscrição Estadual,Banco,Lista de Códigos de Bancos,Cartão de Crédito,Conta Bancária,Nome,Apelido,Data de Nascimento,Escolaridade,Profissão,Cor da Pele,Tipo Sanguíneo,Email,DDD,Código da Operadora,Celular,Telefone,CEP,Endereço,Placa Antiga,Placa Mercosul,Renavam,Palavra,Sentença,Parágrafo">
+  <meta name="author" content="Marcelo Lourenço">
+  <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
+
+  <!-- Open Graph (para redes sociais) -->
+  <meta property="og:title" content="Gerador-BR | Formulário para Teste">
+  <meta property="og:description" content="Formulário para Testes com o pacote Gerador-BR">
+  <meta property="og:image" content="../assets/images/features/social-preview.png">
+  <meta property="og:url" content="https://marcelo-lourenco.github.io/gerador-br">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gerador-BR | Formulário para Teste">
+  <meta name="twitter:description" content="Formulário para Testes com o pacote Gerador-BR">
+  <meta name="twitter:image" content="../assets/images/features/social-preview.png">
+
+  <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-24x24.svg" sizes="24x24">
+  <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-48x48.svg" sizes="48x48">
+  <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-128x128.svg" sizes="128x128">
+
+  <link rel="stylesheet" href="../assets/plugins/poppins/font-poppins.css">
+  <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/theme.css" id="theme-style">
+
+  <script src="../assets/fontawesome/js/all.min.js"></script>
+  <script src="../assets/plugins/iconify.min.js"></script>
+
+  
+  <link rel="stylesheet" href="../assets/plugins/simplelightbox/simple-lightbox.min.css">
+  <link rel="stylesheet" href="../assets/plugins/prism/prism.css"/>
+  <link rel="stylesheet" href="../assets/css/prism-light.css">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Gerador-BR | Formulário para Teste",
+      "url": "https://marcelo-lourenco.github.io/gerador-br/",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All",
+      "description": "Formulário para Testes com o pacote Gerador-BR",
+      "image": "https://marcelo-lourenco.github.io/gerador-br/assets/images/features/social-preview.png",
+      "datePublished": "2024-06-01",
+      "dateModified": "2025-04-22",
+      "author": {
+        "@type": "Person",
+        "name": "Marcelo Lourenço",
+        "url": "https://github.com/marcelo-lourenco"
+      },
+      "creator": {
+        "@type": "Person",
+        "name": "Marcelo Lourenço",
+        "sameAs": [
+          "https://github.com/marcelo-lourenco",
+          "https://www.linkedin.com/in/marcelolourencodasilva/"
+        ]
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "BRL"
+      },
+      "license": "https://opensource.org/licenses/MIT",
+      "codeRepository": "https://github.com/marcelo-lourenco/gerador-br",
+      "releaseNotes": "https://www.npmjs.com/package/gerador-br",
+      "keywords": "CPF,CNH,RG,CNS,PIS,Título de Eleitor,Passaporte,Certidão,CNPJ,Inscrição Estadual,Banco,Lista de Códigos de Bancos,Cartão de Crédito,Conta Bancária,Nome,Apelido,Data de Nascimento,Escolaridade,Profissão,Cor da Pele,Tipo Sanguíneo,Email,DDD,Código da Operadora,Celular,Telefone,CEP,Endereço,Placa Antiga,Placa Mercosul,Renavam,Palavra,Sentença,Parágrafo",
+      "softwareHelp": {
+        "@type": "CreativeWork",
+        "url": "http://marcelo-lourenco.github.io/gerador-br/documentacao/"
+      }
+    }
+  </script>
+
+  <script src="../assets/plugins/prism/prism.min.js" defer></script>
+  <script src="../assets/plugins/prism/prism-javascript.min.js" defer></script>
+  <script src="../assets/plugins/prism/prism-bash.min.js" defer></script>
+
+  
+
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-DDJE8YJ36B"></script>
+  <script src="../assets/js/gtag-config.js"></script>
+</head>
+<body>
+  <header class="header fixed-top">
+  <div class="branding docs-branding">
+    <div class="container-fluid position-relative py-2">
+
+      <div class="docs-logo-wrapper">
+
+        
+        <button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+          type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+
+        <div class="site-logo">
+          <a class="navbar-brand" href="../">
+            <img class="logo-icon me-2" src="../assets/images/icons/favicon-24x24.svg" width="24" height="24" alt="Logo Gerador-BR" title="Gerador-BR" aria-label="Logo Gerador-BR">
+            <span class="logo-text d-none d-sm-inline">
+              Gerador<span class="text-alt">-BR</span>
+            </span>
+          </a>
+        </div>
+
+      </div>
+      <!--//docs-logo-wrapper-->
+
+      <div class="docs-top-utilities d-flex justify-content-end align-items-center pe-3">
+
+        
+
+        <nav class="navbar navbar-expand">
+          <div class="collapse navbar-collapse ms-auto" id="navigation">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item me-lg-4">
+                <a class="nav-link" href="../documentacao" aria-label="Documentação">Documentação</a>
+              </li>
+              <li class="nav-item dropdown me-lg-4">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Geradores</a>
+                <ul class="dropdown-menu dropdown-menu-end rounded shadow scrollable-menu docs-sidebar">
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-id-card"></i>
+                    </span>DOCUMENTOS PF
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-cpf" >Gerador de CPF</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-cnh">Gerador de CNH</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-rg">Gerador de RG</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-cartao-nacional-de-saude">Gerador de CNS</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-pis">Gerador de PIS</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-titulo-de-eleitor">Gerador de Título de Eleitor</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-passaporte">Gerador de Passaporte</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-certidao">Gerador de Certidão</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-building"></i>
+                    </span>DOCUMENTOS PJ
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-cnpj">Gerador de CNPJ</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-inscricao-estadual">Gerador de Inscrição Estadual</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-university"></i>
+                    </span>BANCOS
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-banco">Gerador de Banco</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-cartao-de-credito">Gerador de Cartão de Crédito</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-conta-bancaria">Gerador de Conta Bancária</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-phone"></i>
+                    </span>CONTATOS
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-cep">Gerador de CEP</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-endereco">Gerador de Endereço</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-car"></i>
+                    </span>VEÍCULOS
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-placa-antiga">Gerador de Placa Antiga</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-placa-mercosul">Gerador de Placa MERCOSUL</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-renavam">Gerador de RENAVAM</a>
+                  </li>
+                  <li class="dropdown-header mt-3">
+                    <span class="theme-icon-holder">
+                      <i class="fas fa-align-left"></i>
+                    </span>LOREM IPSUM
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-sentenca">Gerador de Sentença</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-paragrafos">Gerador de Parágrafos</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item pt-3 pt-lg-0">
+                <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+                  <li class="list-inline-item">
+                    <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm">
+                      <i class="fa-brands fa-npm fa-fw"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener"
+                      aria-label="GitHub">
+                      <i class="fa-brands fa-github fa-fw"></i>
+                    </a>
+                  </li>
+                </ul>
+                <!--//social-list-->
+              </li>
+            </ul>
+            <!--//navbar-nav-->
+
+          </div>
+        </nav>
+
+      </div>
+      <!--//docs-top-utilities-->
+    </div>
+    <!--//container-->
+  </div>
+  <!--//branding-->
+</header>
+<!--//header-->
+  
+
+<div class="container my-5">
+
+  <section class="docs-overview py-5" aria-labelledby="compatibilidade-heading">
+    <div class="container">
+      <h1 id="formulario-teste" class="text-center mb-4 h4">Formulário de Teste - Gerador-BR</h3>
+      <p class="text-center mb-5">
+        Baixe o projeto de exemplo desejado.
+      </p>
+
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+
+        <div class="tech-badge">
+          <span class="iconify" data-icon="logos:nodejs" data-width="40" data-height="40"></span>
+          <span>Node.js</span>
+        </div>
+
+        <div class="tech-badge">
+          <span class="iconify" data-icon="logos:cypress" data-width="40" data-height="40"></span>
+          <span>Cypress</span>
+        </div>
+
+        <div class="tech-badge">
+          <span class="iconify" data-icon="logos:jest" data-width="40" data-height="40"></span>
+          <span>Jest</span>
+        </div>
+
+        <div class="tech-badge">
+          <span class="iconify" data-icon="logos:playwright" data-width="40" data-height="40"></span>
+          <span>Playwright</span>
+        </div>
+
+        <div class="tech-badge">
+          <span class="iconify" data-icon="logos:jasmine" data-width="40" data-height="40"></span>
+          <span>Jasmine</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <form id="testForm" novalidate>
+
+    <div class="row justify-content-center">
+
+      <!-- Coluna: Pessoa -->
+      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+        <div class="card shadow-sm flex-fill">
+          <div class="card-body d-flex flex-column">
+
+            <!-- Pessoa -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-user" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Pessoa</span>
+              </h2>
+            </div>
+
+            <!-- Nome -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldNome" name="fldNome" placeholder="Nome"
+                aria-label="Nome">
+              <label class="required" for="fldNome">Nome</label>
+            </div>
+
+            <!-- Pai -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldPai" name="fldPai" placeholder="Pai"
+                aria-label="Pai">
+              <label class="required" for="fldPai">Pai</label>
+            </div>
+
+            <!-- Mãe -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldMae" name="fldMae" placeholder="Mãe"
+                aria-label="Mãe">
+              <label class="required" for="fldMae">Mãe</label>
+            </div>
+
+            <!-- Apelido -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldApelido" name="fldApelido" placeholder="Apelido"
+                aria-label="Apelido">
+              <label class="required" for="fldApelido">Apelido</label>
+            </div>
+
+            <!-- Escolaridade -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldEscolaridade" name="fldEscolaridade"
+                placeholder="Escolaridade" aria-label="Escolaridade">
+              <label class="required" for="fldEscolaridade">Escolaridade</label>
+            </div>
+
+            <!-- Profissão -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldProfissao" name="fldProfissao"
+                placeholder="Profissão" aria-label="Profissão">
+              <label class="required" for="fldProfissao">Profissão</label>
+            </div>
+
+            <!-- Cor da Pele -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCorPele" name="fldCorPele"
+                placeholder="Cor da Pele" aria-label="Cor da Pele">
+              <label class="required" for="fldCorPele">Cor da Pele</label>
+            </div>
+
+            <!-- Gênero -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldGenero" name="fldGenero" placeholder="Gênero"
+                aria-label="Gênero">
+              <label class="required" for="fldGenero">Gênero</label>
+            </div>
+
+            <!-- Orientação Sexual -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldOrientacaoSexual" name="fldOrientacaoSexual"
+                placeholder="Orientação Sexual" aria-label="Orientação Sexual">
+              <label class="required" for="fldOrientacaoSexual">Orientação Sexual</label>
+            </div>
+
+            <!-- Identidade de Gênero -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldIdentidadeGenero" name="fldIdentidadeGenero"
+                placeholder="Identidade de Gênero" aria-label="Identidade de Gênero">
+              <label class="required" for="fldIdentidadeGenero">Identidade de Gênero</label>
+            </div>
+
+            <!-- Tipo Sanguíneo -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldTipoSanguineo" name="fldTipoSanguineo"
+                placeholder="Tipo Sanguíneo" aria-label="Tipo Sanguíneo">
+              <label class="required" for="fldTipoSanguineo">Tipo Sanguíneo</label>
+            </div>
+
+            <!-- Data de Nascimento -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="date" required class="form-control" id="fldDataNascimento" name="fldDataNascimento"
+                placeholder="Data de Nascimento" aria-label="Data de Nascimento">
+              <label class="required" for="fldDataNascimento">Data de Nascimento</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--//col-->
+
+      <!-- Coluna: Documentos -->
+      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+        <div class="card shadow-sm flex-fill">
+          <div class="card-body d-flex flex-column">
+
+            <!-- Documentos PJ -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-building" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Documentos PJ</span>
+              </h2>
+            </div>
+
+            <!-- CNPJ -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCnpj" name="fldCnpj" placeholder="CNPJ"
+                aria-label="CNPJ">
+              <label class="required" for="fldCnpj">CNPJ</label>
+            </div>
+
+            <!-- Inscrição Estadual -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldInscricaoEstadual" name="fldInscricaoEstadual"
+                placeholder="Inscrição Estadual" aria-label="Inscrição Estadual">
+              <label class="required" for="fldInscricaoEstadual">Inscrição Estadual</label>
+            </div>
+
+            <!-- Documentos PF -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-id-card" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Documentos PF</span>
+              </h2>
+            </div>
+
+            <!-- CPF -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCpf" name="fldCpf" placeholder="CPF"
+                aria-label="CPF">
+              <label class="required" for="fldCpf">CPF</label>
+            </div>
+
+            <!-- CNH -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCnh" name="fldCnh" placeholder="CNH"
+                aria-label="CNH">
+              <label class="required" for="fldCnh">CNH</label>
+            </div>
+
+            <!-- RG -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldRg" name="fldRg" placeholder="RG" aria-label="RG">
+              <label class="required" for="fldRg">RG</label>
+            </div>
+
+            <!-- CNS -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCns" name="fldCns" placeholder="CNS"
+                aria-label="CNS">
+              <label class="required" for="fldCns">CNS</label>
+            </div>
+
+            <!-- PIS -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldPis" name="fldPis" placeholder="PIS"
+                aria-label="PIS">
+              <label class="required" for="fldPis">PIS</label>
+            </div>
+
+            <!-- Título de Eleitor -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldTituloEleitor" name="fldTituloEleitor"
+                placeholder="Título de Eleitor" aria-label="Título de Eleitor">
+              <label class="required" for="fldTituloEleitor">Título de Eleitor</label>
+            </div>
+
+            <!-- Passaporte -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldPassaporte" name="fldPassaporte"
+                placeholder="Passaporte" aria-label="Passaporte">
+              <label class="required" for="fldPassaporte">Passaporte</label>
+            </div>
+
+            <!-- Certidão de Nascimento -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCertidaoNascimento" name="fldCertidaoNascimento"
+                placeholder="Certidão de Nascimento" aria-label="Certidão de Nascimento">
+              <label class="required" for="fldCertidaoNascimento">Certidão de Nascimento</label>
+            </div>
+
+            <!-- Certidão de Casamento -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCertidaoCasamento" name="fldCertidaoCasamento"
+                placeholder="Certidão de Casamento" aria-label="Certidão de Casamento">
+              <label class="required" for="fldCertidaoCasamento">Certidão de Casamento</label>
+            </div>
+
+            <!-- Certidão de Óbito -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCertidaoObito" name="fldCertidaoObito"
+                placeholder="Certidão de Óbito" aria-label="Certidão de Óbito">
+              <label class="required" for="fldCertidaoObito">Certidão de Óbito</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--//col-->
+
+      <!-- Coluna: Contatos e Endereço -->
+      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+        <div class="card shadow-sm flex-fill">
+          <div class="card-body d-flex flex-column">
+
+            <!-- Contatos -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-address-book" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Contatos</span>
+              </h2>
+            </div>
+
+            <!-- E-mail -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="email" required class="form-control" id="fldEmail" name="fldEmail" placeholder="E-mail"
+                aria-label="Email">
+              <label class="required" for="fldEmail">E-mail</label>
+            </div>
+
+            <!-- DDD -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldDdd" name="fldDdd" placeholder="DDD"
+                aria-label="DDD">
+              <label class="required" for="fldDdd">DDD</label>
+            </div>
+
+            
+
+            <!-- Telefone -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCelular" name="fldCelular" placeholder="Celular"
+                aria-label="Celular">
+              <label class="required" for="fldCelular">Celular</label>
+            </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldTelefone" name="fldTelefone"
+                placeholder="Telefone" aria-label="Telefone">
+              <label class="required" for="fldTelefone">Telefone</label>
+            </div>
+
+            <!-- Endereço -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Endereço</span>
+              </h2>
+            </div>
+
+            <!-- Logradouro -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldLogradouro" name="fldLogradouro"
+                placeholder="Logradouro" aria-label="Logradouro">
+              <label class="required" for="fldLogradouro">Logradouro</label>
+            </div>
+
+            <!-- Número -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldNumero" name="fldNumero" placeholder="Número"
+                aria-label="Número">
+              <label class="required" for="fldNumero">Número</label>
+            </div>
+
+            <!-- Complemento -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldComplemento" name="fldComplemento"
+                placeholder="Complemento" aria-label="Complemento">
+              <label class="required" for="fldComplemento">Complemento</label>
+            </div>
+
+            <!-- Bairro -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldBairro" name="fldBairro" placeholder="Bairro"
+                aria-label="Bairro">
+              <label class="required" for="fldBairro">Bairro</label>
+            </div>
+
+            <!-- Localidade -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldLocalidade" name="fldLocalidade"
+                placeholder="Cidade" aria-label="Cidade">
+              <label class="required" for="fldLocalidade">Cidade</label>
+            </div>
+
+            <!-- Estado -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldEstado" name="fldEstado" placeholder="Estado"
+                aria-label="Estado">
+              <label class="required" for="fldEstado">Estado</label>
+            </div>
+
+            <!-- CEP -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCep" name="fldCep" placeholder="CEP"
+                aria-label="CEP">
+              <label class="required" for="fldCep">CEP</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--//col-->
+
+      <!-- Coluna: Bancos e Cartões -->
+      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+        <div class="card shadow-sm flex-fill">
+          <div class="card-body d-flex flex-column">
+
+            <!-- Cartão -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-credit-card" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Cartão de Crédito</span>
+              </h2>
+            </div>
+
+            <!-- Cartão de Crédito -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCartaoCredito" name="fldCartaoCredito"
+                placeholder="Cartão de Crédito" aria-label="Cartão de Crédito">
+              <label class="required" for="fldCartaoCredito">Cartão de Crédito</label>
+            </div>
+
+            <!-- Bandeira -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldBandeira" name="fldBandeira"
+                placeholder="Bandeira" aria-label="Bandeira">
+              <label class="required" for="fldBandeira">Bandeira</label>
+            </div>
+
+            <!-- Nome do Titular -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldNomeTitular" name="fldNomeTitular"
+                placeholder="Nome do Titular" aria-label="Nome do Titular">
+              <label class="required" for="fldNomeTitular">Nome do Titular</label>
+            </div>
+
+            <!-- CVV -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCvv" name="fldCvv" placeholder="CVV"
+                aria-label="CVV">
+              <label class="required" for="fldCvv">CVV</label>
+            </div>
+
+            <!-- Data de Expiração -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldDataExpiracao" name="fldDataExpiracao"
+                placeholder="Data de Expiração" aria-label="Data de Expiração">
+              <label class="required" for="fldDataExpiracao">Data de Expiração</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--//col-->
+
+      <!-- Coluna: Conta Bancária -->
+      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+        <div class="card shadow-sm flex-fill">
+          <div class="card-body d-flex flex-column">
+
+            <!-- Conta Bancária -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-money-check-alt" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Conta Bancária</span>
+              </h2>
+            </div>
+
+            <!-- Código do Banco -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldCodigoBanco" name="fldCodigoBanco"
+                placeholder="Código do Banco" aria-label="Código do Banco">
+              <label class="required" for="fldCodigoBanco">Código do Banco</label>
+            </div>
+
+            <!-- Nome do Banco -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldNomeBanco" name="fldNomeBanco"
+                placeholder="Nome do Banco" aria-label="Nome do Banco">
+              <label class="required" for="fldNomeBanco">Nome do Banco</label>
+            </div>
+
+            <!-- Agência e DV Agência -->
+            <div class="row g-2">
+              <div class="col-md-9">
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" required class="form-control" id="fldAgencia" name="fldAgencia"
+                    placeholder="Agência" aria-label="Agência">
+                  <label class="required" for="fldAgencia">Agência</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldAgenciaDv" name="fldAgenciaDv" placeholder="DV Agência"
+                    aria-label="DV Agência">
+                  <label for="fldAgenciaDv">DV Ag.</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conta e DV Conta -->
+            <div class="row g-2">
+              <div class="col-md-9">
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" required class="form-control" id="fldConta" name="fldConta" placeholder="Conta"
+                    aria-label="Conta">
+                  <label class="required" for="fldConta">Conta</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldContaDv" name="fldContaDv" placeholder="DV Conta"
+                    aria-label="DV Conta">
+                  <label for="fldContaDv">DV CC.</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--//col-->
+
+      <!-- Coluna: Banco -->
+      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+        <div class="card shadow-sm flex-fill">
+          <div class="card-body d-flex flex-column">
+
+            <!-- Banco -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-university" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Banco</span>
+              </h2>
+            </div>
+
+            <!-- Banco Código -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldBancoCodigo" name="fldBancoCodigo"
+                placeholder="Código do Banco" aria-label="Código do Banco">
+              <label class="required" for="fldBancoCodigo">Código do Banco</label>
+            </div>
+
+            <!-- Banco Nome -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldBancoNome" name="fldBancoNome"
+                placeholder="Nome do Banco" aria-label="Nome do Banco">
+              <label class="required" for="fldBancoNome">Nome do Banco</label>
+            </div>
+
+            <!-- Banco Razão Social -->
+            <div class="form-floating mb-3 position-relative">
+
+              <input type="text" required class="form-control" id="fldRazaoSocial" name="fldRazaoSocial"
+                placeholder="Razão Social" aria-label="Razão Social">
+              <label class="required" for="fldRazaoSocial">Razão Social</label>
+
+            </div>
+
+            <!-- ISPB -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" id="fldIspb" name="fldIspb" placeholder="ISPB" aria-label="ISPB">
+              <label for="fldIspb">ISPB</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--//col-->
+
+      <!-- Coluna: Veículo -->
+      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+        <div class="card shadow-sm flex-fill">
+          <div class="card-body d-flex flex-column">
+            <!-- Veículo -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-car" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Veículo</span>
+              </h2>
+            </div>
+
+            <!-- Placa Antiga -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldPlacaAntiga" name="fldPlacaAntiga"
+                placeholder="Placa Antiga" aria-label="Placa Antiga">
+              <label class="required" for="fldPlacaAntiga">Placa Antiga</label>
+            </div>
+
+            <!-- Placa Mercosul -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldPlacaMercosul" name="fldPlacaMercosul"
+                placeholder="Placa Mercosul" aria-label="Placa Mercosul">
+              <label class="required" for="fldPlacaMercosul">Placa Mercosul</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--//col-->
+
+      <!-- Coluna: LOREM IPSUM  -->
+      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+        <div class="card shadow-sm flex-fill">
+          <div class="card-body d-flex flex-column">
+            <!-- Lorem Ipsum -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-car" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Lorem Ipsum</span>
+              </h2>
+            </div>
+
+            <!-- Palavra -->
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" required class="form-control" id="fldPalavra" name="fldPalavra"
+                placeholder="Palavra" aria-label="Palavra">
+              <label class="required" for="fldPalavra">Palavra</label>
+            </div>
+
+            <!-- Sentença -->
+            <div class="form-floating mb-3 position-relative">
+              <textarea required class="form-control mnh-100 pe-5" id="fldSentenca" name="fldSentenca" 
+                placeholder="Sentença" aria-label="Sentença" rows="10" ></textarea>
+              <label class="required" for="fldSentenca">Sentença</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+        <div class="card shadow-sm flex-fill">
+          <div class="card-body d-flex flex-column">
+            <!-- Lorem Ipsum -->
+            <div class="form-floating mt-3 position-relative">
+              <h2 class="h4 mb-3">
+                <span class="theme-icon-holder card-icon-holder me-2">
+                  <i class="fas fa-car" aria-hidden="true"></i>
+                </span>
+                <span class="card-title-text">Lorem Ipsum</span>
+              </h2>
+            </div>
+
+            <!-- Parágrafo -->
+            <div class="form-floating mb-3 position-relative">
+              <textarea required class="form-control mnh-300 pe-5" id="fldParagrafos" name="fldParagrafos" 
+                placeholder="Parágrafos" aria-label="Parágrafos gerados" rows="10"></textarea>
+              <label class="required" for="fldParagrafos">Parágrafos</label>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--//col-->
+
+      <div id="validacao" class="mt-4" style="display: none;">
+        <div class="alert" id="alertValidacao">
+          <strong>
+            <span id="mensagemValidacao"></span>
+          </strong>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+
+    </div>
+    <!--//row-->
+  </form>
+
+</div>
+
+<footer class="footer">
+
+  <div class="footer-bottom text-center py-4">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 text-start">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <small class="copyright">© 2023 Gerador-BR</small>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 text-end">
+          <ul class="social-list list-unstyled pb-4 mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm">
+                <i class="fa-brands fa-npm fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener"
+                aria-label="GitHub">
+                <i class="fa-brands fa-github fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/marcelolourencodasilva/" target="_blank" rel="noopener"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--//container-->
+
+  </div>
+</footer>
+  <!-- Javascript -->
+<script src="../assets/plugins/popper.min.js"></script>
+<script src="../assets/plugins/bootstrap/js/bootstrap.min.js" defer></script>
+
+<!-- Page Specific JS -->
+
+<script src="../assets/plugins/smoothscroll.min.js"></script>
+<script src="../assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+<script src="../assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+<script src="../assets/js/sidebar.js"></script>
+<script>
+  var exports = {};
+</script>
+<script src="../assets/js/gerador-br.min.js"></script>
+<script>
+  var exports = {};
+</script>
+<script src="../assets/js/generators.js"></script>
+
+</body>
+</html>

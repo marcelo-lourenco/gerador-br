@@ -152,7 +152,7 @@ a.text-link:hover {
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
   height: 2.75rem;
-  border-color: #e0f7e6
+  border-color: var(--bs-border-color)
 }
 
 .form-control:focus {
@@ -1050,6 +1050,12 @@ form-floating > .form-control:focus ~ label::after,
 .form-check-input:checked {
   background-color: #5236CB;
   border-color: #5236CB;
+}
+
+.required::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
 }
 
 /********************* voltar ao topo *********************/
