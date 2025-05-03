@@ -62,7 +62,7 @@ function formatCNPJ(cnpj) {
  * @param {boolean} masked - Se true, retorna com máscara de formatação
  * @returns {string} CNPJ gerado
  */
-function generateCNPJ(masked = false) {
+function cnpjAlfanumerico(masked = false) {
   // Gera 12 caracteres alfanuméricos aleatórios
   let base = '';
   for (let i = 0; i < 12; i++) {
@@ -90,15 +90,14 @@ function cnpjDV(dv) {
  * Gera um número de CNPJ aleatório (compatibilidade com versão anterior)
  * @param {boolean} mask - Se true, retorna com máscara de formatação
  * @returns {string} CNPJ gerado
+ * @example
+ * console.log(cnpjAlfanumerico(true));   // CNPJ formatado
+ * console.log(cnpjAlfanumerico(false)); // CNPJ sem formatação
+ * console.log(cnpj());                  // Usando a função de compatibilidade
  */
 function cnpj(mask = false) {
-  return generateCNPJ(mask);
+  return cnpjAlfanumerico(mask);
 }
 
 // Exportação das funções
-export { cnpjDV, cnpj, generateCNPJ };
-
-// Exemplo de uso:
- console.log(generateCNPJ(true));  // CNPJ formatado
- console.log(generateCNPJ(false)); // CNPJ sem formatação
- console.log(cnpj(true));         // Usando a função de compatibilidade
+export { cnpjDV, cnpj, cnpjAlfanumerico };

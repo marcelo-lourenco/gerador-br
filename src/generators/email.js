@@ -1,4 +1,5 @@
-import { apelidoRand, provedorEmailRand } from '../utils.js';
+import { provedorEmail } from './provedorEmail.js';
+import { apelido } from './apelido.js';
 
 /**
  * Gera um endereço de e-mail aleatório.
@@ -15,7 +16,7 @@ import { apelidoRand, provedorEmailRand } from '../utils.js';
  * console.log(email("José Maria")); // Pode retornar algo como "jose.maria@ig.com"
  *
  * // Gera um endereço de e-mail com base no nome aleatório
- * console.log(email(gerar.nomeFemininoCompleto)); // Pode retornar algo como "ana.borges@hotmail.com"
+ * console.log(email(nomeFemininoCompleto)); // Pode retornar algo como "ana.borges@hotmail.com"
  */
 export function email(fullName) {
   let mail = '';
@@ -24,7 +25,7 @@ export function email(fullName) {
     let partsName = removeSpecialCharacter.match(/\w+/g);
     mail = partsName.slice(0, 2).join(' ').toLowerCase().replace(/ /g, '.');
   } else {
-    mail = apelidoRand.toLowerCase();
+    mail = apelido().toLowerCase();
   }
-  return `${mail}${provedorEmailRand}`;
+  return `${mail}${provedorEmail()}`;
 }

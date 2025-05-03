@@ -1,12 +1,5 @@
-import {
-  nomeAleatorioRand,
-  nomeDoMeioRand,
-  nomeFemininoRand,
-  nomeMaeRand,
-  nomeMasculinoRand,
-  nomePaiRand,
-  sobrenomeRand,
-} from '../utils.js';
+import { nomesFemininos, nomesMasculinos, nomesDoMeio, sobrenomes } from '../data/db-general.js';
+import { getRandom } from '../utils.js';
 
 /**
  * Gera nomes aleatórios.
@@ -18,7 +11,7 @@ import {
  * // Gerar um nome aleatório
  * console.log(nome.aleatorio()); // Ex: "João", "Maria"
  *
- *  // Gerar um nome aleatório completo
+ * // Gerar um nome aleatório completo
  * console.log(nome.aleatorioCompleto()); // Ex: "João Santos da Silva", "Maria Santos da Silva"
  *
  * // Gerar um nome masculino aleatório
@@ -52,76 +45,81 @@ import {
  * console.log(nome.sobrenome()); // Ex: "da Silva"
  */
 export const nome = {
-
   /**
-  * Gera um nome aleatório.
-  * @returns {string} Um nome aleatório.
-  */
-  aleatorio() { return nomeAleatorioRand; },
-
-  /**
-  * Gera um nome aleatório completo.
-  * @returns {string} Um nome aleatório completo.
-  */
-  aleatorioCompleto() { return `${nomeAleatorioRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
-
-  /**
-   * Gera um nome masculino aleatório.
-   * @returns {string} Um nome masculino aleatório.
+   * Um nome aleatório.
+   * @returns {string} Retorna qualquer nome masculino ou feminino.
    */
-  masculino() { return nomeMasculinoRand; },
+  aleatorio() { return getRandom([...nomesFemininos, ...nomesMasculinos]); },
 
   /**
-   * Gera um nome masculino completo aleatório.
-   * @returns {string} Um nome masculino completo aleatório.
+   * Um nome aleatório completo.
+   * @returns {string} Retorna um nome completo aleatório.
    */
-  masculinoCompleto() { return `${nomeMasculinoRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
+  aleatorioCompleto() {
+    return `${this.aleatorio()} ${this.doMeio()} ${this.sobrenome()}`;
+  },
 
   /**
-   * Gera um nome feminino aleatório.
-   * @returns {string} Um nome feminino aleatório.
+   * Um nome masculino aleatório.
+   * @returns {string} Retorna qualquer nome masculino, como "Abel", "Abner", etc.
    */
-  feminino() { return nomeFemininoRand; },
+  masculino() { return getRandom(nomesMasculinos); },
 
   /**
-   * Gera um nome feminino completo aleatório.
-   * @returns {string} Um nome feminino completo aleatório.
+   * Um nome masculino completo aleatório.
+   * @returns {string} Retorna um nome masculino completo aleatório.
    */
-  femininoCompleto() { return `${nomeFemininoRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
+  masculinoCompleto() {
+    return `${this.masculino()} ${this.doMeio()} ${this.sobrenome()}`;
+  },
 
   /**
-   * Gera o nome da mãe aleatório.
-   * @returns {string} O nome da mãe aleatório.
+   * Um nome feminino aleatório.
+   * @returns {string} Retorna qualquer nome feminino, como "Ana", "Maria", etc.
    */
-  mae() { return `${nomeMaeRand}`; },
+  feminino() { return getRandom(nomesFemininos); },
 
   /**
-   * Gera o nome completo da mãe aleatório.
-   * @returns {string} O nome completo da mãe aleatório.
+   * Um nome feminino completo aleatório.
+   * @returns {string} Retorna um nome feminino completo aleatório.
    */
-  maeCompleto() { return `${nomeMaeRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
+  femininoCompleto() {
+    return `${this.feminino()} ${this.doMeio()} ${this.sobrenome()}`;
+  },
 
   /**
-   * Gera o nome do pai aleatório.
-   * @returns {string} O nome do pai aleatório.
+   * Um nome da mãe aleatório.
+   * @returns {string} Retorna qualquer nome feminino, como "Aaliyah", "Adelaide", etc.
    */
-  pai() { return `${nomePaiRand}`; },
+  mae() { return this.feminino(); },
 
   /**
-   * Gera o nome completo do pai aleatório.
-   * @returns {string} O nome completo do pai aleatório.
+   * Um nome completo da mãe aleatório.
+   * @returns {string} Retorna um nome completo feminino aleatório.
    */
-  paiCompleto() { return `${nomePaiRand} ${nomeDoMeioRand} ${sobrenomeRand}`; },
+  maeCompleto() { return this.femininoCompleto(); },
 
   /**
-   * Gera um nome do meio aleatório.
-   * @returns {string} Um nome do meio aleatório.
+   * Um nome do pai aleatório.
+   * @returns {string} Retorna qualquer nome masculino, como "Abel", "Abner", etc.
    */
-  doMeio() { return nomeDoMeioRand; },
+  pai() { return this.masculino(); },
 
   /**
-   * Gera um sobrenome aleatório.
-   * @returns {string} Um sobrenome aleatório.
+   * Um nome completo do pai aleatório.
+   * @returns {string} Retorna um nome completo masculino aleatório.
    */
-  sobrenome() { return sobrenomeRand; },
+  paiCompleto() { return this.masculinoCompleto(); },
+
+  /**
+   * Um nome do meio aleatório.
+   * @returns {string} Retorna qualquer nome do meio, como "Alencar", "Almeida", etc.
+   */
+  doMeio() { return getRandom(nomesDoMeio); },
+
+  /**
+   * Um sobrenome aleatório.
+   * @returns {string} Retorna qualquer sobrenome, como "Alves", "Amorim", etc.
+   */
+  sobrenome() { return getRandom(sobrenomes); }
 };

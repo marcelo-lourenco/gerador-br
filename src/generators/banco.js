@@ -28,7 +28,7 @@ const getRandomBank = (arr) => arr[Math.floor(Math.random() * arr.length)];
  *   ispb: '00000000'
  * }
  */
-export const banco = function bank(code) {
+export function banco(code) {
   let bankRand = '';
   if (code) {
     bankRand = banks.find((bnk) => bnk.code === parseInt(code, 10));
@@ -55,6 +55,6 @@ export const banco = function bank(code) {
  * console.log(listaCodigosBancos());
  * // => [ 1, 237, 104, 745, 296, 341, 33, ...]
  */
-export const listaCodigosBancos = function () {
+export function listaCodigosBancos() {
   return banks.map((bank) => bank.code);
 };

@@ -4,6 +4,18 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.2.0 (2025-05-03)
+
+### Adiciona Funcionalidade
+
+* Adiciona Gerador de CNPJ Alfanumérico
+
+### Refatora funcionalidades
+
+* Converte a chamada de todos os geradores para função
+
+---
+
 ## 1.1.3 (2025-02-04)
 
 ### Adiciona recurso

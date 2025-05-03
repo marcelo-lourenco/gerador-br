@@ -1,6 +1,6 @@
 {
   "name": "gerador-br",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Gerador de Dados Fictícios - Brasil",
   "main": "dist/cjs/index.cjs",
   "module": "dist/mjs/index.mjs",
@@ -33,7 +33,7 @@
     "url": "https://github.com/marcelo-lourenco/gerador-br.git"
   },
   "bugs": "https://github.com/marcelo-lourenco/gerador-br/issues",
-  "homepage": "https://marcelo-lourenco.github.io/gerador-br/#/",
+  "homepage": "https://marcelo-lourenco.github.io/gerador-br/",
   "keywords": [
     "gerador",
     "dados",
@@ -41,6 +41,7 @@
     "faker-br",
     "cpf",
     "cnpj",
+    "cnpj alfanumérico",
     "inscrição estadual",
     "rg",
     "cnh",

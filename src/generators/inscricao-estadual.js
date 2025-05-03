@@ -572,34 +572,34 @@ function ieDVTO(numbers) {
  * @param {string} state A sigla do estado para o qual gerar a inscrição estadual (por exemplo, 'SP', 'RJ', 'MG').
  * @returns {string|null} O número de inscrição estadual gerado ou null se o estado não for encontrado.
  * @example
- * console.log('Sem informar o estado', inscricaoEstadual());
- * console.log('AC', inscricaoEstadual('AC')); // AC 01.335116638
- * console.log('AL', inscricaoEstadual('AL')); // AL 477703437
- * console.log('AP', inscricaoEstadual('AP')); // AP 03.42773842
- * console.log('AM', inscricaoEstadual('AM')); // AM 1107521283
- * console.log('BA', inscricaoEstadual('BA')); // BA 16408652-16
- * console.log('CE', inscricaoEstadual('CE')); // CE 6624523654
- * console.log('DF', inscricaoEstadual('DF')); // DF 0724.4814180
- * console.log('ES', inscricaoEstadual('ES')); // ES 754167445
- * console.log('GO', inscricaoEstadual('GO')); // GO 670680320
- * console.log('MA', inscricaoEstadual('MA')); // MA 122542860
- * console.log('MT', inscricaoEstadual('MT')); // MT 44183991682
- * console.log('MS', inscricaoEstadual('MS')); // MS 284825620
- * console.log('MG', inscricaoEstadual('MG')); // MG 1772090571220
- * console.log('PA', inscricaoEstadual('PA')); // PA 157594408
- * console.log('PB', inscricaoEstadual('PB')); // PB 899410081
- * console.log('PR', inscricaoEstadual('PR')); // PR 79686556-52
- * console.log('PE', inscricaoEstadual('PE')); // PE 341771429
- * console.log('PI', inscricaoEstadual('PI')); // PI 758080174
- * console.log('RJ', inscricaoEstadual('RJ')); // RJ 41038311.44
- * console.log('RN', inscricaoEstadual('RN')); // RN 49799347-3
- * console.log('RS', inscricaoEstadual('RS')); // RS 506246789
- * console.log('RO', inscricaoEstadual('RO')); // RO 51694723-0
- * console.log('RR', inscricaoEstadual('RR')); // RR 24022984
- * console.log('SC', inscricaoEstadual('SC')); // SC 037515098
- * console.log('SP', inscricaoEstadual('SP')); // SP 4081896624448
- * console.log('SE', inscricaoEstadual('SE')); // SE 555790451
- * console.log('TO', inscricaoEstadual('TO')); // TO 55582433-0
+ * console.log(inscricaoEstadual());     // gera IE aleatória
+ * console.log(inscricaoEstadual('AC')); // 01.335116638
+ * console.log(inscricaoEstadual('AL')); // 477703437
+ * console.log(inscricaoEstadual('AP')); // 03.42773842
+ * console.log(inscricaoEstadual('AM')); // 1107521283
+ * console.log(inscricaoEstadual('BA')); // 16408652-16
+ * console.log(inscricaoEstadual('CE')); // 6624523654
+ * console.log(inscricaoEstadual('DF')); // 0724.4814180
+ * console.log(inscricaoEstadual('ES')); // 754167445
+ * console.log(inscricaoEstadual('GO')); // 670680320
+ * console.log(inscricaoEstadual('MA')); // 122542860
+ * console.log(inscricaoEstadual('MT')); // 44183991682
+ * console.log(inscricaoEstadual('MS')); // 284825620
+ * console.log(inscricaoEstadual('MG')); // 1772090571220
+ * console.log(inscricaoEstadual('PA')); // 157594408
+ * console.log(inscricaoEstadual('PB')); // 899410081
+ * console.log(inscricaoEstadual('PR')); // 79686556-52
+ * console.log(inscricaoEstadual('PE')); // 341771429
+ * console.log(inscricaoEstadual('PI')); // 758080174
+ * console.log(inscricaoEstadual('RJ')); // 41038311.44
+ * console.log(inscricaoEstadual('RN')); // 49799347-3
+ * console.log(inscricaoEstadual('RS')); // 506246789
+ * console.log(inscricaoEstadual('RO')); // 51694723-0
+ * console.log(inscricaoEstadual('RR')); // 24022984
+ * console.log(inscricaoEstadual('SC')); // 037515098
+ * console.log(inscricaoEstadual('SP')); // 4081896624448
+ * console.log(inscricaoEstadual('SE')); // 555790451
+ * console.log(inscricaoEstadual('TO')); // 55582433-0
  */
 export function inscricaoEstadual(state) {
   let stateCode = state || stateRand;

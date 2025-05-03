@@ -22,10 +22,10 @@ export const provedoresEmail = [
 export const palavras = [
   'lorem', 'ipsum', 'adipisicing', 'aliqua', 'aliquip', 'amet', 'anim', 'architecto', 'asperiores', 'assumenda', 'at', 'atque', 'autem', 'beatae', 'blanditiis', 'commodo', 'consequatur', 'consectetur', 'consequuntur', 'corporis', 'corrupti', 'culpa', 'cupidatat', 'cupiditate', 'debitis', 'delectus', 'deleniti', 'deserunt', 'dicta', 'dignissimos', 'do', 'dolore', 'dolorem', 'doloremque', 'dolorum', 'ducimus', 'ea', 'eaque', 'eius', 'eligendi', 'elit', 'enim', 'eos', 'est', 'et', 'eveniet', 'ex', 'excepturi', 'exercitation', 'exercitationem', 'expedita', 'explicabo', 'facere', 'facilis', 'fugiat', 'fuga', 'harum', 'hic', 'id', 'impedit', 'incididunt', 'incidunt', 'in', 'inventore', 'ipsa', 'ipsam', 'iste', 'itaque', 'iure', 'iusto', 'labore', 'laboriosam', 'laborum', 'laudantium', 'libero', 'magnam', 'magna', 'maiores', 'maxime', 'minima', 'minim', 'minus', 'molestiae', 'mollitia', 'mollit', 'molestias', 'modi', 'natus', 'necessitatibus', 'nemo', 'nesciunt', 'nihil', 'nisi', 'non', 'nobis', 'nostrum', 'numquam', 'occaecat', 'odit', 'officia', 'officiis', 'omnis', 'optio', 'pariatur', 'pariatur', 'perferendis', 'perspiciatis', 'placeat', 'praesentium', 'proident', 'provident', 'quae', 'quaerat', 'quas', 'qui', 'quidem', 'quis', 'quisquam', 'quo', 'ratione', 'recusandae', 'reiciendis', 'reprehenderit', 'reprehenderit', 'repellat', 'repellendus', 'repudiandae', 'rerum', 'saepe', 'sapiente', 'sed', 'sequi', 'similique', 'sit', 'sint', 'soluta', 'sunt', 'suscipit', 'tempora', 'temporibus', 'tenetur', 'totam', 'ut', 'vel', 'velit', 'veniam', 'vero', 'veritatis', 'vitae', 'voluptas', 'voluptate', 'voluptates', 'voluptatem', 'voluptatum',
 ];
-export const orientacaoSexual = [
+export const orientacoesSexual = [
   'Heterossexual', 'Homossexual', 'Bissexual', 'Assexual', 'Pansexual',
 ];
-export const identidesGenero = [
+export const identidadesGenero = [
   'Cisgênero', 'Transgênero', 'Não binário',
 ];
 export const identidadesPorOrientacao = {
@@ -35,17 +35,16 @@ export const identidadesPorOrientacao = {
   Assexual: ['Cisgênero', 'Transgênero', 'Não binário'],
   Pansexual: ['Cisgênero', 'Transgênero', 'Não binário'],
 };
-export const corPele = ['Branca', 'Preta', 'Parda', 'Amarela', 'Outro'];
+export const coresPele = ['Branca', 'Preta', 'Parda', 'Amarela', 'Outro'];
 
 export const tiposSanguineo = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'];
 
 export const categoriasCnh = ['ACC', 'A', 'B', 'C', 'D', 'E', 'AB', 'AC', 'AD', 'AE'];
 
-export const escolaridade = [
+export const escolaridades = [
   'Não Analfabetizado','Fundamental Incompleto','Fundamental Completo','Ensino Médio Incompleto','Ensino Médio Completo','Técnico Incompleto','Técnico Completo','Superior Incompleto','Superior Completo','Pós-graduação Lato Sensu (Especialização)','Pós-graduação Stricto Sensu (Mestrado)','Doutorado','Pós-doutorado',
 ];
 
-export const profissao = [
+export const profissoes = [
   'Açougueiro','Administrador','Advogado','Agente de Viagens','Agricultor','Alfaiate','Analista','Antropólogo','Arqueólogo','Arquiteto','Assistente Social','Astrônomo','Atendente','Auxiliar Administrativo','Auxiliar de Enfermagem','Bancário','Barbeiro','Barman','Bibliotecário','Biomédico','Biotecnólogo','Bombeiro','Cabeleireiro','Caminhoneiro','Cantor','Carpinteiro','Cenógrafo','Chef','Cientista de Dados','Cineasta','Comerciante','Contador','Corretor','Cozinheiro','Data Engineer','Decorador','Dentista','Designer','Desenvolvedor','Detetive','Diretor','Economista','Editor','Eletricista','Eletrônico','Empresário','Enfermeiro','Engenheiro','Estatístico','Esteticista','Farmacêutico','Figurinista','Fiscal','Fisioterapeuta','Fonoaudiólogo','Fotógrafo','Garçom','Geógrafo','Geólogo','Gerente','Guia de Turismo','Ilustrador','Interprete','Jardineiro','Joalheiro','Jornalista','Locutor','Maquiador','Marceneiro','Massoterapeuta','Médico','Motorista','Músico','Nutricionista','Odontólogo','Operador','Padeiro','Pedreiro','Pintor','Produtor Cultural','Professor','Psicólogo','Publicitário','Químico','Radialista','Recepcionista','Relações Públicas','Secretária','Sommelier','Sociólogo','Técnico','Terapeuta Ocupacional','Tradutor','Turismólogo','Urbanista','Vendedor','Veterinário','Web Designer','Youtuber','Zootecnista',
 ];
-
