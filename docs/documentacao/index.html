@@ -171,6 +171,9 @@
                     <a class="dropdown-item nav-link" href="../gerador-de-cnpj">Gerador de CNPJ</a>
                   </li>
                   <li class="dropdown-item nav-item">
+                    <a class="dropdown-item nav-link" href="../gerador-de-cnpj-alfanumerico">Gerador de CNPJ Alfanumérico</a>
+                  </li>
+                  <li class="dropdown-item nav-item">
                     <a class="dropdown-item nav-link" href="../gerador-de-inscricao-estadual">Gerador de Inscrição Estadual</a>
                   </li>
                   <li class="dropdown-header mt-3">
@@ -326,6 +329,9 @@
           <a class="nav-link scrollto" href="#cnpj">CNPJ</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link scrollto" href="#cnpjAlfanumerico">CNPJ Alfanumérico</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link scrollto" href="#inscricaoEstadual">Inscrição Estadual</a>
         </li>
         <li class="nav-item section-title mt-3">
@@ -457,9 +463,9 @@
               rel="noopener noreferrer"><img
                 src="https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff" alt="NPM downloads" /></a>
 
-            <a href="https://www.jsdelivr.com/package/npm/gerador-br" target="_blank" 
-                rel="noopener noreferrer"><img
-                    src="https://img.shields.io/jsdelivr/npm/hm/gerador-br?logo=jsDelivr&logoColor=ff5627" alt="jsDelivr" /></a>
+            <a href="https://www.jsdelivr.com/package/npm/gerador-br" target="_blank" rel="noopener noreferrer"><img
+                src="https://img.shields.io/jsdelivr/npm/hm/gerador-br?logo=jsDelivr&logoColor=ff5627"
+                alt="jsDelivr" /></a>
 
             <a href="https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file" target="_blank"
               rel="noopener noreferrer"><img
@@ -627,7 +633,7 @@ const gerar = require('gerador-br');
 
         <section class="docs-section" id="cpf">
           <h2 class="section-heading">CPF</h2>
-          <div class="docs-code-block">
+          <div class="docs-code-block" id="exemploCpf1">
             <pre><code class="language-js">
 import { cpf } from 'gerador-br'; // es module
 // const { cpf } = require('gerador-br'); // commonjs
@@ -644,9 +650,15 @@ cpf(true, "rs");
 // gera cpf sem máscara e do estado informado
 cpf(false, "mg");
             </code></pre>
+            
           </div>
           <!--//docs-code-block-->
+
+          
+
+
         </section>
+
 
         <section class="docs-section" id="cnh">
           <h2 class="section-heading">CNH</h2>
@@ -817,6 +829,22 @@ cnpj();
 
 // Gera CNPJ com máscara
 cnpj(true);
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="cnpjAlfanumerico">
+          <h2 class="section-heading">CNPJ Alfanumérico</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { cnpjAlfanumerico } from 'gerador-br'; // ES Module
+// const { cnpjAlfanumerico } = require('gerador-br'); // CommonJS
+
+// Gera CNPJ Alfanumérico com máscara
+console.log(cnpjAlfanumerico(true));
+
+// Gera CNPJ Alfanumérico sem máscara
+console.log(cnpjAlfanumerico(false));
             </code></pre>
           </div>
         </section>
@@ -1491,13 +1519,12 @@ paragrafo(3,8);
     </div>
   </div>
   <!--//docs-content-->
-  
+
   <div class="text-center my-4">
     <a href="#comecando" class="btn btn-primary back-to-top" aria-label="Voltar ao topo da página">
       <i class="fas fa-arrow-up"></i>
     </a>
   </div>
-
   <!-- Javascript -->
 <script src="../assets/plugins/popper.min.js"></script>
 <script src="../assets/plugins/bootstrap/js/bootstrap.min.js" defer></script>

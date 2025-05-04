@@ -169,6 +169,12 @@ function gerarCnpj() {
   copy('fldCnpj', 'msgCopiado');
 }
 
+function gerarCnpjAlfanumerico() {
+  document.getElementById('fldCnpjAlfanumerico').value = cnpjAlfanumerico(isChecked());
+  showElement(divCopy);
+  copy('fldCnpjAlfanumerico', 'msgCopiado');
+}
+
 function gerarInscricaoEstadual() {
   document.getElementById('fldInscricaoEstadual').value = inscricaoEstadual();
   showElement(divCopy);

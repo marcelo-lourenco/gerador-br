@@ -5,23 +5,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Parágrafos Online para Testes | Gerador-BR</title>
-  <meta name="description" content="Gere parágrafos fictícios online e gratuitamente. Ideal para preenchimento de textos em testes e desenvolvimento de sistemas.">
-  <meta name="keywords" content="gerador de parágrafos, gerar parágrafos, criar parágrafos, parágrafos online, parágrafos fictícios, texto para teste, gerador de texto, lorem ipsum">
+  <title>Gerador de CNPJ Alfanumérico Online para Testes | Gerador-BR</title>
+  <meta name="description" content="Gere números de CNPJ válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta name="keywords" content="cnpj, cnpj alfanumérico, gerador de cnpj alfanumérico, gerar cnpj alfanumérico, criar cnpj alfanemérico, cnpj alfanumérico online, cnpj alfanumérico válido, cnpj alfanumérico para teste, dados fictícios, gerador de dados, cnpj alfanumérico fictício">
   <meta name="author" content="Marcelo Lourenço">
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
   <!-- Open Graph (para redes sociais) -->
-  <meta property="og:title" content="Gerador de Parágrafos Online para Testes | Gerador-BR">
-  <meta property="og:description" content="Gere parágrafos fictícios online e gratuitamente. Ideal para preenchimento de textos em testes e desenvolvimento de sistemas.">
+  <meta property="og:title" content="Gerador de CNPJ Alfanumérico Online para Testes | Gerador-BR">
+  <meta property="og:description" content="Gere números de CNPJ válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
   <meta property="og:image" content="../assets/images/features/social-preview.png">
   <meta property="og:url" content="https://marcelo-lourenco.github.io/gerador-br">
   <meta property="og:type" content="website">
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador de Parágrafos Online para Testes | Gerador-BR">
-  <meta name="twitter:description" content="Gere parágrafos fictícios online e gratuitamente. Ideal para preenchimento de textos em testes e desenvolvimento de sistemas.">
+  <meta name="twitter:title" content="Gerador de CNPJ Alfanumérico Online para Testes | Gerador-BR">
+  <meta name="twitter:description" content="Gere números de CNPJ válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
   <meta name="twitter:image" content="../assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-24x24.svg" sizes="24x24">
@@ -44,11 +44,11 @@
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Gerador de Parágrafos Online para Testes | Gerador-BR",
+      "name": "Gerador de CNPJ Alfanumérico Online para Testes | Gerador-BR",
       "url": "https://marcelo-lourenco.github.io/gerador-br/",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "All",
-      "description": "Gere parágrafos fictícios online e gratuitamente. Ideal para preenchimento de textos em testes e desenvolvimento de sistemas.",
+      "description": "Gere números de CNPJ válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.",
       "image": "https://marcelo-lourenco.github.io/gerador-br/assets/images/features/social-preview.png",
       "datePublished": "2024-06-01",
       "dateModified": "2025-04-22",
@@ -73,7 +73,7 @@
       "license": "https://opensource.org/licenses/MIT",
       "codeRepository": "https://github.com/marcelo-lourenco/gerador-br",
       "releaseNotes": "https://www.npmjs.com/package/gerador-br",
-      "keywords": "gerador de parágrafos, gerar parágrafos, criar parágrafos, parágrafos online, parágrafos fictícios, texto para teste, gerador de texto, lorem ipsum",
+      "keywords": "cnpj, cnpj alfanumérico, gerador de cnpj alfanumérico, gerar cnpj alfanumérico, criar cnpj alfanemérico, cnpj alfanumérico online, cnpj alfanumérico válido, cnpj alfanumérico para teste, dados fictícios, gerador de dados, cnpj alfanumérico fictício",
       "softwareHelp": {
         "@type": "CreativeWork",
         "url": "http://marcelo-lourenco.github.io/gerador-br/documentacao/"
@@ -374,29 +374,34 @@
     <div class="d-flex flex-column flex-grow-1">
 
       <article class="text-center flex-grow-1 d-flex flex-column justify-content-center py-5"
-        id="gerador-paragrafos-section" aria-labelledby="gerador-paragrafos-heading">
+        id="gerador-cnpj-section" aria-labelledby="gerador-cnpj-heading">
 
-        <h1 id="gerador-paragrafos-heading" class="mb-3">Gerador de Parágrafos</h1>
+        <h1 id="gerador-cnpj-heading" class="mb-3">Gerador de CNPJ Alfanumérico</h1>
 
-          <form id="paragrafos-generator-form" class="mx-auto mnw-600 mxw-600" action="#!" novalidate>
+          <form id="cnpj-generator-form" class="mx-auto mnw-400 mxw-600" action="#!" novalidate>
             <div class="p-3 bg-body">
 
               <div class="form-floating mb-3 position-relative">
 
-                <textarea class="form-control mnh-300 pe-5" disabled id="fldParagrafos" name="fldParagrafos" placeholder="Parágrafos" readonly aria-label="Parágrafos gerados" rows="10" oninput="adjustTextareaHeight(this)"></textarea>
-                <label for="fldParagrafos">Parágrafos</label>
+                <input type="text" class="form-control" disabled id="fldCnpjAlfanumerico" name="fldCnpjAlfanumerico" placeholder="CNPJ Alfanumérico" readonly aria-label="CNPJ Alfanumérico gerado">
+                <label for="fldCnpjAlfanumerico">CNPJ Alfanumérico</label>
 
                 <div id="divCopy" class="d-none position-absolute div-copy">
                   <div class="d-flex align-items-center">
                     <span id="msgCopiado" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldParagrafos', 'msgCopiado')" aria-label="Botão Copiar"></i>
+                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldCnpjAlfanumerico', 'msgCopiado')" aria-label="Botão Copiar"></i>
                   </div>
                 </div>
 
               </div>
 
+              <div class="form-check form-switch mb-3 d-flex justify-content-center">
+                <input class="form-check-input" type="checkbox" id="maskSwitch" checked aria-label="Aplicar máscara">
+                <label class="form-check-label ms-2" for="maskSwitch">Aplicar Máscara</label>
+              </div>
+
               <div class="text-center">
-                <button type="button" id="btnGerarParagrafos" class="btn btn-primary" onclick="gerarParagrafos()" aria-label="Botão Gerar">
+                <button type="button" id="btnGerarCnpjAlfanumerico" class="btn btn-primary" onclick="gerarCnpjAlfanumerico()" aria-label="Botão Gerar">
                   <i class="fas fa-bolt me-1" aria-hidden="true"></i>
                   Gerar
                 </button>

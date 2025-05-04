@@ -8,7 +8,6 @@
 [![CI Test](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml)
 [![ESLint](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml)
 [![Coverage](https://img.shields.io/coveralls/github/marcelo-lourenco/gerador-br/master?logo=coveralls&logoColor=ffffff)](https://coveralls.io/github/marcelo-lourenco/gerador-br?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/marcelo-lourenco/gerador-br/badge.svg?branch=master)](https://coveralls.io/github/marcelo-lourenco/gerador-br?branch=master)
 [![FOSSA Licence](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
 [![FOSSA Security](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
 

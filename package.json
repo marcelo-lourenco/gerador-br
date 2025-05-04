@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "npx rimraf dist && rollup -c --bundleConfigAsCjs && npx ncp index.d.ts dist/index.d.ts",
-    "minify": "npm run build && terser temp/gerador-br.min.js -o docs/_js/gerador-br.min.js --compress --mangle && npx rimraf temp",
+    "minify": "npm run build && terser temp/gerador-br.min.js -o temp/gerador-br.min1.js --compress --mangle",
     "lint": "eslint . -c eslint.config.js -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif",
     "test": "node --test test",
     "coverage": "npx c8 --reporter=lcov node --test"
