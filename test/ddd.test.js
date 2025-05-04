@@ -7,14 +7,14 @@ describe('DDD Generator', () => {
     const states = ['SP', 'RJ', 'MG', 'RS', 'SC'];
     states.forEach((state) => {
       const dddValue = ddd(state);
-      strictEqual(typeof dddValue, 'number');
+      strictEqual(typeof dddValue, 'string');
       strictEqual(dddValue > 0, true);
     });
   });
 
   test('should generate a random DDD for a random state', () => {
     const dddValue = ddd();
-    strictEqual(typeof dddValue, 'number');
+    strictEqual(typeof dddValue, 'string');
     strictEqual(dddValue > 0, true);
   });
 });

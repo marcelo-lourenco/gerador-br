@@ -74,4 +74,14 @@ describe('certidao.js', () => {
     match(result.estado, /^\d{2}$/, 'O código do estado deve ter 2 dígitos');
     match(result.anoRegistro, /^\d{4}$/, 'O ano de registro deve ter 4 dígitos');
   });
+
+  test('Geração de certidão aleatória com máscara', () => {
+    const result = certidao.aleatoria();
+    match(result, /^\d{6} \d{2} \d{4} \d{4} \d \d{5} \d{3} \d{7}$/, 'A máscara da certidão aleatória está incorreta');
+  });
+
+  test('Geração de certidão aleatória sem máscara', () => {
+    const result = certidao.aleatoria(false);
+    match(result, /^\d{32}$/, 'O número de certidão aleatória sem máscara deve ter 32 dígitos');
+  });
 });

@@ -7,7 +7,7 @@ import { celular } from './generators/celular.js';
 import { cep } from './generators/cep.js';
 import { certidao } from './generators/certidao.js'
 import { cnh } from './generators/cnh.js';
-import { cnhCategoria } from './generators/cnhCategoria.js';
+import { cnhCategoria } from './generators/cnh-categoria.js';
 import { cnpj } from './generators/cnpj.js';
 import { cnpjAlfanumerico } from './generators/cnpj-alfanumerico.js';
 import { cns } from './generators/cartao-nacional-saude.js';
@@ -29,7 +29,7 @@ import { orientacaoSexual } from './generators/orientacao-sexual.js';
 import { passaporte } from './generators/passaporte.js';
 import { pis } from './generators/pis.js';
 import { profissao } from './generators/profissao.js';
-import { provedorEmail } from './generators/provedorEmail.js';
+import { provedorEmail } from './generators/provedor-email.js';
 import { renavam } from './generators/renavam.js';
 import { rg } from './generators/rg.js';
 import { telefone } from './generators/telefone.js';

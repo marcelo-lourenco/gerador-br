@@ -1,4 +1,4 @@
-import { provedorEmail } from './provedorEmail.js';
+import { provedorEmail } from './provedor-email.js';
 import { apelido } from './apelido.js';
 
 /**

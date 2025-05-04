@@ -99,8 +99,6 @@ function generateCertificate(type = null, mask = true) {
       bookTypeCode = '3001';
       certidaoTipo = 'Óbito';
       break;
-    default:
-      throw new Error(`Tipo inválido. Use ${tipos}`);
   }
 
   const registryCode = String(Math.floor(Math.random() * 1_000_000)).padStart(6, '0');

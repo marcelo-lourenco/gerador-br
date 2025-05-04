@@ -8,7 +8,7 @@ describe('Endereço Generator', () => {
     strictEqual(addressWithMask.cep.length, 9);
     strictEqual(addressWithMask.cep.slice(5, 6), '-');
     strictEqual(typeof addressWithMask.logradouro, 'string');
-    strictEqual(typeof addressWithMask.numero, 'number');
+    strictEqual(typeof addressWithMask.numero, 'string');
     strictEqual(typeof addressWithMask.complemento, 'string');
     strictEqual(typeof addressWithMask.bairro, 'string');
     strictEqual(typeof addressWithMask.localidade, 'string');
@@ -20,7 +20,7 @@ describe('Endereço Generator', () => {
     strictEqual(addressWithoutMask.cep.length, 8);
     strictEqual(addressWithoutMask.cep.includes('-'), false);
     strictEqual(typeof addressWithoutMask.logradouro, 'string');
-    strictEqual(typeof addressWithoutMask.numero, 'number');
+    strictEqual(typeof addressWithoutMask.numero, 'string');
     strictEqual(typeof addressWithoutMask.complemento, 'string');
     strictEqual(typeof addressWithoutMask.bairro, 'string');
     strictEqual(typeof addressWithoutMask.localidade, 'string');
@@ -32,7 +32,7 @@ describe('Endereço Generator', () => {
     strictEqual(addressWithMaskForSP.cep.length, 9);
     strictEqual(addressWithMaskForSP.cep.slice(5, 6), '-');
     strictEqual(typeof addressWithMaskForSP.logradouro, 'string');
-    strictEqual(typeof addressWithMaskForSP.numero, 'number');
+    strictEqual(typeof addressWithMaskForSP.numero, 'string');
     strictEqual(typeof addressWithMaskForSP.complemento, 'string');
     strictEqual(typeof addressWithMaskForSP.bairro, 'string');
     strictEqual(typeof addressWithMaskForSP.localidade, 'string');
@@ -44,7 +44,7 @@ describe('Endereço Generator', () => {
     strictEqual(addressWithoutMaskForSP.cep.length, 8);
     strictEqual(addressWithoutMaskForSP.cep.includes('-'), false);
     strictEqual(typeof addressWithoutMaskForSP.logradouro, 'string');
-    strictEqual(typeof addressWithoutMaskForSP.numero, 'number');
+    strictEqual(typeof addressWithoutMaskForSP.numero, 'string');
     strictEqual(typeof addressWithoutMaskForSP.complemento, 'string');
     strictEqual(typeof addressWithoutMaskForSP.bairro, 'string');
     strictEqual(typeof addressWithoutMaskForSP.localidade, 'string');
