@@ -4,6 +4,14 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.2.1 (2025-05-06)
+
+### Adiciona Funcionalidade
+
+* Adiciona Recursos para Typescript
+
+---
+
 ## 1.2.0 (2025-05-03)
 
 ### Adiciona Funcionalidade

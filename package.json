@@ -1,6 +1,6 @@
 {
   "name": "gerador-br",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Gerador de Dados Fictícios - Brasil",
   "main": "dist/cjs/index.cjs",
   "module": "dist/mjs/index.mjs",
@@ -94,5 +94,6 @@
     "test",
     "testes",
     "automation"
-  ]
+  ],
+  "author": "Marcelo Lourenço <qabi.dev@gmail.com>"
 }

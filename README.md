@@ -34,6 +34,10 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 npm install gerador-br
 ```
 
+```bash
+yarn add gerador-br
+```
+
 ## Importação
 
 ***ES Module***
