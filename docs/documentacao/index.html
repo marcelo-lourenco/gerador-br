@@ -24,9 +24,9 @@
   <meta name="twitter:description" content="Documentação Pacote NPM Gerador-BR">
   <meta name="twitter:image" content="../assets/images/features/social-preview.png">
 
-  <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-24x24.svg" sizes="24x24">
-  <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-48x48.svg" sizes="48x48">
-  <link rel="icon" type="image/svg" href="../assets/images/icons/favicon-128x128.svg" sizes="128x128">
+  <link rel="icon" href="../assets/images/icons/favicon-16x16.ico" sizes="16x16" >
+  <link rel="icon" href="../assets/images/icons/favicon-32x32.ico" sizes="32x32" >
+  <link rel="icon" href="../assets/images/icons/favicon-48x48.ico" sizes="48x48" >
 
   <link rel="stylesheet" href="../assets/plugins/poppins/font-poppins.css">
   <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -531,7 +531,7 @@
             </li>
             <li>
               <a href="#documentos-pj">Gerador de Empresa</a>:
-              CNPJ e Inscrição Estadual;
+              CNPJ, CNPJ Alfanumérico e Inscrição Estadual;
             </li>
             <li>
               <a href="#endereco">Gerador de Endereço</a>:
@@ -566,6 +566,10 @@
             <pre><code class="language-shell">
 npm install gerador-br
             </code></pre>
+            Ou
+            <pre><code class="language-shell">
+yarn add gerador-br
+            </code></pre>
           </div>
         </section>
 
@@ -575,14 +579,14 @@ npm install gerador-br
           <div class="docs-code-block">
             <p><strong>ES Module:</strong></p>
             <pre><code class="language-js">
-import gerar from 'gerador-br';
+import { gerar } from 'gerador-br';
             </code></pre>
           </div>
 
           <div class="docs-code-block">
             <p><strong>CommonJS:</strong></p>
             <pre><code class="language-js">
-const gerar = require('gerador-br');
+const { gerar } = require('gerador-br');
             </code></pre>
           </div>
         </section>
@@ -607,8 +611,8 @@ const gerar = require('gerador-br');
             <p><strong>Ou, importe todo o módulo <code>gerar</code> e depois use qualquer função que desejar:</strong>
             </p>
             <pre><code class="language-js">
-      import gerar from 'gerador-br'; // ES Module
-      // const gerar = require('gerador-br'); // CommonJS
+      import { gerar } from 'gerador-br'; // ES Module
+      // const { gerar } = require('gerador-br'); // CommonJS
 
       console.log(gerar.nome.femininoCompleto());
       console.log(gerar.cpf());
