@@ -265,42 +265,42 @@
   <section class="docs-overview py-5" aria-labelledby="compatibilidade-heading">
     <div class="container">
       <h1 id="formulario-teste" class="text-center mb-4 h4">Formulário de Teste - Gerador-BR</h3>
-      <p class="text-center mb-5">
-        Baixe o projeto de exemplo desejado.
-      </p>
+        <p class="text-center mb-5">
+          Baixe o projeto de exemplo desejado.
+        </p>
 
-      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <div class="d-flex flex-wrap justify-content-center gap-4">
 
-        <div class="tech-badge">
-          <span class="iconify" data-icon="logos:nodejs" data-width="40" data-height="40"></span>
-          <span>Node.js</span>
+          <div class="tech-badge">
+            <span class="iconify" data-icon="logos:nodejs" data-width="40" data-height="40"></span>
+            <span>Node.js</span>
+          </div>
+
+          <div class="tech-badge">
+            <span class="iconify" data-icon="logos:cypress" data-width="40" data-height="40"></span>
+            <span>Cypress</span>
+          </div>
+
+          <div class="tech-badge">
+            <span class="iconify" data-icon="logos:jest" data-width="40" data-height="40"></span>
+            <span>Jest</span>
+          </div>
+
+          <div class="tech-badge">
+            <span class="iconify" data-icon="logos:playwright" data-width="40" data-height="40"></span>
+            <span>Playwright</span>
+          </div>
+
+          <div class="tech-badge">
+            <span class="iconify" data-icon="logos:jasmine" data-width="40" data-height="40"></span>
+            <span>Jasmine</span>
+          </div>
+
         </div>
-
-        <div class="tech-badge">
-          <span class="iconify" data-icon="logos:cypress" data-width="40" data-height="40"></span>
-          <span>Cypress</span>
-        </div>
-
-        <div class="tech-badge">
-          <span class="iconify" data-icon="logos:jest" data-width="40" data-height="40"></span>
-          <span>Jest</span>
-        </div>
-
-        <div class="tech-badge">
-          <span class="iconify" data-icon="logos:playwright" data-width="40" data-height="40"></span>
-          <span>Playwright</span>
-        </div>
-
-        <div class="tech-badge">
-          <span class="iconify" data-icon="logos:jasmine" data-width="40" data-height="40"></span>
-          <span>Jasmine</span>
-        </div>
-
-      </div>
     </div>
   </section>
 
-  
+
   <form id="testForm" novalidate>
 
     <div class="row justify-content-center">
@@ -455,10 +455,21 @@
             </div>
 
             <!-- CNH -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCnh" name="fldCnh" placeholder="CNH"
-                aria-label="CNH">
-              <label class="required" for="fldCnh">CNH</label>
+            <div class="row g-2">
+              <div class="col-md-9">
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" required class="form-control" id="fldCnh" name="fldCnh" placeholder="CNH"
+                    aria-label="CNH">
+                  <label class="required" for="fldCnh">CNH</label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" required class="form-control" id="fldCnhCategoria" name="fldCnhCategoria"
+                    placeholder="Categ." aria-label="Categoria CNH">
+                  <label for="fldCnhCategoria">Categ.</label>
+                </div>
+              </div>
             </div>
 
             <!-- RG -->
@@ -832,8 +843,8 @@
 
             <!-- Renavam -->
             <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldRenavam" name="fldRenavam"
-                placeholder="Renavam" aria-label="Renavam">
+              <input type="text" required class="form-control" id="fldRenavam" name="fldRenavam" placeholder="Renavam"
+                aria-label="Renavam">
               <label class="required" for="fldRenavam">Renavam</label>
             </div>
 
@@ -858,15 +869,15 @@
 
             <!-- Palavra -->
             <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldPalavra" name="fldPalavra"
-                placeholder="Palavra" aria-label="Palavra">
+              <input type="text" required class="form-control" id="fldPalavra" name="fldPalavra" placeholder="Palavra"
+                aria-label="Palavra">
               <label class="required" for="fldPalavra">Palavra</label>
             </div>
 
             <!-- Sentença -->
             <div class="form-floating mb-3 position-relative">
-              <textarea required class="form-control mnh-100 pe-5" id="fldSentenca" name="fldSentenca" 
-                placeholder="Sentença" aria-label="Sentença" rows="10" ></textarea>
+              <textarea required class="form-control mnh-100 pe-5" id="fldSentenca" name="fldSentenca"
+                placeholder="Sentença" aria-label="Sentença" rows="10"></textarea>
               <label class="required" for="fldSentenca">Sentença</label>
             </div>
 
@@ -888,7 +899,7 @@
 
             <!-- Parágrafo -->
             <div class="form-floating mb-3 position-relative">
-              <textarea required class="form-control mnh-300 pe-5" id="fldParagrafos" name="fldParagrafos" 
+              <textarea required class="form-control mnh-300 pe-5" id="fldParagrafos" name="fldParagrafos"
                 placeholder="Parágrafos" aria-label="Parágrafos gerados" rows="10"></textarea>
               <label class="required" for="fldParagrafos">Parágrafos</label>
             </div>
