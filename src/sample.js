@@ -180,6 +180,15 @@ console.log(gerar.endereco(true, "SP"));
 // Gera escolaridade aleatória
 console.log(gerar.escolaridade());
 
+/* ******************** Gênero *************** */
+// Gera Gênero aleatório
+console.log(gerar.genero('f'));
+console.log(gerar.genero('m'));
+console.log(gerar.genero('i'));
+console.log(gerar.genero());
+console.log(gerar.genero(null));
+console.log(gerar.genero('x'));
+
 /* ******************** IDENTIDADE DE GÊNERO ******* */
 console.log(gerar.identidadeGenero());
 console.log(gerar.identidadePorOrientacao());

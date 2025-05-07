@@ -23,17 +23,19 @@ window.onresize = function () {
 
 // Função para gerenciar a visibilidade da sidebar com base na largura da janela
 function responsiveSidebar() {
-    let w = window.innerWidth; // Obtém a largura da janela
-    if (w >= 1200) {
-        // Se a largura for maior ou igual a 1200px, exibe a sidebar
-				/* console.log('larger'); */
-        sidebar.classList.remove('sidebar-hidden');
-        sidebar.classList.add('sidebar-visible');
-    } else {
-			/* console.log('smaller'); */
-        // Se a largura for menor que 1200px, oculta a sidebar
-        sidebar.classList.remove('sidebar-visible');
-        sidebar.classList.add('sidebar-hidden');
+    if (sidebar) {
+        let w = window.innerWidth; // Obtém a largura da janela
+        if (w >= 1200) {
+            // Se a largura for maior ou igual a 1200px, exibe a sidebar
+            /* console.log('larger'); */
+            sidebar.classList.remove('sidebar-hidden');
+            sidebar.classList.add('sidebar-visible');
+        } else {
+            /* console.log('smaller'); */
+            // Se a largura for menor que 1200px, oculta a sidebar
+            sidebar.classList.remove('sidebar-visible');
+            sidebar.classList.add('sidebar-hidden');
+        }
     }
 }
 
@@ -41,7 +43,7 @@ function responsiveSidebar() {
 sidebarToggler.addEventListener('click', () => {
     if (sidebar.classList.contains('sidebar-visible')) {
         // Se a sidebar está visível, oculta-a
-				/* console.log('visible'); */
+        /* console.log('visible'); */
         sidebar.classList.remove('sidebar-visible');
         sidebar.classList.add('sidebar-hidden');
     } else {

@@ -595,24 +595,28 @@ const gerar = {
 
 
   /**
-   * Retorna um objeto com informações sobre o gênero com base na sigla ou descrição fornecida.
+   * Retorna a descrição do gênero com base na sigla fornecida.
    *
-   * @param {string} [input] - Sigla ou descrição do gênero. Pode ser:
-   *   - Siglas: 'm', 'f', 'i'
-   *   - Descrições: 'Masculino', 'Feminino', 'Intersexo'
-   *   - Se não for fornecido ou inválido, retorna aleatoriamente 'm, Masculino' ou 'f, Feminino'.
+   * @param {string} [input] - Sigla do gênero. Valores aceitos: 'm', 'f', 'i'.
+   *   - 'm' para Masculino
+   *   - 'f' para Feminino
+   *   - 'i' para Intersexo
+   *   - Se o `input` for `null`, omitido, ou qualquer outro valor não listado,
+   *     a função retornará aleatoriamente "Masculino" ou "Feminino".
    *
-   * @returns {object} - Um objeto no formato `{sigla: <sigla>, descricao: <descricao>}`.
-   *   - Exemplo: `{sigla: 'f', descricao: 'Feminino'}`
+   * @returns {string} - A descrição do gênero correspondente.
+   *   - "Masculino" se input for 'm'.
+   *   - "Feminino" se input for 'f'.
+   *   - "Intersexo" se input for 'i'.
+   *   - Aleatoriamente "Masculino" ou "Feminino" para outros casos.
    *
    * @example
-   * console.log(gerar.genero('f'));         // Retorna: "{sigla: 'f', descricao: 'Feminino'}"
-   * console.log(gerar.genero('m'));         // Retorna: "{sigla: 'm', descricao: 'Masculino'}"
-   * console.log(gerar.genero('i'));         // Retorna: "{sigla: 'i', descricao: 'Intersexo'}"
-   * console.log(gerar.genero('feminino'));  // Retorna: "{sigla: 'f', descricao: 'Feminino'}"
-   * console.log(gerar.genero('masculino')); // Retorna: "{sigla: 'm', descricao: 'Masculino'}"
-   * console.log(gerar.genero('intesexo'));  // Retorna: "{sigla: 'm', descricao: 'Intersexo'}"
-   * console.log(gerar.genero());            // Retorna aleatoriamente: "{sigla: 'm', descricao: 'Masculino'}" ou "{sigla: 'f', descricao: 'Feminino'}"
+   * console.log(gerar.genero('f'));  // Retorna: "Feminino"
+   * console.log(gerar.genero('m'));  // Retorna: "Masculino"
+   * console.log(gerar.genero('i'));  // Retorna: "Intersexo"
+   * console.log(gerar.genero());     // Retorna aleatoriamente: "Masculino" ou "Feminino"
+   * console.log(gerar.genero(null)); // Retorna aleatoriamente: "Masculino" ou "Feminino"
+   * console.log(gerar.genero('x'));  // Retorna aleatoriamente: "Masculino" ou "Feminino"
    */
   genero: genero,
 

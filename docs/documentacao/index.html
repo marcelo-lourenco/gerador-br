@@ -379,6 +379,18 @@
         <li class="nav-item">
           <a class="nav-link scrollto" href="#tipoSanguineo">Tipo Sanguíneo</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#genero">Gênero</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#orientacaoSexual">Orientação Sexual</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#identidadeGenero">Identidade de Gênero</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#identidadePorOrientacao">Identidade de Gênero por Orientação Sexual</a>
+        </li>
         <li class="nav-item section-title mt-3">
           <a class="nav-link scrollto" href="#contatos">
             <span class="theme-icon-holder me-2">
@@ -1080,7 +1092,9 @@ import { dataNascimento } from 'gerador-br'; // ES Module
 // const { dataNascimento } = require('gerador-br'); // CommonJS
 
 // Gera data de nascimento aleatória
-dataNascimento();
+console.log(dataNascimento());         // Data entre 18-80 anos
+console.log(dataNascimento(25));       // Data de quem tem exatamente 25 anos
+console.log(dataNascimento([30, 40])); // Data entre 30-40 anos
             </code></pre>
           </div>
         </section>
@@ -1137,35 +1151,80 @@ tipoSanguineo();
           </div>
         </section>
 
-        <!-- TODO 
-## genero
-
-```js
+        <section class="docs-section" id="genero">
+          <h2 class="section-heading">Gênero</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
 import { genero } from 'gerador-br'; // ES Module
 // const { genero } = require('gerador-br'); // CommonJS
 
-// Gera gênero aleatório
-genero();
-```
+// Retorna "Feminino"
+console.log(genero('f'));
 
-## orientacaoSexual
-```js
+// Retorna "Masculino"
+console.log(genero('m'));
+
+// Retorna "Intersexo"
+console.log(genero('i'));
+
+// Retorna aleatoriamente "Masculino" ou "Feminino"
+console.log(genero());
+
+// Retorna aleatoriamente "Masculino" ou "Feminino"
+console.log(genero(null));
+
+// Retorna aleatoriamente "Masculino" ou "Feminino"
+console.log(genero('x'));
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="orientacaoSexual">
+          <h2 class="section-heading">Orientação Sexual</h2>
+          <p>Gera uma orientação sexual aleatória.</p>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
 import { orientacaoSexual } from 'gerador-br'; // ES Module
 // const { orientacaoSexual } = require('gerador-br'); // CommonJS
 
-// Gera orientação sexual aleatória
-orientacaoSexual();
-```
+// Gera uma orientação sexual aleatória.
+console.log(orientacaoSexual()); // "Heterossexual", "Homossexual", "Bissexual", "Assexual", "Pansexual", etc.
+            </code></pre>
+          </div>
+        </section>
 
-## identidadeGenero
-```js
+        <section class="docs-section" id="identidadeGenero">
+          <h2 class="section-heading">Identidade de Gênero</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
 import { identidadeGenero } from 'gerador-br'; // ES Module
 // const { identidadeGenero } = require('gerador-br'); // CommonJS
 
-// Gera identidade de gênero aleatória
-identidadeGenero();
-```
--->
+// Gera identidade de gênero aleatória.
+console.log(identidadeGenero()); // "Cisgênero", "Transgênero" ou "Não binário"
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="identidadePorOrientação">
+          <h2 class="section-heading">Identidade de Gênero por Orientação Sexual</h2>
+          <p>Esta função gera uma identidade de gênero que pode ser associada a uma orientação sexual específica ou
+            selecionada aleatoriamente.</p>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { identidadePorOrientacao } from 'gerador-br'; // ES Module
+// const { identidadePorOrientacao } = require('gerador-br'); // CommonJS
+
+console.log(identidadePorOrientacao('Heterossexual')); // 'Cisgênero' ou 'Transgênero'
+console.log(identidadePorOrientacao('Homossexual'));   // 'Cisgênero' ou 'Transgênero'
+console.log(identidadePorOrientacao('Bissexual'));     // 'Cisgênero', 'Transgênero' ou 'Não binário'
+console.log(identidadePorOrientacao('Assexual'));      // Cisgênero', 'Transgênero' ou 'Não binário'
+console.log(identidadePorOrientacao('Pansexual'));     // 'Cisgênero', 'Transgênero' ou 'Não binário'
+console.log(identidadePorOrientacao());                // Retorna uma identidade de gênero aleatória associada a uma orientação sexual aleatória.
+            </code></pre>
+          </div>
+        </section>
+
       </article>
 
       <!-- CONTATOS -->
