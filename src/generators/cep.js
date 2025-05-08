@@ -23,7 +23,7 @@ import { stateRand } from '../utils.js';
  * console.log(cep(true, "SP")); // "01001-000"
  */
 export function cep(mask = false, state) {
-  const uf = state || stateRand;
+  const uf = state ? state.toUpperCase() : stateRand;
   const fullAddress = dbCep.filter((enderecos) => enderecos.uf === uf);
   const sortAddress =  fullAddress[Math.floor(Math.random() * fullAddress.length)];
   return mask ? sortAddress.cep : sortAddress.cep.replace(/\D/g, '');

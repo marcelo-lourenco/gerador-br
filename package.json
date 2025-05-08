@@ -1,6 +1,6 @@
 {
   "name": "gerador-br",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Gerador de Dados Fictícios - Brasil",
   "main": "dist/cjs/index.cjs",
   "module": "dist/mjs/index.mjs",
@@ -15,7 +15,7 @@
     "minify": "npm run build && terser temp/gerador-br.min.js -o temp/gerador-br.min1.js --compress --mangle",
     "lint": "eslint . -c eslint.config.js -f @microsoft/eslint-formatter-sarif -o eslint-results.sarif",
     "test": "node --test test",
-    "coverage": "npx c8 --reporter=lcov node --test"
+    "coverage": "npx c8 --reporter=lcov node --test test"
   },
   "devDependencies": {
     "@eslint/js": "^9.23.0",
@@ -93,7 +93,10 @@
     "mock",
     "test",
     "testes",
-    "automation"
+    "automation",
+    "gênero",
+    "orientação sexual",
+    "identidade de gênero"
   ],
   "author": "Marcelo Lourenço <qabi.dev@gmail.com>"
 }

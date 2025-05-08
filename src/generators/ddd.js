@@ -43,7 +43,8 @@ export function ddd(state) {
     TO: [63],
   };
 
-  const dddState = ddds[state || stateRand];
+  const uf = state ? state.toUpperCase() : stateRand;
+  const dddState = ddds[uf];
 
   return String(dddState[Math.floor(Math.random() * dddState.length)]);
 }

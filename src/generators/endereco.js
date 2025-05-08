@@ -23,7 +23,7 @@ import { stateRand } from '../utils.js';
  * console.log(endereco(true, "SP")); // { cep: '01001-000', logradouro: 'Rua da Consolação', numero: 123, complemento: 'Apto 101', bairro: 'Consolação', localidade: 'São Paulo', estado: 'SP' }
  */
 export function endereco(mask = false, state) {
-  const uf = state || stateRand;
+  const uf = state ? state.toUpperCase() : stateRand;
   const fullAddress = dbCep.filter((enderecos) => enderecos.uf === uf);
   const sortAddress = fullAddress[Math.floor(Math.random() * fullAddress.length)];
   const address = {};

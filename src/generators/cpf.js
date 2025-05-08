@@ -82,7 +82,7 @@ export function cpfDV(num) {
 export function cpf(mask, state) {
   let n = () => Math.round(Math.random() * 9);
   const n1 = n(); const n2 = n(); const n3 = n(); const n4 = n(); const n5 = n(); const n6 = n(); const n7 = n(); const n8 = n(); const
-    n9 = numStates(state || stateRand);
+    n9 = numStates(state ? state.toUpperCase() : stateRand);
 
   const num = `${n1}${n2}${n3}${n4}${n5}${n6}${n7}${n8}${n9}`; // Concatenando os números em uma string
   const dv = cpfDV(num); // Transformando a string em um array de números

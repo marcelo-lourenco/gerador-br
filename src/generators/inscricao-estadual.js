@@ -602,7 +602,7 @@ function ieDVTO(numbers) {
  * console.log(inscricaoEstadual('TO')); // 55582433-0
  */
 export function inscricaoEstadual(state) {
-  let stateCode = state || stateRand;
+  let stateCode = state ? state.toUpperCase() : stateRand;
   const states = {
     AC: () => {
       const base = '01';

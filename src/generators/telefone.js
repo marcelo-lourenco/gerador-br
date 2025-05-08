@@ -28,7 +28,7 @@ export function telefone(mask, state) {
   // Função para gerar um número aleatório entre min e max (inclusive)
   const nRange = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
 
-  let sortDdd = state ? ddd(state) : ddd(stateRand);
+  let sortDdd = state ? ddd(state.toUpperCase()) : ddd(stateRand);
   let n1 = nRange(2, 3);
   let n2 = n();
   let n3 = n();

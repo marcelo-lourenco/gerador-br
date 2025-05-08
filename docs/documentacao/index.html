@@ -51,7 +51,7 @@
       "description": "Documentação Pacote NPM Gerador-BR",
       "image": "https://marcelo-lourenco.github.io/gerador-br/assets/images/features/social-preview.png",
       "datePublished": "2024-06-01",
-      "dateModified": "2025-04-22",
+      "dateModified": "2025-05-07",
       "author": {
         "@type": "Person",
         "name": "Marcelo Lourenço",
@@ -609,13 +609,13 @@ const { gerar } = require('gerador-br');
           <div class="docs-code-block">
             <p><strong>Importe apenas a(s) função(ões) que desejar:</strong></p>
             <pre><code class="language-js">
-      import { nome, cpf, cnpj, placaMercosul } from 'gerador-br'; // ES Module
-      // const { nome, cpf, cnpj, placaMercosul } = require('gerador-br'); // CommonJS
+import { nome, cpf, cnpj, placaMercosul } from 'gerador-br'; // ES Module
+// const { nome, cpf, cnpj, placaMercosul } = require('gerador-br'); // CommonJS
 
-      console.log(nome.femininoCompleto());
-      console.log(cpf());
-      console.log(cnpj());
-      console.log(placaMercosul());
+console.log(nome.femininoCompleto());
+console.log(cpf());
+console.log(cnpj());
+console.log(placaMercosul());
             </code></pre>
           </div>
 
@@ -623,14 +623,14 @@ const { gerar } = require('gerador-br');
             <p><strong>Ou, importe todo o módulo <code>gerar</code> e depois use qualquer função que desejar:</strong>
             </p>
             <pre><code class="language-js">
-      import { gerar } from 'gerador-br'; // ES Module
-      // const { gerar } = require('gerador-br'); // CommonJS
+import { gerar } from 'gerador-br'; // ES Module
+// const { gerar } = require('gerador-br'); // CommonJS
 
-      console.log(gerar.nome.femininoCompleto());
-      console.log(gerar.cpf());
-      console.log(gerar.cnpj());
-      console.log(gerar.contaBancaria());
-      console.log(gerar.cartaoCredito());
+console.log(gerar.nome.femininoCompleto());
+console.log(gerar.cpf());
+console.log(gerar.cnpj());
+console.log(gerar.contaBancaria());
+console.log(gerar.cartaoCredito());
             </code></pre>
           </div>
         </section>
@@ -655,24 +655,18 @@ import { cpf } from 'gerador-br'; // es module
 // const { cpf } = require('gerador-br'); // commonjs
 
 // gera cpf sem máscara e de estado aleatório
-cpf();
+console.log(cpf());
 
 // gera cpf com máscara e de estado aleatório
-cpf(true);
+console.log(cpf(true));
 
 // gera cpf com máscara e do estado informado
-cpf(true, "rs");
+console.log(cpf(true, "RS"));
 
 // gera cpf sem máscara e do estado informado
-cpf(false, "mg");
+console.log(cpf(false, "MG"));
             </code></pre>
-            
           </div>
-          <!--//docs-code-block-->
-
-          
-
-
         </section>
 
 
@@ -684,10 +678,10 @@ import { cnh, cnhCategoria } from 'gerador-br'; // ES Module
 // const { cnh, cnhCategoria } = require('gerador-br'); // CommonJS
 
 // Gera CNH aleatória
-cnh();
+console.log(cnh());
 
 // Gera Categoria CNH
-cnhCategoria();
+console.log(cnhCategoria());
             </code></pre>
           </div>
           <!--//docs-code-block-->
@@ -701,10 +695,10 @@ import { rg } from 'gerador-br'; // ES Module
 // const { rg } = require('gerador-br'); // CommonJS
 
 // Gera RG sem máscara
-rg();
+console.log(rg());
 
 // Gera RG com máscara
-rg(true);
+console.log(rg(true));
             </code></pre>
           </div>
           <!--//docs-code-block-->
@@ -718,18 +712,18 @@ import { cns } from 'gerador-br'; // ES Module
 // const { cns } = require('gerador-br'); // CommonJS
 
 // Gera CNS (Cartão Nacional Saúde) sem máscara e tipo aleatório
-cns();
+console.log(cns());
 
 // Gera CNS (Cartão Nacional Saúde) sem máscara e do tipo informado
-cns(false, 'beneficiario');
-cns(false, 'profissional');
+console.log(cns(false, 'beneficiario'));
+console.log(cns(false, 'profissional'));
 
 // Gera CNS (Cartão Nacional Saúde) com máscara e tipo aleatório
-cns(true);
+console.log(cns(true));
 
 // Gera CNS (Cartão Nacional Saúde) com máscara e do tipo informado
-cns(true, 'beneficiario');
-cns(true, 'profissional');
+console.log(cns(true, 'beneficiario'));
+console.log(cns(true, 'profissional'));
             </code></pre>
           </div>
           <!--//docs-code-block-->
@@ -743,10 +737,10 @@ import { pis } from 'gerador-br'; // ES Module
 // const { pis } = require('gerador-br'); // CommonJS
 
 // Gera PIS sem máscara
-pis();
+console.log(pis());
 
 // Gera PIS com máscara
-pis(true);
+console.log(pis(true));
             </code></pre>
           </div>
           <!--//docs-code-block-->
@@ -760,16 +754,16 @@ import { tituloEleitor } from 'gerador-br'; // ES Module
 // const { tituloEleitor } = require('gerador-br'); // CommonJS
 
 // Gera Título de Eleitor sem máscara e de estado aleatório
-tituloEleitor();
+console.log(tituloEleitor());
 
 // Gera Título de Eleitor com máscara e de estado aleatório
-tituloEleitor(true);
+console.log(tituloEleitor(true));
 
 // Gera Título de Eleitor sem máscara e de estado informado
-tituloEleitor(true,'SE');
+console.log(tituloEleitor(true,'SE'));
 
 // Gera Título de Eleitor com máscara e de estado informado
-tituloEleitor(false,'PR');
+console.log(tituloEleitor(false,'PR'));
             </code></pre>
           </div>
           <!--//docs-code-block-->
@@ -783,7 +777,7 @@ import { passaporte } from 'gerador-br'; // ES Module
 // const { passaporte } = require('gerador-br'); // CommonJS
 
 // Gera Passaporte aleatório
-passaporte();
+console.log(passaporte());
             </code></pre>
           </div>
           <!--//docs-code-block-->
@@ -797,26 +791,26 @@ import { certidao } from 'gerador-br'; // ES Module
 // const { certidao } = require('gerador-br'); // CommonJS
 
 // Certidão aleatória
-certidao.aleatoria();        // com máscara
-certidao.aleatoria(false);   // sem máscara
+console.log(certidao.aleatoria());        // com máscara
+console.log(certidao.aleatoria(false));   // sem máscara
 
 // Certidão de nascimento
-certidao.nascimento();       // com máscara
-certidao.nascimento(false);  // sem máscara
+console.log(certidao.nascimento());       // com máscara
+console.log(certidao.nascimento(false));  // sem máscara
 
 // Certidão de casamento
-certidao.casamento();        // com máscara
-certidao.casamento(false);   // sem máscara
+console.log(certidao.casamento());        // com máscara
+console.log(certidao.casamento(false));   // sem máscara
 
 // Certidão de óbito
-certidao.obito();            // com máscara
-certidao.obito(false);       // sem máscara
+console.log(certidao.obito());            // com máscara
+console.log(certidao.obito(false));       // sem máscara
 
 // Objeto com os detalhes de Certidão
-certidao.aleatoriaObj();     // Objeto detalhado de certidão aleatória
-certidao.nascimentoObj();    // Objeto detalhado de certidão de nascimento
-certidao.casamentoObj();     // Objeto detalhado de certidão de casamento
-certidao.obitoObj();         // Objeto detalhado de certidão de óbito
+console.log(certidao.aleatoriaObj());     // Objeto detalhado de certidão aleatória
+console.log(certidao.nascimentoObj());    // Objeto detalhado de certidão de nascimento
+console.log(certidao.casamentoObj());     // Objeto detalhado de certidão de casamento
+console.log(certidao.obitoObj());         // Objeto detalhado de certidão de óbito
             </code></pre>
           </div>
           <!--//docs-code-block-->
@@ -841,10 +835,10 @@ import { cnpj } from 'gerador-br'; // ES Module
 // const { cnpj } = require('gerador-br'); // CommonJS
 
 // Gera CNPJ sem máscara
-cnpj();
+console.log(cnpj());
 
 // Gera CNPJ com máscara
-cnpj(true);
+console.log(cnpj(true));
             </code></pre>
           </div>
         </section>
@@ -873,12 +867,12 @@ import { inscricaoEstadual } from 'gerador-br'; // ES Module
 // const { inscricaoEstadual } = require('gerador-br'); // CommonJS
 
 // Gera Inscrição Estadual aleatório e do estado informado.
-inscricaoEstadual();      // Sem informar o estado
-inscricaoEstadual('AC');  // AC 01.335116638
-inscricaoEstadual('AP');  // AP 03.42773842
-inscricaoEstadual('BA');  // BA 16408652-16
-inscricaoEstadual('DF');  // DF 0724.4814180
-inscricaoEstadual('RJ');  // RJ 41038311.44
+console.log(inscricaoEstadual());      // Sem informar o estado
+console.log(inscricaoEstadual('AC'));  // AC 01.335116638
+console.log(inscricaoEstadual('AP'));  // AP 03.42773842
+console.log(inscricaoEstadual('BA'));  // BA 16408652-16
+console.log(inscricaoEstadual('DF'));  // DF 0724.4814180
+console.log(inscricaoEstadual('RJ'));  // RJ 41038311.44
             </code></pre>
           </div>
         </section>
@@ -902,7 +896,7 @@ import { banco } from 'gerador-br'; // ES Module
 // const { banco } = require('gerador-br'); // CommonJS
 
 // Gera dados de um banco aleatório
-banco();
+console.log(banco());
 
 // Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
 const bnc = banco();
@@ -912,7 +906,7 @@ console.log(bnc.razaoSocial);
 console.log(bnc.ispb);
 
 // Gera dados do banco informado
-banco(237);
+console.log(banco(237));
             </code></pre>
           </div>
         </section>
@@ -925,7 +919,7 @@ import { listaCodigosBancos } from 'gerador-br'; // ES Module
 // const { listaCodigosBancos } = require('gerador-br'); // CommonJS
 
 // Retorna uma lista de códigos de bancos
-listaCodigosBancos();
+console.log(listaCodigosBancos());
             </code></pre>
           </div>
         </section>
@@ -939,7 +933,7 @@ import { cartaoCredito } from 'gerador-br'; // ES Module
 
 // Gera objeto cartaoCredito com as propriedades:
 // numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular aleatório (abreviado)
-cartaoCredito();
+console.log(cartaoCredito());
 
 // Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
 const cc = cartaoCredito();
@@ -951,15 +945,15 @@ console.log(cc.nomeTitular);
 
 // Gera objeto cartaoCredito com as propriedades:
 // numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
-cartaoCredito(true, "João Santos da Silva");
+console.log(cartaoCredito(true, "João Santos da Silva"));
 
 // Gera objeto cartaoCredito com as propriedades:
 // numero (sem máscara), bandeira, cvv, dataExpiracao e nomeTitular informado (abreviado)
-cartaoCredito(false, "Maria Aparecida Reis");
+console.log(cartaoCredito(false, "Maria Aparecida Reis"));
 
 // Gera objeto cartaoCredito com as propriedades:
 // numero (com máscara), bandeira, cvv, dataExpiracao e nomeTitular gerado (abreviado)
-cartaoCredito(true, nome.femininoCompleto());
+console.log(cartaoCredito(true, nome.femininoCompleto()));
             </code></pre>
           </div>
         </section>
@@ -972,7 +966,7 @@ import { contaBancaria } from 'gerador-br'; // ES Module
 // const { contaBancaria } = require('gerador-br'); // CommonJS
 
 // Gera uma conta bancária aleatória de um banco aleatório
-contaBancaria();
+console.log(contaBancaria());
 
 // Opcionalmente, atribua o objeto a uma variável e utilize as propriedades
 const cb = contaBancaria();
@@ -984,32 +978,32 @@ console.log(cb.conta);
 console.log(cb.contaDv);
 
 // Gera uma conta bancária aleatória do Banco do Brasil
-contaBancaria('1');
-contaBancaria('Banco do Brasil');
+console.log(contaBancaria('1'));
+console.log(contaBancaria('Banco do Brasil'));
 
 // Gera uma conta bancária aleatória do Bradesco
-contaBancaria("237");
-contaBancaria('Bradesco');
+console.log(contaBancaria("237"));
+console.log(contaBancaria('Bradesco'));
 
 // Gera uma conta bancária aleatória da Caixa
-contaBancaria('104');
-contaBancaria('Caixa');
+console.log(contaBancaria('104'));
+console.log(contaBancaria('Caixa'));
 
 // Gera uma conta bancária aleatória do Citibank
-contaBancaria('745');
-contaBancaria('Citibank');
+console.log(contaBancaria('745'));
+console.log(contaBancaria('Citibank'));
 
 // Gera uma conta bancária aleatória do HSBC
-contaBancaria('296');
-contaBancaria('HSBC');
+console.log(contaBancaria('296'));
+console.log(contaBancaria('HSBC'));
 
 // Gera uma conta bancária aleatória do Itaú
-contaBancaria('341');
-contaBancaria('Itaú');
+console.log(contaBancaria('341'));
+console.log(contaBancaria('Itaú'));
 
 // Gera uma conta bancária aleatória do Santander
-contaBancaria('33');
-contaBancaria('Santander');
+console.log(contaBancaria('33'));
+console.log(contaBancaria('Santander'));
             </code></pre>
           </div>
         </section>
@@ -1033,40 +1027,40 @@ import { nome } from 'gerador-br'; // ES Module
 // const { nome } = require('gerador-br'); // CommonJS
 
 // Gera um nome aleatório (feminino ou masculino)
-nome.aleatorio();
+console.log(nome.aleatorio());
 
 // Gera um nome aleatório completo (feminino ou masculino)
-nome.aleatorioCompleto();
+console.log(nome.aleatorioCompleto());
 
 // Gera um nome masculino aleatório
-nome.masculino();
+console.log(nome.masculino());
 
 // Gera um nome masculino completo aleatório
-nome.masculinoCompleto();
+console.log(nome.masculinoCompleto());
 
 // Gera um nome feminino aleatório
-nome.feminino();
+console.log(nome.feminino());
 
 // Gera um nome feminino completo aleatório
-nome.femininoCompleto();
+console.log(nome.femininoCompleto());
 
 // Gera o nome da mãe aleatório
-nome.mae();
+console.log(nome.mae());
 
 // Gera o nome completo da mãe aleatório
-nome.maeCompleto();
+console.log(nome.maeCompleto());
 
 // Gera o nome do pai aleatório
-nome.pai();
+console.log(nome.pai());
 
 // Gera o nome completo do pai aleatório
-nome.paiCompleto();
+console.log(nome.paiCompleto());
 
 // Gera um nome do meio aleatório
-nome.doMeio();
+console.log(nome.doMeio());
 
 // Gera um sobrenome aleatório
-nome.sobrenome();
+console.log(nome.sobrenome());
             </code></pre>
           </div>
         </section>
@@ -1079,7 +1073,7 @@ import { apelido } from 'gerador-br'; // ES Module
 // const { apelido } = require('gerador-br'); // CommonJS
 
 // Gera apelido aleatório
-apelido();
+console.log(apelido());
             </code></pre>
           </div>
         </section>
@@ -1107,7 +1101,7 @@ import { escolaridade } from 'gerador-br'; // ES Module
 // const { escolaridade } = require('gerador-br'); // CommonJS
 
 // Gera escolaridade
-escolaridade();
+console.log(escolaridade());
             </code></pre>
           </div>
         </section>
@@ -1120,7 +1114,7 @@ import { profissao } from 'gerador-br'; // ES Module
 // const { profissao } = require('gerador-br'); // CommonJS
 
 // Gera profissão
-profissao();
+console.log(profissao());
             </code></pre>
           </div>
         </section>
@@ -1133,7 +1127,7 @@ import { corPele } from 'gerador-br'; // ES Module
 // const { corPele } = require('gerador-br'); // CommonJS
 
 // Gera cor de pele aleatória
-corPele();
+console.log(corPele());
             </code></pre>
           </div>
         </section>
@@ -1146,7 +1140,7 @@ import { tipoSanguineo } from 'gerador-br'; // ES Module
 // const { tipoSanguineo } = require('gerador-br'); // CommonJS
 
 // Gera tipo sanguíneo aleatório
-tipoSanguineo();
+console.log(tipoSanguineo());
             </code></pre>
           </div>
         </section>
@@ -1181,7 +1175,6 @@ console.log(genero('x'));
 
         <section class="docs-section" id="orientacaoSexual">
           <h2 class="section-heading">Orientação Sexual</h2>
-          <p>Gera uma orientação sexual aleatória.</p>
           <div class="docs-code-block">
             <pre><code class="language-js">
 import { orientacaoSexual } from 'gerador-br'; // ES Module
@@ -1206,10 +1199,8 @@ console.log(identidadeGenero()); // "Cisgênero", "Transgênero" ou "Não binár
           </div>
         </section>
 
-        <section class="docs-section" id="identidadePorOrientação">
+        <section class="docs-section" id="identidadePorOrientacao">
           <h2 class="section-heading">Identidade de Gênero por Orientação Sexual</h2>
-          <p>Esta função gera uma identidade de gênero que pode ser associada a uma orientação sexual específica ou
-            selecionada aleatoriamente.</p>
           <div class="docs-code-block">
             <pre><code class="language-js">
 import { identidadePorOrientacao } from 'gerador-br'; // ES Module
@@ -1220,7 +1211,7 @@ console.log(identidadePorOrientacao('Homossexual'));   // 'Cisgênero' ou 'Trans
 console.log(identidadePorOrientacao('Bissexual'));     // 'Cisgênero', 'Transgênero' ou 'Não binário'
 console.log(identidadePorOrientacao('Assexual'));      // Cisgênero', 'Transgênero' ou 'Não binário'
 console.log(identidadePorOrientacao('Pansexual'));     // 'Cisgênero', 'Transgênero' ou 'Não binário'
-console.log(identidadePorOrientacao());                // Retorna uma identidade de gênero aleatória associada a uma orientação sexual aleatória.
+console.log(identidadePorOrientacao());  // Retorna uma identidade de gênero aleatória associada a uma orientação sexual aleatória.
             </code></pre>
           </div>
         </section>
@@ -1245,15 +1236,15 @@ import { email, nome } from 'gerador-br'; // ES Module
 // const { email, nome } = require('gerador-br'); // CommonJS
 
 // Gera e-mail com nickname aleatório
-email();
+console.log(email());
 
 // Gera e-mail com nome masculino
 const nomeMasculinoCompleto = nome.masculinoCompleto();
-email(nomeMasculinoCompleto);
+console.log(email(nomeMasculinoCompleto));
 
 // Gera e-mail com nome feminino
 const nomeFemininoCompleto = nome.femininoCompleto();
-email(nomeFemininoCompleto);
+console.log(email(nomeFemininoCompleto));
             </code></pre>
           </div>
         </section>
@@ -1266,10 +1257,10 @@ import { ddd } from 'gerador-br'; // ES Module
 // const { ddd } = require('gerador-br'); // CommonJS
 
 // Gera DDD aleatório
-ddd();
+console.log(ddd());
 
 // Gera DDD aleatório do estado informado
-ddd("PA");
+console.log(ddd("PA"));
             </code></pre>
           </div>
         </section>
@@ -1295,22 +1286,22 @@ import { codigoOperadora } from 'gerador-br'; // ES Module
 // const { codigoOperadora } = require('gerador-br'); // CommonJS
 
 // Gera um código da Claro (968, 973, 974, 975, 976, 991, 992, 993 ou 994)
-codigoOperadora("Claro");
+console.log(codigoOperadora("Claro"));
 
 // Gera um código da Oi (984, 985, 986, 987, 988 ou 989)
-codigoOperadora("Oi");
+console.log(codigoOperadora("Oi"));
 
 // Gera um código da Tim (969, 979, 980, 981, 982 ou 983)
-codigoOperadora("Tim");
+console.log(codigoOperadora("Tim"));
 
 // Gera um código da Vivo (967, 971, 972, 995, 996, 997, 998 ou 999)
-codigoOperadora("Vivo");
+console.log(codigoOperadora("Vivo"));
 
 // Gera um código de uma operadora aleatória
-codigoOperadora();
+console.log(codigoOperadora());
 
 // Gera um código de uma operadora aleatória
-codigoOperadora("blablabla");
+console.log(codigoOperadora("blablabla"));
             </code></pre>
           </div>
         </section>
@@ -1323,22 +1314,22 @@ import { celular } from 'gerador-br'; // ES Module
 // const { celular } = require('gerador-br'); // CommonJS
 
 // Gera celular sem máscara, de estado aleatório e operadora aleatória
-celular();                   // "11999999999"
+console.log(celular());                   // "11999999999"
 
 // Gera celular com máscara, de estado aleatório e operadora aleatória
-celular(true);               // "(11) 99999-9999"
+console.log(celular(true));               // "(11) 99999-9999"
 
 // Gera celular sem máscara, do estado informado e operadora aleatória
-celular(false, "SC");        // "48999999999"
+console.log(celular(false, "SC"));        // "48999999999"
 
 // Gera celular com máscara, do estado informado e operadora aleatória
-celular(true, "ES");         // "(27) 99999-9999"
+console.log(celular(true, "ES"));         // "(27) 99999-9999"
 
 // Gera celular sem máscara, do estado aleatório e operadora informada
-celular(false, "", "Claro"); // "85991999999"
+console.log(celular(false, "", "Claro")); // "85991999999"
 
 // Gera celular com máscara, do estado informado e operadora aleatória
-celular(true, "MS", "Vivo"); // "(67) 99799-9999"
+console.log(celular(true, "MS", "Vivo")); // "(67) 99799-9999"
             </code></pre>
           </div>
         </section>
@@ -1351,16 +1342,16 @@ import { telefone } from 'gerador-br'; // ES Module
 // const { telefone } = require('gerador-br'); // CommonJS
 
 // Gera telefone sem máscara, de estado aleatório
-telefone();             // "1199999999"
+console.log(telefone());             // "1199999999"
 
 // Gera telefone com máscara, de estado aleatório
-telefone(true);         // "(11) 9999-9999"
+console.log(telefone(true));         // "(11) 9999-9999"
 
 // Gera telefone sem máscara, do estado informado
-telefone(false, "SC");  // "4899999999"
+console.log(telefone(false, "SC"));  // "4899999999"
 
 // Gera telefone com máscara, do estado informado
-telefone(true, "ES");   // "(27) 9999-9999"
+console.log(telefone(true, "ES"));   // "(27) 9999-9999"
             </code></pre>
           </div>
         </section>
@@ -1373,16 +1364,16 @@ import { cep } from 'gerador-br'; // ES Module
 // const { cep } = require('gerador-br'); // CommonJS
 
 // Gera CEP sem máscara de estado aleatório
-cep();                  // "12345678"
+console.log(cep());                  // "12345678"
 
 // Gera CEP com máscara de estado aleatório
-cep(true);              // "12345-678"
+console.log(cep(true));              // "12345-678"
 
 // Gera CEP sem máscara de estado informado
-cep(false, "SP");       // "01001000"
+console.log(cep(false, "SP"));       // "01001000"
 
 // Gera CEP com máscara de estado informado
-cep(true, "SP");        // "01001-000"
+console.log(cep(true, "SP"));        // "01001-000"
             </code></pre>
           </div>
         </section>
@@ -1395,19 +1386,19 @@ import { endereco } from 'gerador-br'; // ES Module
 // const { endereco } = require('gerador-br'); // CommonJS
 
 // Gera um objeto com todos os campos do endereço e de estado aleatório
-endereco();
+console.log(endereco());
 
 // Gera um objeto com todos os campos do endereço, o CEP com máscara e de estado aleatório
-endereco(true);
+console.log(endereco(true));
 
 // Gera um objeto com todos os campos do endereço, o CEP sem máscara e de estado aleatório
-endereco(false);
+console.log(endereco(false));
 
 // Gera um objeto com todos os campos do endereço, o CEP com máscara e do estado informado
-endereco(true, "RJ");
+console.log(endereco(true, "RJ"));
 
 // Gera um objeto com todos os campos do endereço, o CEP sem máscara e do estado informado
-endereco(false, "SP");
+console.log(endereco(false, "SP"));
 
 // Opcionalmente, gere um endereço e utilize apenas a propriedade desejada
 const end = endereco();
@@ -1441,10 +1432,10 @@ import { placaAntiga } from 'gerador-br'; // ES Module
 // const { placaAntiga } = require('gerador-br'); // CommonJS
 
 // Gera placa no formato antigo com máscara "ABC-1234"
-placaAntiga(true);
+console.log(placaAntiga(true));
 
 // Gera placa no formato antigo sem máscara "ABC1234"
-placaAntiga(false);
+console.log(placaAntiga(false));
             </code></pre>
           </div>
         </section>
@@ -1457,10 +1448,10 @@ import { placaMercosul } from 'gerador-br'; // ES Module
 // const { placaMercosul } = require('gerador-br'); // CommonJS
 
 // Gera placa no formato Mercosul com máscara "ABC-1D23"
-placaMercosul(true);
+console.log(placaMercosul(true));
 
 // Gera placa no formato Mercosul sem máscara "ABC1D23"
-placaMercosul(false);
+console.log(placaMercosul(false));
             </code></pre>
           </div>
         </section>
@@ -1473,7 +1464,7 @@ import { renavam } from 'gerador-br'; // ES Module
 // const { renavam } = require('gerador-br'); // CommonJS
 
 // Gera RENAVAM
-renavam();
+console.log(renavam());
             </code></pre>
           </div>
         </section>
@@ -1497,7 +1488,7 @@ import { palavra } from 'gerador-br'; // ES Module
 // const { palavra } = require('gerador-br'); // CommonJS
 
 // Gera uma palavra aleatória
-palavra();
+console.log(palavra());
             </code></pre>
           </div>
         </section>
@@ -1510,10 +1501,10 @@ import { sentenca } from 'gerador-br'; // ES Module
 // const { sentenca } = require('gerador-br'); // CommonJS
 
 // Gera uma sentença com quantidade de palavras aleatórias
-sentenca();
+console.log(sentenca());
 
 // Gera uma sentença com quantidade de palavras definida
-sentenca(10);
+console.log(sentenca(10));
             </code></pre>
           </div>
         </section>
@@ -1526,13 +1517,13 @@ import { paragrafo } from 'gerador-br'; // ES Module
 // const { paragrafo } = require('gerador-br'); // CommonJS
 
 // Gera um parágrafo com quantidade de palavras aleatórias
-paragrafo();
+console.log(paragrafo());
 
 // Gera um parágrafo com quantidade de sentença informada, cada uma com quantidade de palavras aleatórias
-paragrafo(5);
+console.log(paragrafo(5));
 
 // Gera um parágrafo com quantidade de sentenças e de palavras informadas.
-paragrafo(3,8);
+console.log(paragrafo(3,8));
             </code></pre>
           </div>
         </section>

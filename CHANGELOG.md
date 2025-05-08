@@ -4,6 +4,16 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.2.2 (2025-05-08)
+
+### Adiciona Funcionalidades
+
+* Gerador de Gênero
+* Gerador de Orientação Sexual
+* Gerador de Identidade de Gênero
+
+---
+
 ## 1.2.1 (2025-05-06)
 
 ### Adiciona Funcionalidade
@@ -16,7 +26,7 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ### Adiciona Funcionalidade
 
-* Adiciona Gerador de CNPJ Alfanumérico
+* Gerador de CNPJ Alfanumérico
 
 ### Refatora funcionalidades
 

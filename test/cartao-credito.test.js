@@ -1,5 +1,6 @@
-import { describe, test } from 'node:test';
-import { strictEqual } from 'node:assert';
+import { describe, test, mock } from 'node:test';
+import { strictEqual, ok } from 'node:assert';
+
 import { cartaoCredito } from '../src/generators/cartao-credito.js';
 
 describe('Cartão de Crédito Generator', () => {

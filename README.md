@@ -272,7 +272,8 @@ console.log(gerar.genero());
 console.log(gerar.genero(null));
 console.log(gerar.genero('x'));
 
-/* ******************** IDENTIDADE DE GÊNERO ******* */
+/* ****ORIENTAÇÃO SEXUAL E IDENTIDADE DE GÊNERO ******* */
+console.log(gerar.orientacaoSexual());
 console.log(gerar.identidadeGenero());
 console.log(gerar.identidadePorOrientacao());
 
@@ -297,9 +298,6 @@ console.log(gerar.nome.masculinoCompleto());
 console.log(gerar.nome.pai());
 console.log(gerar.nome.paiCompleto());
 console.log(gerar.nome.sobrenome());
-
-/* ******************** ORIENTAÇÃO SEXUAL ********* */
-console.log(gerar.orientacaoSexual());
 
 /* ******************** PASSAPORTE ************** */
 // Gera passaporte aleatório

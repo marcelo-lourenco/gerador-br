@@ -32,7 +32,7 @@ import { codigoOperadora } from './operadora.js';
  */
 export function celular(mask, state, operator) {
   let n = () => Math.round(Math.random() * 9);
-  let sortDdd = state ? ddd(state) : ddd(stateRand);
+  let sortDdd = state ? ddd(state.toUpperCase()) : ddd(stateRand);
   let sortOperator = codigoOperadora(operator); // Claro, Oi, Tim, Vivo
   const n3 = n(); const n4 = n(); const n5 = n(); const n6 = n(); const n7 = n(); const
     n8 = n();

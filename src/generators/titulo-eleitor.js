@@ -88,7 +88,8 @@ export function tituloEleitor(mask, state) {
   const r = () => Math.round(Math.random() * 9);
 
   const n = Array.from({ length: 8 }, r);
-  const stateCode = statesCode(state || stateRand);
+  const uf = state ? state.toUpperCase() : stateRand;
+  const stateCode = statesCode(uf);
   const [n9, n10] = stateCode.split('');
 
   let d1 = n.reduce((acc, digit, index) => acc + digit * (index + 2), 0) % 11;
