@@ -23,10 +23,12 @@
   <meta name="twitter:title" content="Gerador-BR | Formulário para Teste">
   <meta name="twitter:description" content="Formulário para Testes com o pacote Gerador-BR">
   <meta name="twitter:image" content="../assets/images/features/social-preview.png">
-
-  <link rel="icon" href="../assets/images/icons/favicon-16x16.ico" sizes="16x16" >
-  <link rel="icon" href="../assets/images/icons/favicon-32x32.ico" sizes="32x32" >
-  <link rel="icon" href="../assets/images/icons/favicon-48x48.ico" sizes="48x48" >
+  <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/icons/favicon.svg" />
+  <link rel="shortcut icon" href="../assets/images/icons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Gerador BR" />
+  <link rel="manifest" href="../assets/images/icons/site.webmanifest" />
 
   <link rel="stylesheet" href="../assets/plugins/poppins/font-poppins.css">
   <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
@@ -262,677 +264,827 @@
 
 <div class="container my-5" data-testid="container-main">
 
-  <section class="docs-overview py-5" aria-labelledby="compatibilidade-heading" data-testid="section-docs-overview">
+  <section class="docs-overview py-4" aria-labelledby="compatibilidade-heading" data-testid="section-docs-overview">
     <div class="container" data-testid="container-docs-overview">
-      <h1 id="formulario-teste" class="text-center mb-4 h4" data-testid="heading-formulario-teste">Formulário de Teste -
-        Gerador-BR</h1>
-      <p class="text-center mb-5" data-testid="paragraph-baixe-projeto">
-        Baixe o projeto de exemplo desejado.
-      </p>
 
+      <h1 class="text-center mb-4 h" data-testid="heading-automacao">Automação de Testes com Gerador-BR</h1>
+
+      <p class="text-center mb-5">
+        Projetos de exemplo utilizando o pacote Gerador-BR<br>
+        <b>Baixe e Experimente!</b>
+      </p>
+      
       <div class="d-flex flex-wrap justify-content-center gap-4" data-testid="container-tech-badges">
 
-        <div class="tech-badge" data-testid="badge-nodejs">
-          <span class="iconify" data-icon="logos:nodejs" data-width="40" data-height="40"></span>
-          <span>Node.js</span>
-        </div>
+        <a href="https://github.com/marcelo-lourenco/node-test-runner-data-generator" target="_blank"
+          rel="noopener noreferrer" aria-label="Baixar projeto de exemplo Node.js do GitHub"
+          class="text-decoration-none d-inline-block">
+          <div class="tech-badge" data-testid="badge-nodejs">
+            <span class="iconify" data-icon="logos:nodejs" data-width="40" data-height="40"></span>
+            <span>Node</span>
+          </div>
+        </a>
 
-        <div class="tech-badge" data-testid="badge-cypress">
-          <span class="iconify" data-icon="logos:cypress" data-width="40" data-height="40"></span>
-          <span>Cypress</span>
-        </div>
+        <a href="https://github.com/marcelo-lourenco/cypress-data-generator" target="_blank" rel="noopener noreferrer"
+          aria-label="Baixar projeto de exemplo Cypress do GitHub" class="text-decoration-none d-inline-block">
+          <div class="tech-badge" data-testid="badge-cypress">
+            <span class="iconify" data-icon="logos:cypress" data-width="40" data-height="40"></span>
+            <span>Cypress</span>
+          </div>
+        </a>
 
-        <div class="tech-badge" data-testid="badge-jest">
-          <span class="iconify" data-icon="logos:jest" data-width="40" data-height="40"></span>
-          <span>Jest</span>
-        </div>
+        <a href="https://github.com/marcelo-lourenco/jest-data-generator" target="_blank" rel="noopener noreferrer"
+          aria-label="Baixar projeto de exemplo Jest do GitHub" class="text-decoration-none d-inline-block">
+          <div class="tech-badge" data-testid="badge-jest">
+            <span class="iconify" data-icon="logos:jest" data-width="40" data-height="40"></span>
+            <span>Jest</span>
+          </div>
+        </a>
 
-        <div class="tech-badge" data-testid="badge-playwright">
-          <span class="iconify" data-icon="logos:playwright" data-width="40" data-height="40"></span>
-          <span>Playwright</span>
-        </div>
+        <a href="https://github.com/marcelo-lourenco/playwright-data-generator" target="_blank"
+          rel="noopener noreferrer" aria-label="Baixar projeto de exemplo Playwright do GitHub"
+          class="text-decoration-none d-inline-block">
+          <div class="tech-badge" data-testid="badge-playwright">
+            <span class="iconify" data-icon="logos:playwright" data-width="40" data-height="40"></span>
+            <span>Playwright</span>
+          </div>
+        </a>
 
-        <div class="tech-badge" data-testid="badge-jasmine">
-          <span class="iconify" data-icon="logos:jasmine" data-width="40" data-height="40"></span>
-          <span>Jasmine</span>
-        </div>
+        <a href="https://github.com/marcelo-lourenco/jasmine-data-generator" target="_blank" rel="noopener noreferrer"
+          aria-label="Baixar projeto de exemplo Jasmine do GitHub" class="text-decoration-none d-inline-block">
+          <div class="tech-badge" data-testid="badge-jasmine">
+            <span class="iconify" data-icon="logos:jasmine" data-width="40" data-height="40"></span>
+            <span>Jasmine</span>
+          </div>
+        </a>
 
       </div>
     </div>
   </section>
 
-  <form id="testForm" novalidate data-testid="form-test">
+  <hr>
 
-    <div class="row justify-content-center">
+  <section class="docs-overview py-5" aria-labelledby="compatibilidade-heading" data-testid="section-docs-overview">
+    <h1 id="formulario-teste" class="text-center mb-4 h3" data-testid="heading-formulario-teste">Formulário de Teste </h1>
 
-      <!-- Coluna: Pessoa -->
-      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
-        <div class="card shadow-sm flex-fill" data-testid="card-pessoa">
-          <div class="card-body d-flex flex-column">
+    <p class="text-center mb-5">Os projetos acima preenchem este formulário.</p>
 
-            <!-- Pessoa -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-user" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-pessoa">Pessoa</span>
-              </h2>
-            </div>
+      <form id="testForm" novalidate data-testid="form-test">
 
-            <!-- Nome -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldNome" name="fldNome" placeholder="Nome"
-                aria-label="Nome" data-testid="input-nome">
-              <label class="required" for="fldNome">Nome</label>
-            </div>
+        <div class="row justify-content-center">
 
-            <!-- Pai -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldPai" name="fldPai" placeholder="Pai"
-                aria-label="Pai" data-testid="input-pai">
-              <label class="required" for="fldPai">Pai</label>
-            </div>
+          <!-- Coluna: Pessoa -->
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card shadow-sm flex-fill" data-testid="card-pessoa">
+              <div class="card-body d-flex flex-column">
 
-            <!-- Mãe -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldMae" name="fldMae" placeholder="Mãe"
-                aria-label="Mãe" data-testid="input-mae">
-              <label class="required" for="fldMae">Mãe</label>
-            </div>
-
-            <!-- Apelido -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldApelido" name="fldApelido" placeholder="Apelido"
-                aria-label="Apelido" data-testid="input-apelido">
-              <label class="required" for="fldApelido">Apelido</label>
-            </div>
-
-            <!-- Escolaridade -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldEscolaridade" name="fldEscolaridade"
-                placeholder="Escolaridade" aria-label="Escolaridade" data-testid="input-escolaridade">
-              <label class="required" for="fldEscolaridade">Escolaridade</label>
-            </div>
-
-            <!-- Profissão -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldProfissao" name="fldProfissao"
-                placeholder="Profissão" aria-label="Profissão" data-testid="input-profissao">
-              <label class="required" for="fldProfissao">Profissão</label>
-            </div>
-
-            <!-- Cor da Pele -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCorPele" name="fldCorPele"
-                placeholder="Cor da Pele" aria-label="Cor da Pele" data-testid="input-corpele">
-              <label class="required" for="fldCorPele">Cor da Pele</label>
-            </div>
-
-            <!-- Gênero -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldGenero" name="fldGenero" placeholder="Gênero"
-                aria-label="Gênero" data-testid="input-genero">
-              <label class="required" for="fldGenero">Gênero</label>
-            </div>
-
-            <!-- Orientação Sexual -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldOrientacaoSexual" name="fldOrientacaoSexual"
-                placeholder="Orientação Sexual" aria-label="Orientação Sexual" data-testid="input-orientacaosexual">
-              <label class="required" for="fldOrientacaoSexual">Orientação Sexual</label>
-            </div>
-
-            <!-- Identidade de Gênero -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldIdentidadeGenero" name="fldIdentidadeGenero"
-                placeholder="Identidade de Gênero" aria-label="Identidade de Gênero"
-                data-testid="input-identidadegenero">
-              <label class="required" for="fldIdentidadeGenero">Identidade de Gênero</label>
-            </div>
-
-            <!-- Tipo Sanguíneo -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldTipoSanguineo" name="fldTipoSanguineo"
-                placeholder="Tipo Sanguíneo" aria-label="Tipo Sanguíneo" data-testid="input-tiposanguineo">
-              <label class="required" for="fldTipoSanguineo">Tipo Sanguíneo</label>
-            </div>
-
-            <!-- Data de Nascimento -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldDataNascimento" name="fldDataNascimento"
-                placeholder="Data de Nascimento" aria-label="Data de Nascimento" data-testid="input-datanascimento">
-              <label class="required" for="fldDataNascimento">Data de Nascimento</label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--//col-->
-
-      <!-- Coluna: Documentos -->
-      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
-        <div class="card shadow-sm flex-fill" data-testid="card-documentos">
-          <div class="card-body d-flex flex-column">
-
-            <!-- Documentos PJ -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-building" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-documentos-pj">Documentos PJ</span>
-              </h2>
-            </div>
-
-            <!-- CNPJ -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCnpj" name="fldCnpj" placeholder="CNPJ"
-                aria-label="CNPJ" data-testid="input-cnpj">
-              <label class="required" for="fldCnpj">CNPJ</label>
-            </div>
-
-            <!-- Inscrição Estadual -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldInscricaoEstadual" name="fldInscricaoEstadual"
-                placeholder="Inscrição Estadual" aria-label="Inscrição Estadual" data-testid="input-inscricaoestadual">
-              <label class="required" for="fldInscricaoEstadual">Inscrição Estadual</label>
-            </div>
-
-            <!-- Documentos PF -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-id-card" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-documentos-pf">Documentos PF</span>
-              </h2>
-            </div>
-
-            <!-- CPF -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCpf" name="fldCpf" placeholder="CPF"
-                aria-label="CPF" data-testid="input-cpf">
-              <label class="required" for="fldCpf">CPF</label>
-            </div>
-
-            <!-- CNH -->
-            <div class="row g-2">
-              <div class="col-md-9">
-                <div class="form-floating mb-3 position-relative">
-                  <input type="text" required class="form-control" id="fldCnh" name="fldCnh" placeholder="CNH"
-                    aria-label="CNH" data-testid="input-cnh">
-                  <label class="required" for="fldCnh">CNH</label>
+                <!-- Pessoa -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-user" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-pessoa">Pessoa</span>
+                  </h2>
                 </div>
-              </div>
-              <div class="col-md-3">
+
+                <!-- Nome -->
                 <div class="form-floating mb-3 position-relative">
-                  <input type="text" required class="form-control" id="fldCnhCategoria" name="fldCnhCategoria"
-                    placeholder="Categ." aria-label="Categoria CNH" data-testid="input-cnhcategoria">
-                  <label for="fldCnhCategoria">Categ.</label>
+                  <input type="text" class="form-control" id="fldNome" name="fldNome" placeholder="Nome"
+                    aria-label="Nome" data-testid="input-nome">
+                  <label for="fldNome">Nome</label>
+                </div>
+
+                <!-- Pai -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldPai" name="fldPai" placeholder="Pai" aria-label="Pai"
+                    data-testid="input-pai">
+                  <label for="fldPai">Pai</label>
+                </div>
+
+                <!-- Mãe -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldMae" name="fldMae" placeholder="Mãe" aria-label="Mãe"
+                    data-testid="input-mae">
+                  <label for="fldMae">Mãe</label>
+                </div>
+
+                <!-- Apelido -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldApelido" name="fldApelido" placeholder="Apelido"
+                    aria-label="Apelido" data-testid="input-apelido">
+                  <label for="fldApelido">Apelido</label>
+                </div>
+
+                <!-- Escolaridade -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldEscolaridade" name="fldEscolaridade"
+                    placeholder="Escolaridade" aria-label="Escolaridade" data-testid="input-escolaridade">
+                  <label for="fldEscolaridade">Escolaridade</label>
+                </div>
+
+                <!-- Profissão -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldProfissao" name="fldProfissao" placeholder="Profissão"
+                    aria-label="Profissão" data-testid="input-profissao">
+                  <label for="fldProfissao">Profissão</label>
+                </div>
+
+                <!-- Cor da Pele -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCorPele" name="fldCorPele" placeholder="Cor da Pele"
+                    aria-label="Cor da Pele" data-testid="input-corpele">
+                  <label for="fldCorPele">Cor da Pele</label>
+                </div>
+
+                <!-- Gênero -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldGenero" name="fldGenero" placeholder="Gênero"
+                    aria-label="Gênero" data-testid="input-genero">
+                  <label for="fldGenero">Gênero</label>
+                </div>
+
+                <!-- Orientação Sexual -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldOrientacaoSexual" name="fldOrientacaoSexual"
+                    placeholder="Orientação Sexual" aria-label="Orientação Sexual" data-testid="input-orientacaosexual">
+                  <label for="fldOrientacaoSexual">Orientação Sexual</label>
+                </div>
+
+                <!-- Identidade de Gênero -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldIdentidadeGenero" name="fldIdentidadeGenero"
+                    placeholder="Identidade de Gênero" aria-label="Identidade de Gênero"
+                    data-testid="input-identidadegenero">
+                  <label for="fldIdentidadeGenero">Identidade de Gênero</label>
+                </div>
+
+                <!-- Tipo Sanguíneo -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldTipoSanguineo" name="fldTipoSanguineo"
+                    placeholder="Tipo Sanguíneo" aria-label="Tipo Sanguíneo" data-testid="input-tiposanguineo">
+                  <label for="fldTipoSanguineo">Tipo Sanguíneo</label>
+                </div>
+
+                <!-- Data de Nascimento -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldDataNascimento" name="fldDataNascimento"
+                    placeholder="Data de Nascimento" aria-label="Data de Nascimento" data-testid="input-datanascimento">
+                  <label for="fldDataNascimento">Data de Nascimento</label>
                 </div>
               </div>
             </div>
-
-            <!-- RG -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldRg" name="fldRg" placeholder="RG" aria-label="RG"
-                data-testid="input-rg">
-              <label class="required" for="fldRg">RG</label>
-            </div>
-
-            <!-- CNS -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCns" name="fldCns" placeholder="CNS"
-                aria-label="CNS" data-testid="input-cns">
-              <label class="required" for="fldCns">CNS</label>
-            </div>
-
-            <!-- PIS -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldPis" name="fldPis" placeholder="PIS"
-                aria-label="PIS" data-testid="input-pis">
-              <label class="required" for="fldPis">PIS</label>
-            </div>
-
-            <!-- Título de Eleitor -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldTituloEleitor" name="fldTituloEleitor"
-                placeholder="Título de Eleitor" aria-label="Título de Eleitor" data-testid="input-tituloeleitor">
-              <label class="required" for="fldTituloEleitor">Título de Eleitor</label>
-            </div>
-
-            <!-- Passaporte -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldPassaporte" name="fldPassaporte"
-                placeholder="Passaporte" aria-label="Passaporte" data-testid="input-passaporte">
-              <label class="required" for="fldPassaporte">Passaporte</label>
-            </div>
-
-            <!-- Certidão de Nascimento -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCertidaoNascimento" name="fldCertidaoNascimento"
-                placeholder="Certidão de Nascimento" aria-label="Certidão de Nascimento"
-                data-testid="input-certidaonascimento">
-              <label class="required" for="fldCertidaoNascimento">Certidão de Nascimento</label>
-            </div>
-
-            <!-- Certidão de Casamento -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCertidaoCasamento" name="fldCertidaoCasamento"
-                placeholder="Certidão de Casamento" aria-label="Certidão de Casamento"
-                data-testid="input-certidaocasamento">
-              <label class="required" for="fldCertidaoCasamento">Certidão de Casamento</label>
-            </div>
-
-            <!-- Certidão de Óbito -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCertidaoObito" name="fldCertidaoObito"
-                placeholder="Certidão de Óbito" aria-label="Certidão de Óbito" data-testid="input-certidaoobito">
-              <label class="required" for="fldCertidaoObito">Certidão de Óbito</label>
-            </div>
-
           </div>
-        </div>
-      </div>
-      <!--//col-->
+          <!--//col-->
 
-      <!-- Coluna: Contatos e Endereço -->
-      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
-        <div class="card shadow-sm flex-fill" data-testid="card-contatos-endereco">
-          <div class="card-body d-flex flex-column">
+          <!-- Coluna: Documentos -->
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card shadow-sm flex-fill" data-testid="card-documentos">
+              <div class="card-body d-flex flex-column">
 
-            <!-- Contatos -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-address-book" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-contatos">Contatos</span>
-              </h2>
-            </div>
-
-            <!-- E-mail -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="email" required class="form-control" id="fldEmail" name="fldEmail" placeholder="E-mail"
-                aria-label="Email" data-testid="input-email">
-              <label class="required" for="fldEmail">E-mail</label>
-            </div>
-
-            <!-- DDD -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldDdd" name="fldDdd" placeholder="DDD"
-                aria-label="DDD" data-testid="input-ddd">
-              <label class="required" for="fldDdd">DDD</label>
-            </div>
-
-            
-
-            <!-- Telefone -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCelular" name="fldCelular" placeholder="Celular"
-                aria-label="Celular" data-testid="input-celular">
-              <label class="required" for="fldCelular">Celular</label>
-            </div>
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldTelefone" name="fldTelefone"
-                placeholder="Telefone" aria-label="Telefone" data-testid="input-telefone">
-              <label class="required" for="fldTelefone">Telefone</label>
-            </div>
-
-            <!-- Endereço -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-endereco">Endereço</span>
-              </h2>
-            </div>
-
-            <!-- Logradouro -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldLogradouro" name="fldLogradouro"
-                placeholder="Logradouro" aria-label="Logradouro" data-testid="input-logradouro">
-              <label class="required" for="fldLogradouro">Logradouro</label>
-            </div>
-
-            <!-- Número -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldNumero" name="fldNumero" placeholder="Número"
-                aria-label="Número" data-testid="input-numero">
-              <label class="required" for="fldNumero">Número</label>
-            </div>
-
-            <!-- Complemento -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" class="form-control" id="fldComplemento" name="fldComplemento"
-                placeholder="Complemento" aria-label="Complemento" data-testid="input-complemento">
-              <label for="fldComplemento">Complemento</label>
-            </div>
-
-            <!-- Bairro -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldBairro" name="fldBairro" placeholder="Bairro"
-                aria-label="Bairro" data-testid="input-bairro">
-              <label class="required" for="fldBairro">Bairro</label>
-            </div>
-
-            <!-- Localidade -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldLocalidade" name="fldLocalidade"
-                placeholder="Cidade" aria-label="Cidade" data-testid="input-localidade">
-              <label class="required" for="fldLocalidade">Cidade</label>
-            </div>
-
-            <!-- Estado -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldEstado" name="fldEstado" placeholder="Estado"
-                aria-label="Estado" data-testid="input-estado">
-              <label class="required" for="fldEstado">Estado</label>
-            </div>
-
-            <!-- CEP -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCep" name="fldCep" placeholder="CEP"
-                aria-label="CEP" data-testid="input-cep">
-              <label class="required" for="fldCep">CEP</label>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!--//col-->
-
-      <!-- Coluna: Bancos e Cartões -->
-      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
-        <div class="card shadow-sm flex-fill" data-testid="card-bancos-cartoes">
-          <div class="card-body d-flex flex-column">
-
-            <!-- Cartão -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-credit-card" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-cartao-credito">Cartão de Crédito</span>
-              </h2>
-            </div>
-
-            <!-- Cartão de Crédito -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCartaoCredito" name="fldCartaoCredito"
-                placeholder="Cartão de Crédito" aria-label="Cartão de Crédito" data-testid="input-cartaocredito">
-              <label class="required" for="fldCartaoCredito">Cartão de Crédito</label>
-            </div>
-
-            <!-- Bandeira -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldBandeira" name="fldBandeira"
-                placeholder="Bandeira" aria-label="Bandeira" data-testid="input-bandeira">
-              <label class="required" for="fldBandeira">Bandeira</label>
-            </div>
-
-            <!-- Nome do Titular -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldNomeTitular" name="fldNomeTitular"
-                placeholder="Nome do Titular" aria-label="Nome do Titular" data-testid="input-nometitular">
-              <label class="required" for="fldNomeTitular">Nome do Titular</label>
-            </div>
-
-            <!-- CVV -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCvv" name="fldCvv" placeholder="CVV"
-                aria-label="CVV" data-testid="input-cvv">
-              <label class="required" for="fldCvv">CVV</label>
-            </div>
-
-            <!-- Data de Expiração -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldDataExpiracao" name="fldDataExpiracao"
-                placeholder="Data de Expiração" aria-label="Data de Expiração" data-testid="input-dataexpiracao">
-              <label class="required" for="fldDataExpiracao">Data de Expiração</label>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!--//col-->
-
-      <!-- Coluna: Conta Bancária -->
-      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
-        <div class="card shadow-sm flex-fill" data-testid="card-conta-bancaria">
-          <div class="card-body d-flex flex-column">
-
-            <!-- Conta Bancária -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-money-check-alt" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-conta-bancaria">Conta Bancária</span>
-              </h2>
-            </div>
-
-            <!-- Código do Banco -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldCodigoBanco" name="fldCodigoBanco"
-                placeholder="Código do Banco" aria-label="Código do Banco" data-testid="input-codigobanco-conta">
-              <label class="required" for="fldCodigoBanco">Código do Banco</label>
-            </div>
-
-            <!-- Nome do Banco -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldNomeBanco" name="fldNomeBanco"
-                placeholder="Nome do Banco" aria-label="Nome do Banco" data-testid="input-nomebanco-conta">
-              <label class="required" for="fldNomeBanco">Nome do Banco</label>
-            </div>
-
-            <!-- Agência e DV Agência -->
-            <div class="row g-2">
-              <div class="col-md-9">
-                <div class="form-floating mb-3 position-relative">
-                  <input type="text" required class="form-control" id="fldAgencia" name="fldAgencia"
-                    placeholder="Agência" aria-label="Agência" data-testid="input-agencia">
-                  <label class="required" for="fldAgencia">Agência</label>
+                <!-- Documentos PJ -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-building" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-documentos-pj">Documentos PJ</span>
+                  </h2>
                 </div>
-              </div>
-              <div class="col-md-3">
+
+                <!-- CNPJ -->
                 <div class="form-floating mb-3 position-relative">
-                  <input type="text" class="form-control" id="fldAgenciaDv" name="fldAgenciaDv" placeholder="DV Agência"
-                    aria-label="DV Agência" data-testid="input-agenciadv">
-                  <label for="fldAgenciaDv">DV Ag.</label>
+                  <input type="text" class="form-control" id="fldCnpj" name="fldCnpj" placeholder="CNPJ"
+                    aria-label="CNPJ" data-testid="input-cnpj">
+                  <label for="fldCnpj">CNPJ</label>
                 </div>
+
+                <!-- Inscrição Estadual -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldInscricaoEstadual" name="fldInscricaoEstadual"
+                    placeholder="Inscrição Estadual" aria-label="Inscrição Estadual"
+                    data-testid="input-inscricaoestadual">
+                  <label for="fldInscricaoEstadual">Inscrição Estadual</label>
+                </div>
+
+                <!-- Documentos PF -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-id-card" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-documentos-pf">Documentos PF</span>
+                  </h2>
+                </div>
+
+                <!-- CPF -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCpf" name="fldCpf" placeholder="CPF" aria-label="CPF"
+                    data-testid="input-cpf">
+                  <label for="fldCpf">CPF</label>
+                </div>
+
+                <!-- CNH -->
+                <div class="row g-2">
+                  <div class="col-md-9">
+                    <div class="form-floating mb-3 position-relative">
+                      <input type="text" class="form-control" id="fldCnh" name="fldCnh" placeholder="CNH"
+                        aria-label="CNH" data-testid="input-cnh">
+                      <label for="fldCnh">CNH</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-floating mb-3 position-relative">
+                      <input type="text" class="form-control" id="fldCnhCategoria" name="fldCnhCategoria"
+                        placeholder="Categ." aria-label="Categoria CNH" data-testid="input-cnhcategoria">
+                      <label for="fldCnhCategoria">Categ.</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- RG -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldRg" name="fldRg" placeholder="RG" aria-label="RG"
+                    data-testid="input-rg">
+                  <label for="fldRg">RG</label>
+                </div>
+
+                <!-- CNS -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCns" name="fldCns" placeholder="CNS" aria-label="CNS"
+                    data-testid="input-cns">
+                  <label for="fldCns">CNS</label>
+                </div>
+
+                <!-- PIS -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldPis" name="fldPis" placeholder="PIS" aria-label="PIS"
+                    data-testid="input-pis">
+                  <label for="fldPis">PIS</label>
+                </div>
+
+                <!-- Título de Eleitor -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldTituloEleitor" name="fldTituloEleitor"
+                    placeholder="Título de Eleitor" aria-label="Título de Eleitor" data-testid="input-tituloeleitor">
+                  <label for="fldTituloEleitor">Título de Eleitor</label>
+                </div>
+
+                <!-- Passaporte -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldPassaporte" name="fldPassaporte"
+                    placeholder="Passaporte" aria-label="Passaporte" data-testid="input-passaporte">
+                  <label for="fldPassaporte">Passaporte</label>
+                </div>
+
+                <!-- Certidão de Nascimento -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCertidaoNascimento" name="fldCertidaoNascimento"
+                    placeholder="Certidão de Nascimento" aria-label="Certidão de Nascimento"
+                    data-testid="input-certidaonascimento">
+                  <label for="fldCertidaoNascimento">Certidão de Nascimento</label>
+                </div>
+
+                <!-- Certidão de Casamento -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCertidaoCasamento" name="fldCertidaoCasamento"
+                    placeholder="Certidão de Casamento" aria-label="Certidão de Casamento"
+                    data-testid="input-certidaocasamento">
+                  <label for="fldCertidaoCasamento">Certidão de Casamento</label>
+                </div>
+
+                <!-- Certidão de Óbito -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCertidaoObito" name="fldCertidaoObito"
+                    placeholder="Certidão de Óbito" aria-label="Certidão de Óbito" data-testid="input-certidaoobito">
+                  <label for="fldCertidaoObito">Certidão de Óbito</label>
+                </div>
+
               </div>
             </div>
+          </div>
+          <!--//col-->
 
-            <!-- Conta e DV Conta -->
-            <div class="row g-2">
-              <div class="col-md-9">
-                <div class="form-floating mb-3 position-relative">
-                  <input type="text" required class="form-control" id="fldConta" name="fldConta" placeholder="Conta"
-                    aria-label="Conta" data-testid="input-conta">
-                  <label class="required" for="fldConta">Conta</label>
+          <!-- Coluna: Contatos e Endereço -->
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card shadow-sm flex-fill" data-testid="card-contatos-endereco">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Contatos -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-address-book" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-contatos">Contatos</span>
+                  </h2>
                 </div>
-              </div>
-              <div class="col-md-3">
+
+                <!-- E-mail -->
                 <div class="form-floating mb-3 position-relative">
-                  <input type="text" class="form-control" id="fldContaDv" name="fldContaDv" placeholder="DV Conta"
-                    aria-label="DV Conta" data-testid="input-contadv">
-                  <label for="fldContaDv">DV CC.</label>
+                  <input type="email" class="form-control" id="fldEmail" name="fldEmail" placeholder="E-mail"
+                    aria-label="Email" data-testid="input-email">
+                  <label for="fldEmail">E-mail</label>
                 </div>
+
+                <!-- DDD -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldDdd" name="fldDdd" placeholder="DDD" aria-label="DDD"
+                    data-testid="input-ddd">
+                  <label for="fldDdd">DDD</label>
+                </div>
+
+                
+
+                <!-- Telefone -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCelular" name="fldCelular" placeholder="Celular"
+                    aria-label="Celular" data-testid="input-celular">
+                  <label for="fldCelular">Celular</label>
+                </div>
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldTelefone" name="fldTelefone" placeholder="Telefone"
+                    aria-label="Telefone" data-testid="input-telefone">
+                  <label for="fldTelefone">Telefone</label>
+                </div>
+
+                <!-- Endereço -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-endereco">Endereço</span>
+                  </h2>
+                </div>
+
+                <!-- Logradouro -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldLogradouro" name="fldLogradouro"
+                    placeholder="Logradouro" aria-label="Logradouro" data-testid="input-logradouro">
+                  <label for="fldLogradouro">Logradouro</label>
+                </div>
+
+                <!-- Número -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldNumero" name="fldNumero" placeholder="Número"
+                    aria-label="Número" data-testid="input-numero">
+                  <label for="fldNumero">Número</label>
+                </div>
+
+                <!-- Complemento -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldComplemento" name="fldComplemento"
+                    placeholder="Complemento" aria-label="Complemento" data-testid="input-complemento">
+                  <label for="fldComplemento">Complemento</label>
+                </div>
+
+                <!-- Bairro -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldBairro" name="fldBairro" placeholder="Bairro"
+                    aria-label="Bairro" data-testid="input-bairro">
+                  <label for="fldBairro">Bairro</label>
+                </div>
+
+                <!-- Localidade -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldLocalidade" name="fldLocalidade" placeholder="Cidade"
+                    aria-label="Cidade" data-testid="input-localidade">
+                  <label for="fldLocalidade">Cidade</label>
+                </div>
+
+                <!-- Estado -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldEstado" name="fldEstado" placeholder="Estado"
+                    aria-label="Estado" data-testid="input-estado">
+                  <label for="fldEstado">Estado</label>
+                </div>
+
+                <!-- CEP -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCep" name="fldCep" placeholder="CEP" aria-label="CEP"
+                    data-testid="input-cep">
+                  <label for="fldCep">CEP</label>
+                </div>
+
               </div>
             </div>
-
           </div>
-        </div>
-      </div>
-      <!--//col-->
+          <!--//col-->
 
-      <!-- Coluna: Banco -->
-      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
-        <div class="card shadow-sm flex-fill" data-testid="card-banco">
-          <div class="card-body d-flex flex-column">
+          <!-- Coluna: Bancos e Cartões -->
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card shadow-sm flex-fill" data-testid="card-bancos-cartoes">
+              <div class="card-body d-flex flex-column">
 
-            <!-- Banco -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-university" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-banco">Banco</span>
-              </h2>
+                <!-- Cartão -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-credit-card" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-cartao-credito">Cartão de Crédito</span>
+                  </h2>
+                </div>
+
+                <!-- Cartão de Crédito -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCartaoCredito" name="fldCartaoCredito"
+                    placeholder="Cartão de Crédito" aria-label="Cartão de Crédito" data-testid="input-cartaocredito">
+                  <label for="fldCartaoCredito">Cartão de Crédito</label>
+                </div>
+
+                <!-- Bandeira -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldBandeira" name="fldBandeira" placeholder="Bandeira"
+                    aria-label="Bandeira" data-testid="input-bandeira">
+                  <label for="fldBandeira">Bandeira</label>
+                </div>
+
+                <!-- Nome do Titular -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldNomeTitular" name="fldNomeTitular"
+                    placeholder="Nome do Titular" aria-label="Nome do Titular" data-testid="input-nometitular">
+                  <label for="fldNomeTitular">Nome do Titular</label>
+                </div>
+
+                <!-- CVV -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCvv" name="fldCvv" placeholder="CVV" aria-label="CVV"
+                    data-testid="input-cvv">
+                  <label for="fldCvv">CVV</label>
+                </div>
+
+                <!-- Data de Expiração -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldDataExpiracao" name="fldDataExpiracao"
+                    placeholder="Data de Expiração" aria-label="Data de Expiração" data-testid="input-dataexpiracao">
+                  <label for="fldDataExpiracao">Data de Expiração</label>
+                </div>
+
+              </div>
             </div>
-
-            <!-- Banco Código -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldBancoCodigo" name="fldBancoCodigo"
-                placeholder="Código do Banco" aria-label="Código do Banco" data-testid="input-bancocodigo">
-              <label class="required" for="fldBancoCodigo">Código do Banco</label>
-            </div>
-
-            <!-- Banco Nome -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldBancoNome" name="fldBancoNome"
-                placeholder="Nome do Banco" aria-label="Nome do Banco" data-testid="input-banconome">
-              <label class="required" for="fldBancoNome">Nome do Banco</label>
-            </div>
-
-            <!-- Banco Razão Social -->
-            <div class="form-floating mb-3 position-relative">
-
-              <input type="text" required class="form-control" id="fldRazaoSocial" name="fldRazaoSocial"
-                placeholder="Razão Social" aria-label="Razão Social" data-testid="input-razaosocial">
-              <label class="required" for="fldRazaoSocial">Razão Social</label>
-
-            </div>
-
-            <!-- ISPB -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" class="form-control" id="fldIspb" name="fldIspb" placeholder="ISPB" aria-label="ISPB"
-                data-testid="input-ispb">
-              <label for="fldIspb">ISPB</label>
-            </div>
-
           </div>
-        </div>
-      </div>
-      <!--//col-->
+          <!--//col-->
 
-      <!-- Coluna: Veículo -->
-      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
-        <div class="card shadow-sm flex-fill" data-testid="card-veiculo">
-          <div class="card-body d-flex flex-column">
-            <!-- Veículo -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-car" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-veiculo">Veículo</span>
-              </h2>
+          <!-- Coluna: Conta Bancária -->
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card shadow-sm flex-fill" data-testid="card-conta-bancaria">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Conta Bancária -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-money-check-alt" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-conta-bancaria">Conta Bancária</span>
+                  </h2>
+                </div>
+
+                <!-- Código do Banco -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCodigoBanco" name="fldCodigoBanco"
+                    placeholder="Código do Banco" aria-label="Código do Banco" data-testid="input-codigobanco-conta">
+                  <label for="fldCodigoBanco">Código do Banco</label>
+                </div>
+
+                <!-- Nome do Banco -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldNomeBanco" name="fldNomeBanco"
+                    placeholder="Nome do Banco" aria-label="Nome do Banco" data-testid="input-nomebanco-conta">
+                  <label for="fldNomeBanco">Nome do Banco</label>
+                </div>
+
+                <!-- Agência e DV Agência -->
+                <div class="row g-2">
+                  <div class="col-md-9">
+                    <div class="form-floating mb-3 position-relative">
+                      <input type="text" class="form-control" id="fldAgencia" name="fldAgencia" placeholder="Agência"
+                        aria-label="Agência" data-testid="input-agencia">
+                      <label for="fldAgencia">Agência</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-floating mb-3 position-relative">
+                      <input type="text" class="form-control" id="fldAgenciaDv" name="fldAgenciaDv"
+                        placeholder="DV Agência" aria-label="DV Agência" data-testid="input-agenciadv">
+                      <label for="fldAgenciaDv">DV Ag.</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Conta e DV Conta -->
+                <div class="row g-2">
+                  <div class="col-md-9">
+                    <div class="form-floating mb-3 position-relative">
+                      <input type="text" class="form-control" id="fldConta" name="fldConta" placeholder="Conta"
+                        aria-label="Conta" data-testid="input-conta">
+                      <label for="fldConta">Conta</label>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-floating mb-3 position-relative">
+                      <input type="text" class="form-control" id="fldContaDv" name="fldContaDv" placeholder="DV Conta"
+                        aria-label="DV Conta" data-testid="input-contadv">
+                      <label for="fldContaDv">DV CC.</label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-
-            <!-- Placa Antiga -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldPlacaAntiga" name="fldPlacaAntiga"
-                placeholder="Placa Antiga" aria-label="Placa Antiga" data-testid="input-placaantiga">
-              <label class="required" for="fldPlacaAntiga">Placa Antiga</label>
-            </div>
-
-            <!-- Placa Mercosul -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldPlacaMercosul" name="fldPlacaMercosul"
-                placeholder="Placa Mercosul" aria-label="Placa Mercosul" data-testid="input-placamercosul">
-              <label class="required" for="fldPlacaMercosul">Placa Mercosul</label>
-            </div>
-
-            <!-- Renavam -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldRenavam" name="fldRenavam" placeholder="Renavam"
-                aria-label="Renavam" data-testid="input-renavam">
-              <label class="required" for="fldRenavam">Renavam</label>
-            </div>
-
           </div>
-        </div>
-      </div>
-      <!--//col-->
+          <!--//col-->
 
-      <!-- Coluna: LOREM IPSUM  -->
-      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
-        <div class="card shadow-sm flex-fill" data-testid="card-lorem-ipsum-1">
-          <div class="card-body d-flex flex-column">
-            <!-- Lorem Ipsum -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-car" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-lorem-ipsum-1">Lorem Ipsum</span>
-              </h2>
+          <!-- Coluna: Banco -->
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card shadow-sm flex-fill" data-testid="card-banco">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Banco -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-university" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-banco">Banco</span>
+                  </h2>
+                </div>
+
+                <!-- Banco Código -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldBancoCodigo" name="fldBancoCodigo"
+                    placeholder="Código do Banco" aria-label="Código do Banco" data-testid="input-bancocodigo">
+                  <label for="fldBancoCodigo">Código do Banco</label>
+                </div>
+
+                <!-- Banco Nome -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldBancoNome" name="fldBancoNome"
+                    placeholder="Nome do Banco" aria-label="Nome do Banco" data-testid="input-banconome">
+                  <label for="fldBancoNome">Nome do Banco</label>
+                </div>
+
+                <!-- Banco Razão Social -->
+                <div class="form-floating mb-3 position-relative">
+
+                  <input type="text" class="form-control" id="fldRazaoSocial" name="fldRazaoSocial"
+                    placeholder="Razão Social" aria-label="Razão Social" data-testid="input-razaosocial">
+                  <label for="fldRazaoSocial">Razão Social</label>
+
+                </div>
+
+                <!-- ISPB -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldIspb" name="fldIspb" placeholder="ISPB"
+                    aria-label="ISPB" data-testid="input-ispb">
+                  <label for="fldIspb">ISPB</label>
+                </div>
+
+              </div>
             </div>
-
-            <!-- Palavra -->
-            <div class="form-floating mb-3 position-relative">
-              <input type="text" required class="form-control" id="fldPalavra" name="fldPalavra" placeholder="Palavra"
-                aria-label="Palavra" data-testid="input-palavra">
-              <label class="required" for="fldPalavra">Palavra</label>
-            </div>
-
-            <!-- Sentença -->
-            <div class="form-floating mb-3 position-relative">
-              <textarea required class="form-control mnh-100 pe-5" id="fldSentenca" name="fldSentenca"
-                placeholder="Sentença" aria-label="Sentença" rows="10" data-testid="textarea-sentenca"></textarea>
-              <label class="required" for="fldSentenca">Sentença</label>
-            </div>
-
           </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
-        <div class="card shadow-sm flex-fill" data-testid="card-lorem-ipsum-2">
-          <div class="card-body d-flex flex-column">
-            <!-- Lorem Ipsum -->
-            <div class="form-floating mt-3 position-relative">
-              <h2 class="h4 mb-3">
-                <span class="theme-icon-holder card-icon-holder me-2">
-                  <i class="fas fa-car" aria-hidden="true"></i>
-                </span>
-                <span class="card-title-text" data-testid="card-title-lorem-ipsum-2">Lorem Ipsum</span>
-              </h2>
-            </div>
+          <!--//col-->
 
-            <!-- Parágrafo -->
-            <div class="form-floating mb-3 position-relative">
-              <textarea required class="form-control mnh-300 pe-5" id="fldParagrafos" name="fldParagrafos"
-                placeholder="Parágrafos" aria-label="Parágrafos gerados" rows="10"
-                data-testid="textarea-paragrafos"></textarea>
-              <label class="required" for="fldParagrafos">Parágrafos</label>
-            </div>
+          <!-- Coluna: Veículo -->
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card shadow-sm flex-fill" data-testid="card-veiculo">
+              <div class="card-body d-flex flex-column">
+                <!-- Veículo -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-car" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-veiculo">Veículo</span>
+                  </h2>
+                </div>
 
+                <!-- Placa Antiga -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldPlacaAntiga" name="fldPlacaAntiga"
+                    placeholder="Placa Antiga" aria-label="Placa Antiga" data-testid="input-placaantiga">
+                  <label for="fldPlacaAntiga">Placa Antiga</label>
+                </div>
+
+                <!-- Placa Mercosul -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldPlacaMercosul" name="fldPlacaMercosul"
+                    placeholder="Placa Mercosul" aria-label="Placa Mercosul" data-testid="input-placamercosul">
+                  <label for="fldPlacaMercosul">Placa Mercosul</label>
+                </div>
+
+                <!-- Renavam -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldRenavam" name="fldRenavam" placeholder="Renavam"
+                    aria-label="Renavam" data-testid="input-renavam">
+                  <label for="fldRenavam">Renavam</label>
+                </div>
+
+              </div>
+            </div>
           </div>
+          <!--//col-->
+
+          <!-- Coluna: LOREM IPSUM  -->
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card shadow-sm flex-fill" data-testid="card-lorem-ipsum-1">
+              <div class="card-body d-flex flex-column">
+                <!-- Lorem Ipsum -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-paragraph" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-lorem-ipsum-1">Lorem Ipsum</span>
+                  </h2>
+                </div>
+
+                <!-- Palavra -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldPalavra" name="fldPalavra" placeholder="Palavra"
+                    aria-label="Palavra" data-testid="input-palavra">
+                  <label for="fldPalavra">Palavra</label>
+                </div>
+
+                <!-- Sentença -->
+                <div class="form-floating mb-3 position-relative">
+                  <textarea class="form-control mnh-200 pe-5" id="fldSentenca" name="fldSentenca" placeholder="Sentença"
+                    aria-label="Sentença" rows="10" data-testid="textarea-sentenca"></textarea>
+                  <label for="fldSentenca">Sentença</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card shadow-sm flex-fill" data-testid="card-lorem-ipsum-2">
+              <div class="card-body d-flex flex-column">
+                <!-- Lorem Ipsum -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-paragraph" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-lorem-ipsum-2">Lorem Ipsum</span>
+                  </h2>
+                </div>
+
+                <!-- Parágrafo -->
+                <div class="form-floating mb-3 position-relative">
+                  <textarea class="form-control mnh-300 pe-5" id="fldParagrafos" name="fldParagrafos"
+                    placeholder="Parágrafos" aria-label="Parágrafos gerados" rows="10"
+                    data-testid="textarea-paragrafos"></textarea>
+                  <label for="fldParagrafos">Parágrafos</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--//col-->
+
+          <div id="validacao" class="mt-4" style="display: none;" data-testid="div-validacao">
+            <div class="alert" id="alertValidacao" data-testid="alert-validacao">
+              <strong>
+                <span id="mensagemValidacao" data-testid="span-mensagem-validacao"></span>
+              </strong>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary" id="btnEnviar" aria-label="Botão Enviar"
+              data-testid="button-enviar">Enviar</button>
+          </div>
+
         </div>
-      </div>
-      <!--//col-->
+        <!--//row-->
+      </form>
 
-      <div id="validacao" class="mt-4" style="display: none;" data-testid="div-validacao">
-        <div class="alert" id="alertValidacao" data-testid="alert-validacao">
-          <strong>
-            <span id="mensagemValidacao" data-testid="span-mensagem-validacao"></span>
-          </strong>
-        </div>
-      </div>
-
-      <div class="text-center mt-4">
-        <button type="submit" class="btn btn-primary" id="btnEnviar" aria-label="Botão Enviar"
-          data-testid="button-enviar">Enviar</button>
-      </div>
-
-    </div>
-    <!--//row-->
-  </form>
+  </section>
 
 </div>
+
+<!-- Modal: Campos Informados -->
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true"
+  data-testid="modal-campos-informados">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel" data-testid="modal-title">Campos Informados</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background: none;"
+          data-testid="modal-btn-close-header">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBodyContent" data-testid="modal-body-content">
+        <!-- Conteúdo preenchido dinamicamente via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-testid="modal-btn-ok">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('testForm');
+    const submitButton = document.getElementById('btnEnviar');
+    const modalBodyContent = document.getElementById('modalBodyContent');
+    const infoModalElement = document.getElementById('infoModal');
+    let infoModal;
+
+    if (infoModalElement) {
+      infoModal = new bootstrap.Modal(infoModalElement);
+
+      // Adicionado para lidar com o aviso de acessibilidade aria-hidden/focus
+      infoModalElement.addEventListener('hide.bs.modal', function () {
+        const activeElement = document.activeElement;
+
+        // Verifica se o elemento focado é um dos botões de fechar do modal
+        const closeButtonHeader = infoModalElement.querySelector('[data-testid="modal-btn-close-header"]');
+        const okButtonFooter = infoModalElement.querySelector('[data-testid="modal-btn-ok"]');
+
+        if (activeElement === closeButtonHeader || activeElement === okButtonFooter) {
+          if (typeof activeElement.blur === 'function') {
+            // Remove o foco do botão de fechar antes que o modal seja completamente escondido
+            activeElement.blur();
+          }
+        }
+      });
+    }
+
+    if (form && submitButton && modalBodyContent && infoModal) {
+      submitButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Previne o envio padrão do formulário
+
+        modalBodyContent.innerHTML = ''; // Limpa conteúdo anterior do modal
+        let hasFilledFields = false;
+
+        const inputs = form.querySelectorAll('input[type="text"], input[type="email"], textarea');
+
+        inputs.forEach(input => {
+          if (input.value.trim() !== '') {
+            hasFilledFields = true;
+            let labelText = '';
+            const labelElement = form.querySelector(`label[for="${input.id}"]`);
+            if (labelElement) {
+              labelText = labelElement.textContent.trim();
+            } else {
+              // Fallback caso não encontre label, usa placeholder ou nome do campo
+              labelText = input.placeholder || input.name || input.id;
+            }
+
+            const rowDiv = document.createElement('div');
+            rowDiv.className = 'row mb-2'; // Adiciona uma margem inferior para espaçamento
+            rowDiv.setAttribute('data-testid', `modal-item-${input.id}`);
+
+            let valueDisplay = input.value.trim();
+            // Escape HTML characters for security and correct display
+            const escapeHtml = (unsafe) => {
+              return unsafe
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+            };
+            valueDisplay = escapeHtml(valueDisplay);
+
+            // Coluna do Label
+            const labelColDiv = document.createElement('div');
+            labelColDiv.className = 'col-sm-5 col-md-4 modal-label-col'; // Ajuste as classes de coluna conforme necessário
+            labelColDiv.setAttribute('data-testid', `modal-label-${input.id}`);
+            labelColDiv.setAttribute('data-for-input', input.id);
+            labelColDiv.innerHTML = `<strong>${escapeHtml(labelText)}:</strong>`;
+
+            // Coluna do Valor
+            const valueColDiv = document.createElement('div');
+            valueColDiv.className = 'col-sm-7 col-md-8 modal-value-col text-break'; // text-break para quebrar palavras longas
+            valueColDiv.setAttribute('data-testid', `modal-value-${input.id}`);
+
+            if (input.tagName.toLowerCase() === 'textarea') {
+              valueColDiv.innerHTML = `<pre style="white-space: pre-wrap; word-break: break-word; margin-bottom: 0;">${valueDisplay}</pre>`;
+            } else {
+              valueColDiv.innerHTML = valueDisplay;
+            }
+
+            rowDiv.appendChild(labelColDiv);
+            rowDiv.appendChild(valueColDiv);
+            modalBodyContent.appendChild(rowDiv);
+          }
+        });
+
+        if (!hasFilledFields) { // Corrigido para verificar se NÃO há campos preenchidos
+          modalBodyContent.innerHTML = '<p>Nenhum campo foi preenchido.</p>';
+        }
+
+        infoModal.show();
+      });
+    }
+  });
+</script>
 
 <footer class="footer">
 
@@ -974,7 +1126,6 @@
 
   </div>
 </footer>
-<script src="/assets/js/test-form.js"></script>
   <!-- Javascript -->
 <script src="../assets/plugins/popper.min.js"></script>
 <script src="../assets/plugins/bootstrap/js/bootstrap.min.js" defer></script>
