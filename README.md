@@ -42,7 +42,7 @@ yarn add gerador-br
 ***ES Module***
 
 ```js
-import gerar from 'gerador-br';
+import { gerar } from 'gerador-br';
 ```
 
 ***CommonsJS***

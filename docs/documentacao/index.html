@@ -336,6 +336,9 @@
         <li class="nav-item">
           <a class="nav-link scrollto" href="#inscricaoEstadual">Inscrição Estadual</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link scrollto" href="#nomeEmpresa">Nome Empresa</a>
+        </li>
         <li class="nav-item section-title mt-3">
           <a class="nav-link scrollto" href="#bancos">
             <span class="theme-icon-holder me-2">
@@ -481,11 +484,6 @@
                 src="https://img.shields.io/jsdelivr/npm/hm/gerador-br?logo=jsDelivr&logoColor=ff5627"
                 alt="jsDelivr" /></a>
 
-            <a href="https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file" target="_blank"
-              rel="noopener noreferrer"><img
-                src="https://img.shields.io/npm/l/gerador-br?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTMgNiAzIDFtMCAwLTMgOWE1IDUgMCAwIDAgNi4wMDEgME02IDdsMyA5TTYgN2w2LTJtNiAyIDMtMW0tMyAxLTMgOWE1IDUgMCAwIDAgNi4wMDEgME0xOCA3bDMgOW0tMy05LTYtMm0wLTJ2Mm0wIDE2VjVtMCAxNkg5bTMgMGgzIi8+PC9zdmc+"
-                alt="MIT License" /></a>
-
             <a href="https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql"
               target="_blank" rel="noopener noreferrer"><img
                 src="https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg"
@@ -545,7 +543,7 @@
             </li>
             <li>
               <a href="#documentos-pj">Gerador de Empresa</a>:
-              CNPJ, CNPJ Alfanumérico e Inscrição Estadual;
+              CNPJ, CNPJ Alfanumérico, Inscrição Estadual e Nome Empresa;
             </li>
             <li>
               <a href="#endereco">Gerador de Endereço</a>:
@@ -875,6 +873,20 @@ console.log(inscricaoEstadual('AP'));  // AP 03.42773842
 console.log(inscricaoEstadual('BA'));  // BA 16408652-16
 console.log(inscricaoEstadual('DF'));  // DF 0724.4814180
 console.log(inscricaoEstadual('RJ'));  // RJ 41038311.44
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="docs-section" id="nomeEmpresa">
+          <h2 class="section-heading">Nome Empresa</h2>
+          <div class="docs-code-block">
+            <pre><code class="language-js">
+import { nomeEmpresa } from 'gerador-br'; // ES Module
+// const { nomeEmpresa } = require('gerador-br'); // CommonJS
+
+// Gera Nome de Empresa baseado em filmes, séries, livros, videogames. animação, hq, etc.
+console.log(nomeEmpresa());      // Exemplo: "Wayne Enterprises", "Los Pollos Hermanos", "Nakatomi Corporation"
+console.log(nomeEmpresa('BR'));  // Exemplo: "Indústrias Tabajara", "Vavá Tur"
             </code></pre>
           </div>
         </section>
