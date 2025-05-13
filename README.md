@@ -3,7 +3,6 @@
 [![NPM version](https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff)](https://npmjs.org/package/gerador-br)
 [![NPM downloads](https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff)](https://npmcharts.com/compare/gerador-br?minimal=true)
 [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/gerador-br?logo=jsDelivr&logoColor=ff5627)](https://www.jsdelivr.com/package/npm/gerador-br)
-[![MIT License](https://img.shields.io/npm/l/gerador-br?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRiIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0ibTMgNiAzIDFtMCAwLTMgOWE1IDUgMCAwIDAgNi4wMDEgME02IDdsMyA5TTYgN2w2LTJtNiAyIDMtMW0tMyAxLTMgOWE1IDUgMCAwIDAgNi4wMDEgME0xOCA3bDMgOW0tMy05LTYtMm0wLTJ2Mm0wIDE2VjVtMCAxNkg5bTMgMGgzIi8+PC9zdmc+)](LICENSE)
 [![CodeQL](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql)
 [![CI Test](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml)
 [![ESLint](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml)
@@ -20,7 +19,7 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 
 * [Gerador de Documento](https://marcelo-lourenco.github.io/gerador-br/documentacao/#documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte e Certidão (Nascimento, Casamento e Óbito)
 * [Gerador de Pessoa](https://marcelo-lourenco.github.io/gerador-br/documentacao/#pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
-* [Gerador de Empresa](https://marcelo-lourenco.github.io/gerador-br/documentacao/#documentos-pj): CNPJ, CNPJ Alfanumérico e Inscrição Estadual;
+* [Gerador de Empresa](https://marcelo-lourenco.github.io/gerador-br/documentacao/#documentos-pj): CNPJ, CNPJ Alfanumérico, Inscrição Estadual e Nome Empresa;
 * [Gerador de Endereço](https://marcelo-lourenco.github.io/gerador-br/documentacao/#endereco): CEP, Logradouro, Número, Bairro, Localidade e Estado;
 * [Gerador de Contato](https://marcelo-lourenco.github.io/gerador-br/documentacao/#contatos): E-mail, DDD, Operadora, Celular e Telefone;
 * [Gerador de Conta Bancária](https://marcelo-lourenco.github.io/gerador-br/documentacao/#contaBancaria): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
@@ -71,12 +70,12 @@ console.log(placaMercosul());
 **Ou, importe todo o módulo `gerar` e depois use qualquer função que desejar**:
 
 ```js
-import gerar from 'gerador-br'; // ES Module:
+import { gerar } from 'gerador-br'; // ES Module:
 // const gerar = require('gerador-br'); // CommonJS:
 
 console.log(gerar.nome.femininoCompleto());
 console.log(gerar.cpf());
-console.log(gerar.cnpj();
+console.log(gerar.cnpj());
 console.log(gerar.contaBancaria());
 console.log(gerar.cartaoCredito());
 ```
@@ -84,7 +83,8 @@ console.log(gerar.cartaoCredito());
 **Outros exemplos:**
 
 ```js
-import * as gerar from './index.js';
+import { gerar } from 'gerador-br'; // ES Module:
+// const gerar = require('gerador-br'); // CommonJS:
 
 /* ******************** APELIDO ************************ */
 // Gera apelido aleatório
@@ -298,6 +298,11 @@ console.log(gerar.nome.masculinoCompleto());
 console.log(gerar.nome.pai());
 console.log(gerar.nome.paiCompleto());
 console.log(gerar.nome.sobrenome());
+
+/* ******************** NOME EMPRESA ********************* */
+// Gera nome de empresa Baseado em filmes, séries, livros, videogames. animação, hq, etc.
+console.log(gerar.nomeEmpresa())
+console.log(gerar.nomeEmpresa("BR"))
 
 /* ******************** PASSAPORTE ************** */
 // Gera passaporte aleatório

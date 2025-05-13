@@ -215,6 +215,11 @@ console.log(gerar.nome.pai());
 console.log(gerar.nome.paiCompleto());
 console.log(gerar.nome.sobrenome());
 
+/* ******************** NOME EMPRESA ********************* */
+// Gera nome de empresa Baseado em filmes, séries, livros, videogames. animação, hq, etc.
+console.log(gerar.nomeEmpresa())
+console.log(gerar.nomeEmpresa("BR"))
+
 /* ******************** ORIENTAÇÃO SEXUAL ********* */
 console.log(gerar.orientacaoSexual());
 

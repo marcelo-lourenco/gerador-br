@@ -4,6 +4,14 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.2.3 (2025-05-13)
+
+### Adiciona Funcionalidade
+
+* Gerador de Nome de Empresa
+
+---
+
 ## 1.2.2 (2025-05-08)
 
 ### Adiciona Funcionalidades

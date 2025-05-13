@@ -25,6 +25,7 @@ import { identidadeGenero } from './generators/identidade-genero.js';
 import { identidadePorOrientacao } from './generators/identidade-por-orientacao.js';
 import { inscricaoEstadual } from './generators/inscricao-estadual.js';
 import { nome } from './generators/nome.js';
+import { nomeEmpresa } from './generators/nome-empresa.js';
 import { orientacaoSexual } from './generators/orientacao-sexual.js';
 import { passaporte } from './generators/passaporte.js';
 import { pis } from './generators/pis.js';
@@ -35,6 +36,7 @@ import { rg } from './generators/rg.js';
 import { telefone } from './generators/telefone.js';
 import { tipoSanguineo } from './generators/tipo-sanguineo.js';
 import { tituloEleitor } from './generators/titulo-eleitor.js';
+
 
 
 
@@ -743,6 +745,21 @@ const gerar = {
    */
   nome: nome,
 
+
+
+  /**
+   * Gera um nome de empresa aleatório. Baseado em filmes, séries, livros, videogames. animação, hq, etc.
+   *
+   * @param {string} [local] - Se for 'BR' ou 'br', retorna apenas empresas brasileiras.
+   * @returns {string} - Um nome de empresa.
+   * @example
+   * console.log(gerar.nomeEmpresa()); // Exemplo: "Wayne Enterprises", "Los Pollos Hermanos", "Nakatomi Corporation"
+   * console.log(gerar.nomeEmpresa('BR')); // Exemplo: "Indústrias Tabajara", "Vavá Tur"
+   */
+  nomeEmpresa: nomeEmpresa,
+
+
+
   /**
    * Gera uma orientação sexual aleatória.
    * @type {string}
@@ -983,6 +1000,7 @@ export {
   inscricaoEstadual,
   listaCodigosBancos,
   nome,
+  nomeEmpresa,
   orientacaoSexual,
   palavra,
   paragrafo,
@@ -1078,6 +1096,8 @@ export {
 // console.log(gerar.nome.pai());
 // console.log(gerar.nome.paiCompleto());
 // console.log(gerar.nome.sobrenome());
+// console.log(gerar.nomeEmpresa());
+// console.log(gerar.nomeEmpresa("BR"));
 // console.log(gerar.orientacaoSexual());
 // console.log(gerar.palavra());
 // console.log(gerar.paragrafo());

@@ -1,6 +1,6 @@
 {
   "name": "gerador-br",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Gerador de Dados Fictícios - Brasil",
   "main": "dist/cjs/index.cjs",
   "module": "dist/mjs/index.mjs",
@@ -58,6 +58,7 @@
     "endereço",
     "telefone",
     "nome",
+    "nome empresa",
     "data nascimento",
     "estado",
     "estado civil",

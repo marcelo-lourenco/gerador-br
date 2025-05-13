@@ -2,8 +2,6 @@
 
 declare module 'gerador-br' {
 
-
-
   /**
    * @namespace gerar
    * @description Um objeto que contém métodos para gerar dados aleatórios, como:
@@ -48,7 +46,6 @@ declare module 'gerador-br' {
      * }
      */
     banco: (code?: number) => object;
-
 
     /**
      * Gera Cartão de Crédito aleatório.
@@ -96,8 +93,6 @@ declare module 'gerador-br' {
      */
     cartaoCredito: (mask?: boolean, nomeTitular?: string) => object;
 
-
-
     /**
      * Gera um número de celular aleatório.
      *
@@ -128,8 +123,6 @@ declare module 'gerador-br' {
      */
     celular: (mask?: boolean, state?: string, operator?: string) => string;
 
-
-
     /**
      * Gera um CEP aleatório.
      *
@@ -152,7 +145,6 @@ declare module 'gerador-br' {
      * console.log(gerar.cep(true, "SP")); // "01001-000"
      */
     cep: (mask?: boolean, state?: string) => string;
-
 
     /**
      * Gera números de certidões (nascimento, casamento, óbito) seguindo o padrão de Registro Civil Brasileiro.
@@ -204,8 +196,6 @@ declare module 'gerador-br' {
       casamentoObj: () => object;
     };
 
-
-
     /**
      * Gera um número de CNH aleatório.
      *
@@ -215,8 +205,6 @@ declare module 'gerador-br' {
      */
     cnh: () => string;
 
-
-
     /**
      * Gera categorias de CNH válidas.
      *
@@ -225,8 +213,6 @@ declare module 'gerador-br' {
      * console.log(gerar.cnhCategoria());
      */
     cnhCategoria: () => string;
-
-
 
     /**
      * Gera um número de CNPJ aleatório.
@@ -242,8 +228,6 @@ declare module 'gerador-br' {
      */
     cnpj: (mask?: boolean) => string;
 
-
-
     /**
      * Gera um número de CNPJ Alfanumerico aleatório (compatibilidade com versão anterior)
      * @param {boolean} mask - Se true, retorna com máscara de formatação
@@ -254,8 +238,6 @@ declare module 'gerador-br' {
      * console.log(gerar.cnpj());                   // Usando a função de compatibilidade
      */
     cnpjAlfanumerico: (mask?: boolean) => string;
-
-
 
     /**
      * Gera um número de Cartão Nacional de Saúde (CNS) aleatório.
@@ -279,8 +261,6 @@ declare module 'gerador-br' {
      * console.log(gerar.cns(true, 'profissional'));
      */
     cns: (mask?: boolean, type?: string) => string;
-
-
 
     /**
     * Gera um código de operadora de celular aleatório.
@@ -310,7 +290,6 @@ declare module 'gerador-br' {
     * console.log(gerar.codigoOperadora("blablabla")); // Pode retornar 968, 973, 984, 969, 967, etc.
     */
     codigoOperadora: (name?: string) => number;
-
 
     /**
      * Gera uma conta bancária aleatória.
@@ -429,8 +408,6 @@ declare module 'gerador-br' {
      */
     contaBancaria: (bank?: string) => object;
 
-
-
     /**
      * Gera cor da pele aleatória.
      *
@@ -440,8 +417,6 @@ declare module 'gerador-br' {
      * console.log(gerar.corPele()); // Exemplo: "Branca", "Preta", etc.
      */
     corPele: () => string;
-
-
 
     /**
      * Gera um número de CPF aleatório.
@@ -467,8 +442,6 @@ declare module 'gerador-br' {
      */
     cpf: (mask?: boolean, state?: string) => string;
 
-
-
     /**
      * Gera uma data de nascimento aleatória com base nos parâmetros fornecidos.
      *
@@ -484,8 +457,6 @@ declare module 'gerador-br' {
      * console.log(gerar.dataNascimento([30, 40])); // Data entre 30-40 anos
      */
     dataNascimento: (ageOrRange?: number | [number, number]) => string;
-
-
 
     /**
      * Gera um DDD aleatório para um estado brasileiro.
@@ -503,8 +474,6 @@ declare module 'gerador-br' {
      * console.log(gerar.ddd("RJ")); // Pode retornar 21, 22 ou 24
      */
     ddd: (state?: string) => string;
-
-
 
     /**
      * Gera um endereço de e-mail aleatório.
@@ -524,8 +493,6 @@ declare module 'gerador-br' {
      * console.log(gerar.email(gerar.nomeFemininoCompleto)); // Pode retornar algo como "ana.borges@hotmail.com"
      */
     email: (fullName?: string) => string;
-
-
 
     /**
      * Gera um endereço aleatório.
@@ -550,7 +517,6 @@ declare module 'gerador-br' {
      */
     endereco: (mask?: boolean, state?: string) => object;
 
-
     /**
      * Gera uma escolaridade aleatória.
      *
@@ -559,7 +525,6 @@ declare module 'gerador-br' {
      * console.log(gerar.escolaridade());
      */
     escolaridade: () => string;
-
 
     /**
      * Retorna a descrição do gênero com base na sigla fornecida.
@@ -587,8 +552,6 @@ declare module 'gerador-br' {
      */
     genero: (input?: string) => string;
 
-
-
     /**
      * Gera uma identidade de gênero aleatória.
      * @type {string}
@@ -597,8 +560,6 @@ declare module 'gerador-br' {
      * console.log(gerar.identideGenero()); // Retorna uma identidade de gênero, como: "Cisgênero", "Transgênero", etc.
      */
     identidadeGenero: () => string;
-
-
 
     /**
     * Gera uma identidade de gênero associada à orientação sexual selecionada.
@@ -614,8 +575,6 @@ declare module 'gerador-br' {
     * console.log(gerar.identidadePorOrientacao());                // Retorna uma identidade de gênero aleatória associada a uma orientação sexual aleatória.
     */
     identidadePorOrientacao: (orientacaoSexual?: string) => string;
-
-
 
     /**
      * Gera Inscrição Estadual aleatório e do estado informado.
@@ -654,8 +613,6 @@ declare module 'gerador-br' {
      */
     inscricaoEstadual: (state?: string) => string | null;
 
-
-
     /**
      * Retorna uma lista de códigos de bancos.
      *
@@ -666,8 +623,6 @@ declare module 'gerador-br' {
      * // => [ 1, 237, 104, 745, 296, 341, 33, ...]
      */
     listaCodigosBancos: () => number[];
-
-
 
     /**
      * Gera nomes aleatórios.
@@ -727,7 +682,16 @@ declare module 'gerador-br' {
       sobrenome: () => string;
     };
 
-
+    /**
+     * Gera um nome de empresa aleatório. Baseado em filmes, séries, livros, videogames, animação, hq, etc.
+     *
+     * @param {string} [local] - Se for 'BR' ou 'br', retorna apenas empresas brasileiras.
+     * @returns {string} - Um nome de empresa.
+     * @example
+     * console.log(gerar.nomeEmpresa()); // Exemplo: "Wayne Enterprises", "Los Pollos Hermanos", "Nakatomi Corporation"
+     * console.log(gerar.nomeEmpresa('BR')); // Exemplo: "Indústrias Tabajara", "Vavá Tur"
+     */
+    nomeEmpresa: (local?: string) => string;
 
     /**
      * Gera uma orientação sexual aleatória.
@@ -738,8 +702,6 @@ declare module 'gerador-br' {
      */
     orientacaoSexual: () => string;
 
-
-
     /**
      * Gera uma palavra aleatória.
      *
@@ -749,7 +711,6 @@ declare module 'gerador-br' {
      * console.log(gerar.palavra()); // Ex: "Lorem", "ipsum", "dolor", "sit", "amet"
      */
     palavra: () => string;
-
 
     /**
      * Gera um parágrafo aleatório.
@@ -772,8 +733,6 @@ declare module 'gerador-br' {
      */
     paragrafo: (qttParagraph?: number, qttWords?: number) => string;
 
-
-
     /**
      * Gera um número de Passoporte aleatório.
      *
@@ -782,8 +741,6 @@ declare module 'gerador-br' {
      * console.log(gerar.passaporte()); // "AB1234567"
      */
     passaporte: () => string;
-
-
 
     /**
      * Gera um número de PIS aleatório.
@@ -801,7 +758,6 @@ declare module 'gerador-br' {
      */
     pis: (mask?: boolean) => string;
 
-
     /**
      * Gera uma placa de veículo aleatória no formato antigo (3 letras, 4 números).
      *
@@ -815,8 +771,6 @@ declare module 'gerador-br' {
      * console.log(gerar.placaAntiga(false)); // "ABC1234"
      */
     placaAntiga: (mask?: boolean) => string;
-
-
 
     /**
      * Gera uma placa de veículo aleatória no formato Mercosul (3 letras, 1 número, 1 letra, 2 números).
@@ -832,8 +786,6 @@ declare module 'gerador-br' {
      */
     placaMercosul: (mask?: boolean) => string;
 
-
-
     /**
      * Gera uma profissão aleatória.
      * @type {string}
@@ -842,8 +794,6 @@ declare module 'gerador-br' {
      * console.log(gerar.profissao()); // Retorna qualquer profissão, como "Engenheiro", "Médico", "Professor", etc.
      */
     profissao: () => string;
-
-
 
     /**
      * Gera um provedor de email aleatório.
@@ -854,8 +804,6 @@ declare module 'gerador-br' {
      */
     provedorEmail: () => string;
 
-
-
     /**
      * Gera um número de RENAVAM aleatório.
      * @returns {string} RENAVAM gerado.
@@ -863,8 +811,6 @@ declare module 'gerador-br' {
      * console.log(gerar.renavam());
      */
     renavam: () => string;
-
-
 
     /**
      * Gera um número de RG aleatório.
@@ -879,8 +825,6 @@ declare module 'gerador-br' {
      */
     rg: (mask?: boolean) => string;
 
-
-
     /**
      * Gera uma sentença aleatória.
      *
@@ -894,8 +838,6 @@ declare module 'gerador-br' {
      * console.log(gerar.sentenca(10)); // Ex: "Dolorem sit modi deleniti nemo sint laborum vitae repellendus ipsa."
      */
     sentenca: (qttWords?: number) => string;
-
-
 
     /**
      * Gera um número de telefone aleatório.
@@ -920,8 +862,6 @@ declare module 'gerador-br' {
      */
     telefone: (mask?: boolean, state?: string) => string;
 
-
-
     /**
      * Gera um tipo sanguíneo aleatório.
      * @returns {string} Tipo sanguíneo.
@@ -929,8 +869,6 @@ declare module 'gerador-br' {
      * console.log(gerar.tipoSanguineo());
      */
     tipoSanguineo: () => string;
-
-
 
     /**
      * Gera um Título de Eleitor aleatório.
@@ -953,19 +891,13 @@ declare module 'gerador-br' {
     tituloEleitor: (mask?: boolean, state?: string) => string;
   };
 
-
-
-
-
-
-
   /**
-     * Gera um apelido aleatório.
-     *
-     * @returns {string} - Um apelido gerado aleatoriamente.
-     * @example
-     * console.log(apelido()); // Exemplo: "Falcão", "Astronauta", "Relíquia"
-     */
+   * Gera um apelido aleatório.
+   *
+   * @returns {string} - Um apelido gerado aleatoriamente.
+   * @example
+   * console.log(apelido()); // Exemplo: "Falcão", "Astronauta", "Relíquia"
+   */
   export const apelido: () => string;
 
   /**
@@ -993,7 +925,6 @@ declare module 'gerador-br' {
    * }
    */
   export const banco: (code?: number) => object;
-
 
   /**
    * Gera Cartão de Crédito aleatório.
@@ -1041,8 +972,6 @@ declare module 'gerador-br' {
    */
   export const cartaoCredito: (mask?: boolean, nomeTitular?: string) => object;
 
-
-
   /**
    * Gera um número de celular aleatório.
    *
@@ -1073,8 +1002,6 @@ declare module 'gerador-br' {
    */
   export const celular: (mask?: boolean, state?: string, operator?: string) => string;
 
-
-
   /**
    * Gera um CEP aleatório.
    *
@@ -1097,7 +1024,6 @@ declare module 'gerador-br' {
    * console.log(cep(true, "SP")); // "01001-000"
    */
   export const cep: (mask?: boolean, state?: string) => string;
-
 
   /**
    * Gera números de certidões (nascimento, casamento, óbito) seguindo o padrão de Registro Civil Brasileiro.
@@ -1149,8 +1075,6 @@ declare module 'gerador-br' {
     casamentoObj: () => object;
   };
 
-
-
   /**
    * Gera um número de CNH aleatório.
    *
@@ -1160,8 +1084,6 @@ declare module 'gerador-br' {
    */
   export const cnh: () => string;
 
-
-
   /**
    * Gera categorias de CNH válidas.
    *
@@ -1170,8 +1092,6 @@ declare module 'gerador-br' {
    * console.log(cnhCategoria());
    */
   export const cnhCategoria: () => string;
-
-
 
   /**
    * Gera um número de CNPJ aleatório.
@@ -1187,8 +1107,6 @@ declare module 'gerador-br' {
    */
   export const cnpj: (mask?: boolean) => string;
 
-
-
   /**
    * Gera um número de CNPJ Alfanumerico aleatório (compatibilidade com versão anterior)
    * @param {boolean} mask - Se true, retorna com máscara de formatação
@@ -1199,8 +1117,6 @@ declare module 'gerador-br' {
    * console.log(cnpj());                   // Usando a função de compatibilidade
    */
   export const cnpjAlfanumerico: (mask?: boolean) => string;
-
-
 
   /**
    * Gera um número de Cartão Nacional de Saúde (CNS) aleatório.
@@ -1224,8 +1140,6 @@ declare module 'gerador-br' {
    * console.log(cns(true, 'profissional'));
    */
   export const cns: (mask?: boolean, type?: string) => string;
-
-
 
   /**
   * Gera um código de operadora de celular aleatório.
@@ -1255,7 +1169,6 @@ declare module 'gerador-br' {
   * console.log(codigoOperadora("blablabla")); // Pode retornar 968, 973, 984, 969, 967, etc.
   */
   export const codigoOperadora: (name?: string) => number;
-
 
   /**
    * Gera uma conta bancária aleatória.
@@ -1374,8 +1287,6 @@ declare module 'gerador-br' {
    */
   export const contaBancaria: (bank?: string) => object;
 
-
-
   /**
    * Gera cor da pele aleatória.
    *
@@ -1385,8 +1296,6 @@ declare module 'gerador-br' {
    * console.log(corPele()); // Exemplo: "Branca", "Preta", etc.
    */
   export const corPele: () => string;
-
-
 
   /**
    * Gera um número de CPF aleatório.
@@ -1412,8 +1321,6 @@ declare module 'gerador-br' {
    */
   export const cpf: (mask?: boolean, state?: string) => string;
 
-
-
   /**
    * Gera uma data de nascimento aleatória com base nos parâmetros fornecidos.
    *
@@ -1429,8 +1336,6 @@ declare module 'gerador-br' {
    * console.log(dataNascimento([30, 40])); // Data entre 30-40 anos
    */
   export const dataNascimento: (ageOrRange?: number | [number, number]) => string;
-
-
 
   /**
    * Gera um DDD aleatório para um estado brasileiro.
@@ -1448,8 +1353,6 @@ declare module 'gerador-br' {
    * console.log(ddd("RJ")); // Pode retornar 21, 22 ou 24
    */
   export const ddd: (state?: string) => string;
-
-
 
   /**
    * Gera um endereço de e-mail aleatório.
@@ -1469,8 +1372,6 @@ declare module 'gerador-br' {
    * console.log(email(gerar.nomeFemininoCompleto)); // Pode retornar algo como "ana.borges@hotmail.com"
    */
   export const email: (fullName?: string) => string;
-
-
 
   /**
    * Gera um endereço aleatório.
@@ -1495,7 +1396,6 @@ declare module 'gerador-br' {
    */
   export const endereco: (mask?: boolean, state?: string) => object;
 
-
   /**
    * Gera uma escolaridade aleatória.
    *
@@ -1504,7 +1404,6 @@ declare module 'gerador-br' {
    * console.log(escolaridade());
    */
   export const escolaridade: () => string;
-
 
   /**
    * Retorna a descrição do gênero com base na sigla fornecida.
@@ -1532,8 +1431,6 @@ declare module 'gerador-br' {
    */
   export const genero: (input?: string) => string;
 
-
-
   /**
    * Gera uma identidade de gênero aleatória.
    * @type {string}
@@ -1542,8 +1439,6 @@ declare module 'gerador-br' {
    * console.log(identideGenero()); // Retorna uma identidade de gênero, como: "Cisgênero", "Transgênero", etc.
    */
   export const identidadeGenero: () => string;
-
-
 
   /**
   * Gera uma identidade de gênero associada à orientação sexual selecionada.
@@ -1559,8 +1454,6 @@ declare module 'gerador-br' {
   * console.log(identidadePorOrientacao());                // Retorna uma identidade de gênero aleatória associada a uma orientação sexual aleatória.
   */
   export const identidadePorOrientacao: (orientacaoSexual?: string) => string;
-
-
 
   /**
    * Gera Inscrição Estadual aleatório e do estado informado.
@@ -1599,8 +1492,6 @@ declare module 'gerador-br' {
    */
   export const inscricaoEstadual: (state?: string) => string | null;
 
-
-
   /**
    * Retorna uma lista de códigos de bancos.
    *
@@ -1611,8 +1502,6 @@ declare module 'gerador-br' {
    * // => [ 1, 237, 104, 745, 296, 341, 33, ...]
    */
   export const listaCodigosBancos: () => number[];
-
-
 
   /**
    * Gera nomes aleatórios.
@@ -1672,7 +1561,16 @@ declare module 'gerador-br' {
     sobrenome: () => string;
   };
 
-
+  /**
+   * Gera um nome de empresa aleatório. Baseado em filmes, séries, livros, videogames, animação, hq, etc.
+   *
+   * @param {string} [local] - Se for 'BR' ou 'br', retorna apenas empresas brasileiras.
+   * @returns {string} - Um nome de empresa.
+   * @example
+   * console.log(nomeEmpresa()); // Exemplo: "Wayne Enterprises", "Los Pollos Hermanos", "Nakatomi Corporation"
+   * console.log(nomeEmpresa('BR')); // Exemplo: "Indústrias Tabajara", "Vavá Tur"
+   */
+  export const nomeEmpresa: (local?: string) => string;
 
   /**
    * Gera uma orientação sexual aleatória.
@@ -1683,8 +1581,6 @@ declare module 'gerador-br' {
    */
   export const orientacaoSexual: () => string;
 
-
-
   /**
    * Gera uma palavra aleatória.
    *
@@ -1694,7 +1590,6 @@ declare module 'gerador-br' {
    * console.log(palavra()); // Ex: "Lorem", "ipsum", "dolor", "sit", "amet"
    */
   export const palavra: () => string;
-
 
   /**
    * Gera um parágrafo aleatório.
@@ -1717,8 +1612,6 @@ declare module 'gerador-br' {
    */
   export const paragrafo: (qttParagraph?: number, qttWords?: number) => string;
 
-
-
   /**
    * Gera um número de Passoporte aleatório.
    *
@@ -1727,8 +1620,6 @@ declare module 'gerador-br' {
    * console.log(passaporte()); // "AB1234567"
    */
   export const passaporte: () => string;
-
-
 
   /**
    * Gera um número de PIS aleatório.
@@ -1746,7 +1637,6 @@ declare module 'gerador-br' {
    */
   export const pis: (mask?: boolean) => string;
 
-
   /**
    * Gera uma placa de veículo aleatória no formato antigo (3 letras, 4 números).
    *
@@ -1760,8 +1650,6 @@ declare module 'gerador-br' {
    * console.log(placaAntiga(false)); // "ABC1234"
    */
   export const placaAntiga: (mask?: boolean) => string;
-
-
 
   /**
    * Gera uma placa de veículo aleatória no formato Mercosul (3 letras, 1 número, 1 letra, 2 números).
@@ -1777,8 +1665,6 @@ declare module 'gerador-br' {
    */
   export const placaMercosul: (mask?: boolean) => string;
 
-
-
   /**
    * Gera uma profissão aleatória.
    * @type {string}
@@ -1787,8 +1673,6 @@ declare module 'gerador-br' {
    * console.log(profissao()); // Retorna qualquer profissão, como "Engenheiro", "Médico", "Professor", etc.
    */
   export const profissao: () => string;
-
-
 
   /**
    * Gera um provedor de email aleatório.
@@ -1799,8 +1683,6 @@ declare module 'gerador-br' {
    */
   export const provedorEmail: () => string;
 
-
-
   /**
    * Gera um número de RENAVAM aleatório.
    * @returns {string} RENAVAM gerado.
@@ -1808,8 +1690,6 @@ declare module 'gerador-br' {
    * console.log(renavam());
    */
   export const renavam: () => string;
-
-
 
   /**
    * Gera um número de RG aleatório.
@@ -1824,8 +1704,6 @@ declare module 'gerador-br' {
    */
   export const rg: (mask?: boolean) => string;
 
-
-
   /**
    * Gera uma sentença aleatória.
    *
@@ -1839,8 +1717,6 @@ declare module 'gerador-br' {
    * console.log(sentenca(10)); // Ex: "Dolorem sit modi deleniti nemo sint laborum vitae repellendus ipsa."
    */
   export const sentenca: (qttWords?: number) => string;
-
-
 
   /**
    * Gera um número de telefone aleatório.
@@ -1865,8 +1741,6 @@ declare module 'gerador-br' {
    */
   export const telefone: (mask?: boolean, state?: string) => string;
 
-
-
   /**
    * Gera um tipo sanguíneo aleatório.
    * @returns {string} Tipo sanguíneo.
@@ -1874,8 +1748,6 @@ declare module 'gerador-br' {
    * console.log(tipoSanguineo());
    */
   export const tipoSanguineo: () => string;
-
-
 
   /**
    * Gera um Título de Eleitor aleatório.
@@ -1896,6 +1768,5 @@ declare module 'gerador-br' {
    * console.log(tituloEleitor(true, 'PE')); // "1234 5678 9012"
    */
   export const tituloEleitor: (mask?: boolean, state?: string) => string;
-
 
 }
