@@ -48,12 +48,12 @@ import { gerar } from 'gerador-br';
 ***CommonsJS***
 
 ```js
-const gerar = require('gerador-br');
+const { gerar } = require('gerador-br');
 ```
 
 ## Utilização
 
-> Veja todos os exemplos na [documentação](https://marcelo-lourenco.github.io/gerador-br/#/guia-utilizacao).
+> Veja todos os exemplos na [documentação](https://marcelo-lourenco.github.io/gerador-br/documentacao).
 
 **Importe apenas a(s) função(ões) que desejar:**
 
@@ -80,7 +80,15 @@ console.log(gerar.contaBancaria());
 console.log(gerar.cartaoCredito());
 ```
 
-**Outros exemplos:**
+## Projetos com exemplos utilização do Gerador-BR
+
+[![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](https://github.com/marcelo-lourenco/cypress-data-generator)
+[![Playwright](https://img.shields.io/badge/Playwright-%232EAD33?logo=playwright&logoColor=white)](https://github.com/marcelo-lourenco/playwright-data-generator)
+[![Node.js Test Runner](https://img.shields.io/badge/Node.js%20Test%20Runner-%235FA04E?logo=nodedotjs&logoColor=white)](https://github.com/marcelo-lourenco/node-data-generator)
+[![Jest](https://img.shields.io/badge/Jest-%2315c213?logo=jest&logoColor=white)](https://github.com/marcelo-lourenco/jest-data-generator)
+[![Jasmine](https://img.shields.io/badge/Jasmine-%238a4182?logo=jasmine&logoColor=white)](https://github.com/marcelo-lourenco/jasmine-data-generator)
+
+## Outros exemplos de utilização
 
 ```js
 import { gerar } from 'gerador-br'; // ES Module:
@@ -377,11 +385,11 @@ console.log(gerar.tituloEleitor(false, 'PR'));
 
 O pacote foi testado e é compatível com as versões mais recentes dos seguinte frameworks:
 
-[![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](#)
-[![Jest](https://img.shields.io/badge/Jest-%2315c213?logo=jest&logoColor=white)](#)
-[![Node.js Test Runner](https://img.shields.io/badge/Node.js%20Test%20Runner-%235FA04E?logo=nodedotjs&logoColor=white)](#)
-[![Jasmine](https://img.shields.io/badge/Jasmine-%238a4182?logo=jasmine&logoColor=white)](#)
-[![Playwright](https://img.shields.io/badge/Playwright-%232EAD33?logo=playwright&logoColor=white)](#)
+[![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](https://github.com/marcelo-lourenco/cypress-data-generator)
+[![Jest](https://img.shields.io/badge/Jest-%2315c213?logo=jest&logoColor=white)](https://github.com/marcelo-lourenco/jest-data-generator)
+[![Node.js Test Runner](https://img.shields.io/badge/Node.js%20Test%20Runner-%235FA04E?logo=nodedotjs&logoColor=white)](https://github.com/marcelo-lourenco/node-data-generator)
+[![Jasmine](https://img.shields.io/badge/Jasmine-%238a4182?logo=jasmine&logoColor=white)](https://github.com/marcelo-lourenco/jasmine-data-generator)
+[![Playwright](https://img.shields.io/badge/Playwright-%232EAD33?logo=playwright&logoColor=white)](https://github.com/marcelo-lourenco/playwright-data-generator)
 [![Mocha](https://img.shields.io/badge/Mocha-%238d6748?logo=mocha&logoColor=white)](#)
 [![Chai](https://img.shields.io/badge/Chai-%23a40802?logo=chai&logoColor=white)](#)
 [![Supertest](https://img.shields.io/badge/Supertest-%23F44336?logo=apachesuperset&logoColor=white)](#)
