@@ -80,7 +80,7 @@ console.log(gerar.contaBancaria());
 console.log(gerar.cartaoCredito());
 ```
 
-## Projetos com exemplos utilização do Gerador-BR
+## Projetos com exemplos de utilização do Gerador-BR
 
 [![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](https://github.com/marcelo-lourenco/cypress-data-generator)
 [![Playwright](https://img.shields.io/badge/Playwright-%232EAD33?logo=playwright&logoColor=white)](https://github.com/marcelo-lourenco/playwright-data-generator)
