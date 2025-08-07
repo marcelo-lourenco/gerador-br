@@ -18,7 +18,7 @@
     "coverage": "npx c8 --reporter=lcov node --test test"
   },
   "devDependencies": {
-    "@eslint/js": "^9.23.0",
+    "@eslint/js": "^9.26.0",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^15.3.1",
