@@ -1030,17 +1030,26 @@ form-floating > .form-control:focus ~ label::after,
 .dropdown-item {
   padding: 0.2rem 2rem;
 }
-.dropdown-item:hover
+
+.dropdown-item:hover,
 .dropdown-item:active{
   color: #5236CB;
-  background-color: #f5f7fa !important;
-}
-.nav-link:hover
-.nav-link:active{
-  color: #5236CB;
-  background-color: #f5f7fa !important;
+  background-color: #cfe2ff !important;
 }
 
+.gen-nav .nav-link:focus,
+.gen-nav .nav-link:hover,
+.gen-nav .nav-link:active{
+  color: #5236CB;
+  background-color: #cfe2ff !important;
+}
+
+.gen-nav .nav-item:focus,
+.gen-nav .nav-item:hover,
+.gen-nav .nav-item:active{
+  color: #5236CB;
+  background-color: #cfe2ff !important;
+}
 
 .scrollable-menu {
   height: auto;

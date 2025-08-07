@@ -91,6 +91,16 @@
 
   <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-DDJE8YJ36B"></script>
   <script src="../assets/js/gtag-config.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+          new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      });
+</script>
+
 </head>
 <body>
   <header class="header fixed-top">
@@ -134,7 +144,7 @@
               <li class="nav-item dropdown me-lg-4">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">Geradores</a>
-                <ul class="dropdown-menu dropdown-menu-end rounded shadow scrollable-menu docs-sidebar">
+                <ul class="dropdown-menu dropdown-menu-end rounded shadow scrollable-menu docs-sidebar gen-nav">
                   <li class="dropdown-header mt-3">
                     <span class="theme-icon-holder">
                       <i class="fas fa-id-card"></i>
@@ -233,14 +243,21 @@
               <li class="nav-item pt-3 pt-lg-0">
                 <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
                   <li class="list-inline-item">
-                    <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm">
+                    <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm"
+                      data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pacote NPM">
                       <i class="fa-brands fa-npm fa-fw"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener"
-                      aria-label="GitHub">
+                      aria-label="GitHub" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projeto no GitHub">
                       <i class="fa-brands fa-github fa-fw"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam" target="_blank" rel="noopener"
+                      aria-label="Extensão Chrome" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Extensão para Chrome">
+                      <i class="fa-brands fa-chrome fa-fw"></i>
                     </a>
                   </li>
                 </ul>
@@ -266,6 +283,9 @@
   <div id="docs-sidebar" class="docs-sidebar">
   <nav id="docs-nav" class="docs-nav navbar">
     <ul class="section-items list-unstyled nav flex-column pb-3">
+      <li class="nav-item section-title text-center ">
+        <h1 class="my-3 h4">GERADORES</h1>
+      </li>
       <li class="nav-item section-title">
         <a class="nav-link active" href="../gerador-de-documentos-pf">
           <span class="theme-icon-holder me-2">
@@ -455,19 +475,20 @@
         <div class="col-6 text-end">
           <ul class="social-list list-unstyled pb-4 mb-0">
             <li class="list-inline-item">
-              <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm">
+              <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pacote NPM">
                 <i class="fa-brands fa-npm fa-fw"></i>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener"
-                aria-label="GitHub">
+                aria-label="GitHub" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projeto no GitHub">
                 <i class="fa-brands fa-github fa-fw"></i>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/marcelolourencodasilva/" target="_blank" rel="noopener"
-                aria-label="LinkedIn">
+                aria-label="LinkedIn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Marcelo Lourenço">
                 <i class="fa-brands fa-linkedin fa-fw"></i>
               </a>
             </li>
