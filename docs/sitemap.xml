@@ -1,124 +1,148 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-                      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>1.00</priority>
+    <loc>https://box4.dev/gerador-br/documentacao/</loc>
+    <lastmod>2025-08-22T00:38:51.956Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/documentacao/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.90</priority>
+    <loc>https://box4.dev/gerador-br/formulario-para-teste-required/</loc>
+    <lastmod>2025-08-22T00:38:51.959Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-cpf/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/formulario-para-teste/</loc>
+    <lastmod>2025-08-22T00:38:51.963Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-cnh/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-banco/</loc>
+    <lastmod>2025-08-22T00:38:51.965Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-rg/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-cartao-de-credito/</loc>
+    <lastmod>2025-08-22T00:38:51.967Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-cartao-nacional-de-saude/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-cartao-nacional-de-saude/</loc>
+    <lastmod>2025-08-22T00:38:51.969Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-pis/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-cep/</loc>
+    <lastmod>2025-08-22T00:38:51.971Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-titulo-de-eleitor/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-certidao/</loc>
+    <lastmod>2025-08-22T00:38:51.973Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-passaporte/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-cnh/</loc>
+    <lastmod>2025-08-22T00:38:51.975Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-certidao/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-cnpj-alfanumerico/</loc>
+    <lastmod>2025-08-22T00:38:51.975Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-cnpj/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-cnpj/</loc>
+    <lastmod>2025-08-22T00:38:51.977Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-inscricao-estadual/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-conta-bancaria/</loc>
+    <lastmod>2025-08-22T00:38:51.979Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-banco/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-cpf/</loc>
+    <lastmod>2025-08-22T00:38:51.980Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-cartao-de-credito/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-endereco/</loc>
+    <lastmod>2025-08-22T00:38:51.982Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-conta-bancaria/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-inscricao-estadual/</loc>
+    <lastmod>2025-08-22T00:38:51.984Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-cep/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-paragrafos/</loc>
+    <lastmod>2025-08-22T00:38:51.984Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-endereco/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-passaporte/</loc>
+    <lastmod>2025-08-22T00:38:51.986Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-placa-antiga/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-pis/</loc>
+    <lastmod>2025-08-22T00:38:51.994Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-placa-mercosul/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-placa-antiga/</loc>
+    <lastmod>2025-08-22T00:38:51.996Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-renavam/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-placa-mercosul/</loc>
+    <lastmod>2025-08-22T00:38:51.998Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-sentenca/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-renavam/</loc>
+    <lastmod>2025-08-22T00:38:51.999Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/gerador-de-paragrafos/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-rg/</loc>
+    <lastmod>2025-08-22T00:38:52.000Z</lastmod>
   </url>
+  
   <url>
-    <loc>https://marcelo-lourenco.github.io/gerador-br/geradores/</loc>
-    <lastmod>2025-04-22</lastmod>
-    <priority>0.80</priority>
+    <loc>https://box4.dev/gerador-br/gerador-de-sentenca/</loc>
+    <lastmod>2025-08-22T00:38:52.002Z</lastmod>
   </url>
-
+  
+  <url>
+    <loc>https://box4.dev/gerador-br/gerador-de-titulo-de-eleitor/</loc>
+    <lastmod>2025-08-22T00:38:52.002Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://box4.dev/gerador-br/geradores-old/</loc>
+    <lastmod>2025-08-22T00:38:52.006Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://box4.dev/gerador-br/geradores/</loc>
+    <lastmod>2025-08-22T00:38:52.008Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://box4.dev/google4a0766202af64846/</loc>
+    <lastmod>2025-08-22T00:38:52.008Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://box4.dev/gerador-br/</loc>
+    <lastmod>2025-08-22T00:38:52.010Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://box4.dev/</loc>
+    <lastmod>2025-08-22T02:56:14.910Z</lastmod>
+  </url>
 </urlset>
