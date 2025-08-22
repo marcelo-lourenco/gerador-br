@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Endereço Online para Testes | Gerador-BR</title>
-  <meta name="description" content="Gere endereços válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
-  <meta name="keywords" content="gerador de endereço, gerar endereço, criar endereço, endereço online, endereço válido, endereço para teste, dados fictícios, gerador de dados, endereço fictício">
+  <title>Gerador de Endereços Válidos do Brasil | Box4Dev</title>
+  <meta name="description" content="Gere endereços brasileiros completos e válidos (CEP, rua, número, bairro, cidade e estado). Ideal para preenchimento de formulários de teste.">
+  <meta name="keywords" content="gerador de endereço, gerar endereço, endereço válido, endereço para teste, dados fictícios">
   <meta name="author" content="Marcelo Lourenço">
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
-  <meta property="og:title" content="Gerador de Endereço Online para Testes | Gerador-BR">
-  <meta property="og:description" content="Gere endereços válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta property="og:title" content="Gerador de Endereços Válidos do Brasil | Box4Dev">
+  <meta property="og:description" content="Gere endereços brasileiros completos e válidos (CEP, rua, número, bairro, cidade e estado). Ideal para preenchimento de formulários de teste.">
   <meta property="og:image" content="https://box4.dev/assets/images/features/social-preview.png">
   <meta property="og:url" content="https://box4.dev/gerador-br/gerador-de-endereco/">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador de Endereço Online para Testes | Gerador-BR">
-  <meta name="twitter:description" content="Gere endereços válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta name="twitter:title" content="Gerador de Endereços Válidos do Brasil | Box4Dev">
+  <meta name="twitter:description" content="Gere endereços brasileiros completos e válidos (CEP, rua, número, bairro, cidade e estado). Ideal para preenchimento de formulários de teste.">
   <meta name="twitter:image" content="https://box4.dev/assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
@@ -46,11 +46,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Gerador de Endereço Online para Testes | Gerador-BR",
+    "name": "Gerador de Endereços Válidos do Brasil | Box4Dev",
     "url": "https://box4.dev/gerador-br/gerador-de-endereco/",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "All",
-    "description": "Gere endereços válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.",
+    "description": "Gere endereços brasileiros completos e válidos (CEP, rua, número, bairro, cidade e estado). Ideal para preenchimento de formulários de teste.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     
     "datePublished": "2025-08-22T00:38:51.982Z",
@@ -76,7 +76,7 @@
     "license": "https://opensource.org/licenses/MIT",
     "codeRepository": "https://github.com/box4dev/gerador-br",
     
-    "keywords": "gerador de endereço, gerar endereço, criar endereço, endereço online, endereço válido, endereço para teste, dados fictícios, gerador de dados, endereço fictício",
+    "keywords": "gerador de endereço, gerar endereço, endereço válido, endereço para teste, dados fictícios",
     "softwareHelp": {
       "@type": "CreativeWork",
       "url": "https://box4.dev/documentacao/"
@@ -404,95 +404,66 @@
 
         <h1 id="gerador-endereco-heading" class="mb-3">Gerador de Endereço</h1>
 
-        <!-- Formulário de Gerador de Endereço -->
         <form id="endereco-generator-form" class="mx-auto mnw-500 mxw-600" action="#!" novalidate>
           <div class="p-3 bg-body">
-          
+            
             <div class="form-floating mb-3 position-relative">
-            
-              <!-- Logradouro -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldLogradouro" name="fldLogradouro"
-                  placeholder="Logradouro" readonly aria-label="Logradouro gerado">
-                <label for="fldLogradouro">Logradouro</label>
-                <div id="divCopyLogradouro" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoLogradouro" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldLogradouro', 'msgCopiadoLogradouro')"
-                      aria-label="Botão Copiar Logradouro"></i>
-                  </div>
+              <input type="text" class="form-control" disabled id="fldLogradouro" name="fldLogradouro" placeholder="Logradouro" readonly aria-label="Logradouro gerado">
+              <label for="fldLogradouro">Logradouro</label>
+              <div id="divCopyLogradouro" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoLogradouro" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldLogradouro', 'msgCopiadoLogradouro')" aria-label="Botão Copiar Logradouro"></i>
                 </div>
               </div>
+            </div>
             
-              <!-- Número -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldNumero" name="fldNumero"
-                  placeholder="Número" readonly aria-label="Número gerado">
-                <label for="fldNumero">Número</label>
-                <div id="divCopyNumero" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoNumero" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldNumero', 'msgCopiadoNumero')"
-                      aria-label="Botão Copiar Número"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldNumero" name="fldNumero" placeholder="Número" readonly aria-label="Número gerado">
+              <label for="fldNumero">Número</label>
+              <div id="divCopyNumero" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoNumero" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldNumero', 'msgCopiadoNumero')" aria-label="Botão Copiar Número"></i>
                 </div>
               </div>
-            
-              <!-- Complemento -->
-              
-            
-              <!-- Bairro -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldBairro" name="fldBairro"
-                  placeholder="Bairro" readonly aria-label="Bairro gerado">
-                <label for="fldBairro">Bairro</label>
-                <div id="divCopyBairro" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoBairro" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldBairro', 'msgCopiadoBairro')"
-                      aria-label="Botão Copiar Bairro"></i>
-                  </div>
-                </div>
-              </div>
-            
-              <!-- Localidade -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldLocalidade" name="fldLocalidade"
-                  placeholder="Localidade" readonly aria-label="Localidade gerada">
-                <label for="fldLocalidade">Localidade</label>
-                <div id="divCopyLocalidade" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoLocalidade" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldLocalidade', 'msgCopiadoLocalidade')"
-                      aria-label="Botão Copiar Localidade"></i>
-                  </div>
-                </div>
-              </div>
-            
-              <!-- Estado -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldEstado" name="fldEstado"
-                  placeholder="Estado" readonly aria-label="Estado gerado">
-                <label for="fldEstado">Estado</label>
-                <div id="divCopyEstado" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoEstado" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldEstado', 'msgCopiadoEstado')"
-                      aria-label="Botão Copiar Estado"></i>
-                  </div>
-                </div>
-              </div>
-            
             </div>
 
-            <div class="form-check form-switch mb-3 d-flex justify-content-center">
-              <input class="form-check-input" type="checkbox" id="maskSwitch" checked aria-label="Aplicar máscara">
-              <label class="form-check-label ms-2" for="maskSwitch">Aplicar Máscara</label>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldBairro" name="fldBairro" placeholder="Bairro" readonly aria-label="Bairro gerado">
+              <label for="fldBairro">Bairro</label>
+              <div id="divCopyBairro" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoBairro" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldBairro', 'msgCopiadoBairro')" aria-label="Botão Copiar Bairro"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldLocalidade" name="fldLocalidade" placeholder="Localidade" readonly aria-label="Localidade gerada">
+              <label for="fldLocalidade">Localidade</label>
+              <div id="divCopyLocalidade" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoLocalidade" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldLocalidade', 'msgCopiadoLocalidade')" aria-label="Botão Copiar Localidade"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldEstado" name="fldEstado" placeholder="Estado" readonly aria-label="Estado gerado">
+              <label for="fldEstado">Estado</label>
+              <div id="divCopyEstado" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoEstado" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldEstado', 'msgCopiadoEstado')" aria-label="Botão Copiar Estado"></i>
+                </div>
+              </div>
             </div>
           
             <div class="text-center">
-              <button type="button" id="btnGerarEndereco" class="btn btn-primary" onclick="gerarEndereco()"
-                aria-label="Botão Gerar">
+              <button type="button" id="btnGerarEndereco" class="btn btn-primary" onclick="gerarEndereco()" aria-label="Botão Gerar">
                 <i class="fas fa-bolt me-1" aria-hidden="true"></i>
                 Gerar
               </button>
@@ -501,6 +472,91 @@
           </div>
         </form>
       </article>
+
+      <section class="container text-start pt-5 pb-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h3 mb-4">Sobre o Gerador de Endereço</h2>
+            <p>O Gerador de Endereço do Box4Dev é uma ferramenta que cria dados postais brasileiros completos e realistas. Ao gerar um CEP válido da base de dados dos Correios, a ferramenta busca automaticamente as informações associadas de logradouro, bairro, cidade e estado, fornecendo um conjunto de dados coeso e pronto para uso.</p>
+            <p>Este recurso é extremamente útil para desenvolvedores e testadores, simplificando o preenchimento de formulários de cadastro, a validação de funcionalidades de auto-completar endereço e o teste de sistemas de e-commerce e logística em um ambiente de desenvolvimento seguro.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+
+
+
+<section class="container text-start py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="h3 mb-4">Perguntas Frequentes (FAQ)</h2>
+
+      <div class="accordion" id="faqAccordion">
+
+        
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-1">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+              Os endereços gerados são reais?
+            </button>
+          </h3>
+          <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim. A ferramenta funciona gerando primeiro um CEP válido existente na base dos Correios. Em seguida, ela consulta uma API para obter o endereço real (logradouro, bairro, cidade e estado) associado a esse CEP. O número da rua é gerado aleatoriamente para completar o dado.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Qual a utilidade de gerar um endereço aleatório?
+            </button>
+          </h3>
+          <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              É uma ferramenta essencial para desenvolvedores e QAs que precisam de dados de endereço realistas para testar formulários de cadastro, sistemas de e-commerce, software de logística e qualquer aplicação que precise manipular ou validar dados postais brasileiros, sem usar informações de pessoas reais.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              A ferramenta gera endereços de todo o Brasil?
+            </button>
+          </h3>
+          <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim. Como a geração do CEP é aleatória e cobre toda a faixa de códigos utilizada no país, a ferramenta pode gerar endereços de qualquer estado ou cidade brasileira, proporcionando uma ampla variedade de dados para os testes.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              Os dados gerados são armazenados?
+            </button>
+          </h3>
+          <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Não. Todas as operações, incluindo a geração do CEP e a consulta do endereço, são realizadas em tempo real e executadas no seu navegador. O Box4Dev não armazena nenhuma das informações exibidas, garantindo sua privacidade.
+            </div>
+          </div>
+        </div>
+        
+
+      </div><!--//accordion-->
+    </div>
+  </div>
+</section>
+
 
     </div>
 
@@ -519,7 +575,7 @@
       <a class="btn btn-light mx-2" href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm install gerador-br">
         npm install <i class="fas fa-arrow-alt-circle-right ml-2"></i>
       </a>
-      <a class="btn btn-success mx-2" href="https://marcelo-lourenco.github.io/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
+      <a class="btn btn-success mx-2" href="https://box4.dev/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
         Experimentar <i class="fas fa-flask ml-2"></i>
       </a>
     </div>

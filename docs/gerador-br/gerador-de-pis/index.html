@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de PIS Online para Testes | Gerador-BR</title>
-  <meta name="description" content="Gere números de PIS válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
-  <meta name="keywords" content="gerador de pis, gerar pis, criar pis, pis online, pis válido, pis para teste, dados fictícios, gerador de dados, pis fictício">
+  <title>Gerador de PIS/PASEP Válido Online | Box4Dev</title>
+  <meta name="description" content="Gere números de PIS/PASEP matematicamente válidos para testes. Ferramenta gratuita para desenvolvedores testarem sistemas de RH e cadastros governamentais.">
+  <meta name="keywords" content="gerador de pis, gerar pis, pis válido, pasep, nit, pis para teste, dados fictícios">
   <meta name="author" content="Marcelo Lourenço">
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
-  <meta property="og:title" content="Gerador de PIS Online para Testes | Gerador-BR">
-  <meta property="og:description" content="Gere números de PIS válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta property="og:title" content="Gerador de PIS/PASEP Válido Online | Box4Dev">
+  <meta property="og:description" content="Gere números de PIS/PASEP matematicamente válidos para testes. Ferramenta gratuita para desenvolvedores testarem sistemas de RH e cadastros governamentais.">
   <meta property="og:image" content="https://box4.dev/assets/images/features/social-preview.png">
   <meta property="og:url" content="https://box4.dev/gerador-br/gerador-de-pis/">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador de PIS Online para Testes | Gerador-BR">
-  <meta name="twitter:description" content="Gere números de PIS válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta name="twitter:title" content="Gerador de PIS/PASEP Válido Online | Box4Dev">
+  <meta name="twitter:description" content="Gere números de PIS/PASEP matematicamente válidos para testes. Ferramenta gratuita para desenvolvedores testarem sistemas de RH e cadastros governamentais.">
   <meta name="twitter:image" content="https://box4.dev/assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
@@ -46,11 +46,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Gerador de PIS Online para Testes | Gerador-BR",
+    "name": "Gerador de PIS/PASEP Válido Online | Box4Dev",
     "url": "https://box4.dev/gerador-br/gerador-de-pis/",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "All",
-    "description": "Gere números de PIS válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.",
+    "description": "Gere números de PIS/PASEP matematicamente válidos para testes. Ferramenta gratuita para desenvolvedores testarem sistemas de RH e cadastros governamentais.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     
     "datePublished": "2025-08-22T00:38:51.994Z",
@@ -76,7 +76,7 @@
     "license": "https://opensource.org/licenses/MIT",
     "codeRepository": "https://github.com/box4dev/gerador-br",
     
-    "keywords": "gerador de pis, gerar pis, criar pis, pis online, pis válido, pis para teste, dados fictícios, gerador de dados, pis fictício",
+    "keywords": "gerador de pis, gerar pis, pis válido, pasep, nit, pis para teste, dados fictícios",
     "softwareHelp": {
       "@type": "CreativeWork",
       "url": "https://box4.dev/documentacao/"
@@ -408,17 +408,14 @@
             <div class="p-3 bg-body">
 
               <div class="form-floating mb-3 position-relative">
-
                 <input type="text" class="form-control" disabled id="fldPis" name="fldPis" placeholder="PIS" readonly aria-label="PIS gerado">
                 <label for="fldPis">PIS</label>
-
                 <div id="divCopy" class="d-none position-absolute div-copy">
                   <div class="d-flex align-items-center">
                     <span id="msgCopiadoPis" class="copy-notification" style="display: none;">Copiado!</span>
                     <i class="fas fa-copy icon icon-copy" onclick="copy('fldPis', 'msgCopiadoPis')" aria-label="Botão Copiar"></i>
                   </div>
                 </div>
-
               </div>
 
               <div class="form-check form-switch mb-3 d-flex justify-content-center">
@@ -437,6 +434,91 @@
           </form>
       </article>
 
+      <section class="container text-start pt-5 pb-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h3 mb-4">Sobre o Gerador de PIS/PASEP</h2>
+            <p>O Gerador de PIS/PASEP do Box4Dev cria números de 11 dígitos que são estruturalmente idênticos aos números reais de identificação do trabalhador (PIS, PASEP ou NIT). Cada número gerado possui um dígito verificador calculado de acordo com o algoritmo oficial, garantindo sua validade matemática.</p>
+            <p>Este recurso é uma ferramenta de apoio fundamental para equipes de desenvolvimento de software de RH, folha de pagamento e sistemas que se integram com plataformas governamentais. Ele permite a realização de testes de cadastro e validação de dados em um ambiente seguro, sem a necessidade de utilizar informações sensíveis de trabalhadores reais.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+
+
+
+<section class="container text-start py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="h3 mb-4">Perguntas Frequentes (FAQ)</h2>
+
+      <div class="accordion" id="faqAccordion">
+
+        
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-1">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+              O número do PIS/PASEP gerado é válido?
+            </button>
+          </h3>
+          <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim, o número é matematicamente válido. Ele é criado seguindo o algoritmo oficial de cálculo do dígito verificador, o que garante que ele passará em validações de formulários e sistemas. No entanto, é um número fictício e não está associado a nenhum trabalhador real na base de dados da Caixa Econômica Federal ou do Banco do Brasil.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Qual a diferença entre PIS, PASEP e NIT?
+            </button>
+          </h3>
+          <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              PIS (Programa de Integração Social) é para trabalhadores da iniciativa privada. PASEP (Programa de Formação do Patrimônio do Servidor Público) é para servidores públicos. NIT (Número de Identificação do Trabalhador) é para autônomos. Embora tenham origens diferentes, todos seguem o mesmo formato e algoritmo de validação de 11 dígitos.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              Para que serve esta ferramenta?
+            </button>
+          </h3>
+          <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Este gerador é destinado a desenvolvedores e equipes de QA para testar sistemas de Recursos Humanos (RH), software de folha de pagamento, plataformas do eSocial e qualquer aplicação que precise validar ou armazenar um número de PIS/PASEP/NIT, sem utilizar dados reais de trabalhadores.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              Posso usar este número para consultar benefícios?
+            </button>
+          </h3>
+          <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Não. Como o número é fictício e não está vinculado a nenhuma pessoa real, qualquer tentativa de usá-lo para consultar abono salarial, FGTS ou outros benefícios resultará em erro. Seu uso é estritamente para simulação em software.
+            </div>
+          </div>
+        </div>
+        
+
+      </div><!--//accordion-->
+    </div>
+  </div>
+</section>
+
+
     </div>
 
     <section class="cta-section text-center py-5 theme-bg-dark position-relative">
@@ -454,7 +536,7 @@
       <a class="btn btn-light mx-2" href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm install gerador-br">
         npm install <i class="fas fa-arrow-alt-circle-right ml-2"></i>
       </a>
-      <a class="btn btn-success mx-2" href="https://marcelo-lourenco.github.io/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
+      <a class="btn btn-success mx-2" href="https://box4.dev/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
         Experimentar <i class="fas fa-flask ml-2"></i>
       </a>
     </div>

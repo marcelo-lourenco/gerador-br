@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador-BR | Documentação</title>
-  <meta name="description" content="Documentação Pacote NPM Gerador-BR">
-  <meta name="keywords" content="nodejs, npm, npm gerador de dados, data generator, gerador de dados, dados fictícios, dados brasileiros, brasil">
+  <title>Documentação Oficial do Pacote NPM Gerador-BR | Box4Dev</title>
+  <meta name="description" content="Aprenda a instalar e usar o Gerador-BR, o pacote NPM completo para gerar dados fictícios brasileiros (CPF, CNPJ, CEP) em seus testes com Cypress, Playwright, Jest e mais.">
+  <meta name="keywords" content="documentação, gerador-br, npm, nodejs, testes, api, como usar, guia, tutorial, fake data">
   <meta name="author" content="Marcelo Lourenço">
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
-  <meta property="og:title" content="Gerador-BR | Documentação">
-  <meta property="og:description" content="Documentação Pacote NPM Gerador-BR">
+  <meta property="og:title" content="Documentação Oficial do Pacote NPM Gerador-BR | Box4Dev">
+  <meta property="og:description" content="Aprenda a instalar e usar o Gerador-BR, o pacote NPM completo para gerar dados fictícios brasileiros (CPF, CNPJ, CEP) em seus testes com Cypress, Playwright, Jest e mais.">
   <meta property="og:image" content="https://box4.dev/assets/images/features/social-preview.png">
   <meta property="og:url" content="https://box4.dev/gerador-br/documentacao/">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador-BR | Documentação">
-  <meta name="twitter:description" content="Documentação Pacote NPM Gerador-BR">
+  <meta name="twitter:title" content="Documentação Oficial do Pacote NPM Gerador-BR | Box4Dev">
+  <meta name="twitter:description" content="Aprenda a instalar e usar o Gerador-BR, o pacote NPM completo para gerar dados fictícios brasileiros (CPF, CNPJ, CEP) em seus testes com Cypress, Playwright, Jest e mais.">
   <meta name="twitter:image" content="https://box4.dev/assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
@@ -46,11 +46,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Gerador-BR | Documentação",
+    "name": "Documentação Oficial do Pacote NPM Gerador-BR | Box4Dev",
     "url": "https://box4.dev/gerador-br/documentacao/",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "All",
-    "description": "Documentação Pacote NPM Gerador-BR",
+    "description": "Aprenda a instalar e usar o Gerador-BR, o pacote NPM completo para gerar dados fictícios brasileiros (CPF, CNPJ, CEP) em seus testes com Cypress, Playwright, Jest e mais.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     
     "datePublished": "2025-08-22T00:38:51.956Z",
@@ -76,7 +76,7 @@
     "license": "https://opensource.org/licenses/MIT",
     "codeRepository": "https://github.com/box4dev/gerador-br",
     
-    "keywords": "nodejs, npm, npm gerador de dados, data generator, gerador de dados, dados fictícios, dados brasileiros, brasil",
+    "keywords": "documentação, gerador-br, npm, nodejs, testes, api, como usar, guia, tutorial, fake data",
     "softwareHelp": {
       "@type": "CreativeWork",
       "url": "https://box4.dev/documentacao/"
@@ -1565,6 +1565,81 @@ console.log(paragrafo(3,8));
           </div>
         </section>
       </article>
+
+      
+
+
+
+
+
+
+<section class="container text-start py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="h3 mb-4">Perguntas Frequentes (FAQ)</h2>
+
+      <div class="accordion" id="faqAccordion">
+
+        
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-1">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+              O Gerador-BR funciona tanto em CommonJS quanto em ES Modules?
+            </button>
+          </h3>
+          <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim! O pacote é um &#39;dual package&#39;, o que significa que ele suporta nativamente ambos os sistemas de módulos do Node.js. Você pode usar tanto `import { cpf } from &#39;gerador-br&#39;` (ESM) quanto `const { cpf } = require(&#39;gerador-br&#39;)` (CJS) sem nenhuma configuração adicional.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              As funções são puras e não têm dependências externas?
+            </button>
+          </h3>
+          <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Correto. Todas as funções geradoras são puras, síncronas e não possuem dependências de produção (`dependencies`). Elas dependem apenas de `devDependencies` para testes, garantindo que o pacote seja leve e seguro para adicionar ao seu projeto.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              Os dados gerados são sempre os mesmos ou aleatórios?
+            </button>
+          </h3>
+          <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              São aleatórios. A cada chamada de uma função como `cpf()`, um novo número matematicamente válido será gerado. Isso garante uma variedade de dados para seus testes, cobrindo diferentes cenários.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              Como posso solicitar uma nova funcionalidade ou reportar um bug?
+            </button>
+          </h3>
+          <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              A melhor forma é através do nosso repositório no GitHub. Por favor, abra uma &#39;Issue&#39; detalhando sua sugestão ou o problema encontrado. Contribuições através de Pull Requests também são muito bem-vindas!
+            </div>
+          </div>
+        </div>
+        
+
+      </div><!--//accordion-->
+    </div>
+  </div>
+</section>
+
 
       <footer class="footer">
 

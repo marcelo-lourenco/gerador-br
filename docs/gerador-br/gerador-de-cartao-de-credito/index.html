@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Cartão de Crédito Online para Testes | Gerador-BR</title>
-  <meta name="description" content="Gere números de cartões de crédito válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
-  <meta name="keywords" content="gerador de cartão de crédito, gerar cartão de crédito, criar cartão de crédito, cartão de crédito online, cartão de crédito válido, cartão de crédito para teste, dados fictícios, gerador de dados">
+  <title>Gerador de Cartão de Crédito Válido para Testes | Box4Dev</title>
+  <meta name="description" content="Gere números de cartão de crédito válidos (Visa, Mastercard, Amex e mais) com nosso Gerador de Cartão de Crédito. Ferramenta essencial para testar gateways de pagamento e formulários.">
+  <meta name="keywords" content="gerador de cartão de crédito, gerar cartão válido, cartão de crédito para teste, cartão fake, visa, mastercard, amex, dados fictícios">
   <meta name="author" content="Marcelo Lourenço">
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
-  <meta property="og:title" content="Gerador de Cartão de Crédito Online para Testes | Gerador-BR">
-  <meta property="og:description" content="Gere números de cartões de crédito válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta property="og:title" content="Gerador de Cartão de Crédito Válido para Testes | Box4Dev">
+  <meta property="og:description" content="Gere números de cartão de crédito válidos (Visa, Mastercard, Amex e mais) com nosso Gerador de Cartão de Crédito. Ferramenta essencial para testar gateways de pagamento e formulários.">
   <meta property="og:image" content="https://box4.dev/assets/images/features/social-preview.png">
   <meta property="og:url" content="https://box4.dev/gerador-br/gerador-de-cartao-de-credito/">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador de Cartão de Crédito Online para Testes | Gerador-BR">
-  <meta name="twitter:description" content="Gere números de cartões de crédito válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta name="twitter:title" content="Gerador de Cartão de Crédito Válido para Testes | Box4Dev">
+  <meta name="twitter:description" content="Gere números de cartão de crédito válidos (Visa, Mastercard, Amex e mais) com nosso Gerador de Cartão de Crédito. Ferramenta essencial para testar gateways de pagamento e formulários.">
   <meta name="twitter:image" content="https://box4.dev/assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
@@ -46,11 +46,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Gerador de Cartão de Crédito Online para Testes | Gerador-BR",
+    "name": "Gerador de Cartão de Crédito Válido para Testes | Box4Dev",
     "url": "https://box4.dev/gerador-br/gerador-de-cartao-de-credito/",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "All",
-    "description": "Gere números de cartões de crédito válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.",
+    "description": "Gere números de cartão de crédito válidos (Visa, Mastercard, Amex e mais) com nosso Gerador de Cartão de Crédito. Ferramenta essencial para testar gateways de pagamento e formulários.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     
     "datePublished": "2025-08-22T00:38:51.967Z",
@@ -76,7 +76,7 @@
     "license": "https://opensource.org/licenses/MIT",
     "codeRepository": "https://github.com/box4dev/gerador-br",
     
-    "keywords": "gerador de cartão de crédito, gerar cartão de crédito, criar cartão de crédito, cartão de crédito online, cartão de crédito válido, cartão de crédito para teste, dados fictícios, gerador de dados",
+    "keywords": "gerador de cartão de crédito, gerar cartão válido, cartão de crédito para teste, cartão fake, visa, mastercard, amex, dados fictícios",
     "softwareHelp": {
       "@type": "CreativeWork",
       "url": "https://box4.dev/documentacao/"
@@ -404,82 +404,62 @@
 
         <h1 id="gerador-cartao-credito-heading" class="mb-3">Gerador de Cartão de Crédito</h1>
 
-        <!-- Formulário de Gerador de Cartão de Crédito -->
         <form id="cartao-generator-form" class="mx-auto mnw-500 mxw-600" action="#!" novalidate>
           <div class="p-3 bg-body">
-          
+            
             <div class="form-floating mb-3 position-relative">
-            
-              <!-- Número do Cartão -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldNumeroCartao" name="fldNumeroCartao"
-                  placeholder="Número do Cartão" readonly aria-label="Número do Cartão gerado">
-                <label for="fldNumeroCartao">Número do Cartão</label>
-                <div id="divCopyNumeroCartao" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoNumeroCartao" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldNumeroCartao', 'msgCopiadoNumeroCartao')"
-                      aria-label="Botão Copiar Número do Cartão"></i>
-                  </div>
+              <input type="text" class="form-control" disabled id="fldNumeroCartao" name="fldNumeroCartao" placeholder="Número do Cartão" readonly aria-label="Número do Cartão gerado">
+              <label for="fldNumeroCartao">Número do Cartão</label>
+              <div id="divCopyNumeroCartao" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoNumeroCartao" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldNumeroCartao', 'msgCopiadoNumeroCartao')" aria-label="Botão Copiar Número do Cartão"></i>
                 </div>
               </div>
+            </div>
             
-              <!-- Bandeira -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldBandeira" name="fldBandeira"
-                  placeholder="Bandeira" readonly aria-label="Bandeira gerada">
-                <label for="fldBandeira">Bandeira</label>
-                <div id="divCopyBandeira" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoBandeira" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldBandeira', 'msgCopiadoBandeira')"
-                      aria-label="Botão Copiar Bandeira"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldBandeira" name="fldBandeira" placeholder="Bandeira" readonly aria-label="Bandeira gerada">
+              <label for="fldBandeira">Bandeira</label>
+              <div id="divCopyBandeira" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoBandeira" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldBandeira', 'msgCopiadoBandeira')" aria-label="Botão Copiar Bandeira"></i>
                 </div>
               </div>
+            </div>
             
-              <!-- CVV -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldCVV" name="fldCVV"
-                  placeholder="CVV" readonly aria-label="CVV gerado">
-                <label for="fldCVV">CVV</label>
-                <div id="divCopyCVV" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoCVV" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldCVV', 'msgCopiadoCVV')"
-                      aria-label="Botão Copiar CVV"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldCVV" name="fldCVV" placeholder="CVV" readonly aria-label="CVV gerado">
+              <label for="fldCVV">CVV</label>
+              <div id="divCopyCVV" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoCVV" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldCVV', 'msgCopiadoCVV')" aria-label="Botão Copiar CVV"></i>
                 </div>
               </div>
+            </div>
             
-              <!-- Data de Expiração -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldDataExpiracao" name="fldDataExpiracao"
-                  placeholder="Data de Expiração" readonly aria-label="Data de Expiração gerada">
-                <label for="fldDataExpiracao">Data de Expiração</label>
-                <div id="divCopyDataExpiracao" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoDataExpiracao" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldDataExpiracao', 'msgCopiadoDataExpiracao')"
-                      aria-label="Botão Copiar Data de Expiração"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldDataExpiracao" name="fldDataExpiracao" placeholder="Data de Expiração" readonly aria-label="Data de Expiração gerada">
+              <label for="fldDataExpiracao">Data de Expiração</label>
+              <div id="divCopyDataExpiracao" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoDataExpiracao" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldDataExpiracao', 'msgCopiadoDataExpiracao')" aria-label="Botão Copiar Data de Expiração"></i>
                 </div>
               </div>
+            </div>
             
-              <!-- Nome do Titular -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldNomeTitular" name="fldNomeTitular"
-                  placeholder="Nome do Titular" readonly aria-label="Nome do Titular gerado">
-                <label for="fldNomeTitular">Nome do Titular</label>
-                <div id="divCopyNomeTitular" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoNomeTitular" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldNomeTitular', 'msgCopiadoNomeTitular')"
-                      aria-label="Botão Copiar Nome do Titular"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldNomeTitular" name="fldNomeTitular" placeholder="Nome do Titular" readonly aria-label="Nome do Titular gerado">
+              <label for="fldNomeTitular">Nome do Titular</label>
+              <div id="divCopyNomeTitular" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoNomeTitular" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldNomeTitular', 'msgCopiadoNomeTitular')" aria-label="Botão Copiar Nome do Titular"></i>
                 </div>
               </div>
-
             </div>
 
             <div class="form-check form-switch mb-3 d-flex justify-content-center">
@@ -488,8 +468,7 @@
             </div>
 
             <div class="text-center">
-              <button type="button" id="btnGerarCartao" class="btn btn-primary" onclick="gerarCartao()"
-                aria-label="Botão Gerar">
+              <button type="button" id="btnGerarCartao" class="btn btn-primary" onclick="gerarCartao()" aria-label="Botão Gerar">
                 <i class="fas fa-bolt me-1" aria-hidden="true"></i>
                 Gerar
               </button>
@@ -497,8 +476,92 @@
 
           </div>
         </form>
-
       </article>
+
+      <section class="container text-start pt-5 pb-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h3 mb-4">Sobre o Gerador de Cartão de Crédito</h2>
+            <p>Nosso Gerador de Cartão de Crédito é uma ferramenta essencial para o ecossistema de desenvolvimento e testes. Ele cria conjuntos completos de dados de cartões de crédito (número, CVV, data de validade e nome do titular) que são matematicamente válidos de acordo com o <strong>Algoritmo de Luhn</strong>, mas totalmente fictícios.</p>
+            <p>Isto permite que desenvolvedores e equipes de QA testem com segurança e eficácia os fluxos de pagamento, validações de formulários e a integração com gateways de pagamento em ambientes de sandbox, sem nunca expor ou utilizar dados financeiros reais.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+
+
+
+<section class="container text-start py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="h3 mb-4">Perguntas Frequentes (FAQ)</h2>
+
+      <div class="accordion" id="faqAccordion">
+
+        
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-1">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+              Os dados do cartão de crédito gerado são reais?
+            </button>
+          </h3>
+          <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Não. Absolutamente nenhum dado é real. O número do cartão é matematicamente válido (passa no Algoritmo de Luhn), mas o CVV, a data de validade e o nome do titular são completamente fictícios e aleatórios. O cartão não possui valor monetário e não está associado a nenhuma instituição financeira.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Para que serve um gerador de cartão de crédito?
+            </button>
+          </h3>
+          <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Serve principalmente para desenvolvedores e testadores de software. É usado para testar formulários de checkout, validar a lógica de gateways de pagamento em ambientes de teste (sandbox) e garantir que o sistema consiga processar diferentes bandeiras (Visa, Mastercard, etc.) corretamente.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              Posso usar este cartão para fazer compras online?
+            </button>
+          </h3>
+          <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Não. Tentar usar este cartão para uma transação real resultará em falha, pois ele não está conectado a nenhuma conta bancária e não será aprovado por nenhuma operadora de cartão. Seu uso é estritamente para fins de teste.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              O que é o Algoritmo de Luhn?
+            </button>
+          </h3>
+          <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              É um algoritmo de soma de verificação (checksum) usado para validar uma variedade de números de identificação, incluindo cartões de crédito. Nosso gerador cria números que satisfazem essa fórmula matemática, tornando-os estruturalmente idênticos a um número de cartão de crédito real.
+            </div>
+          </div>
+        </div>
+        
+
+      </div><!--//accordion-->
+    </div>
+  </div>
+</section>
+
 
     </div>
 
@@ -517,7 +580,7 @@
       <a class="btn btn-light mx-2" href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm install gerador-br">
         npm install <i class="fas fa-arrow-alt-circle-right ml-2"></i>
       </a>
-      <a class="btn btn-success mx-2" href="https://marcelo-lourenco.github.io/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
+      <a class="btn btn-success mx-2" href="https://box4.dev/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
         Experimentar <i class="fas fa-flask ml-2"></i>
       </a>
     </div>

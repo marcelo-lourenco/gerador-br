@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Conta Bancária Online para Testes | Gerador-BR</title>
-  <meta name="description" content="Gere números de Conta Bancária válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
-  <meta name="keywords" content="gerador de conta bancária, gerar conta bancária, criar conta bancária, conta bancária online, conta bancária válida, conta bancária para teste, dados fictícios, gerador de dados, conta bancária fictícia">
+  <title>Gerador de Conta Bancária Válida para Testes | Box4Dev</title>
+  <meta name="description" content="Gere dados completos de contas bancárias válidas (banco, agência e conta com dígitos verificadores). Ferramenta essencial para testar sistemas financeiros.">
+  <meta name="keywords" content="gerador de conta bancária, gerar conta bancária, conta corrente para teste, dados bancários fictícios">
   <meta name="author" content="Marcelo Lourenço">
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
-  <meta property="og:title" content="Gerador de Conta Bancária Online para Testes | Gerador-BR">
-  <meta property="og:description" content="Gere números de Conta Bancária válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta property="og:title" content="Gerador de Conta Bancária Válida para Testes | Box4Dev">
+  <meta property="og:description" content="Gere dados completos de contas bancárias válidas (banco, agência e conta com dígitos verificadores). Ferramenta essencial para testar sistemas financeiros.">
   <meta property="og:image" content="https://box4.dev/assets/images/features/social-preview.png">
   <meta property="og:url" content="https://box4.dev/gerador-br/gerador-de-conta-bancaria/">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador de Conta Bancária Online para Testes | Gerador-BR">
-  <meta name="twitter:description" content="Gere números de Conta Bancária válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta name="twitter:title" content="Gerador de Conta Bancária Válida para Testes | Box4Dev">
+  <meta name="twitter:description" content="Gere dados completos de contas bancárias válidas (banco, agência e conta com dígitos verificadores). Ferramenta essencial para testar sistemas financeiros.">
   <meta name="twitter:image" content="https://box4.dev/assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
@@ -46,11 +46,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Gerador de Conta Bancária Online para Testes | Gerador-BR",
+    "name": "Gerador de Conta Bancária Válida para Testes | Box4Dev",
     "url": "https://box4.dev/gerador-br/gerador-de-conta-bancaria/",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "All",
-    "description": "Gere números de Conta Bancária válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.",
+    "description": "Gere dados completos de contas bancárias válidas (banco, agência e conta com dígitos verificadores). Ferramenta essencial para testar sistemas financeiros.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     
     "datePublished": "2025-08-22T00:38:51.979Z",
@@ -76,7 +76,7 @@
     "license": "https://opensource.org/licenses/MIT",
     "codeRepository": "https://github.com/box4dev/gerador-br",
     
-    "keywords": "gerador de conta bancária, gerar conta bancária, criar conta bancária, conta bancária online, conta bancária válida, conta bancária para teste, dados fictícios, gerador de dados, conta bancária fictícia",
+    "keywords": "gerador de conta bancária, gerar conta bancária, conta corrente para teste, dados bancários fictícios",
     "softwareHelp": {
       "@type": "CreativeWork",
       "url": "https://box4.dev/documentacao/"
@@ -404,101 +404,77 @@
 
         <h1 id="gerador-conta-bancaria-heading" class="mb-3">Gerador de Conta Bancária</h1>
 
-        <!-- Formulário de Gerador de Conta Bancária -->
         <form id="conta-generator-form" class="mx-auto mnw-400 mxw-600" action="#!" novalidate>
           <div class="p-3 bg-body">
 
             <div class="form-floating mb-3 position-relative">
-
-              <!-- Código Banco -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldCodigoBanco" name="fldCodigoBanco"
-                  placeholder="Código do Banco" readonly aria-label="Código do Banco gerado">
-                <label for="fldCodigoBanco">Código do Banco</label>
-                <div id="divCopyCodigoBanco" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoCodigoBanco" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldCodigoBanco', 'msgCopiadoCodigoBanco')"
-                      aria-label="Botão Copiar Código do Banco"></i>
-                  </div>
+              <input type="text" class="form-control" disabled id="fldCodigoBanco" name="fldCodigoBanco" placeholder="Código do Banco" readonly aria-label="Código do Banco gerado">
+              <label for="fldCodigoBanco">Código do Banco</label>
+              <div id="divCopyCodigoBanco" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoCodigoBanco" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldCodigoBanco', 'msgCopiadoCodigoBanco')" aria-label="Botão Copiar Código do Banco"></i>
                 </div>
               </div>
+            </div>
             
-              <!-- Nome Banco -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldNomeBanco" name="fldNomeBanco"
-                  placeholder="Nome do Banco" readonly aria-label="Nome do Banco gerado">
-                <label for="fldNomeBanco">Nome do Banco</label>
-                <div id="divCopyNomeBanco" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoNomeBanco" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldNomeBanco', 'msgCopiadoNomeBanco')"
-                      aria-label="Botão Copiar Nome do Banco"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldNomeBanco" name="fldNomeBanco" placeholder="Nome do Banco" readonly aria-label="Nome do Banco gerado">
+              <label for="fldNomeBanco">Nome do Banco</label>
+              <div id="divCopyNomeBanco" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoNomeBanco" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldNomeBanco', 'msgCopiadoNomeBanco')" aria-label="Botão Copiar Nome do Banco"></i>
                 </div>
               </div>
+            </div>
 
-              <!-- Agência -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldAgencia" name="fldAgencia"
-                  placeholder="Agência" readonly aria-label="Agência gerada">
-                <label for="fldAgencia">Agência</label>
-                <div id="divCopyAgencia" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoAgencia" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldAgencia', 'msgCopiadoAgencia')"
-                      aria-label="Botão Copiar Agência"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldAgencia" name="fldAgencia" placeholder="Agência" readonly aria-label="Agência gerada">
+              <label for="fldAgencia">Agência</label>
+              <div id="divCopyAgencia" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoAgencia" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldAgencia', 'msgCopiadoAgencia')" aria-label="Botão Copiar Agência"></i>
                 </div>
               </div>
+            </div>
 
-              <!-- Dígito Verificador da Agência -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldAgenciaDv" name="fldAgenciaDv"
-                  placeholder="Dígito Verificador da Agência" readonly aria-label="Dígito Verificador da Agência gerado">
-                <label for="fldAgenciaDv">Dígito Verificador da Agência</label>
-                <div id="divCopyAgenciaDv" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoAgenciaDv" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldAgenciaDv', 'msgCopiadoAgenciaDv')"
-                      aria-label="Botão Copiar Dígito Verificador da Agência"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldAgenciaDv" name="fldAgenciaDv" placeholder="Dígito Verificador da Agência" readonly aria-label="Dígito Verificador da Agência gerado">
+              <label for="fldAgenciaDv">Dígito Verificador da Agência</label>
+              <div id="divCopyAgenciaDv" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoAgenciaDv" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldAgenciaDv', 'msgCopiadoAgenciaDv')" aria-label="Botão Copiar Dígito Verificador da Agência"></i>
                 </div>
               </div>
+            </div>
 
-              <!-- Conta -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldConta" name="fldConta"
-                  placeholder="Conta" readonly aria-label="Conta gerada">
-                <label for="fldConta">Conta</label>
-                <div id="divCopyConta" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoConta" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldConta', 'msgCopiadoConta')"
-                      aria-label="Botão Copiar Conta"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldConta" name="fldConta" placeholder="Conta" readonly aria-label="Conta gerada">
+              <label for="fldConta">Conta</label>
+              <div id="divCopyConta" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoConta" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldConta', 'msgCopiadoConta')" aria-label="Botão Copiar Conta"></i>
                 </div>
               </div>
+            </div>
 
-              <!-- Dígito Verificador da Conta -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldContaDv" name="fldContaDv"
-                  placeholder="Dígito Verificador da Conta" readonly aria-label="Dígito Verificador da Conta gerado">
-                <label for="fldContaDv">Dígito Verificador da Conta</label>
-                <div id="divCopyContaDv" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoContaDv" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldContaDv', 'msgCopiadoContaDv')"
-                      aria-label="Botão Copiar Dígito Verificador da Conta"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldContaDv" name="fldContaDv" placeholder="Dígito Verificador da Conta" readonly aria-label="Dígito Verificador da Conta gerado">
+              <label for="fldContaDv">Dígito Verificador da Conta</label>
+              <div id="divCopyContaDv" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoContaDv" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldContaDv', 'msgCopiadoContaDv')" aria-label="Botão Copiar Dígito Verificador da Conta"></i>
                 </div>
               </div>
-
             </div>
 
             <div class="text-center">
-              <button type="button" id="btnGerarConta" class="btn btn-primary" onclick="gerarContaBancaria()"
-                aria-label="Botão Gerar">
+              <button type="button" id="btnGerarConta" class="btn btn-primary" onclick="gerarContaBancaria()" aria-label="Botão Gerar">
                 <i class="fas fa-bolt me-1" aria-hidden="true"></i>
                 Gerar
               </button>
@@ -506,8 +482,92 @@
 
           </div>
         </form>
-
       </article>
+
+      <section class="container text-start pt-5 pb-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h3 mb-4">Sobre o Gerador de Conta Bancária</h2>
+            <p>O Gerador de Conta Bancária do Box4Dev cria dados completos e estruturalmente válidos de contas correntes brasileiras. Para um banco real selecionado aleatoriamente, a ferramenta gera números de agência e conta, e calcula os respectivos dígitos verificadores (DV) de acordo com os algoritmos específicos daquela instituição.</p>
+            <p>Este recurso é crucial para o desenvolvimento e teste de aplicações financeiras, permitindo que as equipes de software validem formulários, testem a lógica de transações em ambientes seguros (sandbox) e garantam a robustez do sistema contra os mais variados formatos de contas bancárias do país, sem nunca utilizar dados reais.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+
+
+
+<section class="container text-start py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="h3 mb-4">Perguntas Frequentes (FAQ)</h2>
+
+      <div class="accordion" id="faqAccordion">
+
+        
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-1">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+              Os dados da conta bancária gerada são de uma pessoa real?
+            </button>
+          </h3>
+          <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Não, de forma alguma. Os dados são completamente fictícios. A ferramenta seleciona um banco real, gera números de agência e conta aleatórios, e em seguida calcula os dígitos verificadores (DV) corretos com base nos algoritmos específicos daquela instituição financeira. O resultado é uma conta estruturalmente válida, mas inexistente.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Para que serve gerar uma conta bancária fictícia?
+            </button>
+          </h3>
+          <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              É uma prática fundamental no desenvolvimento de software financeiro. Desenvolvedores e testadores usam esses dados para validar formulários de cadastro, testar a lógica de transferências em ambientes de teste, verificar a correta aplicação de máscaras e garantir que o sistema lida adequadamente com os diferentes formatos de contas dos bancos brasileiros.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              Posso tentar usar essa conta para alguma transação?
+            </button>
+          </h3>
+          <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Não. Qualquer tentativa de usar esta conta para receber ou enviar dinheiro falhará, pois ela não existe no sistema do banco correspondente e não está associada a nenhum titular. Seu uso é estritamente para simulações em software.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              Por que os dígitos verificadores (DV) são importantes?
+            </button>
+          </h3>
+          <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              O dígito verificador é um mecanismo de autenticidade para evitar erros de digitação. Cada banco possui seu próprio algoritmo (geralmente uma variação do módulo 10 ou módulo 11) para calcular o DV da agência e da conta. Nosso gerador replica esses algoritmos para garantir que os dados sejam realistas para os testes.
+            </div>
+          </div>
+        </div>
+        
+
+      </div><!--//accordion-->
+    </div>
+  </div>
+</section>
+
 
     </div>
 
@@ -526,7 +586,7 @@
       <a class="btn btn-light mx-2" href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm install gerador-br">
         npm install <i class="fas fa-arrow-alt-circle-right ml-2"></i>
       </a>
-      <a class="btn btn-success mx-2" href="https://marcelo-lourenco.github.io/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
+      <a class="btn btn-success mx-2" href="https://box4.dev/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
         Experimentar <i class="fas fa-flask ml-2"></i>
       </a>
     </div>

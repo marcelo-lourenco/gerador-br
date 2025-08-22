@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Certidão Online para Testes | Gerador-BR</title>
-  <meta name="description" content="Gere números de Certidão de nascimento, casamento  e óbito válidas. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
-  <meta name="keywords" content="gerador de certidão, gerar certidão, nascimento, casamento, óbito, certidão online, certidão válida, certidão para teste, dados fictícios, gerador de dados, certidão fictícia">
+  <title>Gerador de Certidão (Nascimento, Casamento, Óbito) | Box4Dev</title>
+  <meta name="description" content="Gere números de certidão de nascimento, casamento e óbito com nosso gerador. Os números seguem o padrão nacional de 32 dígitos e são ideais para testes.">
+  <meta name="keywords" content="gerador de certidão, gerar certidão, certidão de nascimento, certidão de casamento, certidão de óbito, dados fictícios">
   <meta name="author" content="Marcelo Lourenço">
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
-  <meta property="og:title" content="Gerador de Certidão Online para Testes | Gerador-BR">
-  <meta property="og:description" content="Gere números de Certidão de nascimento, casamento  e óbito válidas. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta property="og:title" content="Gerador de Certidão (Nascimento, Casamento, Óbito) | Box4Dev">
+  <meta property="og:description" content="Gere números de certidão de nascimento, casamento e óbito com nosso gerador. Os números seguem o padrão nacional de 32 dígitos e são ideais para testes.">
   <meta property="og:image" content="https://box4.dev/assets/images/features/social-preview.png">
   <meta property="og:url" content="https://box4.dev/gerador-br/gerador-de-certidao/">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador de Certidão Online para Testes | Gerador-BR">
-  <meta name="twitter:description" content="Gere números de Certidão de nascimento, casamento  e óbito válidas. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta name="twitter:title" content="Gerador de Certidão (Nascimento, Casamento, Óbito) | Box4Dev">
+  <meta name="twitter:description" content="Gere números de certidão de nascimento, casamento e óbito com nosso gerador. Os números seguem o padrão nacional de 32 dígitos e são ideais para testes.">
   <meta name="twitter:image" content="https://box4.dev/assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
@@ -46,11 +46,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Gerador de Certidão Online para Testes | Gerador-BR",
+    "name": "Gerador de Certidão (Nascimento, Casamento, Óbito) | Box4Dev",
     "url": "https://box4.dev/gerador-br/gerador-de-certidao/",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "All",
-    "description": "Gere números de Certidão de nascimento, casamento  e óbito válidas. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.",
+    "description": "Gere números de certidão de nascimento, casamento e óbito com nosso gerador. Os números seguem o padrão nacional de 32 dígitos e são ideais para testes.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     
     "datePublished": "2025-08-22T00:38:51.973Z",
@@ -76,7 +76,7 @@
     "license": "https://opensource.org/licenses/MIT",
     "codeRepository": "https://github.com/box4dev/gerador-br",
     
-    "keywords": "gerador de certidão, gerar certidão, nascimento, casamento, óbito, certidão online, certidão válida, certidão para teste, dados fictícios, gerador de dados, certidão fictícia",
+    "keywords": "gerador de certidão, gerar certidão, certidão de nascimento, certidão de casamento, certidão de óbito, dados fictícios",
     "softwareHelp": {
       "@type": "CreativeWork",
       "url": "https://box4.dev/documentacao/"
@@ -407,44 +407,35 @@
         <form id="certidao-generator-form" class="mx-auto mnw-500 mxw-600" action="#!" novalidate>
           <div class="p-3 bg-body">
 
-            <!-- Certidão de Nascimento -->
             <div class="form-floating mb-3 position-relative">
-              <input type="text" class="form-control" disabled id="fldCertidaoNascimento" name="fldCertidaoNascimento"
-                placeholder="Certidão de Nascimento" readonly aria-label="Certidão de Nascimento gerada">
+              <input type="text" class="form-control" disabled id="fldCertidaoNascimento" name="fldCertidaoNascimento" placeholder="Certidão de Nascimento" readonly aria-label="Certidão de Nascimento gerada">
               <label for="fldCertidaoNascimento">Certidão de Nascimento</label>
               <div id="divCopyNascimento" class="d-none position-absolute div-copy">
                 <div class="d-flex align-items-center">
                   <span id="msgCopiadoNascimento" class="copy-notification" style="display: none;">Copiado!</span>
-                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldCertidaoNascimento', 'msgCopiadoNascimento')"
-                    aria-label="Botão Copiar"></i>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldCertidaoNascimento', 'msgCopiadoNascimento')" aria-label="Botão Copiar Certidão de Nascimento"></i>
                 </div>
               </div>
             </div>
 
-            <!-- Certidão de Casamento -->
             <div class="form-floating mb-3 position-relative">
-              <input type="text" class="form-control" disabled id="fldCertidaoCasamento" name="fldCertidaoCasamento"
-                placeholder="Certidão de Casamento" readonly aria-label="Certidão de Casamento gerada">
+              <input type="text" class="form-control" disabled id="fldCertidaoCasamento" name="fldCertidaoCasamento" placeholder="Certidão de Casamento" readonly aria-label="Certidão de Casamento gerada">
               <label for="fldCertidaoCasamento">Certidão de Casamento</label>
               <div id="divCopyCasamento" class="d-none position-absolute div-copy">
                 <div class="d-flex align-items-center">
                   <span id="msgCopiadoCasamento" class="copy-notification" style="display: none;">Copiado!</span>
-                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldCertidaoCasamento', 'msgCopiadoCasamento')"
-                    aria-label="Botão Copiar"></i>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldCertidaoCasamento', 'msgCopiadoCasamento')" aria-label="Botão Copiar Certidão de Casamento"></i>
                 </div>
               </div>
             </div>
 
-            <!-- Certidão de Óbito -->
             <div class="form-floating mb-3 position-relative">
-              <input type="text" class="form-control" disabled id="fldCertidaoObito" name="fldCertidaoObito"
-                placeholder="Certidão de Óbito" readonly aria-label="Certidão de Óbito gerada">
+              <input type="text" class="form-control" disabled id="fldCertidaoObito" name="fldCertidaoObito" placeholder="Certidão de Óbito" readonly aria-label="Certidão de Óbito gerada">
               <label for="fldCertidaoObito">Certidão de Óbito</label>
               <div id="divCopyObito" class="d-none position-absolute div-copy">
                 <div class="d-flex align-items-center">
                   <span id="msgCopiadoObito" class="copy-notification" style="display: none;">Copiado!</span>
-                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldCertidaoObito', 'msgCopiadoObito')"
-                    aria-label="Botão Copiar"></i>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldCertidaoObito', 'msgCopiadoObito')" aria-label="Botão Copiar Certidão de Óbito"></i>
                 </div>
               </div>
             </div>
@@ -465,6 +456,91 @@
         </form>
       </article>
 
+      <section class="container text-start pt-5 pb-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h3 mb-4">Sobre o Gerador de Certidão</h2>
+            <p>O Gerador de Certidão do Box4Dev cria números de matrícula únicos para certidões de nascimento, casamento e óbito. Cada número gerado segue o formato padrão de 32 dígitos estabelecido pelo Conselho Nacional de Justiça (CNJ), garantindo sua validade estrutural para uso em sistemas de software.</p>
+            <p>Essa ferramenta é projetada para desenvolvedores e testadores que necessitam de dados fictícios, mas realistas, para validar formulários de cadastro, testar a lógica de sistemas que processam documentos civis e garantir a correta manipulação de dados em ambientes de desenvolvimento, sem o uso de informações pessoais reais.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+
+
+
+<section class="container text-start py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="h3 mb-4">Perguntas Frequentes (FAQ)</h2>
+
+      <div class="accordion" id="faqAccordion">
+
+        
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-1">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+              Os números de certidão gerados são válidos?
+            </button>
+          </h3>
+          <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Os números são estruturalmente válidos, o que significa que seguem o padrão numérico nacional de 32 dígitos utilizado pelos cartórios brasileiros. No entanto, eles são fictícios e não correspondem a nenhum registro real de nascimento, casamento ou óbito.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Qual a finalidade de gerar um número de certidão?
+            </button>
+          </h3>
+          <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              A ferramenta é destinada a desenvolvedores e testadores de software que precisam popular campos de formulário que exigem um número de certidão. Ela permite validar a máscara do campo, o armazenamento do dado e outras lógicas de sistema sem utilizar informações de documentos reais.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              O que significam os números em uma certidão?
+            </button>
+          </h3>
+          <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              O número único de matrícula de 32 dígitos contém informações codificadas, como o código do cartório (CNS), o ano do registro, o tipo de livro, o número da folha, o termo e um dígito verificador. Nosso gerador cria números que simulam essa estrutura.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              Posso usar esses números para fins oficiais?
+            </button>
+          </h3>
+          <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Não. Assim como outras ferramentas de geração de dados, o uso é restrito a ambientes de teste e desenvolvimento. Utilizar um número de certidão fictício para tentar obter vantagens ou acesso a serviços é ilegal.
+            </div>
+          </div>
+        </div>
+        
+
+      </div><!--//accordion-->
+    </div>
+  </div>
+</section>
+
+
     </div>
 
     <section class="cta-section text-center py-5 theme-bg-dark position-relative">
@@ -482,7 +558,7 @@
       <a class="btn btn-light mx-2" href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm install gerador-br">
         npm install <i class="fas fa-arrow-alt-circle-right ml-2"></i>
       </a>
-      <a class="btn btn-success mx-2" href="https://marcelo-lourenco.github.io/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
+      <a class="btn btn-success mx-2" href="https://box4.dev/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
         Experimentar <i class="fas fa-flask ml-2"></i>
       </a>
     </div>

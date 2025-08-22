@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Banco Online para Testes | Gerador-BR</title>
-  <meta name="description" content="Gere informações de bancos fictícios online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
-  <meta name="keywords" content="gerador de banco, gerar banco, criar banco, banco online, banco fictício, dados fictícios, gerador de dados">
+  <title>Gerador de Bancos Brasileiros Válidos | Box4Dev</title>
+  <meta name="description" content="Gere dados de bancos brasileiros válidos, incluindo nome, código, razão social e ISPB. Ideal para testes de sistemas financeiros e preenchimento de formulários.">
+  <meta name="keywords" content="gerador de banco, gerar dados bancários, bancos brasileiros, código do banco, ISPB, dados fictícios">
   <meta name="author" content="Marcelo Lourenço">
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
-  <meta property="og:title" content="Gerador de Banco Online para Testes | Gerador-BR">
-  <meta property="og:description" content="Gere informações de bancos fictícios online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta property="og:title" content="Gerador de Bancos Brasileiros Válidos | Box4Dev">
+  <meta property="og:description" content="Gere dados de bancos brasileiros válidos, incluindo nome, código, razão social e ISPB. Ideal para testes de sistemas financeiros e preenchimento de formulários.">
   <meta property="og:image" content="https://box4.dev/assets/images/features/social-preview.png">
   <meta property="og:url" content="https://box4.dev/gerador-br/gerador-de-banco/">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador de Banco Online para Testes | Gerador-BR">
-  <meta name="twitter:description" content="Gere informações de bancos fictícios online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta name="twitter:title" content="Gerador de Bancos Brasileiros Válidos | Box4Dev">
+  <meta name="twitter:description" content="Gere dados de bancos brasileiros válidos, incluindo nome, código, razão social e ISPB. Ideal para testes de sistemas financeiros e preenchimento de formulários.">
   <meta name="twitter:image" content="https://box4.dev/assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
@@ -46,11 +46,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Gerador de Banco Online para Testes | Gerador-BR",
+    "name": "Gerador de Bancos Brasileiros Válidos | Box4Dev",
     "url": "https://box4.dev/gerador-br/gerador-de-banco/",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "All",
-    "description": "Gere informações de bancos fictícios online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.",
+    "description": "Gere dados de bancos brasileiros válidos, incluindo nome, código, razão social e ISPB. Ideal para testes de sistemas financeiros e preenchimento de formulários.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     
     "datePublished": "2025-08-22T00:38:51.965Z",
@@ -76,7 +76,7 @@
     "license": "https://opensource.org/licenses/MIT",
     "codeRepository": "https://github.com/box4dev/gerador-br",
     
-    "keywords": "gerador de banco, gerar banco, criar banco, banco online, banco fictício, dados fictícios, gerador de dados",
+    "keywords": "gerador de banco, gerar dados bancários, bancos brasileiros, código do banco, ISPB, dados fictícios",
     "softwareHelp": {
       "@type": "CreativeWork",
       "url": "https://box4.dev/documentacao/"
@@ -408,68 +408,51 @@
           <div class="p-3 bg-body">
 
             <div class="form-floating mb-3 position-relative">
-
-              <!-- Código Banco -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldCodigoBanco" name="fldCodigoBanco"
-                  placeholder="Código do Banco" readonly aria-label="Código do Banco gerado">
-                <label for="fldCodigoBanco">Código do Banco</label>
-                <div id="divCopyCodigoBanco" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoCodigoBanco" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldCodigoBanco', 'msgCopiadoCodigoBanco')"
-                      aria-label="Botão Copiar Código do Banco"></i>
-                  </div>
+              <input type="text" class="form-control" disabled id="fldCodigoBanco" name="fldCodigoBanco" placeholder="Código do Banco" readonly aria-label="Código do Banco gerado">
+              <label for="fldCodigoBanco">Código do Banco</label>
+              <div id="divCopyCodigoBanco" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoCodigoBanco" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldCodigoBanco', 'msgCopiadoCodigoBanco')" aria-label="Botão Copiar Código do Banco"></i>
                 </div>
               </div>
+            </div>
 
-              <!-- Nome Banco -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldNomeBanco" name="fldNomeBanco"
-                  placeholder="Nome do Banco" readonly aria-label="Nome do Banco gerado">
-                <label for="fldNomeBanco">Nome do Banco</label>
-                <div id="divCopyNomeBanco" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoNomeBanco" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldNomeBanco', 'msgCopiadoNomeBanco')"
-                      aria-label="Botão Copiar Nome do Banco"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldNomeBanco" name="fldNomeBanco" placeholder="Nome do Banco" readonly aria-label="Nome do Banco gerado">
+              <label for="fldNomeBanco">Nome do Banco</label>
+              <div id="divCopyNomeBanco" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoNomeBanco" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldNomeBanco', 'msgCopiadoNomeBanco')" aria-label="Botão Copiar Nome do Banco"></i>
                 </div>
               </div>
+            </div>
 
-              <!-- Razão Social-->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldRazaoSocial" name="fldRazaoSocial"
-                  placeholder="Razão Social" readonly aria-label="Razão Social gerada">
-                <label for="fldRazaoSocial">Razão Social</label>
-                <div id="divCopyRazaoSocial" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoRazaoSocial" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldRazaoSocial', 'msgCopiadoRazaoSocial')"
-                      aria-label="Botão Copiar Razão Social"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldRazaoSocial" name="fldRazaoSocial" placeholder="Razão Social" readonly aria-label="Razão Social gerada">
+              <label for="fldRazaoSocial">Razão Social</label>
+              <div id="divCopyRazaoSocial" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoRazaoSocial" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldRazaoSocial', 'msgCopiadoRazaoSocial')" aria-label="Botão Copiar Razão Social"></i>
                 </div>
               </div>
+            </div>
 
-              <!-- ISPB -->
-              <div class="form-floating mb-3 position-relative">
-                <input type="text" class="form-control" disabled id="fldISPB" name="fldISPB" placeholder="ISPB" readonly
-                  aria-label="ISPB gerado">
-                <label for="fldISPB">ISPB</label>
-                <div id="divCopyISPB" class="d-none position-absolute div-copy">
-                  <div class="d-flex align-items-center">
-                    <span id="msgCopiadoISPB" class="copy-notification" style="display: none;">Copiado!</span>
-                    <i class="fas fa-copy icon icon-copy" onclick="copy('fldISPB', 'msgCopiadoISPB')"
-                      aria-label="Botão Copiar ISPB"></i>
-                  </div>
+            <div class="form-floating mb-3 position-relative">
+              <input type="text" class="form-control" disabled id="fldISPB" name="fldISPB" placeholder="ISPB" readonly aria-label="ISPB gerado">
+              <label for="fldISPB">ISPB</label>
+              <div id="divCopyISPB" class="d-none position-absolute div-copy">
+                <div class="d-flex align-items-center">
+                  <span id="msgCopiadoISPB" class="copy-notification" style="display: none;">Copiado!</span>
+                  <i class="fas fa-copy icon icon-copy" onclick="copy('fldISPB', 'msgCopiadoISPB')" aria-label="Botão Copiar ISPB"></i>
                 </div>
               </div>
-
             </div>
 
             <div class="text-center">
-              <button type="button" id="btnGerarBanco" class="btn btn-primary" onclick="gerarBanco()"
-                aria-label="Botão Gerar">
+              <button type="button" id="btnGerarBanco" class="btn btn-primary" onclick="gerarBanco()" aria-label="Botão Gerar">
                 <i class="fas fa-bolt me-1" aria-hidden="true"></i>
                 Gerar
               </button>
@@ -478,6 +461,91 @@
           </div>
         </form>
       </article>
+
+      <section class="container text-start pt-5 pb-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h3 mb-4">Sobre o Gerador de Bancos</h2>
+            <p>O Gerador de Bancos do Box4Dev seleciona aleatoriamente uma instituição financeira da lista oficial do sistema de compensação brasileiro e exibe suas informações públicas. A ferramenta fornece dados como o nome do banco, o código de compensação (COMPE), a razão social e o ISPB (Identificador de Sistema de Pagamentos Brasileiro).</p>
+            <p>É uma utilidade prática para desenvolvedores que precisam popular formulários de cadastro de contas bancárias, testar integrações com sistemas financeiros ou simplesmente consultar rapidamente os dados de um banco válido.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+
+
+
+<section class="container text-start py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="h3 mb-4">Perguntas Frequentes (FAQ)</h2>
+
+      <div class="accordion" id="faqAccordion">
+
+        
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-1">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+              Os dados de bancos gerados são reais?
+            </button>
+          </h3>
+          <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim, os dados são reais e correspondem a instituições financeiras oficialmente listadas no sistema bancário brasileiro. A ferramenta seleciona aleatoriamente um banco de uma lista pública e exibe suas informações correspondentes, como código de compensação, nome e ISPB.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              O que é ISPB?
+            </button>
+          </h3>
+          <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              ISPB significa Identificador de Sistema de Pagamentos Brasileiro. É um código único de oito dígitos que identifica cada instituição financeira no sistema de pagamentos do Brasil, gerenciado pelo Banco Central.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              Para que serve esta ferramenta?
+            </button>
+          </h3>
+          <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Este gerador é útil para desenvolvedores e testadores que precisam de dados bancários válidos para popular formulários em ambientes de teste, validar a lógica de sistemas financeiros ou simplesmente obter rapidamente informações sobre um banco específico.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              A lista de bancos está atualizada?
+            </button>
+          </h3>
+          <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim, a nossa base de dados é periodicamente atualizada para refletir a lista de instituições financeiras ativas no Brasil, garantindo que os dados gerados sejam sempre relevantes e precisos para fins de teste.
+            </div>
+          </div>
+        </div>
+        
+
+      </div><!--//accordion-->
+    </div>
+  </div>
+</section>
+
 
     </div>
 
@@ -496,7 +564,7 @@
       <a class="btn btn-light mx-2" href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm install gerador-br">
         npm install <i class="fas fa-arrow-alt-circle-right ml-2"></i>
       </a>
-      <a class="btn btn-success mx-2" href="https://marcelo-lourenco.github.io/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
+      <a class="btn btn-success mx-2" href="https://box4.dev/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
         Experimentar <i class="fas fa-flask ml-2"></i>
       </a>
     </div>

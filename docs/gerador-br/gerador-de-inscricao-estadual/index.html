@@ -5,21 +5,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gerador de Inscrição Estadual Online para Testes | Gerador-BR</title>
-  <meta name="description" content="Gere números de Inscrição Estadual válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
-  <meta name="keywords" content="gerador de inscrição estadual, gerar inscrição estadual, criar inscrição estadual, inscrição estadual online, inscrição estadual válida, inscrição estadual para teste, dados fictícios, gerador de dados, inscrição estadual fictícia">
+  <title>Gerador de Inscrição Estadual (IE) Válida | Box4Dev</title>
+  <meta name="description" content="Gere números de Inscrição Estadual (IE) válidos para todos os estados do Brasil. Ferramenta online para testes de sistemas fiscais e de cadastro.">
+  <meta name="keywords" content="gerador de inscrição estadual, gerar ie, inscrição estadual válida, ie para teste, sefaz, dados fiscais">
   <meta name="author" content="Marcelo Lourenço">
   <meta name="google-site-verification" content="k2nQOYapQVIt3pnkIZrmUGnjD4wqOJ-GGMop_VIwhXk">
 
-  <meta property="og:title" content="Gerador de Inscrição Estadual Online para Testes | Gerador-BR">
-  <meta property="og:description" content="Gere números de Inscrição Estadual válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta property="og:title" content="Gerador de Inscrição Estadual (IE) Válida | Box4Dev">
+  <meta property="og:description" content="Gere números de Inscrição Estadual (IE) válidos para todos os estados do Brasil. Ferramenta online para testes de sistemas fiscais e de cadastro.">
   <meta property="og:image" content="https://box4.dev/assets/images/features/social-preview.png">
   <meta property="og:url" content="https://box4.dev/gerador-br/gerador-de-inscricao-estadual/">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Gerador de Inscrição Estadual Online para Testes | Gerador-BR">
-  <meta name="twitter:description" content="Gere números de Inscrição Estadual válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.">
+  <meta name="twitter:title" content="Gerador de Inscrição Estadual (IE) Válida | Box4Dev">
+  <meta name="twitter:description" content="Gere números de Inscrição Estadual (IE) válidos para todos os estados do Brasil. Ferramenta online para testes de sistemas fiscais e de cadastro.">
   <meta name="twitter:image" content="https://box4.dev/assets/images/features/social-preview.png">
 
   <link rel="icon" type="image/png" href="../assets/images/icons/favicon-96x96.png" sizes="96x96" />
@@ -46,11 +46,11 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Gerador de Inscrição Estadual Online para Testes | Gerador-BR",
+    "name": "Gerador de Inscrição Estadual (IE) Válida | Box4Dev",
     "url": "https://box4.dev/gerador-br/gerador-de-inscricao-estadual/",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "All",
-    "description": "Gere números de Inscrição Estadual válidos online e gratuitamente. Ideal para preenchimento de cadastros em testes e desenvolvimento de sistemas.",
+    "description": "Gere números de Inscrição Estadual (IE) válidos para todos os estados do Brasil. Ferramenta online para testes de sistemas fiscais e de cadastro.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     
     "datePublished": "2025-08-22T00:38:51.984Z",
@@ -76,7 +76,7 @@
     "license": "https://opensource.org/licenses/MIT",
     "codeRepository": "https://github.com/box4dev/gerador-br",
     
-    "keywords": "gerador de inscrição estadual, gerar inscrição estadual, criar inscrição estadual, inscrição estadual online, inscrição estadual válida, inscrição estadual para teste, dados fictícios, gerador de dados, inscrição estadual fictícia",
+    "keywords": "gerador de inscrição estadual, gerar ie, inscrição estadual válida, ie para teste, sefaz, dados fiscais",
     "softwareHelp": {
       "@type": "CreativeWork",
       "url": "https://box4.dev/documentacao/"
@@ -408,17 +408,14 @@
             <div class="p-3 bg-body">
 
               <div class="form-floating mb-3 position-relative">
-
                 <input type="text" class="form-control" disabled id="fldInscricaoEstadual" name="fldInscricaoEstadual" placeholder="Inscrição Estadual" readonly aria-label="Inscrição Estadual gerada">
                 <label for="fldInscricaoEstadual">Inscrição Estadual</label>
-
                 <div id="divCopy" class="d-none position-absolute div-copy">
                   <div class="d-flex align-items-center">
                     <span id="msgCopiadoInscricaoEstadual" class="copy-notification" style="display: none;">Copiado!</span>
                     <i class="fas fa-copy icon icon-copy" onclick="copy('fldInscricaoEstadual', 'msgCopiadoInscricaoEstadual')" aria-label="Botão Copiar"></i>
                   </div>
                 </div>
-
               </div>
 
               <div class="text-center">
@@ -431,6 +428,91 @@
             </div>
           </form>
       </article>
+
+      <section class="container text-start pt-5 pb-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="h3 mb-4">Sobre o Gerador de Inscrição Estadual</h2>
+            <p>O Gerador de Inscrição Estadual (IE) do Box4Dev é uma ferramenta especializada que cria números de IE matematicamente válidos para todas as 27 Unidades da Federação do Brasil. Como cada estado possui um algoritmo de validação distinto, nossa ferramenta implementa as regras específicas de cada um para garantir a geração de dados realistas e funcionais.</p>
+            <p>Este recurso é essencial para desenvolvedores e equipes de QA que trabalham com sistemas fiscais, ERPs e plataformas de e-commerce. Ele permite testar formulários de cadastro de clientes, validar a lógica de emissão de notas fiscais e garantir a conformidade do software com os diferentes formatos de IE do país, tudo em um ambiente de desenvolvimento seguro.</p>
+          </div>
+        </div>
+      </section>
+
+      
+
+
+
+
+
+
+<section class="container text-start py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="h3 mb-4">Perguntas Frequentes (FAQ)</h2>
+
+      <div class="accordion" id="faqAccordion">
+
+        
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-1">
+            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+              O número da Inscrição Estadual gerado é válido?
+            </button>
+          </h3>
+          <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim, o número é matematicamente válido. Cada estado brasileiro possui seu próprio algoritmo de cálculo para o dígito verificador da Inscrição Estadual. Nossa ferramenta implementa as regras específicas de cada UF para garantir que o número gerado seja estruturalmente correto e passe em validações de sistema.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+              Posso usar esta Inscrição Estadual para emitir notas fiscais?
+            </button>
+          </h3>
+          <div id="collapse-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Não. O número é fictício e não está registrado em nenhuma Secretaria da Fazenda (SEFAZ). A ferramenta destina-se exclusivamente a desenvolvedores e testadores de software para validar formulários e a lógica de sistemas fiscais em ambientes de teste, sem o uso de dados reais de empresas.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+              Por que cada estado tem um formato diferente de IE?
+            </button>
+          </h3>
+          <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              A Inscrição Estadual é um registro gerenciado individualmente por cada Unidade da Federação (UF) para o cadastro de contribuintes do ICMS. Por essa razão, cada estado definiu seu próprio formato de numeração e seu algoritmo de validação, resultando em diferentes padrões pelo país.
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+              Como a ferramenta sabe qual algoritmo usar?
+            </button>
+          </h3>
+          <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Nosso gerador seleciona aleatoriamente um estado brasileiro e, em seguida, aplica o algoritmo de cálculo do dígito verificador correspondente àquele estado para criar um número de Inscrição Estadual válido e realista para fins de teste.
+            </div>
+          </div>
+        </div>
+        
+
+      </div><!--//accordion-->
+    </div>
+  </div>
+</section>
+
 
     </div>
 
@@ -449,7 +531,7 @@
       <a class="btn btn-light mx-2" href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener" aria-label="npm install gerador-br">
         npm install <i class="fas fa-arrow-alt-circle-right ml-2"></i>
       </a>
-      <a class="btn btn-success mx-2" href="https://marcelo-lourenco.github.io/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
+      <a class="btn btn-success mx-2" href="https://box4.dev/gerador-br/formulario-para-teste/" aria-label="Templates de projetos para experimentar o gerador-br">
         Experimentar <i class="fas fa-flask ml-2"></i>
       </a>
     </div>
