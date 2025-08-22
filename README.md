@@ -17,15 +17,15 @@ Ideal para testes automatizados com **Cypress**, **Playwright**, **Jest**, **Nod
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* [Gerador de Documento](https://marcelo-lourenco.github.io/gerador-br/documentacao/#documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte e Certidão (Nascimento, Casamento e Óbito)
-* [Gerador de Pessoa](https://marcelo-lourenco.github.io/gerador-br/documentacao/#pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
-* [Gerador de Empresa](https://marcelo-lourenco.github.io/gerador-br/documentacao/#documentos-pj): CNPJ, CNPJ Alfanumérico, Inscrição Estadual e Nome Empresa;
-* [Gerador de Endereço](https://marcelo-lourenco.github.io/gerador-br/documentacao/#endereco): CEP, Logradouro, Número, Bairro, Localidade e Estado;
-* [Gerador de Contato](https://marcelo-lourenco.github.io/gerador-br/documentacao/#contatos): E-mail, DDD, Operadora, Celular e Telefone;
-* [Gerador de Conta Bancária](https://marcelo-lourenco.github.io/gerador-br/documentacao/#contaBancaria): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
-* [Gerador de Cartão de Crédito](https://marcelo-lourenco.github.io/gerador-br/documentacao/#cartaoCredito): Número, Bandeira, CVV e Validade;
-* [Gerador de Veículo](https://marcelo-lourenco.github.io/gerador-br/documentacao/#veiculos): Placa Antiga, Placa Mercosul e RENAVAM;
-* [Gerador de Texto (Lorem Ipsum)](https://marcelo-lourenco.github.io/gerador-br/documentacao/#lorem-ipsum): Palavras, Sentenças e Parágrafos;
+* [Gerador de Documento](https://box4.dev/gerador-br/documentacao/#documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte e Certidão (Nascimento, Casamento e Óbito)
+* [Gerador de Pessoa](https://box4.dev/gerador-br/documentacao/#pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
+* [Gerador de Empresa](https://box4.dev/gerador-br/documentacao/#documentos-pj): CNPJ, CNPJ Alfanumérico, Inscrição Estadual e Nome Empresa;
+* [Gerador de Endereço](https://box4.dev/gerador-br/documentacao/#endereco): CEP, Logradouro, Número, Bairro, Localidade e Estado;
+* [Gerador de Contato](https://box4.dev/gerador-br/documentacao/#contatos): E-mail, DDD, Operadora, Celular e Telefone;
+* [Gerador de Conta Bancária](https://box4.dev/gerador-br/documentacao/#contaBancaria): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
+* [Gerador de Cartão de Crédito](https://box4.dev/gerador-br/documentacao/#cartaoCredito): Número, Bandeira, CVV e Validade;
+* [Gerador de Veículo](https://box4.dev/gerador-br/documentacao/#veiculos): Placa Antiga, Placa Mercosul e RENAVAM;
+* [Gerador de Texto (Lorem Ipsum)](https://box4.dev/gerador-br/documentacao/#lorem-ipsum): Palavras, Sentenças e Parágrafos;
 
 ## Instalação
 
@@ -53,7 +53,7 @@ const { gerar } = require('gerador-br');
 
 ## Utilização
 
-> Veja todos os exemplos na [documentação](https://marcelo-lourenco.github.io/gerador-br/documentacao).
+> Veja todos os exemplos na [documentação](https://box4.dev/gerador-br/documentacao).
 
 **Importe apenas a(s) função(ões) que desejar:**
 
@@ -406,7 +406,7 @@ Contribuições são bem-vindas! Faça um *fork* do  [repositório](https://gith
 
 [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam) - Muito útil para preencher automaticamente os campos de formulários em testes manuais.
 
-[Gerador-BR](https://marcelo-lourenco.github.io/gerador-br/geradores/) - Gerador de dados on-line.
+[Gerador-BR](https://box4.dev/gerador-br/geradores/) - Gerador de dados on-line.
 
 ## License
 

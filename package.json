@@ -33,7 +33,7 @@
     "url": "https://github.com/marcelo-lourenco/gerador-br.git"
   },
   "bugs": "https://github.com/marcelo-lourenco/gerador-br/issues",
-  "homepage": "https://marcelo-lourenco.github.io/gerador-br/",
+  "homepage": "https://box4.dev/gerador-br/",
   "keywords": [
     "gerador",
     "dados",
@@ -89,7 +89,7 @@
     "Puppeteer",
     "Enzyme",
     "Node.js Test Runner",
-    "gerador de dados fictífios",
+    "gerador de dados fictícios",
     "fake data generator",
     "mock",
     "test",
@@ -99,5 +99,5 @@
     "orientação sexual",
     "identidade de gênero"
   ],
-  "author": "Marcelo Lourenço <qabi.dev@gmail.com>"
+  "author": "Marcelo Lourenço <contact@box4.dev>"
 }

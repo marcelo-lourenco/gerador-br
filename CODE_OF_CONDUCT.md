@@ -36,7 +36,7 @@ Este Código de Conduta se aplica a todos os espaços da comunidade, e também s
 
 ## Aplicação
 
-Instâncias de comportamento abusivo, assediador ou inaceitável podem ser reportadas aos líderes da comunidade responsáveis pela aplicação do código de conduta via e-mail: [qabi.dev@gmail.com](mailto:qabi.dev@gmail.com). Todas as reclamações serão revisadas e investigadas e resultarão em uma resposta que é considerada necessária e apropriada às circunstâncias. Os líderes da comunidade são obrigados a manter a confidencialidade em relação ao relator de um incidente. Detalhes específicos sobre as políticas de aplicação podem ser postados separadamente.
+Instâncias de comportamento abusivo, assediador ou inaceitável podem ser reportadas aos líderes da comunidade responsáveis pela aplicação do código de conduta via e-mail: [contact@box4.dev](mailto:contact@box4.dev). Todas as reclamações serão revisadas e investigadas e resultarão em uma resposta que é considerada necessária e apropriada às circunstâncias. Os líderes da comunidade são obrigados a manter a confidencialidade em relação ao relator de um incidente. Detalhes específicos sobre as políticas de aplicação podem ser postados separadamente.
 
 Líderes da comunidade que não seguem ou aplicam o Código de Conduta de boa fé podem enfrentar repercussões temporárias ou permanentes conforme determinado por outros membros da liderança da comunidade.
 
