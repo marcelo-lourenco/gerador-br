@@ -358,7 +358,7 @@ function gerarTodos() {
   gerarCns();
   gerarPassaporte();
   gerarCertidao();
-  gerarCartao();
+  /* gerarCartao(); */
   gerarContaBancaria();
   gerarCep();
   gerarEndereco();
