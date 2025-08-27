@@ -19,6 +19,34 @@ code {
   border-radius: .25rem
 }
 
+
+
+.breadcrumb-item {
+ /*  text-transform: uppercase; */
+  font-weight: 500;          /* Deixa a fonte um pouco mais forte, como no menu */
+  font-size: 0.9rem;         /* Tamanho da fonte levemente menor para um visual refinado */
+}
+
+.breadcrumb-item a {
+  color: #6c757d; /* Um cinza médio, similar ao dos títulos do menu */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  transition: color 0.2s ease-in-out; /* Efeito suave ao passar o mouse */
+}
+
+.breadcrumb-item a:hover {
+  color: #5236CB; /* A cor primária do seu tema (o roxo dos botões) */
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #495057; /* Um cinza mais escuro para dar destaque ao item atual */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">"; /* Substitui a barra padrão '/' por '>' */
+  padding: 0 0.5rem; /* Adiciona um espaçamento em volta do '>' */
+}
+
 .table-bordered th,
 .table-bordered td {
   border-color: #e7e9ed
@@ -371,12 +399,13 @@ a.text-link:hover {
 
 
 .site-logo .logo-text {
-  color: #252930;
+  color: #5236CB;
   font-size: 1.5rem;
   font-weight: bold
 }
 
 .site-logo .text-alt {
+  font-size: 1.5rem;
   font-weight: 300
 }
 
