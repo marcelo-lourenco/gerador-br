@@ -1,19 +1,11 @@
-/*
- ================================================================================
- Ponto de Entrada Principal para todo o CSS do Site
- ================================================================================
- Este arquivo importa todos os outros arquivos CSS.
- O PostCSS irá processar este arquivo, juntar tudo, e o PurgeCSS irá
- otimizá-lo, removendo as classes não utilizadas do Bootstrap.
-*/
-
-/* 1. Importa o Bootstrap usando um caminho relativo */
+/* 1. Frameworks de Base */
 @import "../plugins/bootstrap/css/bootstrap.min.css";
 
-/* 2. Importa o seu tema personalizado */
-@import "theme.css";
-
-/* 3. Importa outros CSS de plugins */
+/* 2. Bibliotecas de Ícones/Componentes */
+@import "../fontawesome/css/all.min.css";
 @import "../plugins/simplelightbox/simple-lightbox.min.css";
 @import "../plugins/prism/prism.css";
-@import "prism-light.css";
+
+/* 3. Seu Tema Personalizado (Sempre por Último) */
+@import "theme.css";
+@import "prism-light.css"; /* Tema do Prism */
