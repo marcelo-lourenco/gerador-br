@@ -54,7 +54,7 @@
     "description": "Leia os Termos de Uso do Box4Dev. Entenda as condições para usar nossas ferramentas de geração de dados (CPF, CNPJ, Cartão) para testes e desenvolvimento.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     "datePublished": "2025-08-24T04:28:10.777Z",
-    "dateModified": "2025-08-29T12:06:31.944Z",
+    "dateModified": "2025-08-29T18:38:44.330Z",
     "author": {
       "@type": "Person",
       "name": "Marcelo Lourenço",
@@ -106,93 +106,95 @@
   <header class="header fixed-top">
   <div class="branding docs-branding">
     <div class="container-fluid position-relative py-2">
+      
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid p-0">
+          <!-- Bloco da Esquerda: Toggler do Sidebar (se aplicável) e Logo -->
+          <div class="d-flex align-items-center site-logo">
+            
+            <a class="navbar-brand" href="/">
+              <img class="logo-icon me-2" src="/assets/images/icons/favicon-36x36.svg" width="36" height="36" alt="Logo Box4Dev">
+              <span class="text-alt">BOX</span><span class="logo-text">4</span><span class="text-alt">DEV</span>
+            </a>
+          </div>
 
-      <div class="docs-logo-wrapper">
+          <!-- Toggler do Menu Principal (Hambúrguer) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        
-
-        <div class="site-logo">
-          <a class="navbar-brand" href="/">
-            <img class="logo-icon me-2" src="/assets/images/icons/favicon-36x36.svg" width="36" height="36" alt="Logo Box4Dev" title="Logo Box4Dev" aria-label="Logo Box4Dev">
-            <span class="text-alt d-none d-sm-inline">BOX</span><span class="logo-text d-none d-sm-inline">4</span><span class="text-alt">DEV</span>
-          </a>
-        </div>
-
-      </div>
-      <!--//docs-logo-wrapper-->
-
-      <div class="docs-top-utilities d-flex justify-content-end align-items-center pe-3">
-
-        <nav class="navbar navbar-expand">
-          <div class="collapse navbar-collapse ms-auto" id="navigation">
-
+          <!-- Conteúdo da Navegação que será Recolhido -->
+          <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav ms-auto align-items-lg-center">
-              <li class="nav-item me-lg-4">
-                <a class="nav-link" href="/sobre/" aria-label="Sobre o Projeto">Sobre</a>
+              <li class="nav-item">
+                <a class="nav-link" href="/sobre/">Sobre</a>
               </li>
-              <li class="nav-item me-lg-4">
-                <a class="nav-link" href="/gerador-br/documentacao/" aria-label="Documentação">Documentação</a>
+              <li class="nav-item">
+                <a class="nav-link" href="/gerador-br/documentacao/">Documentação</a>
               </li>
-              <li class="nav-item dropdown me-lg-4">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Geradores</a>
-                <ul class="dropdown-menu dropdown-menu-end rounded shadow scrollable-menu docs-sidebar gen-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../geradores/">Painel Gerador</a>
-                  </li>
-                  <li class="dropdown-header mt-3">
-                    <span class="theme-icon-holder"><i class="fas fa-id-card"></i></span>DOCUMENTOS PF
-                  </li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-cpf/">Gerador de CPF</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-cnh/">Gerador de CNH</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-rg/">Gerador de RG</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-cartao-nacional-de-saude/">Gerador de CNS</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-pis/">Gerador de PIS</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-titulo-de-eleitor/">Gerador de Título de Eleitor</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-passaporte/">Gerador de Passaporte</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-certidao/">Gerador de Certidão</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="geradoresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Geradores
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end rounded shadow dropdown-menu-scrollable docs-sidebar gen-nav" aria-labelledby="geradoresDropdown">
+                  <li><a class="dropdown-item" href="/gerador-br/geradores/">Painel Gerador</a></li>
                   
-                  <li class="dropdown-header mt-3">
-                    <span class="theme-icon-holder"><i class="fas fa-building"></i></span>DOCUMENTOS PJ
-                  </li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-cnpj/">Gerador de CNPJ</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-cnpj-alfanumerico/">Gerador de CNPJ Alfanumérico</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-inscricao-estadual/">Gerador de Inscrição Estadual</a></li>
-                  
-                  <li class="dropdown-header mt-3">
-                    <span class="theme-icon-holder"><i class="fas fa-university"></i></span>BANCOS
-                  </li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-banco/">Gerador de Banco</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-conta-bancaria/">Gerador de Conta Bancária</a></li>
+                  <li><hr class="dropdown-divider"></li>
 
-                  <li class="dropdown-header mt-3">
-                    <span class="theme-icon-holder"><i class="fas fa-phone"></i></span>CONTATOS
-                  </li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-cep/">Gerador de CEP</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-endereco/">Gerador de Endereço</a></li>
+                  <li><h6 class="dropdown-header">Documentos PF</h6></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-cpf/">CPF</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-cpf/">Gerador de CPF</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-cnh/">Gerador de CNH</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-rg/">Gerador de RG</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-cartao-nacional-de-saude/">Gerador de CNS</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-pis/">Gerador de PIS</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-titulo-de-eleitor/">Gerador de Título de Eleitor</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-passaporte/">Gerador de Passaporte</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-certidao/">Gerador de Certidão</a></li>
 
-                  <li class="dropdown-header mt-3">
-                    <span class="theme-icon-holder"><i class="fas fa-car"></i></span>VEÍCULOS
-                  </li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-placa-antiga/">Gerador de Placa Antiga</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-placa-mercosul/">Gerador de Placa Mercosul</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-renavam/">Gerador de RENAVAM</a></li>
+                  <li><h6 class="dropdown-header">DOCUMENTOS PJ</h6></li>
 
-                  <li class="dropdown-header mt-3">
-                    <span class="theme-icon-holder"><i class="fas fa-align-left"></i></span>LOREM IPSUM
-                  </li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-sentenca/">Gerador de Sentença</a></li>
-                  <li><a class="dropdown-item nav-link" href="/gerador-br/gerador-de-paragrafos/">Gerador de Parágrafos</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-cnpj/">Gerador de CNPJ</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-cnpj-alfanumerico/">Gerador de CNPJ Alfanumérico</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-inscricao-estadual/">Gerador de Inscrição Estadual</a></li>
+
+                  <li><h6 class="dropdown-header">BANCOS</h6></li>
+
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-banco/">Gerador de Banco</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-conta-bancaria/">Gerador de Conta Bancária</a></li>
+
+                  <li><h6 class="dropdown-header">CONTATOS</h6></li>
+
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-cep/">Gerador de CEP</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-endereco/">Gerador de Endereço</a></li>
+
+                  <li><h6 class="dropdown-header">VEÍCULOS</h6></li>
+
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-placa-antiga/">Gerador de Placa Antiga</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-placa-mercosul/">Gerador de Placa Mercosul</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-renavam/">Gerador de RENAVAM</a></li>
+
+                  <li><h6 class="dropdown-header">LOREM IPSUM</h6></li>
+
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-sentenca/">Gerador de Sentença</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-paragrafos/">Gerador de Parágrafos</a></li>
+
                 </ul>
               </li>
-              <li class="nav-item pt-3 pt-lg-0">
-                <ul class="icon-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+              <li class="nav-item d-none d-lg-block">
+                <div class="d-flex align-items-center h-100 mx-lg-3">
+                   <div class="vr"></div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <ul class="icon-list list-inline mb-0">
                   <li class="list-inline-item">
                     <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener noreferrer" aria-label="npm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pacote NPM">
                       <i class="fab fa-npm fa-fw"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projeto no GitHub">
+                    <a href="https://github.com/box4dev/gerador-br" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Projeto no GitHub">
                       <i class="fab fa-github fa-fw"></i>
                     </a>
                   </li>
@@ -204,10 +206,10 @@
                 </ul>
               </li>
             </ul>
-          </div>
-        </nav>
+          </div><!--//collapse-->
+        </div><!--//container-fluid-->
+      </nav><!--//navbar-->
 
-      </div>
     </div>
   </div>
 </header>

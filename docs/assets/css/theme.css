@@ -449,11 +449,13 @@ a.text-link:hover {
   border-radius: 50%;
 }
 
-.icon-list li a {
+.icon-list li a,
+.icon-list i {
   color: #5236CB; /* Alterado */
 }
 
-.icon-list li a:hover {
+.icon-list li a:hover,
+.icon-list i:hover {
   color: #4930b8; /* Alterado */
 }
 
@@ -1117,9 +1119,9 @@ form-floating > .form-control:focus ~ label::after,
   background-color: #cfe2ff !important;
 }
 
-.scrollable-menu {
+.dropdown-menu-scrollable {
   height: auto;
-  max-height: 600px;
+  max-height: 75vh;
   overflow-x: hidden;
 }
 
