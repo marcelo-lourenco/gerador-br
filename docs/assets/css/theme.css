@@ -228,6 +228,11 @@ a.text-link:hover {
   background: #f5f7fa !important; /* Alterado */
 }
 
+.bg-light a,
+.bg-body-secondary a {
+  color: #0a58ca; /* Um azul um pouco mais escuro, usado pelo Bootstrap para links visitados */
+}
+
 .theme-bg-dark {
   background: #5236CB !important; /* Alterado */
 }
