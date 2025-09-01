@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<!-- head.njk -->
+
 
 <head>
   <meta charset="utf-8">
@@ -54,7 +54,7 @@
     "description": "Gere dados de bancos brasileiros válidos, incluindo nome, código, razão social e ISPB. Ideal para testes de sistemas financeiros e preenchimento de formulários.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     "datePublished": "2025-08-22T00:38:51.965Z",
-    "dateModified": "2025-08-29T18:38:44.330Z",
+    "dateModified": "2025-09-01T19:00:40.958Z",
     "author": {
       "@type": "Person",
       "name": "Marcelo Lourenço",
@@ -82,6 +82,13 @@
     }
   }
   </script>
+
+  
+    <script src="/assets/plugins/smoothscroll.min.js" defer></script>
+    <script src="/assets/plugins/gumshoe/gumshoe.polyfills.min.js" defer></script>
+    <script src="/assets/js/sidebar.js" defer></script>
+    <script src="/assets/plugins/simplelightbox/simple-lightbox.min.js" defer></script>
+  
 
   <script src="/assets/plugins/prism/prism.min.js" defer></script>
   <script src="/assets/plugins/prism/prism-javascript.min.js" defer></script>
@@ -167,6 +174,7 @@
                   <li><h6 class="dropdown-header">BANCOS</h6></li>
 
                   <li><a class="dropdown-item" href="/gerador-br/gerador-de-banco/">Gerador de Banco</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-cartao-de-credito/">Gerador de Cartão de Crédito</a></li>
                   <li><a class="dropdown-item" href="/gerador-br/gerador-de-conta-bancaria/">Gerador de Conta Bancária</a></li>
 
                   <li><h6 class="dropdown-header">CONTATOS</h6></li>
@@ -220,34 +228,12 @@
   </div>
 </header>
   
-
-
-<div class="container py-4 docs-content">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="/">Home</a>
-      </li>
-      <li class="breadcrumb-item">
-        <a href="/gerador-br/">Gerador-BR</a>
-      </li>
-      
-      <li class="breadcrumb-item active" aria-current="page">
-        Gerador de Banco
-      </li>
-      
-    </ol>
-  </nav>
-</div>
-
-
-  
 <div class="docs-wrapper d-flex flex-grow-1">
 
   <div id="docs-sidebar" class="docs-sidebar">
   <nav id="docs-nav" class="docs-nav navbar">
     <ul class="section-items list-unstyled nav flex-column pb-3">
-      
+
       <li class="nav-item section-title text-center ">
         <h1 class="my-3 h4">
           <a class="nav-link active" href="../geradores/">Painel Gerador</a>
@@ -309,6 +295,9 @@
         <a class="nav-link" href="../gerador-de-banco/">Banco</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="../gerador-de-cartao-de-credito/">Cartão de Crédito</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="../gerador-de-conta-bancaria/">Conta Bancária</a>
       </li>
       <li class="nav-item section-title mt-3">
@@ -358,6 +347,28 @@
 <!--//docs-sidebar-->
 
   <main class="docs-content d-flex flex-column flex-grow-1 min-vh-100" id="main-content">
+    
+
+
+<div class="container py-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="/gerador-br/">Gerador-BR</a>
+      </li>
+      
+      <li class="breadcrumb-item active" aria-current="page">
+        Gerador de Banco
+      </li>
+      
+    </ol>
+  </nav>
+</div>
+
+
     <div class="d-flex flex-column flex-grow-1">
 
       <article class="text-center flex-grow-1 d-flex flex-column justify-content-center py-2"
@@ -545,7 +556,7 @@
             © 2025 Box4Dev. Todos os direitos reservados.
           </small>
         </div>
-        
+
         
         <div class="col-lg text-center mb-2 mb-lg-0">
           <small class="legal-links">
@@ -558,23 +569,29 @@
         <div class="col-lg-auto text-center text-lg-end">
           <ul class="icon-list list-inline mb-0">
             <li class="list-inline-item">
-              <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener noreferrer" aria-label="Ver o pacote Gerador-BR no NPM" data-bs-toggle="tooltip" data-bs-placement="top" title="Pacote NPM">
+              <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener noreferrer"
+                aria-label="Ver o pacote Gerador-BR no NPM" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Pacote NPM">
                 <i class="fab fa-npm fa-fw"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener noreferrer" aria-label="Ver o projeto no GitHub" data-bs-toggle="tooltip" data-bs-placement="top" title="Projeto no GitHub">
+              <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener noreferrer"
+                aria-label="Ver o projeto no GitHub" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Projeto no GitHub">
                 <i class="fab fa-github fa-fw"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/marcelolourencodasilva/" target="_blank" rel="noopener noreferrer" aria-label="Ver o perfil do criador no LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top" title="Marcelo Lourenço">
+              <a href="https://www.linkedin.com/in/marcelolourencodasilva/" target="_blank" rel="noopener noreferrer"
+                aria-label="Ver o perfil do criador no LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Marcelo Lourenço">
                 <i class="fab fa-linkedin fa-fw"></i>
               </a>
             </li>
           </ul>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -582,16 +599,15 @@
     </div>
   </main>
 </div>
-  <!-- Javascript -->
+  <!-- endjs.njk -->
+
+<!-- Javascript -->
 <script src="/assets/plugins/popper.min.js"></script>
 <script src="/assets/plugins/bootstrap/js/bootstrap.min.js" defer></script>
 
 <!-- Page Specific JS -->
 
-<script src="/assets/plugins/smoothscroll.min.js"></script>
-<script src="/assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
-<script src="/assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
-<script src="/assets/js/sidebar.js"></script>
+
 <script>
   // Polyfill para compatibilidade entre módulos CommonJS no navegador e ES modules
   var exports = {};

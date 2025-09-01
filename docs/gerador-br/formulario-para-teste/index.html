@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<!-- head.njk -->
+
 
 <head>
   <meta charset="utf-8">
@@ -54,7 +54,7 @@
     "description": "Utilize este formulário para testar a integração do pacote NPM Gerador-BR em seus projetos de automação com Cypress, Playwright, Jest e mais.",
     "image": "https://box4.dev/assets/images/features/social-preview.png",
     "datePublished": "2025-08-22T00:38:51.963Z",
-    "dateModified": "2025-08-29T18:38:44.330Z",
+    "dateModified": "2025-09-01T19:00:40.958Z",
     "author": {
       "@type": "Person",
       "name": "Marcelo Lourenço",
@@ -82,6 +82,13 @@
     }
   }
   </script>
+
+  
+    <script src="/assets/plugins/smoothscroll.min.js" defer></script>
+    <script src="/assets/plugins/gumshoe/gumshoe.polyfills.min.js" defer></script>
+    <script src="/assets/js/sidebar.js" defer></script>
+    <script src="/assets/plugins/simplelightbox/simple-lightbox.min.js" defer></script>
+  
 
   <script src="/assets/plugins/prism/prism.min.js" defer></script>
   <script src="/assets/plugins/prism/prism-javascript.min.js" defer></script>
@@ -167,6 +174,7 @@
                   <li><h6 class="dropdown-header">BANCOS</h6></li>
 
                   <li><a class="dropdown-item" href="/gerador-br/gerador-de-banco/">Gerador de Banco</a></li>
+                  <li><a class="dropdown-item" href="/gerador-br/gerador-de-cartao-de-credito/">Gerador de Cartão de Crédito</a></li>
                   <li><a class="dropdown-item" href="/gerador-br/gerador-de-conta-bancaria/">Gerador de Conta Bancária</a></li>
 
                   <li><h6 class="dropdown-header">CONTATOS</h6></li>
@@ -219,28 +227,6 @@
     </div>
   </div>
 </header>
-  
-
-
-<div class="container py-4 docs-content">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="/">Home</a>
-      </li>
-      <li class="breadcrumb-item">
-        <a href="/gerador-br/">Gerador-BR</a>
-      </li>
-      
-      <li class="breadcrumb-item active" aria-current="page">
-        Formulário para Teste
-      </li>
-      
-    </ol>
-  </nav>
-</div>
-
-
   
 <main class="container my-5" data-testid="container-main">
 
@@ -643,6 +629,61 @@
                   <input type="text" class="form-control" id="fldCep" name="fldCep" placeholder="CEP" aria-label="CEP"
                     data-testid="input-cep">
                   <label for="fldCep">CEP</label>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--//col-->
+
+          <!-- Coluna: Bancos e Cartões -->
+          <div class="col-12 col-lg-4 col-md-6 py-3 d-flex">
+            <div class="card card-form shadow-sm flex-fill" data-testid="card-bancos-cartoes">
+              <div class="card-body d-flex flex-column">
+
+                <!-- Cartão -->
+                <div class="form-floating mt-3 position-relative">
+                  <h2 class="h4 mb-3">
+                    <span class="theme-icon-holder card-icon-holder me-2">
+                      <i class="fas fa-credit-card" aria-hidden="true"></i>
+                    </span>
+                    <span class="card-title-text" data-testid="card-title-cartao-credito">Cartão de Crédito</span>
+                  </h2>
+                </div>
+
+                <!-- Cartão de Crédito -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCartaoCredito" name="fldCartaoCredito"
+                    placeholder="Cartão de Crédito" aria-label="Cartão de Crédito" data-testid="input-cartao-credito">
+                  <label for="fldCartaoCredito">Cartão de Crédito</label>
+                </div>
+
+                <!-- Bandeira -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldBandeira" name="fldBandeira" placeholder="Bandeira"
+                    aria-label="Bandeira" data-testid="input-bandeira">
+                  <label for="fldBandeira">Bandeira</label>
+                </div>
+
+                <!-- Nome do Titular -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldNomeTitular" name="fldNomeTitular"
+                    placeholder="Nome do Titular" aria-label="Nome do Titular" data-testid="input-nome-titular">
+                  <label for="fldNomeTitular">Nome do Titular</label>
+                </div>
+
+                <!-- CVV -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldCvv" name="fldCvv" placeholder="CVV" aria-label="CVV"
+                    data-testid="input-cvv">
+                  <label for="fldCvv">CVV</label>
+                </div>
+
+                <!-- Data de Expiração -->
+                <div class="form-floating mb-3 position-relative">
+                  <input type="text" class="form-control" id="fldDataExpiracao" name="fldDataExpiracao"
+                    placeholder="Data de Expiração" aria-label="Data de Expiração" data-testid="input-data-expiracao">
+                  <label for="fldDataExpiracao">Data de Expiração</label>
                 </div>
 
               </div>
@@ -1086,7 +1127,7 @@
             © 2025 Box4Dev. Todos os direitos reservados.
           </small>
         </div>
-        
+
         
         <div class="col-lg text-center mb-2 mb-lg-0">
           <small class="legal-links">
@@ -1099,37 +1140,42 @@
         <div class="col-lg-auto text-center text-lg-end">
           <ul class="icon-list list-inline mb-0">
             <li class="list-inline-item">
-              <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener noreferrer" aria-label="Ver o pacote Gerador-BR no NPM" data-bs-toggle="tooltip" data-bs-placement="top" title="Pacote NPM">
+              <a href="https://www.npmjs.com/package/gerador-br" target="_blank" rel="noopener noreferrer"
+                aria-label="Ver o pacote Gerador-BR no NPM" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Pacote NPM">
                 <i class="fab fa-npm fa-fw"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener noreferrer" aria-label="Ver o projeto no GitHub" data-bs-toggle="tooltip" data-bs-placement="top" title="Projeto no GitHub">
+              <a href="https://github.com/marcelo-lourenco/gerador-br" target="_blank" rel="noopener noreferrer"
+                aria-label="Ver o projeto no GitHub" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Projeto no GitHub">
                 <i class="fab fa-github fa-fw"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/marcelolourencodasilva/" target="_blank" rel="noopener noreferrer" aria-label="Ver o perfil do criador no LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top" title="Marcelo Lourenço">
+              <a href="https://www.linkedin.com/in/marcelolourencodasilva/" target="_blank" rel="noopener noreferrer"
+                aria-label="Ver o perfil do criador no LinkedIn" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Marcelo Lourenço">
                 <i class="fab fa-linkedin fa-fw"></i>
               </a>
             </li>
           </ul>
         </div>
-        
+
       </div>
     </div>
   </div>
 </footer>
-  <!-- Javascript -->
+  <!-- endjs.njk -->
+
+<!-- Javascript -->
 <script src="/assets/plugins/popper.min.js"></script>
 <script src="/assets/plugins/bootstrap/js/bootstrap.min.js" defer></script>
 
 <!-- Page Specific JS -->
 
-<script src="/assets/plugins/smoothscroll.min.js"></script>
-<script src="/assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
-<script src="/assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
-<script src="/assets/js/sidebar.js"></script>
+
 <script>
   // Polyfill para compatibilidade entre módulos CommonJS no navegador e ES modules
   var exports = {};
