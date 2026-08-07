@@ -6,13 +6,8 @@ Versões do seu projeto que estão atualmente sendo suportado com atualizações
 
 | Versão | Suportada          |
 | ------ | ------------------ |
-| 1.0.x  | :white_check_mark: |
-
-<!--
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
--->
+| 2.0.x  | :white_check_mark: |
+| < 2.0  | :x:                |
 
 ## Reportando uma Vulnerabilidade
 

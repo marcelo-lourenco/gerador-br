@@ -1,14 +1,11 @@
-# ![gerador-br](/docs/assets/images/icons/favicon-24x24.svg) gerador-br
+# ![gerador-br](https://raw.githubusercontent.com/marcelo-lourenco/gerador-br/master/assets/favicon-24x24.svg) gerador-br
 
 [![NPM version](https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff)](https://npmjs.org/package/gerador-br)
 [![NPM downloads](https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff)](https://npmcharts.com/compare/gerador-br?minimal=true)
 [![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/gerador-br?logo=jsDelivr&logoColor=ff5627)](https://www.jsdelivr.com/package/npm/gerador-br)
-[![CodeQL](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/github-code-scanning/codeql)
-[![CI Test](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci-test.yml)
-[![ESLint](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/eslint.yml)
-[![Coverage](https://img.shields.io/coveralls/github/marcelo-lourenco/gerador-br/master?logo=coveralls&logoColor=ffffff)](https://coveralls.io/github/marcelo-lourenco/gerador-br?branch=master)
-[![FOSSA Licence](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
-[![FOSSA Security](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br)
+[![CI](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci.yml)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Biome](https://img.shields.io/badge/Formatted%20with-Biome-111111.svg?logo=biome&logoColor=white)](https://biomejs.dev/)
 
 **Gerador de Dados Fictícios - Brasil**
 Gere dados fictícios/válidos, para testes e desenvolvimento de Software.
@@ -17,23 +14,23 @@ Ideal para testes automatizados com **Cypress**, **Playwright**, **Jest**, **Nod
 
 O pacote fornece uma coleção de funções para gerar dados brasileiros aleatórios, como:
 
-* [Gerador de Documento](https://box4.dev/gerador-br/documentacao/#documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte e Certidão (Nascimento, Casamento e Óbito)
-* [Gerador de Pessoa](https://box4.dev/gerador-br/documentacao/#pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
-* [Gerador de Empresa](https://box4.dev/gerador-br/documentacao/#documentos-pj): CNPJ, CNPJ Alfanumérico, Inscrição Estadual e Nome Empresa;
-* [Gerador de Endereço](https://box4.dev/gerador-br/documentacao/#endereco): CEP, Logradouro, Número, Bairro, Localidade e Estado;
-* [Gerador de Contato](https://box4.dev/gerador-br/documentacao/#contatos): E-mail, DDD, Operadora, Celular e Telefone;
-* [Gerador de Conta Bancária](https://box4.dev/gerador-br/documentacao/#contaBancaria): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
-* [Gerador de Cartão de Crédito](https://box4.dev/gerador-br/documentacao/#cartaoCredito): Número, Bandeira, CVV e Validade;
-* [Gerador de Veículo](https://box4.dev/gerador-br/documentacao/#veiculos): Placa Antiga, Placa Mercosul e RENAVAM;
-* [Gerador de Texto (Lorem Ipsum)](https://box4.dev/gerador-br/documentacao/#lorem-ipsum): Palavras, Sentenças e Parágrafos;
+* [Gerador de Documento](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs/#documentos-pf): CPF, RG, CNH, Título de Eleitor, PIS, CNS (Cartão Nacional Saúde), Passaporte e Certidão (Nascimento, Casamento e Óbito);
+* [Gerador de Pessoa](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs/#pessoas): Nome, Nickname, Data de Nascimento, Cor de Pele, Orientação Sexual, Identidade de Gênero, Tipo Sanguíneo, Escolaridade e Profissão;
+* [Gerador de Empresa](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs/#documentos-pj): CNPJ, CNPJ Alfanumérico, Inscrição Estadual e Nome Empresa;
+* [Gerador de Endereço](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs/#endereco): CEP, Logradouro, Número, Bairro, Localidade e Estado;
+* [Gerador de Contato](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs/#contatos): E-mail, DDD, Operadora, Celular e Telefone;
+* [Gerador de Conta Bancária](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs/#contaBancaria): Código do Banco, Nome do Banco, Agência Bancária e Conta Bancária;
+* [Gerador de Cartão de Crédito](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs/#cartaoCredito): Número, Bandeira, CVV e Validade;
+* [Gerador de Veículo](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs/#veiculos): Placa Antiga, Placa Mercosul e RENAVAM;
+* [Gerador de Texto (Lorem Ipsum)](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs/#lorem-ipsum): Palavras, Sentenças e Parágrafos;
 
 ## Instalação
 
 ```bash
+pnpm add gerador-br
+# ou
 npm install gerador-br
-```
-
-```bash
+# ou
 yarn add gerador-br
 ```
 
@@ -53,7 +50,7 @@ const { gerar } = require('gerador-br');
 
 ## Utilização
 
-> Veja todos os exemplos na [documentação](https://box4.dev/gerador-br/documentacao).
+> Veja todos os exemplos na [documentação](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs).
 
 **Importe apenas a(s) função(ões) que desejar:**
 
@@ -406,11 +403,11 @@ Contribuições são bem-vindas! Faça um *fork* do  [repositório](https://gith
 
 [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam) - Muito útil para preencher automaticamente os campos de formulários em testes manuais.
 
-[Gerador-BR](https://box4.dev/gerador-br/geradores/) - Gerador de dados on-line.
+[Gerador-BR](https://box4.dev/pt-br/brasil/geradores) - Gerador de dados on-line.
 
-## License
+## Licença
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarcelo-lourenco%2Fgerador-br?ref=badge_large)
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 ---
 
