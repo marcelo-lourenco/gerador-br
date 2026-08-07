@@ -1,4 +1,4 @@
-# gerador-br
+# @box4dev/gerador-br
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/box4dev/gerador-br/master/logo.png" alt="Gerador-BR Logo" width="200" />
