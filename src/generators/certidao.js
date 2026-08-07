@@ -105,9 +105,30 @@ function generateCertificate(type = null, mask = true) {
   const sheetType = String(Math.floor(Math.random() * 2) + 1);
   const recordNumber = String(Math.floor(Math.random() * 100_000)).padStart(5, '0');
   const pageNumber = String(Math.floor(Math.random() * 1_000)).padStart(3, '0');
-  const bookNumber = String(Math.floor(Math.random() * 10_000_000)).padStart(7, '0');
+  const bookNumber = String(Math.floor(Math.random() * 100_000)).padStart(5, '0');
 
-  let number = `${registryCode}${ufCode}${year}${bookTypeCode}${sheetType}${recordNumber}${pageNumber}${bookNumber}`;
+  let base = `${registryCode}${ufCode}${year}${bookTypeCode}${sheetType}${recordNumber}${pageNumber}${bookNumber}`;
+
+  function calculateDigit(sequence) {
+    let sum = 0;
+    let multiplier = 32 - sequence.length;
+
+    for (let i = 0; i < sequence.length; i++) {
+      sum += parseInt(sequence[i], 10) * multiplier;
+      multiplier += 1;
+      if (multiplier > 10) {
+        multiplier = 0;
+      }
+    }
+
+    const remainder = sum % 11;
+    return remainder > 9 ? 1 : remainder;
+  }
+
+  const dv1 = calculateDigit(base);
+  const dv2 = calculateDigit(base + String(dv1));
+  let number = `${base}${dv1}${dv2}`;
+
   if (mask) number = number.replace(/(\d{6})(\d{2})(\d{4})(\d{4})(\d{1})(\d{5})(\d{3})(\d{7})/, '$1 $2 $3 $4 $5 $6 $7 $8');
 
   return {
