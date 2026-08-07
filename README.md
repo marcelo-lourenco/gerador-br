@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://npmjs.org/package/gerador-br"><img src="https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff" alt="NPM version" /></a>
-  <a href="https://npmcharts.com/compare/gerador-br?minimal=true"><img src="https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff" alt="NPM downloads" /></a>
-  <a href="https://www.jsdelivr.com/package/npm/gerador-br"><img src="https://img.shields.io/jsdelivr/npm/hm/gerador-br?logo=jsDelivr&logoColor=ff5627" alt="jsDelivr" /></a>
+  <a href="https://npmjs.org/package/@box4dev/gerador-br"><img src="https://img.shields.io/npm/v/@box4dev/gerador-br?logo=npm&logoColor=ffffff" alt="NPM version" /></a>
+  <a href="https://npmcharts.com/compare/@box4dev/gerador-br?minimal=true"><img src="https://img.shields.io/npm/dm/@box4dev/gerador-br.svg?logo=npm&logoColor=ffffff" alt="NPM downloads" /></a>
+  <a href="https://www.jsdelivr.com/package/npm/@box4dev/gerador-br"><img src="https://img.shields.io/jsdelivr/npm/hm/@box4dev/gerador-br?logo=jsDelivr&logoColor=ff5627" alt="jsDelivr" /></a>
   <a href="https://github.com/box4dev/gerador-br/actions/workflows/ci.yml"><img src="https://github.com/box4dev/gerador-br/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg?logo=typescript&logoColor=white" alt="TypeScript" /></a>
   <a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/Formatted%20with-Biome-111111.svg?logo=biome&logoColor=white" alt="Biome" /></a>
@@ -37,11 +37,11 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 ## Instalação
 
 ```bash
-pnpm add gerador-br
+pnpm add @box4dev/gerador-br
 # ou
-npm install gerador-br
+npm install @box4dev/gerador-br
 # ou
-yarn add gerador-br
+yarn add @box4dev/gerador-br
 ```
 
 ## Importação
@@ -49,13 +49,13 @@ yarn add gerador-br
 ***ES Module***
 
 ```js
-import { gerar } from 'gerador-br';
+import { gerar } from '@box4dev/gerador-br';
 ```
 
-***CommonsJS***
+***CommonJS***
 
 ```js
-const { gerar } = require('gerador-br');
+const { gerar } = require('@box4dev/gerador-br');
 ```
 
 ## Utilização
@@ -65,8 +65,8 @@ const { gerar } = require('gerador-br');
 **Importe apenas a(s) função(ões) que desejar:**
 
 ```js
-import { nome, cpf, cnpj, placaMercosul } from 'gerador-br'; // ES Module
-// const { nome, cpf, cnpj, placaMercosul } = require('gerador-br'); // CommonJS
+import { nome, cpf, cnpj, placaMercosul } from '@box4dev/gerador-br'; // ES Module
+// const { nome, cpf, cnpj, placaMercosul } = require('@box4dev/gerador-br'); // CommonJS
 
 console.log(nome.femininoCompleto());
 console.log(cpf());
@@ -77,8 +77,8 @@ console.log(placaMercosul());
 **Ou, importe todo o módulo `gerar` e depois use qualquer função que desejar**:
 
 ```js
-import { gerar } from 'gerador-br'; // ES Module:
-// const gerar = require('gerador-br'); // CommonJS:
+import { gerar } from '@box4dev/gerador-br'; // ES Module:
+// const gerar = require('@box4dev/gerador-br'); // CommonJS:
 
 console.log(gerar.nome.femininoCompleto());
 console.log(gerar.cpf());

@@ -1,8 +1,8 @@
 {
-  "name": "gerador-br",
+  "name": "@box4dev/gerador-br",
   "version": "2.0.0",
   "description": "Gerador de Dados Fictícios - Brasil",
-  "author": "Marcelo Lourenço <contact@box4.dev>",
+  "author": "Box4Dev",
   "license": "MIT",
   "repository": {
     "type": "git",
