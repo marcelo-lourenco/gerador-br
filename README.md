@@ -1,11 +1,21 @@
-# ![gerador-br](https://raw.githubusercontent.com/marcelo-lourenco/gerador-br/master/assets/favicon-24x24.svg) gerador-br
+# gerador-br
 
-[![NPM version](https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff)](https://npmjs.org/package/gerador-br)
-[![NPM downloads](https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff)](https://npmcharts.com/compare/gerador-br?minimal=true)
-[![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/gerador-br?logo=jsDelivr&logoColor=ff5627)](https://www.jsdelivr.com/package/npm/gerador-br)
-[![CI](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci.yml/badge.svg)](https://github.com/marcelo-lourenco/gerador-br/actions/workflows/ci.yml)
-[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Biome](https://img.shields.io/badge/Formatted%20with-Biome-111111.svg?logo=biome&logoColor=white)](https://biomejs.dev/)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/box4dev/gerador-br/master/logo.png" alt="Gerador-BR Logo" width="200" />
+</p>
+
+<p align="center">
+  <b>Uma biblioteca completa, performática e moderna para geração de dados fictícios e testes no Brasil.</b>
+</p>
+
+<p align="center">
+  <a href="https://npmjs.org/package/gerador-br"><img src="https://img.shields.io/npm/v/gerador-br?logo=npm&logoColor=ffffff" alt="NPM version" /></a>
+  <a href="https://npmcharts.com/compare/gerador-br?minimal=true"><img src="https://img.shields.io/npm/dm/gerador-br.svg?logo=npm&logoColor=ffffff" alt="NPM downloads" /></a>
+  <a href="https://www.jsdelivr.com/package/npm/gerador-br"><img src="https://img.shields.io/jsdelivr/npm/hm/gerador-br?logo=jsDelivr&logoColor=ff5627" alt="jsDelivr" /></a>
+  <a href="https://github.com/box4dev/gerador-br/actions/workflows/ci.yml"><img src="https://github.com/box4dev/gerador-br/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg?logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/Formatted%20with-Biome-111111.svg?logo=biome&logoColor=white" alt="Biome" /></a>
+</p>
 
 **Gerador de Dados Fictícios - Brasil**
 Gere dados fictícios/válidos, para testes e desenvolvimento de Software.
@@ -395,7 +405,7 @@ O pacote foi testado e é compatível com as versões mais recentes dos seguinte
 
 ## Contribuições
 
-Contribuições são bem-vindas! Faça um *fork* do  [repositório](https://github.com/marcelo-lourenco/gerador-br) e sinta-se à vontade para enviar seus *pull requests*.
+Contribuições são bem-vindas! Faça um *fork* do  [repositório](https://github.com/box4dev/gerador-br) e sinta-se à vontade para enviar seus *pull requests*.
 
 ## Demo
 
@@ -411,4 +421,4 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 ---
 
-[Código de Conduta](https://github.com/marcelo-lourenco/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/marcelo-lourenco/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/marcelo-lourenco/gerador-br/security) • [Changelog](https://github.com/marcelo-lourenco/gerador-br/blob/master/CHANGELOG.md) • [Fórum](https://github.com/marcelo-lourenco/gerador-br/discussions)
+[Código de Conduta](https://github.com/box4dev/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/box4dev/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/box4dev/gerador-br/security) • [Changelog](https://github.com/box4dev/gerador-br/blob/master/CHANGELOG.md) • [Fórum](https://github.com/box4dev/gerador-br/discussions)

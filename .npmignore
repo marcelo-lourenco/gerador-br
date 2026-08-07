@@ -2,7 +2,6 @@
 src/
 **/*.test.ts
 sample/
-assets/
 
 # Configs & Tooling
 .github/

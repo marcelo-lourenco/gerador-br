@@ -15,7 +15,7 @@ Levamos a segurança do nosso projeto a sério. Se você descobrir uma vulnerabi
 
 1. **Onde Reportar**:
 
-   - Por favor, reporte vulnerabilidades enviando um mensagem para a nossa equipe de segurança em [Report a vulnerability](https://github.com/marcelo-lourenco/gerador-br/security/advisories/new). Inclua o máximo de detalhes possível sobre o problema, incluindo etapas para reproduzi-lo.
+   - Por favor, reporte vulnerabilidades enviando um mensagem para a nossa equipe de segurança em [Report a vulnerability](https://github.com/box4dev/gerador-br/security/advisories/new). Inclua o máximo de detalhes possível sobre o problema, incluindo etapas para reproduzi-lo.
 
 2. **O que Incluir**:
 

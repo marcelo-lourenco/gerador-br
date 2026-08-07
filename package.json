@@ -6,10 +6,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcelo-lourenco/gerador-br.git"
+    "url": "https://github.com/box4dev/gerador-br.git"
   },
   "bugs": {
-    "url": "https://github.com/marcelo-lourenco/gerador-br/issues"
+    "url": "https://github.com/box4dev/gerador-br/issues"
   },
   "homepage": "https://box4.dev/pt-br/pacotes-npm/gerador-br/docs",
   "keywords": [
