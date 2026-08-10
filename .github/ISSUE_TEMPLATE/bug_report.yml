@@ -1,73 +1,89 @@
-name: "\U0001F41E Relatório de Bug"
-description: Reportar um problema
-labels: ['s: pending triage', 'c: bug']
+name: "Relatar um Bug 🐛"
+description: "Crie um relatório de bug para nos ajudar a melhorar o gerador-br"
+title: "[BUG]: "
+labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Obrigado por reservar um tempo para preencher este relatório de bug!
+        Obrigado por reservar um tempo para relatar um bug! Por favor, preencha as informações abaixo.
 
   - type: checkboxes
     id: checkboxes
     attributes:
       label: Contribuir
       options:
-        - label: Estou disposto a fornecer um PR.
+        - label: Estou disposto a enviar um Pull Request com a correção.
+
+  - type: dropdown
+    id: generator_name
+    attributes:
+      label: Qual gerador apresentou o problema?
+      options:
+        - CPF
+        - CNPJ / CNPJ Alfanumérico
+        - CNH / Categoria CNH
+        - CNS
+        - PIS
+        - RG
+        - Título de Eleitor
+        - Passaporte
+        - Certidão (Nascimento/Casamento/Óbito)
+        - Inscrição Estadual
+        - Nome / Apelido / Pessoa
+        - Endereço / CEP
+        - Telefone / Celular / DDD / Operadora
+        - Banco / Conta Bancária
+        - Cartão de Crédito
+        - Placa de Veículo / RENAVAM
+        - Texto / Lorem Ipsum
+        - Outro
+    validations:
+      required: true
 
   - type: textarea
-    id: bug-description
+    id: bug_description
     attributes:
       label: Descreva o bug
-      description: Uma descrição clara e concisa do que é o bug.
-      placeholder: Estou fazendo... O que espero é... O que realmente está acontecendo é...
+      description: Uma descrição clara e concisa do problema encontrado.
+      placeholder: "Ex: Ao chamar a função cpf(), recebi uma string malformatada..."
     validations:
       required: true
 
   - type: textarea
     id: reproduction
     attributes:
-      label: Código de reprodução mínima
-      description: |
-        Uma URL para algum repositório git ou gist que reproduza esse problema. [O que é uma reprodução mínima?](https://marcelo-lourenco.github.io/reproducao-minima/)
-      placeholder: 'https://github.com/..., or ``` code ```'
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Contexto Adicional
-      description: |
-        Mais alguma coisa relevante?
-        **Dica:** Você pode anexar imagens, gravações ou arquivos de log clicando nesta área para destacá-los e, em seguida, arrastando os arquivos para dentro.
-
-  - type: textarea
-    id: environment-info
-    attributes:
-      label: Informações de ambiente
-      description: Execute `npx envinfo --system --npmPackages 'gerador-br' --binaries --browsers`
-      render: shell
+      label: Código para reprodução
+      description: Forneça um exemplo de código simples ou repositório mínimo para reproduzir o erro.
       placeholder: |
-        System:
-          OS: _
-          CPU: _
-          Memory: _ / _
-          Container: Yes/No
-          Shell: _
-        Binaries:
-          Node: _ - /usr/bin/node
-          Yarn: _ - /usr/bin/yarn
-          npm: _ - /usr/bin/npm
-        npmPackages:
-         gerador-br: _ => _
+        ```typescript
+        import { cpf } from 'gerador-br';
+        console.log(cpf(true));
+        ```
+
+  - type: input
+    id: version
+    attributes:
+      label: Versão do gerador-br
+      placeholder: "Ex: 2.0.0"
+    validations:
+      required: false
 
   - type: dropdown
-    id: package-manager
+    id: package_manager
     attributes:
-      label: Gerenciador de Pacotes Usado
-      description: Selecione o gerenciador de pacotes usado
+      label: Gerenciador de Pacotes
       options:
+        - pnpm
         - npm
         - yarn
-        - pnpm
-        - other
+        - bun
+        - outro
     validations:
       required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Contexto Adicional
+      description: Adicione qualquer outra informação relevante, capturas de tela ou logs.

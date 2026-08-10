@@ -1,14 +1,21 @@
-
-.github
-.vscode
-.editorconfig
-.gitignore
-.npmignore
-eslint.config.js
-eslint-results.sarif
-coverage/
+# Source & Tests
 src/
-docs/
-test/
+**/*.test.ts
+sample/
+
+# Configs & Tooling
+.github/
+.vscode/
+.editorconfig
+biome.json
+tsconfig.json
+tsup.config.ts
+
+# Coverage & Build Cache
+coverage/
 temp/
-rollup.config.js
+.cache/
+
+# Local & Logs
+node_modules/
+*.log

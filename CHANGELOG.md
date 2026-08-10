@@ -2,7 +2,35 @@
 
 Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
+## 2.0.0 (2026-08-07)
+
+### 🚀 Reestruturação Total da Plataforma & Modernização
+
+* **Migração Completa para TypeScript**: Código fonte e suíte de testes convertidos para TypeScript nativo (`.ts`).
+* **Arquitetura Co-localizada**: Organização de geradores e testes unitários em `src/<modulo>/index.ts` e `src/<modulo>/index.test.ts` (alinhado com `validador-br`).
+* **Migração para `pnpm`**: Substituição do `npm` pelo `pnpm` como gerenciador de pacotes oficial.
+* **Build de Alta Performance (`tsup`)**: Substituição do Rollup pelo `tsup`, gerando bundles otimizados ES Modules (`dist/index.js`), CommonJS (`dist/index.cjs`) e tipos automáticos (`dist/index.d.ts`).
+* **Linter & Formatter (`@biomejs/biome`)**: Substituição do ESLint pelo Biome.
+* **Test Runner Nativo (`node --test` + `tsx`)**: Execução nativa de testes com suporte a TypeScript e relatório de cobertura.
+* **Arquivos de Exemplo em `sample/`**: Adicionados scripts de demonstração `sample/example.js` (ESM) e `sample/example.cjs` (CommonJS).
+* **Pipelines de CI/CD**: Atualizados workflows em `.github/workflows/ci.yml` e `.github/workflows/release.yml`.
+* **Atualização de Links e Documentação**: Atualizadas todas as referências para o novo portal da documentação oficial (`box4.dev`).
+* **Configuração do VS Code**: Adicionadas configurações integradas do Biome em `.vscode/settings.json` para auto-formatação ao salvar.
+* **Templates de Issue & Arquivos de Projeto**: Reestruturados os formulários do GitHub (`bug_report.yml`, `feature_request.yml`) e refinados os arquivos `.gitignore`, `.npmignore` e `.editorconfig`.
+
 ---
+
+## 1.2.5 (2026-08-11)
+
+### Deprecated
+
+* [DEPRECATED] tranfere o pacote para a organização @box4dev/gerador-br
+
+## 1.2.4 (2025-08-28 )
+
+###  Corrige Funcionalidade 
+
+Gerador de CNPJ Alfanumérico
 
 ## 1.2.3 (2025-05-13)
 

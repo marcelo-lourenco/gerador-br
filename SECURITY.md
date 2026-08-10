@@ -6,13 +6,8 @@ Versões do seu projeto que estão atualmente sendo suportado com atualizações
 
 | Versão | Suportada          |
 | ------ | ------------------ |
-| 1.0.x  | :white_check_mark: |
-
-<!--
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
--->
+| 2.0.x  | :white_check_mark: |
+| < 2.0  | :x:                |
 
 ## Reportando uma Vulnerabilidade
 
@@ -20,7 +15,7 @@ Levamos a segurança do nosso projeto a sério. Se você descobrir uma vulnerabi
 
 1. **Onde Reportar**:
 
-   - Por favor, reporte vulnerabilidades enviando um mensagem para a nossa equipe de segurança em [Report a vulnerability](https://github.com/marcelo-lourenco/gerador-br/security/advisories/new). Inclua o máximo de detalhes possível sobre o problema, incluindo etapas para reproduzi-lo.
+   - Por favor, reporte vulnerabilidades enviando um mensagem para a nossa equipe de segurança em [Report a vulnerability](https://github.com/box4dev/gerador-br/security/advisories/new). Inclua o máximo de detalhes possível sobre o problema, incluindo etapas para reproduzi-lo.
 
 2. **O que Incluir**:
 

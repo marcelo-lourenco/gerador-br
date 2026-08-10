@@ -1,40 +1,44 @@
-name: "\U0001F680 Proposta de novo recurso"
-description: Proponha um novo recurso
-labels: ['s: pending triage', 'c: feature', 's: aguardando interesse do usuário']
+name: "Proposta de Novo Recurso 🚀"
+description: "Proponha um novo gerador ou funcionalidade para o gerador-br"
+title: "[FEATURE]: "
+labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Obrigado por reservar um tempo para preencher este relatório de feature!
+        Obrigado por contribuir com ideias para o gerador-br!
 
   - type: checkboxes
     id: checkboxes
     attributes:
       label: Contribuir
       options:
-        - label: Estou disposto a fornecer um PR.
+        - label: Estou disposto a enviar um Pull Request implementando esta funcionalidade.
 
   - type: textarea
-    id: feature-description
+    id: feature_description
     attributes:
-      label: Descrição clara e concisa do problema
-      description: 'Como desenvolvedor usando o gerador-br, eu quero [objetivo / desejo] para que [benefício].'
+      label: Descrição da Funcionalidade
+      description: Explique a necessidade ou o problema que este novo recurso resolve.
+      placeholder: "Como desenvolvedor, eu gostaria de gerar dados de [exemplo] para facilitar os testes..."
     validations:
       required: true
+
   - type: textarea
-    id: suggested-solution
+    id: suggested_solution
     attributes:
-      label: Solução sugerida
-      description: 'No módulo [xy] poderíamos fornecer a seguinte implementação...'
+      label: Solução Sugerida ou API Desejada
+      description: Como você imagina o funcionamento ou a chamada desta função?
+      placeholder: |
+        ```typescript
+        import { novoGerador } from 'gerador-br';
+        console.log(novoGerador());
+        ```
     validations:
       required: true
+
   - type: textarea
-    id: alternative
+    id: additional_context
     attributes:
-      label: Alternativa
-      description: Descrição clara e concisa de quaisquer soluções ou recursos alternativos que você tenha considerado.
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Contexto adicional
-      description: Qualquer outro contexto sobre a solicitação de recurso aqui.
+      label: Contexto Adicional
+      description: Adicione qualquer outro contexto, links de referência ou documentação relevante.

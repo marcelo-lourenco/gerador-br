@@ -1,19 +1,19 @@
-# Este arquivo é para unificar o estilo de codificação para diferentes editores e IDES
-# editorconfig.org
+# EditorConfig ajuda os desenvolvedores a manter estilos de codificação consistentes entre diferentes editores e IDEs.
+# https://editorconfig.org
 
 root = true
 
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 2
 indent_style = space
+indent_size = 2
 insert_final_newline = true
-max_line_length = 80
 trim_trailing_whitespace = true
 
-[*.md]
-max_line_length = 0
-trim_trailing_whitespace = false
+[*.{js,ts,json,md,yml,yaml}]
+indent_style = space
+indent_size = 2
 
-root = true
+[*.md]
+trim_trailing_whitespace = false
