@@ -14,7 +14,6 @@
   <a href="https://www.jsdelivr.com/package/npm/@box4dev/gerador-br"><img src="https://img.shields.io/jsdelivr/npm/hm/@box4dev/gerador-br?logo=jsDelivr&logoColor=ff5627" alt="jsDelivr" /></a>
   <a href="https://github.com/box4dev/gerador-br/actions/workflows/ci.yml"><img src="https://github.com/box4dev/gerador-br/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Ready-blue.svg?logo=typescript&logoColor=white" alt="TypeScript" /></a>
-  <a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/Formatted%20with-Biome-111111.svg?logo=biome&logoColor=white" alt="Biome" /></a>
 </p>
 
 **Gerador de Dados Fictícios - Brasil**

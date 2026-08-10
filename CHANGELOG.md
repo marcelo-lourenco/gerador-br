@@ -20,6 +20,18 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
 ---
 
+## 1.2.5 (2026-08-11)
+
+### Deprecated
+
+* [DEPRECATED] tranfere o pacote para a organização @box4dev/gerador-br
+
+## 1.2.4 (2025-08-28 )
+
+###  Corrige Funcionalidade 
+
+Gerador de CNPJ Alfanumérico
+
 ## 1.2.3 (2025-05-13)
 
 ### Adiciona Funcionalidade
