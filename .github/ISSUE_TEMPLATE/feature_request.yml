@@ -1,12 +1,12 @@
 name: "Proposta de Novo Recurso 🚀"
-description: "Proponha um novo gerador ou funcionalidade para o gerador-br"
+description: "Proponha um novo gerador ou funcionalidade para o @box4dev/gerador-br"
 title: "[FEATURE]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Obrigado por contribuir com ideias para o gerador-br!
+        Obrigado por contribuir com ideias para o @box4dev/gerador-br!
 
   - type: checkboxes
     id: checkboxes
@@ -31,7 +31,7 @@ body:
       description: Como você imagina o funcionamento ou a chamada desta função?
       placeholder: |
         ```typescript
-        import { novoGerador } from 'gerador-br';
+        import { novoGerador } from '@box4dev/gerador-br';
         console.log(novoGerador());
         ```
     validations:

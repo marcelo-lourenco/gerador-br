@@ -1,5 +1,5 @@
 name: "Relatar um Bug 🐛"
-description: "Crie um relatório de bug para nos ajudar a melhorar o gerador-br"
+description: "Crie um relatório de bug para nos ajudar a melhorar o @box4dev/gerador-br"
 title: "[BUG]: "
 labels: ["bug"]
 body:
@@ -57,14 +57,14 @@ body:
       description: Forneça um exemplo de código simples ou repositório mínimo para reproduzir o erro.
       placeholder: |
         ```typescript
-        import { cpf } from 'gerador-br';
+        import { cpf } from '@box4dev/gerador-br';
         console.log(cpf(true));
         ```
 
   - type: input
     id: version
     attributes:
-      label: Versão do gerador-br
+      label: Versão do @box4dev/gerador-br
       placeholder: "Ex: 2.0.0"
     validations:
       required: false

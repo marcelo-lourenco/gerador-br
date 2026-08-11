@@ -10,6 +10,7 @@
 
 <p align="center">
   <a href="https://npmjs.org/package/@box4dev/gerador-br"><img src="https://img.shields.io/npm/v/@box4dev/gerador-br?logo=npm&logoColor=ffffff" alt="NPM version" /></a>
+  <a href="https://github.com/box4dev/gerador-br/blob/master/LICENSE"><img src="https://img.shields.io/github/license/box4dev/gerador-br" alt="License" /></a>
   <a href="https://npmcharts.com/compare/@box4dev/gerador-br?minimal=true"><img src="https://img.shields.io/npm/dm/@box4dev/gerador-br.svg?logo=npm&logoColor=ffffff" alt="NPM downloads" /></a>
   <a href="https://www.jsdelivr.com/package/npm/@box4dev/gerador-br"><img src="https://img.shields.io/jsdelivr/npm/hm/@box4dev/gerador-br?logo=jsDelivr&logoColor=ff5627" alt="jsDelivr" /></a>
   <a href="https://github.com/box4dev/gerador-br/actions/workflows/ci.yml"><img src="https://github.com/box4dev/gerador-br/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
@@ -36,9 +37,9 @@ O pacote fornece uma coleção de funções para gerar dados brasileiros aleató
 ## Instalação
 
 ```bash
-pnpm add @box4dev/gerador-br
-# ou
 npm install @box4dev/gerador-br
+# ou
+pnpm add @box4dev/gerador-br
 # ou
 yarn add @box4dev/gerador-br
 ```
@@ -61,7 +62,7 @@ const { gerar } = require('@box4dev/gerador-br');
 
 > Veja todos os exemplos na [documentação](https://box4.dev/pt-br/pacotes-npm/gerador-br/docs).
 
-**Importe apenas a(s) função(ões) que desejar:**
+**Importe apenas a(s) função(ões) que desejar (recomendado):**
 
 ```js
 import { nome, cpf, cnpj, placaMercosul } from '@box4dev/gerador-br'; // ES Module
@@ -70,6 +71,7 @@ import { nome, cpf, cnpj, placaMercosul } from '@box4dev/gerador-br'; // ES Modu
 console.log(nome.femininoCompleto());
 console.log(cpf());
 console.log(cnpj());
+console.log(cnpjAlfanumerico());
 console.log(placaMercosul());
 ```
 
@@ -86,7 +88,7 @@ console.log(gerar.contaBancaria());
 console.log(gerar.cartaoCredito());
 ```
 
-## Projetos com exemplos de utilização do Gerador-BR
+## Projetos com exemplos de utilização do @box4dev/gerador-br
 
 [![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](https://github.com/marcelo-lourenco/cypress-data-generator)
 [![Playwright](https://img.shields.io/badge/Playwright-%232EAD33?logo=playwright&logoColor=white)](https://github.com/marcelo-lourenco/playwright-data-generator)
@@ -97,8 +99,8 @@ console.log(gerar.cartaoCredito());
 ## Outros exemplos de utilização
 
 ```js
-import { gerar } from 'gerador-br'; // ES Module:
-// const gerar = require('gerador-br'); // CommonJS:
+import { gerar } from '@box4dev/gerador-br'; // ES Module:
+// const gerar = require('@box4dev/gerador-br'); // CommonJS:
 
 /* ******************** APELIDO ************************ */
 // Gera apelido aleatório
@@ -391,11 +393,11 @@ console.log(gerar.tituloEleitor(false, 'PR'));
 
 O pacote foi testado e é compatível com as versões mais recentes dos seguinte frameworks:
 
+[![Playwright](https://img.shields.io/badge/Playwright-%232EAD33?logo=playwright&logoColor=white)](https://github.com/marcelo-lourenco/playwright-data-generator)
 [![Cypress](https://img.shields.io/badge/Cypress-%23007780?logo=cypress&logoColor=white)](https://github.com/marcelo-lourenco/cypress-data-generator)
 [![Jest](https://img.shields.io/badge/Jest-%2315c213?logo=jest&logoColor=white)](https://github.com/marcelo-lourenco/jest-data-generator)
 [![Node.js Test Runner](https://img.shields.io/badge/Node.js%20Test%20Runner-%235FA04E?logo=nodedotjs&logoColor=white)](https://github.com/marcelo-lourenco/node-data-generator)
 [![Jasmine](https://img.shields.io/badge/Jasmine-%238a4182?logo=jasmine&logoColor=white)](https://github.com/marcelo-lourenco/jasmine-data-generator)
-[![Playwright](https://img.shields.io/badge/Playwright-%232EAD33?logo=playwright&logoColor=white)](https://github.com/marcelo-lourenco/playwright-data-generator)
 [![Mocha](https://img.shields.io/badge/Mocha-%238d6748?logo=mocha&logoColor=white)](#)
 [![Chai](https://img.shields.io/badge/Chai-%23a40802?logo=chai&logoColor=white)](#)
 [![Supertest](https://img.shields.io/badge/Supertest-%23F44336?logo=apachesuperset&logoColor=white)](#)
@@ -410,14 +412,10 @@ Contribuições são bem-vindas! Faça um *fork* do  [repositório](https://gith
 
 **Essas funções foram utilizadas nas seguintes aplicações:**
 
+[Gerador de Dados Brasileiro](https://box4.dev/pt-br/brasil/geradores) - Gerador de dados on-line.
+
 [Extensão Chrome - Gerador de Dados Fictícios](https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam) - Muito útil para preencher automaticamente os campos de formulários em testes manuais.
-
-[Gerador-BR](https://box4.dev/pt-br/brasil/geradores) - Gerador de dados on-line.
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 ---
 
-[Código de Conduta](https://github.com/box4dev/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/box4dev/gerador-br?tab=MIT-1-ov-file#readme) • [Segurança](https://github.com/box4dev/gerador-br/security) • [Changelog](https://github.com/box4dev/gerador-br/blob/master/CHANGELOG.md) • [Fórum](https://github.com/box4dev/gerador-br/discussions)
+[Código de Conduta](https://github.com/box4dev/gerador-br?tab=coc-ov-file#readme) • [Licença MIT](https://github.com/box4dev/gerador-br/blob/master/LICENSE) • [Segurança](https://github.com/box4dev/gerador-br/security) • [Changelog](https://github.com/box4dev/gerador-br/blob/master/CHANGELOG.md) • [Fórum](https://github.com/box4dev/gerador-br/discussions)

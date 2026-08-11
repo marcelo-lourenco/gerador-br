@@ -14,7 +14,7 @@ const {
   placaMercosul,
 } = require('../dist/index.cjs');
 
-console.log('--- Testando gerador-br com CommonJS ---\n');
+console.log('--- Testando @box4dev/gerador-br com CommonJS ---\n');
 
 console.log('=== NAMED EXPORTS (Recomendado) ===');
 console.log('CPF com máscara:', cpf(true));

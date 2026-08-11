@@ -47,7 +47,7 @@ import {
   tituloEleitor,
 } from '../dist/index.js';
 
-console.log('--- Testando gerador-br com ES Modules ---\n');
+console.log('--- Testando @box4dev/gerador-br com ES Modules ---\n');
 
 console.log('=== NAMED EXPORTS (Recomendado) ===');
 console.log('CPF com máscara:', cpf(true));
