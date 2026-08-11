@@ -2,6 +2,14 @@
 
 Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 
+## 2.0.1 (2026-08-11)
+
+### Qualidade de Código & Formatação
+
+* **Padronização com Biome**: Ajuste de formatação e padronização dos finais de linha (`LF`) em todos os arquivos de código-fonte de acordo com as regras do Biome.
+
+---
+
 ## 2.0.0 (2026-08-07)
 
 ### 🚀 Reestruturação Total da Plataforma & Modernização
